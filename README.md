@@ -2,10 +2,10 @@
 
 用 WorkBuddy 做的项目精选集（2026-09 ~ 2026-11）。
 
-按用途分三类：`web/`（Web 应用与小程序）、`scripts/`（脚本与工具）、`docs/`（文档与写作）。
+仓库只保留 `web/`（Web 应用与小程序）。
 完整盘点（含历史项目与未入库原因）见 [PROJECT_INVENTORY.md](PROJECT_INVENTORY.md)。
 
-> 2026-11-26 调整：早期静态站原型（cs-portal、personal-site、mylife 系列、贪吃蛇、Apple 风格样片、数据叙事）已从仓库移除，本地源文件仍保留；新增「神舟模型设计」项目。
+> 2026-11-26 调整：早期静态站原型（cs-portal、personal-site、mylife 系列、贪吃蛇、Apple 风格样片、数据叙事）与 `scripts/`、`docs/` 两个目录已从仓库移除，本地源文件仍保留；新增「神舟模型设计」项目。
 
 ## Web 应用与小程序
 
@@ -20,32 +20,10 @@
 | MarxQuiz | `web/marxquiz-mp` | 刷题小程序，912 题内置题库 + 云同步 |
 | 神舟模型设计 | `web/shenzhou-model-design` | 火箭发射 3D 仿真：时序 / 动力学 / 音画同步 |
 
-## 脚本与工具
-
-| 项目 | 目录 | 说明 |
-|---|---|---|
-| ML 速查表生成器 | `scripts/ml-cheatsheet-builder` | 吴恩达 ML 课程速查表构建脚本 |
-| 文献处理工具 | `scripts/literature-tools` | PDF 抽取 / 综合矩阵 / docx 解析编译 |
-| PDF 转 DOCX | `scripts/pdf-to-docx` | 转换与优化脚本（不含运行环境） |
-| SVM 复现 | `scripts/svm-replication` | 论文结果复现 + 数据清洗 |
-| Blender 建模 | `scripts/blender-models` | 埃菲尔铁塔 / 舱内场景程序化建模 |
-| 物理课件工具 | `scripts/physics-lesson-tools` | 试讲课件生成脚本与设计说明 |
-| 说课 PPT 工具 | `scripts/shuoke-ppt-tools` | PPT 生成脚本 |
-
-## 文档与写作
-
-| 项目 | 目录 | 说明 |
-|---|---|---|
-| 物理试讲稿 | `docs/teaching-scripts` | 牛顿第一定律 / 自由落体逐页稿 |
-| 综述与文献笔记 | `docs/literature-notes` | 亚稳相固态电解质大纲、文献获取清单 |
-| 四级备考计划 | `docs/cet4-plans` | 75 天计划与细化表 |
-| OPC 文档 | `docs/opc-doc` | 文档资料 |
-
 ## 运行方式
 
 - 静态页面：在项目目录执行 `python -m http.server 8080`，浏览器打开 `localhost:8080`。
 - 小程序：微信开发者工具 → 导入项目 → 选择对应目录。AppID 为占位符，需填自己的。
-- Python 脚本：`python <脚本名>`；依赖与运行环境未入库。
 
 ## 入库说明
 
