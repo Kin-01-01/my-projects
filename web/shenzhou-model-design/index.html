@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>神舟二十三号 · 交互式结构拆解演示</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0e14'/%3E%3Cpath d='M16 5c3 2 4 6 4 11l-2 4h-4l-2-4c0-5 1-9 4-11z' fill='%23ff9d4d'/%3E%3Ccircle cx='16' cy='13' r='2' fill='%230b0e14'/%3E%3Cpath d='M12 18l-3 3 3-1zM20 18l3 3-3-1z' fill='%23ff9d4d'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="./styles.css" />
+
+<!-- 本地化 Three.js：使用压缩构建（比未压缩小 47%），并并行预取关键模块以缩短关键路径 -->
+<!-- 注意：importmap 必须排在 modulepreload 之前！modulepreload 会立刻触发模块加载，
+     若 importmap 来得更晚会被浏览器判为"迟到"而忽略，导致 import 'three' 解析失败
+     （缓存命中时预取极快，必然踩中；首次冷加载反而常侥幸成功） -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/build/three.module.min.js",
+    "three/addons/": "./vendor/three/examples/jsm/"
+  }
+}
+</script>
+<link rel="modulepreload" href="./vendor/three/build/three.module.min.js" />
+<link rel="modulepreload" href="./vendor/three/examples/jsm/controls/OrbitControls.js" />
+<link rel="modulepreload" href="./vendor/three/examples/jsm/environments/RoomEnvironment.js" />
+<link rel="modulepreload" href="./vendor/three/examples/jsm/postprocessing/EffectComposer.js" />
+<link rel="modulepreload" href="./vendor/three/examples/jsm/postprocessing/RenderPass.js" />
+<link rel="modulepreload" href="./vendor/three/examples/jsm/postprocessing/UnrealBloomPass.js" />
+<link rel="modulepreload" href="./vendor/three/examples/jsm/postprocessing/OutputPass.js" />
+</head>
+<body>
+  <div id="loading"><div class="ring"></div><p>正在构建飞船三维模型…</p><span id="loadNote">正在加载本地三维引擎…</span></div>
+
+  <canvas id="scene"></canvas>
+
+  <!-- 左侧：部件层级 -->
+  <aside id="sidebar" class="panel">
+    <div class="brand">
+      <span class="dot"></span>
+      <div>
+        <h1>神舟二十三号</h1>
+        <p>载人飞船 · 交互式结构拆解</p>
+      </div>
+    </div>
+    <div class="hint">点击部件可单独弹出查看，或拖动下方滑块整体拆解。</div>
+    <nav id="tree" class="tree"></nav>
+  </aside>
+
+  <!-- 右侧：部件详情 -->
+  <aside id="info" class="panel">
+    <div class="crumb" id="crumb">整体视图</div>
+    <h2 id="partName">神舟二十三号载人飞船</h2>
+    <p id="partDesc" class="desc">由轨道舱、返回舱、推进舱组成的三舱式飞船，采用返回舱居中的构型。点击下方任意部件或层级树中的条目，查看其结构、工作原理与功能机制。</p>
+    <div class="section-title">原理可视化</div>
+    <div id="schematic" class="schematic"></div>
+    <div class="section-title">结构与工作原理</div>
+    <div id="partPrinciple" class="principle"></div>
+    <div class="tags" id="partTags"></div>
+  </aside>
+
+  <!-- 底部：拆解控制 -->
+  <div id="toolbar" class="panel">
+    <button id="btnExpand" class="btn">全部展开</button>
+    <div class="slider">
+      <label>拆解程度</label>
+      <input id="explode" type="range" min="0" max="1" step="0.01" value="0" />
+    </div>
+    <button id="btnReset" class="btn">复位</button>
+    <button id="btnRotate" class="btn ghost">自动旋转</button>
+    <button id="btnInterior" class="btn ghost">舱内视图</button>
+    <button id="btnLaunch" class="btn accent">发射演示</button>
+    <button id="btnSound" class="btn ghost sound-toggle">声音 开</button>
+    <button id="btnView" class="btn ghost">重置视角</button>
+    <div class="legend"><span class="k"></span>选中部件</div>
+  </div>
+
+  <!-- 大号倒数必须放在 HUD 之外：HUD 带 transform/backdrop-filter，会成为 fixed 定位的包含块，
+       若放在里面，面板移到左侧后倒数会跟着压住文字面板 -->
+  <div id="countdownBig" class="countdown hidden">10</div>
+
+  <!-- 发射流程时间轴（默认隐藏） -->
+  <div id="launchHud" class="hud hidden">
+    <div class="hud-head">
+      <span id="phaseTag" class="phase-tag">阶段 0</span>
+      <span id="phaseName" class="phase-name">待命</span>
+      <span id="clock" class="clock">T- 00:10</span>
+    </div>
+    <div id="audioNote" class="audio-note hidden">人声音频未起播，已用合成提示音兜底（打开 <code>?debug=1</code> 可看具体原因）</div>
+    <div class="hud-steps">
+      <button class="step" data-phase="1"><b>01</b>地面点火准备</button>
+      <button class="step" data-phase="2"><b>02</b>火箭升空</button>
+      <button class="step" data-phase="3"><b>03</b>级间分离</button>
+      <button class="step" data-phase="4"><b>04</b>入轨部署</button>
+    </div>
+    <div class="hud-foot">
+      <button id="btnPlay" class="btn">播放</button>
+      <button id="btnReplay" class="btn ghost">重播</button>
+      <button id="btnSolar" class="btn ghost">帆板 展开</button>
+      <button id="btnSoundHud" class="btn ghost sound-toggle">声音 开</button>
+      <button id="btnExit" class="btn ghost">退出演示</button>
+    </div>
+  </div>
+
+  <div id="readout">拖拽旋转 · 滚轮缩放 · 点击部件查看详情</div>
+  <div id="tooltip" class="tooltip" role="tooltip" aria-hidden="true"></div>
+
+  <script>
+    // 加载层自愈诊断：任何初始化失败都落到 #loadNote 显示明确原因，绝不无限转圈
+    (function () {
+      var n = document.getElementById('loadNote');
+      // file:// 直接打开：ES 模块会被浏览器 CORS 拦截，必然卡死 —— 第一时间点破
+      if (location.protocol === 'file:') {
+        if (n) n.textContent = '当前是双击打开（file://）：ES 模块会被浏览器拦截。请运行 serve.py 后访问 http://127.0.0.1:8123/';
+        return;
+      }
+      window.addEventListener('error', function (e) {
+        var n = document.getElementById('loadNote');
+        if (!n) return;
+        if (e && e.target && (e.target.tagName === 'SCRIPT' || e.target.tagName === 'LINK')) {
+          n.textContent = '资源加载失败：' + (e.target.src || e.target.href || '') + ' ，请刷新重试';
+        } else if (e && e.message) {
+          // 模块初始化异常（如 WebGL 创建失败）走这里
+          n.textContent = '初始化出错：' + e.message + (e.filename ? '（' + e.filename.split('/').pop() + '）' : '');
+        }
+      }, true);   // 捕获阶段：资源错误与 window 错误都能收到
+      // 看门狗：10 秒仍未就绪则给出排查指引
+      setTimeout(function () {
+        if (window.__APP_READY) return;
+        var n = document.getElementById('loadNote');
+        if (n) n.textContent = '超过 10 秒未完成：请确认地址是 http://127.0.0.1:8123/（serve.py 启动）并 Ctrl+F5 强刷；仍卡住请按 F12 看控制台红字';
+      }, 10000);
+    })();
+  </script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
