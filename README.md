@@ -1,6 +1,6 @@
-# my-projects
+# 作品集
 
-用 WorkBuddy 做的项目精选集（2026-09 ~ 2026-11）。
+Web 应用项目集（2026-09 ~ 2026-11）。
 
 仓库只保留 `web/`（Web 应用与小程序）。
 完整盘点（含历史项目与未入库原因）见 [PROJECT_INVENTORY.md](PROJECT_INVENTORY.md)。
