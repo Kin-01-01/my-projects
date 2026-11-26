@@ -1,0 +1,1077 @@
+=== PAGE 1 ===
+RESEARCH ARTICLE
+www.small-journal.com
+Facilitated Self-Adjusting Mechanism with Mn2+ Additive in
+Electrolyte for Ammonium-Ion Hybrid Supercapacitors
+Zhenyun Zhao, Yunna Guo, Dongliang Chen, Xu Wang, Lei Deng, Yang Hou,
+Qinghua Zhang, Zhizhen Ye, Liqiang Zhang,* and Jianguo Lu*
+Ammonium-ion hybrid supercapacitors (AIHSCs) have gained extensive
+attention due to their high safety and environmental friendliness. Manganese
+oxides are among the most promising cathode materials; however, the side
+electrochemical reactions occurring in aqueous electrolytes limit their
+reversible capacities and energy densities. This work prepares the 𝜷-/𝜸-MnO2
+electrode and reveals the side electrochemical reactions occurring in the
+(NH4)2SO4 electrolyte. Besides the widely recognized dissolution of MnO2,
+the re-deposition of MnO2 and irreversible insertion of NH4
++ exist
+simultaneously during cycling, resulting in irreversible structural changes of
+MnO2. A portion of 𝜷-/𝜸-MnO2 converts to 𝜹-MnO2, and a layer of
+7Mn(OH)2·2MnSO4·H2O forms on the electrode surface, modifying the ionic
+accessibility and structural stability of the electrode. The structural changes,
+along with the competition among the three types of side reactions, cause
+capacity decay and uprise during cycling. Accordingly, the self-adjusting
+mechanism is proposed, and trace Mn2+ is added to the electrolyte to
+facilitate this mechanism, thereby improving performance. Finally, the AIHSC,
+featuring the MnO2 cathode and activated carbon anode in the Mn2+-added
+(NH4)2SO4 electrolyte, shows 60.2 mAh g−1 at 0.5 A g−1 under 0–2 V. The
+maximum energy and power densities of 60.2 Wh kg−1 and 5000 W kg−1 are
+achieved.
+1. Introduction
+Recently, various energy-storage devices have been devel-
+oping rapidly, including supercapacitors,[1] metal batteries,
+Z. Zhao, D. Chen, X. Wang, Z. Ye, J. Lu
+State Key Laboratory of Silicon and Advanced Semiconductor Materials
+School of Materials Science and Engineering
+Zhejiang University
+Hangzhou 310058, China
+E-mail: [邮箱已脱敏]
+Z.Zhao
+National Engineering Lab forTextileFiberMaterials andProcessing
+Technology
+School of Materials ScienceandEngineering
+Zhejiang Sci-Tech University
+Hangzhou 310018,China
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/smll.202410005
+DOI: 10.1002/smll.202410005
+metal-ion batteries,[2] etc. Metal or metal-
+ion batteries have high energy densities,[3]
+but they mostly use organic electrolytes,
+thus having the disadvantages of toxicity
+and ﬂammability. Although Zinc-ion bat-
+teries use aqueous electrolytes, alleviating
+these problems to some extent, they still
+pose a potential risk of dendrite-caused
+short-circuits.[4] In comparison, the aque-
+ous hybrid supercapacitors (HSCs) are
+composed of faradic cathodes and capaci-
+tive anodes, thereby combining their advan-
+tages together to achieve relatively high en-
+ergy and power densities.[5] Besides, they
+use acids, bases, and salts dissolved in wa-
+ter as electrolytes, signiﬁcantly improving
+safety and environmental friendliness.[6]
+Promisingly, HSCs show great commercial
+prospects in the ﬁelds of new energy trans-
+portation, ﬂexible wearable electronics, and
+large integrated energy storage systems.
+NH4
++
+has a higher ionic conductivity
+(NH4
++ > K+ > Na+ > Li+ > Zn2+), a smaller
+hydrated ionic radius (NH4
++ ≈K+ < Na+
+< Li+ < Zn2+), and a lower molar mass
+(18 g mol−1, just higher than Li+).[7] Fur-
+thermore, the insertion/extraction of NH4
++
+mainly relies on the building/breaking of hydrogen bonds, which
+is much more ﬂexible than the coordination/de-coordination
+of metal ions.[8] Therefore, the ammonium-ion hybrid super-
+capacitors (AIHSCs) are theoretically conducive to achieving
+Y. Guo, L. Deng, L. Zhang
+Clean Nano Energy Center
+State Key Laboratory of Metastable Materials Science and Technology
+Yanshan University
+Qinhuangdao 066004, China
+E-mail: [邮箱已脱敏]
+Y.Hou, Q.Zhang
+Collegeof Chemical andBiological Engineering
+Zhejiang University
+Hangzhou 310058, China
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (1 of 13)
+
+=== PAGE 2 ===
+www.advancedsciencenews.com
+www.small-journal.com
+light weight and high energy and power densities. Furthermore,
+the high safety, mild pH, non-corrosive nature, environmental
+friendliness, and abundant resources of ammonium salts will
+expand their commercial applications in the future.[9] However,
+they had not received much attention until Lukatskaya et al.[10]
+demonstrated the potential of NH4
++ for energy storage in 2013.
+The reports on AIHSCs have sharply increased since 2019,
+and some cathode materials have been reported, including WO3,
+MnO2, MoO3, VOx, Prussian blue,[9a,11] etc. Manganese oxides
+(MnOx) have garnered signiﬁcant attention due to their ease
+of preparation, wide resources and environmental friendliness.
+However, undesirable side electrochemical reactions involving
+the dissolution reactions of Mn species commonly occur in aque-
+ous electrolytes,[8,11c,12], leading to low reversible capacities and
+energy densities.
+Some studies have proposed various strategies to address this
+issue, including the ion intercalation,[11c] activation,[13] and va-
+cancy engineering.[14] For example, Song et al.[13] deposited amor-
+phous MnO2 on graphite foil and activated it in the CH3COONH4
+electrolyte, obtaining 176.5 mAh g−1 at 0.5 A g−1 with a retention
+of 94.7% after 10 000 cycles. To the best of our knowledge, this
+presents the highest performance of MnOx electrodes in AIH-
+SCs, whereas it just tested the single electrode performance in
+a three-electrode measurement system, and the limited voltage
+window (0–0.8 V vs Ag/AgCl) might restrict the energy density of
+the corresponding full cells to some extent. Another key problem
+is that most reports primarily focused on conﬁrming the build-
+ing/breaking of hydrogen bonds with the insertion/extraction
+of NH4
++,[12b,15] but the considerable side electrochemical reac-
+tions involving Mn species in aqueous electrolytes, along with
+the consequent eﬀects on electrode structures and electrochem-
+ical performance, have been overlooked in previous studies of
+manganese oxide-based AIHSCs.
+This work prepares the 𝛽-/𝛾-MnO2 electrode and reveals the
+side electrochemical reactions occurring in (NH4)2SO4 elec-
+trolyte. Besides the widely recognized dissolution of MnO2, the
+re-deposition of MnO2 and the irreversible insertion of NH4
++
+exist simultaneously during cycling, resulting in the structural
+changes of MnO2 after cycling. A portion of 𝛽-/𝛾-MnO2 converts
+to 𝛿-MnO2, and a layer of 7Mn(OH)2·2MnSO4·H2O forms on the
+electrode surface, modifying the ionic accessibility and structural
+stability of the electrode. The structural changes, along with the
+competition among the three types of reactions, cause capacity
+decay and uprise during cycling. Accordingly, the self-adjusting
+mechanism is proposed, and trace Mn2+ is added to the elec-
+trolyte to facilitate this mechanism, thereby improving perfor-
+mance. Ultimately, the assembled AIHSC, with the MnO2 cath-
+ode and activated carbon (AC) anode in the Mn2+-added elec-
+trolyte, can operate stably within a voltage window of 0≈2 V,
+achieving high energy and power densities.
+2. Results and Discussion
+2.1. Structural Characterization
+The original carbon cloth (CC) ﬁber has some micro-grooves
+on its surface (Figure S1, Supporting Information). The MnO2-
+deposited CC (CC/MnO2) shows a uniform MnO2 layer, with
+a thickness of ≈10.2 μm, formed by tightly entangled MnO2
+nanowires (each ≈10 nm in diameter), as shown in Figure 1a–c.
+X-ray photoelectron spectroscopy (XPS) is employed to charac-
+terize the chemical compositions. The Mn, O, and C elements
+are found in the survey spectrum (Figure S2, Supporting Infor-
+mation). The C element is mainly from the calibration source
+used during measurement instead of the CC substrate because
+the detection depth of XPS is just several nanometers. The aver-
+age oxidation state (AOS) of Mn in the deposited MnO2 can be
+calculated via the separation distance (ΔEs) between the two ﬁt-
+ted peaks of Mn 3s (Figure 1d),[14] and the relevant Equation (1)
+is as follows:
+AOS = 8.956 −1.126 ΔEs
+(1)
+Thus, the AOS is calculated to be 3.71, indicating the coex-
+istence of Mn3+ and Mn4+. The high-resolution Mn 2p peak
+(Figure 1e) is mainly composed of Mn 2p3/2 and Mn 2p1/2 peaks,
+with Mn3+ (centered at 642.4 and 653.9 eV) and Mn4+ (centered
+at 644.5 and 656.0 eV) both observed. The high-resolution O 1s
+peak (Figure 1f) can be deconvoluted into three peaks centered at
+529.8, 531.5, and 532.9 eV, assigned to Mn─O─Mn, Mn─O─H,
+and H2O, respectively. Therefore, the chemical compositions in-
+clude MnO2, HxMnO2, and interlayered/crystal H2O.[13] The cor-
+responding structures can also be identiﬁed in the attenuated
+total reﬂection Fourier-transform infrared (ATR-FTIR) spectrum
+(see Figure S3, Supporting Information).
+The XRD patterns of CC and CC/MnO2 are shown in
+Figure 1g. Comparing the two, we can ﬁnd that the diﬀraction
+peaks of MnO2 are located at 22.7°, 29.4°, 37.3°, 39.4°, 42.6°,
+44.2°, 56.6°, and 66.6°, consistent with the 𝛽-MnO2 (PDF#24-
+0735) and 𝛾-MnO2 (PDF#14-0644).[16] The HRTEM ware shown
+in Figure 1h, with the selected-area electron diﬀraction (SAED)
+given in the inset, and the partially magniﬁed images are shown
+in Figure 1i. The nanowires with the diameter ranging from 2
+to 10 nm can be observed from HRTEM, along with some ir-
+regularly shaped nanosheets. The interplanar spacings of 0.211
+and 0.241 nm correspond to the (300) and (131) planes of 𝛾-
+MnO2, as well as the (111) and (101) planes of 𝛽-MnO2, respec-
+tively. The SAED represents some diﬀraction rings, of which the
+brightest ring is indicative of the (120) plane of 𝛾-MnO2. Thus,
+the electrodeposited MnO2 is a mixture of 𝛽- and 𝛾-MnO2. Be-
+sides, considerable amorphous regions are roughly visible from
+the HRTEM, which can help the transport of electrolyte ions in
+the bulk electrode, but on the other hand, they may worsen the
+dissolution reaction of MnO2 and reduce the cycle stability.
+2.2. Energy-Storage Performance and Self-Adjusting Mechanism
+A three-electrode cell was utilized to test the electrochemical
+performance. First, three types of ammonium salt electrolytes
+were tried, and their GCD curves were shown in Figure S4
+(Supporting Information), of which the capacities are in the or-
+der of CH3COONH4 > (NH4)2SO4 > NH4Cl, while the poten-
+tial window of CH3COONH4 is just ≈1.0 V, much lower than
+the other two (1.2 V). Therefore, the (NH4)2SO4 electrolyte was
+ultimately applied. The cyclic voltammetry (CV) curves at dif-
+ferent scan rates (0.4–2.0 mV s−1, see Figure 2a) indicate that
+CC/MnO2 can operate stably in the voltage window of 0.4–1.2V
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (2 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 3 ===
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 1. Structural Characterizations. a,b) low- and high-magniﬁcation FESEM images. c) Cross-sectional FESEM image. d–f) High-resolution Mn 3s,
+Mn 2p, and O 1s XPS curves. g) XRD patterns. h) HRTEM image, with the inset of SAED image. i) Selected-area magniﬁed images.
+vs Ag/AgCl, while most reported MnO2 can just work below
+1 V.[11c,12a,13,14,17] The main reason should be that the prepared
+MnO2 nanowires herein are tangled up and packed, so the ac-
+tive contact area between the electrode and aqueous electrolyte
+is not that high. Although this reduces the speciﬁc capacity
+to some extent, the decomposition of H2O at the electrode-
+electrolyte interface is relieved, which can widen the voltage
+window. The CV curves display the rectangular shape with one
+pair of wide redox peaks, which is corresponsive with the sur-
+face pseudocapacitive behavior, essentially depending on the ab-
+sorption/desorption and fast insertion/extraction of ions near
+the surface of electrodes to store charges.[18] The wide redox
+peaks mainly belong to the redox reactions between Mn3+ and
+Mn4+ caused by the cationic insertion and extraction (mainly
+NH4
++ and H+).[13,19]
+The Nyquist plot (Figure S5, Supporting Information) mainly
+consists of three parts, including the semi-circle, oblique upward
+line and steep tail in the high-, middle- and low-frequency re-
+gions, respectively. The steep tail in the low-frequency region
+manifests its pseudocapacitive characteristic. The intersection
+point of the semi-circle with the Z’ axis represents the equivalent
+series resistance (ESR), which is ≈3.3 Ω; the diameter of the semi-
+circle reﬂects the charge transfer resistance (RCT), which is only
+≈0.04 Ω. Therefore, the CC/MnO2 has high electrical conduc-
+tivity and fast interfacial charge transfer process. After cycling,
+the ESR and RCT get slightly increased, and the tail slope gets
+decreased, maybe because of the generation of electrode surface
+layers, which will be discussed below.
+The detailed energy-storage performance of CC/MnO2 is eval-
+uated based on the galvanostatic charge/discharge (GCD) test
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (3 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 4 ===
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 2. Three-Electrode Cell Measurements and Ex Situ Characterizations. a) CV curves. b) GCD curves. c) Speciﬁc capacities at various current
+densities. d) Cycle stability at 4 A g−1. e) GCD curves during activation. f) Illustration of diﬀerent voltage states. g–i) Ex situ XPS curves and j) Ex situ
+XRD patterns at diﬀerent voltage states during various cycling stages.
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (4 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 5 ===
+www.advancedsciencenews.com
+www.small-journal.com
+(Figure 2b), and the speciﬁc capacities at diﬀerent current densi-
+ties are summarized in Figure 2c. The CC/MnO2 shows a speciﬁc
+capacity of 55.7 mAh g−1 (251 F g−1 or 902.7 mF cm−2) at 0.2 A
+g−1 (0.72 mA cm−2), which decreases to 40.6, 35.2, and 29.9 mAh
+g−1 with the current density increasing to 1, 2, and 4 A g−1, re-
+spectively. The rate capability is 63% with the current density in-
+creased by 10 times from 0.2 A g−1. As shown in the cycle stability
+result (Figure 2d,e), the electrode was initially activated through
+cycled 1000 times at 4 A g−1 and kept in the electrolyte for 12 h.
+It exhibited a considerable capacity decay from 32.2 to 19.8 mAh
+g−1 in the initial 80 cycles during activation, and then the capac-
+ity gradually recovered to its original level. After the full activation
+(cycling plus dipping), the capacity increased to 37.3 mAh g−1 and
+retained ≈100% during the next 5000 cycles at 4 A g−1 (with the
+GCD curves shown in Figure S6, Supporting Information). By
+the way, the rate capability was tested starting at 0.2 A g−1 with-
+out any activation, and consequently, the capacity value at 4 A g−1
+in the rate capability is lower than that in the cycle life test. This
+discrepancy is attributed to both the increase of current densities
+and the capacity decay in the initial dozens of cycles.
+For now, there have been few manganese oxide materials re-
+ported for the ammonium-ion energy-storage devices, as sum-
+marized in Table S1 (Supporting Information).[11c,12a,13,14,17,20]
+The K-inserted 𝛿-MnO2 prepared by Krishnan et al.[11c] can oper-
+ate under 0–1 V versus SCE with a speciﬁc capacity of 175 F g−1
+at 1 A g−1, but it decays to 35 F g−1 at 5 A g−1 and only maintains
+89% after 1000 cycles. Lu et al.[14] designed MnO2-x by an oxygen
+defect strategy, which can operate in 0–0.8 V versus Ag/AgCl and
+shows a high speciﬁc capacity of 109.9 mAh g−1 at 0.5 A g−1, but
+it decreases to just 24 mAh g−1 after 1000 cycles. Song et al.[13]
+prepared the MnOx electrode and proposed an activation strat-
+egy to improve performance, which shows a speciﬁc capacitance
+of 176 mAh g−1 at 0.5 A g−1 under 0–0.8 V versus Ag/AgCl with
+a retention of 94.7% after 10 000 cycles. Herein, the CC/MnO2
+shows obvious superiorities of high voltage window and long cy-
+cle life, and admittedly, the speciﬁc capacity and rate performance
+still need to be improved.
+The observed trend of an initial decrease followed by ﬂuctu-
+ations was generally noted in our experiments, and many Mn-
+based materials reported elsewhere showed a similar tendency
+as well.[11b,13,17,21] Thus, it is necessary to investigate the under-
+lying reasons for this phenomenon via characterizing the struc-
+tural changes of CC/MnO2 during the ﬁrst several cycles and af-
+ter the activation. The illustration of voltage states is supplied
+in Figure 2f, mainly including the open circuit potential (OCP),
+half and fully charged in the 1st cycle (HC-1 and FC-1), fully dis-
+charged in the 1st cycle (FD), fully charged in the 2nd cycle (FC-
+2), fully charged and discharged after activation (Act-1.2 V and
+Act-0.4 V). The ex situ XPS curves at diﬀerent voltage states in
+diﬀerent cycling stages were recorded, with the O 1s and N 1s
+peaks shown in Figure 2h,i, as well as the Mn 3s, Mn 2p, and S
+2p peaks supplemented in Figure S7 (Supporting Information).
+The OCP only contains Mn and O elements, but once it is charged
+(HC-1 and FC-1), the N element appears, indicating that NH4
++
+will insert to MnO2 in the 1st charge process (see Figure 2g and
+Equation 2). Then, the N content continues to rise and almost
+keeps stable in FD, FC-2, Act-1.2 V, and Act-0.4 V, signifying that
+some NH4
++ would irreversibly insert to MnO2 during the ﬁrst
+several cycles until reach stable (see Equations 2 and 5). Although
+the insertion of cations during charging seems to contradict with
+electrostatic forces, the strong hydrogen bonding force can drive
+NH4
++ to insert to the near-surface of the electrode.[14] It should
+be noted that a part of previously inserted NH4
++ will extract from
+the electrode due to electrostatic repulsion during the 2nd charge
+process (from FD to FC-2), but the inserted NH4
++ driven by hy-
+drogen bonding force are still more than the extracted, thereby
+overall increasing the N content. Comparing Act-1.2 V with Act-
+0.4 V, we can see that the N content is higher in Act-0.4 V, demon-
+strating the insertion and extraction of NH4
++ in discharge and
+charge (Equation 12), respectively. There also exists the inser-
+tion/extraction of H+ (Equation 13), which is reported elsewhere
+as well.[22] The main reason is that the pH of 1 M (NH4)2SO4
+is ≈5.13, and H+ has a smaller ionic size than NH4
++. The high-
+resolution N 1s peak can be divided into two peaks (Figure 2h),
+belonging to N+-H and N─H, and their ratio is tightly related
+to the polarization of NH4
++ and the interaction between NH4
++
+and MnO2.[11b,23] The ratio of N+-H to N─H gradually increases
+in HC-1, FC-1, FD, and FC-2, demonstrating the inserted NH4
++
+in the ﬁrst several cycles have relatively strong interaction with
+MnO2. However, the ratio gets decreased in Act-1.2 and Act-0.4
+V, indicating irreversible structural changes of the electrode after
+activation.
+The O content almost continuously decays from OCP to Act-
+0.4 V (Figure 2g) because some interlayer/crystal H2O extract
+from MnO2 to become free H2O (Equation 3) and a part of MnO2
+was degraded (Equations 7–9).[17,24] From the high-resolution O
+1s peaks (Figure 2i), the contents of Mn─O─H and H2O in FC-2
+are obviously decreased than those in OCP, which are also at-
+tributed to the irreversible extraction of H2O/H+ and the disso-
+lution of MnO2. Some Mn─O-H may regenerate after activation
+(Act-1.2 V and Act-0.4 V) and hence the Mn─O─H intensity re-
+covers to some extent.
+The Mn content decreases in FC-1 and FD but re-increases in
+FC-2, and keeps stable in Act-1.2 V and Act-0.4 V (Figure 2g). This
+is because MnO2 will dissolve and redeposit during discharge
+and charge processes, respectively (Equations 7–11), which were
+also observed in other manganese oxide-based aqueous batteries
+or SCs.[22,25] Noticeably, HxMnO2 is not stable either, and hence
+is easy to produce dissolvable Mn2+ via the reaction with H+
+(Equations 8 and 9) and the disproportionation reaction (Equa-
+tion 10).[24] The MnO2 structures get more stable after activa-
+tion, thereby bringing about the almost unchanged Mn content
+in Act-1.2 V and Act-0.4 V. From the high-resolution Mn 3s peaks
+(Figure S7, Supporting Information), the AOS of Mn are calcu-
+lated to be 3.71, 3.75, 3.66, and 3.75 in OCP, FC-1, FD, and FC-
+2, respectively, conﬁrming that redox reactions occur in MnO2
+during charging and discharging. The AOS turn to be 3.69 and
+3.33 in Act-1.2 V and Act-0.4 V, respectively, which are lower than
+those in the initial cycles because of the irreversible insertion of
+some NH4
++ in MnO2 during activation. Besides, the AOS varia-
+tion between charged and discharged states is minor in the ﬁrst
+several cycles, whereas turns remarkably enhanced after activa-
+tion, manifesting the larger accessibility of electrolyte ions in
+electrodes and the irreversible structural changes of electrodes.
+The Mn 2p spectra are also supplied in Figure S7 (Supporting
+Information), corresponding with the Mn 3s spectra. Moreover,
+a small amount of S occurs after activation (Figure 2g), and the
+high-resolution S 2p curves can be diﬀerentiated into S 2p1/2
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (5 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 6 ===
+www.advancedsciencenews.com
+www.small-journal.com
+(169.3 eV) and S 2p3/2 (167.7–168.0 eV) peaks, in agreement with
+SO2−
+4
+group,[26] proving the generation of the SO2−
+4 -containing
+substances on electrode surface after activation.
+Accordingly, the possible electrochemical reactions in the early
+and later charge/discharge cycling stages are listed in Equa-
+tions 2–13. The reversible insertion/extraction of H+/NH4
++ is
+the main redox reaction for energy storage. Meanwhile, there
+are some side electrochemical reactions between Mn species and
+NH4
++/H+/OH−/H2O in the (NH4)2SO4 electrolyte, mainly in-
+cluding the irreversible insertion of NH4
++ as well as the disso-
+lution and redeposition of MnO2. The dissolution and redepo-
+sition of MnO2 will directly cause capacity decay and uprise, re-
+spectively. The irreversible NH4
++ have both positive and negative
+eﬀects. On one hand, the inserted NH4
++ can serve as the stabiliz-
+ing pillar, enhancing the structural integrity and expanding the
+interplanar spacing,[17] but on the other hand, they may decrease
+the number of active sites in the electrode and consume some
+NH4
++ from the electrolyte.[12a] Speciﬁcally, the originally loaded
+MnO2 are partially dissolved to the electrolyte in the initial cycles,
+but the dissolved Mn2+ will be electrooxidized and re-deposited
+onto the electrode in the following cycles. The re-deposited sub-
+stance may have some structural diﬀerences from the originally
+loaded MnO2 because the electrolyte solution, voltages, and cur-
+rents during re-deposition are diﬀerent from those in the orig-
+inal synthesis procedure, as well as the irreversible insertion of
+some NH4
++. The MnO2 is like destroyed, rebuilt, and modiﬁed
+under the impact of the three types of side reactions. Anyway,
+the three types of side electrochemical reactions coexist during
+charge-discharge cycling and compete with each other, resulting
+in the irreversible structural changes of MnO2 as well as the ca-
+pacity ﬂuctuations observed in activation (Figure 2d).
+Reactions in the ﬁrst several charge processes:
+HxMnO2 + xNH4
++ + 2H2O →(NH4)xMnO2
++ 4 e−+ (x + 4) H+ + O2
+(2)
+H2Ocrystal∕interlayer →H2Ofree
+(3)
+HxMnO2 →MnO2 + xe−+ xH+
+(4)
+Reactions in the ﬁrst several discharge processes:
+MnO2 + xNH4
++ + xe−→(NH4)xMnO2
+(5)
+MnO2 + xH+ + xe−→HxMnO2
+(6)
+Dissolution and redeposition of MnO2:
+MnO2 + H2O + e−→MnOOH + OH−
+(7)
+MnOOH + 3H+ + e−→Mn2+ + 2H2O
+(8)
+MnOOH + H+ + e−→Mn2+ + 2OH−
+(9)
+2MnOOH →Mn2+ + MnO2 + 2OH−
+(10)
+Mn2+ + 2 H2O →MnO2 + 4H+ + 2e−
+(11)
+Reactions in the later cycles:
+MnO2 + xNH4
++ + xe−↔(NH4)xMnO2
+(12)
+MnO2 + xH+ + xe−↔HxMnO2
+(13)
+Ex situ XRD tests are shown in Figure 2j, with the partially
+magniﬁed patterns on the right (the bottom shows standard
+peak lines). During cycling, the most obvious change is the
+main peak of 𝛽-MnO2 (≈29.4°) get remarkably reduced after dis-
+charged (FD and Act-0.4 V) but re-increased after charged (FC-2
+and Act-1.2 V). This is because the degree of crystallinity of 𝛽-
+MnO2 is reduced by the insertion of NH4
++/H+, which will re-
+cover after their extraction. The dissolution and redeposition of
+𝛽-MnO2 during discharging and charging may also contribute
+to the transition. Besides, as shown in the right two magniﬁed
+patterns, the peaks shift right in the 1st charge process (from
+OCP to FC-1), demonstrating the smaller spacing. The main
+reason is that a small amount of NH4
++ insert to the electrode,
+while some H+ and crystal/interlayered H2O are released, re-
+ducing the spacing overall. The peaks shift left in the 1st dis-
+charge process (from FC-1 to FD), indicating the expansion of
+interplanar spacing, which are mainly due to the insertion of
+NH4
++ and H+. In the 2nd charge process (from FD to FC-2), a
+small amount of NH4
++ still insert to the electrode, and simulta-
+neously considerable H2O/H+ extract from the electrode as evi-
+denced by the above XPS results, overall reducing the interpla-
+nar spacing. Besides, the rightmost magniﬁed peak moves to
+the smaller-angle area after activation (Act-1.2 V and Act-0.4 V),
+demonstrating the larger interplanar spacing, which helps in-
+crease the electrolyte accessibility. The peak shifts between Act-
+1.2 V and Act-0.4 V are hardly observed, unveiling the changes
+of interplanar spacings caused by ionic insertion/extraction get
+relieved after activation, which can improve structural stability
+during the later cycling. More importantly, there is a new peak
+occurs at ≈12.5° after activation, which is mainly assigned to 𝛿-
+MnO2 (PDF#80-1098, a common crystalline structure of cation-
+intercalated MnO2 materials,[13,21]) indicating the partial phase
+conversion from 𝛽-/𝛾-MnO2 to 𝛿-MnO2. We have tested the XRD
+patterns after 500 and 1000 cycles in the activation process (as
+shown in Figure S8, Supporting Information), and the new phase
+of 𝛿-MnO2 was only observed in the pattern cycled 1000 times,
+indicating the phase conversion is a relatively slow and gradual
+process. The phenomenon of irreversible phase conversion to 𝛿-
+MnO2 was also reported elsewhere.[11c,12a,13] It seems that no mat-
+ter what crystalline phases of the original MnO2, the long-term
+dipping or cycling in ammonium salt electrolyte tend to trans-
+form a part of MnO2 into the 𝛿-MnO2 phase, which may be at-
+tributed to the side reactions. Additionally, the primary peak at
+8.9° along with two secondary peaks at 12.2° and 13.5° can be ob-
+served. The above XPS analyses have conﬁrmed some SO4
+2−and
+Mn─O─H containing substances were produced after activation.
+Therefore, we suppose that these weak peaks probably belong to
+7Mn(OH)2·2MnSO4·H2O (MSH, PDF#18-0788), and the possi-
+ble formation reactions are as follows, including the above-listed
+(Equations 7–10), as well as another reaction (Equation 14).
+Mn2+ + OH−+ SO4
+2−+ H2O →MSH
+(14)
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (6 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 7 ===
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 3. Self-adjusting mechanism of CC/MnO2 in (NH4)2SO4 electrolytes and the strategy of adding trace Mn2+ into the electrolytes.
+Essentially, the partially produced OH−reacts with the sur-
+rounding Mn2+, and combine with SO4
+2−and H2O to form
+the MSH layer on electrode surface. Some Zinc-ion batteries
+and Zn//MnO2 batteries also reported the electrode surface
+layers composed of metal hydroxide, sulfate, and hydrate
+mixtures.[25b,27] Liu et al. also found the structural transforma-
+tion of MnAl-LDH and the formation of Mnx(OH)ySO4·5H2O
+layers on electrode surface after some cycles in (NH4)2SO4.[28]
+Both 𝛿-MnO2 and MSH have larger interplanar spacings com-
+pared with 𝛽-/𝛾-MnO2; MSH can buﬀer the pH changes at the
+electrode-electrolyte interface, thereby acting as a protective layer
+to relieve the dissolution of MnO2 and to stabilize electrode
+structures.[22,29]
+As shown in Figure 3, the discharge and charge processes
+are usually accompanied by the dissolution and redeposition of
+MnO2 and the irreversible insertion of some NH4
++. These side
+reactions compete with each other, making irreversible struc-
+tural changes of MnO2 after cycling, mainly including the partial
+phase conversion from 𝛽-/𝛾-MnO2 to 𝛿-MnO2 and the formation
+of MSH layers on the electrode surface. They both have larger
+interplanar spacings, and the MSH layers exhibit a protective ef-
+fect as well, so the ionic accessibility in electrodes is enhanced
+and the electrode structures become more stable in the later cy-
+cles. Besides, the dissolution and redeposition of MnO2 cause ca-
+pacity decay and uprise, respectively; the irreversible insertion of
+NH4
++ shows both positive and negative eﬀects. Consequently, the
+structural changes of MnO2, along with the competition among
+the three types of side reactions, result in capacity decay and
+rise during long cycling. In other words, these side electrochem-
+ical reactions can modify the MnO2 electrode structures and its
+electrochemical properties, which we deﬁne as the self-adjusting
+mechanism. Accordingly, side electrochemical reactions are not
+always detrimental; rather, they can enhance energy storage per-
+formance if properly utilized. Then, we introduce trace amounts
+of Mn2+ salts into the electrolyte to adjust the competitive bal-
+ance of these side reactions and facilitate the self-adjusting mech-
+anism to improve performance.
+2.3. Energy-Storage Performance and Self-Adjusting Mechanism
+with Additive
+Diﬀerent types of Mn2+ salts of 8 mM are added into the
+(NH4)2SO4 electrolyte, and their CV curves all show stronger
+redox peaks than the no-additive one (see Figure S9, Supporting
+Information). The GCD curves (Figure 4a) indicate that the
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (7 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 8 ===
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 4. Eﬀects of Electrolyte Additives on Energy Storage Performance and Electrolyte Characteristics. a) GCD curves in diﬀerent Mn2+ salts-added
+electrolytes. b–e) CV curves, GCD curves, speciﬁc capacities, and cycle stability in the Mn(NO3)2-added electrolyte. f–h) LSV curves, Nyquist plots (using
+two Pt foil electrodes), and Raman spectra for the no-additive and Mn(NO3)2-added electrolytes.
+Mn(NO3)2-added one has the largest discharge capacity, and
+the left ones, in descending order, are MnSO4, MnAC2, and
+no-additive, respectively. Therefore, common Mn2+ salts can
+eﬀectively improve the capacity, and the optimal Mn(NO3)2 was
+chosen for the following investigations. Diﬀerent concentrations
+of 4, 8, and 12 mm of Mn(NO3)2 were tried, and the current
+intensities got stronger with the increase of concentrations, as
+shown in Figure S10 (Supporting Information). Considering the
+CV curve in the electrolyte with 12 mM Mn(NO3)2 is almost the
+same to that with 8 mM Mn(NO3)2, we consequently utilized the
+concentration of 8 mm.
+CV curves of CC/MnO2 in the Mn(NO3)2-added electrolyte
+show apparent redox peaks (Figure 4b) at ≈1.0 and ≈0.89 V, ba-
+sically similar to those of the no-additive one. The Nyquist dia-
+grams (Figure S11, Supporting Information) of the Mn(NO3)2-
+added ones display similar shape characteristics to the no-
+additive ones, indicating the pseudocapacitive behavior as well.
+From GCD curves at diﬀerent current densities of 0.2≈10.0 A g−1
+(Figure 4c), the speciﬁc capacities are calculated to be 76.7 mAh
+g−1 (345.4 F g−1, or 1243.3 mF cm−2) at 0.2 A g−1 (0.72 mA cm−2),
+which decreases to 68.0 and 61.4 mAh g−1 with the current den-
+sity increased to 1 and 2 A g−1, respectively (Figure 4d). The ca-
+pacity retention is 80.1% when the current density expands ten-
+fold from 0.2 A g−1. The cycle stability is directly tested and is
+shown in Figure 4e. The speciﬁc capacity rises to 92.8 mAh g−1
+after 1370 cycles at 1 A g−1, and retains over 100% after the follow-
+ing 7440 cycles at 4 A g−1, 3030 cycles at 3 A g−1, and 220 cycles
+at 2 A g−1 (a total of over 12 000 cycles), showing excellent cycle
+stability. Consequently, the Mn(NO3)2 additive can enhance the
+speciﬁc capacity and rate capability without scarifying the origi-
+nal advantages in workable voltage windows and cycle stability.
+The enhancement mechanism of the Mn(NO3)2 additive is
+studied from the electrolyte and electrode facets. The liner sweep
+voltammetry (LSV, Figure 4f) shows that the oxygen evolution re-
+action (OER) of H2O in the Mn(NO3)2-added electrolyte starts at
+≈1.29 V, but the no-additive electrolyte has a smaller OER poten-
+tial of just 1.20 V. Thus, the Mn(NO3)2 additive can increase the
+high-voltage stability. The ionic conductivities are also calculated
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (8 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 9 ===
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 5. Inﬂuence of Mn(NO3)2 Electrolyte Additive on Electrodes. a) The ﬁrst 5 CV cycles of the original CC in the Mn(NO3)2-added electrolyte. b) Ex
+situ XRD patterns. c–f) Ex situ XPS results. g) Ex situ ATR-FTIR spectra. h,i) FESEM images of CC/MnO2 cycled 1000 times in both the no-additive and
+Mn(NO3)2-added electrolytes.
+via Equation S1 (Supporting Information) based on the Nyquist
+plots in Figure 4g, which are 0.35 and 0.4 S cm−1 without and
+with the Mn(NO3)2 additive, respectively. Thus, the Mn(NO3)2
+additive can increase the ionic conductivity, fastening the ionic
+transport in electrolyte solutions and promoting rate capabilities.
+Raman curves of the (NH4)2SO4 and (NH4)2SO4/Mn(NO3)2 elec-
+trolytes are shown in Figure 4h. The characteristic peak of NO3
+−
+is observed,[30] the O-S-O bending vibration peak near 980.1 cm−1
+becomes wider, and the S-O symmetric stretching vibration peak
+moves from 609.7 cm−1 to 613.8 cm−1[31] with the Mn(NO3)2 ad-
+ditive. It seems that the Mn(NO3)2 can aﬀect the SO4
+2−structure
+or its hydration structure, and consequently the ionic conductiv-
+ity and high-voltage stability can be improved.
+As for inﬂuences of the Mn(NO3)2 additive on the CC/MnO2
+electrode, the direct result is that the added Mn2+ will be elec-
+trooxidized to manganese-containing substances and deposited
+onto the electrode (Equation 11). For excluding the interference
+of the previously deposited MnO2, we tested the initial 5 CV cy-
+cles of the original CC in the (NH4)2SO4/Mn(NO3)2 electrolyte,
+as shown in Figure 5a. In the 1st cycle, the current intensity
+sharply increases from 0.87 V, indicating the added Mn2+ ad-
+ditive in electrolyte was electro-oxidized to some manganese-
+containing substances. The subsequent CV cycles almost keep
+unchanged and show strong redox peaks at around 0.97 and 0.82
+V, demonstrating the manganese-containing substances were de-
+posited on CC and provided capacity via redox reactions. The
+CV curves with/without MnO2 and with/without Mn(NO3)2 were
+directly compared in Figure S12 (Supporting Information), ver-
+ifying that the MnO2 electrode and Mn(NO3)2 additive both
+contribute to charge storage. For further eliminating the in-
+terference of (NH4)2SO4, the CV curves of original CC in the
+(NH4)2SO4/Mn(NO3)2 electrolyte, the 8 mM Mn(NO3)2 aque-
+ous solution, and the (NH4)2SO4 electrolyte were shown in
+Figure S12 (Supporting Information), of which the current in-
+tensities decrease successively, further proving the eﬀectiveness
+of the Mn(NO3)2 additive. All the Mn(NO3)2-added CV curves
+have signiﬁcant redox peaks mainly because the Mn2+ in so-
+lution can be electrooxidized into some manganese-containing
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (9 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 10 ===
+www.advancedsciencenews.com
+www.small-journal.com
+substances deposited on CC and provide capacity via redox
+reactions.
+The CC electrode after 5 CV cycles in the Mn(NO3)2-added
+electrolyte was charged to 1.2 V, named CC-Add-1.2 V, and we
+characterized its XRD pattern to ﬁnd out what the deposited sub-
+stances (Figure 5b). For comparison, the CC/MnO2 electrode cy-
+cled 1000 times at 4 A g−1 in the (NH4)2SO4/Mn(NO3)2 elec-
+trolyte was charged to 1.2 V and discharged to 0.4 V, named Add-
+1.2 V and Add-0.4 V, respectively. The XRD patterns of Act-1.2 V
+is also given for control. It is found that CC-Add-1.2 V, Add-1.2
+V, and Act-1.2 V have very similar diﬀraction peaks, attributed to
+𝛽-/𝛾-/𝛿-MnO2 and MSH. Among them, CC-Add-1.2 V and Add-
+1.2 V have obviously more intense peaks at 8.7° and 12.5° (cor-
+responding to MSH and 𝛿-MnO2) than other samples. These re-
+sults suggest that the Mn(NO3)2-added electrolyte can not only
+deposit the mixtures of 𝛽-/𝛾-/𝛿-MnO2 and MSH on the electrode,
+but also promote the phase conversion to 𝛿-MnO2 and the gener-
+ation of MSH layers on electrode surface. Comparing Add-1.2 V
+and Add-0.4 V, we can ﬁnd that the peak at 29.4° disappears dur-
+ing discharge and reappears during charge just like that in the
+no-additive electrolyte.
+The XPS results of Add-1.2 V and Add-0.4 V are shown
+in Figure 5c–f. Compared with the counterparts cycled in the
+(NH4)2SO4 electrolyte (Act-1.2 V and Act-0.4 V), Add-1.2 V and
+Add-0.4 V have more N, O, and S because they contain more
+inserted NH4
++ and MSH. The AOS calculated from Mn 3s are
+3.93 and 3.39, and the AOS variation is larger than that in
+the (NH4)2SO4 electrolyte, indicating larger ionic accessibility
+in electrodes. The high-resolution Mn 2p peaks are supplied in
+Figure S13 (Supporting Information). The high-resolution N 1s
+peak is composed of N+-H and N─H, and their ratio is signiﬁ-
+cantly higher than that in the (NH4)2SO4 electrolyte (Figure 2e),
+manifesting larger polarization of NH4
++ and stronger interac-
+tion between NH4
++ and MnO2. From the high-resolution O 1s
+peaks, much more Mn─O─H and H2O are observed in the
+(NH4)2SO4/Mn(NO3)2 electrolyte than those in the (NH4)2SO4
+electrolyte, demonstrating more MSH is formed on the electrode
+surface. Notably, Add-0.4 V has more H2O than Add-1.2 V be-
+cause of the considerable insertion of H3O+ during discharge.
+The high-resolution S 2p peaks (Figure S13, Supporting Infor-
+mation) are in agreement with the SO4
+2−group. Summarily, the
+Mn(NO3)2 additive can generate more NH4-inserted 𝛿-MnO2 and
+MSH through aﬀecting the competitive balance among various
+side electrochemical reactions (see Figure 3).
+The ex situ ATR-FTIR spectra of Add-1.2 V and Add-0.4 V
+were recorded, and compared with those of Act-1.2 V and Act-
+0.4 V, as shown in Figure 5g. In both electrolytes, the -OH
+bending/stretching vibration peaks (≈1620 cm−1) move to higher
+wavenumber, and the -OH and ─NH vibration peaks belong-
+ing to H2O and NH4
++ (2400–3600 cm−1) become stronger[32]
+after discharge, demonstrating the changes of hydrogen bond-
+ing force due to the insertion of H+/H3O+ and NH4
++. [33] The
+-OH bending vibration peak (1410 cm−1)[32] and the in-plane/out-
+of-plane bending vibration peak (1080 cm−1)[34] belonging to
+Mn─O─H are remarkably stronger in Add-1.2V. Furthermore,
+the irreversible structural changes are much more signiﬁcant in
+the (NH4)2SO4/Mn(NO3)2 electrolyte, suggesting the higher con-
+tent of 𝛿-MnO2 and MSH as well as the enhanced ionic accessi-
+bility in electrodes.
+The surﬁcial morphology of CC/MnO2 cycled 1000 times in
+both electrolytes are very diﬀerent, as shown in Figure 5h,i. The
+no-additive one shows ﬂat smooth ﬁlm and horizontally covered
+nanosheets. The Mn(NO3)2-added one shows the vertically in-
+terconnected network with remarkably more porous microstruc-
+ture, contributing to ionic transport and eﬀective areas. They fur-
+ther verify the remarkable inﬂuences of the Mn(NO3)2 additive
+on electrode structures. On one hand, the MSH layer covers the
+electrode surface, acting like a protective layer to stabilize elec-
+trode structures in long-term cycling; on the other hand, it con-
+sumes a part of active Mn sources of CC/MnO2 electrodes and
+increases ESR and RCT slightly (Figures S5 and S11, Supporting
+Information), leading to some capacity decay.
+Therefore,
+the
+main
+enhancement
+mechanism
+of
+the
+Mn(NO3)2 additive, depicted in Figure 3, is that the added
+Mn2+ will be electro-oxidized to the mixtures of 𝛽-/𝛾-/𝛿-MnO2
+and MSH on the electrode during cycling, directly providing
+extra capacity. The Mn(NO3)2 additive will signiﬁcantly inﬂuence
+the competitive balance among the side electrochemical reac-
+tions, facilitating the self-adjusting mechanism and generating
+more 𝛿-MnO2 and MSH structures on electrodes. Besides, the
+ionic conductivity and high-voltage stability are improved after
+the addition of Mn(NO3)2.
+2.4. Energy-Storage Performance of AIHSCs
+The CC/MnO2 electrode in the (NH4)2SO4/Mn(NO3)2 electrolyte
+shows high speciﬁc capacity, fast rate capability, high voltage win-
+dow, and long cycle life, which is an excellent candidate for cath-
+odes of AIHSCs. The activated carbon-coated CC (CC/AC) is used
+as the anode due to its high power density. They are assembled
+into the two-electrode cell, with the (NH4)2SO4/Mn(NO3)2 elec-
+trolyte solution of 20 mL, and tested by the electrochemical work-
+station. The GCD curves at 0.5–2.5 A g−1 (based on active sub-
+stances on both electrodes) are shown in Figure 6a, and the cal-
+culated speciﬁc capacities are summarized in Figure 6b, which
+are 60.2 mAh g−1 (108.4 F g−1), 53.8 mAh g−1 (96.8 F g−1) and
+26.4 mAh g−1 (47.5 F g−1) at 0.5, 1 and 5 A g−1, respectively.
+The energy-power densities are 60.2 Wh kg−1@500 W kg−1 and
+26.4 Wh kg−1@5000 W kg−1. From the areal perspective, the
+speciﬁc capacity is 858.5 mF cm−2 at 3.96 mA cm−2 and 376.3
+mF cm−2 at 39.6 mA cm−2, with the energy-power densities of
+477 μWh cm−[邮箱已脱敏] mW cm−2 and 209 μWh cm−[邮箱已脱敏] mW
+cm−2. The AIHSCs retain 56.9% and 50.0% after 5000 cycles
+at 2.5 A g−1 in the (NH4)2SO4/Mn(NO3)2 and (NH4)2SO4 elec-
+trolytes, respectively, as shown in Figure 6c, with the GCD curves
+of the 1st, 2nd, and 5000th cycles supplied in Figure S14 (Sup-
+porting Information). Compared with the previously reported
+counterparts (as shown in Table S2; Figure 6d).[11c,12a,17,20,28,35]
+the AIHSCs herein have considerable advantages in the opera-
+tional voltage window, speciﬁc capacity, and energy density. The
+Nyquist plots after cycling in the electrolytes with and without
+Mn(NO3)2 are analyzed according to the equivalent circuit ﬁtting
+method,[36] as shown in Figure 6e. The AIHSC containing the
+(NH4)2SO4/Mn(NO3)2 electrolyte has lower ESR and larger RCT,
+mainly because of the increased ionic conductivity of electrolyte
+solution and the more MSH layers on the electrode surface, re-
+spectively.
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (10 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 11 ===
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 6. Energy Storage Performance of the CC/MnO2//CC/AC AIHSCs. a,b) GCD curves and speciﬁc capacities measured in a two-electrode cell with
+the (NH4)2SO4/Mn(NO3)2 electrolyte. c) Cycle stability of the two-electrode-cell AIHSCs. d) Radar diagram for comparison with other related reports.
+e) Nyquist plots, with the Randles equivalent circuit given in the inset. f) Rate capability and g) Cycle stability of the button-type AIHSCs, with an inset
+showing two AIHSCs connected in series to illuminate an LED.
+The cycle stability of AIHSCs is much lower than that of the
+single CC/MnO2 electrode. Such a stability decay from a sin-
+gle electrode to the full AIHSC can also be found elsewhere
+(see Table S2, Supporting Information).[12a,17,28] For investigat-
+ing the reasons, we tested the CV curve of the AIHSC with the
+(NH4)2SO4/Mn(NO3)2 electrolyte at a slow rate of 0.2 mV s−1,
+which shows two pairs of redox reactions (Figure S15, Support-
+ing Information). The CV curves at higher scan rates (1≈5 mV
+s−1) are shown in Figure S16 (Supporting Information), which
+have a quasi-rectangle shape with much broader redox peaks. The
+Mn2+ dissolved from the CC/MnO2 electrode will produce the
+Mn-containing surﬁcial layer not only on the MnO2 cathode (the
+above-mentioned MSH layer) but also on the AC anode (the XPS
+results shown in Figures S17 and S18, Supporting Information),
+leading to the consumption of active Mn species, poor electrical
+conductivity, and serous capacity decay.
+The two-electrode measurement system uses abundant
+(NH4)2SO4/Mn(NO3)2 electrolyte solution, whereas the elec-
+trolyte usage is much less in the button-type cell. The size of the
+two types of cell devices is quite diﬀerent as well. Thus, we as-
+sembled the CR2016 button-type AIHSC for verifying whether
+the trace Mn2+ additive strategy is eﬀective in small-size de-
+vices or in the small amount of electrolyte solution. The capac-
+ities tested at diﬀerent current densities are shown in Figure 6f,
+along with the detailed GCD curves and Nyquist plots supplied in
+Figures S19 and S20 (Supporting Information). The sample us-
+ing the (NH4)2SO4/Mn(NO3)2 electrolyte shows higher capacities
+and much better rate capabilities than that using the (NH4)2SO4
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (11 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 12 ===
+www.advancedsciencenews.com
+www.small-journal.com
+electrolyte, verifying the additive strategy can eﬀectively increase
+capacities especially at high rates.
+In the cycle life test (as shown in Figure 6g), the button-type
+AIHSC with the Mn(NO3)2 additive has a speciﬁc capacity of 58.3
+mAh g−1 at 0.5 A g−1 (≈4 mA cm−2), retaining 39.2 mAh g−1
+(67%) after 6000 cycles. However, the no-additive one just shows
+32.6 mAh g−1 at the same current density with a retention of 48%
+after 6000 cycles. Even if the Mn(NO3)2 additive is included in the
+total mass of active materials in calculation (see Equations S6 and
+S7, Supporting Information), the capacity of the full cell can still
+reach 45.0 mAh g−1, which is higher than that without additive
+(32.6 mAh g−1). Therefore, the strategy of trace Mn(NO3)2 elec-
+trolyte additive can eﬀectively improve the speciﬁc capacity, rate
+capability, and cycle stability in comparison. It should be noted
+that the capacity diﬀerence at ≈0.5 A g−1 between the rate capa-
+bility and long cycle tests is caused by capacity decay in the initial
+few cycles, as elucidated above. Besides, some ﬂuctuations are
+observed mainly because when the volume of electrolyte solution
+and the size of cell devices are small, the products generated in
+the side reactions have relatively high concentrations, and they
+have no much space to diﬀuse, causing signiﬁcant inﬂuences on
+electrode structures and then capacity retentions. In other words,
+the impacts of side reactions get more signiﬁcant in the button-
+type AIHSC, thereby resulting in the obvious ﬂuctuation. Finally,
+two button-type AIHSCs connected in series were fully charged
+within 2 min, and lighted a LED over 5 h, as displayed in the
+inset of Figure 6g. Summarily, the AIHSCs perform well in en-
+ergy and power densities, and they will play a signiﬁcant role as
+high-performance, high-safety, and low-cost power supply in the
+ﬁelds of new energy transport, large energy storage systems, and
+bio-wearable electronics promisingly.
+3. Conclusion
+This work utilizes a simple electrodeposition method to prepare
+the 𝛽-/𝛾-MnO2 electrode and explores their applications in AIH-
+SCs. Besides the widely recognized dissolution of MnO2, the re-
+deposition of MnO2 and the irreversible insertion of NH4
++ oc-
+cur simultaneously during cycling, resulting in irreversible struc-
+tural changes of MnO2 after cycling. A portion of 𝛽-/𝛾-MnO2
+converts to 𝛿-MnO2, and a layer of 7Mn(OH)2·2MnSO4·H2O
+forms on the electrode surface, modifying the ionic accessibility
+and structural stability of the electrode. The structural changes,
+along with the competition among the three types of reactions,
+contribute to capacity decay and uprise during cycling. We ac-
+cordingly propose the self-adjusting mechanism and facilitate it
+through adding a trace amount of Mn2+ salts into the electrolyte
+to improve electrochemical performance. The Mn2+ additive in
+electrolytes can deposit extra active substances (𝛽-/𝛾-/𝛿-MnO2
+and MSH mixtures) containing more 𝛿-MnO2/MSH on the elec-
+trode, supplementing capacity and enhancing cycle stability. Con-
+sequently, the assembled MnO2//AC AIHSC shows 60.2 mAh
+g−1 at 0.5 A g−1 (3.96 mA cm−2) under 0–2 V, with the maximum
+energy and power densities of 60.2 Wh kg−1 and 5000 W kg−1, re-
+spectively. This work reveals the side electrochemical reactions of
+MnO2 in the aqueous (NH4)2SO4 electrolyte, as well as their in-
+ﬂuences on electrode structures and electrochemical properties.
+Further investigations on side electrochemical reactions are nec-
+essary to design high-performance and long-cycle AIHSCs in the
+future.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+This work was supported by the “Pioneer” and “Leading Goose” R&D Pro-
+gram of Zhejiang Province (Nos. 2024C01155 and 2024C01056), and the
+Central Guidance on Local Science and Technology Development Fund of
+Hebei Province (No. 226Z1107G).
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Author Contributions
+Z.Z. performed conceptualization, data curation, formal analysis, investi-
+gation, methodology, and wrote the original draft. Y.G., D.C., X.W., and L.D.
+performed the formal analysis. Y.H., Q.Z., and Z.Y. performed resources.
+J.L. and L.Z. performed funding acquisition, resources, supervision, wrote,
+reviewed, and edited.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the cor-
+responding author upon reasonable request.
+Keywords
+aqueous ammonium-ion hybrid supercapacitors, manganese dioxide
+cathode, Mn2+ electrolyte additive, self-adjusting mechanism, side
+electrochemical reactions
+Received: October 25, 2024
+Revised: November 30, 2024
+Published online:
+[1] a) Z. Zhao, K. Xia, Y. Hou, Q. Zhang, Z. Ye, J. Lu, Chem. Soc. Rev. 2021,
+50, 12702; b) R. Mohanty, K. Parida, K. Parida, Nanoscale Adv. 2023,
+5, 4521.
+[2] a) L. Zhang, X. Li, M. Yang, W. Chen, Energy Stor. Mater. 2021, 41,
+522; b) P. Simon, Y. Gogotsi, B. Dunn, Science. 2014, 343, 1210.
+[3] a) D. Chen, Y. Xu, J. Lu, Y. Tian, T. Li, P. Jia, X. Wang, L. Zhang, Y. Hou,
+L. Wang, Q. Zhang, Z. Ye, J. Lu, Adv. Mater. 2024, 36, 2404640; b) Z.
+Zhao, Y. Wu, R. Hu, J. Lu, D. Chen, T. Li, Y. Guo, L. Zhang, H. Chen, Z.
+Ye, C. Zhang, Adv. Funct. Mater. 2023, 33, 2307794; c) Z. Yang, Y. Lu,
+Z. Wang, H. Dong, J. Lin, Y. Wang, M. Qiu, Z. Ye, J. Lu, Energy Mater.
+2023, 3, 300027.
+[4] a) W. Yang, Y. Yang, H. Yang, H. Zhou, ACS Energy Lett. 2022, 7, 2515;
+b) Y. Zhu, J. Yin, X. Zheng, A.-H. Emwas, Y. Lei, O. F. Mohammed, Y.
+Cui, H. N. Alshareef, Energy Environ. Sci. 2021, 14, 4463.
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (12 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 13 ===
+www.advancedsciencenews.com
+www.small-journal.com
+[5] a) C. Yang, Q. Pan, Q. Jia, W. Qi, H. Wei, S. Yang, N. Hu, B. Cao,
+Chem. Eng. J. 2021, 408, 127302; b) L. Zhang, Y. Zhang, S. Huang,
+Y. Yuan, H. Li, Z. Jin, J. Wu, Q. Liao, L. Hu, J. Lu, S. Ruan, Y.-J. Zeng,
+Electrochim. Acta. 2018, 281, 189; c) L. Meng, Y. Wu, T. Zhang, H.
+Tang, Y. Tian, Y. Yuan, Q. Zhang, Y. Zeng, J. Lu, J. Mater. Sci. 2019,
+54, 571.
+[6] a) Y. Yuan, Y. Lu, B.-E. Jia, H. Tang, L. Chen, Y.-J. Zeng, Y. Hou, Q.
+Zhang, Q. He, L. Jiao, J. Leng, Z. Ye, J. Lu, Nano-Micro Lett. 2019,
+11, 42; b) Y. Yuan, Y. Wu, T. Zhang, H. Tang, L. Meng, Y.-J. Zeng, Q.
+Zhang, Z. Ye, J. Lu, J. Power Sources. 2018, 404, 118.
+[7] C. Zhong, Y. Deng, W. Hu, J. Qiao, L. Zhang, J. Zhang, Chem. Soc. Rev.
+2015, 44, 7484.
+[8] R. Zheng, Y. Li, H. Yu, X. Zhang, D. Yang, L. Yan, Y. Li, J. Shu, B. L. Su,
+Angew. Chem., Int. Ed. 2023, 62, 202301629.
+[9] a) Y. Pan, L. Yuan, L. Liu, W. Fang, Y. Hou, L. Fu, Y. Wu, Small Struct.
+2023, 4, 2300201; b) R. Mohanty, U. A. Mohanty, K. Parida, Energy
+Fuels. 2024, 38, 13585.
+[10] M. R. Lukatskaya, O. Mashtalir, C. E. Ren, Y. Dall’Agnese, P. Rozier, P.
+L. Taberna, M. Naguib, P. Simon, M. W. Barsoum, Y. Gogotsi, Science.
+2013, 341, 1502.
+[11] a) J. Han, A. Varzi, S. Passerini, Angew. Chem., Int. Ed. 2022, 61,
+202115046; b) D. Yang, Y. Song, M. Y. Zhang, Z. Qin, J. Liu, X. X. Liu,
+Angew. Chem., Int. Ed. 2022, 61, 202207711; c) G. K. Syam, P. Hong
+Duc, P. Chinmayee, W. Helapiyumi, W. Xijue, M. Kiran, D. Deepak,
+J. Power Sources. 2023, 570, 232994; d) Y. Liu, K. Xiang, W. Zhou, W.
+Deng, H. Zhu, H. Chen, Small. 2023, 20, 2308741.
+[12] a) Y. Li, Z. Wei, H. Joseph, R. Johanna, S. ZhengMing, W. B. Michel,
+Batteries Supercaps. 2022, 6, 202200432; b) Y. Wang, S. F. Kuchena,
+ACS Omega. 2022, 7, 33732.
+[13] Y. Song, Q. Pan, H. Lv, D. Yang, Z. Qin, M. Y. Zhang, X. Sun, X. X. Liu,
+Angew. Chem., Int. Ed. 2021, 60, 5718.
+[14] T.-H. Lu, C. Zeng, H. Zhang, X. Shi, Y. Yu, X. Lu, Small. 2023, 19,
+2206727.
+[15] R. Zhang, S. Wang, S. Chou, H. Jin, Adv. Funct. Mater. 2022, 32,
+202112179.
+[16] J. Yang, S. Ren, B. Su, Y. zhou, G. Hu, L. Jiang, J. Cao, W. Liu, L. Yao,
+M. Kong, J. Yang, Q. Liu, Catal. Lett. 2021, 151, 2964.
+[17] Q. Chen, J. Jin, M. Song, X. Zhang, H. Li, J. Zhang, G. Hou, Y. Tang,
+L. Mai, L. Zhou, Adv. Mater. 2022, 34, 2107992.
+[18] M. R. Lukatskaya, B. Dunn, Y. Gogotsi, Nat. Commun. 2016, 7,
+12647.
+[19] a) Y. Zhang, Y. Liu, Z. Sun, Y. Bai, S. Cheng, P. Cui, J. Zhang, Q. Su,
+J. Fu, E. Xie, Electrochim. Acta. 2021, 375, 137979; b) A. U. Rahman,
+N. Zarshad, W. Jianghua, M. Shah, S. Ullah, G. Li, M. Tariq, A. Ali,
+Nanomaterials. 2022, 12, 2856.
+[20] a) Q. Liu, D. Zhang, Y. Yang, Y. Gu, Z. Liang, W. Chen, Y. Wu, L. Hu,
+Adv. Energy Mater. 2024, https://doi.org/10.1002/aenm.202402863;
+b) X.-L. Han, J. Zhang, Z.-S. Wang, H. A. Younus, D.-W. Wang, Rare
+Met. 2024, 43, 5734.
+[21] H. Yao, H. Yu, Y. Zheng, N. W. Li, S. Li, D. Luan, X. W. Lou, L. Yu,
+Angew. Chem., Int. Ed. 2023, 62, 202315257.
+[22] H. Yang, T. Zhang, D. Chen, Y. Tan, W. Zhou, L. Li, W. Li, G. Li, W. Han,
+H. J. Fan, D. Chao, Adv. Mater. 2023, 35, 2300053.
+[23] H. Li, J. Yang, J. Cheng, T. He, B. Wang, Nano Energy. 2020, 68, 104369.
+[24] K. Wickramaarachchi, M. Minakshi, J. Energy Storage. 2022, 56,
+106099.
+[25] a) J. Ji, H. Wan, B. Zhang, C. Wang, Y. Gan, Q. Tan, N. Wang, J. Yao,
+Z. Zheng, P. Liang, J. Zhang, H. Wang, L. Tao, Y. Wang, D. Chao, H.
+Wang, Adv. Energy Mater. 2020, 11, 2003203; b) T.-H. Wu, Y.-Q. Lin,
+Z. D. Althouse, N. Liu, ACS Appl. Energ. Mater. 2021, 4, 12267.
+[26] X.-Q. Ma, Y.-Q. Shan, M.-Y. Wang, Z. A. Alothman, Z.-X. Xu, P.-G.
+Duan, J. Zhou, R. Luque, ACS Sustain. Chem. Eng. 2020, 8, 18810.
+[27] a) I. Stoševski, A. Bonakdarpour, B. Fang, P. Lo, D. P. Wilkinson, Elec-
+trochim. Acta. 2021, 390, 138852; b) Z. Li, Y. Li, X. Ren, Y. Zhao, Z.
+Ren, Z. Yao, W. Zhang, H. Xu, Z. Wang, N. Zhang, Y. Gu, X. Li, D.
+Zhu, J. Zou, Small. 2023, 19, 202301770.
+[28] Q. Liu, F. Ye, K. Guan, Y. Yang, H. Dong, Y. Wu, Z. Tang, L. Hu, Adv.
+Energy Mater. 2023, 13, 2202908.
+[29] a) S. Cui, D. Zhang, Y. Gan, J. Power Sources. 2023, 579, 233293; b)
+Q. Duan, Y. Wang, S. Dong, D. Y. W. Yu, J. Power Sources. 2022, 528,
+231194.
+[30] R. A. Soares, R. J. C. Lima, P. F. Façanha Filho, P. T. C. Freire, J. A.
+Lima, J. G. da, S. Filho, Phys. B Condens. Mater. 2017, 521, 317.
+[31] A. V. Sergeeva, E. S. Zhitova, A. A. Nuzhdaev, A. A. Zolotarev, V. N.
+Bocharov, R. M. Ismagilova, Minerals. 2020, 10, 781.
+[32] A. K. Worku, D. W. Ayele, N. G. Habtu, M. A. Teshager, Z. G. Workineh,
+J. Phys. Chem. Solids. 2021, 157, 110207.
+[33] X. Zhang, H. Wei, B. Ren, J. Jiang, G. Qu, J. Yang, G. Chen, H. Li, C.
+Zhi, Z. Liu, Adv. Mater. 2023, 35, 2304209.
+[34] K. Thomas, A. Thomas, J. Solid State Chem. 1997, 133, 486.
+[35] a) Q. Wang, Y. Ma, X. Liang, D. Zhang, M. Miao, Chem. Eng. J. 2019,
+371, 145; b) Y. Chen, C. Zhou, G. Liu, C. Kang, L. Ma, Q. Liu, J. Mater.
+Chem. A. 2021, 9, 2872.
+[36] a) R. Mohanty, K. Parida, Electrochim. Acta. 2024, 491, 144327; b) R.
+Mohanty, G. Swain, K. Parida, K. Parida, J. Alloys Compd. 2022, 919,
+165753.
+Small 2025, 2410005
+© 2025 Wiley-VCH GmbH
+2410005 (13 of 13)
+ 16136829, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202410005 by Central South University Of, Wiley Online Library on [09/01/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+

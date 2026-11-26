@@ -1,0 +1,8 @@
+GSAP (GreenSock Animation Platform) 3.15.0
+文件：gsap.min.js（取自 https://cdn.jsdelivr.net/npm/[邮箱已脱敏]/dist/gsap.min.js）
+
+授权：Standard "no charge" license —— https://gsap.com/standard-license
+注意：这不是 MIT。GSAP 允许在绝大多数场景下免费使用（含商用），
+但存在若干限制与例外条款。使用前请阅读上述官方许可原文。
+
+npm 包中并未附带独立 LICENSE 文件，故此处以说明代替。

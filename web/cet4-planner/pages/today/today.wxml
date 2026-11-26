@@ -1,0 +1,156 @@
+<view class="page {{_enter}}">
+  <!-- 骨架加载：尺寸与真实内容一致，避免跳动 -->
+  <block wx:if="{{loading}}">
+    <view class="card hero">
+      <view class="row" style="justify-content: space-between;">
+        <view style="flex:1;">
+          <view class="ix-skel" style="width:200rpx;height:34rpx;"></view>
+          <view class="ix-skel" style="width:160rpx;height:90rpx;margin-top:16rpx;"></view>
+          <view class="ix-skel" style="width:240rpx;height:24rpx;margin-top:16rpx;"></view>
+        </view>
+        <view class="ix-skel" style="width:150rpx;height:150rpx;border-radius:50%;"></view>
+      </view>
+    </view>
+    <view class="card" wx:for="{{[1,2,3]}}" wx:key="*this">
+      <view class="ix-skel" style="width:90%;height:30rpx;"></view>
+      <view class="ix-skel" style="width:60%;height:22rpx;margin-top:16rpx;"></view>
+    </view>
+  </block>
+
+  <block wx:else>
+    <!-- 倒计时 + 进度环 -->
+    <view class="card hero">
+      <view class="hero-top">
+        <view class="hero-left">
+          <view class="title h1">距四级笔试</view>
+          <view class="count grad-num ix-roll">{{countNum}}{{countUnit}}</view>
+          <view class="muted small">{{examDate}} 09:00–11:20</view>
+          <view class="muted small">目标 {{targetScore}} 分</view>
+        </view>
+        <view class="ring {{ringBump ? 'bump' : ''}}">
+          <svg class="ring-svg" viewBox="0 0 120 120">
+            <defs>
+              <linearGradient id="rg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5B8DEF" />
+                <stop offset="100%" stop-color="#36CFC9" />
+              </linearGradient>
+            </defs>
+            <circle class="ring-bg" cx="60" cy="60" r="52" />
+            <circle class="ring-fg" cx="60" cy="60" r="52" stroke="url(#rg)"
+              style="stroke-dasharray:{{ringC}};stroke-dashoffset:{{ringOffset}};" />
+          </svg>
+          <view class="ring-hole">
+            <view class="title pct ix-roll">{{doneCount}}/{{totalCount}}</view>
+            <view class="muted xsmall">今日完成</view>
+          </view>
+        </view>
+      </view>
+      <view class="stage-row">
+        <view class="stage-tag">{{stageName}}<text wx:if="{{weekNo}}"> · 第{{weekNo}}周</text></view>
+        <view class="muted small milestone" wx:if="{{milestone}}">{{milestone}}</view>
+      </view>
+    </view>
+
+    <!-- 未生成规划 -->
+    <view wx:if="{{!hasPlan}}" class="card empty">
+      <view class="title h2">还没有生成规划</view>
+      <view class="muted small gap-text">先花一分钟填写考试信息，我来生成三段式日程骨架。不含任何题目/词库，内容你自己绑材料。</view>
+      <view class="ix-ripple-host ix-spring btn-wrap" id="btn-go" bindtouchstart="onRippleGo">
+        <button class="btn-primary" bindtap="goWizard">去生成规划</button>
+        <view wx:for="{{ripplesGo}}" wx:key="id" class="ix-ripple {{item.kind}}" style="left:{{item.left}}rpx;top:{{item.top}}rpx;width:{{item.size}}rpx;height:{{item.size}}rpx;"></view>
+      </view>
+    </view>
+
+    <!-- 今日任务 -->
+    <block wx:else>
+      <!-- 今日卡片：翻面（点一下翻到背面看细节） -->
+      <view class="card ix-flip {{flipFlipped ? 'flipped' : ''}}" bindtap="onFlip">
+        <view class="ix-flip-inner">
+          <view class="face">
+            <view class="tip-tag">今日卡片</view>
+            <view class="title tip-title">{{tipFront}}</view>
+            <view class="muted xsmall" style="margin-top:10rpx;">轻触翻面看执行要点 ↻</view>
+          </view>
+          <view class="back" style="background:#F2F6FC;">
+            <view class="tip-tag">执行要点</view>
+            <view class="tip-body">{{tipBack}}</view>
+          </view>
+        </view>
+      </view>
+
+      <view class="section-title row">
+        <view class="title">今日任务 · {{todayCN}}</view>
+        <view class="gap"></view>
+        <view class="add-link ix-ripple-host ix-tap" id="btn-add" bindtap="openCreate" bindtouchstart="onRippleAdd">
+          + 自定义任务
+          <view wx:for="{{ripplesAdd}}" wx:key="id" class="ix-ripple {{item.kind}}" style="left:{{item.left}}rpx;top:{{item.top}}rpx;width:{{item.size}}rpx;height:{{item.size}}rpx;"></view>
+        </view>
+      </view>
+
+      <view wx:if="{{tasks.length === 0}}" class="card empty">
+        <view class="muted">{{startHint || '今天没有排任务（可能是休息/保温安排）'}}</view>
+      </view>
+
+      <view class="card task type-{{item.type}} {{item.status === 1 ? 'task-done' : ''}}" wx:for="{{tasks}}" wx:key="id">
+        <view class="task-row">
+          <view class="ix-check {{item.status === 1 ? 'done' : ''}}" bindtap="onToggle" data-id="{{item.id}}">
+            <view class="a"></view><view class="b"></view>
+          </view>
+          <view class="task-main" bindtap="openEdit" data-id="{{item.id}}">
+            <view class="task-title {{item.status === 1 ? 'strike' : ''}}">
+              <text>{{item.title}}</text>
+              <text wx:if="{{item.badge}}" class="badge">{{item.badge}}</text>
+            </view>
+            <view class="task-meta">
+              <text class="chip chip-type">{{item.typeName}}</text>
+              <text wx:if="{{item.qtypeText}}" class="chip">{{item.qtypeText}}</text>
+              <text wx:if="{{item.splitText}}" class="chip chip-split">{{item.splitText}}</text>
+              <text wx:if="{{item.slot}}" class="chip chip-slot">{{item.slot}}</text>
+              <text class="chip chip-min">约{{item.estMinutes}}分钟</text>
+            </view>
+            <view wx:if="{{item.srcText}}" class="task-src">{{item.srcText}}</view>
+          </view>
+          <view class="task-act ix-tap" catchtap="onPostpone" data-id="{{item.id}}">顺延</view>
+        </view>
+      </view>
+    </block>
+  </block>
+
+  <!-- 底部抽屉：自定义任务（新建/编辑/删除） -->
+  <view class="ix-drawer-mask {{drawerShow ? 'show' : ''}}" bindtap="closeDrawer"></view>
+  <view class="ix-drawer {{drawerShow ? 'show' : ''}}">
+    <view class="drawer-handle"></view>
+    <view class="title h2">{{editId ? '编辑任务' : '自定义任务'}}</view>
+    <view class="form-row">
+      <view class="form-label">标题</view>
+      <input class="form-input" value="{{form.title}}" bindinput="onTitleInput" placeholder="如：加练一套听力真题" />
+    </view>
+    <view class="form-row">
+      <view class="form-label">类型</view>
+      <picker range="{{typeOptions}}" value="{{typeIndex}}" bindchange="onTypeChange">
+        <view class="form-picker">{{typeOptions[typeIndex]}}</view>
+      </picker>
+    </view>
+    <view class="form-row">
+      <view class="form-label">预计分钟</view>
+      <input class="form-input" type="number" value="{{form.minutes}}" bindinput="onMinutesInput" />
+    </view>
+    <view class="form-row">
+      <view class="form-label">内容引用</view>
+      <input class="form-input" value="{{form.contentRef}}" bindinput="onRefInput" placeholder="可选：如 刘晓燕48课 U1L1 / 真题2026-06" />
+    </view>
+    <view class="ix-ripple-host ix-spring btn-wrap" id="btn-save" bindtouchstart="onRippleSave">
+      <button class="btn-primary" bindtap="onSaveTask">保存</button>
+      <view wx:for="{{ripplesSave}}" wx:key="id" class="ix-ripple {{item.kind}}" style="left:{{item.left}}rpx;top:{{item.top}}rpx;width:{{item.size}}rpx;height:{{item.size}}rpx;"></view>
+    </view>
+    <view wx:if="{{editId}}" class="btn-wrap">
+      <button class="btn-danger ix-spring" bindtap="onDeleteTask">删除该任务</button>
+    </view>
+    <view class="btn-wrap">
+      <button class="btn-ghost ix-spring" bindtap="closeDrawer">取消</button>
+    </view>
+  </view>
+
+  <!-- 完成进度提示横幅（任务打勾后浮现，1.6s 自动收起） -->
+  <view class="ix-banner {{bannerShow ? 'show' : ''}}">{{bannerText}}</view>
+</view>

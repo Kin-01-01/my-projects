@@ -1,0 +1,194 @@
+/* ============================================================
+   12 项高级交互样式库（浅色系协调）
+   核心准则：高级交互不靠堆特效，给每一次操作恰到好处的反馈
+   ============================================================ */
+
+/* 1. 按压回弹：按下过冲收缩，松开以弹簧曲线回弹（先压过位置再回弹） */
+.ix-spring {
+  transition: transform .42s cubic-bezier(.34, 1.56, .64, 1);
+  transform: scale(1);
+}
+.ix-spring:active {
+  transform: scale(.94);
+  transition: transform .08s ease;
+}
+
+/* 2. 水波按钮：以点击点为原点扩散，由 overflow:hidden 匹配按钮外形裁切 */
+.ix-ripple-host { position: relative; overflow: hidden; }
+.ix-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .55);
+  transform: scale(0);
+  opacity: .6;
+  pointer-events: none;
+  animation: ix-ripple .6s ease-out forwards;
+}
+.ix-ripple.ix-burst {
+  background: transparent;
+  border: 3rpx solid rgba(59, 110, 246, .45);
+  opacity: .75;
+}
+@keyframes ix-ripple {
+  to { transform: scale(2.6); opacity: 0; }
+}
+@keyframes ix-burst {
+  to { transform: scale(3); opacity: 0; }
+}
+
+/* 4. 弹性开关：滑块起步拉长、落位复位，模拟物理质量感 */
+.ix-switch {
+  position: relative;
+  width: 96rpx; height: 54rpx;
+  border-radius: 999rpx;
+  background: #D8DFEC;
+  transition: background .35s ease;
+  flex-shrink: 0;
+}
+.ix-switch.on { background: linear-gradient(135deg, #5B8DEF, #36CFC9); }
+.ix-switch .knob {
+  position: absolute; top: 5rpx; left: 5rpx;
+  width: 44rpx; height: 44rpx; border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 6rpx rgba(28, 46, 90, .22);
+  transition: transform .46s cubic-bezier(.34, 1.56, .64, 1);
+}
+.ix-switch.on .knob { transform: translateX(42rpx); }
+/* 起步拉长：按下时 knob 先略放大，释放复位 */
+.ix-switch:active .knob { transform: scale(1.08); }
+.ix-switch.on:active .knob { transform: translateX(42rpx) scale(1.08); }
+
+/* 5. 液态滑块：轨道/旋钮/数值动画参数完全同步 */
+.ix-slider { position: relative; height: 60rpx; margin: 8rpx 0; }
+.ix-slider .track {
+  position: absolute; top: 26rpx; left: 0; right: 0;
+  height: 8rpx; border-radius: 999rpx; background: #E2E8F2;
+}
+.ix-slider .fill {
+  position: absolute; top: 26rpx; left: 0;
+  height: 8rpx; border-radius: 999rpx;
+  background: linear-gradient(90deg, #5B8DEF, #36CFC9);
+  transition: width .26s cubic-bezier(.4, 0, .2, 1);
+}
+.ix-slider .knob {
+  position: absolute; top: 14rpx;
+  width: 32rpx; height: 32rpx; border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0 3rpx 10rpx rgba(28, 46, 90, .28);
+  transition: left .26s cubic-bezier(.4, 0, .2, 1), transform .18s ease;
+}
+.ix-slider .knob:active { transform: scale(1.18); }
+.ix-slider .sval {
+  position: absolute; top: -2rpx; right: 0;
+  font-size: 26rpx; font-weight: 600; color: #3B6EF6;
+  transition: transform .26s cubic-bezier(.4, 0, .2, 1);
+}
+
+/* 6. 成功勾选：逐笔绘制（先短横后长横），体现完成的过程感 */
+.ix-check {
+  width: 46rpx; height: 46rpx; border-radius: 50%;
+  border: 2rpx solid #C3CCDD; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  position: relative; margin: 4rpx 20rpx 0 0;
+  transition: background .25s ease, border-color .25s ease;
+}
+.ix-check .a, .ix-check .b {
+  position: absolute; background: #FFFFFF; border-radius: 2rpx;
+  height: 4rpx; transform-origin: left center;
+}
+.ix-check .a { width: 12rpx; left: 12rpx; top: 24rpx; transform: rotate(45deg) scaleX(0); }
+.ix-check .b { width: 22rpx; left: 18rpx; top: 22rpx; transform: rotate(-45deg) scaleX(0); }
+.ix-check.done {
+  background: linear-gradient(135deg, #22B07D, #1FBF9C);
+  border-color: transparent;
+}
+.ix-check.done .a { animation: ix-draw-a .25s .04s forwards; }
+.ix-check.done .b { animation: ix-draw-b .26s .3s forwards; }
+@keyframes ix-draw-a { to { transform: rotate(45deg) scaleX(1); } }
+@keyframes ix-draw-b { to { transform: rotate(-45deg) scaleX(1); } }
+
+/* 7. 数字滚动：缓慢减速平稳停稳，禁止中途急停（动画在 JS 用 easeOutCubic 驱动） */
+.ix-roll { font-variant-numeric: tabular-nums; }
+
+/* 8. 骨架加载：骨架尺寸与真实内容完全一致，避免跳动 */
+.ix-skel {
+  background: linear-gradient(90deg, #E6EBF3 25%, #F5F8FD 37%, #E6EBF3 63%);
+  background-size: 400% 100%;
+  animation: ix-shimmer 1.4s ease infinite;
+  border-radius: 16rpx;
+}
+@keyframes ix-shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* 9. 卡片翻面：开启背面隐藏，翻转过程不穿帮（preserve-3d） */
+.ix-flip { perspective: 1200rpx; }
+.ix-flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .6s cubic-bezier(.4, 0, .2, 1);
+}
+.ix-flip.flipped .ix-flip-inner { transform: rotateY(180deg); }
+.ix-flip .face, .ix-flip .back {
+  border-radius: 28rpx;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.ix-flip .back {
+  position: absolute; top: 0; left: 0; right: 0;
+  transform: rotateY(180deg);
+}
+
+/* 10. 卡片堆叠：抽走上层露出下层，层级关系明确 */
+.ix-stack { position: relative; }
+.ix-stack .scard {
+  position: relative;
+  transition: transform .42s cubic-bezier(.4, 0, .2, 1), opacity .42s ease;
+}
+.ix-stack .scard.behind { transform: translateY(10rpx) scale(.97); opacity: .82; box-shadow: 0 2rpx 8rpx rgba(28, 46, 90, .04); }
+.ix-stack .scard.behind2 { transform: translateY(20rpx) scale(.94); opacity: .64; }
+
+/* 11. 底部抽屉：关键帧加停顿，方便识别状态 */
+.ix-drawer-mask {
+  position: fixed; left: 0; top: 0; right: 0; bottom: 0;
+  background: rgba(20, 28, 48, .32);
+  opacity: 0; visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease;
+  z-index: 99;
+}
+.ix-drawer-mask.show { opacity: 1; visibility: visible; }
+.ix-drawer {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  background: #FFFFFF;
+  border-radius: 32rpx 32rpx 0 0;
+  padding: 36rpx 32rpx 48rpx;
+  box-sizing: border-box; margin: 0;
+  transform: translateY(100%);
+  z-index: 100;
+  box-shadow: 0 -8rpx 30rpx rgba(28, 46, 90, .10);
+}
+.ix-drawer.show { animation: ix-drawer-up .5s cubic-bezier(.22, 1, .36, 1) forwards; }
+@keyframes ix-drawer-up {
+  0% { transform: translateY(100%); }
+  68% { transform: translateY(-2%); }   /* 抬起略过冲，形成停顿 */
+  80% { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+/* 12. 汉堡转叉：同一元件连贯形变，保持视觉连续性 */
+.ix-burger { width: 46rpx; height: 34rpx; position: relative; }
+.ix-burger span {
+  position: absolute; left: 0; right: 0; height: 3rpx;
+  background: #2C3858; border-radius: 2rpx;
+  transition: transform .35s cubic-bezier(.4, 0, .2, 1), opacity .25s ease;
+}
+.ix-burger span:nth-child(1) { top: 0; }
+.ix-burger span:nth-child(2) { top: 15rpx; }
+.ix-burger span:nth-child(3) { top: 30rpx; }
+.ix-burger.open span:nth-child(1) { transform: translateY(15rpx) rotate(45deg); }
+.ix-burger.open span:nth-child(2) { opacity: 0; }
+.ix-burger.open span:nth-child(3) { transform: translateY(-15rpx) rotate(-45deg); }
+
+/* 通用：按压态轻微反馈（兼容无弹簧类名的按钮） */
+.ix-tap:active { opacity: .82; }

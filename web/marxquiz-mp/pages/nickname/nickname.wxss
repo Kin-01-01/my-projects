@@ -1,0 +1,61 @@
+/* pages/nickname/nickname.wxss —— 昵称设置页 */
+
+.hero {
+  padding: 56rpx 8rpx 44rpx 8rpx;
+  text-align: center;
+}
+
+.hero-emoji {
+  font-size: 68rpx;
+  line-height: 1;
+  margin-bottom: 22rpx;
+}
+
+.hero-title {
+  font-size: 42rpx;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.6rpx;
+  margin-bottom: 16rpx;
+}
+
+.hero-desc {
+  font-size: 25rpx;
+  line-height: 1.7;
+  color: var(--text-2);
+  padding: 0 24rpx;
+}
+
+.nick-input {
+  height: 94rpx;
+  padding: 0 28rpx;
+  border-radius: 24rpx;
+  background: var(--card-2);
+  border: 2rpx solid var(--border);
+  font-size: 32rpx;
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+.nick-tip {
+  margin-top: 18rpx;
+  font-size: 23rpx;
+  color: var(--text-3);
+  padding-left: 4rpx;
+}
+
+.nick-tip-error {
+  color: var(--bad);
+}
+
+.nick-btn {
+  margin-top: 44rpx;
+}
+
+.nick-skip {
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: var(--text-3);
+  padding: 18rpx 0;
+}

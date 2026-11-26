@@ -1,0 +1,30 @@
+{
+  "schema": "ppt-master.source_to_md.profile.v1",
+  "converter": "doc_to_md.py",
+  "conversion_type": "docx",
+  "source": {
+    "path": "申报书_数智校园减碳.docx",
+    "name": "申报书_数智校园减碳.docx",
+    "suffix": ".docx",
+    "kind": "file",
+    "exists": true,
+    "size_bytes": 1870497
+  },
+  "outputs": {
+    "markdown": "申报书_数智校园减碳.md",
+    "asset_dir": "申报书_数智校园减碳_files",
+    "image_manifest": "申报书_数智校园减碳_files/image_manifest.json",
+    "image_count": 5
+  },
+  "markdown": {
+    "line_count": 202,
+    "char_count": 10455,
+    "heading_count": 0,
+    "table_count": 1,
+    "image_ref_count": 5,
+    "link_count": 0
+  },
+  "warnings": [
+    "An unrecognised element was ignored: w:tblPrEx"
+  ]
+}

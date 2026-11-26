@@ -1,0 +1,818 @@
+=== PAGE 1 ===
+ 
+ 
+ 
+ISSN 1998-0124 CN 11-5974/O4 
+2019, 12(1): 000–000 
+https://doi.org/10.1007/s12274-021-3514-9 
+ 
+Research Article
+ 
+ 
+In-situ imaging the electrochemical reactions of Li-CO2 nanobatteries
+at high temperatures in an aberration corrected environmental
+transmission electron microscope 
+Peng Jia1,§, Meiqi Yu1,3,§, Xuedong Zhang2, Tingting Yang1, Dingding Zhu2, Tongde Shen1, Liqiang Zhang1 (),
+Yongfu Tang1,3 (), and Jianyu Huang1,2 () 
+ 
+1 Clean Nano Energy Center, State Key Laboratory of Metastable Materials Science and Technology, Yanshan University, Qinhuangdao
+066004, China 
+2 Key Laboratory of Low Dimensional Materials and Application Technology of Ministry of Education, School of Materials Science and
+Engineering, Xiangtan University, Xiangtan 411105, China 
+3 Hebei Key Laboratory of Applied Chemistry, College of Environmental and Chemical Engineering, Yanshan University, Qinhuangdao 
+066004, China 
+§ Peng Jia and Meiqi Yu contributed equally to this work. 
+ 
+© Tsinghua University Press and Springer-Verlag GmbH Germany, part of Springer Nature 2021 
+Received: 29 January 2021 / Revised: 23 March 2021 / Accepted: 11 April 2021 
+ 
+ABSTRACT 
+Rechargeable lithium-carbon dioxide (Li-CO2) batteries have attracted much attention due to their high theoretical energy densities and 
+capture of CO2. However, the electrochemical reaction mechanisms of rechargeable Li-CO2 batteries, particularly the decomposition 
+mechanisms of the discharge product Li2CO3 are still unclear, impeding their practical applications. Exploring electrochemistry of 
+Li2CO3 is critical for improving the performance of Li-CO2 batteries. Herein, in-situ environmental transmission electron microscopy 
+(ETEM) technique was used to study electrochemistry of Li2CO3 in Li-CO2 batteries during discharge and charge processes. 
+During discharge, Li2CO3 was nucleated and accumulated on the surface of the cathode media such as carbon nanotubes (CNTs) and 
+Ag nanowires (Ag NWs), but it was hard to decompose during charging at room temperature. To promote the decomposition of Li2CO3, 
+the charge reactions were conducted at high temperatures, during which Li2CO3 was decomposed to lithium with release of gases. 
+Density functional theory (DFT) calculations revealed that the synergistic effect of temperature and biasing facilitates the decomposition 
+of Li2CO3. This study not only provides a fundamental understanding to the high temperature Li-CO2 nanobatteries, but also offers a valid 
+technique, i.e., discharging/charging at high temperatures, to improve the cyclability of Li-CO2 batteries for energy storage applications. 
+KEYWORDS 
+in-situ environmental transmission electron microscopy, high temperature Li-CO2 nanobatteries, electrochemistry, Li2CO3 
+ 
+1 Introduction 
+Lithium-carbon dioxide (Li-CO2) batteries have attracted great 
+attention in the past few years due to their high theoretical 
+specific energy density (1,876 Wh·kg−1), which is much higher 
+than that of lithium ion batteries (~ 265 Wh·kg−1) [1–3]. 
+However, the irreversibility of Li2CO3 greatly hampers the 
+development of Li-CO2 batteries [4, 5]. Notably, Li2CO3 is an 
+insulator and insoluble to the electrolyte, which inevitably 
+causes continuous accumulation of Li2CO3 and irreversible 
+coverage of active sites after the discharge process [6, 7]. The 
+accumulated Li2CO3 insulating layer separates the reaction 
+intermediates from contacting with Li+/e− and requires more 
+energy input to be decomposed [8, 9]. The decomposition of 
+Li2CO3 requires a high potential during the charging process, 
+which ultimately leads to poor cycling stability, large polarization 
+and rapid electrolyte decomposition under high voltage [10]. 
+Techniques such as the electrolyte additives, electrolyte redox 
+mediator, electrocatalysis, biological modification, and high 
+temperature are widely employed to improve the performance 
+of Li-CO2 batteries [11–16].  
+Plenty of catalysts are designed for improving the efficiency 
+and reversibility of the discharge and charge reactions in the 
+Li-CO2 batteries [17–21]. Guo et al. synthesized RuP2 nanoparticles 
+highly dispersed on N, P dual-doped carbon films (RuP2-NPCFs) 
+by a simple pyrolysis and explored their electrocatalytic 
+properties on Li-CO2 batteries [22]. Wang et al. synthesized Ru 
+nanoparticles monodispersed in functionalized graphene nano-
+sheets as cathode catalyst for Li-CO2 batteries, which exhibited 
+an excellent rechargeability with a low charge voltage (4.02 V), 
+and a good Coulomb efficiency of 89.2% [23]. Bie et al. 
+synthesized CNT@RuO2 composite as cathode catalyst for Li- 
+CO2 batteries, which exhibited an excellent discharge capacity 
+(2,187 mAh·g−1), a low charge voltage (3.97 V), and a high first 
+cycle Coulomb efficiency (100%) [24]. Both Ru and RuO2 
+nanoparticles as cathode catalysts for Li-CO2 batteries are 
+important for the efficient decomposition of Li2CO3 at low 
+overpotential. However, the high cost of these noble metal 
+catalysts greatly hinders their widespread practical applications. 
+Therefore, it is urgent to develop some catalysts with a low 
+Address correspondence to Liqiang Zhang, [邮箱已脱敏]; Yongfu Tang, [邮箱已脱敏]; Jianyu Huang, [邮箱已脱敏]
+
+=== PAGE 2 ===
+ 
+Nano Res.  
+ | www.editorialmanager.com/nare/default.asp 
+2
+cost to replace the noble metals [25, 26]. Recently, cheap 
+alternatives such as transition metal oxides (Mn2O3, ZnCo2O4, 
+NiO, etc.) decorated on carbon materials (graphene, graphene 
+oxide, carbon nanotubes (CNTs), etc.) have attracted much 
+attention [9, 27–34].  
+Although much effort has been devoted to improving the 
+performance of Li-CO2 battery [35–39], the detailed working 
+mechanism during charge and discharge processes is still 
+ambiguous, which greatly hinders its application. There is some 
+inconsistence or even controversial conclusions regarding the 
+reaction mechanisms of the Li-CO2 batteries [7, 40–42]. Some 
+considered that Li2CO3 and amorphous carbon (a-C) were 
+the main discharge products [17], while others reported that 
+Li2CO3 and CO were the main discharge products during 
+discharge [40]. There are two possible discharge mechanisms 
+of Li-CO2 batteries, which are 
+4Li + 3CO2 → 2Li2CO3 + C            (1) 
+via four-electron transfer and  
+2Li + 2CO2 → Li2CO3 + CO            (2) 
+via two-electron transfer.  
+Moreover, there are two different pathways reported for the 
+decomposition of Li2CO3 [43]:  
+2Li2CO3 + C → 4Li+ + 3CO2 + 4e− [2]           (3) 
+or              2Li2CO3 → 4Li + 2CO2 + O2 [29]                    (4) 
+In order to clarify the working mechanism of Li-CO2 nano-
+battery. Herein, the discharge and charge reactions in a Li-CO2 
+nanobattery were investigated through in-situ environmental 
+transmission electron microscopy (ETEM) technique. A direct 
+visualization of the Li2CO3 nucleation and decomposing process 
+was realized. The electrochemical reaction mechanisms at room 
+temperature and high temperatures are clarified. 
+2  Experimental 
+2.1  Materials synthesis 
+The CNTs were prepared by electrically arcing carbon rods 
+in high purity (99.99%) He atmosphere in a stainless-steel arc 
+discharge chamber with an inner diameter of 165 mm and a 
+height of 410 mm [44, 45]. The anode was an asphalt-derived 
+carbon rod, and the cathode was a graphite electrode (purity 
+99.99%, 6 mm in diameter, 38 mm in length). The buffer gas 
+pressure was controlled in the 0.04–0.05 MPa range during the 
+arc discharge experiment. The current and voltage of the direct 
+current (DC) system for arcing were controlled at 60–80 A 
+and 18–20 V, respectively. 
+2.2  In-situ nanobattery setup 
+The Li-CO2 nanobattery was constructed based on our previous 
+all-solid-state cell setup [46–50], which consists of a Li anode, 
+a Li2CO3 electrolyte, and a single CNT cathode media. More 
+specifically, a tungsten (W) tip scratched metal lithium (Li) was 
+used as a negative electrode, and a CNT or an Ag nanowire 
+(NW) was used as the CO2 electrode. The nanobattery was 
+assembled by a micro-electromechanical system-scanning 
+tunneling microscopy-transmission electron microscopy 
+(MEMS-STM-TEM) specimen holder (Pico Femto TMH4-ST) 
+inside a glove box. Then the holder was sealed in a home-built 
+air-tight bag filled with dry Ar gas and transferred to the 
+ETEM (FEI, Titan G2, 300 kV) chamber. The total exposure 
+time to the air was less than 2 s, which limited the extent of 
+Li2O formation on the surface of the Li metal. During the 
+discharge/charge experiments, CO2 gas (purity higher than 
+99.99%) with a pressure of 1 mbar was flowed into the ETEM 
+chamber. The electrochemical reaction was controlled by 
+external biasing and heating. When a bias was applied to the 
+CNT or Ag NW against the Li counter electrode, discharge/charge 
+reaction took place, leading to the formation/decomposition 
+of Li2CO3.  
+2.3  Theoretical calculation 
+All calculations were performed in a Gaussian09 suite of 
+quantum programs, and Simulation of Arrhenius Equation in 
+COMSOL. Local minimum structures were optimized using 
+the generalized gradient approximation (GGA) based hybrid 
+functional of B3LYP combined with the all electron basis sets and 
+polarization functions of 6-31G(d) [51–54]. The vibrational 
+frequencies were calculated at the same theoretical level, ensuring 
+that the reactant and product structures were located at a 
+true minimum on the potential energy surface (PES), and 
+the transition state was a first-order saddle point on PES as 
+well. The partition function was computed through frequency 
+calculations. 
+3  Results and discussion 
+Figure 1(a) shows a photograph of the TEM-STM holder with 
+a MEMS heating device, which enables biasing and heating 
+at the same time (Figs. 1(b) and 1(c)) [55]. Figure 1(d) shows a 
+TEM image of a nanobattery, where the CNT cathode media is 
+connected to the Li metal anode. During experiments, 1 mbar 
+CO2 (purity higher than 99.99%) gas was continuously injected 
+into the ETEM chamber. 
+Morphology and structure evolution of the CNT cathode 
+during discharge and charge were analyzed by TEM images, 
+electron diffraction patterns (EDPs) and electron energy loss 
+spectroscopy (EELS) (Figs. 2(a)–2(n) and Movie ESM1). Part 
+of the pristine CNT at the right end was inserted under the 
+metal lithium during making the contact (Figs. 2(a) and 2(b)), and 
+during discharge the segment that hiding below the lithium 
+metal appeared to be pulled out due to the electrochemical 
+stress, which gave an erroneous visual effect that the CNT 
+was elongated. To confirm this conclusion, we measured the 
+length of the CNT before and after cycling. The actual length 
+of the pristine CNT was 933 nm (Fig. 2(a)). After discharge for 
+1,682 s, the length was 938 nm (Fig. 2(e)). Considering there 
+is possibly some Li2CO3 deposition at the right end of the CNT, 
+we conclude that no length change of the CNT has occurred 
+during discharging and charging. After discharge for 971 s at 
+room temperature, the surface of the CNT was coated with a 
+large amount of gray material and the CNT bent (Figs. 2(b)– 
+2(d)). The CNT used in this study is highly graphitized. Its 
+layered structure provides stable hosts for the Li+ inserting 
+into the interior. So there is Li+ insertion into the layers of the 
+CNT during discharge [56–58]. The diameters of CNT expanded 
+~ 225%, resulting in a total volume expansion of about 914% 
+(Fig. 2(e)). EDPs (Figs. 2(j) and 2(k)) and EELS (Figs. 2(m) 
+and 2(n)) analysis indicates that the newly generated substances 
+were mainly Li2CO3. After discharge, the nanobattery was 
+recharged by applying a reverse bias of +4 V. Although applying 
+a quite high voltage (+4 V) and charged for a period of time 
+(458 s), negligible change of the discharge product was observed, 
+indicating that the decomposition of the discharge products 
+was difficult during the charge process (Fig. 2(f) and Fig. S1 in 
+the Electronic Supplementary Material (ESM)).  
+We conducted a further analysis of the Li substrate. It is 
+found that the surface of the Li substrate was coated by a thick 
+layer of Li2CO3 with a thickness of more than ~ 100 nm (Fig. S2 
+in the ESM). And the CNT cathode formed a point contact 
+
+=== PAGE 3 ===
+Nano Res.  
+www.theNanoResearch.com∣www.Springer.com/journal/12274 | Nano Research 
+3
+with the Li2CO3 electrolyte. Some of the Li2CO3 at the contact 
+point may also be decomposed in the charge process, however, 
+residue Li2CO3 may still exist, which did not affect the stability 
+and cyclability of the nanobattery.  
+ 
+Figure 1  (a) A photograph of the TEM-STM holder with a home-made MEMS electric heating chip. (b) An optical microscopy image of the home-made 
+MEMS electric heating chip. (c) Schematic of the experimental setup. A tungsten tip scratched Li, a passivation Li2CO3 layer and a CNT or Ag NW were 
+used as the anode, the electrolyte and the media for the CO2 cathode, respectively. (d) A TEM image of Li-CO2 nanobattery setup. 
+ 
+Figure 2  Structure evolutions of the CNT cathode after discharge and charge processes of a Li-CO2 nanobattery. (a)–(i) Time lapse TEM images of the 
+CNT cathode during discharge and charge processes. (j)–(l) The EDPs from regions outlined by the yellow circles in ((b), (e), and (i)), respectively. The 
+corresponding EDPs from the pristine CNT (j), the discharge product (k), and the finial charge product (l). (m) and (n) EELS spectra from: the pristine
+CNT (green dot from (b)), the discharge product on the surface of the CNT (red dot from (e)), and the charge product (blue dot in (i)), respectively. 
+(m) Low-loss spectra. (n) Core-loss spectra.  
+
+=== PAGE 4 ===
+ 
+Nano Res.  
+ | www.editorialmanager.com/nare/default.asp 
+4
+How to promote the decomposition of Li2CO3 is still a critical 
+issue for the Li-CO2 battery. Das et al. found that increasing the 
+temperature could significantly speed up the ion migration 
+speed and reaction rate, achieving a fast charging of lithium 
+ion battery [16]. Our previous in-situ study indicates that 
+high temperature facilitates the charge reaction of the Li-S 
+nanobattery and the Na-O2 nanobattery dramatically [55, 59]. 
+Enhancing the temperature is a good choice for improving 
+the performance of lithium batteries [1, 16]. Inspired by these 
+previous studies, we heated up the discharge products up to 
+300 °C for promoting the charge reaction (Figs. 2(g)–2(i)). By 
+applying a bias voltage of +4 V at 300 °C, plenty of tiny bubbles 
+emerged on the surfaces of the CNT (Fig. 2(g) and Fig. S3 in 
+the ESM), indicating initiation of decomposition of Li2CO3 
+and release of gas at 300 C. At the end of the charging reaction 
+(5,253 s), the CNT almost returned to its original shape 
+(Fig. 2(i)). The final products after decomposition were a-C 
+(Fig. 2(l)). In order to prove that the decomposition of Li2CO3 
+was electrochemically driven rather than thermal decomposition 
+caused by high temperature, we conducted a growth and 
+decomposition experiment of Li2CO3 at 300 °C (Fig. S4 in the 
+ESM). It is seen that Li2CO3 was formed during discharge, and 
+decomposed during charge at 300 °C, demonstrating a good 
+cyclability at high temperatures, which is in sharp contrast to 
+the room temperature experiments where the charge reaction 
+could not proceed. We found that the electrochemically grown 
+Li2CO3 could not be decomposed by heating alone below 
+500 °C (Fig. S5 in the ESM). Thermal decomposition was 
+achieved at temperatures above 500 °C. Meanwhile, we also 
+conducted a separate heating experiment for commercial 
+Li2CO3 powder, which further confirmed this conclusion (Fig. S6 
+in the ESM). The decomposition of Li2CO3 powder started 
+from 500 °C, and completed at 750 °C [60, 61]. These results 
+indicate that it is the synergistic effect of high temperature 
+and charge potential, rather than heating or biasing alone, that 
+drives the decomposition of Li2CO3 at temperatures below 500 °C. 
+Regarding the decomposition or melting point difference in 
+vacuum and in atmosphere, a previous study shows that the 
+decomposition temperature is lower in a vacuum environment 
+than in atmosphere [62]. We performed in situ heating 
+experiment of Li2CO3 in the vacuum of TEM, and found that 
+the decomposition temperature was 500 °C, which was lower 
+than that in atmosphere. 
+It is well known that high temperature could accelerate the 
+electrochemical reaction in general, however, the dynamics 
+regarding how the temperature can boost the Li-CO2 reaction 
+has not been revealed before. Such studies can help to 
+understand the reaction kinetics and the mechanisms of the 
+Li-CO2 battery, which are still under debate. For example, at 
+room temperature, the discharge product Li2CO3 is very difficult 
+to decompose under our experimental condition, rendering 
+in-situ study of the charge reaction mechanism of Li-CO2 nano-
+battery very difficult. However, by raising up the temperature 
+during charge, the decomposition of Li2CO3 was achieved, 
+thus enabling in-situ study of the reaction mechanism of the 
+Li-CO2 nanobattery. 
+Regarding the influence of CO2 pressures on the reaction 
+pathway, we conducted the charging and discharging experiments 
+by varying the gas pressures. It is found that the reaction 
+phenomenon and byproduct were almost the same under 
+different pressures from 0.1 to 8.0 mbar (Figs. S7 and S8 in the 
+ESM). The discharge reaction is 2Li + 2CO2 → Li2CO3 + C, and 
+the charge reaction is 2Li2CO3 → 4Li + 2CO2 + O2. As shown 
+in Table S1 in the ESM, we also summarized recent articles 
+about the reaction mechanisms of Li-CO2 battery [2, 10, 11, 22, 
+27, 30, 35, 43]. Our results are consistent with those reported 
+in Refs. [11, 43]. 
+The discharge/charge products were further analyzed by 
+EELS (Figs. 2(m) and 2(n)). The plasmon loss peak of the pristine 
+CNT was 24.1 eV (Fig. 2(m), green line), but the peak located 
+at 20.9 eV was collected from the discharge product of Li2CO3 
+only (Fig. 2(m), red line), as marked by a red spot in Fig. 2(e). 
+The three different colored dots in Fig. 2 represent the positions 
+where EELS was acquired. The green, red and blue dots 
+represent the original CNT, discharge and charge product, 
+respectively (Figs. 2(b), 2(e) and 2(i)). After discharge, the 
+surface of CNT was covered by a thick layer of Li2CO3, and the 
+EELS was acquired from only the surface Li2CO3 thus no carbon 
+peak was observed (Figs. 2(e) and 2(m), red). Meanwhile, the 
+Li-K (Fig. 2(m), red), O-K and C-K edges (Fig. 2(n), red line) 
+appeared in the core-loss spectra, which confirmed the formation 
+of Li2CO3 on the surface of the CNT after discharge process. 
+The major plasmon loss peak of the charged products also 
+shifted from 20.9 eV (Fig. 2(m), red line) of Li2CO3 to 24.1 eV 
+of carbon (Fig. 2(m), blue line), suggesting the presence of a-C. 
+In the core-loss of the charge reaction products, it showed 
+the presence of a-C (Fig. 2(n), blue line). Combining with the 
+EDP results, the residue on the surface of CNT after charge 
+was a-C.  
+We found that the discharged product was Li2CO3, which 
+was decomposed into carbon after charge process (Fig. S9 in the 
+ESM). The high resolution transmission electron microscopy 
+(HRTEM) images can supplementarily prove the conclusion 
+about the discharging and charging products and electro-
+chemical mechanism.  
+Being as an insoluble wide band gap insulator, Li2CO3 is 
+difficult to decompose electrochemically, leading to sluggish 
+kinetics for the charge reaction of Li-CO2 batteries. Consequently, 
+the accumulation of insoluble Li2CO3 on the cathode surface 
+blocked the pathway for CO2 and Li+ diffusion and eventually 
+shut down the electrochemical reactions of the Li-CO2 
+batteries. 
+Our results indicate that high temperature greatly enhanced 
+the cyclability of the Li-CO2 batteries (Figs. 2 and 3, and Fig. S3 
+in the ESM and Movie ESM2). Figure 3 shows multiple cycling of 
+a Li-CO2 nanobattery. The discharge reactions were conducted 
+at room temperature (Figs. 3(a), 3(b); 3(e), 3(f); 3(i), 3(j)), 
+while the charge reaction was performed at 300 °C (Figs. 3(c), 
+3(d); 3(g), 3(h); 3(k), 3(l)). It is noted that with increasing 
+number of cycles, a-C residue became thicker after each cycle 
+(Figs. 3(d), 3(h) and 3(l)), which could be a problem for the 
+cyclability of Li-CO2 nanobatteries, as the accumulated thicker 
+carbon layer may slow down the Li+ ion diffusion and the 
+electrochemical reaction.  
+In this study, we found uniform decomposition of Li2CO3 in 
+the radical direction during the charge process at 300 °C. As 
+shown in Fig. S10 in the ESM, uniform bubble-like pores 
+were observed from the right to the left, suggesting that the 
+decomposition of Li2CO3 proceeds from the right to the left. 
+This is caused by the special experimental configuration of the 
+nanobattery. Namely, the CNT forms a point contact with the 
+Li2CO3 solid state electrolyte (SSE) on the right, rendering a 
+one-dimensional (1D) ion transport; because the right end 
+of the CNT is close to the SSE, thus Li+ ions are first extracted 
+from the Li2CO3 on the right end of the CNT, thus the right to 
+left decomposition of Li2CO3. Similar phenomenon has been 
+observed in 1D nanowire nanobatteries [63]. 
+As mentioned earlier, there are two possible discharge reaction 
+routes (Reactions (1) and (2)) and two possible charge reaction 
+pathways (Reactions (3) and (4)) as well. In-situ TEM revealed 
+the formation of a-C in the discharge products (Figs. 2(a)–2(d) 
+and Figs. S3(a)–S3(c) in the ESM), and therefore, the discharge 
+
+=== PAGE 5 ===
+Nano Res.  
+www.theNanoResearch.com∣www.Springer.com/journal/12274 | Nano Research 
+5
+reaction 4Li + 3CO2 → 2Li2CO3 + C, i.e. Reaction (1), must 
+have occurred. From the large amount of a-C residue, Reaction (1) 
+should be the major discharge reaction. However, we cannot 
+rule out the CO gas generation based on the present results. In 
+the charge reaction, a-C remained with the formation of tiny 
+bubbles (Figs. 2(g)–2(i) and Figs. S3(d)–S3(g) in the ESM), 
+indicating that the charge reaction took place via Reaction (4), 
+i.e., 2Li2CO3 → 4Li + 2CO2 + O2. 
+It should be noted that the electron beam may induce the 
+production of a-C due to the contamination of the TEM 
+chamber. However, in this experiment, we found almost no 
+obvious carbon deposition after irradiating the CNT for more 
+than two hours under the similar experimental conditions to the 
+Li-CO2 nanobattery operation (Fig. S11 in the ESM). Therefore, 
+the discharge product carbon was caused by electrochemical 
+reactions rather than carbon deposition from electron beam 
+irradiation. 
+CNTs have been extensively utilized as the cathode materials 
+in the rechargeable Li-CO2 batteries mainly because of their 
+adequate electrical conductivity, large surface area and low cost 
+[9, 32, 64]. In our experiment, CNT was a good electronic con-
+ductor and ion conductor, and it exhibited a good performance 
+as the electrode in the reaction 4Li + 3CO2 → 2Li2CO3 + C. In 
+order to explore the reaction mechanism and avoid the carbon 
+influence from the CNT electrode, we also used Ag NW as the 
+CO2 cathode for the discharge/charge experiments. This method 
+has been widely applied to verify the reaction mechanism in 
+metal-CO2 batteries [38, 65]. The morphology and structure 
+evolutions of the discharge and charge products on the Ag NW 
+cathode are shown in Figs. 4(a)–4(j). As shown in Figs. 4(a) 
+and 4(d), the pristine Ag NW was single crystal (JCPDS card 
+No. 65-2871) with the growth direction of [111]. Upon applying 
+a negative potential (−4 V) to the Ag NW cathode against the 
+Li anode for 3,665 s, a thin layer of Li2CO3 formed (Figs. 4(b) 
+and 4(e)). When the voltage was reversed, plenty of nano balls 
+emerged in the Li2CO3 layer after charging for 5,192 s at 500 °C 
+(Fig. 4(c)). The EDP shows the diffraction rings of carbon 
+(Fig. 4(f)), indicating that Li2CO3 had been totally decomposed 
+and the residual substance was a-C (Figs. 4(c) and 4(f)). The 
+morphology and structural evolutions of another Ag NW during 
+discharging and charging in a CO2 environment further con-
+firmed this conclusion (Fig. S12 in the ESM and Movie ESM3). 
+The discharge/charge products were analyzed by EELS. For the 
+Li2CO3 generated in discharge, it displayed a major plasmon 
+peak resided at 20.9 eV with a shoulder peak resided at 13.4, 
+58.9 and 63.8 eV (Fig. 4(g), red line). Compared with the 
+commercial Li2CO3 EELS result (Fig. S13 in the ESM), we 
+assign these four characteristic peaks to Li2CO3. In addition, the 
+core-loss spectrum shows the presence O-K and C-K edges 
+(red line in Fig. 4(h)), confirming the formation of Li2CO3 
+during the discharge process. The low-loss spectrum of the 
+partially charged product was different from that of the deeply 
+discharged one, and the former shows a major low-loss peak at 
+24.2 eV (Fig. 4(g), blue line). The core-loss spectrum from the 
+discharge product shows the presence of C and O, and that after 
+charge shows the presence of a-C, indicating the formation 
+of Li2CO3 during discharge and the decomposition of Li2CO3 
+with the residue of a-C during charge at 500 °C. Meanwhile, we 
+analyzed the discharge/charge products further by HRTEM, 
+indicating that the discharged products were Li2CO3 and a-C 
+(Fig. 4(i)), while the charged products were mainly a-C (Fig. 4(j)). 
+These results further reinforce our conclusion that the discharge 
+reaction took place via Reaction (1) while the charge reaction 
+occurred via Reaction (4). From Reaction (1), the amount of 
+Li2CO3 should be larger than that of carbon. However, as 
+shown in the diffraction pattern (Fig. 2(k)), the discharged 
+product of Li2CO3 displayed a poor crystallinity, although small 
+amount of nanocrystalline Li2CO3 was also formed. It is hard 
+to differentiate amorphous Li2CO3 from a-C in the HRTEM 
+image. Moreover, the HRTEM image was acquired from a 
+very local region, which may not represent the entire sample. 
+Therefore we were unable to calculate the ratio of Li2CO3 from 
+the HRTEM images. 
+Temperature plays a significant role for the decomposition 
+of Li2CO3. We explored the decomposing behaviors of Li2CO3 
+at a series of temperatures lower than 300 °C (Fig. S14 in the 
+ESM). It is found that Li2CO3 could also be decomposed below 
+300 °C, but the decomposition rate became quite slow. At 100 °C, 
+the decomposition rate of Li2CO3 reduced to 0.09 nm·min−1, 
+which was 0.38 nm·min−1 at 300 °C. The higher the temperature, 
+the faster the decomposing rate. When using the Ag NW as 
+cathode, it is found that the decomposition rate of Li2CO3 
+was quite slow at 300 °C, so we selected 500 °C as its reaction 
+temperature (Fig. S15 in the ESM). 
+From our in-situ results, it is clear that high temperature 
+facilitates the complete decomposition of Li2CO3. To explore 
+the kinetics and thermodynamics of the decomposition of 
+Li2CO3 at different temperatures and voltages, we studied 
+the reaction energy barrier for the dissociation of Li2CO3 at 
+different temperatures and under different potentials via density 
+ 
+Figure 3  (a)–(l) Time-lapse structure evolution of the CNT air cathode in a Li-CO2 nanobattery during discharge (−0.5 V) at room temperature and 
+charge (4 V) at high temperatures. (a) and (b) During the 1st discharge reaction, the CNT swelled slightly; at 445 s, a Li2CO3 conformal coating layer emerged
+at the CNT surface near the right contact, which then propagated along the CNT, causing a volume increase of the CNT. (c) and (d) Upon a reversing bias, 
+the 1st charge reaction took place, and the Li2CO3 shrank continuously at 300 °C. (e)–(l) The discharge/charge processes were repeatable for multiple cycles. 
+
+=== PAGE 6 ===
+ 
+Nano Res.  
+ | www.editorialmanager.com/nare/default.asp 
+6
+functional theory (DFT) calculation at B3LYP/6-31G(d) level 
+(Fig. 5 and Fig. S16 in the ESM) [66, 67]. The energy barrier 
+for Li2CO3 decomposition has two components: the first one 
+being extracting Li+ from Li2CO3, and the second one being 
+the decomposition of CO3*. The energy for Li+ extraction from 
+Li2CO3 at different potentials is shown in Fig. 5(a). The energy 
+barrier for the extraction of Li+ from Li2CO3 was 380 and 
+99 kJ·mol−1 at 0 and 4 V, respectively. The energy barrier for 
+ 
+Figure 4  (a)–(h) Morphology and the corresponding structure evolutions of the Ag NW after discharge (−0.5 V) and charge (4 V) processes in a CO2 
+ambient. (a)–(c) The TEM images of the Ag NW prior to and after discharge and charge processes respectively. (d)–(f) The EDPs from regions outlined by
+the yellow circles in (a)–(c). The corresponding EDPs from the pristine Ag NW (d), the discharge product (e), and the finial charge product (f). (g) and
+(h) EELS spectra from: the unreacted region (green point), discharge product overlaid on Ag NW region (red point), and the charge product region 
+(blue point), respectively. (g) Low-loss spectra from: the pristine Ag NW (green line), discharge product on the Ag NW (red line), and the charge product
+(blue line), respectively. (h) Core-loss spectra. (i) and (j) HRTEM images of the discharge products showing the formation of Li2CO3 and a-C (i), and the 
+charge products showing the formation of mainly a-C (j).  
+ 
+Figure 5  Theoretical calculations of the reaction kinetics and thermodynamics of Li2CO3 decomposition. All calculations were performed in the 
+Gaussian, Kisthelp, and COMSOL suite of quantum programs. (a) Energy for the extraction of Li+ from pure Li2CO3 at 0 and 4 V, respectively. (b) Energy 
+barrier diagram of decomposition of pure Li2CO3. The decomposition of Li2CO3 is mainly divided into three processes: 2Li2CO3 → 4Li+ + 2CO3* + 4e−; 
+2CO3* → TS (transition state); TS → O2 + CO2. (c) Thermal decomposition of pure Li2CO3 at different temperatures without biasing. (d) Electrochemical 
+decomposition of pure Li2CO3 at different temperatures at 4 V.  
+
+=== PAGE 7 ===
+Nano Res.  
+www.theNanoResearch.com∣www.Springer.com/journal/12274 | Nano Research 
+7
+the dissociation of Li2CO3 at 0 and 4 V is shown in Fig. 5(b). The 
+energy change for the dissociation of CO3* was calculated to 
+be 75 kJ·mol−1 at both 0 and 4 V (Fig. 5(b)), so the total energy 
+barriers for the dissociation of Li2CO3 at 0 and 4 V were 455 and 
+174 kJ·mol−1 (Fig. 5(b)), respectively. Meanwhile, the Arrhenius 
+equation describes the relationship between the activation 
+energy and reaction rate of Li2CO3 decomposition reaction [68]. 
+Thermal decomposition of pure Li2CO3 at different temperatures 
+under 0 V is shown in Fig. 5(c). The horizontal and vertical 
+axes represent the reaction time and residue of Li2CO3, 
+respectively. The decomposition of Li2CO3 was achieved at 
+773 K under 0 V (blue line in Fig. 5(c)). For comparison, Li2CO3 
+decomposed at 573 K under 4 V (Fig. 5(d)), which was much 
+lower than that under 0 V. The DFT calculations demonstrate 
+that it is the synergistic effect of temperature and voltage that 
+facilitates the decomposition of Li2CO3, confirming the validity 
+of our in-situ ETEM results. 
+The fact that high temperature facilitated Li2CO3 decom-
+position can also be interpreted by the enhanced Li+ ion 
+conductivity at high temperatures. The room temperature Li+ 
+ion conductivity of Li2CO3 is very low (~ 10−7 S·cm−1), while it 
+increases to ~ 10−6 S·cm−1 at 300 °C [60, 69, 70], which is about 
+one order of magnitude higher than that at room temperature. 
+The high ionic conductivity apparently enhanced the decom-
+position kinetics of Li2CO3. 
+4  Conclusions 
+In summary, we successfully conducted in-situ discharging/ 
+charging of the Li-CO2 nanobattery at high temperatures 
+inside an ETEM. During discharge, a thick layer of Li2CO3 was 
+quickly formed on the CNT cathode via 4Li+ + 4e− + 3CO2 → 
+2Li2CO3 + C. However, the Li2CO3 was hard to decompose 
+during the following charge process at room temperature. 
+When charged at 300 °C, Li2CO3 began to quickly decompose 
+via the reaction of 2Li2CO3 → 4Li + 2CO2 + O2. DFT calculations 
+revealed that the synergistic effect of temperature and applied 
+voltage contributed to the enhanced Li2CO3 decomposition. 
+Our results not only provide an in-depth understanding to the 
+fundamental electrochemistry of Li-CO2 batteries, but also offer 
+a strategy to improve their cycling performance, which may 
+have important implications for the design of Li-CO2 batteries 
+for energy storage applications. 
+Acknowledgements  
+This work was financially supported by the the National Natural 
+Science Foundation of China (Nos. 52022088, 51971245, 
+51772262, 21406191, U20A20336, and 21935009), Beijing 
+Natural Science Foundation (No. 2202046), Selective funding for 
+provincial postdoctoral research projects (No. B2019003018), 
+Fok Ying-Tong Education Foundation of China (No. 171064), 
+Natural Science Foundation of Hebei Province (Nos. 
+B2020203037, and B2018203297), and Hunan Innovation Team 
+(No. 2018RS3091). 
+ 
+Electronic Supplementary Material: Supplementary material 
+(supplemental figures, and supplemental movies) is available 
+in the online version of this article at https://doi.org/10.1007/ 
+s12274-021-3514-9. 
+References 
+[1] Xu, S. M.; Das, S. K.; Archer, L. A. The Li-CO2 battery: A novel 
+method for CO2 capture and utilization. RSC Adv. 2013, 3, 6656– 
+6660. 
+[2] Ahmadiparidari, A.; Warburton, R. E.; Majidi, L.; Asadi, M.; 
+Chamaani, A.; Jokisaari, J. R.; Rastegar, S.; Hemmat, Z.; Sayahpour, B.; 
+Assary, R. S. et al. A long-cycle-life lithium-CO2 battery with carbon 
+neutrality. Adv. Mater. 2019, 31, 1902518.  
+[3] Li, C.; Guo, Z. Y.; Yang, B. C.; Liu, Y.; Wang, Y. G.; Xia, Y. Y.   
+A rechargeable Li-CO2 battery with a gel polymer electrolyte. 
+Angew. Chem., Int. Ed. 2017, 56, 9126–9130. 
+[4] Wang, Y.; Wang, W. W; Xie, J.; Wang, C. H; Yang, Y. W.; Lu Y. C. 
+Electrochemical reduction of CO2 in ionic liquid: Mechanistic study 
+of Li-CO2 batteries via in situ ambient pressure X-ray photoelectron 
+spectroscopy. Nano Energy 2021, 83: 105830.  
+[5] Feng, N. N.; Wang, B. L.; Yu, Z.; Gu, Y. M.; Xu L. L.; Ma, J.; Wang, Y. 
+G.; Xia, Y. Y. Mechanism-of-action elucidation of reversible Li-CO2 
+batteries using the water-in-salt electrolyte. ACS Appl. Mater. Interfaces 
+2021, 13, 7396–7404.  
+[6] Zhang, B. W.; Jiao, Y.; Chao, D. L.; Ye, C.; Wang, Y. X.; Davey, K.; 
+Liu, H. K.; Dou, S. X.; Qiao, S. Z. Targeted synergy between adjacent 
+Co atoms on graphene oxide as an efficient new electrocatalyst for 
+Li-CO2 batteries. Adv. Funct. Mater. 2019, 29, 1904206.  
+[7] Hou, Y. Y.; Wang, J. Z.; Liu, L. L.; Liu, Y. Q.; Chou, S. L.; Shi, D. Q.; 
+Liu, H. K.; Wu, Y. P.; Zhang, W. M.; Chen, J. Mo2C/CNT: An efficient 
+catalyst for rechargeable Li-CO2 batteries. Adv. Funct. Mater. 2017, 
+27, 1700564.  
+[8] Xiao, Y.; Du, F.; Hu, C. G.; Ding, Y.; Wang, Z. L.; Roy, A.; Dai, L. M. 
+High-performance Li-CO2 batteries from free-standing, binder-free, 
+bifunctional three-dimensional carbon catalysts. ACS Energy Lett. 
+2020, 5, 916–921.  
+[9] Zhang, X.; Wang, C. Y.; Li, H. H.; Wang, X. G.; Chen, Y. N.; Xie, Z. J.; 
+Zhou, Z. High performance Li-CO2 batteries with NiO-CNT cathodes. 
+J. Mater. Chem. A 2018, 6, 2792–2796.  
+[10] Lu, S. Y.; Shang, Y.; Ma, S. Y.; Lu, Y. C.; Liu, Q. C.; Li, Z. J. Porous 
+NiO nanofibers as an efficient electrocatalyst towards long cycling 
+life rechargeable Li-CO2 batteries. Electrochim. Acta 2019, 319, 
+958–965. 
+[11] Song, S. D.; Xu, W.; Zheng, J. M.; Luo, L. L.; Engelhard, M. H.; 
+Bowden M. E.; Liu, B.; Wang, C. M.; Zhang, J. G. Complete 
+decomposition of Li2CO3 in Li-O2 batteries using Ir/B4C as noncarbon- 
+based oxygen electrode. Nano Lett. 2017, 17, 1417–1424.  
+[12] Pipes, P.; Bhargav, A.; Manthiram, A. Phenyl disulfide additive for 
+solution-mediated carbon dioxide utilization in Li-CO2 batteries. 
+Adv. Energy Mater. 2019, 9, 1900453.  
+[13] Yin, W.; Grimaud, A.; Azcarate, I.; Yang, C. Z.; Tarascon, J. M. 
+Electrochemical reduction of CO2 mediated by quinone derivatives: 
+Implication for Li-CO2 battery. J. Phys. Chem. C 2018, 122, 6546– 
+6554.  
+[14] Khurram, A.; He, M. F.; Gallant, B. M. Tailoring the discharge 
+reaction in Li-CO2 batteries through incorporation of CO2 capture 
+chemistry. Joule 2018, 2, 2649–2666.  
+[15] Oh, D.; Qi, J. F.; Lu, Y. C.; Zhang, Y.; Yang, S. H.; Belcher, A. M. 
+Biologically enhanced cathode design for improved capacity and 
+cycle life for lithium-oxygen batteries. Nat. Commun. 2013, 4, 2756.  
+[16] Das, S. K.; Xu, S. M.; Emwas, A. H.; Lu, Y. Y.; Srivastava, S.; Archer, 
+L. A. High energy lithium-oxygen batteries-transport barriers and 
+thermodynamics. Energy Environ. Sci. 2012, 5, 8927–8931. 
+[17] Yang, S. X.; Qiao, Y.; He, P.; Liu, Y. J.; Cheng, Z.; Zhu, J. J.; Zhou, 
+H. S. A reversible lithium-CO2 battery with Ru nanoparticles as a 
+cathode catalyst. Energy Environ. Sci. 2017, 10, 972–978.  
+[18] Wang, C. Y.; Zhang, Q. M.; Zhang, X.; Wang, X. G.; Xie, Z. J.; Zhou, Z. 
+Fabricating Ir/C nanofiber networks as free-standing air cathodes 
+for rechargeable Li-CO2 batteries. Small 2018, 14, 1800641.  
+[19] Hou, Y. H.; Erni, R.; Widmer, R.; Rahaman, M.; Guo, H. Z.; Fasel, R.; 
+Moreno-García, P.; Zhang, Y. C.; Broekmann, P. Synthesis and 
+characterization of degradation-resistant Cu@CuPd nanowire catalysts 
+for the efficient production of formate and CO from CO2. 
+ChemElectroChem 2019, 6, 3189–3198.  
+[20] Kuang, M.; Guan, A. X.; Gu, Z. X.; Han, P.; Qian, L. P.; Zheng, G. F. 
+Enhanced N-doping in mesoporous carbon for efficient electrocatalytic 
+CO2 conversion. Nano Res. 2019, 12, 2324–2329.  
+[21] Zhang, Z.; Ma, C.; Tu, Y. C.; Si, R.; Wei, J.; Zhang, S. H.; Wang, Z.; 
+Li, J. F.; Wang, Y.; Deng, D. H. Multiscale carbon foam confining 
+single iron atoms for efficient electrocatalytic CO2 reduction to CO. 
+Nano Res. 2019, 12, 2313–2317.  
+
+=== PAGE 8 ===
+ 
+Nano Res.  
+ | www.editorialmanager.com/nare/default.asp 
+8
+[22] Guo, Z. Y.; Li, J. L.; Qi, H. C.; Sun, X. M.; Li, H. D.; Tamirat, A. G.; 
+Liu, J.; Wang, Y. G.; Wang, L. A highly reversible long-life Li-CO2 
+battery with a RuP2-based catalytic cathode. Small 2019, 15, 1803246. 
+[23] Wang, L. J.; Dai, W. R.; Ma, L. P.; Gong, L. L.; Lyu, Z. Y.; Zhou, Y.; 
+Liu, J.; Lin, M.; Lai, M.; Peng, Z. Q. et al. Monodispersed Ru 
+nanoparticles functionalized graphene nanosheets as efficient cathode 
+catalysts for O2-assisted Li-CO2 battery. ACS Omega 2017, 2, 
+9280–9286.  
+[24] Bie, S. Y.; Du, M. L.; He, W. X.; Zhang, H. G.; Yu, Z. T.; Liu, J. G.; 
+Liu, M.; Yan, W. W.; Zhou, L.; Zou, Z. G. Carbon nanotube@RuO2 
+as a high performance catalyst for Li-CO2 batteries. ACS Appl. 
+Mater. Interfaces 2019, 11, 5146–5151.  
+[25] Yang, C.; Guo, K. K.; Yuan, D. W.; Cheng, J. L.; Wang, B. Unraveling 
+reaction mechanisms of Mo2C as cathode catalyst in a Li-CO2 
+battery. J. Am. Chem. Soc. 2020, 142, 6983–6990.  
+[26] Jena, A.; Hsieh, H. C.; Thoka, S.; Hu, S. F.; Chang, H.; Liu, R. S. 
+Curtailing the overpotential of Li-CO2 batteries with shape-controlled 
+Cu2O as cathode: Effect of illuminating the cathode. ChemSusChem 
+2020, 13, 2719–2725.  
+[27] Ma, W. Q.; Lu, S. S.; Lei, X. F.; Liu, X. Z.; Ding, Y. Porous Mn2O3 
+cathode for highly durable Li-CO2 batteries. J. Mater. Chem. A 2018, 
+6, 20829–20835.  
+[28] Thoka, S.; Chen, C. J.; Jena, A.; Wang, F. M.; Wang, X. C.; Chang, 
+H.; Hu, S. F.; Liu, R. S. Spinel zinc cobalt oxide (ZnCo2O4) porous 
+nanorods as a cathode material for highly durable Li-CO2 batteries. 
+ACS Appl. Mater. Interfaces 2020, 12, 17353–17363.  
+[29] Zhang, P. F.; Zhang, J. Y.; Sheng, T.; Lu, Y. Q.; Yin, Z. W.; Li, Y. Y.; Peng, 
+X. X.; Zhou, Y.; Li, J. T.; Wu, Y. J. et al. Synergetic effect of Ru and 
+NiO in the electrocatalytic decomposition of Li2CO3 to enhance the 
+performance of a Li-CO2/O2 battery. ACS Catal. 2020, 10, 1640–1651. 
+[30] Zhang, Z.; Zhang, Q.; Chen, Y. N.; Bao, J.; Zhou, X. L.; Xie, Z. J.; 
+Wei, J. P.; Zhou, Z. The first introduction of graphene to rechargeable 
+Li-CO2 batteries. Angew. Chem., Int. Ed. 2015, 54, 6550–6553.  
+[31] Qiao, Y.; Liu, Y.; Chen, C. J.; Xie, H.; Yao, Y. G.; He, S. M.; Ping, W. 
+W.; Liu, B. Y.; Hu, L. B. 3D-printed graphene oxide framework with 
+thermal shock synthesized nanoparticles for Li-CO2 batteries. Adv. 
+Funct. Mater. 2018, 28, 1805899.  
+[32] Zhang, X.; Zhang, Q.; Zhang, Z.; Chen, Y. N.; Xie, Z. J.; Wei, J. P.; 
+Zhou, Z. Rechargeable Li-CO2 batteries with carbon nanotubes as 
+air cathodes. Chem. Commun. 2015, 51, 14636–14639.  
+[33] Yang, H.; Wang, M.; Liu, X. W.; Jiang, Y.; Yu, Y. MoS2 embedded 
+in 3D interconnected carbon nanofiber film as a free-standing anode 
+for sodium-ion batteries. Nano Res. 2018, 11, 3844–3853.  
+[34] Song, T.; Han, H.; Choi, H.; Lee, J. W.; Park, H.; Lee, S.; Park, W. I.; 
+Kim, S.; Liu, L.; Paik, U. TiO2 nanotube branched tree on a carbon 
+nanofiber nanostructure as an anode for high energy and power 
+lithium ion batteries. Nano Res. 2014, 7, 491–501.  
+[35] Li, S. W.; Liu, Y.; Zhou, J. W.; Hong, S. S.; Dong, Y.; Wang, J. M.; Gao, 
+X.; Qi, P. F.; Han, Y. Z.; Wang, B. Monodispersed MnO nanoparticles in 
+graphene—An interconnected N-doped 3D carbon framework as a 
+highly efficient gas cathode in Li-CO2 batteries. Energy Environ. 
+Sci. 2019, 12, 1046–1054.  
+[36] Wang, X. F.; Liu, H. X.; Wang, Q.; Huo, J. H.; Ge, W. Y.; Duan, X. B.; 
+Guo, S. W. Microbial-derived functional carbon decorated hollow 
+NiCo-LDHs nanoflowers as a highly efficient catalyst for Li-CO2 
+battery. Appl. Surf. Sci. 2021, 540, 148351.  
+[37] Guan, D. H.; Wang, X. X.; Li, M. L.; Li, F.; Zheng, L. J.; Huang, X. L.; 
+Xu, J. J. Light/electricity energy conversion and storage for a 
+hierarchical porous In2S3@CNT/SS cathode towards a flexible 
+Li-CO2 battery. Angew. Chem., Int. Ed. 2020, 59, 19518–19524.  
+[38] Hu, X. F.; Sun, J. C.; Li, Z. F.; Zhao, Q.; Chen, C. C.; Chen, J. 
+Rechargeable room-temperature Na-CO2 batteries. Angew. Chem., 
+Int. Ed. 2016, 55, 6482–6486.  
+[39] Hu, X. F.; Li, Z. F.; Chen, J. Flexible Li-CO2 batteries with liquid-free 
+electrolyte. Angew. Chem., Int. Ed. 2017, 56, 5785–5789.  
+[40] Xie, J. F.; Liu, Q.; Huang, Y. Y.; Wu, M. X.; Wang, Y. B. A porous 
+Zn cathode for Li-CO2 batteries generating fuel-gas CO. J. Mater. 
+Chem. A 2018, 6, 13952–13958.  
+[41] Zhao, Z. W; Wang, E. K; Wang, J. W; Liu, C. T; Peng, Z. Q. Kinetics of 
+the CO2 reduction reaction in aprotic Li-CO2 batteries: A model 
+study. J. Mater. Chem. A 2021, 9, 3290–3296.  
+[42] Zhao, Z. W; Su, Y. W; Peng, Z. Q. Probing lithium carbonate 
+formation in trace-O2-assisted aprotic Li-CO2 batteries using in situ 
+surface-enhanced Raman spectroscopy. J. Phys. Chem. Lett. 2019, 
+10, 322– 328.  
+[43] Qiao, Y.; Yi, J.; Wu, S. C.; Liu, Y.; Yang, S. X.; He, P.; Zhou, H. S. 
+Li-CO2 electrochemistry: A new strategy for CO2 fixation and energy 
+storage. Joule 2017, 1, 359–370.  
+[44] Saito, Y.; Matsumoto, T.; Nishikubo, K. Encapsulation of carbides 
+of chromium, molybdenum and tungsten in carbon nanocapsules by 
+arc discharge. J. Cryst. Growth 1997, 172, 163–170.  
+[45] Lijima, S. Helical microtubules of graphitic carbon. Nature 1991, 
+354, 56–58.  
+[46] Yang, T. T.; Jia, P.; Liu, Q. N.; Zhang, L. Q.; Du, C. C.; Chen, J. Z.; 
+Ye, H. J.; Li, X. M.; Li, Y. S.; Shen, T. D. et al. Air-stable lithium 
+spheres produced by electrochemical plating. Angew. Chem. 2018, 
+130, 12932–12935.  
+[47] Zhang, L. Q.; Tang, Y. S.; Liu, Q. N.; Yang, T. T.; Du, C. C.; Jia, P.; 
+Wang, Z. F.; Tang, Y. F.; Li, Y. F.; Shen, T. D. et al. Probing the 
+charging and discharging behavior of K-CO2 nanobatteries in an 
+aberration corrected environmental transmission electron microscope. 
+Nano Energy 2018, 53, 544–549.  
+[48] Liu, Q. N.; Yang, T. T.; Du, C. C.; Tang, Y. F.; Sun, Y.; Jia, P.; Chen, J. Z.; 
+Ye, H. J.; Shen, T. D.; Peng, Q. M. et al. In situ imaging the oxygen 
+reduction reactions of solid state Na-O2 batteries with CuO nanowires 
+as the air cathode. Nano Lett. 2018, 18, 3723–3730.  
+[49] Liu, Q. N.; Geng, L.; Yang, T. T.; Tang, Y. F.; Jia, P.; Li, Y. S.; Li, H.; 
+Shen, T. D.; Zhang, L. Q.; Huang, J. Y. In-situ imaging electrocatalysis 
+in a Na-O2 battery with Au-coated MnO2 nanowires air cathode. 
+Energy Storage Mater. 2019, 19, 48–55.  
+[50] Huang, J. Y.; Zhong, L.; Wang, C. M.; Sullivan, J. P.; Xu, W.; Zhang, 
+L. Q.; Mao, S. X.; Hudak, N. S.; Liu, X. H.; Subramanian, A. et al. In situ 
+observation of the electrochemical lithiation of a single SnO2 
+nanowire electrode. Science 2010, 330, 1515–1520.  
+[51] Lee, C.; Yang, W. T.; Parr, R. G. Development of the Colle-Salvetti 
+correlation-energy formula into a functional of the electron density. 
+Phys. Rev. B 1988, 37, 785–789.  
+[52] Becke, A. D. Density-functional thermochemistry. III. The role of exact 
+exchange. J. Chem. Phys. 1993, 98, 5648–5652.  
+[53] Francl, M. M.; Pietro, W. J.; Hehre, W. J.; Binkley, J. S.; Gordon, 
+M. S.; Defrees, D. J.; Pople, J. A. Self-consistent molecular orbital 
+methods. XXIII. A polarization-type basis set for second-row 
+elements. J. Chem. Phys. 1982, 77, 3654–3665.  
+[54] Blaudeau, J. P.; McGrath, M. P.; Curtiss, L. A. Radom, L. Extension 
+of Gaussian-2 (G2) theory to molecules containing third-row atoms 
+K and Ca. J. Chem. Phys. 1997, 107, 5016–5021.  
+[55] Wang, Z. F.; Tang, Y. F.; Zhang, L. Q.; Li, M.; Shan, Z. W.; Huang, 
+J. Y. In situ TEM observations of discharging/charging of solid-state 
+lithium-sulfur batteries at high temperatures. Small 2020, 16, 2001899. 
+[56] Zhang, D. W.; Zhao, Y. B.; Goodenough, J. B.; Lu, Y. H.; Chen, C. H.; 
+Wang, L.; Liu, J. W. Exfoliation from carbon nanotubes versus tube 
+size on lithium insertion. Electrochem. Commun. 2011, 13, 125–128. 
+[57] Wu, S. T.; Wu, H. Q.; Zou, M. C.; Shi, X. W.; Yuan, Y. J.; Bai, W. F.; 
+Cao A. Y. Short-range ordered graphitized-carbon nanotubes with large 
+cavity as high-performance lithium-ion battery anodes. Carbon 2020, 
+158, 642–650.  
+[58] Zhao, J.; Gao, Q. Y.; Gu, C.; Yang, Y. Preparation of multi-walled carbon 
+nanotube array electrodes and its electrochemical intercalation 
+behavior of Li ions. Chem. Phys. Lett. 2002, 358, 77–82.  
+[59] Jia, P.; Yang, T. T.; Liu, Q. N.; Yan, J. T.; Shen, T. D.; Zhang, L. Q.; 
+Liu, Y. N.; Zhao, X. X.; Gao, Z. Y.; Wang, J. et al. In-situ imaging Co3O4 
+catalyzed oxygen reduction and evolution reactions in a solid state 
+Na-O2 battery. Nano Energy 2020, 77, 105289.  
+[60] Huo, H. Y.; Luo, J.; Thangadurai, V.; Guo, X. X.; Nan, C. W.; Sun, X. L. 
+Li2CO3: A critical issue for developing solid garnet batteries. ACS 
+Energy Lett. 2020, 5, 252–262.  
+[61] Rao, R. P.; Gu, W. Y.; Sharma, N.; Peterson, V. K.; Avdeev, M.; 
+Adams, S. In situ neutron diffraction monitoring of Li7La3Zr2O12 
+formation: Toward a rational synthesis of garnet solid electrolytes. 
+Chem. Mater. 2015, 27, 2903–2910.  
+[62] Di, Y. Z.; Feng, N. X.; Dong, W. W.; Peng, J. P.; Wang, Y. W. Study 
+on thermal decomposition of Li2CO3 in production of lithium by 
+vacuum thermal reduction process. Nonf. Met. (Extract. Metall.) 
+2019, 28–30.  
+
+=== PAGE 9 ===
+Nano Res.  
+www.theNanoResearch.com∣www.Springer.com/journal/12274 | Nano Research 
+9
+[63] Liu, X. H.; Huang, S.; Picraux, S. T.; Li, J.; Zhu, T.; Huang, J. Y. 
+Reversible nanopore formation in Ge nanowires during lithiation- 
+delithiation cycling: An in situ transmission electron microscopy 
+study. Nano Lett. 2011, 11, 3991–3997.  
+[64] Li, X. L.; Zhou, J. W.; Zhang, J. X.; Li, M.; Bi, X. X.; Liu, T. C.; He, 
+T.; Cheng, J. L.; Zhang, F.; Li, Y. P. et al. Bamboo-Like nitrogen- 
+doped carbon nanotube forests as durable metal-free catalysts for 
+self-powered flexible Li-CO2 batteries. Adv. Mater., 2019, 31, 
+1903852.  
+[65] Lu, Y.; Cai, Y. C.; Zhang, Q.; Ni, Y. X.; Zhang, K.; Chen, J. 
+Rechargeable K-CO2 batteries with a KSn anode and a carboxyl- 
+containing carbon nanotube cathode catalyst. Angew. Chem. 2021, 
+133, 9626–9631.  
+[66] Rassolov, V. A.; Pople, J. A.; Ratner, M. A.; Windus, T. L. 6–31G* 
+basis set for atoms K through Zn. J. Chem. Phys. 1998, 109, 
+1223–1229.  
+[67] Rassolov, V. A.; Ratner, M. A.; Pople, J. A.; Redfern, P. C.; Curtiss, 
+L. A. 6–31G* basis set for third-row atoms. J. Comput. Chem. 
+Commun. 2001, 22, 976–984.  
+[68] Abraham, K. M. Prospects and limits of energy storage in batteries. 
+J. Phys. Chem. Lett. 2015, 6, 830–844.  
+[69] Li, Y. T.; Chen, X.; Dolocan, A.; Cui, Z. M.; Xin, S.; Xue, L. G.; Xu, 
+H. H.; Park, K.; Goodenough, J. B. Garnet electrolyte with an 
+ultralow interfacial resistance for Li-metal batteries. J. Am. Chem. 
+Soc. 2018, 140, 6448–6455.  
+[70] Dissanayake, M. A. K. L.; Mellander, B. E. Phase diagram and 
+electrical conductivity of the Li2SO4-Li2CO3 system. Solid State 
+Ionics 1986, 21, 279–285.  
+ 
+

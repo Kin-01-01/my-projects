@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solid-State Sodium Batteries · 双栏同步阅读器</title>
+<script>window.__DOCID__="solid-state-sodium-batteries";window.__PAGE_OFFSET__=0;</script>
+<style>
+:root{
+  --ink:#1c1c1e; --ink-soft:#4b5563; --muted:#6b7280;
+  --line:#e5e7eb; --line-strong:#d1d5db;
+  --bg:#fbfbfa; --surface:#ffffff; --card:#ffffff;
+  --accent:#0f766e; --accent-deep:#115e59;
+  --zhbg:#f4f7f6; --thbg:#f1f5f9;
+  --note-bg:#fff7ed; --note-line:#fed7aa; --note-bar:#ea580c; --note-ink:#9a3412;
+  --hero-a:#0f766e; --hero-b:#115e59; --hero-c:#134e4a;
+  --fs-zh:15.5px; --fs-en:14px; --lh-zh:1.9;
+}
+/* ===== 护眼模式：浅绿背景（豆沙绿系，长时间阅读不刺眼） ===== */
+body.eye{
+  --ink:#1e2a22; --ink-soft:#41564a; --muted:#6b7f72;
+  --line:#cfe0d2; --line-strong:#b7cfbc;
+  --bg:#e3efe0; --surface:#eef6ea; --card:#f4faf0;
+  --accent:#3d7a55; --accent-deep:#2f6243;
+  --zhbg:#e9f3e3; --thbg:#dcebd6;
+  --note-bg:#fdf6e3; --note-line:#e6d9a8; --note-bar:#b8860b; --note-ink:#7a5c10;
+  --hero-a:#3d7a55; --hero-b:#2f6243; --hero-c:#254f36;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;display:flex;flex-direction:column;background:var(--bg);color:var(--ink);
+  font-family:"Source Han Serif SC","Noto Serif SC",Georgia,"Times New Roman",serif;line-height:1.75;
+  overflow:hidden;transition:background .28s ease,color .28s ease}
+body.fs-s{--fs-zh:15px;--fs-en:13.5px}
+body.fs-m{--fs-zh:16px;--fs-en:14.5px}
+body.fs-l{--fs-zh:18px;--fs-en:16px;--lh-zh:2.05}
+body.mode-zh .para .en{display:none}
+body.mode-zh .para .pg{grid-row:auto}
+body.mode-en .para .zh{display:none}
+body.mode-en .para .pg{grid-row:auto}
+/* 紧凑行宽：真正由 CSS 生效（不再靠 inline style） */
+body.narrow #content main{max-width:760px;margin:0 auto}
+
+/* ---------- 顶栏 ---------- */
+#topbar{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:8px 16px;position:relative;
+  background:var(--surface);border-bottom:1px solid var(--line);
+  font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:13px;transition:background .28s ease,border-color .28s ease}
+#topbar .t{font-weight:600;color:var(--ink);flex:0 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#topbar .badge{color:var(--muted);font-size:12px;flex:0 0 auto}
+.spacer{flex:1 1 auto}
+.tbtn{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;line-height:1;padding:7px 12px;
+  border-radius:999px;cursor:pointer;user-select:none;border:1px solid var(--line-strong);
+  background:var(--card);color:var(--ink-soft);transition:all .18s ease;font-family:inherit}
+.tbtn:hover{border-color:var(--accent);color:var(--accent)}
+.tbtn .ico{font-size:14px;line-height:1}
+.tbtn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+#progress{position:absolute;left:0;bottom:-1px;height:2px;width:0%;background:var(--accent);transition:width .1s linear}
+
+/* ---------- 双栏骨架 ---------- */
+#split{flex:1;display:flex;min-height:0;min-width:0;overflow:hidden}
+#left{flex:1 1 50%;min-width:0;min-height:0;display:flex;overflow:hidden;border-right:1px solid var(--line-strong)}
+nav.toc{flex:0 0 212px;width:212px;overflow:auto;min-height:0;padding:16px 12px 24px;
+  font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:13px;border-right:1px dashed var(--line)}
+nav.toc::-webkit-scrollbar{width:6px}
+nav.toc::-webkit-scrollbar-thumb{background:var(--line-strong);border-radius:3px}
+nav.toc h4{font-size:12px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;margin:0 0 10px}
+nav.toc ul{list-style:none;padding:0;margin:0}
+nav.toc li{margin:6px 0}
+nav.toc li.l2{padding-left:14px;font-size:12px}
+nav.toc a{color:var(--ink-soft);text-decoration:none;border-left:2px solid transparent;padding-left:8px;display:block;transition:all .15s}
+nav.toc a:hover{color:var(--accent);border-left-color:var(--accent)}
+nav.toc a.active{color:var(--accent);border-left-color:var(--accent);font-weight:600}
+#content{flex:1;min-width:0;min-height:0;overflow:auto;position:relative;padding:0 22px 90px;scroll-behavior:smooth}
+#content::-webkit-scrollbar{width:9px}
+#content::-webkit-scrollbar-thumb{background:var(--line-strong);border-radius:5px}
+
+header.hero{padding:32px 22px 22px;background:linear-gradient(160deg,var(--hero-a),var(--hero-b) 60%,var(--hero-c));
+  color:#fff;margin:0 -22px 8px;transition:background .28s ease}
+.kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.82;margin-bottom:10px;font-family:system-ui,sans-serif}
+h1.title{font-size:26px;line-height:1.3;margin:0 0 8px;font-weight:700}
+.subtitle{font-size:16px;opacity:.93;margin:0 0 14px;font-weight:400}
+.meta{font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:13px;opacity:.92;line-height:1.9}
+.meta b{font-weight:600}
+
+h2{font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:21px;margin:44px 0 8px;
+  padding-bottom:9px;border-bottom:2px solid var(--accent);scroll-margin-top:14px;letter-spacing:-.01em}
+h2:first-of-type{margin-top:14px}
+h3{font-family:system-ui,"Microsoft YaHei",sans-serif;font-size:17px;margin:30px 0 6px;color:var(--ink);scroll-margin-top:14px}
+
+.para{display:grid;grid-template-columns:54px minmax(0,1fr);column-gap:14px;padding:14px 0;
+  border-bottom:1px dashed var(--line);scroll-margin-top:14px}
+.para .pg{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;color:var(--muted);padding-top:6px;grid-row:span 2}
+.para .en{font-size:var(--fs-en);color:var(--ink-soft);line-height:1.7;text-align:justify}
+.para .zh{font-size:var(--fs-zh);line-height:var(--lh-zh);margin-top:8px;padding:10px 14px;background:var(--zhbg);
+  border-left:3px solid var(--accent);border-radius:0 7px 7px 0;text-align:justify;transition:background .28s ease}
+.note{background:var(--note-bg);border:1px solid var(--note-line);border-left:4px solid var(--note-bar);
+  border-radius:0 9px 9px 0;padding:12px 16px;margin:20px 0;font-size:13.5px;line-height:1.8;transition:background .28s ease}
+.note b{color:var(--note-ink)}
+table.t1{width:100%;border-collapse:collapse;font-family:system-ui,sans-serif;font-size:12.5px;background:var(--card);margin:8px 0;transition:background .28s ease}
+table.t1 th,table.t1 td{border:1px solid var(--line);padding:5px 9px;text-align:left}
+table.t1 th{background:var(--thbg);font-weight:600}
+
+/* ---------- 右栏 PDF ---------- */
+#right{flex:1 1 50%;min-width:0;min-height:0;overflow:auto;background:#e9ecef;transition:background .28s ease}
+#right::-webkit-scrollbar{width:9px}
+#right::-webkit-scrollbar-thumb{background:#c3c9cf;border-radius:5px}
+#right-inner{position:relative;padding:14px}
+.pdf-page{position:relative;width:100%;max-width:900px;margin:0 auto 14px;background:#fff;
+  box-shadow:0 4px 16px -4px rgba(0,0,0,.28)}
+.pdf-page img{display:block;width:100%;height:auto;user-select:none;transition:filter .28s ease}
+#pointer{position:absolute;left:8px;right:8px;top:0;height:34px;margin-top:-17px;pointer-events:none;z-index:5;
+  background:linear-gradient(90deg, rgba(255,120,0,.30), rgba(255,200,0,.20) 45%, rgba(255,220,0,.10));
+  border-left:4px solid #ff6a00;border-radius:4px;
+  box-shadow:inset 0 0 0 1px rgba(255,120,0,.28);
+  transform:translateY(0);will-change:transform;
+  transition:transform .14s cubic-bezier(.2,.7,.3,1)}
+#pointer::after{content:"";position:absolute;left:-8px;top:50%;transform:translateY(-50%);
+  border:7px solid transparent;border-left-color:#ff6a00}
+/* 护眼：PDF 也做暖色滤镜，整体更耐看 */
+body.eye #right{background:#dfe9dc}
+body.eye .pdf-page img{filter:sepia(.22) saturate(.92) brightness(.98)}
+
+/* ===== 标注样式 ===== */
+.ann-hl,.ann-hl-y{background:linear-gradient(transparent 60%, #ffe066 60%);border-radius:2px;padding:0 1px}
+.ann-hl-g{background:linear-gradient(transparent 60%, #b9f6ca 60%);border-radius:2px;padding:0 1px}
+.ann-hl-p{background:linear-gradient(transparent 60%, #ffc1e3 60%);border-radius:2px;padding:0 1px}
+.ann-hl-b{background:linear-gradient(transparent 60%, #a7d8ff 60%);border-radius:2px;padding:0 1px}
+.ann-ul{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px;text-decoration-thickness:2px}
+.ann-bd{font-weight:700}
+body.eye .ann-hl,body.eye .ann-hl-y{background:linear-gradient(transparent 60%, #f4d35e 60%)}
+body.eye .ann-hl-g{background:linear-gradient(transparent 60%, #a8e6b8 60%)}
+body.eye .ann-hl-p{background:linear-gradient(transparent 60%, #f3c0d8 60%)}
+body.eye .ann-hl-b{background:linear-gradient(transparent 60%, #a3cdf0 60%)}
+
+/* ===== 阅读笔记侧栏 ===== */
+#notes-drawer{position:fixed;top:0;right:0;height:100vh;width:360px;max-width:92vw;z-index:120;background:var(--surface);border-left:1px solid var(--line);box-shadow:-14px 0 44px -20px rgba(0,0,0,.4);display:flex;flex-direction:column;transform:translateX(106%);transition:transform .26s ease;font-family:system-ui,"Microsoft YaHei",sans-serif}
+#notes-drawer.open{transform:translateX(0)}
+.nd-head{display:flex;align-items:center;gap:8px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.nd-head h3{margin:0;font-size:15px;flex:1;color:var(--ink);font-weight:600}
+.nd-head h3 span{color:var(--accent);font-weight:700}
+.nd-head .xc{cursor:pointer;border:none;background:transparent;font-size:18px;color:var(--muted);line-height:1}
+.nd-tools{display:flex;gap:8px;padding:10px 16px;border-bottom:1px solid var(--line)}
+.nd-tools button{font-size:12.5px;padding:7px 12px;border-radius:8px;border:1px solid var(--line-strong);background:var(--card);color:var(--ink-soft);cursor:pointer;font-family:inherit}
+.nd-tools button:hover{border-color:var(--accent);color:var(--accent)}
+.nd-edit{flex:0 0 auto;display:flex;flex-direction:column;padding:12px 16px 6px;gap:8px}
+.nd-edit textarea{flex:1;min-height:120px;resize:vertical;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13.5px;line-height:1.7;font-family:inherit;color:var(--ink);background:var(--bg)}
+.nd-edit .add{display:flex;justify-content:flex-end}
+.nd-edit .add button{padding:8px 16px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer;font-size:13px;font-family:inherit}
+.nd-edit .add button:hover{background:var(--accent-deep)}
+.nd-list{flex:1;overflow:auto;padding:6px 16px 18px;display:flex;flex-direction:column;gap:10px}
+.nd-item{background:var(--note-bg);border:1px solid var(--note-line);border-left:4px solid var(--note-bar);border-radius:0 9px 9px 0;padding:10px 30px 10px 12px;position:relative}
+.nd-item .t{font-size:11px;color:var(--muted);margin-bottom:5px;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.nd-item .jump{cursor:pointer;color:var(--accent);font-size:11px;max-width:62%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nd-item .bd{font-size:13.5px;line-height:1.7;color:var(--ink);white-space:pre-wrap;word-break:break-word}
+.nd-item .del{position:absolute;top:8px;right:8px;cursor:pointer;border:none;background:transparent;color:var(--muted);font-size:13px;line-height:1}
+.nd-empty{color:var(--muted);font-size:13px;text-align:center;padding:34px 12px;line-height:1.8}
+.nd-group{margin-top:4px}
+.nd-group-h{display:flex;align-items:center;gap:8px;padding:10px 2px 5px}
+.nd-group-h .gt{font-size:12.5px;font-weight:600;color:var(--accent);cursor:pointer;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nd-group-h .gc{font-size:11px;color:var(--muted);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:1px 8px}
+
+/* ===== 选区标注工具条 ===== */
+#sel-bar{position:fixed;z-index:140;display:none;background:var(--ink);color:#fff;border-radius:11px;padding:5px;gap:1px;box-shadow:0 10px 28px -8px rgba(0,0,0,.55);font-family:system-ui,sans-serif;transform:translateX(-50%)}
+#sel-bar.show{display:flex}
+#sel-bar button{border:none;background:transparent;color:#fff;font-size:12.5px;padding:6px 10px;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:5px;font-family:inherit}
+#sel-bar button:hover{background:rgba(255,255,255,.16)}
+#sel-bar .sep{width:1px;align-self:stretch;background:rgba(255,255,255,.22);margin:5px 2px}
+#sel-bar .sw{width:14px;height:14px;border-radius:4px;display:inline-block;box-sizing:border-box}
+#sel-bar .lbl{color:rgba(255,255,255,.7);font-size:12px;padding:0 2px 0 4px;user-select:none}
+
+/* ===== 提示 ===== */
+#toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%) translateY(16px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:13px;font-family:system-ui,sans-serif;opacity:0;pointer-events:none;transition:all .25s;z-index:160;box-shadow:0 10px 30px -8px rgba(0,0,0,.5);max-width:80vw;text-align:center}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ===== 返回顶部 ===== */
+#top{position:fixed;right:26px;bottom:26px;z-index:60;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-strong);background:var(--card);color:var(--accent);font-size:18px;cursor:pointer;display:none;place-items:center;box-shadow:0 6px 20px -6px rgba(0,0,0,.25);transition:all .2s}
+#top.show{display:grid}
+#top:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+@media(max-width:1000px){
+  nav.toc{display:none}
+  #split{flex-direction:column}
+  #left{border-right:none;border-bottom:1px solid var(--line-strong)}
+}
+@media(max-width:860px){
+  #notes-drawer{width:100%;max-width:100%}
+}
+/* ===== 用户覆盖样式（templates/overrides/extra.css 会注入到这里，升级不覆盖你的定制） ===== */
+/* ============================================================
+   用户覆盖样式（extra.css）
+   ------------------------------------------------------------
+   本文件会被注入到 viewer.html 的 </style> 之前，优先级高于默认样式。
+   把你想定制的样式写在这里，升级 skill 时不会被覆盖。
+
+   示例（取消注释即可生效）：
+
+   :root{
+     --accent:#2563eb;
+     --accent-deep:#1e40af;
+   }
+   .para .zh{ border-left-color:#2563eb; }
+   #pointer{ border-left-color:#2563eb; }
+   ============================================================ */
+
+</style>
+</head>
+<body class="fs-m mode-both">
+<div id="topbar">
+  <span class="t">Solid-State Sodium Batteries · 双栏同步阅读器</span>
+  <span class="badge" id="curpage"></span>
+  <button class="tbtn" id="btn-eye" title="切换浅绿护眼背景（快捷键 G）"><span class="ico">🌱</span>护眼</button>
+  <button class="tbtn on" id="btn-mode" title="切换中英 / 仅中 / 仅英（快捷键 T）"><span class="ico">🔡</span><span id="mode-label">中英对照</span></button>
+  <button class="tbtn" id="btn-fs" title="调整字号（快捷键 + / -）"><span class="ico">Ａ</span><span id="fs-label">字号 中</span></button>
+  <button class="tbtn" id="btn-notes" title="打开 / 关闭阅读笔记侧栏"><span class="ico">📝</span>笔记</button>
+  <button class="tbtn" id="btn-clearann" title="清除文档内全部标注（不影响笔记）"><span class="ico">🖍</span>清标注</button>
+  <span class="spacer"></span>
+  <button class="tbtn" id="btn-narrow" title="切换紧凑/舒展行宽"><span class="ico">↔</span>行宽</button>
+  <button class="tbtn on" id="btn-follow" title="开启后，右侧 PDF 自动跟随左侧阅读进度滚动">🔗 跟随</button>
+  <div id="progress"></div>
+</div>
+<div id="split">
+  <div id="left">
+    <nav class="toc"><h4>目录</h4><ul><li><a href="#abstract">Abstract</a></li><li><a href="#sec1">引言 Introduction</a></li><li><a href="#sec1b">引言（续）</a></li><li><a href="#sec2">固态电解质 Solid-State Electrolytes</a></li><li class="l2"><a href="#sec2-1">2.1. 固态聚合物电解质 Solid Polymer Electrolytes</a></li><li class="l2"><a href="#sec2-1-1">2.1.1. 离子传输机制 Ion-Transport Mechanisms</a></li><li class="l2"><a href="#sec2-1-2">2.1.2. PEO 基电解质 PEO-Based Electrolytes</a></li><li class="l2"><a href="#sec2-1-3">2.1.3. 非 PEO 基电解质 Non-PEO-Based Electrolytes</a></li><li class="l2"><a href="#sec2-2">2.2. 复合聚合物电解质 Composite Polymer Electrolytes</a></li><li class="l2"><a href="#sec2-3">2.3. 无机固态电解质 Inorganic Solid Electrolytes</a></li><li class="l2"><a href="#sec2-3-1">2.3.1. 离子传输机制 Ion-Transport Mechanisms</a></li><li class="l2"><a href="#sec2-3-2">2.3.2. 氧化物固态电解质 Oxide Solid Electrolytes</a></li><li class="l2"><a href="#sec2-3-3">2.3.3. 钠超离子导体 NASICON Sodium Superionic Conductor</a></li><li class="l2"><a href="#sec2-3-4">2.3.4. 硫化物固态电解质 Sulfide Solid Electrolytes</a></li><li class="l2"><a href="#sec2-3-5">2.3.5. 其他体系 Others</a></li><li class="l2"><a href="#sec2-4">2.4. 小结：电导率提升与稳定性</a></li><li><a href="#sec3">固态钠电池 Solid-State Sodium Batteries</a></li><li><a href="#sec3b">固态钠电池（续）Sulfide &amp; Polymer</a></li><li><a href="#sec4">考量与未来展望 Considerations and Future Perspectives</a></li><li class="l2"><a href="#sec4-1">4.1. 界面 Interface</a></li><li class="l2"><a href="#sec4-2">4.2. 能量密度与功率密度 Energy and Power Densities</a></li><li class="l2"><a href="#sec4-3">4.3. 安全性 Safety</a></li><li><a href="#conclusion">Conclusion</a></li></ul></nav>
+    <div id="content">
+      <header class="hero"><div class="hero-in">
+<div class="kicker">Nature Reader · 源文对照精读</div>
+<h1 class="title">Solid-State Sodium Batteries</h1>
+<p class="subtitle">固态钠电池（综述）</p>
+<div class="meta">
+<b>作者：</b>Chenglong Zhao, Lilu Liu, Xingguo Qi, Yaxiang Lu*, Feixiang Wu, Junmei Zhao, Yan Yu*, Yong-Sheng Hu*, Liquan Chen<br>
+<b>期刊：</b>Advanced Energy Materials, 2018, 8, 1703012 · DOI: 10.1002/aenm.201703012<br>
+<b>来源：</b>科研通（ablesci.com）下载 PDF · 共 20 页 · 全文 约 9.2 万 字符<br>
+<b>说明：</b>逐段英文原文 + 中文译文对照；每段左侧标注 PDF 页码，可回源核对。图片为原文裁切，含原图题。
+</div>
+</div></header>
+      <main>
+<h2 id="abstract">摘要 Abstract</h2><div class="para" id="a1">
+<div class="pg">p.1</div>
+<div class="en">Rechargeable Na-ion batteries (NIBs) are attractive large-scale energy storage systems compared to Li-ion batteries due to the substantial reserve and low cost of sodium resources. The recent rapid development of NIBs will no doubt accelerate the commercialization process. As one of the indispensable components in current battery systems, organic liquid electrolytes are widely used for their high ionic conductivity and good wettability, but the low thermal stability, especially the easy flammability and leakage make them at risk of safety issues. The booming solid-state batteries with solid-state electrolytes (SSEs) show promise as alternatives to organic liquid systems due to their improved safety and higher energy density. However, several challenges including low ionic conductivity, poor wettability, low stability/incompatibility between electrodes and electrolytes, etc., may degrade performance, hindering the development of practical applications. In this review, an overview of Na-ion SSEs is first outlined according to the classification of solid polymer electrolytes, composite polymer electrolytes, inorganic solid electrolytes, etc. Furthermore, the current challenges and critical perspectives for the potential development of solid-state sodium batteries are discussed in detail.</div>
+<div class="zh">与锂离子电池相比，可充放电的钠离子电池（NIBs）因钠资源储量丰富、成本低廉，是颇具吸引力的大规模储能体系。近年来 NIBs 的快速发展无疑将加速其商业化进程。作为当前电池体系中不可或缺的组分，有机液体电解液凭借高离子电导率和良好的润湿性而被广泛使用，但其热稳定性差，尤其是易燃烧和易泄漏，使其存在安全隐患。蓬勃发展的、采用固态电解质（SSEs）的固态电池，因安全性更好、能量密度更高，有望成为有机液体体系的替代方案。然而，离子电导率低、润湿性差、电极与电解质之间稳定性低/不相容等一系列挑战可能会降低性能，阻碍其实用化发展。本篇综述首先按固态聚合物电解质、复合聚合物电解质、无机固态电解质等分类，概述钠离子固态电解质；随后详细探讨当前面临的挑战以及固态钠电池潜在发展的关键性观点。</div>
+</div><h2 id="sec1">1. 引言 Introduction</h2><div class="para" id="s1p1">
+<div class="pg">p.1</div>
+<div class="en">The development of advanced energy storage systems (ESSs) is the promising solution for the increasing environmental concerns on fossil fuels and the inevitability of utilizing renewable energy sources. Among them, electrochemical energy storage systems offer efficient and reliable storage of electricity, which are widely used in a range of applications from portable electronics to electric vehicles in our daily life. During the past few decades, Li-ion batteries (LIBs) have occupied a dominant position of the consumer electronics market for the dramatically growing demand toward the higher energy density and long-cycle life. It is estimated that the worldwide sales of LIBs will be up to 63% in all storage systems and the market value will reach $213.5 billion by 2020. The increasing market demand for LIBs may drive the rise of cost and cause lithium resource shortage. Therefore, alternative battery technologies with lower cost and more abundant resources are desirable to achieve long-term development goals.</div>
+<div class="zh">面对日益加剧的化石燃料环境问题以及利用可再生能源的必然性，发展先进的储能系统（ESSs）是有前景的解决方案。其中，电化学储能系统能够高效、可靠地存储电能，已广泛应用于从便携电子产品到电动汽车等一系列日常场景。过去几十年间，随着对更高能量密度和长循环寿命的需求急剧增长，锂离子电池（LIBs）占据了消费电子市场的主导地位。据估计，到 2020 年 LIBs 在全球所有储能系统中的销量占比将高达 63%，市场价值将达 2135 亿美元。LIBs 市场需求的增长可能推高成本并造成锂资源短缺。因此，为实现长期发展目标，亟需资源更丰富、成本更低的替代电池技术。</div>
+</div><div class="para" id="s1p2">
+<div class="pg">p.1</div>
+<div class="en">Rechargeable Na-ion batteries (NIBs) with a similar electrochemical storage mechanism have been confirmed to be a potential alternative to LIBs for their substantial abundance of sodium reserves and low cost, which show a great competitive advantage for large-scale ESSs. Very recently, the prototype pouch NIBs with layered Na0.9[Cu0.22Fe0.30Mn0.48]O2 cathode and soft carbon anode materials (derived from anthracite), have been successfully fabricated. This Na-ion full battery exhibits an energy density of ≈100 Wh kg−1 with good long-cycle stability. A series of safety experiments demonstrate the pouch cells to satisfy the needs of practical applications, and most importantly, the lower cost is much desirable for the large-scale ESSs. A recent review article systematically summarized the most recent developments on Na-ion full cells, which gave an academic overview of Na-ion technologies. The current NIBs derived by organic liquid electrolytes (OLEs) made from sodium salts and organic solvents usually suffer from several problems, including limited electrochemical window, flammability, and leakages to the potential safety hazard in large-scale applications.</div>
+<div class="zh">具有类似电化学储能机制的可充钠离子电池（NIBs），因钠储量极为丰富且成本低廉，已被证实是 LIBs 的潜在替代者，在大规模 ESSs 中极具竞争优势。不久前，以层状 Na0.9[Cu0.22Fe0.30Mn0.48]O2 为正极、由无烟煤衍生的软碳为负极的原型软包 NIBs 已被成功制备。该钠离子全电池能量密度约 100 Wh kg⁻¹，且具有良好的长循环稳定性。一系列安全实验表明该软包电芯满足实际应用需求，而最重要的是其较低成本非常契合大规模 ESSs 的需要。近期一篇综述系统总结了钠离子全电池的最新进展，给出了钠离子技术的学术概览。目前由钠盐和有机溶剂组成的有机液体电解液（OLEs）所构建的 NIBs 通常存在若干问题，包括电化学窗口有限、易燃以及泄漏，在大规模应用中构成潜在安全隐患。</div>
+</div><div class="para" id="s1p3">
+<div class="pg">p.1–2</div>
+<div class="en">Lithium metal as an anode material has become one of the most attractive anodes for a rechargeable battery owing to its unique specific capacity of 3860 mA h g−1 and lowest redox potential of −3.04 V (Li+/Li) versus standard hydrogen electrode (SHE), which shows a very high electrochemical energy equivalent for LIBs. Compared to lithium metal, sodium metal shows the acceptable specific capacity (1166 mA h g−1) and slightly higher standard reduction potential (−2.71 V vs SHE), but it is more problematic than lithium metal owing to its high chemical reactivity with the organic electrolyte solvents. Sodium metal anode also plays an important role for the development of high energy batteries (e.g., Na–S, Na–O2 batteries). However, the use of sodium metal in a practical battery may cause safety hazards, especially in the liquid electrolyte battery: dendritic sodium growth due to its uneven deposition upon charging, and further growth of dendrites may puncture the separator, leading to a short circuit eventually. Therefore, sodium metal batteries with higher energy density are limited and difficult to be improved for the current liquid electrolyte batteries. Although some strategies have been used to effectively suppress the growth of dendrites by introducing additives in current OLEs or surface protection to avoid direct contact between sodium metal and electrolytes. The straightforward strategy is to replace liquid electrolytes with a safer electrolytic media forming physical obstacles to stop the growth of dendrites, which will indeed improve the electrochemical properties of a battery.</div>
+<div class="zh">金属锂作为负极材料，凭借其独特的比容量（3860 mA h g⁻¹）和最低的氧化还原电位（相对标准氢电极 SHE 为 −3.04 V，Li⁺/Li），已成为可充电池中最具吸引力的负极之一，为 LIBs 提供了极高的电化学能量当量。与金属锂相比，金属钠具有尚可接受的比容量（1166 mA h g⁻¹）和略高的标准还原电位（相对 SHE 为 −2.71 V），但由于其与有机电解液溶剂化学反应活性高，问题比金属锂更多。金属钠负极对高能电池（如 Na–S、Na–O2 电池）的发展同样具有重要意义。然而，在实际电池中使用金属钠可能带来安全隐患，在液体电解液电池中尤为突出：充电时沉积不均匀导致钠枝晶生长，枝晶进一步生长可能刺穿隔膜，最终造成短路。因此，在现有液体电解液电池中，具有更高能量密度的钠金属电池受到限制且难以改善。尽管已有一些策略通过在现有 OLEs 中引入添加剂或进行表面保护以避免金属钠与电解液直接接触，从而有效抑制枝晶生长；但更直接的策略是用更安全的电解质介质取代液体电解液，形成物理屏障来阻止枝晶生长，这确实能改善电池的电化学性能。</div>
+</div><div class="note"><b>关于图 1（p.3）</b>：原图对比了 (a) 传统钠离子电池（有机液体电解液，OLEs）、(b) 固态钠电池（无机固态电解质，ISEs）、(c) 柔性固态钠电池（固态聚合物/塑料电解质，SPEs）三类体系，并着重突出了电极–电解质界面层。原注为“Adapted with permission.[30] Copyright 2016, Macmillan Publishers.”。</div><h2 id="sec1b">1. 引言（续）</h2><div class="para" id="s1p4">
+<div class="pg">p.2</div>
+<div class="en">Solid-state batteries (SSBs) provide a promising choice to the next generation of devices because of their enhanced safety and accessible to high-energy and high-power densities. The conventional NIBs with liquid electrolytes and solid-state sodium batteries with solid electrolytes (in Figure 1a,b) generally comprise four components: cathode, anode, electrolyte, and separator materials; while in the case of solid batteries, solid-state electrolytes (SSEs) can be served as electrolyte and separator simultaneously. However, several challenges should be further understood and solved in the development of SSEs, including a high ionic conductivity (&gt;10−2 S cm−1), chemical stability conjugating with anode and cathode materials, appropriate electrochemical stability window, mechanical property, etc. Solid–solid interface between electrode and solid electrolyte materials is the key factor, which determines the electrochemical performance of a solid-state battery. In this review, we will provide a comprehensive summary on Na-ion SSEs in Section 2, where the ion-transport mechanisms will be discussed and the analysis on the fundamental properties including ionic conductivity, chemical/electrochemical stability, mechanical property, preparation process will be introduced based on the representative examples. In Section 3, the recent development on SSBs will be overviewed; and in Section 4, the considerations and future perspectives such as sodium metal anode, interfacial stability, safety, energy and power densities, and long-term cycling stability, will be discussed. Nevertheless, sodium-based SSBs are being the potential applications for large-scale ESSs, which would capture widespread attention.</div>
+<div class="zh">固态电池（SSBs）因安全性更好、可实现高能量与高功率密度，为下一代器件提供了有前景的选择。采用液体电解液的传统 NIBs 与采用固态电解质的固态钠电池（图 1a、b）一般由四个组分构成：正极、负极、电解质和隔膜材料；而在固态电池中，固态电解质（SSEs）可同时充当电解质和隔膜。然而，在 SSEs 的发展中还需进一步认识和解决若干挑战，包括高离子电导率（&gt;10⁻² S cm⁻¹）、与正负极材料相容的化学稳定性、合适的电化学稳定窗口、力学性能等。电极与固态电解质材料之间的固–固界面是决定固态电池电化学性能的关键因素。本综述将在第 2 节对钠离子 SSEs 作全面总结，讨论离子传输机制，并以代表性实例分析离子电导率、化学/电化学稳定性、力学性能、制备工艺等基本性质。第 3 节将概述 SSBs 的最新进展；第 4 节将讨论钠金属负极、界面稳定性、安全性、能量与功率密度、长期循环稳定性等考量与未来展望。可以说，钠基 SSBs 在大规模 ESSs 中具有潜在应用，必将受到广泛关注。</div>
+</div><h2 id="sec2">2. 固态电解质 Solid-State Electrolytes</h2><div class="para" id="s2p1">
+<div class="pg">p.2–3</div>
+<div class="en">Generally, SSEs can be divided into three main categories: solid polymer electrolytes (SPEs), composite polymer electrolytes (CPEs) and inorganic solid electrolytes (ISEs). SPEs made up of the polymer matrix and sodium salt form a macromolecular architecture, possessing low flammability, good flexibility, and great competitive advantage in flexible solid-state sodium batteries (in Figure 1c). SPEs based on the polyethylene oxide (PEO) integrated with sodium salts are widely investigated in solid-state sodium batteries. However, SPEs show the relatively low ionic conductivity ≈10−6 to 10−8 S cm−1 at room temperature (RT). In order to solve this problem, CPEs was prepared by adding ceramic fillers (e.g., SiO2, Al2O3, ZrO2) to enhance the ionic conductivity, which can create more amorphous regions in polymer host to enhance ion transport. Usually, ISEs possess intrinsic high ionic conductivity at ambient temperature (≈10−3 S cm−1) as well as high mechanical strength (suppressing the growth of sodium dendrites), but the high cost and complex processing need further optimization.</div>
+<div class="zh">一般而言，固态电解质（SSEs）可分为三大类：固态聚合物电解质（SPEs）、复合聚合物电解质（CPEs）和无机固态电解质（ISEs）。由聚合物基体与钠盐构成的 SPEs 形成大分子架构，具有低可燃性、良好的柔韧性，在柔性固态钠电池中极具竞争优势（图 1c）。基于聚氧化乙烯（PEO）与钠盐结合的 SPEs 在固态钠电池中获得了广泛研究。然而，SPEs 在室温（RT）下的离子电导率较低，约为 10⁻⁶～10⁻⁸ S cm⁻¹。为解决这一问题，人们通过在聚合物基体中加入陶瓷填料（如 SiO₂、Al₂O₃、ZrO₂）制备 CPEs 以提高离子电导率——填料可在聚合物基体中产生更多非晶区，从而增强离子传输。通常，ISEs 在环境温度下本身具有较高的离子电导率（约 10⁻³ S cm⁻¹）以及高机械强度（可抑制钠枝晶生长），但成本高、加工复杂，仍需进一步优化。</div>
+</div><div class="para" id="s2p2">
+<div class="pg">p.3</div>
+<div class="en">A high ionic conductivity of SSEs at RT is the important parameter for the development of solid-state sodium batteries. A summary of ionic conductivity for the representative sodium-ion SSEs is presented in Figure 2. Unfortunately, none of these materials has been discovered with the high ionic conductivity at RT, even the same level as that of liquid electrolyte (in red oval). Compared to polymer electrolytes, ISEs show a higher ionic conductivity at a relatively low temperature range. Recently, Na Super Ionic Conductor structure (NASICON) Na3.3La0.3Zr1.7Si2PO12 composite electrolyte was found to have a higher ionic conductivity of 3.4 × 10−3 S cm−1 at 25 °C, which showed a potential to develop solid electrolytes. In this section, we will provide a summary of the current Na-ion SSEs, covering SPEs, CPEs, and ISEs, and discuss their unique ion-transport mechanisms and fundamental properties for potential SSBs.</div>
+<div class="zh">SSEs 在室温下的高离子电导率是发展固态钠电池的重要参数。图 2 汇总了代表性钠离子 SSEs 的离子电导率。遗憾的是，尚无材料在室温下被发现有高离子电导率，甚至达不到液体电解液的水平（红色椭圆）。与聚合物电解质相比，ISEs 在相对较低的温度区间表现出更高的离子电导率。近期发现，钠超离子导体结构（NASICON）的 Na3.3La0.3Zr1.7Si2PO12 复合电解质在 25 °C 下具有 3.4 × 10⁻³ S cm⁻¹ 的较高离子电导率，显示出开发固态电解质的潜力。本节将总结当前的钠离子 SSEs，涵盖 SPEs、CPEs 和 ISEs，并讨论它们独特的离子传输机制及用于潜在 SSBs 的基本性质。</div>
+</div><h3 id="sec2-1">2.1. 固态聚合物电解质 Solid Polymer Electrolytes</h3><div class="para" id="s21p1">
+<div class="pg">p.3–4</div>
+<div class="en">Polymer electrolytes can be prepared by a dissolution of metal salts in a polymer host with relatively high molecular weight. Alkali-ion can be solvated by polymer chains and move along with the movement of molecular chains to lead to ion transport. However, the movement of polymer chains is seriously influenced by the temperature; e.g., polymer electrolyte could possess an ionic conductivity of 10−3 to 10−4 S cm−1 for a battery operation normally above 80 °C. Polymer electrolytes have good flexibility for compensating the volume changes of electrodes, making them as the promising candidates for flexible SSBs. The commonly used polymer matrix for SSEs are PEO, poly(methyl methacrylate) (PMMA), poly(vinylidene fluoride) (PVDF), poly(vinylidene fluoridehexafluoropropylene), poly(vinyl chloride), poly(propylene oxide)), poly(acrylonitrile) (PAN), poly(vinyl alcohol) (PVA), in which PEO is the most widely used polymer owing to its flexible ethylene oxide segments and ether oxygen atoms as well as the commercial availability.</div>
+<div class="zh">聚合物电解质可通过将金属盐溶解于分子量较高的聚合物基体中制得。碱金属离子可被聚合物链溶剂化，并随分子链的运动而迁移，从而实现离子传输。然而，聚合物链的运动受温度影响很大；例如，聚合物电解质在通常高于 80 °C 的电池运行温度下才能具备 10⁻³～10⁻⁴ S cm⁻¹ 的离子电导率。聚合物电解质具有良好的柔韧性，可补偿电极的体积变化，使其成为柔性 SSBs 的有前景的候选材料。SSEs 常用的聚合物基体包括 PEO、聚甲基丙烯酸甲酯（PMMA）、聚偏氟乙烯（PVDF）、聚偏氟乙烯-六氟丙烯共聚物、聚氯乙烯、聚环氧丙烷、聚丙烯腈（PAN）、聚乙烯醇（PVA），其中 PEO 因其柔性的环氧乙烷链段、醚氧原子以及商业化可得性而被最广泛使用。</div>
+</div><h3 id="sec2-1-1">2.1.1. 离子传输机制 Ion-Transport Mechanisms</h3><div class="para" id="s211p1">
+<div class="pg">p.4–5</div>
+<div class="en">For these polymer hosts, polar groups (e.g., O, N, S, C=O, C=N) are of great importance to help dissolve sodium salts and form polymer–salt group. In fact, a higher dielectric strength for polymer matrix can often facilitate the dissociation of inorganic salts. The widely accepted view is that the ion transport in SPEs mainly occurs in the amorphous regions of polymer hosts, in which the molecular chains can oscillate above their glass transition temperature (Tg), resulting in ionic conductivity. For example, as shown in Figure 3a,b, Na+ ion first locates at sites to coordinated with polar groups of polymers (e.g., O in PEO); under the electric field, the segmental motion of molecular chains induces free volumes for Na+ ion migration. With the constant influence of the electric field, Na+ ions move/hop from one coordination site to the adjacent active sites along the long chains to realize ions transport. On the other hand, a possibility of ion transport occurring in static and ordered environment of a crystalline polymer host was reported, where Li+ ions can move from one site to the adjacent in the cylindrical tunnels in PEO6:LiXF6 (X = P, As, Sb) crystalline polymer electrolytes without segmental motion. However, there is no report on the crystalline polymer for ion transport in sodium-based SSEs until now. Generally, the ion transport in SSEs may not be easily understood due to lack of exact structure-property models. In case of ion transport in polymer-based electrolytes, the mechanism is related to an ionic moving/hopping motion along with the relaxation/breathing of polymer chains, and its temperature-dependent nature is intensively analyzed by the Arrhenius and Vogel–Tammann–Fulcher models or a combination of them.</div>
+<div class="zh">对于这些聚合物基体而言，极性基团（如 O、N、S、C=O、C=N）对帮助溶解钠盐、形成聚合物–盐结合具有重要作用。事实上，聚合物基体较高的介电强度往往有利于无机盐的解离。普遍认可的观点是：SPEs 中的离子传输主要发生在聚合物基体的非晶区，分子链在其玻璃化转变温度（Tg）以上可发生振荡，从而产生离子电导。例如，如图 3a、b 所示，Na⁺ 首先定位在与聚合物极性基团（如 PEO 中的 O）配位的位点上；在电场作用下，分子链的链段运动为 Na⁺ 迁移产生自由体积。在电场的持续作用下，Na⁺ 沿长链从一个配位位点向相邻活性位点移动/跳跃，从而实现离子传输。另一方面，也有报道称离子传输可在晶态聚合物基体的静态有序环境中发生：在 PEO6:LiXF6（X = P、As、Sb）晶态聚合物电解质中，Li⁺ 可在圆柱形隧道中由一位点迁移至相邻位点，而无需链段运动。但迄今为止，钠基 SSEs 中尚无以晶态聚合物实现离子传输的报道。总体而言，由于缺乏确切的结构–性能模型，SSEs 中的离子传输可能不易理解。就聚合物基电解质而言，其机制与离子伴随聚合物链松弛/呼吸的移动/跳跃运动有关，其温度依赖性常用 Arrhenius 与 Vogel–Tammann–Fulcher 模型或二者组合来深入分析。</div>
+</div><h3 id="sec2-1-2">2.1.2. PEO 基电解质 PEO-Based Electrolytes</h3><div class="para" id="s212p1">
+<div class="pg">p.5</div>
+<div class="en">PEO with the dissolved alkali metal salt was discovered to show ionic conductivity in 1973, which was first proposed for solid-state battery in 1979. The first PEO-based SPEs for sodium battery was reported in 1988 with the NaClO4 salt dissolved in PEO host, which showed an ionic conductivity of ≈3 × 10−6 S cm−1 at RT. After that, NaN(SO2F)2 (NaFSI)- and NaN(SO2CF3)2 (NaTFSI)-PEO SPEs were studied for a high ionic conductivity at RT. Currently, other sodium salts have also been studied for PEO-based SSEs, including NaPF6, NaClO4, NaCF3SO3, NaSCN, NaBF4, sodium 2,3,4,5-tetracyanopirolate (NaTCP), sodium 2,4,5-tricyanoimidazolate (NaTIM), etc. Among these salts, NaTFSI is the relatively promising one due to its higher ionic conductivities (about ≈10−4 S cm−1 above 80 °C) for PEO-based SSEs. It was reported that NaTFSI-PEO SPEs presented a higher RT ionic conductivity than that of NaFSI-PEO SPEs, which could be attributed to the weaker lattice energy of the NaTFSI salt and the large TFSI– group effectively reducing the crystallinity of PEO. In fact, the ionic conductivity is intensively depended on the number of free Na+ ions; NaTFSI salt can be dissolved much easier than NaFSI salt in the PEO host with more movable ions. However, NaTFSI exhibited a relatively low corrosion potential (i.e., voltage &lt; 4 V vs Na+/Na) of aluminum (Al) foil.</div>
+<div class="zh">1973 年人们发现溶解碱金属盐的 PEO 具有离子导电性，1979 年首次将其用于固态电池。首个用于钠电池的 PEO 基 SPEs 于 1988 年报道，将 NaClO4 盐溶解于 PEO 基体中，室温离子电导率约 3 × 10⁻⁶ S cm⁻¹。此后，人们研究了 NaN(SO2F)2（NaFSI）和 NaN(SO2CF3)2（NaTFSI）-PEO 型 SPEs 以获得较高的室温离子电导率。目前，其他钠盐也被用于 PEO 基 SSEs 的研究，包括 NaPF6、NaClO4、NaCF3SO3、NaSCN、NaBF4、2,3,4,5-四氰基吡咯钠（NaTCP）、2,4,5-三氰基咪唑钠（NaTIM）等。在这些盐中，NaTFSI 相对更具前景，因其在 PEO 基 SSEs 中离子电导率较高（80 °C 以上约 10⁻⁴ S cm⁻¹）。据报道，NaTFSI-PEO 型 SPEs 的室温离子电导率高于 NaFSI-PEO 型，这可归因于 NaTFSI 盐晶格能较弱，且体积较大的 TFSI⁻ 基团能有效降低 PEO 的结晶度。事实上，离子电导率强烈依赖于自由 Na⁺ 的数量；NaTFSI 盐比 NaFSI 盐更易溶于 PEO 基体，可动离子更多。然而，NaTFSI 对铝（Al）箔的腐蚀电位较低（即电压 &lt; 4 V vs Na⁺/Na）。</div>
+</div><h3 id="sec2-1-3">2.1.3. 非 PEO 基电解质 Non-PEO-Based Electrolytes</h3><div class="para" id="s213p1">
+<div class="pg">p.5</div>
+<div class="en">PEO is the most widely used polymer host because of its higher solubility for sodium salts, good structural and chemical stability, especially the high ionic conductivity in amorphous region (above the melting point). However, PEO shows a low oxidation potential, poor mechanical properties and a high degree of crystallinity at ambient temperature, resulting in the low ionic conductivity. By substituting the active group of C=O by C=N, PAN was also studied for sodium-based SSEs. NaCF3SO3-PAN SSEs show a higher ionic conductivity of ≈7.13 × 10−4 S cm−1 at RT and a lower activation energy ≈0.23 eV, which can be due to the weaker interaction between Na+ and nitrogen atom in PAN host. It is difficult to be shaped into film and the mechanical strength is poor, which hinders its practical application. Semicrystalline polymer PVA was also studied for the solid electrolyte owing to advantages of easy preparation, high dielectric constant strength and good film-forming property. NaBr-PVA electrolytes with different weight ratios were prepared by a solution-casting technique, where the electrolyte with ratio of 3:7 (NaBr:PVA) showed a higher ionic conductivity of 1.36 × 10−4 S cm⁻¹ at 40 °C. NaClO3-, NaClO4-, and NaF-PVP polymer electrolyte were also prepared but without a desired ionic conductivity.</div>
+<div class="zh">PEO 是最广泛使用的聚合物基体，因为其对钠盐溶解度较高、结构和化学稳定性好，尤其是在非晶区（熔点以上）具有高离子电导率。然而，PEO 氧化电位低、力学性能差，且环境温度下结晶度高，导致离子电导率低。通过将 C=O 活性基团替换为 C=N，PAN 也被用于钠基 SSEs 的研究。NaCF3SO3-PAN 型 SSEs 在室温下表现出约 7.13 × 10⁻⁴ S cm⁻¹ 的较高离子电导率和约 0.23 eV 的较低活化能，这可归因于 Na⁺ 与 PAN 基体中氮原子之间较弱的相互作用。但其难以成膜且机械强度差，阻碍了实际应用。半结晶聚合物 PVA 因易于制备、介电常数高、成膜性好等优点，也被用于固态电解质研究。采用溶液浇铸法制备了不同重量比的 NaBr-PVA 电解质，其中 3:7（NaBr:PVA）配比的电解质在 40 °C 下表现出 1.36 × 10⁻⁴ S cm⁻¹ 的较高离子电导率。NaClO3-、NaClO4- 和 NaF-PVP 聚合物电解质也有制备，但未获得理想的离子电导率。</div>
+</div><div class="para" id="s213p2">
+<div class="pg">p.5</div>
+<div class="en">Because of the good mechanical elasticity, SPEs can also be used as separators to segregate electrode materials or buffer layers to suppress deformation of electrode materials. Unfortunately, SPEs often suffer from a low ionic conductivity of less than 10−5 S cm−1 at RT, which is not high enough to drive the battery operation unless the temperature rising to 60–80 °C. A summary of the ionic conductivity of SSEs for sodium battery is presented in Table 1. Unless material innovation to be further developed, SPEs may not be suitable for the electrochemical devices operated at RT.</div>
+<div class="zh">由于具有良好的力学弹性，SPEs 也可用作隔膜以隔离电极材料，或用作缓冲层以抑制电极材料的形变。遗憾的是，SPEs 在室温下的离子电导率往往低于 10⁻⁵ S cm⁻¹，除非升温至 60～80 °C，否则不足以驱动电池工作。表 1 汇总了钠电池用 SSEs 的离子电导率。除非材料创新进一步发展，SPEs 可能并不适合在室温下运行的电化学器件。</div>
+</div><div class="note"><b>表 1（原文 p.5）</b>：钠基固态聚合物电解质（SPEs）离子电导率汇总。原文表格数据与正文被提取流拆散，此处按原文逐行重建。</div>
+<table class="t1">
+<thead><tr><th>SPE</th><th>[EO]/[Na]</th><th>σ / S cm⁻¹ (室温)</th><th>σ / S cm⁻¹ (80 °C)</th><th>Ref.</th></tr></thead>
+<tbody>
+<tr><td>NaClO4-PEO</td><td>12</td><td>≈1.4 × 10⁻⁶</td><td>6.5 × 10⁻⁴</td><td>[68]</td></tr>
+<tr><td>NaPF6-PEO</td><td>15</td><td>5 × 10⁻⁶</td><td>≈2 × 10⁻⁴</td><td>[69]</td></tr>
+<tr><td>NaTFSI-PEO</td><td>20</td><td>4.5 × 10⁻⁶</td><td>1.3 × 10⁻³</td><td>[40]</td></tr>
+<tr><td>NaFSI-PEO</td><td>6</td><td>≈1.5 × 10⁻⁶</td><td>1.3 × 10⁻⁴</td><td>[70]</td></tr>
+<tr><td>NaFNFSI-PEO</td><td>15</td><td>≈2 × 10⁻⁶</td><td>3.36 × 10⁻⁴</td><td>[39]</td></tr>
+<tr><td>NaPCPI-PEO</td><td>20</td><td>1.1 × 10⁻⁵</td><td>5.3 × 10⁻⁴</td><td>[73]</td></tr>
+<tr><td>NaTCP-PEO</td><td>16</td><td>6.9 × 10⁻⁵</td><td>1.57 × 10⁻³</td><td>[73]</td></tr>
+<tr><td>NaTIM-PEO</td><td>16</td><td>5.7 × 10⁻⁵</td><td>7.7 × 10⁻⁴</td><td>[73]</td></tr>
+<tr><td>NaCF3SO3-PAN</td><td>4.16</td><td>7.13 × 10⁻⁴</td><td>≈5 × 10⁻³</td><td>[75]</td></tr>
+<tr><td>NaBr-PVA</td><td>2.3</td><td>1.36 × 10⁻⁶</td><td>≈8 × 10⁻⁶</td><td>[77]</td></tr>
+<tr><td>NaClO4-PVP</td><td>3.3</td><td>≈2.5 × 10⁻⁶</td><td>≈7 × 10⁻⁵</td><td>[78]</td></tr>
+</tbody></table>
+<h3 id="sec2-2">2.2. 复合聚合物电解质 Composite Polymer Electrolytes</h3><div class="para" id="s22p1">
+<div class="pg">p.5–6</div>
+<div class="en">In order to further enhance the ionic conductivity of SPEs, several strategies (in Figure 3) have been implemented, including polymer crosslinking, blending, copolymerization, doping of additives such as plasticizers, ionic liquids, inorganic fillers, and liquid electrolyte. Compared to SPEs, CPEs often provide some better properties in electrochemical devices: a high ionic conductivity benefited from more amorphous region, good flexibility, chemical/thermal stability, etc. Polymer crosslinking, blending, copolymerization are the effective ways to increase ionic conductivity, but the incorporation of inorganic fillers has attracted a wide attention for the remarkably improved ionic conductivity, and good mechanical strength. Therefore, in this work, we focus on discussing influence of the incorporation of ceramic fillers. A good review article ref. [50] on the polymer electrolytes of LIBs, including polymer crosslinking, blending, copolymerization, etc. is recommended here for reference.</div>
+<div class="zh">为进一步提高 SPEs 的离子电导率，人们已实施了若干策略（见图 3），包括聚合物交联、共混、共聚，以及掺杂增塑剂、离子液体、无机填料和液体电解液等添加剂。与 SPEs 相比，CPEs 在电化学器件中常表现出更好的性能：因非晶区增多而获得的高离子电导率、良好的柔韧性、化学/热稳定性等。聚合物交联、共混、共聚是提高离子电导率的有效途径，但无机填料的引入因能显著提高离子电导率并获得良好的机械强度而广受关注。因此，本文重点讨论陶瓷填料引入的影响。此处推荐参考文献 [50] 中关于 LIBs 聚合物电解质（包括聚合物交联、共混、共聚等）的优秀综述以供参考。</div>
+</div><div class="para" id="s22p2">
+<div class="pg">p.6</div>
+<div class="en">Incorporated with nanosized TiO2, NaClO4-PEO CPEs fabricated by a solution casting technique exhibited a higher ionic conductivity of 2.62 × 10−4 S cm−1 at 60 °C than that of the TiO2-free SPEs (1.35 × 10−4 S cm−1). Beyond simply mixing inorganic fillers with polymer matrix mechanically, in situ growth of monodispersed SiO2-polymer electrolytes was proposed. This synthesis method strengthens the much stronger chemical interactions between inorganic fillers and polymer chains, thus producing more amorphous regions and leading to a higher ionic conductivity. Ionic liquids are typically identified as the ideal electrolyte additives for the high ion conductivity, high thermal stability and low flammability, etc.</div>
+<div class="zh">引入纳米 TiO2 后，采用溶液浇铸法制备的 NaClO4-PEO 型 CPEs 在 60 °C 下表现出 2.62 × 10⁻⁴ S cm⁻¹ 的较高离子电导率，高于不含 TiO2 的 SPEs（1.35 × 10⁻⁴ S cm⁻¹）。除了将无机填料与聚合物基体简单地机械混合外，人们还提出了原位生长单分散 SiO2-聚合物电解质的方法。该合成方法强化了无机填料与聚合物链之间更强的化学相互作用，从而产生更多非晶区并获得更高的离子电导率。离子液体通常被认为是理想的电解质添加剂，因其离子电导率高、热稳定性好、可燃性低等。</div>
+</div><div class="para" id="s22p3">
+<div class="pg">p.6</div>
+<div class="en">A hybrid NaClO4-PEO-5%SiO2-x% Emim FSI [1-ethyl-3-methylimidazolium bis(fluorosulfonyl) imide] (x = 50, 70) solid electrolyte was reported for solid-state sodium batteries, where a high RT ionic conductivity about 1.3 × 10−3 S cm−1 was achieved. Additionally, two special structure of SiO2 groups were synthesized as shown in Figure 3f by grafting SiO2 nanoparticles with sodium 2-[(trifluoromethanesulfonylimido)-N-4-sulfonylphenyl]ethyl and polyethylene glycol (PEG), forming SiO2-PEG-anion and/or Na+ salt (SiO2anion), respectively, and then the two groups were dissolved in the matrix of PEO and polyethyleneglycol dimethylether to obtain epoxy resin-SiO2-anion and EP-SiO2-PEG-anion CPEs. The obtained two CPEs presented the ionic conductivity of ≈10−5 S cm−1 at RT, but EP-SiO2-PEG-anion could get a higher ionic conductivity with the same Na+ concentration, which could be attributed to the high-delocalized anionic sulfonimide groups suppressing the large concentration polarization. All these indicates that the proper optimization on each segment can lead to a development of better CPEs with high ionic conductivity, good mechanical properties, etc. Therefore, CPEs have the ability to achieve increased ionic conductivity to a certain extent; more importantly, their electrochemical and mechanical properties can be tuned by the design of composite components, which makes CPEs very promising.</div>
+<div class="zh">有报道将杂化 NaClO4-PEO-5%SiO2-x% Emim FSI[1-乙基-3-甲基咪唑双(氟磺酰)亚胺]（x = 50、70）固态电解质用于固态钠电池，获得了约 1.3 × 10⁻³ S cm⁻¹ 的高室温离子电导率。此外，如图 3f 所示，人们通过将 SiO2 纳米颗粒分别接枝 2-[(三氟甲磺酰亚胺)-N-4-磺酰苯基]乙基钠和聚乙二醇（PEG），合成了两种特殊结构的 SiO2 基团，分别形成 SiO2-PEG-阴离子和/或 Na⁺ 盐（SiO2-阴离子），随后将这两种基团溶于 PEO 与聚乙二醇二甲醚基体中，得到环氧树脂-SiO2-阴离子和 EP-SiO2-PEG-阴离子型 CPEs。所得两种 CPEs 的室温离子电导率约为 10⁻⁵ S cm⁻¹，但在相同 Na⁺ 浓度下 EP-SiO2-PEG-阴离子可获得更高的离子电导率，这可归因于高度离域的阴离子磺酰亚胺基团抑制了较大的浓差极化。这些结果表明，对各链段进行适当优化可开发出兼具高离子电导率和良好力学性能的更好 CPEs。因此，CPEs 在一定程度上能够实现离子电导率的提升；更重要的是，其电化学与力学性能可通过复合组分设计加以调控，这使 CPEs 极具前景。</div>
+</div><div class="para" id="s22p4">
+<div class="pg">p.6</div>
+<div class="en">In addition, gel polymer electrolytes, composed of incorporating an organic electrolyte solution into a polymer matrix, can be regarded as the intermediate state between typical liquid and dry solid polymer electrolytes, which lead to a higher ionic conductivity about 10−4 to 10−3 S cm−1 at RT. Compared to the organic liquid electrolytes, an improved safety is often obtained due to the limited leakage of liquid electrolyte from the polymer hosts. A gel polymer electrolyte membrane of perfluorinated sulfonic ionomer in Na form swollen with ethylene carbonate and propylene carbonate nonaqueous solvents was studied as the electrolytes and separators for NIBs. This electrolyte showed the good mechanical and thermal stability as well as high ionic conductivity about 2.8 × 10−4 S cm−1. The study shows that the high ion exchange capacity of perfluorinated sulfonic ionomer can effectively offer enough ionic sites to reduce the crystallinity and increase the absorption capacity of solvent per unit weight of membranes. In comparison with liquid electrolyte, the as-prepared polymer electrolytes exhibited a higher reversible capacity and better cycling stability with the Na0.44MnO2 as cathode and Na metal as anode.</div>
+<div class="zh">此外，凝胶聚合物电解质由在聚合物基体中引入有机电解液溶液构成，可视为典型液体电解质与干态固态聚合物电解质之间的中间态，其室温离子电导率较高，约 10⁻⁴～10⁻³ S cm⁻¹。与有机液体电解液相比，由于液体电解质从聚合物基体中泄漏有限，安全性往往得到改善。有研究以乙撑碳酸酯和丙撑碳酸酯非水溶剂溶胀的钠型全氟磺酸离聚物凝胶聚合物电解质膜作为 NIBs 的电解质与隔膜。该电解质表现出良好的力学与热稳定性以及约 2.8 × 10⁻⁴ S cm⁻¹ 的高离子电导率。研究表明，全氟磺酸离聚物的高离子交换容量可有效提供足够的离子位点，从而降低结晶度并提高单位重量膜的溶剂吸收能力。与液体电解液相比，以 Na0.44MnO2 为正极、钠金属为负极时，所制聚合物电解质表现出更高的可逆容量和更好的循环稳定性。</div>
+</div><div class="para" id="s22p5">
+<div class="pg">p.6</div>
+<div class="en">Recently, hierarchical poly(ionic liquid)-based solid electrolytes were in situ prepared for high-safety LIBs and NIBs, which showed a high ionic conductivity &gt;10−3 S cm−1 at RT and good electrochemical stability. Benefiting from the features of poly(ionic liquid)s and advantages of in situ synthesis method, it provides high ionic conductivity for the application in SSBs. However, the low mechanical strength and poor interfacial properties remain the potential challenges to overcome. Incorporation of inorganic fillers into GPEs is good strategy to enhance their mechanical strength and improve the electrochemical properties.</div>
+<div class="zh">近期，人们原位制备了多级结构的聚离子液体基固态电解质用于高安全性 LIBs 和 NIBs，其室温离子电导率 &gt;10⁻³ S cm⁻¹，电化学稳定性良好。得益于聚离子液体的特性和原位合成方法的优势，它为 SSBs 应用提供了高离子电导率。然而，机械强度低和界面性能差仍是需要克服的潜在挑战。向 GPEs 中引入无机填料是提高其机械强度、改善电化学性能的良好策略。</div>
+</div><h3 id="sec2-3">2.3. 无机固态电解质 Inorganic Solid Electrolytes</h3><div class="para" id="s23p1">
+<div class="pg">p.6</div>
+<div class="en">Compared to the polymer-based electrolytes, ISEs with a high ionic conductivity and a high Na+ ion transference number at RT, can effectively improve battery performance for both long-term cycling and high-power density. In addition, ISEs with a much higher mechanical strength can suppress the growth of sodium dendrites, however, the low chemical/electrochemical stability may cause an unavoidable side reaction between electrolyte and electrode materials, resulting in a large interfacial impedance. The widely studied ISEs for sodium batteries are Na-β/β″-alumina, NASICON and sulfide due to their high conductivity and good mechanical properties.</div>
+<div class="zh">与聚合物基电解质相比，ISEs 在室温下具有高离子电导率和高 Na⁺ 迁移数，可有效改善电池的长循环性能和高功率密度表现。此外，ISEs 机械强度高得多，可抑制钠枝晶生长；然而，其化学/电化学稳定性较低，可能引起电解质与电极材料之间不可避免的副反应，导致较大的界面阻抗。钠电池中研究最广的 ISEs 是 Na-β/β″-氧化铝、NASICON 和硫化物，因为它们电导率高、力学性能好。</div>
+</div><h3 id="sec2-3-1">2.3.1. 离子传输机制 Ion-Transport Mechanisms</h3><div class="para" id="s231p1">
+<div class="pg">p.6</div>
+<div class="en">In inorganic electrolyte materials, the long-range or local structure is the key feature for ion transport. Mobile species need to move or hop from the local sites to adjacent sites by passing through an energetic barrier, which has a great influence on ionic mobility and conductivity. Ion diffusion mechanisms follow the models of Schottky and Frenkel point defects but take place in the connected conduction pathways. Therefore, a large number of mobile species and available adjacent positions/defects, along with a lower energetic/migration barrier, as well as the suitable conduction pathways/channels are the indispensable factors for a high ionic conductivity. For example, the well-known fast Na+ conductor Na3Zr2Si2PO12, an aliovalent Si4+ substitution to P5+ in NaZr2(PO4)3 can increase the concentration of mobile Na+ and improve a skeleton of linked octahedra and tetrahedra, which significantly promotes the development of fast ion conductor.</div>
+<div class="zh">在无机电解质材料中，长程或局域结构是离子传输的关键特征。可动离子需从局域位点移动或跳跃至相邻位点，并跨越能垒，这对离子迁移率和电导率影响很大。离子扩散机制遵循 Schottky 与 Frenkel 点缺陷模型，但发生在连通的传导通路中。因此，大量的可动离子与可用的相邻位置/缺陷、较低的能垒/迁移势垒，以及合适的传导通路/通道，是高离子电导率不可或缺的因素。例如，著名的快 Na⁺ 导体 Na3Zr2Si2PO12，在 NaZr2(PO4)3 中以异价 Si⁴⁺ 取代 P⁵⁺，可提高可动 Na⁺ 浓度并改善由共角八面体和四面体构成的骨架，从而显著促进快离子导体的发展。</div>
+</div><h3 id="sec2-3-2">2.3.2. 氧化物固态电解质 Oxide Solid Electrolytes</h3><div class="para" id="s232p1">
+<div class="pg">p.6–7</div>
+<div class="en">Due to the high ionic conductivity and negligible electronic conductivity, Na-β/β″-alumina has been extensively investigated as components for electrochemical devices since the discovery in 1967. The emergence of Na-β-alumina has greatly promoted the commercialization of high-temperature Na/S batteries, which is the earliest commercially available battery system with a solid electrolyte. Na-β/β″-alumina has two crystal structures originating from different layer/block stacking sequences and chemical compositions shown in Figure 4, namely, β-Na2O·11Al2O3 (NaAl11O17) and β″-Na2O·5Al2O3 (NaAl5O8). Na-β-alumina has a hexagonal structure belonging to P63/mmc space group, while Na-β″-alumina has a rhombohedral with a space group of R-3m. These two structures are both stacked up by spinel blocks consisting of [AlO4] tetrahedral and [AlO6] octahedral, and the adjacent spinel blocks are connected by an oxygen ion with surrounding mobile Na+ to form the conduction planes.</div>
+<div class="zh">由于离子电导率高且电子电导率可忽略，Na-β/β″-氧化铝自 1967 年被发现以来，已作为电化学器件组分获得广泛研究。Na-β-氧化铝的出现极大推动了高温 Na/S 电池的商业化，后者是最早实现商业化、采用固态电解质的电池体系。如图 4 所示，Na-β/β″-氧化铝有两种晶体结构，源于不同的层/块堆叠序列和化学组成，即 β-Na2O·11Al2O3（NaAl11O17）和 β″-Na2O·5Al2O3（NaAl5O8）。Na-β-氧化铝为六方结构，属 P63/mmc 空间群；Na-β″-氧化铝为菱方结构，空间群为 R-3m。这两种结构均由 [AlO4] 四面体与 [AlO6] 八面体构成的尖晶石块堆叠而成，相邻尖晶石块通过一个氧离子及其周围的可动 Na⁺ 相连，形成传导面。</div>
+</div><div class="para" id="s232p2">
+<div class="pg">p.7</div>
+<div class="en">Na-β″-alumina phase with two conduction layers separated by three spinel blocks has a long c axis, which is 1.5 times longer than that of Na-β-alumina phase. In each conduction layer, Na-β″-alumina phase has two mobile Na+ while Na-β-alumina phase has only one mobile Na+. The bridging oxygen ion in Na-β″-alumina phase has a weaker electrostatic force with the surrounding Na+, which makes it a higher ionic conductivity ≈2 × 10−3 S cm−1 at RT. Unfortunately, Na-β″-alumina phase is not easily prepared for its unfavorable thermodynamic stability; it usually decomposes into Al2O3 and Na-β-alumina mixture at high temperatures about 1500 °C (the same temperature for phase formation). Thus, the obtained material is the mixture of Na-β″-alumina and Na-β-alumina, and the ionic conductivity is intensively related to the ratio of them.</div>
+<div class="zh">Na-β″-氧化铝相具有两个传导层、中间隔以三个尖晶石块，其 c 轴较长，比 Na-β-氧化铝相长 1.5 倍。每个传导层中，Na-β″-氧化铝相有两个可动 Na⁺，而 Na-β-氧化铝相只有一个可动 Na⁺。Na-β″-氧化铝相中的桥氧离子与周围 Na⁺ 的静电力较弱，使其在室温下具有约 2 × 10⁻³ S cm⁻¹ 的较高离子电导率。遗憾的是，Na-β″-氧化铝相因热力学稳定性不佳而不易制备；在约 1500 °C 的高温下（与相形成温度相同），它通常会分解为 Al2O3 与 Na-β-氧化铝的混合物。因此，所得材料是 Na-β″-氧化铝与 Na-β-氧化铝的混合物，离子电导率与其比例密切相关。</div>
+</div><div class="para" id="s232p3">
+<div class="pg">p.7</div>
+<div class="en">In order to obtain a higher proportion of Na-β″-alumina for a higher ionic conductivity, various compounds, including Li2O, MgO, TiO2, ZrO2, Y2O3, MnO2, SiO2, Fe2O3, etc. are widely used as the stabilizers to suppress the formation of Na-β-alumina phase. In addition, the accommodation of excessive sodium in the interstitial sites can also promote the formation of Na-β″-alumina toward a higher ionic conductivity. So far, different synthesis methods, such as solid-state reaction, coprecipitation, sol–gel, solution combustion techniques, alkoxide hydrolysis, molecular beam epitaxy, laser chemical vapor deposition, etc. are used to synthesize this material, and some of them can effectively decrease the grain-boundary effect leading to a higher densification. In fact, a pure Na-β″-alumina phase is not desirable for application due to its moisture sensitivity and a low mechanical strength. Na-β/β″-alumina mixture with the proper ratio and incorporated stabilizers is more preferable for a high conductivity and good mechanical properties.</div>
+<div class="zh">为获得更高比例的 Na-β″-氧化铝从而提高离子电导率，人们广泛采用 Li2O、MgO、TiO2、ZrO2、Y2O3、MnO2、SiO2、Fe2O3 等多种化合物作为稳定剂，以抑制 Na-β-氧化铝相的形成。此外，过量钠占据间隙位也能促进 Na-β″-氧化铝的形成，从而提高离子电导率。迄今，已有固相反应、共沉淀、溶胶–凝胶、溶液燃烧、醇盐水解、分子束外延、激光化学气相沉积等多种合成方法被用于合成该材料，其中一些方法可有效减弱晶界效应，获得更高的致密度。事实上，由于对水分敏感且机械强度低，纯 Na-β″-氧化铝相并不适合应用。具有合适比例并掺入稳定剂的 Na-β/β″-氧化铝混合物更有利于获得高电导率和良好的力学性能。</div>
+</div><h3 id="sec2-3-3">2.3.3. 钠超离子导体 NASICON Sodium Superionic Conductor</h3><div class="para" id="s233p1">
+<div class="pg">p.7–8</div>
+<div class="en">NASICON as one of the most promising ionic conductors for SSBs has attracted considerable attention for its high ionic conductivity at RT. The representative composition, Na3Zr2Si2PO12, is a solid solution of NaZr2P3O12 with partial replacement of P by Si to form the general formula Na1+xZr2SixP3−xO12 (0 ≤ x ≤ 3). Na1+xZr2SixP3−xO12 can form two phases of rhombohedral (R-3c) and monoclinic (C2/c) (1.8 ≤ x ≤ 2.2) phase shown in Figure 5. The monoclinic phase is the low temperature phase and can be regarded as a rotational distortion of rhombohedral phase. The two phases comprised of corner-sharing tetrahedra [SiO4], [PO4], and octahedra [ZrO6] form a 3D network of channels for Na+ transportation. Two distinct Na sites of Na1 and Na2 construct a 3D diffusion network in rhombohedral phase, while three Na sites in the distorted monoclinic phase are presented with the original Na2 splitting into Na2 and Na3 sites to form two channels of Na1–Na2 and Na1–Na3 (in Figure 5). The Na2 site in rhombohedral phase can accommodate 3 moles of Na+ per formula. Therefore, a large number of mobile Na+ and available adjacent vacancies can exist simultaneously, which is very beneficial for Na+ diffusion.</div>
+<div class="zh">NASICON 作为 SSBs 最有前景的离子导体之一，因其在室温下具有高离子电导率而备受关注。其代表性组成为 Na3Zr2Si2PO12，是 NaZr2P3O12 中以 Si 部分取代 P 形成的固溶体，通式为 Na1+xZr2SixP3−xO12（0 ≤ x ≤ 3）。Na1+xZr2SixP3−xO12 可形成菱方相（R-3c）和单斜相（C2/c）（1.8 ≤ x ≤ 2.2）两种相，如图 5 所示。单斜相为低温相，可视为菱方相的旋转畸变。两相均由共角的 [SiO4]、[PO4] 四面体与 [ZrO6] 八面体构成，形成可供 Na⁺ 传输的三维通道网络。菱方相中 Na1 与 Na2 两个不同的 Na 位点构成三维扩散网络；而在畸变的单斜相中出现三个 Na 位点，原来的 Na2 分裂为 Na2 与 Na3 位点，形成 Na1–Na2 与 Na1–Na3 两条通道（图 5）。菱方相中的 Na2 位点每个化学式可容纳 3 mol Na⁺。因此，大量可动 Na⁺ 与可用的相邻空位可同时存在，这对 Na⁺ 扩散非常有利。</div>
+</div><div class="para" id="s233p2">
+<div class="pg">p.8</div>
+<div class="en">The optimal amount of Na+ is related to the composition, and ≈3.3 mol Na per formula unit is a criterion to a high ionic conductivity, demonstrated by Na3.3Zr1.7La0.3Si2PO12. At this point, a distorted monoclinic phase would appear, where the less symmetry structure may be favorable for Na+ migration. In addition, various substitutions can be realized in the NASICON structure with a general formula AMP3O12, which has been reported in a comprehensive article. Different compositions can lead to a great ionic conductivity gap (several orders of magnitude) in the NASICON-type compounds, where the effective ionic radius in M-sites closes to 0.72 Å.</div>
+<div class="zh">Na⁺ 的最佳含量与组成有关，每个化学式单元约 3.3 mol Na 是高离子电导率的判据，Na3.3Zr1.7La0.3Si2PO12 即为一例。此时会出现畸变的单斜相，该对称性较低的结构可能有利于 Na⁺ 迁移。此外，NASICON 结构中可实现多种取代，通式为 AMP3O12，已有综合性的文献报道。不同组成会使 NASICON 型化合物的离子电导率出现巨大差异（可达数个数量级），其中 M 位的有效离子半径接近 0.72 Å。</div>
+</div><div class="para" id="s233p3">
+<div class="pg">p.8</div>
+<div class="en">Because of the closest ionic radius of Sc3+ (0.745 Å) and Zr4+ (0.720 Å), a Sc-substitution Na3.4Sc0.4Zr1.6Si2PO12 was prepared by solution-assisted solid-state reaction method with a higher Na+ conductivity of 4.0 × 10−3 S cm−1 at 25 °C, however, the expensive Sc is not suitable for practical applications. Recently, a self-forming composited NASICON material was discovered, yielding a high ionic conductivity of 3.4 × 10−3 S cm−1 at 25 °C. In Na3Zr2Si2PO12, a bigger La3+ ion was introduced to form a new phase of Na3La(PO4)2 while it did not occupy the lattice sites of the original skeleton structure. The newly formed second phase can influence the ionic conductivity in three aspects: providing a concentration variation of the mobile ions in the pristine phase; increasing the density of the two-phase composite; facilitating the ion transport path along with the grain boundary, in this case a smaller grain boundary resistance is obtained. To be noticed, substitution of foreign elements may result in different optimal calcination temperatures, which in return would lead to a change on the density of ceramic sintering.</div>
+<div class="zh">由于 Sc³⁺（0.745 Å）与 Zr⁴⁺（0.720 Å）离子半径最为接近，人们采用溶液辅助固相反应法制备了 Sc 取代的 Na3.4Sc0.4Zr1.6Si2PO12，其在 25 °C 下具有 4.0 × 10⁻³ S cm⁻¹ 的较高 Na⁺ 电导率；但 Sc 价格昂贵，不适合实际应用。近期发现了一种自形成复合 NASICON 材料，在 25 °C 下获得 3.4 × 10⁻³ S cm⁻¹ 的高离子电导率。在 Na3Zr2Si2PO12 中引入较大的 La³⁺ 离子，会形成新相 Na3La(PO4)2，而 La³⁺ 并不占据原始骨架结构的晶格位点。新形成的第二相可从三方面影响离子电导率：改变原生相中可动离子的浓度；提高两相复合体的致密度；沿晶界促进离子传输路径，从而获得更小的晶界电阻。需要注意的是，引入异种元素可能导致最佳焙烧温度发生变化，进而改变陶瓷烧结的致密度。</div>
+</div><h3 id="sec2-3-4">2.3.4. 硫化物固态电解质 Sulfide Solid Electrolytes</h3><div class="para" id="s234p1">
+<div class="pg">p.8–9</div>
+<div class="en">Because of the high polarizability and large ionic radius of sulfur atom weakening the interaction between skeleton and sodium ions, sulfide solid electrolytes often provide a higher ionic conductivity at RT than that of the analogous oxides. Generally, sulfide glasses are prepared by mechanical milling method followed by heat treatment, which can produce some amorphous phase surrounding the region of crystalline phase, considerably decreasing grain-boundary resistance. The composition-dependent Na2S–P2S5 glass was prepared by mechanochemical processing, where the RT conductivity was found to be increased with the increase of Na2S content (≈10−5 S cm−1 with the maximum percentage of 80%). After further heat treatment, a superionic cubic Na3PS4 crystal (75Na2S–25P2S5) was formed with a higher ionic conductivity of 2.0 × 10−4 S cm−1. Importantly, this electrolyte has a wide voltage window about ≈5 V and a good electrochemical stability against sodium metal.</div>
+<div class="zh">由于硫原子极化率高、离子半径大，削弱了骨架与钠离子之间的相互作用，硫化物固态电解质在室温下往往比同类氧化物具有更高的离子电导率。一般而言，硫化物玻璃通过机械球磨并辅以热处理制得，可在晶相周围产生一定量的非晶相，从而显著降低晶界电阻。采用机械化学法制备了组成可调的 Na2S–P2S5 玻璃，发现其室温电导率随 Na2S 含量增加而升高（Na2S 最高占比 80% 时约 10⁻⁵ S cm⁻¹）。经进一步热处理后，形成超离子立方 Na3PS4 晶体（75Na2S–25P2S5），离子电导率提高至 2.0 × 10⁻⁴ S cm⁻¹。重要的是，该电解质具有约 5 V 的宽电压窗口以及对金属钠良好的电化学稳定性。</div>
+</div><div class="para" id="s234p2">
+<div class="pg">p.9</div>
+<div class="en">Na3PS4 was also reported with a low-temperature tetragonal phase (P4-21c), a tetragonally distorted phase from the cubic phase (I4-3m) shown in Figure 6. The difference of the two phases is very small, only with a less 0.2% volume change. However, in the cubic phase, only a Na1 (6b)-site occupancy is reported, while this site split into two Na+ sites of Na1 (2a) and Na2 (4d) in the tetragonal structure. Both two phases were reported to have the ionic conductivity, while the cubic one shows a higher value when a glass–ceramic sample was obtained. In addition, the introduction of vacancies can effectively improve ionic conductivity, even just 2% vacancies lead to an order of magnitude larger than that of the stoichiometric. Aliovalent doping M4+ (M = Si, Sn, Ge) for P5+ and X− for S2− (X = F, Cl, Br) to induce vacancy generation were also confirmed to a feasible strategy to influence the ionic conductivity of Na3PS4 materials.</div>
+<div class="zh">据报道 Na3PS4 还存在低温四方相（P4-21c），即由立方相（I4-3m）发生四方畸变而来的相，如图 6 所示。两相差异很小，体积变化不足 0.2%。然而，立方相中仅报道有 Na1（6b）位点占据，而在四方结构中该位点分裂为 Na1（2a）和 Na2（4d）两个 Na⁺ 位点。两相均被报道具有离子导电性，但获得玻璃–陶瓷样品时立方相表现出更高的电导率。此外，引入空位可有效提高离子电导率，即使仅 2% 的空位也能使其比化学计量组成高出一个数量级。以异价 M⁴⁺（M = Si、Sn、Ge）取代 P⁵⁺、以 X⁻（X = F、Cl、Br）取代 S²⁻ 来诱导空位生成，也被证实是影响 Na3PS4 材料离子电导率的可行策略。</div>
+</div><div class="para" id="s234p3">
+<div class="pg">p.9</div>
+<div class="en">Furthermore, other new phases such as Na10SnP2S12 and Na7P3X11 (X = O, S, Se), have been predicted by the powerful density functional theory calculations. The former has been confirmed by experimental results, and the latter may not be able to synthesize due to the unfavorable thermodynamic factors in spite of a higher ionic conductivity. However, the actual composition of Na10SnP2S12 remains to be further demonstrated due to the existence of impurity.</div>
+<div class="zh">此外，借助强大的密度泛函理论计算，人们还预测了 Na10SnP2S12 与 Na7P3X11（X = O、S、Se）等其他新相。前者已被实验结果证实；后者尽管离子电导率更高，但因热力学因素不利而可能无法合成。然而，由于杂质的存在，Na10SnP2S12 的实际组成仍有待进一步证实。</div>
+</div><h3 id="sec2-3-5">2.3.5. 其他体系 Others</h3><div class="para" id="s235p1">
+<div class="pg">p.9</div>
+<div class="en">Recently, complex borate-hydride compounds have been investigated as the promising SSEs for their higher ionic conductivity in Figure 7a. This kind of compounds usually shows highly disordered polymorphs at high temperature, in which the fast reorientation of the anion can effectively promote cation mobility, leading to the high conductivity. However, the in-depth understanding of their ion-transport mechanisms as well as their thermal and electrochemical stabilities is still underway. As a novel solid electrolyte for sodium batteries, sodium-rich antiperovskites have recently been discovered due to their superionic conductivity and structural tolerance. In the antiperovskite compounds, e.g., Na3OBr, a large amount of Na ions can be accommodated. By aliovalent substitution of Sr2+ to Na+, Na2.9Sr0.05OBr0.6I0.4 could show an ionic conductivity of 0.19 S m−1, which could only be realized at operating at 200 °C. In addition, the enhancement of the conductivity together with Na+ kinetic transport properties should be further investigated. Another kind of potential compounds with a general formula Na5MSi4O12 (M = Sc, Y, Fe, In, rare earths, etc.) may be used as the solid electrolytes for sodium batteries due to their open structure for Na+ location and migration in Figure 7b.</div>
+<div class="zh">近期，复杂硼氢化物因其较高的离子电导率（图 7a）而被研究为有前景的 SSEs。这类化合物在高温下通常表现出高度无序的多晶型，其中阴离子的快速重取向可有效促进阳离子迁移，从而获得高电导率。然而，对其离子传输机制以及热稳定性和电化学稳定性的深入理解仍在进行中。作为钠电池的新型固态电解质，富钠反钙钛矿近来因具有超离子导电性和结构宽容性而受到关注。在反钙钛矿化合物（如 Na3OBr）中可容纳大量 Na 离子。通过以 Sr²⁺ 对 Na⁺ 进行异价取代，Na2.9Sr0.05OBr0.6I0.4 可表现出 0.19 S m⁻¹ 的离子电导率，但只能在 200 °C 下运行才能实现。此外，电导率与 Na⁺ 动力学传输性能的提升仍有待进一步研究。另一类通式为 Na5MSi4O12（M = Sc、Y、Fe、In、稀土等）的潜在化合物，因其开放结构有利于 Na⁺ 的定位与迁移（图 7b），或可用作钠电池固态电解质。</div>
+</div><h3 id="sec2-4">2.4. 小结：电导率提升与稳定性</h3><div class="para" id="s24p1">
+<div class="pg">p.9</div>
+<div class="en">In contrast to SPEs and CPEs, ISEs present a higher ionic conductivity which can drive a battery to operate at RT to some extent. However, it is not enough to contribute a good performance in terms of high power densities and long-term cycling. In Na-β/β″-alumina, by introduction of stabilizers, such as Li2O, MgO, ZrO2, SiO2, etc. a higher proportion of Na-β″-alumina can be obtained with a higher ionic conductivity. For NASICON ionic conductor, due to its large 3D network and high tolerance in crystal structure, alio- and isovalent ion substitution can often increase their ionic conductivity. In addition, La3+ ion doping has been reported to induce the formation of a new phase to adjust the concentration of mobile ions and reduce grain boundary resistance, successfully leading to a higher ionic conductivity. For sulfide, the introduction of vacancies can effectively improve ionic conductivity. Looking for new materials with higher ionic conductivity of ≈10−2 S cm−1 is the target in the near future.</div>
+<div class="zh">与 SPEs 和 CPEs 相比，ISEs 具有更高的离子电导率，在一定程度上可驱动电池在室温下工作。但就高功率密度和长期循环而言，这还不足以带来良好性能。在 Na-β/β″-氧化铝中，通过引入 Li2O、MgO、ZrO2、SiO2 等稳定剂，可获得更高比例的 Na-β″-氧化铝，从而获得更高的离子电导率。对于 NASICON 离子导体，由于其三维网络宽大、晶体结构宽容度高，异价与同价离子取代往往能提高其离子电导率。此外，据报道 La³⁺ 掺杂可诱导新相形成，以调节可动离子浓度并降低晶界电阻，成功实现更高的离子电导率。对硫化物而言，引入空位可有效提高离子电导率。寻找离子电导率高达约 10⁻² S cm⁻¹ 的新材料是近期的目标。</div>
+</div><div class="para" id="s24p2">
+<div class="pg">p.9–10</div>
+<div class="en">In addition to the ionic conductivity, chemical and electrochemical stability are also considerably important in the discovery of electrolyte materials for sodium batteries. Commonly, several aspects need to be noted, for instance, properties of electrolyte materials, electrochemical oxidation/reduction potential and interface behavior between electrolytes and electrodes. Although sulfide electrolytes show higher conductivities than the others, they often suffer from a lower chemical stability. When exposed to air or moisture atmosphere, sulfides may be decomposed, resulting in the generation of H2S, or reaction with water to form crystalline hydrates. By partially replacing P with alloying element arsenic (As) to obtain Na3P0.62As0.38S4, an increased moisture stability was attained. The improved stability could be attributed to the effectively tailoring reaction products into the difficult-forming hydrates (e.g., Na3P1−xAsxS4·nH2O) instead of the easy-forming oxysulfides (e.g., Na3P1−xAsxOS3 and Na3P1−xAsxO2S2 with H2S release) due to the weaker As–O affinity to that of P–O.</div>
+<div class="zh">除离子电导率外，化学与电化学稳定性在钠电池电解质材料的探索中也相当重要。通常需注意几个方面，例如电解质材料的性质、电化学氧化/还原电位，以及电解质与电极之间的界面行为。尽管硫化物电解质电导率高于其他体系，但它们往往化学稳定性较低。暴露于空气或潮湿气氛中时，硫化物可能分解产生 H2S，或与水反应生成结晶水合物。通过以合金元素砷（As）部分取代 P 得到 Na3P0.62As0.38S4，其耐湿稳定性得以提高。稳定性提升可归因于：由于 As–O 亲和力弱于 P–O，反应产物被有效调控为难以生成的氢氧化物（如 Na3P1−xAsxS4·nH2O），而不是易于生成并释放 H2S 的氧硫化物（如 Na3P1−xAsxOS3 与 Na3P1−xAsxO2S2）。</div>
+</div><div class="para" id="s24p3">
+<div class="pg">p.10</div>
+<div class="en">The moisture stability of the sulfide is based on hard/soft acids and bases theory, where P (hard acid) is preferable to react with O (hard base) instead of S (soft base). Therefore, substitution P (hard acid) with antimony Sb (soft acid) have been indicated as a possible way to realize the air stability. Meanwhile, the composition is also a sensitive factor. Na-β″-alumina also suffers from the poor moisture sensitivity, where H+/H3O+ ions can intercalate into the conduction planes or cause the ion exchange reaction with Na+, resulting in the formation of the Al(OH)3 and aluminum oxyhydroxides. This often causes a sharp decrease of the mobile Na+ to result in a poor Na+ conductivity. In fact, Na-β/β″-alumina mixture with a proper ratio and incorporation of stabilizers are preferable for a high conductivity and chemical stability. By comparison, NASICON compounds are found to be stable in a moist environment. However, some elements, Zr4+, Si4+, etc. may be easily reduced at low potentials when contacted with sodium metal. SPEs and CPEs have good chemical and electrochemical stability, which is discussed above.</div>
+<div class="zh">硫化物的耐湿性基于硬/软酸碱理论：P（硬酸）更倾向于与 O（硬碱）反应，而不是与 S（软碱）反应。因此，以锑 Sb（软酸）取代 P（硬酸）被认为是实现空气稳定性的可能途径。同时，组成也是一个敏感因素。Na-β″-氧化铝同样存在耐湿性差的问题：H⁺/H3O⁺ 可插入传导面，或与 Na⁺ 发生离子交换反应，生成 Al(OH)3 及羟基氧化铝。这常导致可动 Na⁺ 急剧减少，进而使 Na⁺ 电导率变差。事实上，具有合适比例并掺入稳定剂的 Na-β/β″-氧化铝混合物，更有利于同时获得高电导率与化学稳定性。相比之下，NASICON 化合物在潮湿环境中较为稳定。然而，Zr⁴⁺、Si⁴⁺ 等元素在与金属钠接触、处于低电位时容易被还原。SPEs 和 CPEs 则具有良好的化学与电化学稳定性，前文已作讨论。</div>
+</div><div class="para" id="s24p4">
+<div class="pg">p.10–11</div>
+<div class="en">In addition, ISEs such as Na-β/β″-alumina and NASICON often show a high elastic modulus, which can effectively inhibit the growth of sodium dendrites to achieve improved safety. However, the high-modulus electrolytes may not usually provide a good wettability to electrode materials due to the poor interfacial contact, leading to a poor cycle performance. During the battery operation, the volume change of electrode materials is inevitable, so a suitable SSE is very important for forming the favorable contacts at the time. Polymer electrolytes have a low mechanical strength thus can present a good wettability on the surface of electrode materials. Unfortunately, they are often unable to prevent the growth of metal dendrites effectively. To solve this problem, incorporation of inorganic fillers, or formation of a block copolymer to develop CPEs are the promising strategy.</div>
+<div class="zh">此外，Na-β/β″-氧化铝和 NASICON 等 ISEs 往往具有高弹性模量，可有效抑制钠枝晶生长，从而提高安全性。然而，高模量电解质通常难以对电极材料提供良好的润湿性，界面接触较差，导致循环性能不佳。电池运行过程中电极材料的体积变化不可避免，因此合适的 SSE 对于在此时形成良好接触非常重要。聚合物电解质机械强度低，因而能在电极材料表面表现出良好的润湿性；但遗憾的是，它们往往无法有效阻止金属枝晶生长。为解决这一问题，引入无机填料或形成嵌段共聚物以制备 CPEs 是有前景的策略。</div>
+</div><div class="para" id="s24p5">
+<div class="pg">p.11</div>
+<div class="en">The preparation of composite SSEs with polymer electrolytes can be a trade-off to get the suitable modulus and surface wettability for practical application. PEO based Na3.4Zr1.8Mg0.2Si2PO12 composite electrolyte was prepared, which shows a high mechanical strength and an improved ionic conductivity. In the solid-state Na3V2(PO4)3/CPE/Na battery, it shows the good cycle performance with negligible capacity loss over 120 cycles. In addition, the use of a small amount of ionic liquid as the interface wetting agent has been confirmed an effective mean for both SSEs and CPEs to obtain a good wettability.</div>
+<div class="zh">将聚合物电解质与无机电解质复合制备 SSEs，可作为兼顾实际应用所需合适模量与表面润湿性的折中方案。已制备了 PEO 基 Na3.4Zr1.8Mg0.2Si2PO12 复合电解质，其机械强度高且离子电导率得到改善。在固态 Na3V2(PO4)3/CPE/Na 电池中，其循环性能良好，120 次循环容量损失可忽略。此外，使用少量离子液体作为界面润湿剂，已被证实是使 SSEs 和 CPEs 获得良好润湿性的有效手段。</div>
+</div><div class="para" id="s24p6">
+<div class="pg">p.11</div>
+<div class="en">Recently, a toothpaste-like electrode was developed by adding the ionic liquid into the cathode material to construct a wet interface layer with ISEs (Na-β″-alumina) to increase surface wettability toward a superior stability and high reversibility for SSBs (in Figure 8a). Differently, formation of a wet interfacial interlayer (sodium conductive thin layer) on the surface of Na3Zr2Si2PO12 solid electrolyte by in situ heat treatment was also found to be an effective strategy. Composite electrolytes with a moderate mechanical strength are expected to serve as an interface buffer to solve the volume changes of electrode materials for a better cycle performance, even the cold-pressing treatment could lead to a better densification.</div>
+<div class="zh">近期，人们开发了“牙膏状”电极：将离子液体加入正极材料中，与 ISEs（Na-β″-氧化铝）构建湿润界面层以提高表面润湿性，从而实现 SSBs 更优的稳定性和高可逆性（图 8a）。另一种思路是，通过原位热处理在 Na3Zr2Si2PO12 固态电解质表面形成湿润界面中间层（钠离子导电薄层），同样被证明是有效策略。具有适中机械强度的复合电解质有望充当界面缓冲层，解决电极材料的体积变化问题以获得更好的循环性能；甚至冷压处理也能带来更好的致密化。</div>
+</div><h2 id="sec3">3. 固态钠电池 Solid-State Sodium Batteries</h2><div class="para" id="s3p1">
+<div class="pg">p.11</div>
+<div class="en">The ultimate goal of developing SSEs technology is to make them successfully applied in SSBs, realizing the high safety, higher energy/power densities and long-cycle performance. In this section, we will summarize and discuss the current solid-state sodium batteries based on the above SSEs.</div>
+<div class="zh">发展固态电解质技术的最终目标，是使其成功应用于 SSBs，实现高安全性、更高的能量/功率密度和长循环性能。本节将基于上述 SSEs，对当前的固态钠电池作总结与讨论。</div>
+</div><div class="para" id="s3p2">
+<div class="pg">p.11</div>
+<div class="en">Na-β″-alumina is the pioneer of solid electrolytes used in sodium batteries due to its high ionic conductivity, and the high-temperature sodium–sulfur battery was discovered based on it. Recently, the room temperature Na/S batteries based on the Na-β″-alumina solid electrolyte were also reported. The batteries were constructed by sulfur/carbon (S/C) cathode, Na-β″-alumina solid electrolyte and sodium metal anode with an optimized amount of tetraethylene glycol dimethyl ether between the solid electrolyte and electrodes, where the solid electrolyte prevents the diffusion of sodium polysulfides into the anode sides. This battery showed a high capacity of 600 mA h g−1 with coulombic efficiency close to 100%.</div>
+<div class="zh">Na-β″-氧化铝因其高离子电导率而成为钠电池固态电解质的先驱，高温钠–硫电池正是基于它而被发现。近期也有基于 Na-β″-氧化铝固态电解质的室温 Na/S 电池报道。该电池由硫/碳（S/C）正极、Na-β″-氧化铝固态电解质和钠金属负极构成，并在固态电解质与电极之间加入适量四乙二醇二甲醚，其中固态电解质可阻止多硫化钠向负极侧扩散。该电池表现出 600 mA h g⁻¹ 的高容量，库仑效率接近 100%。</div>
+</div><div class="para" id="s3p3">
+<div class="pg">p.11</div>
+<div class="en">In addition, Na-β″-alumina solid electrolyte was also used in the Na-ion batteries. Solid-state sodium battery comprising of a P2-Na2/3[Fe1/2Mn1/2]O2 cathode, Na-β″-Al2O3 electrolyte, and Na2Ti3O7/La0.8Sr0.2MnO3 composite anode were prepared and showed a reversible capacity of 152 mA h g−1 at 350 °C. Furthermore, a solid-state battery was investigated based on the layered oxide Na0.66Ni0.33Mn0.67O2, Na-β″-alumina and sodium metal as cathode, electrolyte, and anode, respectively, which showed an outstanding rate capability and an ultralong cycle life of 10 000 times with a capacity retention of 90% at 6 C rate at 70 °C (in Figure 9a). Additionally, this SSB also presented a good performance at RT except for a poor power density. The outstanding performance was attributed to the design of toothpaste-like electrode which could adhere onto the surface of solid electrolyte and keep interface well contact with SSEs.</div>
+<div class="zh">此外，Na-β″-氧化铝固态电解质也被用于钠离子电池。已制备由 P2-Na2/3[Fe1/2Mn1/2]O2 正极、Na-β″-Al2O3 电解质和 Na2Ti3O7/La0.8Sr0.2MnO3 复合负极构成的固态钠电池，其在 350 °C 下表现出 152 mA h g⁻¹ 的可逆容量。进一步地，人们研究了以层状氧化物 Na0.66Ni0.33Mn0.67O2、Na-β″-氧化铝和钠金属分别作为正极、电解质和负极的固态电池，其倍率性能优异，在 70 °C、6 C 倍率下循环 10 000 次后容量保持率仍达 90%（图 9a）。此外，该 SSB 在室温下除功率密度较差外也表现出良好性能。其优异性能归因于“牙膏状”电极设计——该电极可黏附于固态电解质表面，保持与 SSEs 的良好界面接触。</div>
+</div><div class="para" id="s3p4">
+<div class="pg">p.11–12</div>
+<div class="en">Similar to the Na-β″-alumina, NASICON-type electrolytes also present a high ionic conductivity but suffer from a big interface resistance in the SSBs. Na/Na3Zr2Si2PO12/Na3V2(PO4)3 SSBs were evaluated at high temperature as shown in Figure 10a, which exhibited a poor rate and cycle performance. Na/Na3.3Zr1.7La0.3Si2PO12/Na3V2(PO4)3 batteries were also studied and operated at 80 °C in Figure 10b, where composite cathode was prepared by mixing Na3V2(PO4)3 with electrolyte powder and carbon and then cosintered with electrolyte pellet under 700 °C for 2 h before cell assembling. It displayed a reversible capacity of 107.4 mA h g⁻¹ at the first cycle, but a capacity degradation and polarization increasing were found in the following cycles.</div>
+<div class="zh">与 Na-β″-氧化铝类似，NASICON 型电解质同样具有高离子电导率，但在 SSBs 中存在较大的界面电阻。如图 10a 所示，Na/Na3Zr2Si2PO12/Na3V2(PO4)3 型 SSBs 在高温下评估，其倍率与循环性能均较差。人们还研究了 Na/Na3.3Zr1.7La0.3Si2PO12/Na3V2(PO4)3 电池并在 80 °C 下运行（图 10b），其中复合正极由 Na3V2(PO4)3 与电解质粉末和碳混合后，在 700 °C 下与电解质片共烧结 2 h 再组装电池制得。该电池首次循环表现出 107.4 mA h g⁻¹ 的可逆容量，但随后的循环中出现容量衰减和极化增大。</div>
+</div><div class="para" id="s3p5">
+<div class="pg">p.12</div>
+<div class="en">The above inferior electrochemical performance could attribute to poor contact between the electrode materials and solid electrolyte, especially during the long-term cycling process. Although NASICON electrolytes possesses the high ionic conductivity and high elastic modulus, the poor wettability to electrode materials often result in the unacceptable performance for SSBs, even at a high temperature. Three strategies could be adopted to solve this problem, including the ionic liquid addition, polymer infiltration, and in situ heat treatment. Figure 10c shows the electrochemical performance of a NaTi2(PO4)3/HNASICON/Na battery, demonstrating a good long cycling and rate performance with the Coulombic efficiency around 99.8% at all three C-rates after the initial formation cycles when operated at 65 °C. The authors showed the good performance resulting from the in situ formation of a sodium ion conductive thin layer on the NASICON electrode at a high temperature. In addition, the same battery with the addition of a small amount of ionic liquid between cathode and SSEs was tested, which showed an excellent rate and long cycling performance, even without attenuation of the capacity after 10 000 cycles at a current rate of 10 C in Figure 10d. All of these can be ascribed to the enhanced interface contact and the formation of buffer layer between electrode materials and solid electrolytes, which can effectively reduce interface resistance and inhibit volume changes of cathode material toward an outstanding electrochemical performance.</div>
+<div class="zh">上述较差的电化学性能可归因于电极材料与固态电解质之间的接触不良，在长期循环过程中尤为明显。尽管 NASICON 电解质具有高离子电导率和高弹性模量，但对电极材料的润湿性差，往往导致 SSBs 性能难以接受，即使高温下也是如此。可采用三种策略解决该问题：添加离子液体、聚合物浸润以及原位热处理。图 10c 展示了 NaTi2(PO4)3/H-NASICON/Na 电池的电化学性能：在 65 °C 下运行并经过初始化成循环后，在三种倍率下库仑效率均约为 99.8%，长循环与倍率性能良好。作者指出，该良好性能源于高温下在 NASICON 电极上原位形成了钠离子导电薄层。此外，对在正极与 SSEs 之间添加少量离子液体的同一电池进行测试，其倍率与长循环性能优异，在 10 C 倍率下循环 10 000 次后容量仍未衰减（图 10d）。这些均可归因于界面接触的增强以及电极材料与固态电解质之间缓冲层的形成，从而有效降低界面电阻并抑制正极材料的体积变化，最终获得优异的电化学性能。</div>
+</div><h2 id="sec3b">3. 固态钠电池（续）Sulfide &amp; Polymer</h2><div class="para" id="s3p6">
+<div class="pg">p.12</div>
+<div class="en">Sulfide electrolytes with a moderate mechanical strength can be expected to have a better contact with electrode materials for a better cycle performance. Na3P0.62As0.38S4 was reported with an improved moisture stability and a high ionic conductivity ≈1.46 × 10−3 S cm−1 at RT, and a solid-state battery Na-Sn/Na3P0.62As0.38S4/TiS2 with it as the electrolyte was fabricated. Charge–discharge curves of this battery are shown in Figure 11a, and a large irreversible capacity with a low initial Coulombic efficiency of 72.4% and a constant degradation during the following nine cycles can be observed.</div>
+<div class="zh">具有适中机械强度的硫化物电解质有望与电极材料形成更好的接触，从而获得更好的循环性能。据报道 Na3P0.62As0.38S4 具有改善的耐湿稳定性和约 1.46 × 10⁻³ S cm⁻¹ 的高室温离子电导率，并以其为电解质制备了固态电池 Na-Sn/Na3P0.62As0.38S4/TiS2。该电池的充放电曲线如图 11a 所示，可观察到较大的不可逆容量、72.4% 的较低首次库仑效率，以及随后九次循环中的持续衰减。</div>
+</div><div class="para" id="s3p7">
+<div class="pg">p.12</div>
+<div class="en">Additionally, Na2+2δFe2-δ(SO4)3/Na3.1Sn0.1P0.9S4/Na2Ti3O7 was prepared and showed an improved performance. At a low rate, it delivered a high capacity of ≈113 mA h g−1 approaching to the theoretical value with a high Coulombic efficiency. When charged/discharged at a rate of 2 C, this battery showed a higher capacity ≈109 mA h g−1 at 80 °C than that of ≈83 mA h g−1 at RT shown in Figure 11b. After 100 cycles at the 2 C rate at 80 °C, 80% of the initial capacity was retained. Furthermore, Na3PS4 as both solid electrolyte and active material was proposed to form the intrinsic interfacial contact between electrolytes and electrodes. The solid-state sodium–sulfur battery Na–Sn–C/Na3PS4/Na3PS4–Na2S–C with a homogeneous Na3PS4–Na2S–C nanocomposite cathode delivered a high reversible capacity of 869.2 mA h g−1 at 60 °C as shown in Figure 11c. A recent study showed that the sulfide electrolytes, e.g., Na3PS4 can be decomposed against sodium metal, resulting in an increasing overall resistance.</div>
+<div class="zh">此外，还制备了 Na2+2δFe2-δ(SO4)3/Na3.1Sn0.1P0.9S4/Na2Ti3O7 电池，性能得到改善。在低倍率下，其容量高达约 113 mA h g⁻¹，接近理论值且库仑效率高。在 2 C 倍率下充放电时，该电池在 80 °C 下的容量约 109 mA h g⁻¹，高于室温下的约 83 mA h g⁻¹（图 11b）。在 80 °C、2 C 倍率下循环 100 次后，容量保持率为 80%。此外，有人提出以 Na3PS4 同时作为固态电解质和活性材料，以在电解质与电极之间形成本征界面接触。采用均匀 Na3PS4–Na2S–C 纳米复合正极的固态钠–硫电池 Na–Sn–C/Na3PS4/Na3PS4–Na2S–C，在 60 °C 下表现出 869.2 mA h g⁻¹ 的高可逆容量（图 11c）。近期研究表明，硫化物电解质（如 Na3PS4）会与金属钠发生分解反应，导致总电阻增大。</div>
+</div><div class="para" id="s3p8">
+<div class="pg">p.12–13</div>
+<div class="en">Compared to the ISEs, polymer-based solid electrolytes usually present a good wettability on the surface of electrode materials. Therefore, development of SSBs based on polymer-based solid electrolytes has attracted an extensive attention. However, their low mechanical strength and ionic conductivity are the potential problems for high power density and long-cycle life. Recently, NaFSI/PEO blended polymer electrolyte was prepared and showed the good interfacial stability and high electrochemical stability with sodium metal. NaFSI/PEO-based NIBs with Na0.67Ni0.33Mn0.67O2 or Na3V2(PO4)3 as cathodes and sodium metal as anode were investigated in detail, and these two SSBs were able to normally operate at 80 °C with a high Coulombic efficiency in Figure 12a.</div>
+<div class="zh">与 ISEs 相比，聚合物基固态电解质通常在电极材料表面表现出良好的润湿性。因此，基于聚合物基固态电解质的 SSBs 开发受到广泛关注。然而，其机械强度低、离子电导率低，是高功率密度和长循环寿命的潜在问题。近期，人们制备了 NaFSI/PEO 共混聚合物电解质，其与金属钠之间表现出良好的界面稳定性和高电化学稳定性。以 Na0.67Ni0.33Mn0.67O2 或 Na3V2(PO4)3 为正极、钠金属为负极的 NaFSI/PEO 基 NIBs 得到了详细研究，这两种 SSBs 均可在 80 °C 下正常运行且库仑效率高（图 12a）。</div>
+</div><div class="para" id="s3p9">
+<div class="pg">p.13</div>
+<div class="en">However, in contrast to Na0.67Ni0.33Mn0.67O2 cathode used in Na-β″-alumina-based solid battery, the moderate cycle performance should be further improved, which could be due to the catalytic reaction between transition metal elements and PEO. The similar phenomenon also existed in other polymer-based SSBs. For example, after 150 cycles at 1 C, only 70% of the capacity was retained in Na/NaFNFSI-PEO/NaCu1/9Ni2/9Fe1/3Mn1/3O2. Nevertheless, polymer-based electrolytes are the promising candidates for the development of the flexible SSBs.</div>
+<div class="zh">然而，与 Na-β″-氧化铝基固态电池中使用的 Na0.67Ni0.33Mn0.67O2 正极相比，其循环性能一般，仍需进一步改善，这可能是由于过渡金属元素与 PEO 之间的催化反应所致。类似现象也存在于其他聚合物基 SSBs 中。例如，Na/NaFNFSI-PEO/NaCu1/9Ni2/9Fe1/3Mn1/3O2 在 1 C 下循环 150 次后仅保持 70% 的容量。尽管如此，聚合物基电解质仍是开发柔性 SSBs 的有前景的候选材料。</div>
+</div><div class="para" id="s3p10">
+<div class="pg">p.13</div>
+<div class="en">A crosslinked PMMA electrolyte with good mechanical strength was reported; the obtained Sb/Gel-PMMA/Na3V2(PO4)3 SSBs exhibited a superior cycling stability even compared to the conventional liquid electrolyte battery shown in Figure 12(b). However, this kind of SPEs presented a poor interface contact with electrode materials, which needed the assistance of liquid electrolytes to increase the compatibility. The study on solid-state sodium batteries is just at an early stage, and related work remains to be further explored. The current reported sodium batteries based on the above SSEs are summarized in Figure 13.</div>
+<div class="zh">有报道制备了机械强度良好的交联 PMMA 电解质；所得 Sb/Gel-PMMA/Na3V2(PO4)3 型 SSBs 的循环稳定性甚至优于传统液体电解液电池（图 12b）。然而，这类 SPEs 与电极材料的界面接触较差，需借助液体电解液来提高相容性。固态钠电池的研究尚处早期阶段，相关工作仍有待进一步探索。图 13 总结了目前基于上述 SSEs 报道的钠电池。</div>
+</div><h2 id="sec4">4. 考量与未来展望 Considerations and Future Perspectives</h2><div class="para" id="s4p1">
+<div class="pg">p.13</div>
+<div class="en">SSBs are regarded as the promising alternatives to liquid batteries with the prospect for large-scale applications. Unfortunately, the relevant technologies and fundamental studies are still in its infancy and the further development is needed. At present, several factors including interface effect, energy and power density, safety concern, etc. need to be taken into consideration, where the interface effect between electrode and solid electrolyte materials is the most critical issue, which restricts the charge-transfer process and directly influences the electrochemical performance of SSBs. In the following session, some considerations for the above-mentioned factors will be discussed, respectively, and the perspectives for the future development of SSBs are provided accordingly.</div>
+<div class="zh">SSBs 被视为液体电池的有前景的替代方案，具备大规模应用前景。遗憾的是，相关技术与基础研究仍处于起步阶段，尚需进一步发展。目前需考虑界面效应、能量与功率密度、安全顾虑等多个因素，其中电极与固态电解质材料之间的界面效应是最关键的问题，它制约着电荷转移过程，并直接影响 SSBs 的电化学性能。下文将分别讨论上述因素的若干考量，并据此提出 SSBs 未来发展的展望。</div>
+</div><h3 id="sec4-1">4.1. 界面 Interface</h3><div class="para" id="s41p1">
+<div class="pg">p.13–15</div>
+<div class="en">An ideal interface between electrolyte and electrodes should present good compatibility and suitable mechanical strength as well as a high ionic conductivity. The good wettability can effectively form ionic conducting layer to promote the charge-transfer process. ISEs such as Na-β/β″-alumina and NASICON often show the poor compatibility with electrode material, where an effective ionic conducting layer is difficult to be in situ formed. Although the battery operated at elevated temperature has enhanced ionic conductivity, it cannot show good performance. Therefore, it is very important to form an interfacial wetting layer by the addition of ionic liquids, infiltration with polymer, and in situ/ex situ heat treatment, etc. in Figure 14a.</div>
+<div class="zh">电解质与电极之间的理想界面应具备良好的相容性、合适的机械强度以及高离子电导率。良好的润湿性可有效形成离子导电层以促进电荷转移过程。Na-β/β″-氧化铝和 NASICON 等 ISEs 往往与电极材料相容性差，难以原位形成有效的离子导电层。虽然在高温下运行的电池离子电导率得到提升，但仍无法表现出良好性能。因此，通过添加离子液体、聚合物浸润以及原位/非原位热处理等方式形成界面润湿层非常重要（图 14a）。</div>
+</div><div class="para" id="s41p2">
+<div class="pg">p.15</div>
+<div class="en">Diversely, sulfide electrolytes and polymer-based electrolytes have the ability to build a soft interface with electrodes, which has good ionic conductive capability and determines the good battery performance. However, their low mechanical strength or poor electrochemical stability may not be good for the long-term cycling. The large volume change of electrode material as well as the generation of side products will cause the worse compatibility, resulting in a high interfacial resistance in the long-term cycling. Regarding to this feature, SSBs based on ISEs such as Na-β″-alumina and NASICON have been reported to have a good long-term stability even over 10 000 cycles.</div>
+<div class="zh">与之不同，硫化物电解质和聚合物基电解质能够与电极构建柔软的界面，其离子导电能力良好，并决定了电池的良好性能。然而，其机械强度低或电化学稳定性差，可能不利于长期循环。电极材料的大体积变化以及副产物的生成会导致相容性变差，使长期循环中出现高界面电阻。针对这一特点，基于 Na-β″-氧化铝和 NASICON 等 ISEs 的 SSBs 已有报道显示良好的长期稳定性，甚至循环超过 10 000 次。</div>
+</div><div class="para" id="s41p3">
+<div class="pg">p.15</div>
+<div class="en">However, they suffer from poor interfacial compatibility with electrode materials, in this case, a proper interfacial wetting layer usually intends to be formed artificially by addition of little ionic liquid. Polymer-based electrolytes can provide a good interfacial compatibility, but the poor interfacial and electrochemical stability are the limitations for a long-cycle performance. A stable interface is significant to realize long-cycle performance, which not only compensates the volume changes of electrodes but also inhibits the occurrence of side reactions, even though it is still a challenge. For example, when sulfide solid electrolytes contacted with sodium metal, the decomposition will occur to form a passivation layer, which increases the interface resistance.</div>
+<div class="zh">然而，它们与电极材料的界面相容性较差，此时通常需要通过添加少量离子液体来人工形成合适的界面润湿层。聚合物基电解质可提供良好的界面相容性，但界面稳定性与电化学稳定性差限制了其长循环性能。稳定的界面对于实现长循环性能至关重要，它既能补偿电极的体积变化，又能抑制副反应的发生，尽管这仍是一项挑战。例如，硫化物固态电解质与金属钠接触时会发生分解，形成钝化层，从而使界面电阻增大。</div>
+</div><h3 id="sec4-2">4.2. 能量密度与功率密度 Energy and Power Densities</h3><div class="para" id="s42p1">
+<div class="pg">p.15–16</div>
+<div class="en">The higher energy density is a desirable feature for SSBs. A wide voltage window and good mechanical property of SSEs can provide real opportunities to develop high-voltage and large-capacity electrode materials. Metallic sodium anode with the higher capacity and low potential is the promising candidate for the high-energy SSBs. Although, most SSEs have good mechanical strength which may prevent the growth of sodium dendrites to some extent, their thermodynamical instability against sodium metal often causes some side reactions to result in serious mechanical failure.</div>
+<div class="zh">更高的能量密度是 SSBs 所期望的特性。SSEs 具有宽电压窗口和良好力学性能，为开发高电压、大容量电极材料提供了真正的机会。金属钠负极容量高、电位低，是高能量 SSBs 的有前景的候选者。尽管大多数 SSEs 具有良好机械强度，在一定程度上可阻止钠枝晶生长，但它们对金属钠的热力学不稳定性往往引发副反应，导致严重的机械失效。</div>
+</div><div class="para" id="s42p2">
+<div class="pg">p.16</div>
+<div class="en">Therefore, several strategies of sodium anode modifications can be adopted, including construction of 3D framework to inhibit the volume change of sodium anode, in situ formation of artificial thin SEI layer on sodium anode surface, alloying sodium with other elements to stabilize the sodium anode, etc. Through the above strategies, the condition of sodium metal anode was significantly improved in both carbonate and ether OLEs with less dendrite formation during the plating/stripping cycles, despite that further tests based on SSEs are needed.</div>
+<div class="zh">因此，可采用若干钠负极改性策略，包括构建三维骨架以抑制钠负极的体积变化、在钠负极表面原位形成人工 SEI 薄层、通过钠与其他元素合金化来稳定钠负极等。通过这些策略，钠金属负极在碳酸酯类和醚类 OLEs 中的状况均显著改善，沉积/剥离循环中枝晶形成减少，但仍需基于 SSEs 的进一步测试。</div>
+</div><div class="para" id="s42p3">
+<div class="pg">p.16</div>
+<div class="en">In addition, high-capacity/high-voltage cathode materials (e.g., polyanionic-structure compounds and anionic redox for high-capacity cathode) may be well used in SSBs to achieve higher energy density with the employment of SSEs, and in the meantime, metal dendrites and chemical/electrochemical stability still need to be further investigated and improved. Power density is another important parameter, which indicates how fast the SSBs can be charged and discharged. The higher ionic conductivity of SSEs together with good interfacial contact among all components is essential to obtain large power density. Unfortunately, the reported sodium-based SSBs all show poor power densities, which needs further effort to improve.</div>
+<div class="zh">此外，高容量/高电压正极材料（如聚阴离子结构化合物以及面向高容量正极的阴离子氧化还原）或可很好地用于 SSBs，在采用 SSEs 的同时实现更高的能量密度；与此同时，金属枝晶以及化学/电化学稳定性仍有待进一步研究和改进。功率密度是另一个重要参数，它表明 SSBs 充放电的速度有多快。SSEs 的更高离子电导率以及各组分之间良好的界面接触，是获得大功率密度的必要条件。遗憾的是，已报道的钠基 SSBs 功率密度都较差，尚需进一步努力改善。</div>
+</div><h3 id="sec4-3">4.3. 安全性 Safety</h3><div class="para" id="s43p1">
+<div class="pg">p.16</div>
+<div class="en">A major purpose on the development of SSEs is to obtain the high-safety SSBs because of the use of nonflammable solid electrolytes. In fact, sulfide electrolytes usually suffer from chemical instability in spite of a high ionic conductivity at RT. The release of toxic gas (H2S) and the decomposition of materials imply a potential safety hazard. The same problem may happen to polymer-based materials due to their low mechanical strength and narrow limited electrochemical window, especially against sodium metal anode. Fortunately, the hazard may not happen when Na-β″-alumina and NASICON electrolytes with the high mechanical strength are employed. However, the in-depth understanding is still underway. Besides electrolyte themselves, another safety concern comes from the use of sodium metal as anode in solid-state sodium batteries.</div>
+<div class="zh">发展 SSEs 的一个主要目的是由于使用了不可燃的固态电解质而获得高安全性的 SSBs。事实上，尽管硫化物电解质在室温下离子电导率高，却往往存在化学不稳定性。有毒气体（H2S）的释放和材料的分解意味着潜在安全隐患。聚合物基材料也可能存在同样问题，因为其机械强度低且电化学窗口狭窄，尤其是面对钠金属负极时。幸运的是，采用机械强度高的 Na-β″-氧化铝和 NASICON 电解质时可能不会发生此类危险。然而，深入认识仍在进行中。除电解质本身外，另一个安全顾虑来自固态钠电池中使用金属钠作为负极。</div>
+</div><div class="para" id="s43p2">
+<div class="pg">p.16–17</div>
+<div class="en">Sodium metal, with an extremely high chemical activity, is generally considered as impractical in large-scale energy storage. However, when sodium metal is stored in an inert atmosphere or sodium anode is enclosed in a sealed solid state battery, the safety issue could be guaranteed. The safety considerations in the high chemical activity of sodium metal come from two aspects. On one hand, potential danger exists when dealing with a large amount of sodium metal in large-scale production and manufacturing due to its air and moisture sensitivity. And the improper storage or post-processed treatment may cause an unavoidable fire even explosion like lithium metal in practical use. On the other hand, once the sealed batteries were damaged, sodium metal anode would be contacted/exposed to moist air directly, giving rise to severe consequences.</div>
+<div class="zh">金属钠化学活性极高，通常被认为不适合用于大规模储能。然而，当金属钠储存于惰性气氛中，或钠负极被封装在密封的固态电池内时，安全性问题是可以得到保障的。金属钠高化学活性带来的安全考量来自两方面。一方面，由于其空气和水分敏感性，在大规模生产制造中处理大量金属钠时存在潜在危险；不当储存或后处理可能像实际使用中的金属锂那样造成不可避免的起火甚至爆炸。另一方面，一旦密封电池损坏，钠金属负极将直接接触/暴露于潮湿空气，造成严重后果。</div>
+</div><div class="para" id="s43p3">
+<div class="pg">p.17</div>
+<div class="en">Here we performed a simple experiment to observe visually the evolution process of sodium metal under the environment of dry air, humid air, and water. When sodium slice is exposed to the dry air, it can be seen that a layer of sodium oxides (white color) is formed instantaneously without any change in the following time (Figure 15a,b), indicating sodium metal is not dangerous when used in dry air. When exposed to the humid air, the surface gradually becomes more wrinkled, and some bubbles are generated after several minutes as shown in Figure 15c. Even like this, no drastic reaction or spark were observed during the above experimental process.</div>
+<div class="zh">作者在此进行了简单实验，以直观观察金属钠在干燥空气、潮湿空气和水环境中的演变过程。当钠片暴露于干燥空气时，可看到瞬间形成一层白色的钠氧化物，随后不再变化（图 15a、b），表明金属钠在干燥空气中使用并不危险。暴露于潮湿空气时，表面逐渐变得更皱，几分钟后产生一些气泡（图 15c）。即便如此，上述实验过程中也未观察到剧烈反应或火花。</div>
+</div><div class="para" id="s43p4">
+<div class="pg">p.17</div>
+<div class="en">However, sodium metal immediately catches fire when a drop of water is dropped on its surface. Worse still, the bottle even gets cracked due to the local temperature spiked suddenly. Therefore, it is extremely important to protect the battery system to avoid the contact of sodium anode with moisture. Another concern stems from the low melting point (97 °C) of sodium metal, which may cause internal short circuit under high working temperatures above 97 °C.</div>
+<div class="zh">然而，当一滴水落到金属钠表面时，它会立即着火。更糟的是，由于局部温度骤升，盛装容器甚至被震裂。因此，保护电池体系、避免钠负极接触水分极其重要。另一个顾虑源于金属钠的低熔点（97 °C），在高于 97 °C 的高工作温度下可能造成内部短路。</div>
+</div><div class="para" id="s43p5">
+<div class="pg">p.17</div>
+<div class="en">In this case, another experiment was conducted by putting a sodium bulk into the vacuum oven with the temperature gradually increased. The results show that sodium metal has almost no change after 10 h at 100 °C (Figure 15e) compared to that at 25 °C (Figure 15d). When the temperature increases to 150 °C, the shape is still kept the same after 10 h (Figure 15f). No obvious melting phenomenon was observed on the surface, which is probably due to the oxide layer formed on the surface during the process of vacuuming. It remains unclear about the change under longer time (&gt;10 h) at the constant high temperature, further investigations are still needed to clarify the issue.</div>
+<div class="zh">为此，作者又进行了另一项实验：将钠块放入真空烘箱并逐步升温。结果表明，与 25 °C 时（图 15d）相比，金属钠在 100 °C 下经 10 h 几乎无变化（图 15e）；温度升至 150 °C、经 10 h 后形状仍保持不变（图 15f）。表面未观察到明显熔化现象，这可能是由于抽真空过程中表面形成了氧化层。在恒定高温下更长时间（&gt;10 h）的变化仍不清楚，尚需进一步研究以厘清该问题。</div>
+</div><div class="para" id="s43p6">
+<div class="pg">p.17</div>
+<div class="en">Looking at the phenomenon from another viewpoint, the soft characteristics of sodium metal is in turn an advantage when used in SSBs. First, it can contribute to the interfacial contact between the anode and electrolyte because the sodium anode may become soft under a higher temperature to improve the surface wettability. Second, due to the soft nature of sodium metal under the high temperature, the mechanical strength of formed dendrites may be too weak to pierce the electrolyte, indirectly improving the safety of a battery. Last but not the least, sodium metal anode may have a self-healing ability to avoid pulverization during cycling with a proper heat treatment. Therefore, whether sodium metal is suitable for solid-state sodium batteries still needs to be further evaluated.</div>
+<div class="zh">换个角度看，金属钠的柔软特性在用于 SSBs 时反而是一种优势。第一，它有助于负极与电解质之间的界面接触，因为钠负极在较高温度下可能变软，从而改善表面润湿性。第二，由于金属钠在高温下柔软，形成的枝晶机械强度可能弱到无法刺穿电解质，从而间接提高电池安全性。最后但同样重要的是，适当的热处理下，钠金属负极可能具有自愈能力，从而避免循环过程中的粉化。因此，金属钠是否适合固态钠电池仍需进一步评估。</div>
+</div><h2 id="conclusion">结论与展望 Conclusion</h2><div class="para" id="cp1">
+<div class="pg">p.17–18</div>
+<div class="en">In this review, we systematically summarize the current sodium-based SSEs, and discuss their potential advantages and disadvantages for developing SSBs. SSEs as the promising alternative to OLEs can offer the high energy and power densities, long-term cycling and improved safety for sodium batteries. However, several challenges should be further overcome, including high RT ionic conductivity, good chemical/electrochemical stability, flexible mechanical property as well as low-cost and environmental friendly preparation process, etc.</div>
+<div class="zh">本综述系统总结了当前的钠基 SSEs，并讨论了其在开发 SSBs 方面的潜在优势与不足。SSEs 作为 OLEs 的有前景的替代者，可为钠电池提供高能量与功率密度、长期循环以及更高的安全性。然而，仍需进一步克服若干挑战，包括高室温离子电导率、良好的化学/电化学稳定性、柔性的力学性能，以及低成本、环境友好的制备工艺等。</div>
+</div><div class="para" id="cp2">
+<div class="pg">p.18</div>
+<div class="en">ISEs such as Na-β/β″-alumina and NASICON, present a higher ionic conductivity at RT but cannot contribute a good performance in terms of high power densities and long-term cycling due to the poor interface contact with electrode materials. A wet interfacial interlayer formed by the addition of ionic liquids, infiltration with polymer, in situ/ex situ SEI formation, etc., are effective strategies to solve this problem. In comparison, the flexible polymer-based electrolytes can easily build an ionic conduction layer with electrode materials, but their low mechanical strength and poor electrochemical stability may not be good for the long-term cycling. And the low RT ionic conductivity is not favorable to the large-scale applications.</div>
+<div class="zh">Na-β/β″-氧化铝和 NASICON 等 ISEs 在室温下具有较高的离子电导率，但由于与电极材料界面接触差，在高功率密度和长期循环方面无法贡献良好性能。通过添加离子液体、聚合物浸润、原位/非原位 SEI 形成等方式构筑湿润界面中间层，是解决该问题的有效策略。相比之下，柔性的聚合物基电解质易于与电极材料构建离子导电层，但其机械强度低、电化学稳定性差，可能不利于长期循环；且室温离子电导率低，不利于大规模应用。</div>
+</div><div class="para" id="cp3">
+<div class="pg">p.18</div>
+<div class="en">Sulfide electrolytes with a moderate mechanical strength and high RT ionic conductivity can be expected to achieve a good wettability to electrode materials for a better cycle performance. Unfortunately, their poor chemical stability may lead to safety hazard. Materials innovation needs to be further developed for the practical applications such as high RT ionic conductivity and high chemical and electrochemical stability. Meanwhile, interface is of great concern, which is the bridge between electrode materials and electrolytes, directly determining the batteries' performance. A good interface can effectively inhibit the growth of sodium-metal dendrites and reduce the volume deformation of sodium-metal anode, thus realizing the long-cycle performance of SSBs.</div>
+<div class="zh">具有适中机械强度和高室温离子电导率的硫化物电解质，有望实现对电极材料的良好润湿性，从而获得更好的循环性能。遗憾的是，其化学稳定性差，可能带来安全隐患。面向实际应用，仍需进一步发展材料创新，以实现高室温离子电导率以及高的化学与电化学稳定性。与此同时，界面问题备受关注——它是电极材料与电解质之间的桥梁，直接决定电池性能。良好的界面可有效抑制钠金属枝晶生长并减小钠金属负极的体积形变，从而实现 SSBs 的长循环性能。</div>
+</div><div class="note"><b>致谢与关键词（原文 p.18）</b><br>致谢：C.Z. 与 L.L. 对本文贡献相同。本工作受国家重点研发计划（2016YFB0901500）、国家自然科学基金（51725206、51672275、51421002）以及中国科学院“百人计划”资助。<br>利益声明：作者声明无利益冲突。<br>关键词：interface stability, ionic conductivities, sodium batteries, solid-state batteries, solid-state electrolytes。<br>收稿：2017-10-29；修回：2018-01-07。参考文献 [1]–[178] 见原文 p.18–20。</div>
+</main>
+    </div>
+  </div>
+  <div id="right">
+    <div id="right-inner">
+<div class="pdf-page" data-pageno="1"><img src="assets/page-01.png" alt="p.1" draggable="false"></div>
+<div class="pdf-page" data-pageno="2"><img src="assets/page-02.png" alt="p.2" draggable="false"></div>
+<div class="pdf-page" data-pageno="3"><img src="assets/page-03.png" alt="p.3" draggable="false"></div>
+<div class="pdf-page" data-pageno="4"><img src="assets/page-04.png" alt="p.4" draggable="false"></div>
+<div class="pdf-page" data-pageno="5"><img src="assets/page-05.png" alt="p.5" draggable="false"></div>
+<div class="pdf-page" data-pageno="6"><img src="assets/page-06.png" alt="p.6" draggable="false"></div>
+<div class="pdf-page" data-pageno="7"><img src="assets/page-07.png" alt="p.7" draggable="false"></div>
+<div class="pdf-page" data-pageno="8"><img src="assets/page-08.png" alt="p.8" draggable="false"></div>
+<div class="pdf-page" data-pageno="9"><img src="assets/page-09.png" alt="p.9" draggable="false"></div>
+<div class="pdf-page" data-pageno="10"><img src="assets/page-10.png" alt="p.10" draggable="false"></div>
+<div class="pdf-page" data-pageno="11"><img src="assets/page-11.png" alt="p.11" draggable="false"></div>
+<div class="pdf-page" data-pageno="12"><img src="assets/page-12.png" alt="p.12" draggable="false"></div>
+<div class="pdf-page" data-pageno="13"><img src="assets/page-13.png" alt="p.13" draggable="false"></div>
+<div class="pdf-page" data-pageno="14"><img src="assets/page-14.png" alt="p.14" draggable="false"></div>
+<div class="pdf-page" data-pageno="15"><img src="assets/page-15.png" alt="p.15" draggable="false"></div>
+<div class="pdf-page" data-pageno="16"><img src="assets/page-16.png" alt="p.16" draggable="false"></div>
+<div class="pdf-page" data-pageno="17"><img src="assets/page-17.png" alt="p.17" draggable="false"></div>
+<div class="pdf-page" data-pageno="18"><img src="assets/page-18.png" alt="p.18" draggable="false"></div>
+<div class="pdf-page" data-pageno="19"><img src="assets/page-19.png" alt="p.19" draggable="false"></div>
+<div class="pdf-page" data-pageno="20"><img src="assets/page-20.png" alt="p.20" draggable="false"></div>
+      <div id="pointer"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 笔记侧栏 ===== -->
+<aside id="notes-drawer" aria-hidden="true">
+  <div class="nd-head"><h3>📝 阅读笔记 <span id="nd-count">0</span></h3><button class="xc" id="nd-close" title="关闭">✕</button></div>
+  <div class="nd-tools">
+    <button id="nd-export" title="导出全部（笔记 + 标注）为 Markdown">导出全部</button>
+    <button id="nd-export-ann" title="仅导出标注为清单 Markdown">导出标注</button>
+    <button id="nd-clear" title="清空全部笔记">清空</button>
+  </div>
+  <div class="nd-edit">
+    <textarea id="nd-ta" placeholder="随手记点什么…（Ctrl / ⌘ + Enter 保存）&#10;保存时会自动带上你当前读到的章节。"></textarea>
+    <div class="add"><button id="nd-add">保存笔记</button></div>
+  </div>
+  <div class="nd-list" id="nd-list"></div>
+</aside>
+<!-- ===== 选区标注工具条 ===== -->
+<div id="sel-bar">
+  <span class="lbl">标注</span>
+  <button data-act="hl-y" title="黄色高亮"><span class="sw" style="background:#ffe066"></span></button>
+  <button data-act="hl-g" title="绿色高亮"><span class="sw" style="background:#b9f6ca"></span></button>
+  <button data-act="hl-p" title="粉色高亮"><span class="sw" style="background:#ffc1e3"></span></button>
+  <button data-act="hl-b" title="蓝色高亮"><span class="sw" style="background:#a7d8ff"></span></button>
+  <span class="sep"></span>
+  <button data-act="ul" title="下划线"><span class="sw" style="border-bottom:3px solid #0f766e"></span></button>
+  <button data-act="bd" title="加粗"><b>加粗</b></button>
+  <span class="sep"></span>
+  <button data-act="clear" title="清除所选标注">清除</button>
+</div>
+<div id="toast"></div>
+<button id="top" title="回到顶部">↑</button>
+
+<script>
+/* =================== 双栏同步：指针 + 跟随 + 目录高亮 =================== */
+(function(){
+  var left=document.getElementById('content'),
+      right=document.getElementById('right'),
+      inner=document.getElementById('right-inner'),
+      pointer=document.getElementById('pointer'),
+      followBtn=document.getElementById('btn-follow'),
+      curPage=document.getElementById('curpage'),
+      prog=document.getElementById('progress'),
+      tocLinks=[].slice.call(document.querySelectorAll('nav.toc a'));
+  var follow=true;
+  followBtn.onclick=function(){follow=!follow;followBtn.classList.toggle('on',follow);};
+  /* 用户手动滚右栏时自动退出跟随，避免下次左栏滚动把视线拽走 */
+  ['wheel','touchmove'].forEach(function(t){
+    right.addEventListener(t,function(){ if(follow){follow=false;followBtn.classList.remove('on');} },{passive:true});
+  });
+
+  /* 段落 -> PDF 页 映射（.pg 首个数字 = 绝对页码；--page-offset 可校正） */
+  var paras=[].slice.call(left.querySelectorAll('main .para'));
+  var heads=[].slice.call(left.querySelectorAll('main h2,main h3'));
+  var byPage={};
+  paras.forEach(function(p){
+    var pg=p.querySelector('.pg'),m=pg?pg.textContent.match(/(\d+)/):null;
+    p.dataset.page=m?String(Math.max(1,parseInt(m[1],10)-(window.__PAGE_OFFSET__||0))):'';
+    if(p.dataset.page){(byPage[p.dataset.page]=byPage[p.dataset.page]||[]).push(p);}
+  });
+  paras.forEach(function(p){
+    var arr=byPage[p.dataset.page];
+    p.dataset.ratio=arr?(((arr.indexOf(p)+0.5)/arr.length).toFixed(4)):'0.5';
+  });
+
+  /* 预缓存几何：避免每次滚动都读 offsetTop/offsetHeight（强制布局抖动） */
+  var paraTops=[], headTops=[], pageGeom={}, scrollMax=0, innerH=0, recalcTimer=0;
+  function recalc(){
+    paraTops=paras.map(function(p){return p.offsetTop;});
+    headTops=heads.map(function(h){return h.offsetTop;});
+    pageGeom={};
+    inner.querySelectorAll('.pdf-page').forEach(function(el){
+      pageGeom[el.dataset.pageno]={top:el.offsetTop, h:el.offsetHeight};
+    });
+    innerH=inner.offsetHeight;
+    scrollMax=left.scrollHeight-left.clientHeight;
+  }
+  function scheduleRecalc(){ clearTimeout(recalcTimer); recalcTimer=setTimeout(recalc,60); }
+  window.__syncRecalc=scheduleRecalc;
+
+  function activePara(){
+    var line=left.scrollTop+140, idx=-1;
+    for(var i=0;i<paraTops.length;i++){ if(paraTops[i]<=line) idx=i; }
+    return idx>=0?paras[idx]:paras[0];
+  }
+  function updatePointer(){
+    var p=activePara(); if(!p)return;
+    var page=p.dataset.page;
+    curPage.textContent=page?('当前 p.'+page):'';
+    var g=page?pageGeom[page]:null; if(!g)return;
+    var top=g.top + parseFloat(p.dataset.ratio)*g.h;
+    pointer.style.transform='translateY('+top+'px)';
+    if(follow){
+      var target=top - right.clientHeight/2;
+      var max=innerH-right.clientHeight;
+      target=Math.max(0,Math.min(target,max));
+      right.scrollTop=target;
+    }
+  }
+  function tocHighlight(){
+    var line=left.scrollTop+140, cur=null;
+    for(var i=0;i<headTops.length;i++){ if(headTops[i]<=line) cur=heads[i]; }
+    if(!cur){tocLinks.forEach(function(a){a.classList.remove('active');});return;}
+    var id=cur.id;
+    tocLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+id);});
+  }
+  function updateProgress(){
+    prog.style.width=(scrollMax>0?(left.scrollTop/scrollMax*100):0)+'%';
+  }
+  /* 滚动时只读 scrollTop + 扫缓存数组，不再触发布局；直接调用不依赖 rAF（无头更稳） */
+  function onScroll(){ updatePointer();tocHighlight();updateProgress(); }
+  left.addEventListener('scroll',onScroll,{passive:true});
+  addEventListener('resize',scheduleRecalc);
+  addEventListener('load',function(){ recalc(); updatePointer();tocHighlight();updateProgress(); });
+  inner.querySelectorAll('img').forEach(function(im){
+    im.addEventListener('load',scheduleRecalc);
+    if(im.complete) scheduleRecalc();
+  });
+  /* 目录点击 -> 左栏平滑滚动 + 同步地址栏 hash（浏览器后退可用） */
+  tocLinks.forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      var href=a.getAttribute('href'), t=left.querySelector(href);
+      if(t)t.scrollIntoView({behavior:'smooth',block:'start'});
+      try{history.replaceState(null,'',href);}catch(err){}
+    });
+  });
+  recalc(); updatePointer();tocHighlight();updateProgress();
+})();
+
+/* =================== 阅读增强：护眼 / 中英模式 / 字号 / 行宽 / 笔记 / 标注 =================== */
+(function(){
+  var B=document.body, PREFS='sssb-viewer-prefs';
+  var btnEye=document.getElementById('btn-eye'),
+      btnMode=document.getElementById('btn-mode'),
+      modeLabel=document.getElementById('mode-label'),
+      btnFs=document.getElementById('btn-fs'),
+      fsLabel=document.getElementById('fs-label'),
+      btnNarrow=document.getElementById('btn-narrow'),
+      topBtn=document.getElementById('top'),
+      contentEl=document.getElementById('content');
+
+  var MODES=[['mode-both','中英对照'],['mode-zh','仅中文'],['mode-en','仅英文']];
+  var FSS=[['fs-s','小'],['fs-m','中'],['fs-l','大']];
+  var p={eye:false,mode:0,fs:1,narrow:false};
+
+  try{var s=JSON.parse(localStorage.getItem(PREFS)||'{}');for(var k in s)if(k in p)p[k]=s[k];}catch(e){}
+
+  function clearCls(list){list.forEach(function(c){B.classList.remove(c[0]);});}
+  function apply(){
+    B.classList.toggle('eye', p.eye);
+    btnEye.classList.toggle('on', p.eye);
+    btnEye.innerHTML='<span class="ico">'+(p.eye?'☑':'🌱')+'</span>'+(p.eye?'护眼：开':'护眼');
+
+    clearCls(MODES); clearCls(FSS);
+    B.classList.add(MODES[p.mode][0]); modeLabel.textContent=MODES[p.mode][1];
+    B.classList.add(FSS[p.fs][0]); fsLabel.textContent='字号 '+FSS[p.fs][1];
+    B.classList.toggle('narrow', p.narrow);
+    btnNarrow.classList.toggle('on', p.narrow);
+    /* 模式/字号/行宽会改变左栏布局高度 -> 让同步引擎重算缓存几何 */
+    if(window.__syncRecalc) window.__syncRecalc();
+
+    try{localStorage.setItem(PREFS,JSON.stringify(p));}catch(e){}
+  }
+  btnEye.onclick=function(){p.eye=!p.eye;apply();};
+  btnMode.onclick=function(){p.mode=(p.mode+1)%MODES.length;apply();};
+  btnFs.onclick=function(){p.fs=(p.fs+1)%FSS.length;apply();};
+  btnNarrow.onclick=function(){p.narrow=!p.narrow;apply();};
+  apply();
+
+  // 指针只依赖 PDF 页位置（不随左栏字号/模式布局变化），切换无需重新校准
+
+  // 返回顶部（滚动的是左栏，不是 window）
+  function onLeftScrollTop(){ topBtn.classList.toggle('show', contentEl.scrollTop>600); }
+  contentEl.addEventListener('scroll',onLeftScrollTop,{passive:true}); onLeftScrollTop();
+  topBtn.onclick=function(){contentEl.scrollTo({top:0,behavior:'smooth'});};
+
+  // 快捷键
+  addEventListener('keydown',function(e){
+    if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
+    var k=e.key.toLowerCase();
+    if(k==='g'){p.eye=!p.eye;apply();}
+    if(k==='t'){p.mode=(p.mode+1)%MODES.length;apply();}
+    if(k==='+'||k==='='){p.fs=Math.min(FSS.length-1,p.fs+1);apply();}
+    if(k==='-'){p.fs=Math.max(0,p.fs-1);apply();}
+  });
+
+  // ============ 阅读笔记 + 选区标注 ============
+  var DOCID=(window.__DOCID__||document.title||'reader').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'')||'reader';
+  var LS_NOTES='notes-'+DOCID, LS_ANN='ann-'+DOCID;
+
+  /* ---- 笔记 ---- */
+  var ndToggle=document.getElementById('btn-notes'),
+      nd=document.getElementById('notes-drawer'),
+      ndClose=document.getElementById('nd-close'),
+      ndList=document.getElementById('nd-list'),
+      ndTa=document.getElementById('nd-ta'),
+      ndAdd=document.getElementById('nd-add'),
+      ndExport=document.getElementById('nd-export'),
+      ndExportAnn=document.getElementById('nd-export-ann'),
+      ndClear=document.getElementById('nd-clear'),
+      ndCount=document.getElementById('nd-count');
+  var notes=[];
+  try{notes=JSON.parse(localStorage.getItem(LS_NOTES)||'[]');}catch(e){}
+  var lsWarned=false;
+  function persistFail(){if(lsWarned)return;lsWarned=true;try{showToast('当前环境无法持久化（如 file://），请用本地服务器打开以保存笔记/标注');}catch(e){}}
+  function saveNotes(){try{localStorage.setItem(LS_NOTES,JSON.stringify(notes));}catch(e){persistFail();}}
+  function curSection(){
+    var heads=[].slice.call(document.querySelectorAll('#content main h2,#content main h3')),cur='';
+    for(var i=0;i<heads.length;i++){if(heads[i].getBoundingClientRect().top<=120)cur=heads[i].textContent.trim();}
+    return cur;
+  }
+  function escapeHtml(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function renderNotes(){
+    ndCount.textContent=notes.length;
+    if(!notes.length){ndList.innerHTML='<div class="nd-empty">还没有笔记。<br>在上方输入框写点什么，或选中正文后用工具条标注。</div>';return;}
+    ndList.innerHTML='';
+    var order=[],groups={};
+    notes.forEach(function(n){var key=n.sec||'未定位章节';if(!groups[key]){groups[key]=[];order.push(key);}groups[key].push(n);});
+    order.forEach(function(key){
+      var gh=document.createElement('div');gh.className='nd-group';
+      gh.innerHTML='<div class="nd-group-h"><span class="gt">'+escapeHtml(key)+'</span><span class="gc">'+groups[key].length+'</span></div>';
+      if(key!=='未定位章节'){gh.querySelector('.gt').onclick=function(){var h=[].slice.call(document.querySelectorAll('#content main h2,#content main h3'));for(var k=0;k<h.length;k++){if(h[k].textContent.trim()===key){h[k].scrollIntoView({behavior:'smooth',block:'start'});break;}}nd.classList.remove('open');};}
+      ndList.appendChild(gh);
+      groups[key].forEach(function(n){
+        var idx=notes.indexOf(n);
+        var d=document.createElement('div');d.className='nd-item';
+        d.innerHTML='<div class="t"><span>'+new Date(n.t).toLocaleString('zh-CN',{hour12:false})+'</span></div><div class="bd"></div><button class="del" title="删除">✕</button>';
+        d.querySelector('.bd').textContent=n.text;
+        d.querySelector('.del').onclick=function(){notes.splice(idx,1);saveNotes();renderNotes();};
+        ndList.appendChild(d);
+      });
+    });
+  }
+  ndToggle.onclick=function(){nd.classList.toggle('open');nd.setAttribute('aria-hidden',nd.classList.contains('open')?'false':'true');if(nd.classList.contains('open'))setTimeout(function(){ndTa.focus();},260);};
+  ndClose.onclick=function(){nd.classList.remove('open');nd.setAttribute('aria-hidden','true');};
+  ndAdd.onclick=function(){var v=ndTa.value.trim();if(!v)return;notes.push({t:Date.now(),text:v,sec:curSection()});saveNotes();renderNotes();ndTa.value='';ndList.scrollTop=ndList.scrollHeight;};
+  ndTa.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&e.key==='Enter'){e.preventDefault();ndAdd.click();}});
+  ndClear.onclick=function(){if(!notes.length)return;if(confirm('清空全部笔记？此操作不可撤销。')){notes=[];saveNotes();renderNotes();}};
+  ndExport.onclick=function(){
+    var head='# 阅读笔记 · '+document.title+'\n\n';
+    var body=notes.map(function(n){return '### '+(n.sec||'未定位')+'\n> '+new Date(n.t).toLocaleString('zh-CN',{hour12:false})+'\n\n'+n.text;}).join('\n\n');
+    var a2=loadAnn();
+    var annText=a2.length?('\n\n---\n\n# 我的标注（'+a2.length+' 处）\n\n'+a2.map(function(a){return '- '+a.text;}).join('\n')):'';
+    var blob=new Blob([head+body+annText],{type:'text/markdown;charset=utf-8'});
+    var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='笔记-'+DOCID+'.md';document.body.appendChild(a);a.click();document.body.removeChild(a);
+    setTimeout(function(){URL.revokeObjectURL(a.href);},1500);
+  };
+  ndExportAnn.onclick=exportAnn;
+  function sectionOfPara(id){var p=document.getElementById(id);if(!p||!p.classList||!p.classList.contains('para'))return '';var prev=p.previousElementSibling,h='';while(prev){if(prev.matches&&prev.matches('h2,h3')){h=prev.textContent.trim();break;}prev=prev.previousElementSibling;}return h;}
+  function exportAnn(){
+    if(!anns.length){showToast('当前没有标注');return;}
+    var lines=['# 标注清单 · '+document.title+'\n'],lastSec='';
+    anns.forEach(function(a){var sec=sectionOfPara(a.para);if(sec!==lastSec){lines.push('\n## '+(sec||'未定位章节')+'\n');lastSec=sec;}
+      var label={'hl-y':'黄','hl-g':'绿','hl-p':'粉','hl-b':'蓝','hl':'黄','ul':'下划线','bd':'加粗'}[a.cls]||a.cls;
+      lines.push('- 【'+label+'】'+a.text);});
+    var blob=new Blob([lines.join('\n')],{type:'text/markdown;charset=utf-8'});
+    var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='标注-'+DOCID+'.md';document.body.appendChild(a);a.click();document.body.removeChild(a);
+    setTimeout(function(){URL.revokeObjectURL(a.href);},1500);
+  }
+  renderNotes();
+
+  /* ---- 标注 ---- */
+  var selBar=document.getElementById('sel-bar'), toast=document.getElementById('toast'), toastShown=false;
+  var anns=loadAnn();
+  function loadAnn(){try{return JSON.parse(localStorage.getItem(LS_ANN)||'[]');}catch(e){return [];}}
+  function saveAnn(){try{localStorage.setItem(LS_ANN,JSON.stringify(anns));}catch(e){persistFail();}}
+  function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(function(){toast.classList.remove('show');},3400);}
+  function textNodesIn(root){var out=[],w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,null,false),n;while(n=w.nextNode()){if(n.nodeValue.length)out.push(n);}return out;}
+  function offsetOf(root,container,offset){var r=document.createRange();r.setStart(root,0);try{r.setEnd(container,offset);}catch(e){return 0;}return r.toString().length;}
+  function wrapRange(root,start,end,cls){
+    var nodes=textNodesIn(root),acc=0,segs=[];
+    for(var i=0;i<nodes.length;i++){var len=nodes[i].nodeValue.length;var s=Math.max(start,acc),e=Math.min(end,acc+len);if(s<e)segs.push({node:nodes[i],s:s-acc,e:e-acc});acc+=len;if(acc>=end)break;}
+    for(var j=segs.length-1;j>=0;j--){var seg=segs[j],tn=seg.node,txt=tn.nodeValue;
+      var pre=txt.slice(0,seg.s),mid=txt.slice(seg.s,seg.e),post=txt.slice(seg.e);
+      var span=document.createElement('span');span.className='ann '+cls;span.textContent=mid;
+      var frag=document.createDocumentFragment();
+      if(pre)frag.appendChild(document.createTextNode(pre));frag.appendChild(span);if(post)frag.appendChild(document.createTextNode(post));
+      tn.parentNode.replaceChild(frag,tn);}
+  }
+  function unwrapAll(root){var sp=root.querySelectorAll('span.ann');sp.forEach(function(s){var p=s.parentNode;while(s.firstChild)p.insertBefore(s.firstChild,s);p.removeChild(s);});root.normalize();}
+  function getSelInfo(){
+    var sel=window.getSelection();if(!sel.rangeCount)return null;
+    var r=sel.getRangeAt(0);if(r.collapsed)return null;
+    var node=sel.anchorNode;if(!node)return null;
+    var para=node.nodeType===3?node.parentElement.closest('.para'):(node.closest?node.closest('.para'):null);
+    if(!para)return null;
+    var langDiv=null;
+    ['en','zh'].forEach(function(l){var d=para.querySelector('.'+l);if(d&&d.contains(r.startContainer)&&d.contains(r.endContainer))langDiv=d;});
+    if(!langDiv)['en','zh'].forEach(function(l){var d=para.querySelector('.'+l);if(d&&d.contains(r.startContainer))langDiv=langDiv||d;});
+    if(langDiv && !(langDiv.contains(r.startContainer) && langDiv.contains(r.endContainer)))langDiv=null;
+    if(!langDiv)return null;
+    var lang=langDiv.classList.contains('en')?'en':'zh';
+    var start=offsetOf(langDiv,r.startContainer,r.startOffset),end=offsetOf(langDiv,r.endContainer,r.endOffset);
+    if(end<start){var t=start;start=end;end=t;}
+    return {para:para.id,lang:lang,start:start,end:end};
+  }
+  function selText(info){var p=document.getElementById(info.para);var d=p?p.querySelector('.'+info.lang):null;if(!d)return '';var tn=textNodesIn(d),acc=0,s='';for(var i=0;i<tn.length;i++){var len=tn[i].nodeValue.length;var a=Math.max(info.start,acc),b=Math.min(info.end,acc+len);if(a<b)s+=tn[i].nodeValue.slice(a-acc,b-acc);acc+=len;}return s;}
+  function annotate(cls){
+    if(cls==='hl')cls='hl-y';
+    var info=getSelInfo();if(!info)return;
+    var para=document.getElementById(info.para);if(!para)return;var langDiv=para.querySelector('.'+info.lang);
+    /* 先剔除同段同语言的重叠旧标注，避免 span 套 span 导致偏移错乱 */
+    anns=anns.filter(function(a){return !(a.para===info.para&&a.lang===info.lang&&a.end>info.start&&a.start<info.end);});
+    anns.push({para:info.para,lang:info.lang,start:info.start,end:info.end,cls:cls,text:selText(info)});
+    saveAnn();
+    /* 从记录重建，保证幂等、不嵌套 */
+    unwrapAll(langDiv);
+    anns.forEach(function(a){if(a.para===info.para&&a.lang===info.lang)wrapRange(langDiv,a.start,a.end,'ann-'+a.cls);});
+    selBar.classList.remove('show');window.getSelection().removeAllRanges();
+  }
+  function clearSel(){
+    var info=getSelInfo();if(!info)return;
+    anns=anns.filter(function(a){return !(a.para===info.para&&a.lang===info.lang&&a.end>info.start&&a.start<info.end);});
+    saveAnn();
+    var para=document.getElementById(info.para);if(!para)return;var langDiv=para.querySelector('.'+info.lang);
+    unwrapAll(langDiv);
+    anns.forEach(function(a){if(a.para===info.para&&a.lang===info.lang)wrapRange(langDiv,a.start,a.end,'ann-'+a.cls);});
+    selBar.classList.remove('show');window.getSelection().removeAllRanges();
+  }
+  // 还原已保存标注
+  anns.forEach(function(a){try{var p=document.getElementById(a.para);if(!p)return;var d=p.querySelector('.'+a.lang);if(d)wrapRange(d,a.start,a.end,'ann-'+a.cls);}catch(e){}});
+  // 选区工具条
+  selBar.addEventListener('mousedown',function(e){e.preventDefault();});
+  ['hl-y','hl-g','hl-p','hl-b'].forEach(function(c){selBar.querySelector('[data-act="'+c+'"]').onclick=function(){annotate(c);};});
+  selBar.querySelector('[data-act="ul"]').onclick=function(){annotate('ul');};
+  selBar.querySelector('[data-act="bd"]').onclick=function(){annotate('bd');};
+  selBar.querySelector('[data-act="clear"]').onclick=function(){clearSel();};
+  document.addEventListener('mouseup',function(){
+    setTimeout(function(){
+      var info=getSelInfo();
+      if(!info){selBar.classList.remove('show');return;}
+      var rr=window.getSelection().getRangeAt(0).getBoundingClientRect();
+      var top=rr.top-46;if(top<8)top=rr.bottom+12;
+      selBar.style.left=(rr.left+rr.width/2)+'px';selBar.style.top=top+'px';
+      selBar.classList.add('show');
+      if(!toastShown){toastShown=true;showToast('选中文字后，用上方小工具条高亮 / 下划线 / 加粗，标注会自动保存');}
+    },10);
+  });
+  document.getElementById('btn-clearann').onclick=function(){
+    if(!anns.length){showToast('当前没有标注');return;}
+    if(confirm('清除文档内全部标注？（笔记不受影响）')){anns=[];saveAnn();document.querySelectorAll('#content main .para').forEach(function(p){['en','zh'].forEach(function(l){var d=p.querySelector('.'+l);if(d)unwrapAll(d);});});showToast('已清除全部标注');}
+  };
+})();
+</script>
+</body>
+</html>

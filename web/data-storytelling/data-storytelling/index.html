@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Data Storytelling — Turn metrics into narrative</title>
+<meta name="description" content="Data Storytelling turns raw metrics into a narrative your whole team can act on. Live dashboards, automated narratives, production-ready from the first screen." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav" data-nav>
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Data Storytelling home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M2 13 L6 8 L9 10.5 L13 5 L16 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="13" cy="5" r="1.6" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand-name">Data Storytelling</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#testimonials">Customers</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#pricing" class="nav-cta">Open Data Storytelling</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-label="Hero">
+    <!--
+      Canvas-driven animated background (seamless, zero-asset).
+      To use a real video instead: drop assets/hero.mp4 here and uncomment
+      the <video> tag below, then set .hero-canvas to display:none.
+    -->
+    <canvas class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-fallback" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        SaaS · Analytics narrative engine
+      </p>
+      <h1 class="hero-title">Data Storytelling keeps the <span class="accent">first screen</span> specific.</h1>
+      <p class="hero-sub">Data Storytelling belongs to this SaaS offer — turn raw metrics into a story your team actually reads, and act on before the meeting ends.</p>
+      <div class="hero-cta">
+        <a href="#pricing" class="btn btn-primary">Open Data Storytelling
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M3 12 L12 3 M5 3 h7 v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#features" class="btn btn-ghost">See how it works</a>
+      </div>
+      <ul class="hero-proof" aria-label="Social proof">
+        <li><strong>2,400+</strong> teams</li>
+        <li><strong>4.9/5</strong> rating</li>
+        <li><strong>99.99%</strong> uptime</li>
+      </ul>
+    </div>
+
+    <div class="hero-interface" aria-hidden="true">
+      <div class="dash">
+        <div class="dash-topbar">
+          <span class="dash-dots"><i></i><i></i><i></i></span>
+          <span class="dash-title">Revenue narrative · Q3</span>
+          <span class="dash-live">Live</span>
+        </div>
+        <div class="dash-body">
+          <div class="dash-kpis">
+            <div class="kpi"><span class="kpi-label">ARR</span><span class="kpi-value">$4.2M</span><span class="kpi-delta up">+18.4%</span></div>
+            <div class="kpi"><span class="kpi-label">Churn</span><span class="kpi-value">2.1%</span><span class="kpi-delta down">−0.6</span></div>
+            <div class="kpi"><span class="kpi-label">NPS</span><span class="kpi-value">72</span><span class="kpi-delta up">+9</span></div>
+          </div>
+          <div class="dash-plot">
+            <svg viewBox="0 0 320 120" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#7F77DD" stop-opacity="0.35"/>
+                  <stop offset="1" stop-color="#7F77DD" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path class="plot-area" d="M0 100 C40 92 60 80 90 82 C120 84 140 60 170 58 C200 56 220 40 250 34 C275 29 300 22 320 16 L320 120 L0 120 Z" fill="url(#area)"/>
+              <path class="plot-line" d="M0 100 C40 92 60 80 90 82 C120 84 140 60 170 58 C200 56 220 40 250 34 C275 29 300 22 320 16" fill="none" stroke="#AFA9EC" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+            <p class="plot-note">“Growth accelerated after the pricing change — North America led the lift.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section" id="features" aria-label="Features">
+    <div class="section-head">
+      <p class="section-kicker">Features</p>
+      <h2 class="section-title">From raw numbers to a narrative that ships.</h2>
+      <p class="section-lede">Every metric gets context, so the person reading it knows what it means — and what to do next.</p>
+    </div>
+    <div class="features-grid">
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 17 L9 11 L13 14 L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <h3>Automated narratives</h3>
+        <p>Plain-language summaries written for every dashboard, updated as your data moves. No more "what does this number mean?"</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2"/><path d="M3 9 h18 M9 21 V9" stroke="currentColor" stroke-width="2"/></svg>
+        </span>
+        <h3>Live, collaborative dashboards</h3>
+        <p>Real-time views your whole team shares, with comments and annotations pinned to the exact point in the story.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3 v14 M7 13 l5 5 l5 -5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 20 h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <h3>One-click export</h3>
+        <p>Ship any story as a slide, PDF, or Slack-ready summary — formatted, branded, and ready to send.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7 v5 l3.5 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <h3>Anomaly alerts</h3>
+        <p>When a metric breaks its pattern, you get the story of why — not just a red badge at 3 a.m.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M8 11 V8 a4 4 0 0 1 8 0 v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="2"/></svg>
+        </span>
+        <h3>Enterprise-grade security</h3>
+        <p>SOC 2 Type II, SSO, and granular roles. Your story stays yours, end to end.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6 h16 M4 12 h10 M4 18 h13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </span>
+        <h3>Connects to your stack</h3>
+        <p>Plug in Postgres, Snowflake, Stripe, and 40+ sources. One line to connect, minutes to your first story.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section-alt" id="testimonials" aria-label="Testimonials">
+    <div class="section-head">
+      <p class="section-kicker">Customers</p>
+      <h2 class="section-title">Teams stopped guessing. Started acting.</h2>
+    </div>
+    <div class="testimonials-grid">
+      <figure class="testimonial">
+        <blockquote>“We cut our weekly reporting from four hours to fifteen minutes. The auto-written narrative reads better than what our analyst used to type.”</blockquote>
+        <figcaption>
+          <span class="avatar">MK</span>
+          <span class="who"><strong>Maya Kim</strong><span>VP Data, Northwind</span></span>
+        </figcaption>
+      </figure>
+      <figure class="testimonial">
+        <blockquote>“The first screen actually tells you what happened. My exec team reads the story, not the spreadsheet.”</blockquote>
+        <figcaption>
+          <span class="avatar">DR</span>
+          <span class="who"><strong>Daniel Reyes</strong><span>COO, Stackline</span></span>
+        </figcaption>
+      </figure>
+      <figure class="testimonial">
+        <blockquote>“Anomaly alerts used to be noise. Now they arrive with the why attached. That alone paid for the year.”</blockquote>
+        <figcaption>
+          <span class="avatar">AS</span>
+          <span class="who"><strong>Aisha Suleiman</strong><span>Head of Analytics, Lumen</span></span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section" id="pricing" aria-label="Pricing">
+    <div class="section-head">
+      <p class="section-kicker">Pricing</p>
+      <h2 class="section-title">Start free. Scale when the story scales.</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="plan">
+        <h3>Starter</h3>
+        <p class="plan-price"><span class="amount">$0</span><span class="period">/mo</span></p>
+        <p class="plan-desc">For individuals finding their first story.</p>
+        <ul class="plan-list">
+          <li>3 dashboards</li>
+          <li>1 data source</li>
+          <li>Automated narratives</li>
+          <li>Community support</li>
+        </ul>
+        <a href="#top" class="btn btn-outline">Start free</a>
+      </div>
+      <div class="plan plan-featured">
+        <span class="plan-badge">Most popular</span>
+        <h3>Team</h3>
+        <p class="plan-price"><span class="amount">$49</span><span class="period">/mo</span></p>
+        <p class="plan-desc">For teams shipping stories every week.</p>
+        <ul class="plan-list">
+          <li>Unlimited dashboards</li>
+          <li>10 data sources</li>
+          <li>Live collaboration</li>
+          <li>Anomaly alerts</li>
+          <li>One-click export</li>
+        </ul>
+        <a href="#top" class="btn btn-primary">Open Data Storytelling</a>
+      </div>
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <p class="plan-price"><span class="amount">Custom</span></p>
+        <p class="plan-desc">For orgs that need scale and control.</p>
+        <ul class="plan-list">
+          <li>SSO &amp; SAML</li>
+          <li>SOC 2 Type II</li>
+          <li>Dedicated success</li>
+          <li>Custom SLAs</li>
+        </ul>
+        <a href="#top" class="btn btn-outline">Talk to sales</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" aria-label="Footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M2 13 L6 8 L9 10.5 L13 5 L16 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="13" cy="5" r="1.6" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-name">Data Storytelling</span>
+      </a>
+      <p>Turn metrics into narrative.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Customers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#top">About</a>
+        <a href="#top">Blog</a>
+        <a href="#top">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#top">Privacy</a>
+        <a href="#top">Terms</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Data Storytelling. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

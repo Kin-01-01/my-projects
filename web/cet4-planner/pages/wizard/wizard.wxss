@@ -1,0 +1,7 @@
+.form-row { display: flex; align-items: center; margin-top: 22rpx; }
+.form-label { width: 150rpx; color: #6E7891; font-size: 26rpx; flex-shrink: 0; }
+.form-picker {
+  flex: 1; border-bottom: 1rpx solid #E2E8F2; padding: 8rpx 4rpx;
+  font-size: 28rpx; color: #16203A;
+}
+.btn-primary { margin-top: 28rpx; }

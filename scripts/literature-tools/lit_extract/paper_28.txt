@@ -1,0 +1,400 @@
+=== PAGE 1 ===
+German Edition:
+DOI: 10.1002/ange.201807355
+Electrochemistry
+International Edition: DOI: 10.1002/anie.201807355
+Air-Stable Lithium Spheres Produced by Electrochemical Plating
+Tingting Yang+, Peng Jia+, Qiunan Liu+, Liqiang Zhang,* Congcong Du+, Jingzhao Chen,
+Hongjun Ye, Xiaomei Li, Yanshuai Li, Tongde Shen,* Yongfu Tang,* and Jianyu Huang*
+Abstract: Lithium metal is an ideal anode for next-generation
+lithium batteries owing to its very high theoretical specific
+capacity of 3860 mAhg@1 but very reactive upon exposure to
+ambient air, rendering it difficult to handle and transport. Air-
+stable lithium spheres (ASLSs) were produced by electro-
+chemical plating under CO2 atmosphere inside an advanced
+aberration-corrected
+environmental
+transmission
+electron
+microscope. The ASLSs exhibit a core–shell structure with
+a Li core and a Li2CO3 shell. In ambient air, the ASLSs do not
+react with moisture and maintain their core–shell structures.
+Furthermore, the ASLSs can be used as anodes in lithium-ion
+batteries, and they exhibit similar electrochemical behavior to
+metallic Li, indicating that the surface Li2CO3 layer is a good
+Li+ ion conductor. The air stability of the ASLSs is attributed
+to the surface Li2CO3 layer, which is barely soluble in water
+and does not react with oxygen and nitrogen in air at room
+temperature, thus passivating the Li core.
+Lithium (Li) metal has a very high theoretical specific
+capacity of 3860 mAhg@1,[1] making it an attractive anode
+material for next-generation high-energy-density batteries for
+electric vehicles and grid storage applications. Compared with
+Li foil, compacted Li powder based anodes for lithium-ion
+batteries can efficiently reduce the formation of Li dendrites
+owing to its high surface area, reducing the true current
+density during charge/discharge.[2] However, pure Li powders
+are unstable and unsafe upon exposure to electrolyte or air as
+Li easily reacts with the electrolyte or air to form a solid
+electrolyte interface (SEI) or lithium hydroxide (LiOH) and
+lithium oxide (Li2O), which causes serious safety problems
+during transportation and application. Therefore, Li batteries
+are usually assembled in a glove box under a high-purity inert
+gaseous atmosphere, which is costly and difficult to handle.
+Producing a stable Li powder electrode material that is safe
+and easy to handle is important to improve the safety and
+efficiency of Li metal batteries and reduce the costs for
+handling and processing. As such, numerous efforts have been
+focused on stabilizing Li electrodes through controlling the
+electrode geometry or electrode surface by using various
+additives such as CO2,[3] HF,[4] iodide,[5] benzene,[6] organic
+compounds,[7] or wax.[8] However, the synthesis of air-stable Li
+powders or spheres by electrochemical plating has not been
+reported to date. In a proof-of-concept study, we herein
+demonstrate the production of air-stable Li spheres (ASLSs)
+using electrochemical plating under a CO2 atmosphere in an
+advanced aberration-corrected environmental transmission
+electron microscope (ETEM, FEI Titan G2).
+The experiments were conducted in CO2 atmosphere at
+1.0 mbar pressure in the ETEM (see the Supporting Infor-
+mation for details). Upon applying a negative potential to the
+carbon nanotube (CNT) against Li in the CO2 atmosphere,
+nanospheres with sizes of a few hundred nanometers emerged
+at the CNT, Li2O, and CO2 triple point (Figures 1a,b and S1,
+Movie S1). The spheres continuously grew larger with time
+while maintaining their nearly spherical geometry with some
+small indents on the surface (Figure 1b–e). Meanwhile, a thin
+shell with dark contrast formed on the surface of the spheres.
+After discharging for 2759 s, the spheres exhibited a core–
+shell structure, with a core diameter of 996 nm and a shell
+thickness of 71 nm (Figure 1e).
+The crystalline structure and composition of the nano-
+spheres (Figure 1c–e, Figure 2a) were analyzed by electron
+diffraction pattern (EDP) analysis and electron energy loss
+spectroscopy (EELS). The EDP of the as-formed nano-
+spheres exhibits sharp diffraction spots superimposed on
+diffraction rings, which are indexed as Li and Li2CO3/Li2O
+(Figures 2b and S1), respectively. A dark-field image (Fig-
+ure 2c) formed by selecting one of the sharp diffraction spots
+from metallic Li (green arrowheads in Figure 2b) indicates
+that the core is body-centered-cubic Li, and the shell is
+Li2CO3 and Li2O.
+A low-loss EELS spectrum from the core of the as-formed
+ball (Figure 2a) shows three multiple plasmon peaks at 7.5,
+14.9, 22.5 eV and two additional low-intensity plasmon peaks
+[*] Dr. T.-T. Yang,[+] P. Jia,[+] Q.-N. Liu,[+] Dr. L.-Q. Zhang, C.-C. Du,[+]
+J.-Z. Chen, H.-J. Ye, X.-M. Li, Y.-S. Li, Prof. T.-D. Shen, Dr. Y.-F. Tang,
+Dr. J.-Y. Huang
+Clean Nano Energy Center, State Key Laboratory of Metastable
+Materials Science and Technology, Yanshan University
+Qinhuangdao 066004 (China)
+E-mail: [邮箱已脱敏]
+[邮箱已脱敏]
+Dr. L.-Q. Zhang
+State Key Laboratory of Heavy Oil Processing
+Beijing Key Laboratory of Failure, Corrosion, and Protection of Oil/
+Gas Facilities, China University of Petroleum Beijing
+Beijing 102249 (China)
+E-mail: [邮箱已脱敏]
+Dr. Y.-F. Tang
+Hebei Key Laboratory of Applied Chemistry
+College of Environmental and Chemical Engineering
+Yanshan University, Qinhuangdao, 066004 (China)
+E-mail: [邮箱已脱敏]
+Dr. J.-Y. Huang
+Key Laboratory of Low Dimensional Materials and Application
+Technology of Ministry of Education
+School of Materials Science and Engineering
+Xiangtan University, Xiangtan, Hunan 411105 (China)
+E-mail: [邮箱已脱敏]
+[+] These authors contributed equally to this work.
+Supporting information and the ORCID identification number(s) for
+the author(s) of this article can be found under:
+https://doi.org/10.1002/anie.201807355.
+Angewandte
+Chemie
+Communications
+12750
+T 2018 Wiley-VCH Verlag GmbH & Co. KGaA, Weinheim
+Angew. Chem. Int. Ed. 2018, 57, 12750 –12753
+
+=== PAGE 2 ===
+positioned at 55.7 and 63.7 eV (Figure 2g, red plot), which
+showed excellent reproducibility (Figure S2) and were con-
+sistent with the EELS profile of metal Li reported in the
+literature.[9] The low-loss spectrum of the shell displayed
+a halo plasmon peak spanning from 5 to about 30 eV with
+a peak positioned at 23.1 eV (Figure 2g, blue plot). Some
+minor peaks at 13.5, 58.3, 63.1 eV also appear at the halo. In
+the core-loss spectra, the core of the sphere showed no trace
+of C and O (Figure 2i, red plot), while the spectrum from the
+shell region consistently indicated the presence of C and O
+(Figure 2i, blue plots). These data confirm again that the core
+is Li, and the shell is Li2CO3/Li2O.
+To test whether the as-formed spheres were stable in
+ambient air, the TEM sample holder with the spheres in it was
+taken out of the TEM column and exposed to ambient air
+with a humidity of about 30% at room temperature for
+30 min (Movie S1). The sample holder was then reinserted
+back into the TEM column to identify any structural changes
+of the spheres. Surprisingly, the sphere (Figure 2d,f) main-
+tained a similar morphology to the as-formed sphere (Fig-
+ure 2a,c) after 30 min exposure iro ambient air. The EDP
+(Figure 2e) and EELS (Figure 2h,j) from the air-exposed
+sphere indicate that both the Li core and the Li2CO3/Li2O
+shell remained essentially unchanged after air exposure,
+confirming that the Li spheres were air-stable.
+To confirm the repeatability of the experiment, we
+synthesized another sphere (Figure 3a–c), and then exposed
+it to ambient air for 30 min; its morphology is presented in
+Figure 3d,f. The air-exposed sphere (Figure 3d,f) had a sim-
+ilar shape to that of the as-formed ball (Figure 3c,e) except
+that a ribbon-like nanoobject appeared on the surface of the
+former, the reason for which is unclear. Dark-field images of
+the spheres before (Figure 3e) and after (Figure 3 f) air
+exposure exhibit similar core–shell structure, with the core
+being Li and the shell being Li2CO3/Li2O. The EDPs from the
+spheres before (Figure 3g) and after (Figure 3h) air exposure
+are similar, showing diffraction rings superimposed on sharp
+diffraction spots, which are indexed as Li2CO3/Li2O and Li,
+respectively. The similarities of the crystalline structure and
+morphology between the pristine and air-exposed spheres
+indicate that the Li spheres with a surface shell are air-stable.
+We thus refer to them as ASLSs. To test their air stability
+further, the as-formed ASLSs were exposed to air with much
+higher humidity of 45% and 70%, respectively. We found that
+the ASLSs were quite stable in a humidity of 45% (Fig-
+ure S3). However, when the humidity reached 70%, some of
+the ASLSs corroded (Figure S4). The stability of the ASLSs
+Figure 1. a) Experimental setup. The Li plating device consists of
+a CNT cathode, a Li2O solid electrolyte, and a Li anode. b–e) The
+generation of an ASLS in a CO2 environment. Upon applying a negative
+potential, a sphere emerged at the CNT, Li2O, and CO2 triple point.
+The sphere with a core–shell structure grew with time.
+Figure 2. Comparison of the morphology, crystalline structure, and
+composition distribution of a–c,g,i) as-prepared ASLSs and d–
+f,h,j) ASLSs exposed to air for 30 min. The sharp diffraction spots of
+as-prepared ASLSs (b) are due to metallic Li, and remained unchanged
+after air exposure (e). The dark-field images in (c) and (f) were formed
+by choosing the sharp diffraction spots indicated by green arrowheads
+in (b) and (e), respectively, and demonstrate that the core of the
+ASLSs is metallic Li. Low-loss EELS spectra from the core (red plots in
+(g) and (h)) of the ASLSs are quite different to those from the shell
+(blue plots in (g) and (h)). The low-loss spectra from the spheres
+before (g) and after (h) air exposure show similar profiles, indicating
+the air stability of the spheres. In the core-loss spectra in (i) and (j),
+the cores of the spheres showed no traces of C and O (red plots in (i)
+and (j)), while that from the shell region consistently showed the
+presence of C and O (blue plots in (i) and (j)).
+Angewandte
+Chemie
+Communications
+12751
+Angew. Chem. Int. Ed. 2018, 57, 12750 –12753
+T 2018 Wiley-VCH Verlag GmbH & Co. KGaA, Weinheim
+www.angewandte.org
+
+=== PAGE 3 ===
+against ambient air is attributed to the formation of a Li2CO3
+surface passivation layer, in which the Pilling–Bedworth ratio
+is 1.34,[10] suggesting that the Li2CO3 surface passivation layer
+can protect Li metal from further oxidation. Similar anti-
+corrosion behavior of Li2CO3 has been found in MgLi alloy.[11]
+Moreover, Li2CO3 is only slightly soluble in water,[10] which
+further confirms its excellent anticorrosion abilities in air. We
+also generated Li/Li2O core–shell spheres by electrochemical
+plating in O2 atmosphere, and we found that these Li/Li2O
+spheres were not air-stable (Figure S5 and Movie S2). After
+exposure to ambient air, the contrast of the sphere changed
+from the original uniform gray (Figure S5a) to heavily
+strained (Figure S5b), and the EDPs indicate that the as-
+formed Li/Li2O (Figure S5c) was converted into LiOH
+(Figure S5d) upon air exposure. These results constitute
+clear evidence that the air stability of the Li/Li2CO3/Li2O
+spheres can be ascribed to the formation of Li2CO3 rather
+than Li2O.
+It is interesting to note that Li does not chemically react
+with CO2 in the absence of water at room temperature, which
+is in contrast to our observation that Li reacts with CO2
+electrochemically at room temperature.[12] This indicates that
+there is an energy barrier for the reaction between Li and
+CO2, and a driving force is required to overcome the energy
+barrier so that the reaction can take place.
+To test whether the air-exposed ASLSs can be used as an
+anode for Li-ion batteries, we constructed a nanobattery using
+an air-exposed ASLS as the anode, the Li2CO3/Li2O shell as
+the electrolyte, and an Au-coated CuO nanowire as the
+cathode inside the ETEM (Figures 4 and S6, Movie S3). Upon
+applying a negative potential to the CuO nanowire against the
+ASLS, the CuO nanowire was quickly lithiated (Figure 4), as
+evidenced by its volume expansion and the formation of Li2O,
+Cu, and LiAu, which is similar to the lithiation of the CuO
+nanowire observed using fresh metallic Li as the anode.[13] The
+result agrees very well with a literature report that Li2CO3 is
+a Li ion conductor with a conductivity of the same order to
+that of other Li ion conductors, such as Li4SiO4, Li5AlO4, and
+Li2SO4.[14]
+To test the practical applicability of the ASLSs in
+a macroscopic lithium battery, we synthesized milligram-
+scale ASLSs with an electrochemical plating device (Fig-
+Figure 3. a–c,e,g) Generation of an ASLS by electrochemical plating in
+CO2 atmosphere, which is stable upon air exposure for 30 min (d, f,
+h). The phase identifications are marked in the EDPs in (g) and (h).
+The dark-field images in (e) and (f) were obtained by choosing the
+sharp diffraction spots indicated by the green arrowheads in (g) and
+(h), respectively, and indicate that the core consists of metallic Li.
+Figure 4. To test whether the ASLSs can be used as anodes for Li-ion
+batteries, we constructed a nanobattery using an ASLS as an anode,
+the shell of Li2CO3 and Li2O as the electrolyte, and an Au-coated CuO
+nanowire as the cathode inside the ETEM. The as-prepared sphere (a)
+was stable upon exposure to air for 30 min (b). Upon applying
+a negative potential to the Au-coated CuO nanowire against the ASLS,
+the nanowire was quickly lithiated, as evidenced by its volume
+expansion (c–f) and the transformation of CuO (g) into Li2O, Cu, and
+LiAu (h) as the end product.
+Angewandte
+Chemie
+Communications
+12752
+www.angewandte.org
+T 2018 Wiley-VCH Verlag GmbH & Co. KGaA, Weinheim
+Angew. Chem. Int. Ed. 2018, 57, 12750 –12753
+
+=== PAGE 4 ===
+ure S7 and S8a). The as-prepared milligram-scale ASLSs
+exhibited a similar structure (Figure S8b–g) to those obtained
+by in situ ETEM, with a Li2CO3 shell coating on a Li core. The
+milligram-scale ASLSs were plated on a copper foil, and the
+assembly was used as an anode for a coin cell Li-ion battery.
+Electrochemical testing indicated that the ASLS electrode
+showed a much higher first cycle capacity than a bare Li
+electrode (Figure S8h). This result confirms that ASLSs are
+a versatile anode material for lithium batteries. The structure
+of the ASLSs is similar to the surface-stabilized Li powders
+produced by the droplet emulsion technique (DET), which
+also exhibit a Li2CO3 shell and a Li core.[15] The stabilized Li
+powders were compacted and used as the electrode for Li-ion
+battery,[15] and results show that dendrite growth in the
+compacted electrode was reduced significantly as compared
+with an extruded Li foil electrode. In a related study, it was
+reported that Li2CO3 particles treated graphite electrode
+showed much better capacity retention, particularly for the
+first cycle, as compared to the non-treated electrode, because
+the SEI layer with a higher Li2CO3 concentration enhanced
+the stability and assisted Li+ diffusion, improving the capacity
+retention.[16] Remarkably, Asadi and co-workers recently
+reported a record-long cycle lifetime of 700 cycles for a Li-
+air battery by using a Li2CO3-protected Li foil as the anode
+and cycling in a simulated air atmosphere. They attributed the
+record-long cycle lifetime to the presence of a Li2CO3
+passivation layer on the Li surface, which protects the
+metallic Li from corrosion by the moisture, CO2, and O2 in
+an air-like atmosphere.[17] In addition, the Li2CO3 coating on
+the graphite surface can prevent mechanical damage occur-
+ring at the electrode surfaces, which causes a drastic capacity
+loss in the first cycle in Li-ion batteries, a phenomenon that is
+referred to as electrochemical shock.[16,18] In another relevant
+study, stabilized Li electrodes showed better first-cycle
+efficiencies than a pure Li electrode,[19] indicating the great
+application potential of stabilized Li powders in next-
+generation Li batteries and Li-ion batteries. In a similar
+vein, we expect the ASLSs to be safe and efficient anode
+materials for next-generation lithium batteries. The electro-
+chemical plating method described here provides an efficient
+strategy for the preparation of ASLSs with reactivity similar
+to that of conventional Li anodes.
+Acknowledgements
+This work was financially supported by the National Key
+Research
+and
+Development
+Program
+of
+China
+(Nos.
+2018YFB0104300, 2017YFB0702001), the National Natural
+Science Foundation of China (Nos. 51772262, 21406191,
+51401239, 11575154), the Science Foundation of China
+University
+of
+Petroleum,
+Beijing
+(Nos.
+C201603,
+2462018BJC005), the Natural Science Foundation of Hebei
+Province (No. B2018203297), the Hebei One Hundred Talent
+Program (Grant No. 4570028), the Youth Top-notch Talent
+Support Program of Higher Education in Hebei Province
+(No. BJ2016053), and the High-Level Talents Research
+Program
+of
+Yanshan
+University
+(Nos.
+00500021502,
+005000201).
+Conflict of interest
+The authors declare no conflict of interest.
+Keywords: carbon dioxide · electrochemical plating ·
+lithium ion batteries · lithium spheres ·
+transmission electron microscopy
+How to cite: Angew. Chem. Int. Ed. 2018, 57, 12750–12753
+Angew. Chem. 2018, 130, 12932–12935
+[1] W. Xu, J. Wang, F. Ding, X. Chen, E. Nasybulin, Y. Zhang, J. G.
+Zhang, Energy Environ. Sci. 2014, 7, 513 – 537.
+[2] a) W.-S. Kim, W.-Y. Yoon, Electrochim. Acta 2004, 50, 541 – 545;
+b) I. W. Seong, C. H. Hong, B. K. Kim, W. Y. Yoon, J. Power
+Sources 2008, 178, 769 – 773.
+[3] T. Osaka, T. Momma, K. Nishimura, T. Tajima, J. Electrochem.
+Soc. 1993, 140, 2745 – 2748.
+[4] K. Kanamura, S. Shiraishi, Z. Takehara, Cheminform 1994, 25,
+L108.
+[5] M. Ishikawa, M. Morita, Y. Matsuda, J. Power Sources 1997, 68,
+501 – 505.
+[6] M. Morita, S. Aoki, Y. Matsuda, Electrochim. Acta 1992, 37,
+119 – 123.
+[7] C. Wang, H. Nakamura, H. Noguchi, M. Yoshio, Electrochem-
+istry 1997, 65, 941 – 948.
+[8] H. E. Park, I. W. Seong, W. Y. Yoon, J. Power Sources 2009, 189,
+499 – 502.
+[9] D.-R. Lru, D. B. Williams, Philos. Mag. B 1986, 53, L123 – L128.
+[10] M. M. Markowitz, D. A. Boryta, J. Chem. Eng. Data 1962, 7,
+586 – 591.
+[11] W. Xu, N. Birbilis, G. Sha, Y. Wang, J. E. Daniels, Y. Xiao, M.
+Ferry, Nat. Mater. 2015, 14, 1229.
+[12] D. W. Jeppson, J. L. Ballif, W. W. Yuan, B. E. Chou, Lithium
+literature review: lithium’s properties and interactions, No.
+HEDL-TME – 78-15, Hanford Engineering Development Lab.,
+1978.
+[13] a) X. Wang, D.-M. Tang, H. Li, W. Yi, T. Zhai, Y. Bando, D.
+Golberg, Chem. Commun. 2012, 48, 4812 – 4814; b) M. Sun, K.
+Qi, X. Li, Q. Huang, J. Wei, Z. Xu, W. Wang, X. Bai,
+ChemElectroChem 2016, 3, 1296 – 1300.
+[14] a) J. Mizusaki, H. Tagawa, K. Saito, K. Uchida, M. Tezuka, Solid
+State Ionics 1992, s53-56, 791 – 797; b) S. Shi, Y. Qi, H. Li,
+L. G. H. Jr, J. Phys. Chem. C 2013, 117, 8579 – 8593.
+[15] S. W. Kim, Y. J. Ahn, W. Y. Yoon, Met. Mater. 2000, 6, 345 – 349.
+[16] S. Bhattacharya, A. R. Riahi, A. T. Alpas, Carbon 2014, 77, 99 –
+112.
+[17] M. Asadi, B. Sayahpour, P. Abbasi, A. T. Ngo, K. Karis, J. R.
+Jokisaari, C. Liu, B. Narayanan, M. Gerard, P. Yasaei, X. Hu, A.
+Mukherjee, K. C. Lau, R. S. Assary, F. Khalili-Araghi, R. F. Klie,
+L. A. Curtiss, A. Salehi-Khojin, Nature 2018, 555, 502.
+[18] a) W. H. Woodford, W. C. Carter, Y. M. Chiang, Energy Envi-
+ron. Sci. 2012, 5, 8014 – 8024; b) W. H. Woodford, Y. M. Chiang,
+W. C. Carter, J. Electrochem. Soc. 2013, 160, A1286 – A1292.
+[19] a) V. Aravindan, Y. S. Lee, S. Madhavi, Adv. Energy Mater. 2017,
+7, 1602607; b) B. Xiang, L. Wang, G. Liu, A. M. Minor, J.
+Electrochem. Soc. 2013, 160, A415 – A419; c) J. T. Vaughey, G.
+Liu, J. G. Zhang, MRS Bull. 2014, 39, 429 – 435.
+Manuscript received: June 26, 2018
+Accepted manuscript online: July 31, 2018
+Version of record online: August 31, 2018
+Angewandte
+Chemie
+Communications
+12753
+Angew. Chem. Int. Ed. 2018, 57, 12750 –12753
+T 2018 Wiley-VCH Verlag GmbH & Co. KGaA, Weinheim
+www.angewandte.org
+

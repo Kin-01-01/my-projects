@@ -1,0 +1,700 @@
+=== PAGE 1 ===
+Letters
+https://doi.org/10.1038/s41565-019-0604-x
+1Clean Nano Energy Center, State Key Laboratory of Metastable Materials Science and Technology, Yanshan University, Qinhuangdao, China. 2State Key 
+Laboratory of Heavy Oil Processing, China University of Petroleum Beijing, Beijing, China. 3Woodruff School of Mechanical Engineering, Georgia Institute 
+of Technology, Atlanta, GA, USA. 4Department of Engineering Science and Mechanics, Pennsylvania State University, University Park, PA, USA. 5Key 
+Laboratory of Low Dimensional Materials and Application Technology of Ministry of Education, School of Materials Science and Engineering, Xiangtan 
+University, Xiangtan, China. 6These authors contributed equally: Liqiang Zhang, Tingting Yang. *e-mail: [邮箱已脱敏]; [邮箱已脱敏];  
+[邮箱已脱敏]; [邮箱已脱敏]
+Lithium metal is considered the ultimate anode material for 
+future rechargeable batteries1,2, but the development of Li 
+metal-based rechargeable batteries has achieved only lim-
+ited success due to uncontrollable Li dendrite growth3–7. In 
+a broad class of all-solid-state Li batteries, one approach to 
+suppress Li dendrite growth has been the use of mechani-
+cally stiff solid electrolytes8,9. However, Li dendrites still grow 
+through them10,11. Resolving this issue requires a fundamental 
+understanding of the growth and associated electro-chemo-
+mechanical behaviour of Li dendrites. Here, we report in situ 
+growth observation and stress measurement of individual Li 
+whiskers, the primary Li dendrite morphologies12. We combine 
+an atomic force microscope with an environmental transmis-
+sion electron microscope in a novel experimental set-up. At 
+room temperature, a submicrometre whisker grows under 
+an applied voltage (overpotential) against the atomic force 
+microscope tip, generating a growth stress up to 130 MPa; 
+this value is substantially higher than the stresses previously 
+reported for bulk13 and micrometre-sized Li14. The measured 
+yield strength of Li whiskers under pure mechanical loading 
+reaches as high as 244 MPa. Our results provide quantitative 
+benchmarks for the design of Li dendrite growth suppression 
+strategies in all-solid-state batteries.
+Figure 1a–c shows the in situ electro-chemo-mechanical experi-
+ment for observing and measuring individual Li whiskers through 
+an atomic force microscope with an environmental transmission 
+electron microscope (AFM–ETEM) set-up, which consists of a Li 
+metal electrode, a Li2CO3 solid electrolyte and a silicon AFM tip 
+as a counter electrode. The Li2CO3 electrolyte was formed as a thin 
+layer covering the Li metal surface due to reaction between Li and 
+CO2 gas in the ETEM chamber15 (Supplementary Fig. 1). As soon as 
+the AFM tip was brought into contact with the Li2CO3 surface and 
+a negative potential was applied between the AFM tip and Li elec-
+trode, individual straight Li whiskers sprouted out between the AFM 
+tip and the Li2CO3/Li substrate (Fig. 1d, Supplementary Figs. 2 and 
+3 and Supplementary Videos 1 and 2). The relatively slow lithiation 
+of the Si AFM tip facilitated plating of Li in the form of Li whiskers. 
+During this process, the Li metal substrate and the Li whisker effec-
+tively acted as two opposite electrodes of a symmetric Li cell, with 
+the Li2CO3 surface layer as a solid electrolyte between the two Li 
+electrodes. The growing Li whisker pushed the AFM tip upwards, 
+thus permitting real-time measurement of the stress generated in 
+the Li whisker (Methods).
+To facilitate the whisker nucleation, an arc-discharged mul-
+tiwall carbon nanotube (CNT) was attached to the AFM tip in 
+the ETEM. Before the growth of a straight Li whisker, a single Li 
+spheroid first nucleated at the contact point between the CNT and 
+the Li2CO3/Li substrate, and then grew along the CNT (Fig. 1d, 
+1,863 s, Supplementary Figs. 2 and 3 and Supplementary Videos 1 
+and 2). Under a constant bias voltage, the spheroid grew to about 
+1.26 μm in diameter and subsequently necked downwards to form 
+a straight rod-like whisker (Fig. 1d, 2,028 s). The upper end of the 
+Li whisker, which was in contact with the AFM tip, remained geo-
+metrically unchanged during the whisker growth process (Fig. 1d, 
+2,028 s and 2,119 s). This indicates a root-growth mode3,16 through 
+Li deposition at the contact interface between the lower end of 
+the Li whisker and the Li2CO3/Li substrate. After 2,119 s, the 
+length of the overall straight Li whisker reached 4.08 μm (Fig. 1d). 
+Attachment of a CNT to the AFM tip facilitates the whis-
+ker nucleation but is not a prerequisite, since whiskers can also 
+nucleate without the aid of a CNT (Supplementary Figs. 4–8 and 
+Supplementary Videos 3–7). The morphology of the whisker 
+resembles that of a mushroom (Supplementary Fig. 9). A similar 
+morphology was also observed from Li whiskers grown in liquid 
+electrolytes3,17, where a whisker nucleated from a spherical bud 
+and then grew in length.
+Importantly, we found that during the Li growth process, a layer 
+of Li2CO3 (~5–20 nm thick) quickly covered the surface of a grow-
+ing whisker, owing to the presence of CO2 gas inside the ETEM 
+chamber (Supplementary Figs. 1 and 10). Such an ultrathin Li2CO3 
+layer plays a critical role in stabilizing the Li whisker and prevent-
+ing its damage by the electron beam (Methods and Supplementary 
+Fig. 11), thereby enabling in situ imaging and stress measurement 
+inside the ETEM.
+Lithium whisker growth and stress generation in 
+an in situ atomic force microscope–environmental 
+transmission electron microscope set-up
+Liqiang Zhang1,2,6, Tingting Yang1,6, Congcong Du1, Qiunan Liu1, Yushu Tang   2, Jun Zhao1, 
+Baolin Wang3, Tianwu Chen4, Yong Sun1, Peng Jia1, Hui Li1, Lin Geng1, Jingzhao Chen1, Hongjun Ye1, 
+Zaifa Wang1, Yanshuai Li1, Haiming Sun1, Xiaomei Li1, Qiushi Dai1, Yongfu Tang   1*, Qiuming Peng1, 
+Tongde Shen   1, Sulin Zhang4*, Ting Zhu   3* and Jianyu Huang   1,5*
+Nature Nanotechnology | VOL 15 | February 2020 | 94–98 | www.nature.com/naturenanotechnology
+94
+
+=== PAGE 2 ===
+Letters
+Nature Nanotechnology
+The Li whiskers had a body-centred cubic lattice structure and 
+grew preferably along certain crystallographic directions. The growth 
+directions of <001> (Supplementary Fig. 12 and Supplementary 
+Video 8), <112> (Supplementary Fig. 13 and Supplementary Video 9), 
+<110> (Supplementary Fig. 14 and Supplementary Video 10) and 
+<111> (Supplementary Fig. 15 and Supplementary Video 11) 
+were observed, but the <111> and <112> directions occurred 
+predominantly.
+The whisker growth process can be typically separated into three 
+stages. In stage I, a Li spheroid nucleated at the interface between 
+the AFM tip and Li2CO3/Li substrate (for example, Fig. 2a, 261 s, 
+Supplementary Fig. 16 and Supplementary Videos 12 and 13), as 
+described earlier. The diameter of the Li spheroids, such as those 
+shown in Supplementary Fig. 16, follows a square-root relationship 
+with growth time (Supplementary Fig. 17), indicating a diffusion-
+controlled growth process.
+In stage II, the Li whisker started to grow in length without an 
+appreciable change in diameter (Fig. 2a, 282 s, and Supplementary 
+Video 13). As the AFM tip was pushed up continuously, the axial 
+compressive stress increased gradually in the Li whisker. Under a 
+given applied voltage, ϕa, the whisker ceased to grow as it reached a 
+certain length (Fig. 2c, from 445 s to 482 s, Supplementary Figs. 18  
+and 19 and Supplementary Videos 14–16). The corresponding 
+critical stress is denoted by ∼σ (being positive for compression). 
+An increase of applied voltage, ϕa, led to further growth of the whis-
+ker, resulting in an increase in the critical stress, ∼σ, as the whisker 
+growth stopped again (Fig. 2c, from 482 s to 595 s, Supplementary 
+Figs. 18 and 19 and Supplementary Videos 14–16). Figure 2d 
+shows the stress, ∼σ, versus applied voltage, ϕa, in stage II for several 
+whiskers. As shown in the Supplementary Discussion, the applied 
+voltage, ϕa, raises the overpotential that drives the Li whisker 
+growth, and the stress, ∼σ, in the Li whisker scales linearly with the 
+overpotential18 by
+∼σ
+ϕ
+= Δ
+V
+F
+(1)
+m
+where Δϕ is the overpotential across the contact interface between 
+the Li whisker and Li2CO3/Li substrate, F is Faraday’s constant 
+(F = 9.65 × 104 C mol−1) and Vm is the molar volume of Li metal 
+(Vm = 13 cm3 mol−1). Equation (1) represents an energy balance on 
+Li insertion at the contact interface and thus on the growth of the Li 
+whisker. Namely, Li insertion is driven by the overpotential, but is 
+resisted by the mechanical stress. Under a given Δϕ, the growth rate 
+of a Li whisker vanishes when the electrical work, FΔϕ, is counter 
+Lower end
+Lithium whisker
+b
+Δx
+hium
+AFM cantilever
+Lithium
+Li2CO3
+CNT
+500 nm
+AFM tip
+CNT
+Li2CO3
+Li
+25 µm
+0 s
+1,863 s
+2,028 s
+2,119 s
+2,177 s
+1 µm
+1.26 µm
+3.01 µm
+4.08 µm
+1.05 µm
+a
+d
+c
+CNT
+AFM tip
+1.26 µm
+3.01 µm
+4.08 µm
+1.05 µm
+AFM tip
+Li
+DC power
+Upper end
+Fig. 1 | In situ AFM–ETEM characterization of stress generation during Li whisker growth. a, Schematic of the AFM–ETEM set-up used for observation 
+and measurement of Li whisker growth. An arc-discharged CNT was attached to a conducting AFM tip by electron beam deposition of carbonaceous 
+materials, and this assembly was used as a cathode; the scratched Li metal on the top of a sharp tungsten needle was used as an anode; and the naturally 
+formed Li2CO3 on the Li surface was used as a solid electrolyte. The measured displacement of the cantilever tip is denoted as ∆x. b, TEM image showing 
+an AFM cantilever approaching the counter electrode of Li metal. c, TEM image showing a CNT attached to a flattened AFM tip. d, Time-lapse TEM 
+images of Li whisker growth. A nano-sized Li ball nucleated from the CNT, Li2CO3 and gas triple point (at 1,863 s), and it grew with an increase of applied 
+potential. As the Li ball grew to about 1.26 μm in size, a whisker emerged underneath the ball (at 2,028 s), which pushed the AFM cantilever up, thus 
+generating the axially compressive stress in the whisker. The spring constant of the Si AFM cantilever beam is k = 3 N m−1 in this case. When the whisker 
+reached 4.08 μm in length, it collapsed (at 2,177 s) due to axial compression by the AFM tip. The blue dotted line indicates a fixed reference position, and 
+the red arrow indicates the upward displacement of the AFM tip.
+Nature Nanotechnology | VOL 15 | February 2020 | 94–98 | www.nature.com/naturenanotechnology
+95
+
+=== PAGE 3 ===
+Letters
+Nature Nanotechnology
+balanced by the mechanical work, ∼σVm. According to equation (1), 
+an overpotential, Δϕ, of 10 mV gives rise to a growth stress of about 
+75 MPa. However, in our experiment such a level of stress was gen-
+erated by the applied voltage of the order of a few volts. These results 
+indicate that the overpotential responsible for whisker growth can 
+only be a small fraction of the applied voltage, and major poten-
+tial drops should have occurred at regions other than the contact 
+interface between the Li whisker and Li2CO3/Li substrate. Indeed, 
+our measurements show electrical resistances at the giga-ohm level 
+from the AFM tip region as well as from the Li2CO3 layer on the Li 
+metal, which are 109 times higher than the resistance of the Li whis-
+ker itself. Hence, these regions with high resistances are respon-
+sible for large potential drops (see a discussion of the relationship 
+between stress and overpotential in the Supplementary Discussion, 
+including Supplementary Figs. 20 and 21).
+In stage III, the whisker no longer grew longitudinally as the 
+applied voltage increased, but was often bent abruptly to collapse 
+(Fig. 2c, from 595 s to 605 s, and Supplementary Video 16). This 
+buckling instability was caused by a large axial compressive load 
+on the slender whisker. The corresponding compressive stress at 
+the instability point (for example, Fig. 2c, 595 s) is denoted as the 
+maximum stress, σm, for stable growth of a Li whisker without lat-
+eral constraints. We measured σm for a number of Li whiskers with 
+different diameters and crystallographic directions. The maximum 
+stresses vary from tens of MPa to over 130 MPa and exhibit a clear 
+size dependence (Fig. 2b), that is, the smaller the whisker diameter, 
+the higher the maximum stress, σm. This trend can be understood 
+by an elastic buckling analysis with consideration of the AFM can-
+tilever stiffness k, which yields a scaling relation of σm ≈ E1/3(k/d)2/3, 
+where E and d denote the Young’s modulus and diameter of the Li 
+whisker, respectively. In addition, we note that the maximum stress, 
+σm, obtained during in situ Li whisker growth is much higher than 
+that of Li spheres measured by nanoindentation19, and is also higher 
+than that of Li micropillars (~100 MPa)14.
+The above measurements indicate that high stresses up to 
+130 MPa can be built up in Li whiskers under an applied voltage 
+and axial constraint. However, further increase of stress in a whis-
+ker towards its plastic yielding could not be directly achieved by 
+increasing the applied voltage, as it would cause the buckling insta-
+bility and even short circuiting. This issue arises due to the absence 
+of lateral constraints to a growing whisker. Imposing lateral con-
+straints is possible, but it would block electron beams and encum-
+ber TEM observations. In contrast, in all-solid-state Li batteries, a 
+growing whisker within a solid electrolyte is generally subjected to 
+three-dimensional constraints from the surrounding electrolyte and 
+thus probably generates sufficiently high stresses to initiate plastic 
+deformation. To study the elasto-plastic response of Li whiskers, 
+we conducted in  situ mechanical compression tests on as-grown 
+Li whiskers without applied voltage. This enabled us to control the 
+axial compressive load well and thus measure the yield strength, σY, 
+of Li whiskers.
+Figure 3a–f presents a series of TEM images of in situ compres-
+sion of a single Li whisker at room temperature with a strain rate 
+of about 1 × 10−3 s−1. During a typical in situ test, the compressed 
+whisker was gradually pushed upwards against the AFM tip until 
+plastic yielding occurred (Fig. 3b–e), as evidenced by the formation 
+of an inclined shear band (Fig. 3e). Further compression eventu-
+ally triggered the collapse of the Li whisker (Fig. 3f). Supplementary 
+Figs. 22 and 23 (Supplementary Videos 17 and 18) show two addi-
+tional compression experiments of as-grown Li whiskers. Figure 3g 
+1.04 µm
+2.26 µm
+3.65 µm
+1.56 µm
+2.87 µm
+1.82 µm
+1.82 µm
+2.56 µm
+3.27 µm
+500 nm
+AFM tip
+Li
+0 s
+261 s
+310 s
+365 s
+1.04 µm
+2.26 µm
+3.65 µm
+282 s
+334 s
+1.56 µm
+2.87 µm
+a
+b
+c
+d
+–6 V
+–4 V
+–7 V
+–6 V
+–7 V
+445 s
+482 s
+595 s
+605 s
+0 s
+535 s
+–7 V
+500 nm
+1.82 µm
+1.82 µm
+2.56 µm
+3.27 µm
+100
+200
+300
+400
+500
+600
+0
+20
+40
+60
+80
+100
+120
+140
+σm (MPa)
+〈110〉
+〈112〉
+〈111〉
+〈001〉
+Equivalent diameter (nm)
+3
+4
+5
+6
+7
+8
+0
+10
+20
+30
+40
+50
+60
+70
+Stress (MPa)
+Voltage (V)
+1.36 µm
+1.36 µm
+Fig. 2 | In situ AFM–ETEM imaging of Li whisker growth and concurrent measurement of the maximum stress in Li whiskers under applied voltages. 
+a, A Li ball with size of 568 nm nucleated underneath the AFM tip without CNT (261 s) and then necked down to form a whisker (282 s, 310 s, 365 s) 
+(k = 0.2 N m−1). The whisker growth ceased due to compression imposed by the AFM cantilever tip under an applied potential. b, Plot of the maximum 
+stress σm versus equivalent diameter for Li whiskers with different growth directions. The equivalent diameter refers to the diameter of a circle whose area 
+is equivalent to the cross-sectional area of a Li whisker. c, A whisker grew at an applied potential of −6 V (445 s), and its growth ceased at a prolonged 
+time (482 s) (k = 3 N m−1). The whisker resumed its growth as the applied potential increased to −7 V (535 s, 595 s), causing the bending instability (595 s) 
+and eventual collapse of the whisker (605 s). d, Critical compressive stress (when the growth of a Li whisker stops) versus applied voltage for eight Li 
+whiskers tested. Each elongated oval encloses the data points measured for a whisker, and thus serves as a guide to the eye to distinguish different sets of 
+data for different whiskers.
+Nature Nanotechnology | VOL 15 | February 2020 | 94–98 | www.nature.com/naturenanotechnology
+96
+
+=== PAGE 4 ===
+Letters
+Nature Nanotechnology
+shows several representative stress–strain curves, which exhibit an 
+elastic regime with the elastic strain limit less than 4%, as well as 
+an extensive plastic regime with slight strain hardening. The plastic 
+strain can even reach over 20%. The Young’s modulus, E, calculated 
+from the slope of the stress–strain curve varies from 2.7 to 21 GPa. 
+Such a large spread of measured E arises due to the difficulty in 
+accurately measuring small elastic strains, which has been a chal-
+lenge for nanomechanical testing in general20. The yield strength, 
+σY, obtained varies from 12.2 MPa to 244 MPa (Fig. 3h), exhibiting 
+a sample size effect, that is, smaller being stronger. The maximum 
+value of σY is much higher than that of σm for Li whiskers. The 
+spread of measured σY can be attributed to the statistical nature of 
+dislocation source strengths in small-volume metallic materials20. 
+In the analysis of elasto-plastic phenomena, the yield strength, σY, 
+measured from uniaxial loading is commonly used to determine the 
+attainment of plastic yielding under multiaxial stresses on the basis 
+of the von Mises (J2) plasticity theory21. In the same spirit, one can 
+use the measured yield strength, σY, to analyse plastic yielding for 
+the Li whisker that grows inside a solid electrolyte and thus experi-
+ences multiaxial stresses.
+It has been reported that the Young’s modulus of bulk polycrys-
+talline Li is about 4.3 to 8 GPa (refs. 13,22–24), and its yield strength is 
+between 0.4 and 0.9 MPa (refs. 13,25). The yield strengths of Li whiskers 
+measured here range from 12.2 to 244 MPa, which are two orders of 
+magnitude higher than that of bulk polycrystalline Li. The Young’s 
+moduli of Li whiskers measured here are between 2.7 and 21 GPa, 
+much lower than those of a solid electrolyte, such as Li7La3Zr2O12 
+(~150 GPa)26,27. On the basis of the Monroe–Newman theory9,28, the 
+growth of Li whiskers may be suppressed by a stiff solid electrolyte 
+due to inhibition of surface roughening of Li metal, as its Young’s 
+modulus is significantly lower than that of Li7La3Zr2O12. However, 
+short circuiting was still observed in Li7La3Zr2O12-based all-solid-
+state batteries, which indicates that mechanisms other than surface 
+roughening are operating. To resolve the above contradiction, Porz 
+et al.18 suggested an alternative mechanism of Li dendrite formation 
+and growth through the solid electrolyte10,29,30. Specifically, small 
+pores or cracks are generally present on the solid electrolyte surface, 
+and these surface flaws will be filled by Li metal deposition under 
+overpotentials. Mechanical stresses within both the deposited Li 
+metal and surrounding solid electrolyte rise with continual Li plat-
+ing. Such stress build-up may cause the growth of surface flaws and 
+thus the formation of a main crack, leading to Li dendrite growth. 
+The measured elasto-plastic behaviour of Li whiskers in this work 
+indicates a limitation of the dendrite growth model of Porz et al.18, 
+which assumes a purely elastic response of the Li dendrite during 
+its growth in the solid electrolyte. On the basis of the measured 
+elasto-plastic responses of Li whiskers, we further developed a 
+model showing how an elasto-plastic Li whisker might penetrate 
+an elastically stiff solid electrolyte. The resulting whisker growth 
+map (Supplementary Discussion and Supplementary Fig. 24) 
+demonstrates a significant impact of the elasto-plasticity of the Li 
+whisker on its growth behaviour. It also underscores the impor-
+tance of the development of solid electrolytes with high fracture 
+toughness and minimized surface flaw size to effectively suppress 
+a
+0.5 µm
+0 s
+648 s
+719 s
+760 s
+772 s
+0.71 µm
+1.44 µm
+1.52 µm
+801 s
+AFM tip
+Li
+1.50 µm
+0.71 µm
+1.44 µm
+1.52 µm
+1.50 µm
+b
+c
+d
+e
+f
+g
+h
+0
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+〈112〉 d0 = 262 nm
+〈110〉 d0 = 179 nm
+〈110〉 d0 = 235 nm
+〈112〉 d0 = 219 nm
+〈111〉 d0 = 255 nm
+〈001〉 d0 = 196 nm
+Stress (MPa)
+Strain (%)
+0
+100
+200
+300
+400
+500
+600
+700
+0
+50
+100
+150
+200
+250
+〈110〉
+〈112〉
+〈111〉
+〈001〉
+Equivalent diameter (nm)
+Yield stress (MPa)
+Fig. 3 | In situ compression testing of as-grown Li whiskers. Metal Li was manipulated to approach the AFM tip (a); a growing Li whisker pushed up 
+against the AFM tip (b–e) (k = 6 N m−1); and this whisker collapsed after extensive compression (f). The blue dotted line indicates a fixed reference 
+position, and the red arrow indicates the upward displacement of the AFM tip. g, Compressive stress–strain curves of six whiskers with different growth 
+directions and diameters d0. h, Yield stress versus equivalent diameter measured for Li whiskers with different growth directions. The vertical and 
+horizontal error bars show the standard deviations of yield stress and equivalent diameter, respectively. The yield stress is the critical stress at which the 
+whisker can be continuously compressed but the applied force by the AFM tip is not increased. The equivalent diameter corresponds to the diameter of a 
+circle whose area is equivalent to the cross-sectional area of the Li whisker.
+Nature Nanotechnology | VOL 15 | February 2020 | 94–98 | www.nature.com/naturenanotechnology
+97
+
+=== PAGE 5 ===
+Letters
+Nature Nanotechnology
+Li dendrite growth in all-solid-state batteries. Finally, we note that 
+the current mechanical testing was conducted under a fairly high 
+strain rate (~10−3 s−1) compared to the typical loading rate during 
+battery operation. The time-dependent electro-chemo-mechanical 
+response of Li whiskers may affect their diffusional creep and infil-
+tration behaviours within solid electrolytes18, which can be further 
+studied with this AFM–ETEM set-up in the future.
+Note added in proof: At peer review stage, we became aware of 
+a related work31 showing Li whisker formation and growth under 
+stress by a similar AFM–ETEM set-up.
+Online content
+Any methods, additional references, Nature Research reporting 
+summaries, source data, extended data, supplementary informa-
+tion, acknowledgements, peer review information; details of author 
+contributions and competing interests; and statements of data and 
+code availability are available at https://doi.org/10.1038/s41565-
+019-0604-x.
+Received: 27 April 2019; Accepted: 21 November 2019;  
+Published online: 6 January 2020
+References
+	1.	 Tarascon, J. M. & Armand, M. Issues and challenges facing rechargeable 
+lithium batteries. Nature 414, 359–367 (2001).
+	2.	 Xu, W. et al. Lithium metal anodes for rechargeable batteries. Energy Environ. 
+Sci. 7, 513–537 (2014).
+	3.	 Kushima, A. et al. Liquid cell transmission electron microscopy observation 
+of lithium metal growth and dissolution: root growth, dead lithium and 
+lithium flotsams. Nano Energy 32, 271–279 (2017).
+	4.	 Lin, D., Liu, Y. & Cui, Y. Reviving the lithium metal anode for high-energy 
+batteries. Nat. Nanotechnol. 12, 194 (2017).
+	5.	 Guo, Y., Li, H. & Zhai, T. Reviving lithium-metal anodes for next-generation 
+high-energy batteries. Adv. Mater. 29, 1700007 (2017).
+	6.	 Wang, X. et al. Stress-driven lithium dendrite growth mechanism and 
+dendrite mitigation by electroplating on soft substrates. Nat. Energy 3, 
+227–235 (2018).
+	7.	 Li, L. et al. Self-heating–induced healing of lithium dendrites. Science 359, 
+1513–1516 (2018).
+	8.	 Liu, Y. et al. Making Li-metal electrodes rechargeable by controlling the 
+dendrite growth direction. Nat. Energy 2, 17083 (2017).
+	9.	 Monroe, C. & Newman, J. The impact of elastic deformation on  
+deposition kinetics at lithium/polymer interfaces. J. Electrochem. Soc. 152, 
+A396–A404 (2005).
+	10.	Ren, Y., Shen, Y., Lin, Y. & Nan, C. W. Direct observation of lithium 
+dendrites inside garnet-type lithium-ion solid electrolyte. Electrochem. 
+Commun. 57, 27–30 (2015).
+	11.	Suzuki, Y. et al. Transparent cubic garnet-type solid electrolyte of  
+Al2O3-doped Li7La3Zr2O12. Solid State Ion. 278, 172–176 (2015).
+	12.	Brenner, S. S. Growth and properties of ‘whiskers’: further research is needed 
+to show why crystal filaments are many times as strong as large crystals. 
+Science 128, 569–575 (1958).
+	13.	Schultz, R. P. Lithium: Measurement of Young’s Modulus and Yield Strength 
+(Fermi National Accelerator Laboratory, 2002).
+	14.	Xu, C., Ahmad, Z., Aryanfar, A., Viswanathan, V. & Greer, J. R. Enhanced 
+strength and temperature dependence of mechanical properties of Li at small 
+scales and its implications for Li metal anodes. Proc. Natl Acad. Sci. USA 114, 
+57–61 (2017).
+	15.	Yang, T. T. et al. Air-stable lithium spheres produced by electrochemical 
+plating. Angew. Chem. Int. Ed. Engl. 57, 12750–12753 (2018).
+	16.	Li, L., Li, S. & Lu, Y. Suppression of dendritic lithium growth in lithium 
+metal-based batteries. Chem. Commun. 54, 6648–6661 (2018).
+	17.	Qian, J. et al. Dendrite-free Li deposition using trace-amounts of water as an 
+electrolyte additive. Nano Energy 15, 135–144 (2015).
+	18.	Porz, L. et al. Mechanism of lithium metal penetration through inorganic 
+solid electrolytes. Adv. Energy Mater. 7, 1701003 (2017).
+	19.	Xiang, B., Wang, L., Liu, G. & Minor, A. M. Electromechanical probing of  
+Li/Li2CO3 core/shell particles in a TEM. J. Electrochem. Soc. 160,  
+A415–A419 (2013).
+	20.	Greer, J. R. & De Hosson, J. T. M. Plasticity in small-sized metallic systems: 
+intrinsic versus extrinsic size effect. Prog. Mater. Sci. 56, 654–724 (2011).
+	21.	Khan, A. S. & Huang, S. Continuum Theory of Plasticity (John Wiley & Sons, 
+1995).
+	22.	Masias, A., Felten, N., Garcia-Mendez, R., Wolfenstine, J. & Sakamoto, J. 
+Elastic, plastic, and creep mechanical properties of lithium metal. J. Mater. 
+Sci. 54, 2585–2600 (2019).
+	23.	Bridgman, P. W. The effect of tension on the electrical resistance of certain 
+abnormal metals. Proc. Natl Acad. Sci. USA 57, 41–66 (1922).
+	24.	Robertson, W. M. & Montgomery, D. J. Elastic modulus of isotopically-
+concentrated lithium. Phys. Rev. 117, 440–442 (1959).
+	25.	Tariq, S.et al. Li material testing–Fermilab antiproton source lithium 
+collection lens. In Proc. 2003 Particle Accelerator Conference (eds Chew, J. 
+et al.) 1452–1454 (IEEE, 2003).
+	26.	Ni, J. E., Case, E. D., Sakamoto, J. S., Rangasamy, E. & Wolfenstine, J. B. 
+Room temperature elastic moduli and Vickers hardness of hot-pressed LLZO 
+cubic garnet. J. Mater. Sci. 47, 7978–7985 (2012).
+	27.	Wolfenstine, J. et al. A preliminary investigation of fracture toughness of 
+Li7La3Zr2O12 and its comparison to other solid Li-ion conductors. Mater. Lett. 
+96, 117–120 (2013).
+	28.	Ferrese, A. & Newman, J. Mechanical deformation of a lithium-metal anode 
+due to a very stiff separator. J. Electrochem. Soc. 161, A1350–A1359 (2014).
+	29.	Nagao, M. et al. In situ SEM study of a lithium deposition and dissolution 
+mechanism in a bulk-type solid-state cell with a Li2S-P2S5 solid electrolyte. 
+Phys. Chem. Chem. Phys. 15, 18600–18606 (2013).
+	30.	Ansell, R. The chemical and electrochemical stability of beta-alumina.  
+J. Mater. Sci. 21, 365–379 (1986).
+	31.	He, Y. et al. Origin of lithium whisker formation and growth under stress. 
+Nat. Nanotechnol. 14, 1042–1047 (2019).
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
+© The Author(s), under exclusive licence to Springer Nature Limited 2020
+Nature Nanotechnology | VOL 15 | February 2020 | 94–98 | www.nature.com/naturenanotechnology
+98
+
+=== PAGE 6 ===
+Letters
+Nature Nanotechnology
+Methods
+AFM–ETEM set-up. To construct the AFM–ETEM testing device, we inserted 
+a Si AFM cantilever beam (with the effective spring stiffness k in the range of 
+0.1–40 N m−1) into one end of the AFM–ETEM holder (Fig. 1a–c). We welded a 
+short CNT onto the AFM tip by e-beam-induced carbon deposition. After that, a 
+piece of Li metal was mounted onto the other end of the TEM holder (Pico Femto 
+FE-F20) inside a glovebox. Then, the holder was sealed in an airtight bag filled 
+with dry argon and transferred into the ETEM. The total time of air exposure was 
+less than 2 s, which limited the oxidation of metal Li. The movement of the sample 
+was manipulated by the piezoelectric tube of the holder. When the CNT and Li 
+metal were connected, an external bias (–2 to −8 V) was supplied for growing Li 
+whiskers. A growing Li whisker pushed the AFM tip upwards, thus permitting 
+real-time measurements of the stress generated in the Li whisker. Specifically, 
+given the effective spring constant, k, of the AFM cantilever, the force, P, generated 
+by Li whisker growth was calculated from the measured displacement, Δx, of 
+the cantilever tip by P = kΔx. Note that because the deflection of the cantilever 
+(<5 μm) was much smaller than its beam length (520 μm), a linear relationship 
+between Δx and P can be reasonably assumed. As the diameter and, accordingly, 
+the cross-sectional area A of the whisker were measured through in situ TEM 
+imaging, the axial compressive stress, σ, generated in the whisker was determined 
+by σ = P/A. To accurately measure the cross-sectional area A, we rotated the Li 
+whisker in the ETEM to determine its cross-sectional geometry (Supplementary 
+Fig. 25). Sometimes, a Li whisker was reoriented with its cross-section facing 
+the electron beam (Supplementary Fig. 26 and Supplementary Video 19), which 
+permitted direct measurement of its cross-sectional area. During the experiment, a 
+beam stopper was inserted into the field of view as the reference for displacement 
+measurements of the Li whisker. We conducted additional benchmark 
+experiments to determine the accuracy of our measurement system. That is, we 
+first measured the mechanical strength of individual single-crystal Ag pillars with 
+our AFM–ETEM system, and then tested similar Ag pillars with a commercial 
+mechanical testing TEM sample holder (Hysitron PI 95). The results are shown in 
+Supplementary Fig. 27. The measured yield strength, σy, was 366.0 MPa from the 
+AFM–ETEM platform, while the measured σy was 349.2 MPa from the Hysitron 
+PI 95 holder. The difference is about 4.6%, which provides a quantitative measure 
+of the accuracy of our AFM–ETEM testing system. During whisker growth, 
+the current in the whisker was recorded by an ampere meter, which read about 
+1.2 × 10−10 A (Supplementary Fig. 28). As the whisker has a diameter of about 
+700 nm, the current density is approximately 31 mA cm−2, which is comparable to 
+that in conventional Li-ion batteries32.
+Effect of CO2 environment. The CO2 gas environment in the ETEM plays a 
+critical role in the formation of the passivation layer of Li whiskers, similar to the 
+effect of an oxygen gas environment on the formation of the oxide passivation 
+layer of Li whiskers33. We normally did not observe whisker growth without a CO2 
+gas environment. Instead, only Li plates were formed (Supplementary Fig. 29). 
+We found that Li whiskers formed only at CO2 partial pressures between ~10−4 
+and 3 mbar (Supplementary Fig. 30). The typical thickness of Li2CO3 is less than 
+20 nm (Supplementary Fig. 31). For micrometre-diameter Li whiskers, such a thin 
+Li2CO3 nanolayer should have a weak effect on their mechanical properties. For 
+small samples with diameters of a few hundred nanometres, the yield strength of a 
+composite Li/Li2CO3 whisker could be increased by up to about 20% compared to a 
+pure Li whisker (Supplementary Fig. 32). Future study is needed to better quantify 
+the effects of the surface Li2CO3 nanolayer.
+Size effect of Li whiskers. Two sources can contribute to the measured sample 
+size effect on the yield strength of Li whiskers: the intrinsic size effect (as discussed 
+earlier) and the Li2CO3 nanolayer effect. For the latter effect, it is noted that the 
+yield strength of the Li2CO3 nanolayer is generally higher than that of the pure Li 
+whisker. For smaller Li whiskers, the cross-sectional areal fraction of the Li2CO3 
+nanolayer is higher, giving rise to a higher yield strength. The size effect due to 
+the Li2CO3 nanolayer becomes negligibly small as the diameter of the Li whisker 
+increases to a few hundred nanometres. While the mechanical properties of 
+submicrometre Li whiskers is the focus of this work, the mechanical properties 
+of Li from micrometre scale to bulk are also compared in the Supplementary 
+Materials (Supplementary Figs. 33 and 34), which confirms the intrinsic size  
+effect for Li whiskers from the nanometre to millimetre scale, namely, smaller 
+being stronger.
+References
+	32.	Bai, P. et al. Interactions between lithium growths and nanoporous ceramic 
+separators. Joule 2, 2434–2449 (2018).
+	33.	Yulaev, A. et al. From microparticles to nanowires and back: radical 
+transformations in plated Li metal morphology revealed via in situ scanning 
+electron microscopy. Nano Lett. 18, 1644–1650 (2018).
+Acknowledgements
+This work was financially supported by the National Key Research and Development 
+Programme of China (nos. 2018YFB0104300, 2017YFB0702001), Beijing Natural 
+Science Foundation of China-Haidian Special Project (L182065), the National Natural 
+Science Foundation of China (nos. 51971245, 51772262, 21406191, 21935009, 11575154, 
+21777177, 51971194), Natural Science Foundation of Hebei Province (no. B2018203297), 
+Hebei One Hundred Talent Programme (grant no. 4570028), Youth Top-notch Talent 
+Support Programme of Higher Education in Hebei Province (no. BJ2016053) and 
+High-Level Talents Research Programme of the Yanshan University (nos. 00500021502, 
+005000201). We thank Z. Shan, Y. Wang, P. Li, H. Yang and C. Li for their support with 
+the compression experiments.
+Author contributions
+L.Z., T.Y. and C.D. conceived the experiment. Q.L., Yushu Tang and J.Z. performed 
+ETEM measurements. Y.S., P.J. and H.L. fabricated the AFM device. L.G., J.C. and H.Y. 
+fabricated the carbon nanotube. Z.W., Y.L., H.S., X.L. and Q.D. conducted mechanical 
+measurements. B.W. and T.C. performed computational modelling. Q.P., T.S., Yo Tang, 
+S.Z., T.Z. and J.H. supervised the project. L.Z., T.Z. and J.H. wrote the paper. All authors 
+discussed the results and commented on the manuscript.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary information is available for this paper at https://doi.org/10.1038/
+s41565-019-0604-x.
+Correspondence and requests for materials should be addressed to Y.T., S.Z., T.Z.  
+or J.H.
+Reprints and permissions information is available at www.nature.com/reprints.
+Nature Nanotechnology | www.nature.com/naturenanotechnology
+

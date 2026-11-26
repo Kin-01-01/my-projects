@@ -1,0 +1,38 @@
+{
+  "verified_DOIs": [
+    {"doi":"10.1038/nmat3066","year":2011,"journal":"Nature Materials","title":"A lithium superionic conductor","note":"LGPS Li10GeP2S12 奠基，12 mS/cm（争议：是否亚稳，本文标【争议】）","cat":"CLASSIC_S1"},
+    {"doi":"10.1002/anie.200701144","year":2007,"journal":"Angewandte Chemie Int Ed","title":"Fast Lithium Ion Conduction in Garnet-Type Li7La3Zr2O12","note":"石榴石 LLZO 奠基","cat":"CLASSIC_S3"},
+    {"doi":"10.1016/j.ssi.2012.06.008","year":2012,"journal":"Solid State Ionics","title":"Mechanochemical synthesis of Li-argyrodite Li6PS5X (X=Cl,Br,I)","note":"机械化学合成 argyrodite，亚稳相生成","cat":"S1_argy"},
+    {"doi":"10.1016/j.ssi.2013.09.029","year":2013,"journal":"Solid State Ionics","title":"Phase transition and conductivity improvement of tetragonal fast lithium ionic electrolyte Li7La3Zr2O12","note":"LLZO 四方→立方相变，立方为亚稳高导相","cat":"S3_garnet"},
+    {"doi":"10.62721/diffusion-fundamentals.20.769","year":2013,"journal":"Diffusion Fundamentals","title":"Extreme mobility: low-temperature NMR probes highly diffusive Li+ ions in argyrodite-type Li6PSe5Cl and Li6PS5I","note":"argyrodite 超高 Li+ 迁移 NMR","cat":"S1_argy"},
+    {"doi":"10.1021/jz401003a","year":2013,"journal":"J Phys Chem Lett","title":"Highly Mobile Ions: Low-Temperature NMR Directly Probes Extremely Fast Li+ Hopping in Argyrodite-Type","note":"低温 NMR 直接探测 argyrodite 快 Li+ 跳跃","cat":"S1_argy"},
+    {"doi":"10.1039/c3cp44379e","year":2013,"journal":"Phys Chem Chem Phys","title":"Long-range Li+ dynamics in the lithium argyrodite Li7PSe6","note":"argyrodite Li7PSe6 长程 Li+ 动力学","cat":"S1_argy"},
+    {"doi":"10.1007/s10008-014-2654-1","year":2014,"journal":"J Solid State Electrochem","title":"High performance all-solid-state lithium/sulfur batteries using lithium argyrodite electrolyte","note":"argyrodite 全固态锂硫电池","cat":"S1_argy"},
+    {"doi":"10.1021/acs.chemmater.9b01435","year":2019,"journal":"Chemistry of Materials","title":"Fast Rotational Dynamics in Argyrodite-Type Li6PS5X (X: Cl,Br,I) as Seen by 31P NMR","note":"argyrodite 旋转动力学/阴离子无序","cat":"S1_argy"},
+    {"doi":"10.1038/s41467-019-09502-5","year":2019,"journal":"Nature Communications","title":"In-situ electron microscopy mapping of an order-disorder transition in a superionic conductor","note":"原位电镜绘制超离子导体有序-无序相变（OA）","cat":"M_orderdis"},
+    {"doi":"10.1016/j.ensm.2020.05.030","year":2020,"journal":"Energy Storage Materials","title":"A Na-rich fluorinated sulfate anti-perovskite with dual doping as solid electrolyte","note":"Na 系反钙钛矿","cat":"S3_antiper"},
+    {"doi":"10.1021/acsmaterialslett.0c00127","year":2020,"journal":"ACS Materials Letters","title":"Metastable Chloride Solid Electrolyte with High Formability for Rechargeable All-Solid-State Lithium Metal Batteries","note":"亚稳氯化物固态电解质（高可塑性，Li3InCl6 相关）","cat":"S2_halide"},
+    {"doi":"10.26434/chemrxiv.12349703","year":2021,"journal":"ChemRxiv (preprint)","title":"Mechanistic Origin of Superionic Lithium Diffusion in Anion-Disordered Li6PS5X Argyrodites","note":"阴离子无序驱动 argyrodite 超离子输运（预印本，有 DOI）","cat":"S1_argy"},
+    {"doi":"10.3389/fchem.2021.786956","year":2021,"journal":"Frontiers in Chemistry","title":"Optimized Interfaces in Anti-Perovskite Electrolyte-Based Solid-State Lithium Metal Batteries","note":"反钙钛矿界面优化","cat":"S3_antiper"},
+    {"doi":"10.1016/j.ssi.2023.116344","year":2023,"journal":"Solid State Ionics","title":"Enhanced electrochemistry stability of oxygen doped Li6PS5Cl argyrodite solid electrolyte","note":"氧掺杂 argyrodite 稳定性","cat":"S1_argy"},
+    {"doi":"10.1038/s41467-026-76661-7","year":2026,"journal":"Nature Communications","title":"Time-Temperature-Transformation Diagrams to Navigate the Nucleation and Quenchability of Metastable alpha-Li3PS4","note":"亚稳 α-Li3PS4 的 TTT 图与快淬可获性（OA，核心）","cat":"S1_sulfide"},
+    {"doi":"10.1039/d2ma00971d","year":2022,"journal":"Materials Advances","title":"Fabrication of thin solid electrolytes containing a small volume of an Li3OCl-type antiperovskite phase by RF magnetron sputtering","note":"Li3OCl 反钙钛矿热力学不稳定/室温亚稳 + 潮解（OA 倾向，核心）","cat":"S3_antiper"},
+    {"doi":"10.1016/j.ssi.2015.11.027","year":2016,"journal":"Solid State Ionics","title":"Reaction mechanism studies towards effective fabrication of lithium-rich anti-perovskites Li3OX (X=Cl,Br)","note":"Li3OCl/Li3OBr 反钙钛矿反应机理与热力学不稳定","cat":"S3_antiper"},
+    {"doi":"10.1021/ja305709z","year":2012,"journal":"J Am Chem Soc","title":"Superionic Conductivity in Lithium-Rich Anti-Perovskites","note":"富锂反钙钛矿超离子导电奠基（Zhao & Daemen）","cat":"S3_antiper"},
+    {"doi":"10.1016/j.ensm.2021.06.039","year":2021,"journal":"Energy Storage Materials","title":"Effect of defects and defect distribution on Li-diffusion and elastic properties (Li3OCl)","note":"反钙钛矿缺陷与 Li 扩散","cat":"S3_antiper"},
+    {"doi":"10.1016/j.jelechem.2024.118231","year":2024,"journal":"J Electroanal Chem","title":"Insight into the effect of strain on Li-ion diffusivity and conductivity in Li3OCl","note":"应变对 Li3OCl 扩散影响（界面限域/应变稳定）","cat":"S3_antiper"},
+    {"doi":"10.54254/2755-2721/23/20230619","year":2023,"journal":"Applied and Computational Engineering","title":"Advances in high entropy doping of Li7La3Zr2O12 (LLZO) garnet solid electrolyte","note":"高熵掺杂石榴石（热力学稳定化示例）","cat":"S3_garnet"},
+    {"doi":"10.1016/j.jallcom.2024.173973","year":2024,"journal":"J Alloys Compd","title":"The effect of HCl on achieving pure Li3InCl6 by water-mediated synthesis","note":"水相法 Li3InCl6","cat":"S2_halide"},
+    {"doi":"10.1016/j.jpowsour.2024.234343","year":2024,"journal":"J Power Sources","title":"Variation of electrochemical performance of Li2ZrCl6 halide solid electrolyte","note":"Li2ZrCl6 卤化物","cat":"S2_halide"},
+    {"doi":"10.3390/ma18092077","year":2025,"journal":"Materials","title":"The Effect of Phosphoric Acid on the Preparation of High-Performance Li3InCl6","note":"Li3InCl6 制备","cat":"S2_halide"}
+  ],
+  "needs_more_metadata": [
+    "Deiseroth 2008 argyrodite Li6PS5X 原 DOI（10.1002/anie.200800999 失效，需重查）",
+    "Asano 2018 Li3YCl6/Li3YBr6 奠基 DOI",
+    "Li3InCl6 水相法原作（Li et al. 2020/2021）DOI",
+    "β-Li3PS4 / Li7P3S11（Hayashi）DOI",
+    "Li2Sc2/3Cl4 Zhou 等 DOI",
+    "Reckeweg Li3OCl 原作 DOI",
+    "halide 多晶型相变差异（Li3YCl6/Li3ErCl6 不同空间群）代表 DOI"
+  ]
+}

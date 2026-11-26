@@ -1,0 +1,360 @@
+/**
+ * app.wxss —— 全局样式与设计令牌
+ *
+ * 视觉方向：年轻简约 / 浅薄荷绿 + 亮柠绿 + 纯黑 / 低饱和清新 / 充足留白
+ *         柔和圆角卡片 + 轻新拟态（内高光 + 柔和外阴影）+ 圆润按钮
+ *
+ * 兼容性约束：不使用 gap / :has() / position: sticky
+ * 主题约定：页面根节点 <view class="page {{themeClass}}">，
+ *          颜色一律走 CSS 变量，页面 WXSS 内禁止硬编码颜色。
+ */
+
+page {
+  --bg: #F3FAF6;
+  --bg-soft: #E9F6EF;
+  --card: #FFFFFF;
+  --card-2: #F7FCF9;
+  --text: #0F1115;
+  --text-2: #64756D;
+  --text-3: #9BAAA2;
+  --border: #E4F0EA;
+  --border-strong: #D2E6DB;
+  --lime: #C9F26E;
+  --lime-deep: #B6E84E;
+  --lime-soft: #F1FBD9;
+  --mint: #A9E5CB;
+  --mint-soft: #E6F7EF;
+  --ink: #0F1115;
+  --on-ink: #FFFFFF;
+  --on-lime: #10160F;
+  --on-strong: #FFFFFF;
+  --p: 0;
+  --ok: #2FB877;
+  --ok-soft: #E4F7EC;
+  --bad: #F2705B;
+  --bad-soft: #FDECE8;
+  --warn: #E8A33D;
+  --warn-soft: #FCF2E2;
+  --mask: rgba(15, 17, 21, 0.45);
+  --shadow: 0 8rpx 28rpx rgba(18, 64, 47, 0.07);
+  --shadow-lg: 0 16rpx 44rpx rgba(18, 64, 47, 0.10);
+  --glow: 0 10rpx 26rpx rgba(150, 214, 60, 0.30);
+  --inner: inset 0 1rpx 0 rgba(255, 255, 255, 0.9);
+
+  background: var(--bg);
+  color: var(--text);
+  font-size: 29rpx;
+  line-height: 1.62;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- 白昼 ---------- */
+.page.theme-light {
+  --bg: #F3FAF6;
+  --bg-soft: #E9F6EF;
+  --card: #FFFFFF;
+  --card-2: #F7FCF9;
+  --text: #0F1115;
+  --text-2: #64756D;
+  --text-3: #9BAAA2;
+  --border: #E4F0EA;
+  --border-strong: #D2E6DB;
+  --lime: #C9F26E;
+  --lime-deep: #B6E84E;
+  --lime-soft: #F1FBD9;
+  --mint: #A9E5CB;
+  --mint-soft: #E6F7EF;
+  --ink: #0F1115;
+  --on-ink: #FFFFFF;
+  --on-lime: #10160F;
+  --on-strong: #FFFFFF;
+  --p: 0;
+  --ok: #2FB877;
+  --ok-soft: #E4F7EC;
+  --bad: #F2705B;
+  --bad-soft: #FDECE8;
+  --warn: #E8A33D;
+  --warn-soft: #FCF2E2;
+  --mask: rgba(15, 17, 21, 0.45);
+  --shadow: 0 8rpx 28rpx rgba(18, 64, 47, 0.07);
+  --shadow-lg: 0 16rpx 44rpx rgba(18, 64, 47, 0.10);
+  --glow: 0 10rpx 26rpx rgba(150, 214, 60, 0.30);
+  --inner: inset 0 1rpx 0 rgba(255, 255, 255, 0.9);
+}
+
+/* ---------- 深夜 ---------- */
+.page.theme-dark {
+  --bg: #0D1210;
+  --bg-soft: #121A16;
+  --card: #151C19;
+  --card-2: #1A231F;
+  --text: #EAF2EE;
+  --text-2: #8FA199;
+  --text-3: #6E7F78;
+  --border: #232D28;
+  --border-strong: #2E3A34;
+  --lime: #C9F26E;
+  --lime-deep: #D8FA8A;
+  --lime-soft: #23301A;
+  --mint: #6FCBA6;
+  --mint-soft: #16241E;
+  --ink: #C9F26E;
+  --on-ink: #0D1210;
+  --on-lime: #10160F;
+  --on-strong: #FFFFFF;
+  --p: 0;
+  --ok: #4BD08B;
+  --ok-soft: #142A20;
+  --bad: #FF8B76;
+  --bad-soft: #2E1C18;
+  --warn: #E9B45C;
+  --warn-soft: #2C2418;
+  --mask: rgba(0, 0, 0, 0.66);
+  --shadow: 0 8rpx 28rpx rgba(0, 0, 0, 0.40);
+  --shadow-lg: 0 16rpx 44rpx rgba(0, 0, 0, 0.50);
+  --glow: 0 10rpx 26rpx rgba(150, 214, 60, 0.18);
+  --inner: inset 0 1rpx 0 rgba(255, 255, 255, 0.05);
+}
+
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ---------- 容器与卡片 ---------- */
+.wrap {
+  padding: 8rpx 32rpx 0 32rpx;
+  box-sizing: border-box;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 32rpx;
+  box-shadow: var(--shadow), var(--inner);
+  padding: 32rpx;
+  box-sizing: border-box;
+}
+
+.card-soft {
+  background: var(--card-2);
+  border-radius: 28rpx;
+  box-shadow: none;
+  padding: 28rpx;
+  box-sizing: border-box;
+}
+
+.divider {
+  height: 1rpx;
+  background: var(--border);
+  margin: 26rpx 0;
+}
+
+/* ---------- 文本 ---------- */
+.title {
+  font-size: 38rpx;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.4rpx;
+}
+
+.subtitle {
+  font-size: 26rpx;
+  color: var(--text-2);
+}
+
+.muted {
+  font-size: 24rpx;
+  color: var(--text-3);
+}
+
+/* ---------- 按钮 ---------- */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96rpx;
+  padding: 0 40rpx;
+  border-radius: 999rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  box-sizing: border-box;
+  text-align: center;
+  letter-spacing: 0.2rpx;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--lime) 0%, var(--lime-deep) 100%);
+  color: var(--on-lime);
+  box-shadow: var(--glow);
+}
+
+.btn-dark {
+  background: var(--ink);
+  color: var(--on-ink);
+  box-shadow: var(--shadow);
+}
+
+.btn-ghost {
+  background: var(--card);
+  color: var(--text);
+  border: 2rpx solid var(--border-strong);
+  box-shadow: var(--inner);
+}
+
+.btn-soft {
+  background: var(--mint-soft);
+  color: var(--text);
+}
+
+.btn-danger {
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+
+.btn-primary.btn-disabled {
+  background: var(--bg-soft);
+  color: var(--text-3);
+  box-shadow: none;
+}
+
+.btn-ghost.btn-disabled {
+  color: var(--text-3);
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+.btn-sm {
+  height: 78rpx;
+  font-size: 27rpx;
+  padding: 0 30rpx;
+}
+
+.btn-hover {
+  opacity: 0.86;
+  transform: scale(0.985);
+}
+
+/* ---------- 标签 / 徽标 ---------- */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  height: 44rpx;
+  padding: 0 20rpx;
+  border-radius: 999rpx;
+  font-size: 23rpx;
+  font-weight: 600;
+  background: var(--lime-soft);
+  color: var(--text);
+}
+
+.tag-mint {
+  background: var(--mint-soft);
+  color: var(--text-2);
+}
+
+/* ---------- 空态 ---------- */
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110rpx 48rpx 70rpx 48rpx;
+}
+
+.empty-emoji {
+  font-size: 88rpx;
+  line-height: 1;
+  margin-bottom: 28rpx;
+}
+
+.empty-title {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 16rpx;
+  letter-spacing: -0.3rpx;
+}
+
+.empty-text {
+  font-size: 26rpx;
+  color: var(--text-2);
+  text-align: center;
+  line-height: 1.72;
+  margin-bottom: 40rpx;
+  max-width: 520rpx;
+}
+
+.empty-btn {
+  width: 460rpx;
+  margin-bottom: 20rpx;
+}
+
+.empty-btn-2 {
+  margin-top: 0;
+}
+
+/* ---------- 底部操作栏（非 tab 页面用） ---------- */
+.bottom-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 20rpx 32rpx calc(20rpx + env(safe-area-inset-bottom));
+  background: var(--card);
+  border-top: 1rpx solid var(--border);
+  box-sizing: border-box;
+  z-index: 20;
+}
+
+.bottom-bar-item {
+  flex: 1;
+  margin-right: 20rpx;
+}
+
+.bottom-bar-item:last-child {
+  margin-right: 0;
+}
+
+.bottom-space {
+  height: 180rpx;
+}
+
+.bottom-space-lg {
+  height: 220rpx;
+}
+
+/* tab 页面：给悬浮导航让位 */
+.tab-space {
+  height: 220rpx;
+}
+
+/* ---------- 通用装饰（极简几何） ---------- */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.blob-lime {
+  background: var(--lime);
+  opacity: 0.55;
+}
+
+.blob-mint {
+  background: var(--mint);
+  opacity: 0.45;
+}
+
+/* ---------- 输入框提示文字 ---------- */
+.ph {
+  color: var(--text-3);
+}

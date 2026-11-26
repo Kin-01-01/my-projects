@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>知识树 · 枯木逢春</title>
+    <meta
+      name="description"
+      content="把 CS 学习路径可视化成一棵树：未掌握的知识点是枯枝，掌握一处就开一朵花。"
+    />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#07090D" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script src="js/core/tailwind.config.js"></script>
+
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+  </head>
+
+  <body data-page="tree">
+    <div class="page-veil" id="page-veil" aria-hidden="true"></div>
+    <header id="site-header"></header>
+
+    <main>
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <h1 class="section-title">
+                <span class="accent-bar" aria-hidden="true"></span>枯木逢春 · 知识树
+              </h1>
+              <p class="section-desc">
+                每个节点是一个知识点。枯枝是没有掌握的部分，花是已经拿下的部分。
+              </p>
+            </div>
+          </div>
+
+          <!-- ================================================= 画布（第一阶段占位） -->
+          <!-- 第二阶段：pages/tree.page.js 检测到 FEATURES.knowledgeTree 为 true 后，
+               会加载 modules/knowledge-tree.js 接管这个容器（清空占位 SVG，
+               换成 D3 计算布局的动态 SVG）。容器 id 保持不变即可。 -->
+          <div class="tree-stage" id="tree-stage">
+            <svg
+              viewBox="0 0 900 560"
+              role="img"
+              aria-labelledby="tree-title tree-desc"
+              preserveAspectRatio="xMidYMid meet"
+              data-tree-placeholder
+            >
+              <title id="tree-title">知识树示意：一棵尚未发芽的枯树</title>
+              <desc id="tree-desc">
+                树干与枝条用枯褐色绘制，枝头有六个节点，代表尚未掌握的知识点。
+                悬停节点后枝条会转绿、发芽、开花，代表该知识点已掌握。
+              </desc>
+
+              <!-- 根部阴影：树干加粗后同步放大，让树"坐稳" -->
+              <ellipse
+                cx="450"
+                cy="521"
+                rx="150"
+                ry="12"
+                fill="var(--withered)"
+                opacity="0.22"
+              />
+
+              <!-- 树干与枝干：统一用枯枝色。第二阶段由 anime.js 逐段改变描边颜色，
+                   所以每条枝都是一条独立 path，不做合并。
+                   层级结构：根(底) → 主干 → 三条主枝 → 六条末梢，自下而上展开，
+                   stroke-width 逐级递减（14 → 8 → 5 → 3），一眼看出"越往上越细"。 -->
+              <g
+                fill="none"
+                stroke="var(--withered)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <!-- 主干：加宽到 14，配一条更暗的底干叠出体积感，向上自然微弯 -->
+                <path d="M450 522 C446 470 452 414 450 356" stroke-width="14" />
+                <!-- 底干：偏移 3px 的暗色描边，模拟树皮背光面，树干不再是一根平板线 -->
+                <path
+                  d="M450 522 C446 470 452 414 450 356"
+                  stroke="var(--withered)"
+                  stroke-width="6"
+                  opacity="0.55"
+                  transform="translate(4 4)"
+                />
+
+                <!-- 三条主枝：左右两枝角度更舒展（约 ±30°），中央枝垂直向上 -->
+                <path d="M450 422 C420 396 352 344 266 296" stroke-width="8" />
+                <path d="M450 422 C480 396 548 344 634 296" stroke-width="8" />
+                <path d="M450 392 C448 344 450 292 450 238" stroke-width="7" />
+
+                <!-- 六条末梢枝：左右各两支朝外延伸，中央两支朝上分叉，节点间距拉开 -->
+                <path d="M266 296 176 240" stroke-width="3" />
+                <path d="M266 296 306 206" stroke-width="3" />
+                <path d="M634 296 724 240" stroke-width="3" />
+                <path d="M634 296 594 206" stroke-width="3" />
+                <path d="M450 238 362 172" stroke-width="3" />
+                <path d="M450 238 538 172" stroke-width="3" />
+              </g>
+
+              <!-- 节点：空心圆 + 内点，表示"此处有一个知识点，但还没发芽" -->
+              <g stroke="var(--withered)" fill="none" stroke-width="2">
+                <circle cx="176" cy="240" r="7" />
+                <circle cx="306" cy="206" r="7" />
+                <circle cx="724" cy="240" r="7" />
+                <circle cx="594" cy="206" r="7" />
+                <circle cx="362" cy="172" r="7" />
+                <circle cx="538" cy="172" r="7" />
+              </g>
+              <g fill="var(--withered)">
+                <circle cx="176" cy="240" r="2.4" />
+                <circle cx="306" cy="206" r="2.4" />
+                <circle cx="724" cy="240" r="2.4" />
+                <circle cx="594" cy="206" r="2.4" />
+                <circle cx="362" cy="172" r="2.4" />
+                <circle cx="538" cy="172" r="2.4" />
+              </g>
+
+              <!-- 示例标签：只是示意，第二阶段由 data/tree.json 提供真实知识点名称 -->
+              <g
+                fill="var(--text-3)"
+                font-family="var(--font-mono)"
+                font-size="12"
+                text-anchor="middle"
+              >
+                <text x="176" y="274">数据结构</text>
+                <text x="306" y="190">计算机网络</text>
+                <text x="724" y="274">数据库</text>
+                <text x="594" y="190">操作系统</text>
+                <text x="362" y="152">算法</text>
+                <text x="538" y="152">Python</text>
+              </g>
+            </svg>
+
+            <!-- 图例 -->
+            <div class="tree-legend" aria-hidden="true">
+              <div class="tree-legend-item">
+                <span
+                  class="tree-legend-dot"
+                  style="background: var(--withered)"
+                ></span>
+                枯枝 · 未掌握
+              </div>
+              <div class="tree-legend-item">
+                <span
+                  class="tree-legend-dot"
+                  style="background: var(--growing)"
+                ></span>
+                发芽 · 学习中
+              </div>
+              <div class="tree-legend-item">
+                <span
+                  class="tree-legend-dot"
+                  style="background: var(--bloomed)"
+                ></span>
+                开花 · 已掌握
+              </div>
+            </div>
+
+            <!-- 操作提示 -->
+            <div class="tree-hint">拖拽平移 · 滚轮缩放 · 悬停查看</div>
+          </div>
+
+          <!-- ================================================= 当前阶段说明 -->
+          <div class="notice" style="margin-top: 24px" data-reveal>
+            <span aria-hidden="true">🌱</span>
+            <span>
+              <strong>当前是静态占位示意图。</strong>
+              这一阶段先把版式、图例和交互提示的位置定下来。第二阶段接入 D3.js
+              计算树形布局，用 anime.js 播放"枯枝转绿 → 发芽 → 开花"的时序动画，
+              tippy.js 负责节点悬浮卡片，Hammer.js 负责拖拽平移与双指缩放。
+              打开方式：把 <code>js/core/config.js</code> 里的
+              <code>FEATURES.knowledgeTree</code> 改成 <code>true</code>。
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script type="module" src="js/pages/tree.page.js"></script>
+  </body>
+</html>

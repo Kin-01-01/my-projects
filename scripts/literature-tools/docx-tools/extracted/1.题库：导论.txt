@@ -1,0 +1,128 @@
+===== FILE: 1.题库：导论.docx =====
+[paragraph count: 131] [table count: 0]
+[P|Normal] 导  论
+[P|Normal] 一、单项选择题
+[P|Normal] 1.马克思主义产生于（）。
+[P|Normal] A.18世纪90年代
+[P|Normal] B.19世纪40年代
+[P|Normal] C.19世纪70年代
+[P|Normal] D.19世纪90年代
+[P|Normal] 答案： B
+[P|Normal] 2.马克思主义公开问世的标志性著作是（）。
+[P|Normal] A.《共产党宣言》
+[P|Normal] B.《德意志意识形态》
+[P|Normal] C.《资本论》
+[P|Normal] D.《神圣家族》
+[P|Normal] 答案： A
+[P|Normal] 3.马克思主义的创始人是（）。
+[P|Normal] A.马克思和亚当斯密
+[P|Normal] B.马克思和大卫李嘉图
+[P|Normal] C.马克思和恩格斯
+[P|Normal] D.马克思和费尔巴哈
+[P|Normal] 答案： C
+[P|Normal] 4.马克思主义是（）。
+[P|List Paragraph] A.关于无产阶级和人类解放的科学
+[P|List Paragraph] B.人类全部优秀文化成果和总汇
+[P|List Paragraph] C.自然知识和社会知识的总和
+[P|List Paragraph] D.关于未来社会具体设想的学说
+[P|List Paragraph] 答案： A
+[P|Normal] 5.马克思主义的基本特征是（）。
+[P|List Paragraph] A.革命性与稳定性的统一
+[P|List Paragraph] B.批判性与变动性的统一
+[P|List Paragraph] C.科学性与革命性的统一
+[P|List Paragraph] D.逻辑性与历史性的统一
+[P|List Paragraph] 答案：C
+[P|Normal] 6.马克思主义中国化和时代化的第一次历史性飞跃是（）。
+[P|List Paragraph] A.毛泽东思想
+[P|List Paragraph] B.邓小平理论
+[P|List Paragraph] C.“三个代表”重要思想
+[P|List Paragraph] D.科学发展观
+[P|List Paragraph] 答案： A
+[P|Normal] 7.马克思主义哲学首要的和基本的观点是（）。
+[P|List Paragraph] A.矛盾的观点
+[P|List Paragraph] B.实践的观点
+[P|List Paragraph] C.事物普遍联系的观点
+[P|List Paragraph] D.事物永恒发展的观点
+[P|List Paragraph] 答案：B
+[P|Normal] 8.下列选项属于马克思主义三个主要组成部分之一的是（）。
+[P|List Paragraph] A.马克思主义政治学
+[P|List Paragraph] B.科学社会主义
+[P|List Paragraph] C.马克思主义伦理学
+[P|List Paragraph] D.空想社会主义
+[P|List Paragraph] 答案：B
+[P|Normal] 9.下列选项中不属于马克思主义直接理论来源的是（）。
+[P|List Paragraph] A.德国古典哲学
+[P|List Paragraph] B.法国启蒙思想
+[P|List Paragraph] C.英国古典经济学
+[P|List Paragraph] D.英法两国空想社会主义学说
+[P|List Paragraph] 答案：B
+[P|Normal] 10.马克思恩格斯进一步发展和完善的英国古典经济学理论是（）。
+[P|List Paragraph] A.劳动价值论
+[P|List Paragraph] B.剩余价值论
+[P|List Paragraph] C.辩证法
+[P|List Paragraph] D.历史观
+[P|List Paragraph] 答案：A
+[P|Normal] 11.马克思主义哲学的直接理论来源是（）。
+[P|List Paragraph] A.十九世纪初德国古典哲学
+[P|List Paragraph] B.十七世纪英国唯物主义哲学
+[P|List Paragraph] C.十八世纪法国唯物主义哲学
+[P|List Paragraph] D.古希腊素朴唯物主义哲学
+[P|List Paragraph] 答案：A
+[P|Normal] 12.德国古典哲学是马克思主义哲学的直接理论来源。马克思恩格斯批判地吸取了黑格尔哲学的（）。
+[P|List Paragraph] A.唯物主义思想
+[P|List Paragraph] B.辩证法思想
+[P|List Paragraph] C.可知论思想
+[P|List Paragraph] D.决定论思想
+[P|List Paragraph] 答案：B
+[P|Normal] 13.学习马克思主义的目的是（）。
+[P|List Paragraph] A.掌握具体的自然科学知识
+[P|List Paragraph] B.掌握具体的社会科学知识
+[P|List Paragraph] C.学会认识和改造世界的具体方法
+[P|List Paragraph] D.树立正确的世界观、人生观、价值观
+[P|List Paragraph] 答案：D
+[P|Normal] 14.学习马克思主义的根本方法是（）。
+[P|List Paragraph] A.认真阅读经典原著
+[P|List Paragraph] B.深人进行调查研究
+[P|List Paragraph] C.理论联系实际
+[P|List Paragraph] D.善于独立思考
+[P|List Paragraph] 答案：C
+[P|Normal] 15.马克思主义最根本的世界观和方法论是（）。
+[P|List Paragraph] A.辩证唯物主义和历史唯物主义的世界观和方法论
+[P|List Paragraph] B.坚持无产阶级政党的最高纲领和最低纲领的统一
+[P|List Paragraph] C.坚持无产阶级政党必须植根于人民的政治立场
+[P|List Paragraph] D.坚持马克思主义与时俱进的理论品质
+[P|List Paragraph] 答案：A
+[P|Normal] 二、多项选择题
+[P|Normal] 1.马克思主义的直接理论来源是（）。
+[P|List Paragraph] A.德国古典哲学
+[P|List Paragraph] B.英国古典政治经济学
+[P|List Paragraph] C.英法空想社会主义
+[P|List Paragraph] D.生物进化论
+[P|List Paragraph] 答案：ABC
+[P|Normal] 2.马克思主义的基本方法主要包括：（）。
+[P|List Paragraph] A.实事求是的方法
+[P|List Paragraph] B.辩证分析的方法
+[P|List Paragraph] C.社会基本矛盾分析方法
+[P|List Paragraph] D.历史分析的方法
+[P|List Paragraph] 答案：	ABCD
+[P|Normal] 3.马克思主义的当代价值（）。
+[P|List Paragraph] A.观察当代世界变化的认识工具
+[P|List Paragraph] B.指引当代中国发展的行动指南
+[P|List Paragraph] C.引领人类社会进步的科学真理
+[P|List Paragraph] D.马克思主义的实践性
+[P|List Paragraph] 答案：ABC
+[P|Normal] 4.马克思主义的基本特征：（）。
+[P|List Paragraph] A.科学性
+[P|List Paragraph] B.人民性
+[P|List Paragraph] C.实践性
+[P|List Paragraph] D.发展性
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 判断题
+[P|Normal] 1.马克思主义是由马克思和恩格斯创立并为继承者所不断发展的科学理论体系。( )
+[P|Normal] 答案：正确
+[P|Normal] 2.马克思主义的基本立场是马克思主义观察、分析和解决问题的根本立足点和出发点。( )
+[P|Normal] 答案：正确
+[P|Normal] 3.人民性是马克思主义的本质属性，人民至上是马克思主义的政治立场。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 4.马克思主义是不断发展的学说，具有与时俱进的理论品质。( )
+[P|List Paragraph] 答案：正确

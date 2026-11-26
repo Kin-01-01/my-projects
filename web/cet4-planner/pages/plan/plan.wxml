@@ -1,0 +1,49 @@
+<view class="page {{_enter}}">
+  <view wx:if="{{!hasPlan}}" class="card empty">
+    <view class="title h2">还没有生成规划</view>
+    <view class="muted small">先在向导里填写考试信息，生成三段式日程骨架</view>
+    <button class="btn-primary" bindtap="goWizard">去生成规划</button>
+  </view>
+
+  <block wx:else>
+    <!-- 阶段总览 -->
+    <view class="section-title title">三阶段总览</view>
+    <view class="card" wx:for="{{stageCards}}" wx:key="key">
+      <view class="row">
+        <view class="title stage-name">{{item.name}}</view>
+        <view class="gap"></view>
+        <view class="muted xsmall">{{item.done}}/{{item.total}} 已完成</view>
+      </view>
+      <view class="muted xsmall">{{item.range}}</view>
+      <view class="bar-track" style="margin-top: 16rpx;">
+        <view class="bar-fill" style="width: {{item.pct}}%;"></view>
+      </view>
+    </view>
+
+    <!-- 本周概览 -->
+    <view class="section-title title">未来 7 天概览</view>
+    <view class="card">
+      <view class="week-row {{item.isToday ? 'week-today' : ''}}" wx:for="{{weekRows}}" wx:key="date">
+        <view class="week-cn">{{item.cn}}</view>
+        <view class="gap"></view>
+        <view class="muted xsmall">{{item.done}}/{{item.count}} 完成</view>
+      </view>
+    </view>
+
+  </block>
+
+  <!-- 重新生成：始终显示（原来只在已有任务时出现，导致首次使用找不到入口） -->
+  <view class="card">
+    <view class="muted xsmall">调整「考试日期」后点这里，日程按新考期重排；周时长/目标分/水平仅为起点记录，不改变排程。手动添加的任务会保留。</view>
+    <button class="btn-ghost" bindtap="onRegenerate">{{hasPlan ? '重新生成规划' : '生成规划'}}</button>
+  </view>
+
+  <!-- 计划模板分享 -->
+  <view class="card">
+    <view class="muted xsmall">把这份"基础→专项→模考"三阶段计划骨架生成图片，分享给同学一起卷（纯计划模板，不含你的个人进度与数据）。</view>
+    <button class="btn-primary" loading="{{sharing}}" disabled="{{sharing}}" bindtap="onShareTemplate">分享计划模板</button>
+  </view>
+
+  <!-- 离屏画布：计划模板渲染用，不显示 -->
+  <canvas canvas-id="planCanvas" class="offcanvas-plan"></canvas>
+</view>

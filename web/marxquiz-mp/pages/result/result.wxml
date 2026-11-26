@@ -1,0 +1,101 @@
+<view class="page {{themeClass}}">
+  <view wx:if="{{emptyTip}}" class="empty">
+    <text class="empty-emoji">📄</text>
+    <text class="empty-title">暂无结果</text>
+    <text class="empty-text">{{emptyTip}}</text>
+    <view class="btn btn-primary empty-btn" bindtap="onBackHome" hover-class="btn-hover">返回首页</view>
+  </view>
+
+  <block wx:elif="{{ready}}">
+    <view class="wrap">
+      <!-- 成绩卡片 -->
+      <view class="score-card">
+        <view class="score-glow"></view>
+        <text class="score-label">{{modeLabel}}{{bankName ? (' · ' + bankName) : ''}}</text>
+
+        <view class="ring" style="background-image: conic-gradient(var(--lime) {{accuracy}}%, var(--bg-soft) 0)">
+          <view class="ring-hole">
+            <view class="ring-num">
+              <text class="score-num">{{accuracy}}</text>
+              <text class="score-pct">%</text>
+            </view>
+            <text class="score-desc">正确率</text>
+          </view>
+        </view>
+
+        <view class="mini-stats">
+          <view class="mini-stat">
+            <text class="mini-num mini-num-ok">{{correctCount}}</text>
+            <text class="mini-label">答对</text>
+          </view>
+          <view class="mini-line"></view>
+          <view class="mini-stat">
+            <text class="mini-num mini-num-bad">{{total - correctCount}}</text>
+            <text class="mini-label">答错</text>
+          </view>
+          <view class="mini-line"></view>
+          <view class="mini-stat">
+            <text class="mini-num">{{durationText}}</text>
+            <text class="mini-label">用时</text>
+          </view>
+        </view>
+
+        <view wx:if="{{isExam}}" class="exam-extra">
+          <text class="exam-extra-item">交卷 {{submittedText}}</text>
+          <text class="exam-extra-item">未作答 {{unanswered}} 题</text>
+        </view>
+      </view>
+
+      <!-- 错题回顾 -->
+      <view class="section" wx:if="{{hasWrong}}">
+        <view class="section-head">
+          <text class="section-title">错题回顾</text>
+          <text class="section-count">{{wrongItems.length}} 题</text>
+        </view>
+
+        <view class="wrong-item" wx:for="{{wrongItems}}" wx:key="id">
+          <view class="wrong-head" data-index="{{index}}" bindtap="onToggleItem">
+            <text class="wrong-no">{{index + 1}}</text>
+            <view class="wrong-head-body">
+              <text class="wrong-stem">{{item.stem}}</text>
+              <view class="wrong-ans-row">
+                <text class="wrong-your">你的答案 {{item.userAnswerText}}</text>
+                <text class="wrong-right">正确答案 {{item.correctAnswerText}}</text>
+              </view>
+            </view>
+            <text class="wrong-arrow">{{item.expanded ? '▲' : '▼'}}</text>
+          </view>
+          <view wx:if="{{item.expanded}}" class="wrong-body">
+            <view wx:if="{{item.analysis}}" class="wrong-analysis">
+              <text class="wrong-analysis-title">解析</text>
+              <text class="wrong-analysis-text">{{item.analysis}}</text>
+            </view>
+            <text wx:else class="wrong-no-analysis">这道题没有解析</text>
+          </view>
+        </view>
+      </view>
+
+      <view wx:else class="allright">
+        <text class="allright-emoji">🎉</text>
+        <text class="allright-title">全部答对</text>
+        <text class="allright-text">这一轮没有错题，继续保持。</text>
+      </view>
+
+      <view class="bottom-space-lg"></view>
+    </view>
+
+    <view class="bottom-bar">
+      <view class="result-actions">
+        <view class="result-btn result-btn-sm" bindtap="onBackHome" hover-class="btn-hover">
+          <view class="btn btn-ghost">返回</view>
+        </view>
+        <view wx:if="{{hasWrong}}" class="result-btn" bindtap="onPracticeWrong" hover-class="btn-hover">
+          <view class="btn btn-soft">只练错题</view>
+        </view>
+        <view class="result-btn" bindtap="onPracticeAll" hover-class="btn-hover">
+          <view class="btn btn-primary">再练一次</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

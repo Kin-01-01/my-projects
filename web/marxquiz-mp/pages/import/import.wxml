@@ -1,0 +1,115 @@
+<view class="page {{themeClass}}">
+  <view class="seg-wrap">
+    <view class="seg">
+      <view class="seg-item {{tab === 'paste' ? 'seg-item-on' : ''}}" data-tab="paste" bindtap="onTabChange">粘贴</view>
+      <view class="seg-item {{tab === 'file' ? 'seg-item-on' : ''}}" data-tab="file" bindtap="onTabChange">选文件</view>
+      <view class="seg-item {{tab === 'sample' ? 'seg-item-on' : ''}}" data-tab="sample" bindtap="onTabChange">示例</view>
+    </view>
+  </view>
+
+  <view class="wrap">
+    <!-- 粘贴导入 -->
+    <view wx:if="{{tab === 'paste'}}">
+      <view class="card">
+        <view class="field-label">题库内容</view>
+        <textarea
+          class="paste-area"
+          value="{{rawText}}"
+          placeholder="把 JSON / TXT / CSV 题库内容粘贴到这里，会自动识别格式"
+          placeholder-class="ph"
+          maxlength="-1"
+          bindinput="onTextInput"
+        ></textarea>
+        <view class="paste-actions">
+          <view class="btn btn-ghost btn-sm paste-btn" bindtap="onReadClipboard" hover-class="btn-hover">读取剪贴板</view>
+          <view class="btn btn-ghost btn-sm paste-btn" bindtap="onClear" hover-class="btn-hover">清空</view>
+        </view>
+        <view wx:if="{{fileName}}" class="file-hint">来源：{{fileName}}</view>
+      </view>
+    </view>
+
+    <!-- 从聊天选文件 -->
+    <view wx:if="{{tab === 'file'}}">
+      <view class="card">
+        <view class="file-title">从聊天记录里选择题库文件</view>
+        <view class="file-desc">支持 .json / .txt / .csv 三种纯文本文件。选好后会自动读取并解析，然后跳回「粘贴导入」页展示内容。</view>
+        <view class="btn btn-primary file-btn" bindtap="onChooseFile" hover-class="btn-hover">选择文件</view>
+        <view class="divider"></view>
+        <view class="file-note">
+          <text class="file-note-title">Excel / Word 题库怎么办？</text>
+          <text class="file-note-text">小程序里读不了 .xlsx / .docx。请用电脑上的 tools/convert.py 转成 .json，再把 .json 发到微信里，用上面的「选择文件」导入。</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 示例题库 -->
+    <view wx:if="{{tab === 'sample'}}">
+      <view class="card">
+        <view class="file-title">内置示例题库</view>
+        <view class="file-desc">20 道题，覆盖单选 / 多选 / 判断 / 填空四种题型，用来快速体验完整流程。</view>
+        <view class="btn btn-primary file-btn" bindtap="onLoadSample" hover-class="btn-hover">加载示例题库</view>
+      </view>
+    </view>
+
+    <!-- 解析结果 -->
+    <view wx:if="{{hasContent}}" class="card result-card">
+      <view class="result-head">
+        <text class="result-title">解析结果</text>
+        <text class="result-format">{{formatText}}</text>
+      </view>
+
+      <view class="result-summary">
+        <text class="summary-main">识别到 {{total}} 道题</text>
+        <text class="summary-sub">单选 {{counts.single}} / 多选 {{counts.multiple}} / 判断 {{counts.judge}} / 填空 {{counts.fill}}</text>
+      </view>
+
+      <view wx:if="{{errors.length > 0}}" class="err-box">
+        <view class="err-title">有 {{errors.length}} 处问题：</view>
+        <view class="err-item" wx:for="{{errors}}" wx:key="*this">
+          <text class="err-dot">·</text>
+          <text class="err-text">{{item}}</text>
+        </view>
+      </view>
+
+      <view wx:if="{{preview.length > 0}}" class="preview">
+        <view class="preview-title">前 {{preview.length}} 题预览</view>
+        <view class="preview-item" wx:for="{{preview}}" wx:key="no">
+          <view class="preview-row">
+            <text class="preview-no">{{item.no}}</text>
+            <text class="preview-type">{{item.typeLabel}}</text>
+          </view>
+          <text class="preview-stem">{{item.stem}}</text>
+          <text class="preview-answer">答案：{{item.answerText}}</text>
+        </view>
+      </view>
+
+      <view class="divider"></view>
+
+      <view class="field-label">题库名称</view>
+      <input
+        class="name-input"
+        value="{{bankName}}"
+        placeholder="留空则自动命名"
+        placeholder-class="ph"
+        bindinput="onNameInput"
+        maxlength="40"
+      />
+    </view>
+
+    <view wx:if="{{!hasContent}}" class="empty">
+      <text class="empty-emoji">📥</text>
+      <text class="empty-title">还没有内容</text>
+      <text class="empty-text">选择上方任一方式导入题库：粘贴文本、从聊天选文件，或直接加载示例题库。</text>
+    </view>
+
+    <view class="bottom-space"></view>
+  </view>
+
+  <view class="bottom-bar">
+    <view
+      class="bottom-bar-item btn {{parsed && total > 0 ? 'btn-primary' : 'btn-primary btn-disabled'}}"
+      bindtap="onConfirmImport"
+      hover-class="btn-hover"
+    >{{total > 0 ? ('确认导入 ' + total + ' 题') : '确认导入'}}</view>
+  </view>
+</view>

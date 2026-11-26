@@ -1,0 +1,44 @@
+.cal-head { display: flex; align-items: center; justify-content: space-between; padding: 0 8rpx 16rpx; }
+.nav { font-size: 44rpx; color: #3B6EF6; padding: 0 20rpx; }
+.nav:active { opacity: .6; }
+
+.cal-week { display: flex; text-align: center; padding-bottom: 8rpx; }
+.cal-week text { flex: 1; }
+
+.cal-row { display: flex; }
+.cell {
+  flex: 1; height: 84rpx; margin: 3rpx;
+  border-radius: 12rpx; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+.cell.blank { background: transparent; }
+.dd { font-size: 26rpx; line-height: 1.2; color: #2C3858; }
+.dd-today { color: #E5746B; font-weight: 600; }
+
+/* 阶段底色（浅色清爽系） */
+.c-basic { background: #E8F0FB; }
+.c-special { background: #EAF6F1; }
+.c-mock { background: #FDEEE8; }
+.cell-sel { outline: 2rpx solid #3B6EF6; }
+
+.dot {
+  width: 10rpx; height: 10rpx; border-radius: 50%;
+  background: #3B6EF6; margin-top: 4rpx;
+}
+.dot-done { background: #1FBF9C; }
+
+.legend { display: flex; align-items: center; margin-top: 16rpx; flex-wrap: wrap; }
+.lg { padding: 2rpx 14rpx; border-radius: 999rpx; margin-right: 12rpx; font-size: 22rpx; }
+.lg-basic { background: #E8F0FB; }
+.lg-special { background: #EAF6F1; }
+.lg-mock { background: #FDEEE8; }
+
+/* 时间轴 */
+.bar { display: flex; margin-top: 16rpx; border-radius: 12rpx; overflow: hidden; }
+.seg {
+  height: 52rpx; line-height: 52rpx; text-align: center;
+  font-size: 22rpx; color: #2C3858; white-space: nowrap; overflow: hidden;
+}
+.seg-basic { background: #E8F0FB; }
+.seg-special { background: #EAF6F1; }
+.seg-mock { background: #FDEEE8; }

@@ -1,0 +1,993 @@
+=== PAGE 1 ===
+ 
+ 
+ 
+This article has been accepted for publication and undergone full peer review but has not been 
+through the copyediting, typesetting, pagination and proofreading process, which may lead to 
+differences between this version and the Version of Record. Please cite this article as doi: 
+10.1002/adma.202404640. 
+ 
+This article is protected by copyright. All rights reserved. 
+ 
+Intercalation-Induced Localized Conversion Reaction in h-CuSe for Ultrafast-Rechargeable and Long-
+Cycling Sodium Metal Battery 
+ 
+Dongliang Chen,# Yunkai Xu,# Jianguo Lu*, Yang Tian, Tongtong Li*, Peng Jia, Xu Wang, 
+Liqiang Zhang*, Yang Hou, Liguang Wang, Qinghua Zhang, Zhizhen Ye, Jun Lu* 
+# These authors contributed equally 
+D. L. Chen, J. G. Lu, X. Wang, Z. Z. Ye 
+State Key Laboratory of Silicon and Advanced Semiconductor Materials, School of Materials 
+Science and Engineering, Zhejiang University, Hangzhou 310027, China. 
+Y. Tian 
+Zhijiang Lab, Hangzhou 311121, China. 
+T. T. Li 
+School of Materials Science and Engineering, Zhejiang Sci-Tech University, Hangzhou 
+310018, China. 
+P. Jia, L. Q. Zhang 
+
+=== PAGE 2 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+2 
+ 
+State Key Laboratory of Metastable Materials Science and Technology, School of Materials 
+Science and Engineering, Yanshan University, Qinhuangdao 066004, China. 
+Y. K. Xu, Y. Hou, L. G. Wang, Q. H. Zhang, J. Lu 
+College of Chemical and Biological Engineering, Zhejiang University, Hangzhou 310027, 
+China. 
+ 
+Email Address: [邮箱已脱敏] (Jianguo Lu), [邮箱已脱敏] (Tongtong Li), 
+[邮箱已脱敏] (Liqiang Zhang), [邮箱已脱敏] (Jun Lu) 
+ 
+Keywords: Transition metal selenide, Intercalation chemistry, Conversion reaction, Cathode, 
+Sodium metal battery 
+ 
+Abstract 
+Cathode materials of sodium-based batteries with high specific capacity and fast 
+charge/discharge mode, as well as ultralong reversible cycles at wide applied temperatures, 
+are essential for future development of advanced energy storage system. Developing 
+transition metal selenides with intercalation features provides a new strategy for realizing the 
+above cathode materials. Herein, we report a storage mechanism of sodium ion in hexagonal 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 3 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+3 
+ 
+CuSe (h-CuSe) based on the DFT guidance. We reveal that the two-dimensional ion 
+intercalation triggers localized redox reaction in the h-CuSe bulk phase, termed intercalation-
+induced localized conversion (ILC) mechanism, to stabilize the sodium storage structure by 
+forming localized Cu7Se4 transition phase and adjusting the near-edge coordination state of 
+the Cu sites to achieve high reversible capacity and ultra-long cycling life, while allowing 
+rapid charge/discharge cycling over a wide temperature range. 
+ 
+1. Introduction 
+Sodium based batteries have attracted much attention in the energy market as an 
+alternative to lithium-based batteries, due to abundant and evenly distributed sources of 
+sodium.[1] Compared to Sodium ion batteries (SIBs), Sodium metal batteries (SMBs) were 
+proposed to further increase energy density considering the low redox potential (-2.7 V) and 
+high theoretical capacity (1166 mAh g-1) of sodium metal anode.[1-3] As a rising star in the 
+field of large-scale energy storage and power batteries, sodium metal batteries have the 
+potential to expand its availability, but its development is limited by their interface stability 
+and safety issues. For advance of special energy storage from wide temperature range 
+adaptability to ultra-fast charge property, the research of high-performance sodium metal 
+batteries is very necessary. To realize high energy density, good rate capability, and long 
+cycling life of SMBs, cathode material become decisive. Cathode materials that are 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 4 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+4 
+ 
+commonly used in SIBs such as layered oxide, prussian blue/white, and polyanionic 
+compounds can be applied to SMBs, but they exist many problems: accumulation of lattice 
+strain and irreversible phase transition,[4] sluggish diffusion dynamics, cycling stability,[5] and 
+low specific capacity. Traditional conversion materials (e.g., transition metal oxides and 
+sulfides) have also been studied in SMBs, but the irreversibility of redox reaction and the 
+sluggishness of sodium ions limited its application.[6] At present, it is almost impossible to 
+realize both the rapid charge-discharge and high energy density for SMBs due to the lack of 
+effective cathode material. [7,8] 
+Recently, transition metal selenides have attracted attention for sodium storage in SIBs 
+due to the high volumetric energy density, superior electrical conductivity (1×10-3 S m-1 for 
+Se vs. 5×10-28 S m-1 for S) and excellent rate capacity.[9,10] Compared with oxygen and sulfur 
+elements, the low electronegativity of selenium allows feasible modulated electronic structure 
+and bonding state to alleviating the charge imbalance caused by ion insertion.[11,12] Classical 
+metal oxide cathode materials for sodium ion batteries have difficulty maintaining a long 
+cycling lifetime of high capacity due to their poor air stability and severe volume expansion, 
+even though they have a high operation voltage and energy density. Similarly, sulfides with 
+high capacity and high energy density for sodium-sulfur batteries have significant 
+deficiencies in cycling performance and coulombic efficiency due to their own dissolution 
+and the shuttle effect of sulfur. However, copper selenide like CuSe, as a typical example, 
+with excellent electrochemical properties, may exhibit ion mobilities as high as Cu2Se 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 5 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+5 
+ 
+superionic conductor and has a special sodium storage mechanism.[13] Compared with oxides 
+and sulfides (Figure S1 and Table S1), the advantages of CuSe are good rate performance, 
+high specific capacity, high cycling stability, and high capacity retention. Although lower 
+operating voltage and higher production cost limit the development of CuSe, there is still a 
+significant necessity of CuSe study since the mechanism of sodium storage process for such 
+materials lacks clarity, and the structural design guidance of CuSe for electrochemical 
+performance optimization is absent due to the lack of understanding. It is highly valuable and 
+urgent to understand the intercalation chemistry mechanism of CuSe and the structure-
+property relationship to further design advanced SMBs cathodes.[14-18]  
+To address the above issue, in this work we have proposed a layered structure of 
+hexagonal CuSe (h-CuSe) as the cathode of a novel SMB system. Based on the DFT 
+calculation, h-CuSe consists of direct ion transport channels for faster ion diffusion. The 
+storage behavior of sodium ions in h-CuSe can be described as the behavior of ion 
+intercalation modulating Cu-Se structures by inducing adjustment of Cu-Se bonds to 
+accommodate volume changes, which we define as an energy storage mechanism for 
+intercalation induced localized conversion (ILC) reactions. In a word, sodium ions are 
+preferentially induced to intercalate between interlayers, and followed by conversion 
+reaction. Unlike traditional conversion reactions, the ILC mechanism allows rapid and 
+sufficient interionic interactions. Upon sodium storage and release, the length of the Cu-Se 
+bond near the surface and between layers varies, which alleviates the volume expansion, 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 6 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+6 
+ 
+maintaining an ultralong cycling life. The h-CuSe-based sodium metal battery demonstrates a 
+high reversible initial discharge/charge capacity of 430/421 mAh g-1 at 0.25 A g-1, a high rate 
+performance of 126 mAh g-1 at 50 A g-1, and a long cycling life with 98.1% capacity 
+retention after 12000 cycles at 50 A g-1. In addition, the h-CuSe based SMB can adapt to 
+wide temperature operation, maintaining a specific capacity of 141 mAh g-1 at -20 ℃, 520 
+mAh g-1 at 50 ℃, and 431 mAh g-1 at 70 ℃. We believe that the h-CuSe materials can be an 
+exemplary material to study the ILC mechanism, and this work will provide novel material 
+design strategy for ultrafast charging sodium ion batteries with wide temperature range. 
+ 
+2. Results and discussion 
+Theoretical calculation of h-CuSe. The h-CuSe as an atypical layered structure material (the 
+structure as shown in Figure 1a) consists of alternating CuSe3-Cu3Se-CuSe3 layers (Cu-Se 
+layer) and Se-Se van der Waals (vdWs) layers along the z axis.[19] There are two Cu-Se layers 
+and one intermediate Se-Se vdWs layer in one single crystal cell, in which the upper and 
+lower Cu-Se layers are two multi-atomic layers with a same structure but different 
+orientations. Since the Se-Se van der Waals layers in h-CuSe can provide anion sublattices to 
+support fast ion channel of Na cations, it is expected that the h-CuSe possesses the ability of 
+fast cation transport. As illustrated in Figure 1a, the diffusion of sodium ions in h-CuSe can 
+lead to the formation of NaxCuSe intercalation structure, which can be divided into two types 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 7 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+7 
+ 
+due to different coordination environments of Na+, namely, intercalation on the surface and 
+intercalation between van der Waals layer (interlayer). The sodium ion on the surface is 
+combined with three selenium atoms, and the sodium ion in the interlayer is bound to six 
+selenium atoms to form a triangular prism coordination (Figure S2). To figure out the 
+electronic environment of intercalated Na+, differential charge density analysis was carried 
+out for Na+ at two storage sites. The adsorption of Na+ on the surface of h-CuSe causes the 
+charge of adjacent atoms to converge into the spindle domain oriented toward the open space 
+above the sodium atom (Figure 1b and Figure S2a). This electron-rich region has a certain 
+interaction with local sodium ions and promotes the adsorption of sodium on h-CuSe surface. 
+For the sodium atom in interlayer adsorption state, the charge accumulates in the triangular 
+column unit in Se-Se vdWs layer. From the side view (Figure S2b), sodium ions in interlayer 
+can form a charge accumulation domain with two-dimensional orientation (along the b-axis) 
+and promote diffusion of sodium inside h-CuSe interlayers. The adsorption energies obtained 
+in Figure 1c for the two storage states were -2.35 eV (surface site) and -2.23 eV (interlayer 
+site), respectively, indicating the Na+ adsorption sites at surface have a higher thermodynamic 
+preference. 
+Meanwhile, the calculated density of states (DOS) of these two configurations in Figure 
+1d and DOS of the pristine h-CuSe (Figure S3) show zero band gap for h-CuSe. Combined 
+with the HSE hybrid functional calculation (Figure S4), these results indicate that the h-CuSe 
+possesses an intrinsic metallic feature. After the sodium atom enters the vdWs layer, the DOS 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 8 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+8 
+ 
+of h-CuSe generates delocalization near the Fermi level, indicating the enhanced mobility of 
+charge carriers[20]. The d-band center calculated by PDOS is offset (-1.8279 eV) after sodium 
+atom enters the vdWs layer. Compared with the surface adsorption state (-1.8912 eV), the d-
+band center of the interlayer adsorption is closer to the Fermi level. This result is conducive 
+to promote the charge migration during the cycling process and thus improving the 
+conductivity. According to the results of AIMD, the intercalated sodium storage structure 
+benefiting from electron conduction is shown as a one-dimensional ion channel (Figure 1e), 
+and is selective to the diffusion path of sodium ions (Figure S5). Figure 1e depicts the 
+trajectories of Na+ ion at surface storage state in h-CuSe. The wide and significantly 
+overlapped density distribution of sodium ions indicates a high fluidity of sodium ions in h-
+CuSe. Their trajectories show regular and continuous one-dimensional diffusion channels, 
+which expand in the three-dimensional grid. The mean squared displacements (MSD) of the 
+Na+ under various temperatures are calculated as a function of time in Figure 1f. Given these 
+data, the diffusion coefficient (DRT) of sodium ion in surface diffusion mode and interlayer 
+diffusion mode at room temperature (298 K) can be calculated as large as 2.7×10-7 and 
+1.8×10-9, respectively (Figure S6). Similarly, the energy barrier of surface diffusion (0.42 
+eV, Figure 1g) was lower than that of interlayer diffusion (0.54 eV) (Figure S6c). These fast 
+and direct one-dimensional channels are conducive to lower activation barrier and lower 
+volume change during cycling due to more uniform and more orderly ion flows, which is a 
+potential feature of the electrode with good rate capability.[21] Therefore, the intrinsic 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 9 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+9 
+ 
+electronic and ionic conductivity of h-CuSe is advantageous for sodium ion storage. Rational 
+construction of h-CuSe and nanocrystallization can maximize the contribution of surface 
+diffusion and interlayer diffusion for rate performance and theoretical capacity. 
+ 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 10 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+10 
+ 
+Figure 1. Structure and charge density analysis. (a) Schematic of Na+ intercalation and 
+deintercalation in the h-CuSe cathode. (b) Top view of 3D isosurface of charge density difference for 
+h-CuSe package with four unit cells when Na on the surface and in the interlayer (cyan and yellow 
+isosurfaces denote the accumulation and depletion of charge, respectively). (c) Adsorption energy and 
+(d) density of states of sodium under two occupation conditions (The isosurface value of the charge 
+density difference is 0.0017 e/Å3). (e) Trajectories (small grey bullets) of Na+ ion in AIMD 
+simulations at surface storage state at 1800 K from 5 to 8 ps in h-CuSe. (f) MSD at 1200, 1500, 1800, 
+2400 and 2700 K. (g) Arrhenius plot of diffusion coefficients, from which the Na+ ion migration 
+energy barrier of 0.2411 eV is obtained. 
+ 
+Atomic and electronic structures of h-CuSe. The h-CuSe nanosheet was successfully 
+synthesized by a simple one-step hydrothermal method. The single phase h-CuSe structure 
+and P63/mmc space group of the prepared samples are confirmed through X-ray powder 
+diffraction (Figure 2a). As shown in Figure 2a, the XRD patterns are consistent with the 
+peak positions of standard CuSe (PDF#89-7391). The misfit peak at 45° derived from the 
+(220) crystal plane of Cu2Se, indicating that there is a small amount of impurity phase in the 
+sample. Notably, the peak at 31.06° corresponding to (006) plane of h-CuSe is the strongest 
+diffraction peak instead of (102), which indicates that the growth orientation of h-CuSe is 
+along the [100] direction.[22] Besides, inductively coupled plasma atomic emission 
+spectrometry (ICP-OES) demonstrates the atomic ratio of Cu:Se to be close to 1:1 (50 at.% of 
+Cu and 49 at.% of Se, Table S2). The lattice parameters of h-CuSe (a=3.942(3) Å, 
+b=3.942(3) Å, c=17.245(5) Å, Table S3) were obtained by Rietveld refinement as shown in 
+Figure 2b. The refined crystal structure schematic is illustrated in Figure 2c, whereas the 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 11 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+11 
+ 
+more accurate atomic distribution information is shown in Table S4. As predicted by 
+previous calculations, the h-CuSe has a layer spacing of 2.397 Å, which allows sodium ions 
+to form a two-dimensional pathway domain at interstitial sites or interlayer galleries. Figure 
+2d exhibits the morphology of h-CuSe, which is regular hexagonal-shaped nanosheet with 
+smooth surface. The high-resolution TEM image in Figure 2e-f shows clear lattice planes 
+exposed on the h-CuSe nanosheet surface. The lattice spacings of 0.344 nm and 0.216 nm can 
+be assigned to the (100) and (008) crystal planes of h-CuSe, respectively. The corresponding 
+selected area electron diffraction (SAED, inset of Figure 2e) illustrates a typical hexagonal 
+pattern of CuSe, where two groups of diffraction points correspond to the (100) and (110) 
+planes. The high-angle annular dark-field scanning transmission electron microscopy 
+(HAADF-STEM) image (Figure 2g) analyzed the atomic ordering in the diameter plane of 
+the h-CuSe nanosheet. The fast fourier transform (FFT) diffraction pattern (Figure 2h) 
+observes the diffraction spots of (100), (101), and (200) planes of the h-CuSe, which records 
+the crystal growth along the [010] zone axis. The Se atoms in diameter plane are hexagonal-
+close-packed, and the Cu cations are inserted into the interstices of the tetrahedral sites of Se 
+(as shown in Figure 2i). The atomic arrangement of the diameter plane corresponds to the 
+(001) of h-CuSe, whereby the side lengths of 3.942 Å for the unit can be measured. Note that 
+the presence of interstices within three selenium sites in a single cell can provide adsorbed 
+sites with a low energy for sodium ions, which may facilitate the surface diffusion. In 
+addition, the corresponding energy dispersive X-ray (EDX) elemental maps confirm the 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 12 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+12 
+ 
+uniform distribution of Se and Cu (Figure 2j), and the XPS results (Figure S7 and Table S5) 
+are consistent with the previous physicochemical measurements.  
+ 
+ 
+Figure 2. Physicochemical measurements and analyses of the cathode active material powders of 
+h-CuSe. (a) XRD pattern of the h-CuSe. (b) Rietveld refinement of the XRD pattern of the h-CuSe. 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 13 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+13 
+ 
+(c) Illustration of refined layered structural h-CuSe. (d) The SEM image of h-CuSe. (e) The low-
+resolution TEM image of single h-CuSe nanosheet and corresponding SAED pattern. (f) The distance 
+intensity profiles from (e). (g) The HAADF-STEM image of h-CuSe. (h) The FFT diffraction pattern 
+derived from (g). (i) Cu and Se atomic arrangements viewed along the [001]. (j) The TEM-EDX 
+elemental mapping images of h-CuSe. 
+ 
+Electrochemical characterization of h-CuSe. The electrochemical performance of h-CuSe 
+was evaluated by using h-CuSe electrode as sodium metal battery cathode, and a copper mesh 
+calendered sodium metal sheet was used as the anode[23] with ether based electrolyte (1M 
+NaSO3CF3 in diglyme). The battery structure is shown in Figure S8. We use Cu foil with 
+good conductivity as the current collector to speed up the charge transfer process. As shown 
+in Figure S9, the use of Cu foil and Al foil shows similar electrochemical properties, 
+indicating that the current collector has no serious impact on the sodium storage mechanism 
+of h-CuSe. Figure 3a shows the typical cyclic voltammogram (CV) curves of first 5 cycles at 
+0.1 mV s-1 within the voltage of 0.3 V-2.7 V. It can be found that four cathodic peaks are 
+observed in the first cycle, which are around 1.8, 1.5, 1.0, 0.6 V, related to the intercalation 
+process of Na+ into h-CuSe. Figure 3b demonstrates the charge and discharge (GCD) curves 
+of the h-CuSe electrode cycling at current density of 0.25 A g-1 in voltage range of 0.3-2.7 V, 
+which delivers an initial discharge/charge capacity of 430/421 mAh g-1. After 10 cycles, the 
+GCD curve shows stable plateaus with two charging platform at around 2.0 V and 1.5 V and 
+four discharging platform at around 1.8, 1.5, 1.0, and 0.6 V, which are consistent with the CV 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 14 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+14 
+ 
+curves. Notably, the h-CuSe electrode still has a discharge/charge capacity of 348/347 mAh 
+g-1 with a high coulombic efficiency of 99.7% even after 100 cycles.  
+To evaluate the rate performance, the h-CuSe electrode was measured at various current 
+density from 0.25 to 15 A g-1, as shown in Figure 3c. The h-CuSe exhibits a specific capacity 
+of 313 mAh g-1 on the 3rd cycle at 0.25 A g-1, and it retains 210 mAh g-1 at the high rate of 15 
+A g-1. After returning to 2.5 A g-1, the h-CuSe undergoes little decay with discharge capacity 
+of 227 mAh g-1 and charge capacity of 226 mAh g-1 even after 2000 cycle, which delivers a 
+high capacity retention of 93.3%. To evaluate the long cycling performance, h-CuSe based 
+SMB was cycled at 3 A g-1 for over 1000 cycles (as shown in Figure 3d top). The h-CuSe 
+based SMB maintains near-constant specific capacity of 220 mAh g-1 with only 3% capacity 
+decay after 1000 cycles, indicating a remarkable cycling stability. Even at higher current rate, 
+h-CuSe based SMBs are able to achieve stable cycling with decent capacities (250 mAh g-1 at 
+25 A g-1 and 126 mAh g-1 at 50 A g-1) for over 12000 cycles, as shown in Figure 3d bottom 
+and Figure S10. Compared with the reported work related to copper selenide (Table S6), h-
+CuSe based sodium metal battery shows higher initial coulombic efficiency and better rate 
+performance, which may be because the sodium metal anode composited with copper mesh 
+provides a more stable and uniform ion flow that helps h-CuSe exert its characteristics of 
+interlayer sodium storage and increase the contribution of pseudocapacitance.  
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 15 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+15 
+ 
+We further evaluated the electrochemical performance of h-CuSe at different 
+temperatures (Figure 3e). The h-CuSe can maintain the intrinsic performance well when 
+temperature ranges from 25 to 50 ℃ and show an increase in specific capacity. As shown in 
+Figure S11, the new discharge plateau near 1V and the charging plateau near 1.8V indicate 
+that some transformation reaction occurs after sodium intercalation, which not only makes 
+the current disturbance of GCD stabilized, but also provides a further increase in capacity. 
+Furthermore, the long cycling comparison at different current densities are tested at these 
+specific temperature points (Figure 3f and Figure S12-S15). At -20 ℃, discharge specific 
+capacities of 125, 47 and 75 mAh g-1 are obtained at current density of 2.5, 25 and 50 A g-1, 
+respectively, which occur a relatively serious capacity attenuation. While at 50 ℃, the h-
+CuSe remains high capacities of 481, 186, and 145 mAh g-1 at current density of 2.5, 25 and 
+50 A g-1, respectively. Even at 70 ℃, the specific capacities can reach up to 438, 280, and 80 
+mAh g-1 at current density of 2.5, 25, and 50 A g-1, respectively. Based on these data, h-CuSe 
+based SMBs are able to operate over a wide range of temperatures for long periods of time as 
+an advanced energy storage device.  
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 16 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+16 
+ 
+ 
+Figure 3. Electrochemical performances of h-CuSe as cathode for Na@Cu||h-CuSe sodium 
+metal battery. (a) CV curves at a scan rate of 0.1 mV s-1. (b) Voltage profiles at a current density of 
+0.25 A g-1. (c) Rate performance of h-CuSe nanosheet. (d) Long-term cycling performance of 
+Na@Cu||h-CuSe using NS-01 as electrolyte at current density of 3 A g-1 and 50 A g-1. (e) The long 
+cycling performance of h-CuSe at different temperatures at current density of 0.25 A g-1. (f) 
+Comparison of specific capacities obtained using current density of 0.25 A g-1, 25 A g-1, and 50 A g-1 
+at different temperatures. 
+ 
+Structural evolution of h-CuSe. To investigate the electrochemical mechanism of the h-
+CuSe nanosheet electrode during the cycling processes, ex-situ XRD patterns were carried 
+out (Figure 4a-b). The batteries were preactivated with five cycles and measured at different 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 17 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+17 
+ 
+voltage states at 0.25 A g-1. As shown in Figure 4a-b, the h-CuSe forms NaxCuSe 
+intercalation structure and Na2Se and Cu phases during the discharge process. From 2.0 V to 
+0.3 V, the peak intensity of diffraction peaks ascribed to (200) crystal planes of NaxCuSe 
+(x=1, JCPDS No. 71-1820) at 45° gradually increases, demonstrating the sodium ions 
+storage. Since the insertion of sodium ions into the interlayer of h-CuSe, the set of diffraction 
+peaks from the (110) plane of h-CuSe around 45° shift to the lower diffraction degree, 
+indicating an increase in the spacing of (110) plane. During the whole discharge-charge 
+process, the NaxCuSe structure is preferentially formed by Na+ intercalation, then the 
+conversion reaction occurs. At the discharge state of 1.6 V, a series of diffraction peaks at 
+26°-29° indicate the formation of the Cu7Se4 (JCPDS No. 26-0557) transition phase, which 
+returns to the h-CuSe at C1.8V and corresponds to the charging plateau where the GCD curve 
+appears. Subsequently, discharging to 1.2 V, the new peaks of typical Na2Se (JCPDS No. 47-
+1699) appear in near 27° (200) and 37.5° (220) accompanied by the disappearing of pristine 
+h-CuSe peaks between 25° and 30°. For the deintercalation of sodium ions, the existing 
+NaxCuSe, Na2Se and Cu phases change into the h-CuSe phase when the voltage is charged 
+from 0.3 V to 2.7 V. Furthermore, the XRD patterns of the h-CuSe electrodes after more than 
+6000 cycles of discharging/charging process are presented in Figure S16. Diffraction peaks 
+of (102), (006), (110), (202), and (116) planes of h-CuSe are detected after an extremely long 
+charge-discharge cycle, which shows an excellent reversibility. 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 18 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+18 
+ 
+The in-situ TEM were carried out to reveal the change of phase structure during Na+ 
+intercalation/deintercalation process (the schematic diagram of the equipment is shown in 
+Figure 4c). The whole process can be found in Video S1. Figure 4d-g show the Na+ storage 
+states of a single h-CuSe nanosheet. For the pristine nanosheet, the SAED pattern exhibits a 
+regular diffraction lattice of h-CuSe (Figure 4e). When the nanosheet is in contacted with 
+metal sodium and the discharge voltage is applied, the sodium begins to rapidly diffuse into 
+the h-CuSe lattice (Figure 4d). At the early stage of discharge, the surface and interlayer 
+diffusion processes can be clearly observed from Video S1 and Figure S17. The surface 
+diffusion process shows a higher diffusion rate, which is consistent with the theoretical 
+calculation result. After the surface diffusion occurs, the low free energy of h-CuSe interlayer 
+drives two-dimensional interlayer diffusion of sodium ions to form intercalation structure. 
+After the sodium ion intercalation completes, the local precipitation of black particles can be 
+observed, which is the phase separation caused by conversion reaction (Figure S18). It is 
+probable that the surface structure formed by surface diffusion in the early stage of discharge 
+induces the coordination structure of sodium ions with higher energy in the interlayer to 
+modulate towards lower energy to adapt to the energy change caused by the sodiation 
+process, so that such a local conversion reaction occurs. As shown in corresponding SAED 
+pattern (Figure 4e-g), the initial monocrystalline lattice (Figure 4e) transforms to 
+polycrystalline states with a series of diffraction rings including (111) crystal plane of Cu, 
+(220) and (111) crystal plane of Na2Se and (440) crystal plane of Cu7Se4 (Figure 4f). 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 19 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+19 
+ 
+Notably, the diffraction lattice of original h-CuSe including the NaxCuSe intercalation 
+structure are still preserved. When charged from 0.3 V to 2.7 V, the black particles gradually 
+disappeared and the nanosheet underwent structural restorations (Figure 4d). After 2.7 V, the 
+phase separation disappeared and h-CuSe was formed again. As illustrated in Figure 4g, the 
+diffraction rings of Cu and Na2Se disappear, and the diffraction pattern of h-CuSe becomes 
+clear again, which indicates that the process of sodiation/desodiation in h-CuSe is reversible. 
+Interestingly, the discharge process of sodiation lasted for 100s, while the charging process 
+was maintained for nearly 600s, mainly because the diffusion of sodium ions at interlayers 
+accelerated the redox reaction kinetics, showing the characteristics of fast charging batteries. 
+The results here clearly demonstrate an intercalation triggered redox reaction process in the 
+h-CuSe form localized Cu7Se4 anchoring phase as a nail to stabilized the interlayer structure 
+of h-CuSe (Figure 4h). Given the nature of this charge storage mechanism, we defined the 
+process to be intercalation-induced localized conversion process (ILC).  
+Despite the presence of residual Na2Se, the intrinsic structure of h-CuSe is still perfectly 
+preserved. Because the localized conversion reaction enables the formation of nano-copper 
+metal to stabilize the h-CuSe structure, reducing the damage of material crystal phase 
+structure caused by reconstruction and phase transformation. For common selenides, there is 
+no layered structure in the bulk phase. When conversion reaction occurs, sodium ions first 
+react from the outer atomic layer and then gradually react to the whole bulk. However, the 
+layered h-CuSe allows sodium ions to intercalate into the bulk phase before conversion 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 20 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+20 
+ 
+reaction occurs. Based on these, the electrochemical sodium storage mechanism of h-CuSe 
+can be illustrated in Figure S19. The sodiation of h-CuSe electrode can be described as that 
+the sodium ions enter from the edge of the nanosheet and diffuse into the bulk h-CuSe, 
+forming the NaxCuSe intercalation structure. As the sodiation process continuous, localized 
+conversion reaction occurs and metal Cu, Na2Se and Cu7Se4 phase are formed to modulating 
+sodium storage structure. In this process, the stepwise ILC reaction is detailed as follow: 
+Sodiation process: 
+𝐶𝑢𝑆𝑒+ 𝑥𝑁𝑎+ + 𝑥𝑒−→𝑁𝑎𝑥𝐶𝑢𝑆𝑒 (Intercalation pseudocapacitance)
+(1) 
+8𝑁𝑎𝑥𝐶𝑢𝑆𝑒+ (8 −8𝑥)𝑁𝑎+ + (8 −8𝑥)𝑒−→𝐶𝑢7𝑆𝑒4 + 4𝑁𝑎2𝑆𝑒+ 𝐶𝑢 (ILC)
+(2) 
+𝐶𝑢7𝑆𝑒4 + 8𝑁𝑎+ + 8𝑒−→7𝐶𝑢+ 4𝑁𝑎2𝑆𝑒
+(3) 
+Desodiation process: 
+𝑁𝑎𝑥𝐶𝑢𝑆𝑒−𝑥𝑒−→𝑥𝑁𝑎+ + 𝐶𝑢𝑆𝑒
+(4) 
+𝑁𝑎2𝑆𝑒−2𝑒−→2𝑁𝑎+ + 𝑆𝑒
+(5) 
+𝐶𝑢+ 𝑆𝑒→𝐶𝑢𝑆𝑒
+(6) 
+Furthermore, the SEM and EDX were used to characterize the h-CuSe electrode after 
+100 cycles at current density of 0.25 A g-1. The h-CuSe can maintain the original layered 
+structure and no sharp sodium dendrites form on the surface. (Figure S20). The EDX results 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 21 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+21 
+ 
+(Figure S21) illustrate a small amount of Na exists in the discharged h-CuSe after cycling, 
+which may be attributed to the aggregated nanoparticles that prevents the complete 
+(de)sodiation. However, for most of the h-CuSe phase, the Cu:Se atomic ratio is still close to 
+1:1, indicating a good reversibility.  
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 22 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+22 
+ 
+ 
+Figure 4. Ex-situ phase structure changes studies and in-situ electrochemical reaction studies of 
+h-CuSe cathode for SMBs. (a) Ex-situ XRD analysis of h-CuSe at different charge-discharge states. 
+(b) Corresponding charge-discharge curves. (c) The schematic diagram of the in-situ TEM equipment. 
+(d-g) The structure evolution of h-CuSe nanosheet underwent a discharge-charge cycle under in-situ 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 23 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+23 
+ 
+TEM system, whereas (e-g) the SAED images corresponding to the h-CuSe at state pristine, 
+discharged to 0.3 V and charged to 2.7 V. (h) Schematic diagram of the ILC mechanism stabilizing 
+interlayer structures. 
+ 
+Electrochemical kinetics of h-CuSe. The electrochemical kinetics of h-CuSe is analyzed 
+based on the CV curves at 0.1-1.0 mV s-1 scanning rates. Figure 5a shows six redox peaks 
+named A, B (oxidation peaks), and C, D, E, F (reduction peaks). The shape of these peaks 
+remains with the increase of scanning rate,[24] and the current obeys a power-law relationship 
+with the sweep rate that can be described as follows[25]: 
+𝑖= 𝑎𝑣𝑏
+(7) 
+log(𝑖) = 𝑏𝑙𝑜𝑔(𝑣) + 𝑎
+(8) 
+Whereas b-value indicates the kinetic nature of the rate-determining reaction, that is, semi-
+infinite linear diffusion when b=0.5 and surface-controlled process when b=1.[26] As shown in 
+Figure 5b, the b values of the six peaks (A-F) are 0.95, 1.04, 0.85, 0.94, 0.94, and 1.12, 
+respectively, indicating an ultrafast surface charge storage controlled kinetics.[27] CV method 
+was further used to calculate the diffusion coefficient of sodium ions during the cycling 
+process. The change of the diffusion coefficient during the discharge process reflected the 
+sodium storage process of ILC mechanism (Figure S22a-b). Under D1.5V, sodium ions 
+exhibit intercalation diffusion characteristics corresponding to the increase of diffusion 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 24 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+24 
+ 
+coefficient. At the later stage of discharge, the ILC reaction occurs between the layers, and 
+the anchoring phase is formed to stabilize intercalation structure when discharge to 1.0V, 
+which hinders the diffusion process to some extent. At D0.5V, the internal lattice provides a 
+modulated ion diffusion path after the ILC reaction to recover to the original diffusion level. 
+Compared with other copper-based compounds, including sulfides, phosphates, and oxides, 
+selenides exhibit higher diffusion coefficients, demonstrating that it can support rapid ion 
+conduction (Figure S22c). Figure S23 shows that the charge storage capacity of h-CuSe is 
+almost independent of rate, the intercept of the fitting line is close to 1 (0.93), and 
+corresponding redox peaks illustrate small voltage offsets even at high rates, which fits 
+electrochemical features of the intercalation pseudocapacitance[26,28]. Notably, we compared 
+the electrochemical kinetics of recently reported copper selenides (Table S7). The nature of 
+the sodium storage process in most CuSe materials may also be an ILC mechanism. 
+Ex-situ Cu K-edge X-ray adsorption spectroscopy (XAS) was performed to track the 
+local structure evolution during the intercalation process. During the discharge process, the 
+Cu K-edge XANES spectra of h-CuSe gradually shifted to a lower energy, indicating the 
+transition of h-CuSe to metal Cu (Figure 5c). It can be seen from the spectra of R-space 
+(Figure 5d) that the insertion of sodium ion shorten the bond length of Cu-Se bond and 
+reduces the coordination number of copper. Furthermore, after a discharge process, the 
+mapping area of the near-edge coordination structure of Cu atoms in the first coordination 
+shell becomes narrow, which also confirms that the Cu-Se bond is shortened. For the initial 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 25 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+25 
+ 
+h-CuSe, it has the same XANES characteristic peak as CuO and other standard samples near 
+8983 eV and 8997 eV (Figure 5e), indicating the bivalent oxidation state of Cu. By 
+comparing the spectra of EXAFS (Figure 5f), the coordination structure of h-CuSe is 
+inconsecutive at the higher radial distance and indicates that the expansion path of 
+coordination at the Cu center is shorter, revealing the fine layered structure of h-CuSe, which 
+is also consistent with the result of wavelet transform contour plots (Figure S24 and Figure 
+5g). The wavelet transform (WT) contour plot of the Cu K-edge EXAFS for h-CuSe (Figure 
+5g) also shows that a peak appears near 2 Å with energy oscillation around 8-10 Å-1 (Figure 
+S25), which is higher than the wave-number region of Cu-Cu, Cu-O, and Cu-N bond in k-
+space (Figure S26), suggesting the dominance of the Cu-Se scattering.[26] These results show 
+that the ILC mechanism behaves as intercalated pseudocapacitance at the atomic scale. The 
+insertion of sodium ions does not cause the destruction of the near-side coordination structure 
+of Cu atoms, but adapts the anchoring phase change by adjusting the length of Cu-Se bonds. 
+The application of this discovery is to provide deep insight into the mechanism of sodium 
+storage in layered materials and to provide feasible engineering strategies for the design of 
+strain-free layered electrode materials and solid electrolytes[29] to solve the problems of 
+volume expansion, stress strain, mechanical fracture, electrode pulverization and so on. In 
+addition, electrolyte engineering is expected to further promote the safety and interface 
+stability of h-CuSe-based batteries. For example, introducing a fluorinated liquid and a non-
+polar solvent to modify the flammability of ether electrolyte,[30] designing alkyl chain 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 26 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+26 
+ 
+phosphate electrolyte to form robust interphase on the electrode,[31] developing middle-length 
+terminal component in ether electrolyte to increase coulombic efficiency.[32] As well the 
+design of 3D electrode structure by combined with h-CuSe and 3D host is prospective for 
+enhancing specific capacity and kinetics.[33,34]  
+ 
+Figure 5. Electrochemical kinetics studies of h-CuSe. (a) CV curves at different scan rates. (b) 
+Relation between log i and log v. (c) Ex-situ Cu K-edge XANES spectra of h-CuSe during 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 27 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+27 
+ 
+discharged state. (d) The normalized Cu K-edge EXAFS spectra of h-CuSe during discharged state. 
+(e) The normalized Cu K-edge XANES spectra of Cu foil, CuO, CuPc, and h-CuSe. (f) The Cu K-
+edge EXAFS spectra of Cu foil, CuO, CuPc, and h-CuSe. (g) Wavelet transform (WT) contour plots 
+of pristine h-CuSe, discharge to 1.5 V, and discharge to 0.6 V.  
+ 
+3. Conclusion 
+In summary, we synthesized a hexagonal CuSe combined with DFT calculation guidance 
+and nanostructure engineering. We revealed the intercalation transport characteristics of 
+sodium ions in the bulk phase of h-CuSe lead to localized conversion reaction and proposed 
+the ILC reaction mechanism of sodium ions in h-CuSe for the first time. The h-CuSe based 
+sodium metal batteries present excellent sodium storage (220 mAh g-1 at 3 A g-1 with over 
+1000 cycles) and rate performance (250 mAh g-1 for 25 A g-1 and 126 mAh g-1 for 50 A g-1). 
+By a series of electrochemical tests, ex-situ XRD, in-situ TEM and XAS, it is demonstrated 
+that the intercalation regulates the local h-CuSe redox in the discharge process, promotes the 
+change of Cu-Se bond structure to alleviate the effect of intercalation on volume expansion. 
+The one-dimensional channel of fast ion transfer at the h-CuSe surface and interlayer 
+indicated by molecular dynamics simulation allows sodium ions to exhibit higher rate 
+capabilities in the bulk phase due to no diffusion limitation. Our work provides new 
+understanding of the sodium storage mechanism of metal selenides and the ILC mechanism 
+for achieving ultrafast charging capability with high energy density, which may be critical 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 28 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+28 
+ 
+and universal for special electrochemical energy storage such as sodium based batteries and 
+all-solid-state devices. 
+ 
+4. Experimental section 
+Material synthesis: 
+The h-CuSe nanosheets were synthesized by one-step hydrothermal method. First, 2.0 
+mmol CuCl2·H2O was dissolved in 30 mL deionized water to form a blue transparent 
+solution. Then, 2 mmol Se powder, 2 mL hydrazine hydrate solution and 2 mL ethylene 
+diamine were poured into a 50 mL Teflon-lined stainless steel autoclave and ultrasonically 
+dispersed for 10 minutes to evenly distribute selenium powder and form H2Se. Then, the 
+obtained blue solution was transferred into the autoclave, where another ultrasonication 
+process was carried for 10 minutes. Subsequently, the Teflon-lined stainless steel autoclave 
+was placed in the oven, and maintained at a temperature of 160 ℃ for 8 h. After the autoclave 
+was cooled to RT, the precipitate was washed and collected centrifugally with ethanol and 
+water 3 times, and then dried in the oven at 60 ℃ over 6 h. 
+Material characterization: 
+The morphology of the samples was investigated with the field-emission scanning 
+electron microscopy (SEM, Hitachi S-4800) and transmission electron microscopy (TEM, 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 29 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+29 
+ 
+FEI Tecnai G2 F20). The energy dispersive spectroscopy (EDS) elemental maps were 
+generated by the aberration-corrected high angle annular dark field scanning transmission 
+electron-microscopy (HAADF-STEM, FEI Titan G2, USA). The crystal structure of the 
+sample was determined through X-ray diffraction (XRD) (PANalytical, Netherlands) using 
+Cu Kα radiation at 35 kV. Furthermore, the chemical state of elements was verified by X-ray 
+photoelectron spectroscopy (XPS, AXIS Supra. Kratos). 
+Assemble of sodium metal batteries: 
+Firstly, to fabricate the cathode electrode disc, the h-CuSe nanosheet material, Super P 
+and polyvinylidene fluoride (PVDF) binder was ground to a uniform mixture at a weight ratio 
+of 8:1:1, then appropriate N-methyl pyrrolidone (NMP) was added into the mixture and 
+further grinds into a uniform slurry. Then, the slurry was coated on the Cu/Al foil and scraped 
+using scraper with 75 μm height, immediately. The coated Cu/Al foil was transferred to the 
+oven at 60 ℃ for 24 h. Subsequently, the dried electrodes were cut into discs of 12 mm (the 
+active material loading was about 0.8 mg cm2). Secondly, the Na metal and Cu mesh (mesh 
+number of 400) current collector were cut into circle-shaped foil with a diameter of 16 mm, 
+respectively. To prepare the sodium metal anode, the Cu mesh was aligned with the circular 
+Na metal plate and pressed with punching machine until the Cu mesh was full embedded in 
+the Na metal.[23] Then, the prepared Na metal anode and glass microfibers (Whatman, GF/F) 
+were used as the counter electrode and separator, respectively. The electrolyte was a solution 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 30 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+30 
+ 
+of 1M sodium trifluomethanesulfonate (NaSO3CF3) dissolved in diglyme (electrolyte type: 
+NS01), using 1M sodium hexafluorophosphate (NaPF6) in diglyme (electrolyte type: NP05) 
+as a control group. 
+Electrochemical measurement: 
+The charge-discharge profiles of the cell were measured in the voltage range of 0.3-2.7 V 
+at current density of 0.25 A g-1 using the CT2001A LAND battery test system. The rate 
+performance and cycling property of the cell were tested under constant current charging and 
+discharging mode. The electrochemical measurements of cyclic voltammograms (CVs) and 
+electrochemical impedance spectra (EIS) were measured using electrochemical workstation 
+(CH Instruments 760E, Inc. China). The EIS was measured in the frequency range of 0.01-
+100 kHz with an amplitude of 5 mV after 20th, 50th, and 100th cycles. 
+Theoretical approach: 
+All calculations were based on the density functional theory (DFT) code: Vienna ab 
+initio simulation package (VASP)[35] code. Projector augmented wave (PAW)[36] potentials, 
+Na (3s1), Cu (3d10 4s1) and Se (4s2 4p4) potentials, were implemented to solve the Kohn-
+Sham equations[37]. The GGA-PBE was used to treat the exchange-correlation interaction of 
+electrons[38]. Considering the underestimation of the PBE functional on the band gap of the 
+semiconductor, the HSE06 hybrid functional calculation[39] was also applied for more 
+accurate electronic structure calculations. The Brillouin zone was sampled with k-point grid 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 31 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+31 
+ 
+of 3×3×2 for h-CuSe bulk supercell and 5×5×1 for h-CuSe layer. Electron wave 
+functions calculations were carried out using cutoff energy of 350 eV, and the convergence 
+energy was set to be 1×10-5 eV. The Hellman-Feynman forces on the ions were relaxed until 
+they were below 0.01 eV/Å. The climbing-image nudged elastic band (CI-NEB) method 
+implemented in VASP was performed to investigate the transition state searches. For the 
+diffusion process, the minimum-energy path (MEP) have been found by using the climbing - 
+image nudged elastic band (CI-NEB) method.[40] The energy difference between the saddle 
+point and the initial state was defined as the diffusion barrier. 
+The adsorption energies (Eads) of Na atom on the h-CuSe bulk or layer were defined as: 
+𝐸ads = 𝐸X
+sub
+ – 𝐸sub – 𝐸X
+(9) 
+where X represents the Na atom. EX/sub, Esub and EX represent the total energies of the h-CuSe 
+adsorbed with Na atom, the clean h-CuSe and the Na atom, respectively. According to the 
+above definition, the more negative the adsorption energy, the easier Na atom is adsorbed. 
+Charge transfer between active material and the Na atom plays an important role in 
+diffusion dynamics study of Na ion. Therefore, the charge density difference (ΔQ) was 
+indispensable to calculate. The ΔQ by the following formula: 
+Δ𝑄X/sub = ρ X
+sub
+− ρX – ρsub
+(10) 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 32 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+32 
+ 
+where ρX/sub, ρX and ρsub denote the charge distribution of the substrate adsorbed with Na 
+atom, the Na atom and the clean substrate, respectively. 
+Moreover, we use ab initio molecular dynamics methods[41,42] to study the collision, 
+adsorption and molecular transfer processes of between molecules and interface. Molecular 
+dynamics algorithm combined with NVT ensemble, Nose-Hover thermostat[43], 1 fs step size, 
+500,000 steps. In the calculation steps, the quasi-classical trajectory (QCT) method was used, 
+with appropriate averaging over the initial molecular coordinates and momenta.[44,45] 
+The diffusion coefficient of Na+ ion can be calculated by the linear regression of the 
+mean square displacement, MSD(t), of its center of mass in the diffusive regime as 
+follows[46]: 
+D = 1
+6 lim
+t→∞
+d
+dt MSD(t)
+(11) 
+MSD(t) = ⟨|r(t) −r(0)|2⟩
+(12) 
+The relationship between diffusion coefficient of sodium ion and temperature can be obtained 
+by Arrhenius formula. 
+ 
+ 
+Acknowledgements 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 33 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+33 
+ 
+This work was supported by the Innovation Platform of Energy Storage Engineering and 
+New Material in Zhejiang University (K19-534202-002) and the Key Research and 
+Development Program of Zhejiang Provincial (2021C01030). 
+ 
+References 
+[1] Xiang Zhang, Feng Hao, Yongjie Cao, Yihua Xie, Shouyi Yuan, Xiaoli Dong, Yongyao 
+Xia, Adv. Funct. Mater. 2021, 31, 2009778. 
+[2] Chen Lu, Zhixiao Gao, Bingzhi Liu, Zixiong Shi, Yuyang Yi, Wen Zhao, Wenyue Guo, 
+Zhongfan Liu, Jingyu Sun, Adv. Funct. Mater. 2021, 31, 2101233. 
+[3] Xuyang Liu, Xueying Zheng, Ya Deng, Xiao Qin, Ying Huang, Yiming Dai, Wangyan 
+Wu, Zhongqiang Wang, Wei Luo, Adv. Funct. Mater. 2021, 32, 2109378. 
+[4] Liguang Wang, Tongchao Liu, Tianpin Wu, Jun Lu, Nature. 2022, 611, 61-67. 
+[5] Tongchao Liu, Jiajie Liu, Jiaxin Zheng, Jun Lu, Feng Pan, Luxi Li, Alvin Dai, 
+Wenguang Zhao, Shenyang Xu, Yang Ren, Yinguo Xiao, Khalil Amine, Wonsuk Cha, Lei 
+Yu, Jiecheng Diao, Tao Zhou, Shunning Li, Nature. 2022, 606, 305-312. 
+[6] Yifeng Liu, Hongwei Li, Haiyan Hu, Yao Xiao, Zhiqiang Fu, Qiang Ma, Yanfang Zhu, 
+Shulei Chou, Kai Han, Danni Peng, Lingyi Kong,Yu Su, Hongrui Wang, Ruiren Tang, 
+Jiayang Li, Xiongwei Wu, InfoMat. 2023, 5, e12422. 
+[7] Yunxiao Wang, Yanxia Wang, Yunxia Wang, Xiangming Feng, Weihua Chen, Xinping 
+Ai, Hanxi Yang, Yuliang Cao, Chem. 2019, 5, 2547-2570. 
+[8] Xudong Hu, Yang Zhao, Seung Joon Yoo, Xin Li, Xiaojun Zeng, Chunming Zheng, 
+Xiaohong Sun, Galen D. Stucky, Adv. Funct. Mater. 2021, 31, 2101637. 
+[9] Minghe Luo, Haoxiang Yu, Feiyang Hu, Tingting Liu, Xing Cheng, Runtian Zheng, 
+Ying Bai, Miao Shui, Jie Shu, Chemical Engineering Journal. 2020, 380, 122557. 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 34 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+34 
+ 
+[10] Jianfeng Wen, Bingang Xu, Jinyun Zhou, Jiangtao Xu, Yuejiao Chen, Small. 2019, 15, 
+e1901313. 
+[11] Tao Lu, Shanmu Dong, Chuanjian Zhang, Lixue Zhang, Guanglei Cui, Coordin. Chem. 
+Rev. 2017, 332, 75-99. 
+[12] Yunpeng Gu, Yukari Katsura, Takafumi Yoshino, Hidenori Takagi, Kouji Taniguchi, 
+Sci. Rep. 2015, 5, 12486. 
+[13] Sarah L. White, Progna Banerjee, Prashant K. Jain, Nat. Commun. 2017, 8, 14514. 
+[14] Hui Wang, Jianli Liang, Yan Wu, Tianxing Kang, Dong Shen, Zhongqiu Tong, Rui 
+Yang, Yang Jiang, Di Wu, Xinjian Li, Chunsing Lee, Small. 2020, 16, e2002671. 
+[15] Adam P. Cohn, Nitin Muralidharan, Rachel Carter, Keith Share, Cary L. Pint, Nano Lett. 
+2017, 17, 1296-1301. 
+[16] Yunjie Li, Xiucai Sun, Zhenjie Cheng, Xiao Xu, Jun Pan, Xianfeng Yang, Fang Tian, 
+Yanlu Li, Jian Yang, Yitai Qian, Energy Storage Mater. 2019, 22, 275-283. 
+[17] Dongliang Chen, Zhenyun Zhao, Guangliang Chen, Tongtong Li, Jian Chen, Zhizhen 
+Ye, Jianguo Lu, Coordin. Chem. Rev. 2023, 479, 214984. 
+[18] Hongwen Chen, Rumin Liu, Yang Wu, Junhui Cao, Jian Chen, Yang Hou, Yichuan Guo, 
+Rabia Khatoon, Lingxiang Chen, Qinghua Zhang, Qinggang He, Jianguo Lu, Chem. Eng. J. 
+2021, 407, 126973. 
+[19] XuejunWu, Xiao Huang, Juqing Liu, Hai Li, Jian Yang, Bing Li, Wei Huang, Hua 
+Zhang, Angew. Chem. Int. Ed. 2014, 53, 5083-5087. 
+[20] Yaqiong Long, Jing Yang, Xin Gao, Xuena Xu, Weiliu Fan, Jian Yang, Shifeng Hou, 
+Yitai Qian, ACS Appl. Mater. Interfaces. 2018, 10, 10945-10954. 
+[21] Stephen M. Wood, Chris Eames, Emma Kendrick, M. Saiful Islam, J. Phys. Chem. C. 
+2015, 119, 15935-15941. 
+[22] Yanjie Gu, Yanjie Su, Da Chen, Huijuan Geng, Zhongli Li, Luyin Zhang, Yafei Zhang, 
+CrystEngComm. 2014, 16, 9185-9190. 
+[23] Qi Li, Shoupu Zhu, Yingying Lu, Adv. Funct. Mater. 2017, 27, 1606422. 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 35 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+35 
+ 
+[24] Yang Tian, Jianguo Lu, Haichao Tang, Xin Wang, Liqiang Zhang, Ping Hu, Liang Zhou, 
+Yang Wang, Yichuan Guo, Rabia Khatoon, Qinghua Zhang, Qinggang He, Yi He, Ming Qiu, 
+Yang Hou, Zhizhen Ye, Chem. Eng. J. 2021, 422, 130054. 
+[25] Henrik Lindström, Sven Södergren, Anita Solbrand, Håkan Rensmo, Johan Hjelm, 
+Anders Hagfeldt, Sten-Eric Lindquist, J. Phys. Chem. B. 1997, 101, 7717-7722. 
+[26] Veronica Augustyn, Jérémy Come, Michael A. Lowe, JongWoung Kim, Pierre-Louis 
+Taberna, Sarah H. Tolbert, Héctor D. Abruña, Patrice Simon, Bruce Dunn, Nat. Mater. 2013, 
+12, 518-522. 
+[27] Yuanhua Xiao, Xiaobing Zhao, Xuezhao Wang, Dangcheng Su, Shuo Bai, Wei Chen, 
+Shaoming Fang, Liming Zhou, Hui-Ming Cheng, Feng Li, Advanced Energy Materials. 2020, 
+10, 2000666. 
+[28] S. Ardizzone, G. Fregonara, S. Trasatti, Electrochim. Acta. 1990, 35, 263-267. 
+[29] Zhen Hou, Shuixin Xia, Chaoqun Niu, Yuepeng Pang, Hao Sun, Zhiqi Li, Yuxi Xu, 
+Shiyou Zheng, Carbon Energy 2022, 4, 506-516. 
+[30] Xianhui Yi, Hongwei Fu, Apparao M. Rao, Yingjiao Zhang, Jiang Zhou, Chengxin 
+Wang, Bingan Lu, Nat. Sustain. 2024, 7, 326-337. 
+[31] Yuanhui Geng, Hongwei Fu, Yanyao Hu, Apparao M. Rao, Ling Fan, Jiang Zhou, 
+Bingan Lu, Appl. Phys. Lett. 2024, 124, 063901. 
+[32] Shiyang Wang, Suting Weng, Xinpeng Li, Yue Liu, Xiangling Huang, Yulin Jie, Yuxue 
+Pan, Hongmin Zhou, Shuhong Jiao, Qi Li, Xuefeng Wang, Tao Cheng, Ruiguo Cao, 
+Dongsheng Xu, Angew. Chem. Int. Ed. 2023, 62, e202313447. 
+[33] Hang Liu, Jie Di, Ping Wang, Rui Gao, Han Tian, Pengfei Ren, Qingxi Yuan, Wanxia 
+Huang, Ruiping Liu, Qiang Liu, Ming Feng, Carbon Energy 2022, 4, 654-664. 
+[34] Kyungbin Lee, Young Jun Lee, Michael J. Lee, Junghun Han, Jeonghoon Lim, Kun Ryu, 
+Hana Yoon, Byung-Hyun Kim, Bumjoon J. Kim, Seung Woo Lee, Adv. Mater. 2022, 34, 
+2109767. 
+[35] G. Kresse, J. Hagner, J. Phys.: Condens. Matter. 1994, 6, 8245-8257. 
+[36] P.E. Blöchl, Phys. Rev. B. 1994, 50, 17953-17979. 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 36 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+36 
+ 
+[37] B. C. Han, A. Van der Ven, G. Ceder, B. J. Hwang, Phys. Rev. B. 2005, 72, 205409. 
+[38] J. P. Perdew, K. Burke, M. Ernzerhof, Phys. Rev. Lett. 1996, 77, 3865-3868. 
+[39] J. Heyd, G. E. Scuseria, M. Ernzerhof, J. Chem. Phys. 2003, 118, 8207-8215. 
+[40] G. Henkelman, B.P. Uberuaga, H. Jónsson, J. Chem. Phys. 2000, 113, 9901-9904. 
+[41] G. Kresse, J. Hafner, Phys. Rev. B. Condens. Matter. 1993, 47, 558-561. 
+[42] G. Kresse, J. Furthmüller, Phys. Rev. B. 1996, 54, 11169-11186. 
+[43] W.G. Hoover, B.L. Holian, Phys. Letters A. 1996, 211, 253-257 (1996). 
+[44] P. Nachtigall, C.O. Arean, Phys. Chem. Chem. Phys. 2010, 12, 6307-6308 (2010). 
+[45] C. Díaz, E. Pijper, R. A. Olsen, H. F. Busnengo, D. J. Auerbach, G. J. Kroes, Science. 
+2009, 326, 832-834. 
+[46] Tuanan C. Lourenço, Luis Gustavo Dias, Juarez L. F. Da Silva, ACS Appl. Energy 
+Mater. 2021, 4, 4444-4458. 
+ 
+This work revealed the intercalation induced localized conversion reaction mechanism in the 
+hexagonal CuSe under the guidance of theoretical calculation and in situ techniques. High rate 
+performance and excellent cycling stability were achieved by forming a localized anchoring phase of 
+Cu7Se4 and adjusting the near-edge coordination state of Cu sites to stabilize the sodium storage 
+structure. 
+ 
+Dongliang Chen,# Yunkai Xu,# Jianguo Lu*, Yang Tian, Tongtong Li*, Peng Jia, Xu Wang, 
+Liqiang Zhang*, Yang Hou, Liguang Wang, Qinghua Zhang, Zhizhen Ye, Jun Lu* 
+ 
+Intercalation-Induced Localized Conversion Reaction in h-CuSe for Ultrafast-
+Rechargeable and Long-Cycling Sodium Metal Battery 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 37 ===
+ 
+ 
+ 
+This article is protected by copyright. All rights reserved. 
+37 
+ 
+ 
+ 
+ 
+ 15214095, ja, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202404640 by Zhejiang University, Wiley Online Library on [27/05/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+

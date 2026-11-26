@@ -1,0 +1,8 @@
+=== self-hosted fonts ===
+Oswald                     oswald-latin.woff2                   27.8 KB
+Noto Serif SC Display      shiguang-display-700.woff2            7.8 KB
+Noto Serif SC Display      shiguang-display-900.woff2            7.4 KB
+
+TOTAL = 43.0 KB
+display subset chars = 38  (拾光·年度回看关于这趟路足迹地图写一则旅途归档照片墙0123456789月 )
+whole-html chars     = 393

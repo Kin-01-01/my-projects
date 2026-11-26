@@ -1,0 +1,56 @@
+{
+  "updated": "2026-09-22",
+  "_readme": "技能栈数据（占位示例，请按你的真实感受改）。level 为 1-5 的整数：1 了解 / 2 入门 / 3 熟练 / 4 扎实 / 5 精通。用五档而不是百分比，是因为 72% 这种数字是假精确，五档更诚实也更好维护。levels 字段可以自定义档位文案。",
+  "levels": ["了解", "入门", "熟练", "扎实", "精通"],
+  "groups": [
+    {
+      "id": "languages",
+      "label": "编程语言",
+      "items": [
+        { "name": "Python", "level": 3, "note": "日常写科研脚本与小工具" },
+        { "name": "JavaScript", "level": 2, "note": "原生 ES Module，不依赖框架" },
+        { "name": "SQL", "level": 2, "note": "MySQL 为主，正在冲三级考试" },
+        { "name": "C", "level": 1, "note": "只在课程里用过" }
+      ]
+    },
+    {
+      "id": "cs-core",
+      "label": "计算机基础",
+      "items": [
+        { "name": "数据结构与算法", "level": 2, "note": "在补基础，边学边写笔记" },
+        { "name": "数据库原理", "level": 2, "note": "范式、索引、事务" },
+        { "name": "操作系统", "level": 2, "note": "进程、内存、文件系统" },
+        { "name": "计算机网络", "level": 1, "note": "刚起步" }
+      ]
+    },
+    {
+      "id": "frontend",
+      "label": "前端",
+      "items": [
+        { "name": "HTML / CSS", "level": 3, "note": "布局与响应式比较熟" },
+        { "name": "原生 JavaScript", "level": 2, "note": "DOM、事件、模块化" },
+        { "name": "数据可视化", "level": 2, "note": "D3.js 正在学" }
+      ]
+    },
+    {
+      "id": "science",
+      "label": "科研与数据",
+      "items": [
+        { "name": "NumPy", "level": 2, "note": "课程练习主力" },
+        { "name": "pandas", "level": 2, "note": "实验数据清洗" },
+        { "name": "matplotlib", "level": 2, "note": "批量出图" },
+        { "name": "电化学测试", "level": 3, "note": "实验室日常" }
+      ]
+    },
+    {
+      "id": "tools",
+      "label": "工具链",
+      "items": [
+        { "name": "Git", "level": 2, "note": "单人流程熟练，协作还在学" },
+        { "name": "Linux 命令行", "level": 1, "note": "基础操作" },
+        { "name": "VS Code", "level": 3, "note": "主力编辑器" },
+        { "name": "Markdown", "level": 3, "note": "所有笔记的格式" }
+      ]
+    }
+  ]
+}

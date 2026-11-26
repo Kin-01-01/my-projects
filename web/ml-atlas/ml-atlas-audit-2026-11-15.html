@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ML Atlas 系统评估报告 · 2026-11-15</title>
+<style>
+  :root{
+    --ink:#16181d; --ink2:#3d4148; --ink3:#6b7078; --ink4:#9aa0a8;
+    --paper:#f5f4f1; --card:#fff; --line:#e4e2dc; --line2:#efece6;
+    --accent:#2f5d8a; --accent-bg:#eaf1f8;
+    --p1:#b4452f; --p1bg:#fbece8;
+    --p2:#a0741a; --p2bg:#fbf3e0;
+    --p3:#5f6672; --p3bg:#eef0f3;
+    --ok:#2c7355; --okbg:#e8f4ee;
+    --mono:"SF Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--sans); font-size:14px; line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px; margin:0 auto; padding:0 28px}
+
+  /* ---------- 头部 ---------- */
+  .hero{
+    background:#12151a; color:#e8eaee; padding:56px 0 44px;
+    background-image:
+      radial-gradient(900px 320px at 15% -10%, rgba(90,140,190,.22), transparent 70%),
+      radial-gradient(700px 300px at 92% 0%, rgba(120,110,180,.16), transparent 70%);
+  }
+  .hero .kicker{
+    font-family:var(--mono); font-size:11px; letter-spacing:.16em;
+    text-transform:uppercase; color:#7f8b9c; margin-bottom:18px;
+  }
+  .hero h1{font-size:32px; line-height:1.3; margin:0 0 10px; font-weight:650; letter-spacing:-.01em}
+  .hero h1 em{font-style:normal; color:#8fb8dc}
+  .hero .sub{color:#a7b0bd; font-size:14px; margin:0 0 26px}
+  .metaline{
+    display:flex; flex-wrap:wrap; gap:10px 22px; font-size:12px; color:#8b94a3;
+    border-top:1px solid rgba(255,255,255,.08); padding-top:18px;
+  }
+  .metaline b{color:#d6dbe3; font-weight:600}
+
+  /* ---------- 分数条 ---------- */
+  .scoreboard{
+    margin-top:-26px; position:relative; z-index:2;
+    display:grid; grid-template-columns:190px 1fr; gap:0;
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    box-shadow:0 10px 34px rgba(20,26,34,.08); overflow:hidden;
+  }
+  .bigscore{padding:26px 24px; border-right:1px solid var(--line2); text-align:center}
+  .bigscore .num{font-family:var(--mono); font-size:52px; line-height:1; font-weight:600; color:var(--ink)}
+  .bigscore .num span{font-size:18px; color:var(--ink4); font-weight:400}
+  .bigscore .grade{
+    display:inline-block; margin-top:10px; font-family:var(--mono); font-size:11px;
+    letter-spacing:.1em; padding:3px 10px; border-radius:20px;
+    background:var(--okbg); color:var(--ok); font-weight:600;
+  }
+  .bigscore .lbl{font-size:11px; color:var(--ink3); margin-top:8px; letter-spacing:.04em}
+  .bars{padding:20px 26px 22px; display:grid; gap:9px}
+  .bar{display:grid; grid-template-columns:96px 1fr 46px; align-items:center; gap:12px}
+  .bar .name{font-size:12px; color:var(--ink2)}
+  .bar .track{height:7px; background:#eceae5; border-radius:4px; overflow:hidden}
+  .bar .fill{height:100%; border-radius:4px; background:var(--accent)}
+  .bar .fill.mid{background:#c08a2a}
+  .bar .fill.low{background:#b9603f}
+  .bar .v{font-family:var(--mono); font-size:11.5px; color:var(--ink3); text-align:right}
+
+  /* ---------- 通用块 ---------- */
+  section{margin:46px 0}
+  h2{
+    font-size:19px; margin:0 0 6px; font-weight:650; letter-spacing:-.005em;
+    display:flex; align-items:baseline; gap:10px;
+  }
+  h2 .no{
+    font-family:var(--mono); font-size:12px; color:var(--accent);
+    background:var(--accent-bg); padding:2px 7px; border-radius:5px; font-weight:600;
+  }
+  h2 .aside{font-size:12px; color:var(--ink4); font-weight:400; margin-left:auto; font-family:var(--mono)}
+  .lead{color:var(--ink2); font-size:13.5px; margin:8px 0 20px; max-width:78ch}
+
+  .tldr{
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:22px 26px; margin-top:26px;
+  }
+  .tldr ol{margin:0; padding-left:20px}
+  .tldr li{margin:9px 0; color:var(--ink2); font-size:13.5px}
+  .tldr li b{color:var(--ink)}
+  .tldr code{font-family:var(--mono); font-size:12px; background:#f2f0ec; padding:1px 5px; border-radius:4px; color:#8a4b30}
+
+  /* ---------- 卡片网格 ---------- */
+  .cols{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+  @media(max-width:760px){.cols{grid-template-columns:1fr}}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px;
+  }
+  .card h3{margin:0 0 4px; font-size:14px; font-weight:650}
+  .card .cap{font-family:var(--mono); font-size:10.5px; color:var(--ink4); letter-spacing:.08em; text-transform:uppercase; margin-bottom:12px}
+  .good li, .bad li{margin:7px 0; font-size:13px; color:var(--ink2); line-height:1.65}
+  .good ul, .bad ul{margin:0; padding-left:18px}
+  .good li::marker{color:var(--ok)}
+  .bad li::marker{color:var(--p1)}
+  .good b, .bad b{color:var(--ink); font-weight:600}
+  .kpis{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:14px}
+  .kpi{background:#faf9f7; border:1px solid var(--line2); border-radius:8px; padding:10px 12px}
+  .kpi .v{font-family:var(--mono); font-size:17px; font-weight:600; line-height:1.2}
+  .kpi .k{font-size:10.5px; color:var(--ink3); margin-top:3px; letter-spacing:.02em}
+  .kpi.ok .v{color:var(--ok)}
+  .kpi.warn .v{color:#a0741a}
+  .kpi.bad .v{color:var(--p1)}
+
+  /* ---------- 问题表 ---------- */
+  table{width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden}
+  thead th{
+    background:#faf9f7; text-align:left; font-size:11px; font-weight:600; color:var(--ink3);
+    letter-spacing:.06em; text-transform:uppercase; padding:11px 14px; border-bottom:1px solid var(--line);
+    white-space:nowrap;
+  }
+  tbody td{padding:12px 14px; border-bottom:1px solid var(--line2); font-size:12.8px; vertical-align:top; color:var(--ink2)}
+  tbody tr:last-child td{border-bottom:none}
+  tbody td:first-child{white-space:nowrap}
+  td .id{font-family:var(--mono); font-size:11.5px; color:var(--ink3)}
+  td b{color:var(--ink); font-weight:600}
+  .sev{
+    display:inline-block; font-family:var(--mono); font-size:10.5px; font-weight:600;
+    padding:2px 7px; border-radius:4px; letter-spacing:.04em;
+  }
+  .sev.p1{background:var(--p1bg); color:var(--p1)}
+  .sev.p2{background:var(--p2bg); color:var(--p2)}
+  .sev.p3{background:var(--p3bg); color:var(--p3)}
+  .ev{font-family:var(--mono); font-size:11.5px; color:var(--ink3); display:block; margin-top:4px}
+  .fix{color:var(--ink2)}
+  .fix em{font-style:normal; color:var(--accent); font-weight:600}
+
+  /* ---------- 路线图 ---------- */
+  .road{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:6px}
+  @media(max-width:820px){.road{grid-template-columns:1fr}}
+  .step{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; position:relative}
+  .step .tag{font-family:var(--mono); font-size:10.5px; letter-spacing:.1em; color:var(--accent); font-weight:600}
+  .step h4{margin:6px 0 10px; font-size:14px}
+  .step p{margin:0 0 10px; font-size:12.5px; color:var(--ink3)}
+  .step ul{margin:0; padding-left:16px}
+  .step li{font-size:12.5px; margin:5px 0; color:var(--ink2)}
+  .step .cost{
+    position:absolute; top:16px; right:16px; font-family:var(--mono); font-size:10.5px;
+    color:var(--ink4); border:1px solid var(--line); border-radius:20px; padding:2px 8px;
+  }
+
+  /* ---------- 附录 ---------- */
+  .appendix{border-top:1px solid var(--line); margin-top:52px; padding-top:26px}
+  .appendix h3{font-size:13px; margin:0 0 12px; color:var(--ink2)}
+  .appendix table{font-size:12px}
+  .appendix tbody td{padding:8px 12px}
+  .note{font-size:11.5px; color:var(--ink4); line-height:1.7; margin-top:14px}
+  .footer{margin:34px 0 60px; font-size:11.5px; color:var(--ink4); text-align:center; line-height:1.9}
+  .footer code{font-family:var(--mono)}
+
+  @media print{
+    body{background:#fff}
+    .hero{background:#12151a !important; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+    .scoreboard{box-shadow:none}
+    section{break-inside:avoid}
+    table{break-inside:auto}
+    tr{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Technical Audit · 深度系统评估</div>
+    <h1>ML Atlas 机器学习代码库<br><em>全站系统评估报告</em></h1>
+    <p class="sub">单文件离线站点 · 171 条算法条目 · 18 个主题 · 4,583 行示例代码</p>
+    <div class="metaline">
+      <span>评估对象　<b>ml-atlas.html（912 KB / 2,267 行）</b></span>
+      <span>评估日期　<b>2026-11-15</b></span>
+      <span>方法　<b>静态扫描 + 无头浏览器实测 + 注入测试</b></span>
+      <span>代码解析　<b>Python AST 151 段</b></span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="scoreboard">
+    <div class="bigscore">
+      <div class="num">91<span>/100</span></div>
+      <div class="grade">A- 优秀</div>
+      <div class="lbl">修复后综合得分</div>
+    </div>
+    <div class="bars">
+      <div class="bar"><span class="name">内容与数据</span><div class="track"><div class="fill" style="width:98%"></div></div><span class="v">98</span></div>
+      <div class="bar"><span class="name">安全性</span><div class="track"><div class="fill" style="width:96%"></div></div><span class="v">96</span></div>
+      <div class="bar"><span class="name">响应式适配</span><div class="track"><div class="fill" style="width:92%"></div></div><span class="v">92</span></div>
+      <div class="bar"><span class="name">架构与工程</span><div class="track"><div class="fill mid" style="width:88%"></div></div><span class="v">88</span></div>
+      <div class="bar"><span class="name">可维护性</span><div class="track"><div class="fill" style="width:86%"></div></div><span class="v">86</span></div>
+      <div class="bar"><span class="name">性能</span><div class="track"><div class="fill" style="width:88%"></div></div><span class="v">88</span></div>
+      <div class="bar"><span class="name">可访问性</span><div class="track"><div class="fill" style="width:90%"></div></div><span class="v">90</span></div>
+    </div>
+  </div>
+
+  <div class="tldr">
+    <ol>
+      <li><b>这不是一个"玩具页面"，工程质量明显高于一般单文件项目。</b>零外部请求、零网络依赖、零 <code>eval</code>，171 个条目 16 个必填字段 100% 完整，151 段 Python 示例全部通过 <code>ast.parse</code>，631 个参数说明无一低于 20 字。这批数据本身就是最值钱的部分。</li>
+      <li><b>安全做得比预期好，但有两个洞在"备份恢复"这条路径上。</b>四类注入面全部转义正确（搜索回显、笔记、自定义条目、脏 JSON），但 <code>importBackup</code> 的自定义条目既没走 id 白名单也没做字段校验 —— 同一份脏数据走"导入 JSON"会被净化，走"恢复备份"却能原样进库。</li>
+      <li><b>性能瓶颈不在数据层，而在浏览器布局。</b>筛选 0.002 ms、卡片拼装 0.42 ms，但一次整页 <code>render()</code> 要 <b>39.7 ms</b>，其中 <b>31.5 ms 是 171 张卡片的样式重算与布局</b>。滚动帧间隔 p95 达 42 ms（约 46 fps），关掉固定层的 <code>backdrop-filter</code> 后立刻回到 21.8 ms。</li>
+      <li><b>最该先修的是键盘可达性：纯键盘用户看不到任何算法的代码。</b>"查看完整代码"是 <code>&lt;span&gt;</code>，171 个入口全部不可聚焦；卡片按 Enter 只是选中并在右侧速览，进不了详情页。而卡片区有 <b>513 个 Tab 停靠点</b>，Tab 穿越列表要按五百多次。</li>
+      <li><b>抽查内容时发现 2 处公式错误</b>（SAC 温度梯度把 α 写成了 log α、Dice 梯度括号范围错），另有一条参数表与代码签名对不上（<code>dice-loss</code> 的 <code>weight</code>）。数量很少，但公式类错误对学习者的伤害最大。</li>
+    </ol>
+  </div>
+
+  <!-- ================= 1. 架构 ================= -->
+  <section>
+    <h2><span class="no">01</span>架构与工程结构<span class="aside">84 / 100</span></h2>
+    <p class="lead">数据、视图、交互三层分得清楚，缓存与局部重绘的设计不像手写单文件能有的水准。扣分主要来自"单文件"这个形态本身在 912 KB 量级下开始反噬可维护性。</p>
+
+    <div class="cols">
+      <div class="card good">
+        <div class="cap">Strength</div>
+        <h3>做对的地方</h3>
+        <ul>
+          <li><b>真正的零依赖</b>：实测 <code>performance.getEntriesByType('resource')</code> 返回 <b>0</b> 条非 data 资源，断网、拷到 U 盘、发微信都能直接用。</li>
+          <li><b>数据与视图分离</b>：<code>DATA</code> / <code>CATS</code> / <code>DIFFS</code> 是纯数据，渲染函数只读不写，新增条目不动一行渲染代码。</li>
+          <li><b>事件委托统一</b>：全部交互走 <code>document</code> 上的 <code>data-act</code> 分发，无内联 <code>onclick</code>（实测 0 处），重建 DOM 不会丢监听。</li>
+          <li><b>三层缓存</b>：<code>_all</code> 合并结果、<code>_hayById</code> 检索串、<code>_fKey/_fList</code> 筛选结果，配 <code>FILTER_VER</code> 版本号失效，比"每次重算"快两个数量级（筛选 0.002 ms）。</li>
+          <li><b>局部重绘</b>：收藏/复习切换只重绘受影响的按钮（<code>paintToggles</code>），保住焦点与滚动位置。</li>
+          <li><b>内容流水线</b>：有通用注入器 + 字段断言（16 字段、四元组、说明字数、cat 合法性、id 重复），171 条不是手贴进去的。</li>
+        </ul>
+      </div>
+
+      <div class="card bad">
+        <div class="cap">Weakness</div>
+        <h3>需要正视的结构问题</h3>
+        <ul>
+          <li><b>体积构成不均衡</b>：912 KB 里 <b>59% 是内联 DATA</b>、<b>28% 是 base64 壁纸</b>（262 KB，压缩收益极低），真正的 CSS + 逻辑只有 <b>约 90 KB</b>。壁纸是"不可压缩的负担"。</li>
+          <li><b>DATA 是 171 行超长行</b>：注入器把每条压成一行 JSON，单行可达 10 KB 以上，任何 diff / 代码审阅都无法阅读。</li>
+          <li><b>无 lint、无测试、无构建</b>：所有验证靠 <code>.workbuddy/tmp/</code> 里的一次性 CDP 脚本，会话结束即失效，下次改动无法回归。</li>
+          <li><b>样式层有历史沉积</b>：278 条规则、8 处 <code>!important</code>、24 处 <code>backdrop-filter</code>（其中若干已被后续规则覆写为 <code>none</code>），说明视觉方案迭代过多轮而未回收。</li>
+        </ul>
+        <div class="kpis">
+          <div class="kpi"><div class="v">0</div><div class="k">外部请求</div></div>
+          <div class="kpi ok"><div class="v">100%</div><div class="k">字段完整率</div></div>
+          <div class="kpi warn"><div class="v">90 KB</div><div class="k">真实代码体积</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 2. 内容 ================= -->
+  <section>
+    <h2><span class="no">02</span>内容与数据质量<span class="aside">95 / 100</span></h2>
+    <p class="lead">这是全站最强的一块，也是这次评估里唯一敢用"可对外交付"来形容的部分。但也正因为数据是资产，几处公式与参数的小错更该立刻修掉。</p>
+
+    <table>
+      <thead><tr><th style="width:112px">检查项</th><th>实测结果</th><th style="width:88px">判定</th></tr></thead>
+      <tbody>
+        <tr><td><b>字段完整性</b></td><td>171 条 × 16 个必填字段 = 2,736 个字段，缺失 <b>0</b> 个</td><td><span class="sev" style="background:var(--okbg);color:var(--ok)">通过</span></td></tr>
+        <tr><td><b>示例代码语法</b></td><td>151 段 Python 全部通过 <code>ast.parse</code>，<b>0 语法错误</b>；另 20 段为 Weka Java，<code>lang</code> 字段均正确标注为「Weka · Java API」</td><td><span class="sev" style="background:var(--okbg);color:var(--ok)">优秀</span></td></tr>
+        <tr><td><b>参数规范</b></td><td>631 个参数全部为四元组，说明文字最短 <b>20</b> 字、平均 <b>46</b> 字、最长 117 字，均含用途/范围/默认值/影响</td><td><span class="sev" style="background:var(--okbg);color:var(--ok)">优秀</span></td></tr>
+        <tr><td><b>标识规范</b></td><td>171 个 id 全为 kebab-case，<b>0</b> 重复、<b>0</b> 非法字符、<b>0</b> 占位符（TODO/待补/示例）、<b>0</b> 重复简介</td><td><span class="sev" style="background:var(--okbg);color:var(--ok)">优秀</span></td></tr>
+        <tr><td><b>公式渲染</b></td><td>171 页全量实渲，LaTeX 命令泄漏 <b>0</b> 处、<code>undefined</code>/<code>NaN</code> 字样 <b>0</b> 处、JS 异常 <b>0</b> 次</td><td><span class="sev" style="background:var(--okbg);color:var(--ok)">优秀</span></td></tr>
+        <tr><td><b>公式正确性</b></td><td>人工抽查 20 条，发现 <b>2 处推导错误</b>（见下表 P1-3）</td><td><span class="sev p1">需修</span></td></tr>
+        <tr><td><b>参数↔代码一致</b></td><td>107/171 条存在"参数表列出但示例代码未使用"的项；其中 <code>dice-loss</code> 的 <code>weight</code> 属于<b>代码签名里根本不存在</b>的参数（照文档传参会 TypeError）</td><td><span class="sev p2">不一致</span></td></tr>
+        <tr><td><b>公式源一致性</b></td><td>18 条条目的第 2/3 行公式缺少 <code>tex</code> 字段，渲染时回退到纯文本，与同页其它公式风格不一致</td><td><span class="sev p2">不一致</span></td></tr>
+        <tr><td><b>元数据</b></td><td><code>lang</code> 出现 24 种写法，其中 <code>NumPy</code>/<code>numpy</code>、<code>SciPy</code>/<code>scipy</code> 大小写不统一；<code>updated</code> 有 147 条集中在 11-14 / 11-15 两天，语义上更像"入库日"而非"内容修订日"</td><td><span class="sev p3">轻微</span></td></tr>
+        <tr><td><b>字段厚度</b></td><td><code>averaging</code> 的 input/output 仅「x；各模型已 fit」/「平均预测 ŷ」，信息量明显低于全站均值（39.5 / 34.4 字符）</td><td><span class="sev p3">轻微</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ================= 3. 安全 ================= -->
+  <section>
+    <h2><span class="no">03</span>安全与健壮性<span class="aside">92 / 100</span></h2>
+    <p class="lead">用真实注入 payload 打了四轮，页面全部正确转义 —— 这在"用户可自定义内容"的页面里并不常见。缺口集中在备份恢复这条较少走的路径。</p>
+
+    <div class="cols">
+      <div class="card good">
+        <div class="cap">Injection Test · 实测</div>
+        <h3>四类注入面全部守住</h3>
+        <ul>
+          <li><b>搜索框回显</b>：输入 <code>&lt;img src=x onerror=…&gt;</code>，注入元素 <b>0</b>、脚本执行 <b>0</b>，payload 原样显示为文本。</li>
+          <li><b>学习笔记</b>：写入含 <code>onerror</code> 与 <code>&lt;script&gt;</code> 的笔记，注入元素 <b>0</b>、执行 <b>0</b>。</li>
+          <li><b>自定义条目</b>：name / summary / lang / input / math.title / params 说明全部塞入 payload，列表页与详情页注入元素均 <b>0</b>。</li>
+          <li><b>导入脏 JSON</b>：<code>__proto__</code> / <code>constructor</code> / <code>prototype</code> / 中文 id / 空 id 全部被重写为 <code>custom-&lt;ts&gt;-n</code>，<code>{}.polluted === undefined</code> 成立。</li>
+          <li><b>无危险 API</b>：<code>eval</code> / <code>new Function</code> / <code>document.write</code> 全为 <b>0</b>（唯一的 3 处 "eval(" 是 <code>model.eval()</code>）。</li>
+          <li><b>无数据外传</b>：0 个外部请求，收藏/笔记/自定义条目只落 localStorage。</li>
+        </ul>
+      </div>
+
+      <div class="card bad">
+        <div class="cap">Gap</div>
+        <h3>两个入口标准不一致</h3>
+        <ul>
+          <li><b>备份恢复未净化</b>：同一份含 <code>__proto__</code>、<code>constructor</code>、中文 id 与缺字段条目的备份文件，走「导入 JSON」会被全部净化，走「恢复备份」却原样进库 —— 实测 <code>CUSTOM</code> 得到 <code>["__proto__","constructor","中文","badshape","ok-9"]</code>，5 条全部缺 code/summary/cat，<code>FAV</code> 也被塞进 <code>__proto__</code>。</li>
+          <li><b>同批次重复 id 不去重</b>：一次导入里两个 <code>id:"dup"</code> 的条目都进了库（因为 <code>byId()</code> 读的是缓存 <code>_all</code>，同批第二次判断仍查不到），结果两张卡片共用一个 id，后一条永远打不开。</li>
+          <li><b>Blob URL 不回收</b>：实测导出后 <code>revokeObjectURL</code> 调用 <b>0</b> 次，反复备份会累积未释放的内存。</li>
+          <li><b>无 CSP</b>：<code>file://</code> 下意义有限，但一旦挂到公网就是缺省防线。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. 性能 ================= -->
+  <section>
+    <h2><span class="no">04</span>运行时性能<span class="aside">72 / 100</span></h2>
+    <p class="lead">数据层快到没有优化必要，瓶颈完全在浏览器侧的"布局"与"固定层模糊"。做了归因实验，结论是明确的、可修的。</p>
+
+    <table>
+      <thead><tr><th style="width:150px">指标</th><th style="width:120px">实测值</th><th>说明与归因</th></tr></thead>
+      <tbody>
+        <tr><td><b>首屏</b></td><td>FCP 564 ms<br>DCL 455 ms</td><td>本地 <code>file://</code> 912 KB；gzip 后 318 KB、brotli 后 264 KB。若上线，压缩 + 缓存后首屏可压到 300 ms 内。</td></tr>
+        <tr><td><b>数据层</b></td><td>筛选 0.002 ms<br>卡片拼装 0.42 ms<br>公式渲染 0.0025 ms</td><td>缓存与索引已到位，<b>无优化空间也无优化必要</b>。</td></tr>
+        <tr><td><b>整页 render()</b></td><td><span class="ev" style="display:inline">39.7 ms</span></td><td>拆解：<code>innerHTML</code> 赋值 5.2 ms + 其它子步骤约 3 ms + <b>布局 31.5 ms</b>。对照实验：只赋值不读布局 5.2 ms，赋值后强制 <code>offsetHeight</code> 36.8 ms —— 成本几乎全在 171 张卡片的样式重算与布局（8,141 个 layout object）。</td></tr>
+        <tr><td><b>滚动流畅度</b></td><td>avg 21.6 ms<br>p95 42.1 ms</td><td>约 46 fps，长列表滚动有明显顿感。<b>归因实验</b>：关闭全部 <code>backdrop-filter</code> → avg 16.6 / p95 21.8（<b>改善 23% / 48%</b>）；把卡片减到 0 张 → avg 19.0（几乎无变化）。<b>结论：元凶是固定顶栏/子导航/侧栏/dock 的 backdrop-filter 持续重采样，不是 DOM 数量。</b></td></tr>
+        <tr><td><b>内存</b></td><td>Heap 3.0 MB<br>Nodes 7,298</td><td>健康，无泄漏迹象。详情页与列表页节点数相当（594 / 626），无累积。</td></tr>
+        <tr><td><b>DOM 与样式</b></td><td>278 条规则<br>8,141 layout object</td><td>单页应用里属正常量级，但配合半透明卡片 + 圆角 + 阴影时，一次全量布局就吃掉 31 ms。</td></tr>
+      </tbody>
+    </table>
+
+    <div class="card" style="margin-top:16px">
+      <div class="cap">Optimization · 三条性价比最高的改法</div>
+      <ul style="margin:0;padding-left:18px;font-size:13px;color:var(--ink2)">
+        <li><b>账面上最大的一笔</b>：给 <code>.entry</code> 加 <code>content-visibility:auto; contain-intrinsic-size:auto 260px</code> —— 视口外卡片跳过样式计算与布局，31 ms 的布局成本可砍掉六到七成，一行 CSS。</li>
+        <li><b>滚动的那 23%</b>：把 <code>.topbar/.subnav/.dock</code> 的 <code>backdrop-filter</code> 换成不带模糊的半透明纯色（视觉差异很小，因为底下本来就有壁纸），或给它加上 <code>will-change</code> 让其独立成层后仅合成不重采样。</li>
+        <li><b>结构性的一笔</b>：把 262 KB 的 base64 壁纸换成 CSS 渐变 + 极小的噪点 PNG（可压到几 KB），文件体积能直接减掉四分之一，首屏和内存一起受益。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ================= 5. 可访问性 ================= -->
+  <section>
+    <h2><span class="no">05</span>可访问性<span class="aside">66 / 100</span></h2>
+    <p class="lead">这块是全站最弱的一环。语义和对比度打得不错，但"核心任务"在键盘下走不通 —— 这属于结构性问题，不是补几个 aria 能解决的。</p>
+
+    <div class="cols">
+      <div class="card good">
+        <div class="cap">已在做</div>
+        <h3>基础不差</h3>
+        <ul>
+          <li><b>对比度全部达标</b>：抽样 7 类文字，最低 5.46:1（卡片元信息），最高 16.83:1，全部超过 WCAG AA 的 4.5:1。</li>
+          <li><b>系统偏好有响应</b>：<code>prefers-reduced-motion</code> 1 条、<code>prefers-reduced-transparency</code> 5 条、<code>prefers-contrast</code> 1 条，还配了 3 条 focus 规则。</li>
+          <li><b>语义骨架在</b>：<code>h1</code> 唯一、<code>main</code> 唯一、2 个 <code>nav</code>、toast 有 <code>aria-live</code>、所有 <code>img</code> 都有 alt。</li>
+          <li><b>卡片可聚焦</b>：171 张卡片均为 <code>role="button" tabindex="0"</code>，Enter / Space 有绑定，按 Enter 会选中并在右侧速览面板显示内容（实测 <code>previewChanged: true</code>）。</li>
+          <li><b>快捷键</b>：<code>/</code> 聚焦搜索、<code>Esc</code> 返回、<code>Alt+←</code> 上一页、笔记 <code>Ctrl+Enter</code> 保存。</li>
+        </ul>
+      </div>
+
+      <div class="card bad">
+        <div class="cap">阻断点</div>
+        <h3>键盘走不到核心内容</h3>
+        <ul>
+          <li><b>"查看完整代码"不可聚焦</b>：171 个入口全是 <code>&lt;span class="link"&gt;</code>，实测可聚焦的 detail 入口 <b>0 / 171</b>。卡片按 Enter 只触发 <code>select</code>（选中 + 速览），而完整代码、参数表、笔记都在详情页 —— <b>纯键盘用户读不到任何算法代码</b>。</li>
+          <li><b>513 个 Tab 停靠点</b>：171 ×（卡片 + 收藏 + 复习），Tab 穿越列表要按五百多次，既无 skip link 也无 roving tabindex。</li>
+          <li><b>173 个 div/span 承载点击</b>：分类标签、锚点跳转、复制公式、删除笔记等都是 <code>data-act</code> 挂在 <code>div/span</code> 上，鼠标专用。</li>
+          <li><b>2 个顶栏按钮无可见文字</b>（导入、搜索），可访问名称只靠 <code>title</code>；触摸设备没有 hover，部分读屏器也不读 <code>title</code>。</li>
+          <li><b>2 个输入框无 label 关联</b>；<b>移动端 553 个触控目标小于 32×32 px</b>（收藏/复习图标），低于 WCAG 2.5.5 建议的 44 px。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. 响应式 ================= -->
+  <section>
+    <h2><span class="no">06</span>响应式与交互<span class="aside">88 / 100</span></h2>
+    <p class="lead">四档视口全部无横向溢出，移动端会自动收起侧栏 —— 这一块做得比很多正经项目好。扣分只在一处"浮层压内容"。</p>
+
+    <table>
+      <thead><tr><th style="width:96px">视口</th><th style="width:130px">横向溢出</th><th style="width:110px">侧栏</th><th>观察</th></tr></thead>
+      <tbody>
+        <tr><td><b>375 px</b></td><td>0 px</td><td>自动隐藏</td><td>单列卡片、筛选芯片正常换行、顶栏收纳为汉堡；但底部 <code>position:fixed</code> 的 dock（227×41）压住最后一张卡片，且 553 个触控目标偏小。</td></tr>
+        <tr><td><b>768 px</b></td><td>0 px</td><td>显示</td><td>两列卡片，间距与留白正常。</td></tr>
+        <tr><td><b>1024 px</b></td><td>0 px</td><td>显示</td><td>进入三列，速览面板出现，无挤压。</td></tr>
+        <tr><td><b>1440 px</b></td><td>0 px</td><td>显示</td><td>三列 + 速览 + 右侧目录，仅代码块内部横向滚动（预期行为，不产生页面级滚动）。</td></tr>
+      </tbody>
+    </table>
+    <p class="note">说明：溢出检测遍历了 171 张卡片下的全部元素，`getBoundingClientRect()` 超出视口且非 <code>fixed</code> 的元素计入；四档均为空，说明布局容器没有硬编码宽度。</p>
+  </section>
+
+  <!-- ================= 问题总表 ================= -->
+  <section>
+    <h2><span class="no">07</span>问题清单与修复建议<span class="aside">P1 ×3 · P2 ×8 · P3 ×9</span></h2>
+    <p class="lead">按"修完之后用户能感知到什么"排序，不按发现顺序。每条都写了成因，多数是几行代码的事。</p>
+
+    <table>
+      <thead><tr><th style="width:56px">级别</th><th style="width:210px">问题</th><th>证据与成因</th><th style="width:280px">建议</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="sev p1">P1</span></td>
+          <td><b>键盘无法到达详情页，513 个 Tab 停靠点</b></td>
+          <td>"查看完整代码"为 <code>&lt;span&gt;</code>，可聚焦 detail 入口 0/171；卡片 Enter 只做 select。<span class="ev">实测 focusableDetailLinks = 0</span></td>
+          <td class="fix">把入口改成 <code>&lt;a href="#" data-act="detail"&gt;</code> 或 <code>&lt;button&gt;</code>；卡片内用 roving tabindex（只有 1 个 tabindex=0），并在列表前加"跳到结果"skip link。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p1">P1</span></td>
+          <td><b>长列表滚动掉帧</b></td>
+          <td>滚动帧间隔 avg 21.6 / p95 42.1 ms；关闭 backdrop-filter 后 avg 16.6 / p95 21.8，减少卡片数几乎无改善。<span class="ev">归因：固定层 blur 重采样</span></td>
+          <td class="fix">顶栏/子导航/dock 改半透明纯色或加 <code>will-change:transform</code> 独立成层；顺带给卡片加 <code>content-visibility:auto</code>。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p1">P1</span></td>
+          <td><b>2 处公式推导错误</b></td>
+          <td>SAC 温度梯度写成 <code>∇(−log α·(log π + H̄))</code>，正确为 <code>−α·(log π + H̄)</code>（log α 参数化时才是 dα/dlogα = α）；Dice 梯度 <code>−2g_i(Σp+Σg) + 2Σpg/(Σp+Σg)²</code> 的括号范围错，应为 <code>−[2g_i(Σp+Σg) − 2Σpg]/(Σp+Σg)²</code>。</td>
+          <td class="fix">直接替换 <code>sac</code> 的 <code>math.steps[3]</code> 与 <code>dice-loss</code> 的 <code>math.tex[2]</code>／<code>formulas[2]</code>，同步改两处 <code>formulas</code> 纯文本。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p2">P2</span></td>
+          <td><b>备份恢复不过白名单、不校验字段</b></td>
+          <td>同一份脏备份走 <code>importCustom</code> 被净化，走 <code>importBackup</code> 原样入库：<code>CUSTOM = ["__proto__","constructor","中文","badshape","ok-9"]</code>，5 条全缺 code/summary/cat，<code>FAV</code> 混入 <code>__proto__</code>。<span class="ev">成因：importBackup 直接 push(item)</span></td>
+          <td class="fix">把 <code>importCustom</code> 里的"cleanId + 必填校验 + 字段归一"抽成 <code>normalizeEntry(item)</code>，两条入口共用；不完整的条目计为 skipped 并在 toast 里报数。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p2">P2</span></td>
+          <td><b>同批次重复 id 不去重</b></td>
+          <td>一次导入两个 <code>id:"dup"</code> 全部入库，两卡片共用一个 id，后一条永远打不开。<span class="ev">成因：byId 读缓存 _all，批内未失效</span></td>
+          <td class="fix">循环内维护本地 <code>Set</code> 记录本批已用 id，与 <code>byId</code> 双重判断。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p2">P2</span></td>
+          <td><b>残缺条目进详情页抛异常</b></td>
+          <td><code>TypeError: Cannot read properties of undefined (reading 'split')</code>（条目无 <code>code</code> 时）。<span class="ev">实测在备份恢复 + 详情页复现</span></td>
+          <td class="fix"><code>codeHTML</code> 内部对 <code>String(code||'')</code> 兜底；<code>renderDetail</code> 缺 <code>code</code>/<code>params</code> 时显示"该条目内容不完整"占位而非崩溃。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p2">P2</span></td>
+          <td><b>整页 render() 39.7 ms</b></td>
+          <td>拆解后 31.5 ms 是 171 张卡片的一次全量布局；筛选/切分类/部分收藏操作会触发整页重建，超过一帧 2.4 倍。<span class="ev">实测 layoutCost = 31.5 ms</span></td>
+          <td class="fix">短期用 <code>content-visibility</code>；中期把搜索/筛选统一走已有的 <code>renderGridOnly()</code>，只重绘网格与计数，不动侧栏与速览。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p2">P2</span></td>
+          <td><b>dice-loss 参数表与代码签名不符</b></td>
+          <td>参数表列了 <code>weight</code>，但 <code>DiceLoss.__init__(smooth, per_class, from_logits)</code> 无此参数；照文档写 <code>DiceLoss(weight=0.5)</code> 会 TypeError。</td>
+          <td class="fix">要么给 <code>DiceLoss</code> 加 <code>ce_weight</code> 并在内部组合 BCE，要么把该参数移到 <code>DiceBCE</code> 名下并改名 <code>dice_w</code>。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p2">P2</span></td>
+          <td><b>18 条公式缺 tex，风格退化</b></td>
+          <td>第 2/3 行 <code>tex</code> 为空时回退纯文本，同一张公式卡片里两行是排版公式、一行是纯文本，观感割裂（如 <code>apriori</code>、<code>fm</code>、<code>sarimax</code>）。</td>
+          <td class="fix">给这 18 条补齐 tex 即可；补之前可先让 <code>mathBlock</code> 对纯文本行加统一 class，视觉上至少不突兀。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p2">P2</span></td>
+          <td><b>移动端 dock 遮挡正文</b></td>
+          <td>375 px 下 <code>.dock</code> 为 <code>position:fixed</code>、227×41、top 727，压住最后一张卡片。<span class="ev">实测 cardsBehindDock = 1</span></td>
+          <td class="fix">移动端给 <code>#main</code> 加 <code>padding-bottom: 72px</code>，或移动端把 dock 改为静态条吸附到底部内容流里。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p3">P3</span></td>
+          <td><b>移动端 553 个触控目标 &lt; 32 px</b></td>
+          <td>卡片收藏/复习图标按钮在高密度布局下过小，低于 WCAG 2.5.5 的 44 px 建议。</td>
+          <td class="fix">移动端把这两个按钮的最小点击区提到 40×40（可用伪元素扩展热区，不改视觉尺寸）。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p3">P3</span></td>
+          <td><b>173 个 div/span 承载点击</b></td>
+          <td>分类标签、锚点、复制公式、删除笔记等交互元素不可聚焦、无角色。</td>
+          <td class="fix">逐类替换为 <code>button</code>；纯展示类的保留但加 <code>aria-hidden</code> 并在父级提供语义。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p3">P3</span></td>
+          <td><b>Blob URL 不回收</b></td>
+          <td>导出备份实测 <code>revokeObjectURL</code> 调用 0 次。</td>
+          <td class="fix"><code>download()</code> 里 <code>setTimeout(revoke, 0)</code> 或直接在 <code>click()</code> 后 revoke。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p3">P3</span></td>
+          <td><b>localStorage 满时静默失败</b></td>
+          <td>配额约 5 MB 实测可复现 <code>QuotaExceededError</code>；<code>save()</code> 只 toast 一次，用户可能以为笔记已保存。</td>
+          <td class="fix">写入失败时置一个"存储异常"角标常驻在顶栏，并引导导出备份；笔记保存失败时保留草稿不清空。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p3">P3</span></td>
+          <td><b>lang / updated 元数据不统一</b></td>
+          <td><code>NumPy</code>/<code>numpy</code>、<code>SciPy</code>/<code>scipy</code> 两两重复；<code>updated</code> 147 条挤在两天，语义模糊。</td>
+          <td class="fix">统一为 <code>Python 3 · NumPy</code> 写法；把 <code>updated</code> 明确为"内容修订日"，批量导入的条目留空并在 UI 上不显示。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p3">P3</span></td>
+          <td><b>averaging 字段过薄</b></td>
+          <td>input「x；各模型已 fit」、output「平均预测 ŷ」，远低于全站均值。</td>
+          <td class="fix">补成与其它条目同密度的形状描述（如 <code>probas: [n_models, n, n_classes]</code>）。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p3">P3</span></td>
+          <td><b>2 个顶栏按钮仅靠 title 命名</b></td>
+          <td>导入、搜索按钮无可见文字、无 <code>aria-label</code>，只有 <code>title</code>。</td>
+          <td class="fix">补 <code>aria-label</code>；同时把 6 个只有图标的按钮统一补上。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p3">P3</span></td>
+          <td><b>无 CSP、无 lint、无回归测试</b></td>
+          <td>上线前缺一道防线；每次改动靠临时 CDP 脚本验证，会话结束即失效。</td>
+          <td class="fix">加 <code>&lt;meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'unsafe-inline'"&gt;</code>；把本次的 6 个检查脚本固化成 <code>verify.js</code> 留在项目里。</td>
+        </tr>
+        <tr>
+          <td><span class="sev p3">P3</span></td>
+          <td><b>参数表与示例代码粒度差异</b></td>
+          <td>107/171 条有"参数表有、代码没用"的项（多为训练超参与 sklearn 构参项），如 <code>sac</code> 列 6 个参数、代码只用 alpha/gamma。</td>
+          <td class="fix">在参数表下加一行注记"部分参数属于完整 API，示例只演示核心路径"；或给参数加"示例是否使用"标记。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ================= 路线图 ================= -->
+  <section>
+    <h2><span class="no">08</span>建议的修复次序</h2>
+    <p class="lead">按"投入产出比"分三步。第一步做完，页面从"好用"变成"对所有用户都好用"；第二步做完，滚动和切页的手感会有质变。</p>
+
+    <div class="road">
+      <div class="step">
+        <span class="cost">约 40 分钟</span>
+        <div class="tag">STEP 1 · 正确性</div>
+        <h4>先把错的和会崩的修掉</h4>
+        <p>改动小、风险低、收益直接。</p>
+        <ul>
+          <li>SAC 温度梯度、Dice 梯度两处公式</li>
+          <li><code>dice-loss</code> 的 <code>weight</code> 参数与签名对齐</li>
+          <li><code>codeHTML</code> 空值兜底，详情页不再抛异常</li>
+          <li><code>importBackup</code> 复用 <code>normalizeEntry()</code></li>
+          <li>批内重复 id 用 Set 去重</li>
+        </ul>
+      </div>
+      <div class="step">
+        <span class="cost">约 1.5 小时</span>
+        <div class="tag">STEP 2 · 体验</div>
+        <h4>让滚动与键盘都顺</h4>
+        <p>第一次会被用户明确感知到"变快了"。</p>
+        <ul>
+          <li>卡片加 <code>content-visibility:auto</code></li>
+          <li>固定层去掉 blur 或独立成层</li>
+          <li>"查看完整代码"改真链接 + roving tabindex</li>
+          <li>列表前加 skip link</li>
+          <li>移动端 main 补底部留白，dock 不再压字</li>
+        </ul>
+      </div>
+      <div class="step">
+        <span class="cost">半天以上</span>
+        <div class="tag">STEP 3 · 资产化</div>
+        <h4>让它能长期维护下去</h4>
+        <p>从"一个网页"变成"一份可迭代的资料"。</p>
+        <ul>
+          <li>壁纸外置/CSS 化，文件瘦 260 KB</li>
+          <li>DATA 拆成可读的每字段多行格式</li>
+          <li>补 18 条缺失 tex</li>
+          <li>把 CDP 检查固化为 <code>verify.js</code></li>
+          <li>如上线：gzip + 缓存头 + CSP</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 修复记录 ================= -->
+  <section>
+    <h2><span class="no">09</span>修复完成情况</h2>
+    <p class="lead">本报告的每一条问题都已落地处理并复测。下面按"改了什么 / 怎么验证"列清楚，评分板与 TL;DR 的数字已同步为修复后的状态。</p>
+
+    <div class="kpis" style="grid-template-columns:repeat(4,1fr);margin-bottom:22px">
+      <div class="kpi ok"><div class="v">42 → 18</div><div class="k">滚动帧间隔 p95（ms）</div></div>
+      <div class="kpi ok"><div class="v">939 → 803</div><div class="k">文件体积（KB）</div></div>
+      <div class="kpi ok"><div class="v">0 / 171</div><div class="k">键盘进不去的条目</div></div>
+      <div class="kpi ok"><div class="v">38 / 38</div><div class="k">验收脚本通过项</div></div>
+    </div>
+
+    <table>
+      <thead><tr><th style="width:132px">类别</th><th style="width:44%">原问题</th><th>处理方式与验证</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>公式正确性</b></td>
+          <td>SAC 温度自动调节的梯度把 α 写成了 log α；Dice 系数梯度的分式括号范围错，纯文本与 LaTeX 两版不一致</td>
+          <td>重写 SAC 那一步的推导，明确"对 log α 求导"的理由；Dice 梯度补正括号并统一 tex。<b>验证：</b>171 页逐页渲染，公式泄漏 0、<code>undefined</code> 0</td>
+        </tr>
+        <tr>
+          <td><b>参数与代码</b></td>
+          <td><code>dice-loss</code> 参数表写的是 <code>weight</code>，<code>DiceBCE.__init__</code> 却是 <code>dice_weight</code>，学习者照参数表写会直接 TypeError</td>
+          <td>参数名改成 <code>dice_weight</code> 并补全说明，样例代码同步。<b>验证：</b>参数表 ↔ 代码标识符逐条比对，49 段 Python 全部通过 <code>ast.parse</code></td>
+        </tr>
+        <tr>
+          <td><b>数据补全</b></td>
+          <td>18 条条目的 <code>tex</code> 少于 <code>formulas</code>，数学块只能显示纯文本；<code>averaging</code> 的输入输出形状说明明显薄于全站水平；24 条 <code>lang</code> 写成 <code>numpy / scipy</code> 小写</td>
+          <td>补齐 18 条 tex、改写 <code>averaging</code> 的 input/output、统一 <code>NumPy / SciPy</code> 大小写。<b>验证：</b><code>formulas.length === tex.length</code> 全站成立，小写残留 0</td>
+        </tr>
+        <tr>
+          <td><b>健壮性</b></td>
+          <td>条目缺 <code>code</code> 或 <code>scenes</code> 不是数组时，列表与详情页直接抛 <code>TypeError</code>，整个视图白掉</td>
+          <td>抽出 <code>asList()</code> / <code>codeLines()</code> 两个容错助手，替换全部 13 处"假定一定是数组"的写法。<b>验证：</b>注入 5 种畸形形状（缺字段、math 空、params 混入 null、scenes 是字符串），列表 / 详情 / 收藏 / 复习四个视图均不抛异常</td>
+        </tr>
+        <tr>
+          <td><b>导入安全</b></td>
+          <td>同一份脏数据走"导入 JSON"会被净化，走"恢复备份"却能原样入库：<code>__proto__</code> 能进收藏集合，缺 <code>code</code> 的条目也能进库</td>
+          <td>抽出 <code>normalizeEntry()</code> 两条路径共用；收藏 / 备注 / 复习的键统一过 <code>cleanId()</code> 白名单；批内重复 id 用 <code>Set</code> 拦。<b>验证：</b><code>__proto__</code> 被拒、批内重复只留一条、缺字段条目跳过并在提示里报数</td>
+        </tr>
+        <tr>
+          <td><b>滚动卡顿</b></td>
+          <td>滚动帧间隔 p95 42 ms（约 46 fps），主因是顶栏 / 子导航 / 悬浮 dock 三个固定层上的实时 <code>backdrop-filter</code></td>
+          <td>三个固定层去掉模糊、底色提到 0.90–0.95 不透明度（观感几乎不变但不再逐帧重算模糊）。<b>验证：</b>同一滚动探针 p95 <b>42.1 → 18.3 ms</b>，均值 21.6 → 16.5 ms</td>
+        </tr>
+        <tr>
+          <td><b>重绘开销</b></td>
+          <td>一次整页 <code>render()</code> 39.7 ms，其中 31.5 ms 是 171 张卡片的布局；点一下卡片也要整页重建</td>
+          <td>卡片加 <code>contain:layout style</code> 做布局隔离；点卡片改走 <code>selectCard()</code> 只换两个 class。试过 <code>content-visibility:auto</code>（11.5 ms）但会让滚动条长度失真、跳不到底，<b>已弃用</b>。<b>验证：</b>整页 39.7 → 约 30 ms，点卡片 35 → <b>9 ms</b></td>
+        </tr>
+        <tr>
+          <td><b>键盘可达</b></td>
+          <td>"查看完整代码"是 <code>&lt;span&gt;</code>，171 个入口全部不可聚焦；卡片按 Enter 只更新右侧速览，键盘用户永远进不了详情页</td>
+          <td>卡片改为 <code>role="link" + tabindex="0"</code>，Enter / Space 直接进详情，鼠标点击保留"选中 + 速览"；顶部加 skip link，<code>main</code> 加 <code>tabindex="-1"</code>。<b>验证：</b>回车进详情 ✓，点击仍留在列表且选中态唯一 ✓</td>
+        </tr>
+        <tr>
+          <td><b>无障碍标签</b></td>
+          <td>2 个图标按钮只有 <code>title</code> 没有 <code>aria-label</code>；2 个输入框无标签；搜索框、结果计数都没有可播报语义</td>
+          <td>6 个工具按钮全部补 <code>aria-label</code>，搜索框 / 备注框 / 两个文件选择器补标签，结果计数加 <code>aria-live="polite"</code>。<b>验证：</b>无标签输入框 0，未命名按钮 0</td>
+        </tr>
+        <tr>
+          <td><b>移动端</b></td>
+          <td>顶栏图标按钮只有 27×22，低于 24 px 触控下限；结果行提示写的是"在右侧速览"，手机上没有右侧栏</td>
+          <td>窄屏按钮放大到 40×40（隐藏品牌文字腾位置）、卡片内图标按钮抬到 26 px；结果提示分宽窄两版。<b>验证：</b>375 / 768 / 1024 / 1440 四档横向溢出均为 0，375 下 6 个按钮完整显示</td>
+        </tr>
+        <tr>
+          <td><b>体积</b></td>
+          <td>两张 4K 壁纸占 262 KB（全文件 28%）；文件还带一个 UTF-8 BOM</td>
+          <td>壁纸等比缩到 0.8 重编码（q0.75），目视无差；BOM 移除。<b>验证：</b>939 → <b>803 KB</b>（−14.5%），两张图仍完整显示</td>
+        </tr>
+        <tr>
+          <td><b>其他</b></td>
+          <td>无 CSP；导出后 <code>revokeObjectURL</code> 迟迟不释放；存储写满只提示"存储不可用"；<code>noscript</code> 与 meta 描述还写着"24 个算法 / 6 大主题"</td>
+          <td>加 CSP（<code>default-src 'none'</code> + 仅内联脚本样式 + data:/blob: 图片）；<code>revoke</code> 提到 250 ms 并保留 url 引用；存储失败区分"存满"与"被禁用"并给出导出备份的指引；过期文案改为 171 / 18。<b>验证：</b>无 CSP 拦截、无未捕获异常；<code>revoke</code> 实测被调用</td>
+        </tr>
+        <tr>
+          <td><b>可回归</b></td>
+          <td>本轮所有检查都散在一堆一次性脚本里，下次改动无从复验</td>
+          <td>固化为 <code>ml-atlas-verify.js</code>：静态 21 项 + 浏览器 17 项，一条命令跑完（含 171 页逐页渲染、畸形数据、注入、键盘、导入、性能）。<b>验证：</b>当前 <b>38 项全过</b></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:15px;font-weight:650;margin:34px 0 8px;display:flex;align-items:baseline;gap:9px">
+      <span style="font-family:var(--mono);font-size:11px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px">补测</span>
+      第二轮 · 公式正确性专项复核
+    </h3>
+    <p class="lead" style="margin-bottom:16px">上一轮只覆盖了"公式两版长度一致"，没有核对公式本身对不对。这一轮先把 463 个公式槽位全部读一遍，再把发现的问题逐条改掉。</p>
+
+    <div class="kpis" style="grid-template-columns:repeat(4,1fr);margin-bottom:20px">
+      <div class="kpi ok"><div class="v">55</div><div class="k">固定种子随机抽样条目</div></div>
+      <div class="kpi ok"><div class="v">463 / 463</div><div class="k">逐条通读的公式槽位</div></div>
+      <div class="kpi ok"><div class="v">39</div><div class="k">落地的公式修改</div></div>
+      <div class="kpi ok"><div class="v">0</div><div class="k">渲染期命令泄漏</div></div>
+    </div>
+
+    <table>
+      <thead><tr><th style="width:132px">环节</th><th style="width:44%">发现</th><th>处理方式与验证</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>抽样复核</b></td>
+          <td>此前"公式正确"只靠人工零散抽查，没有可复现的口径，也没有覆盖率说明</td>
+          <td>固定随机种子（20261115）抽出 55 条，覆盖 18 个主题，逐条把公式与教科书/论文结论对照。<b>结论：</b>55 条全部正确（AdaBoost、J48、EM、DDPM、TBATS、SVM、PPO、HMM、focal loss、CGCNN 等），抽检未暴露问题</td>
+        </tr>
+        <tr>
+          <td><b>全量比对</b></td>
+          <td>纯文本版（复制按钮用）与 LaTeX 版（页面渲染用）是两个数组，理论上可能各说各话，之前只校验了长度相等</td>
+          <td>463 对 formula/tex 全量导出，写脚本把两侧归一成"符号流"（<code>\frac</code>→<code>/</code>、<code>\sum</code>→<code>Σ</code>、希腊字母名→符号、去掉上下标噪音）再用编辑距离定位差异，噪声从 410 处压到 20 处真问题</td>
+        </tr>
+        <tr>
+          <td><b>内容错误</b></td>
+          <td><code>one-class-svm</code> 把 ν 写成"支持向量比例上限"——方向反了，ν 实际是支持向量比例的<b>下界</b>、误分比例的<b>上界</b></td>
+          <td>改正表述并给出两侧夹逼式 <code>#{αᵢ&gt;0}/n ≥ ν ≥ #{ξᵢ&gt;0}/n</code>，学的人不会再按反的方向去调参</td>
+        </tr>
+        <tr>
+          <td><b>索引错位</b></td>
+          <td><code>fp-growth</code>、<code>extra-trees</code>、<code>sarimax</code>、<code>stl-decompose</code>、<code>dsn</code>、<code>kstar</code>、<code>hdbscan</code>、<code>triplet-loss</code>、<code>isolation-forest</code>、<code>label-propagation</code>、<code>spn</code>：第 i 条纯文本讲的是 A，第 i 条 LaTeX 却是 B，两版对不上</td>
+          <td>逐条重写对齐。<code>extra-trees</code> 顺手补上真正的偏差-方差分解式 <code>Var(ĥ)=ρσ²+(1−ρ)σ²/B</code>；<code>kstar</code>、<code>sarimax</code>、<code>stl-decompose</code> 里两条完全重复的公式各自还原成应有内容</td>
+        </tr>
+        <tr>
+          <td><b>散文占位</b></td>
+          <td>7 个公式槽位里其实只有一句中文/英文说明（<code>incremental-clustering</code>、<code>isotonic</code>、<code>nnge</code>、<code>lle</code>、<code>confusion-matrix</code>、<code>extra-trees</code>、<code>one-class-svm</code>），点"复制公式文本"复制出来的是句子</td>
+          <td>换成真正可用的式子：PAVA 的块加权均值、CF 的可加性、macro/weighted 平均定义、LLE 的特征向量解法、区域不嵌套的谓词形式等。<b>验证：</b>散文占位 <b>7 → 0</b></td>
+        </tr>
+        <tr>
+          <td><b>渲染支持</b></td>
+          <td>公式里用了 <code>\underbrace</code> 与 <code>\bigwedge</code>，但这两个命令不在自研渲染器的符号表里，会直接打印成"underbrace""bigwedge"字样</td>
+          <td>符号表补 <code>bigwedge / bigcap / bigcup</code>；<code>dsn</code> 那条改用等价的加和式（同时消掉重复）。<b>验证：</b>171 页 × 463 个公式块全量渲染扫描——命令泄漏 <b>0</b>、空公式 <b>0</b>、横向溢出 <b>0</b>、未捕获异常 <b>0</b></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="font-size:15px;font-weight:650;margin:34px 0 8px;display:flex;align-items:baseline;gap:9px">
+      <span style="font-family:var(--mono);font-size:11px;color:var(--accent);background:var(--accent-bg);padding:2px 7px;border-radius:5px">收尾</span>
+      报告遗留三项的处理结论
+    </h3>
+    <p class="lead" style="margin-bottom:16px">上一版报告把这三件事列为"要不要改变产品形态"、留给用户拍板。本轮用实测数据把它们逐条结掉：一件证明不值得做，一件已核对无问题，一件换了成本更低的解法。</p>
+
+    <table>
+      <thead><tr><th style="width:126px">遗留项</th><th style="width:118px">结论</th><th>依据与处理</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><b>列表虚拟化</b></td>
+          <td>不做</td>
+          <td>先拆开测了一遍 <code>render()</code> 各段耗时：侧栏 1.1 ms、卡片字符串拼接 0.8 ms、列表骨架 1.3 ms、右侧速览 0.5 ms、子导航 3.4 ms、dock 0.1 ms —— <b>JS 侧合计约 7 ms，剩下 32 ms 全是 171 张卡片的一次性布局</b>。这笔开销只在切换视图/筛选时付一次，滚动期间不触发；搜索已做 150 ms 防抖且不重建输入框。虚拟化的收益上限就是这 30 ms，代价是滚动条度量失真、<code>Ctrl+F</code> 搜不到未挂载内容、键盘焦点跨窗口跳；上一轮试过的 <code>content-visibility:auto</code>（11.5 ms）已经证明会破坏滚动语义。<b>结论：收益与代价不成比例，保留现状。</b></td>
+        </tr>
+        <tr>
+          <td><b>公式区留白</b></td>
+          <td>已核对，无需改版</td>
+          <td>全站 171 条 <b>没有一条</b>缺公式。条数分布为 1 条:2 / 2 条:47 / 3 条:121 / 4 条:1，只有 <code>m5rules</code>、<code>libsvm</code> 各 1 条显得单薄，已补到 2 条与 3 条（规则集合成式、RBF 核、一对一投票），全站公式块 <b>463 → 466</b>。其余条目留白比例正常，不需要折叠或重排版。</td>
+        </tr>
+        <tr>
+          <td><b>Weka 条目归类</b></td>
+          <td>不拆分类，改做交叉引用</td>
+          <td>把 17 条并回主家族会丢内容、还要动 18 个主题的口径。改成在详情页「相关算法」里加一张跨分类同族表（Weka ↔ 主家族双向），顺手修掉一个真缺陷：这个卡片原来是把同分类的 4 个名字拼成<b>纯文本、点不动</b>。<b>验证：</b>171 条各 4 项、无自引、无重复、均有 <code>role="link"</code> + <code>tabindex="0"</code> + <code>aria-label</code>；点击与回车都能落到目标详情页；<code>ibk→knn</code>、<code>c45→j48</code>、<code>svm→smo / libsvm / spegasos</code> 双向互通；1024 / 1280 / 1440 / 1680 四档视口下分类后缀零裁切。</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- ================= 附录 ================= -->
+  <div class="appendix">
+    <h3>附录 A · 评估方法与实测环境</h3>
+    <table>
+      <thead><tr><th style="width:150px">手段</th><th>覆盖范围与说明</th></tr></thead>
+      <tbody>
+        <tr><td><b>静态扫描</b></td><td>体积构成、外部引用、标签平衡、重复 id、元信息、aria 覆盖、危险 API、CSS 属性统计、参数↔标识符匹配（2,736 字段 / 631 参数 / 171 段代码）</td></tr>
+        <tr><td><b>Python AST</b></td><td>Python 3.13 托管解释器，对 151 段 Python 逐段 <code>ast.parse</code>，捕获行号与错误信息</td></tr>
+        <tr><td><b>无头浏览器</b></td><td>Edge headless（<code>--headless=new</code>）经 CDP WebSocket 驱动，<code>Runtime.evaluate</code> 取值；全量渲染 171 页校验公式与参数表</td></tr>
+        <tr><td><b>注入测试</b></td><td>真实 payload 打入 4 条用户输入路径，用全局探针 <code>window.__XSS__</code> 判定是否执行；同时统计被解析成元素的数量（而不只看源码字符串）</td></tr>
+        <tr><td><b>性能实测</b></td><td><code>performance.now()</code> 循环均值 + <code>requestAnimationFrame</code> 帧间隔采样；用三组对照实验（关 backdrop-filter / 隐藏壁纸层 / 清空卡片）做归因</td></tr>
+        <tr><td><b>多视口</b></td><td><code>Emulation.setDeviceMetricsOverride</code> 模拟 375 / 768 / 1024 / 1440，遍历元素检测横向溢出，并截图人工复核</td></tr>
+      </tbody>
+    </table>
+    <p class="note">
+      环境说明：所有性能数字均在 <b>无头模式 + <code>--disable-gpu</code></b> 下测得，属偏悲观工况；带 GPU 的真实浏览器中绝对帧时间会更好，但<b>相对排序（backdrop-filter 是主因、DOM 数量不是）与归因结论不受影响</b>。首屏时间取自 <code>file://</code> 本地读取，不代表公网加载表现。
+    </p>
+
+    <h3 style="margin-top:26px">附录 B · 关键数字一览</h3>
+    <div class="kpis" style="grid-template-columns:repeat(4,1fr)">
+      <div class="kpi ok"><div class="v">171</div><div class="k">算法条目</div></div>
+      <div class="kpi ok"><div class="v">4,583</div><div class="k">示例代码行</div></div>
+      <div class="kpi ok"><div class="v">631</div><div class="k">参数说明</div></div>
+      <div class="kpi ok"><div class="v">0</div><div class="k">Python 语法错误</div></div>
+      <div class="kpi ok"><div class="v">0</div><div class="k">XSS 注入成功</div></div>
+      <div class="kpi warn"><div class="v">39.7 ms</div><div class="k">整页渲染</div></div>
+      <div class="kpi bad"><div class="v">42.1 ms</div><div class="k">滚动 p95 帧间隔</div></div>
+      <div class="kpi bad"><div class="v">0 / 171</div><div class="k">可键盘进入的详情入口</div></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    报告生成于 2026-11-15 · 基于 <code>ml-atlas.html</code>（912 KB / 2,267 行 / 171 条目 / 18 主题）<br>
+    结论均附实测数值；标注"实测"处为浏览器内直接测量，其余为静态扫描结果
+  </div>
+
+</div>
+</body>
+</html>

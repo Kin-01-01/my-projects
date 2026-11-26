@@ -1,0 +1,753 @@
+=== PAGE 1 ===
+RESEARCH ARTICLE
+www.advmat.de
+Mechanistic Understanding of the Underlying Energy
+Storage Mechanism of 𝜶-MnO2-based
+Pseudo-Supercapacitors
+Lei Deng, Zaifa Wang, Hantao Cui, Yunna Guo, Zhangran Ye, Hui Li, Xinyu Zhang,
+Peng Jia,* Qiaobao Zhang,* and Liqiang Zhang*
+Manganese dioxide (𝜶-MnO2) has attracted signiﬁcant research interest
+in supercapacitors recently. However, the reaction mechanism of 𝜶-MnO2
+in supercapacitors remains unclear. Therefore, a nano-supercapacitor using
+Environmental transmission electron microscopy (ETEM) is conducted and
+investigated the reaction mechanism of 𝜶-MnO2 based on three ionic liquids
+(ILs). It found that in the aprotic ionic liquid (AIL) 1-ethyl-3-methylimidazolium
+triﬂuoromethanesulfonate (EMIMOTF), 𝜶-MnO2 nanowires (NWs)
+undergo an oxidation reaction due to the presence of an active proton at the
+second position (H2) of the imidazole ring. As a result, 𝜶-MnO2 NWs undergo
+a phase transition and transform into Mn3O4, exhibiting pseudo-capacitive
+properties. Furthermore, characterization of the macroscopic 𝜶-MnO2
+electrodes after cycling reveals that after the initial charging cycles, the
+dominant energy storage mechanism of the supercapacitor transitions from
+pseudo-capacitance to a dual-layer capacitance formed by the combination
+of Mn3O4 and unreacted 𝜶-MnO2. Simultaneously, due to the coexistence
+of these two energy storage mechanisms, the speciﬁc capacitance of the
+supercapacitor in EMIMOTF electrolyte reaches up to 80 F g−1, and the cycle
+number reaches as high as 1000 cycles. The results are expected to provide
+insights into the selection of electrolytes in supercapacitors and oﬀer a
+fundamental understanding of the internal reaction mechanisms in capacitors.
+L. Deng, Z. Wang, H. Cui, Y. Guo, Z. Ye, H. Li, X. Zhang, P. Jia, L. Zhang
+Clean Nano Energy Center, State Key Laboratory of Metastable Materials
+Science and Technology
+Yanshan University
+Qinhuangdao 066004, China
+E-mail: [邮箱已脱敏];[邮箱已脱敏]
+P.Jia
+Hebei Key Laboratory of AppliedChemistry,Collegeof Environmental and
+Chemical Engineering
+Yanshan University
+Qinhuangdao 066004,China
+Q.Zhang
+StateKey Laboratory of Physical Chemistry of SolidSurfaces,Collegeof
+Materials
+Xiamen University
+Xiamen 361005,China
+E-mail: [邮箱已脱敏]
+Q.Zhang
+Longmen Laboratory
+Luoyang,Henan 471023,China
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adma.202408476
+DOI: 10.1002/adma.202408476
+1. Introduction
+Sustainable
+and
+renewable
+energy
+re-
+sources
+are
+being
+intensively
+pursued
+owing to the diminishing supply of fossil
+fuels and global warming. Manganese
+dioxide (𝛼-MnO2) based supercapacitors
+have relatively high energy densities and
+a longer cycle life than those of tradi-
+tional batteries.[1–3]
+It utilized 𝛼-MnO2
+as the active material for energy storage.
+The 𝛼-MnO2 electrode exhibited pseudo-
+capacitive behavior, enabling high energy
+storage capacity and fast charge-discharge
+rates.[4,5]
+However,
+𝛼-MnO2
+based
+su-
+percapacitors still have several technical
+bottlenecks:
+1)
+Limited
+cyclability
+and
+stability;[6,7] 2) The unclear microscopic
+mechanism. Therefore, the development
+of 𝛼-MnO2 based supercapacitors is still a
+research hotspot.[8–10]
+In 𝛼-MnO2-based material supercapaci-
+tors, the electrolyte is a key part that governs
+the overall performance.[11–15] Ye et al.[16]
+revealed the deposition/dissolution process
+in aqueous electrolyte with diﬀerent pro-
+ton concentrations, ﬁnding that MnOOH
+is the Mn3+-intermediate in neutral electrolytes and then chem-
+ically dissolved in the electrolyte as the proton concentration in-
+creases. The dissolution causes a loss of active species and greatly
+decreases the discharge capacity. Common aqueous electrolytes,
+due to the water decomposition at high voltages, have narrow po-
+tential windows (0–1.0 V), which limit the capacitance.[17–19] To
+solve this problem, ionic liquid (IL) families might be promising
+electrolytes to increase the operating voltage for supercapacitors,
+which have low vapor pressure, large electrochemical potential
+windows (0–3.0 V), and good thermal and chemical stability.[20]
+Shi et al.[21] showed the electrochemical behavior in a series of
+ILs, ﬁnding that graphene sheet ionic liquid exhibits the highest
+speciﬁc capacitance due to the cation and anion insertion. Chang
+et al.[22] indicate that the linear-shape anion in ILs, such as di-
+cyanamide (DCA−) and thiocyanate (SCN−) anions, instead of the
+cation with a large imidazolium ring, is the working ion that can
+be reversibly inserted into and deserted from the tunnels between
+the [MnO6] octahedral units. The previous reports only focused
+on the electrochemical performance of supercapacitors and there
+is no study on the mechanism of the faradaic process between
+Adv. Mater. 2024, 2408476
+© 2024 Wiley-VCH GmbH
+2408476 (1 of 10)
+
+=== PAGE 2 ===
+www.advancedsciencenews.com
+www.advmat.de
+𝛼-MnO2 and pure ILs by electron microscope. It appears that de-
+spite the progress made, more work in this area is necessary to
+understand and rationalize the behavior of diﬀerently active pro-
+tons of ILs for improving the charge storage ability of 𝛼-MnO2.
+Surface chemisorption and bulk insertion phenomena of the ions
+could hardly be distinguished, due to a lack of powerful character-
+ization techniques to be able to visualize the pseudo-capacitance
+of 𝛼-MnO2 in the high spatial resolution and provide real-time
+information on its structural variation.
+In this work, an in situ 𝛼-MnO2 nano-supercapacitor sys-
+tem was set up in the environmental transmission electron mi-
+croscopy (ETEM) to investigate the pseudo-capacitive reaction
+mechanism by using three ILs with diﬀerent proton availabil-
+ity. We will provide real-time information on the reduction of
+𝛼-MnO2 nanowires (NWs), the structure and morphology of the
+reductive products after cycles, and the electrochemical perfor-
+mance, combining macroscopic and microscopic results to reveal
+the faradaic mechanism in 𝛼-MnO2-based supercapacitor.
+2. Results and Discussion
+2.1. Nano-Supercapacitor
+To validate the faradaic process in 𝛼-MnO2 based capacitors, an
+in situ study was conducted on a pseudo-supercapacitor based
+on 𝛼-MnO2 using the ETEM (FEI, Titan G2, 300 kV). The exper-
+imental setup is illustrated in Figure S1 (Supporting Informa-
+tion). The nano-supercapacitor comprises an anode composed
+of 𝛼-MnO2 NWs attached to a conductive aluminum (Al) rod,
+and the counter electrode consists of ILs scratched on a sharp
+Al tip in conjunction with 𝛼-MnO2 NWs. ILs serve as the con-
+ductor for 1-ethylimidazole, 1-ethyl-3-methylimidazolium, and
+hydrogen cation ions (EIM+, EMIM+, and H+ ions) during the
+discharge process. Moreover, it is well known that ionic liquids
+are stable under the electron beam to prevent decomposition or
+evaporation. Once a contact angle between 𝛼-MnO2 NWs and ILs
+was established, a negative bias was applied to the 𝛼-MnO2 NWs
+against the counter electrode to stimulate the faradaic process
+in supercapacitor storing charges. Figure S2 (Supporting Infor-
+mation) presents the hydrothermal synthesis of 𝛼-MnO2 pow-
+der, and the characterization of the sample is shown in Figure
+S3 (Supporting Information). The tetragonal 𝛼-MnO2 NWs (PDF
+44–0141) are characterized by a high-resolution transmission
+electron microscope (HRTEM) image and the corresponding se-
+lected area electron diﬀraction (SAED) pattern can be observed
+in Figure S3b,c (Supporting Information). The SAED of the pris-
+tine 𝛼-MnO2 NWs can be indexed as (101), (3̄10) and (21̄1) planes
+of 𝛼-MnO2. Moreover, the 𝛼-MnO2 NWs are characterized by the
+high-angle annular dark ﬁeld (HAADF, Figure S3d–g, Support-
+ing Information) images indicating the pristine 𝛼-MnO2 NWs
+along [001] zone axis. The 𝛼-MnO2 NWs have an irregular sur-
+face with several facets and possess ideal 1 × 1 (1.9 Å × 1.9 Å) and
+2 × 2 (4.6 Å × 4.6 Å) atomic tunnels which match well with the
+atomic model of 𝛼-MnO2. Not only that there are some 2 × 4 and 4
+× 4 tunnels, formation of intermediate tunnels, in high magniﬁ-
+cation shown in Figure S3g (Supporting Information).[23] Due to
+the use of KMnO4 as the precursor, the structure of 𝛼-MnO2 stabi-
+lized by K+ introduced during the synthesis process. The HAADF
+images provide a clear visualization of the bright spots surround-
+ing each tunnel, which correspond to the Mn atomic columns
+(indicated by the purple dots).
+Figure S4 (Supporting Information) shows the proton nu-
+clear magnetic resonance spectroscopy (1H NMR) of ILs. It is
+known to all that the key feature that distinguishes protic ionic
+liquids (PILs) from other ILs is the proton transfer from the
+acid to the base. Due to the incomplete proton transfer, there
+are lots of neutral species and ion pair aggregates.[24,25] As for
+the PIL 1-ethylimidazolium hydrogen sulfate (EIMHSO4), the
+highest positive charge is concentrated on the proton at po-
+sition 2 on the imidazole ring (H2), and the respective peak
+is shifted downﬁeld signiﬁcantly (9.17 ppm). It is worth not-
+ing that 1-ethyl-3-methylimidazolium triﬂuoromethanesulfonate
+(EMIMOTF) is typically classiﬁed as an aprotic ionic liquid (AIL).
+However, an interesting observation is that the chemical shift
+of the proton H2 occurring at 8.78 ppm suggests a diﬀerent
+chemical environment or interaction compared to what was pre-
+viously mentioned.[26,27] And the 1-butyl-1-methylpyrrolidinium
+bis(triﬂuoromethanesulfonyl) imide (PYR14TFSI) is an AIL with
+no active protons. The general trend observed in this series of
+spectra is that as the strength of the acid increases, the chemi-
+cal shift of the exchangeable proton is shifted upﬁeld (to lower
+ppm values). Moreover, Gehrke et al.[25] indicated that hydrogen
+bonds of the imidazolium cation are primarily formed by the
+most acidic hydrogen atom, H2, and along with the other hy-
+drogen atoms of the cation ring, H4, and H5 (protons at posi-
+tions 4 and 5, respectively). Watanable et al.[28] revealed that the
+proton conduction mechanism changes from proton hopping to
+a vehicle mechanism with increasing acidity in PILs. This sug-
+gests that the hydrogen bonding interactions involving H2 can
+signiﬁcantly inﬂuence the chemical environment and chemical
+shifts in EMIMOTF, which is proven by experimental data in the
+following.
+To investigate the diﬀerent storage mechanisms of the 𝛼-
+MnO2-based supercapacitor involving H2 of diﬀerent chem-
+ical environments in EIMHSO4 and EMIMOTF electrolytes,
+Figure 1 illustrates the structure and phase characterization of
+𝛼-MnO2 NWs during the charging process. The phase structure
+of the discharge product was investigated by SAED (Figure 1c–e)
+marked by “I”, “II” and “III” respectively. During the discharge
+process, the diﬀraction spots (marked by yellow) in the com-
+pletely reactive segment (Figure 1e) become diﬀused arching and
+can be indexed as (01̄3) and (̄11̄2) planes of tetragonal Mn3O4
+(PDF 24–0734), at the same time the diﬀraction spots of unre-
+active 𝛼-MnO2 (marked by brown) are dim. Notably the same
+as the above experiment phenomenon is observed for AIL EMI-
+MOTF. The SAED (Figure 1h–j) shows discharge product is
+Mn3O4 indicating the EMIMOTF is associated with a proton con-
+duction between the EMIMOTF and 𝛼-MnO2. For PYR14TFSI,
+the sharp diﬀraction spots of 𝛼-MnO2 (Figure 1m–o) indicate
+there is no faradaic process in AILs with any active proton. The
+raw diﬀraction images about relative segments (III parts) in
+EIMHSO4 and EMIMOTF are shown in Figure S5 (Supporting
+Information).
+The above SAED results are supported by electron energy
+loss spectroscopy (EELS) of the relative segment (Figure 1p,q),
+in which the oxygen pre-peak (O-K), and Mn-L2,3 edge are in-
+dicated. Their absolute energy scales are precisely calibrated by
+using a manual double-checking of the position of the zero-loss
+Adv. Mater. 2024, 2408476
+© 2024 Wiley-VCH GmbH
+2408476 (2 of 10)
+ 15214095, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202408476 by Yunnan Normal University, Wiley Online Library on [23/09/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 3 ===
+www.advancedsciencenews.com
+www.advmat.de
+Figure 1. Time-lapse structure evolution of 𝛼-MnO2 NWs cathode and SAED patterns in a–e) EIMHSO4, f–j) EMIMOTF, k–o) and PYR14TFSI. p,q) The
+EELS spectrum of the reactive segments in three electrolytes and pristine 𝛼-MnO2 NWs.
+peak and the background was removed by a power-law ﬁtting in
+the pre-edge region of the spectrum.[29,30] The core-loss spectrum
+of the discharging 𝛼-MnO2 NWs in PYR14TFSI electrolyte (blue
+line) shows that the pre-peak at 533 eV matches that of pristine
+𝛼-MnO2 NWs(red line, 532.5 eV) within the allowed error range.
+During the discharge of 𝛼-MnO2 NWs in the EIMHSO4 (green
+line) and EMIMOTF (black line) electrolyte, a decrease in the
+intensity of O-K is observed, representing the reduction of Mn
+ions.[30] Additionally, the high similarity of Mn-L2,3 edge energy
+loss near edge structures (ELNES) for discharging products in
+the diﬀerent electrolytes is shown in Figure 1q. The completely
+discharging segments in EIMHSO4 and EMIMOTF electrolytes
+were the well-crystalized Mn3O4 particles. Moreover, the Mn-L2,3
+edge demonstrates a shift toward lower energy losses, speciﬁ-
+cally at 640.2 and 643.5 eV, respectively, when examining the dis-
+charging product in the EIMHSO4 and EMIMOTF electrolytes,
+in contrast to the energy position of the Mn-L2,3 edge in pristine
+𝛼-MnO2 NWs (644.9 eV). The slight shift (640.2 and 643.5 eV) of
+the Mn-L2,3 edge is due to the diﬀerent proportions of manganese
+oxides. The reason is that the chemically distinct environments of
+the proton. The above results indicate that the EMIMOTF acts as
+a proton donor which is similar to PILs, and exhibits a propensity
+to interact with 𝛼-MnO2, resulting in the formation of Mn3O4 and
+generating the pseudo-capacitance. This ﬁnding deviates from
+the conventional reports.[15] To conﬁrm the presence of pseudo-
+capacitance in EMIMOTF, additional experimental data demon-
+strating the repeatability of these tests are presented in Figure S6
+(Supporting Information).
+Adv. Mater. 2024, 2408476
+© 2024 Wiley-VCH GmbH
+2408476 (3 of 10)
+ 15214095, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202408476 by Yunnan Normal University, Wiley Online Library on [23/09/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 4 ===
+www.advancedsciencenews.com
+www.advmat.de
+Figure 2. Electrochemical performance of supercapacitor in EMIMOTF electrolyte. a) CV curve of pure EMIMOTF electrolyte. b) GCD proﬁle of the initial
+ﬁve cycles. c) The long cycle performance. d) GCD proﬁle at diﬀerent current densities of 50, 200, 300, and 500 mA g−1.
+2.2. Macro-Supercapacitor
+To investigate the electrochemical response of 𝛼-MnO2 in ILs and
+establish the consistency of 𝛼-MnO2 charge storage at both the
+macroscopic and microscopic scales. We conducted the 𝛼-MnO2-
+based supercapacitors with diﬀerent ILs, and the chemical perfor-
+mance of EMIMOTF is presented in Figure 2a–d. Figure 2a indi-
+cates that the cathodic and anodic breakdown potentials of this IL
+are ≈−3.0 and 3.0 V, respectively. Besides, we found the 𝛼-MnO2
+was unstable in this electrolyte. After a few Cyclic Voltammetry
+(CV) scans, an irreversible cathodic reaction occurred which is lo-
+cated at 1.7 V. As the scan increases to the third cycle, the cathodic
+reaction has almost completely disappeared and the CV curves
+exhibit rectangular shapes and mirror-image features.[8,10,31,32] A
+similar response is shown in Figure 2b. As can be seen, the
+charging and discharging branches are non-linear and asymmet-
+ric in the initial cycles, again indicating the irreversible pseudo-
+capacitive performance of 𝛼-MnO2 at a potential range of 1.5–
+2.0 V. A near triangular-shaped galvanostatic charge–discharge
+(GCD) proﬁles after the initial cycles, is indicative of smooth
+charge propagation across the two electrodes, characteristics of a
+good electrochemical capacitor. Figure S7 (Supporting Informa-
+tion) shows the X-ray diﬀraction (XRD) spectrum of both pos-
+itive and negative electrodes in EMIMOTF. While there is no
+phase transformation at the positive electrode (brown line), the
+XRD spectrum indicates the presence of Mn3O4 at the negative
+electrode (black line). Overall, the faradaic process involving the
+transformation between MnO2 and Mn3O4 occurs during the ini-
+tial charges. This has been proven by HAADF images shown
+in Figure S8 (Supporting Information). Figure S8a (Supporting
+Information) illustrates a phase transformation from MnO2 to
+Mn3O4 at the negative electrode, while no phase transformation
+occurs at the positive electrode in Figure S8b (Supporting In-
+formation). This ﬁnding is consistent with the results presented
+above.
+Figure 2c displays that the capacitance measured at 0.1–2.0 V
+in the ﬁrst cycle exceeds 80 F g−1. It is observed that 𝛼-MnO2
+in pure IL has unstable performance with ≈41% retention of
+capacity in the ﬁrst ten cycles. This poor cycling performance
+is caused by irreversible pseudo-capacitance. Furthermore, there
+is 76% capacitance retention after 1000 cycles, due to a contri-
+bution from double-layer capacitance of Mn3O4. The GCD pro-
+ﬁles at diﬀerent current densities of 50, 200, 300, and 500 mA
+g−1 are shown in Figure 2d. A good linear relationship of the
+charging–discharging potentials with time at the current den-
+sities of 300 and 500 mA g−1 is observed, indicating a smooth
+charge propagation across the two electrodes, due to a low contri-
+bution of pseudo-capacitance. However, the curves display a non-
+triangular shape at the low current densities of 50 and 200 mA
+g−1, due to an irreversible pseudo-capacitance, resulting a poor
+coulombic eﬃciency. A non-triangular-shaped GCD proﬁle, as
+observed for the supercapacitor at the current densities of 50
+and 200 mA g−1, indicates that most charge propagation across
+the two electrodes is not smooth so that characteristics of a poor
+coulombic eﬃciency in the ﬁrst forty cycles. Other electrochem-
+ical performances are shown in Figure S9 (Supporting Informa-
+tion), illustrating the CV proﬁles and the GCD proﬁles of 𝛼-MnO2
+electrodes measured in EIMHSO4, EMIMOTF, and PYR14TFSI
+respectively.
+Figure S9a (Supporting Information) displays the CV curve
+measured in the EIMHSO4 electrolyte. It reveals a distinct reduc-
+tion peak at ≈1 V during the initial cycles. However, as the scan
+increases to the third cycle, the cathodic reaction becomes nearly
+non-existent. Additionally, the CV curves exhibit rectangular
+shapes and mirror-image features. In Figure S9b (Support-
+ing Information), the obtained charge and discharge curve
+Adv. Mater. 2024, 2408476
+© 2024 Wiley-VCH GmbH
+2408476 (4 of 10)
+ 15214095, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202408476 by Yunnan Normal University, Wiley Online Library on [23/09/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 5 ===
+www.advancedsciencenews.com
+www.advmat.de
+Figure 3. Atomic resolution HAADF images of the cross-section of the 𝛼-MnO2 based electrodes after the ﬁrst charge of which the cutoﬀvoltage was
+set to 1.7 V in a,b) EIMHSO4, c,d) EMIMOTF, e,f) and PYR14TFSI electrolyte respectively. g,h) The product after 500 cycles. The HAADF images in
+high magniﬁcation are from a relative orange dashed frame. The yellow dots represent the Mn3O4 structure and the purple dots represent the 𝛼-MnO2
+structure.
+illustrates
+the
+sequential
+charge–discharge
+cycles
+in
+the
+EIMHSO4 electrolyte. During the initial cycles, a prominent
+charge plateau (ranging from 1.0 to 1.5 V) is observed, further
+indicating that the primary storage mechanism of the pseudo-
+supercapacitor involves an irreversible phase transformation,
+followed by a transition to a double-layer mechanism. Figure S9c
+(Supporting Information) shows the CV curve in EMIMOTF.
+The peak locates at 1.7 V corresponds well to the theoretical
+potential of Mn4+ reduction Mn3+,[33] again indicating that
+there is a reduction by active proton at the 𝛼-MnO2 electrode
+indeed. In comparison, symmetric charge-discharge proﬁles in
+the voltage range of 0.01–2 V for the PYR14TFSI are depicted
+in Figure S9e,f (Supporting Information), demonstrating ex-
+cellent agreement with their rectangular CV behavior and the
+dominance of double-layer capacitances. We identify the charge
+storage mechanism as a non-faradaic process in the PYR14TFSI.
+2.3. Characterization of Cycled 𝜶-MnO2 Electrode
+Figure 3 presents the analysis of the structure and chemical com-
+position of the charged product by HAADF images, providing
+additional conﬁrmation of the results obtained from the electro-
+chemical tests. The sample presentment is that the cutoﬀvolt-
+age of the ﬁrst charge was set to 1.7 V controlling the state of
+the charged 𝛼-MnO2 electrode. To observe the internal struc-
+ture of 𝛼-MnO2 more clearly, we prepared TEM samples by mi-
+crotome technique which is shown in Figure S10 (Supporting
+Information).
+Figure 3a,b indicate the cross-section of reductive product in
+EIMHSO4 electrolyte, revealing the presence of numerous voids
+with a reduced diameter. Additionally, a few Mn3O4 particles
+can be observed at the edges of these voids (represented by yel-
+low dots). The rapid electrochemical dissolution kinetics in the
+acid electrolyte can be attributed to the decrease in Mn oxidation
+states, which leads to the weakening of Mn─O covalency. In ad-
+dition, the TEM images of the 𝛼-MnO2 NWs structural morphol-
+ogy measured in EIMHSO4 are shown in Figure S11a–d (Sup-
+porting Information). It can be observed that the surface of the
+𝛼-MnO2 NWs becomes rough and jagged (indicated by white ar-
+rows) compared to the smooth sidewalls of the pristine NWs, and
+the average length decreases by ≈50 nm. Figure S11c (Supporting
+Information) demonstrates that a portion of the NW consists of
+𝛼-MnO2 nanocrystalline regions, with the SAED pattern (Figure
+S11d, Supporting Information) orientated at the [111] zone axis.
+The Mn3O4 particles cannot be detected in TEM images due to
+insuﬃcient resolution but are clear by using HAADF in Figure
+S11e–h (Supporting Information).
+Figure 3c,d, orientated at the [001] zone axis, indicates the re-
+ductive product in EMIMOTF electrolyte. Compared with the
+product in the EIMHSO4 electrolyte, there is a large amount of
+Mn3O4 particles without violent dissolution. Figure S12a–c (Sup-
+porting Information) demonstrates that the surface of 𝛼-MnO2
+NWs remains smooth and represents the (110) plane of 𝛼-MnO2
+and (̄11̄2) plane of Mn3O4. Figure S13 (Supporting Information)
+illustrates the Mn3O4 structure at the edge of the referred parti-
+cles (Figure 3c). Besides, Figure 3e,f show the reductive product
+in the PYR14TFSI electrolyte. Like with the in situ experimental
+Adv. Mater. 2024, 2408476
+© 2024 Wiley-VCH GmbH
+2408476 (5 of 10)
+ 15214095, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202408476 by Yunnan Normal University, Wiley Online Library on [23/09/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 6 ===
+www.advancedsciencenews.com
+www.advmat.de
+result, there is a non-faradaic process on the 𝛼-MnO2 electrode
+surface. Other data can be found in Figure S14 (Supporting In-
+formation).
+Figure 3g,h demonstrate that the product after 500 cycles in
+EMIMOTF, the good structure of both MnO2 and Mn3O4 con-
+tributes to the long cycles and capacitance for MnO2-based su-
+percapacitors. In comparison, Figure S15 (Supporting Informa-
+tion) displays the product after 500 cycles in EIMHSO4, the di-
+ameters of the nanowires are less than 15 nm, and the sur-
+face of the particle maintains the Mn3O4 crystal structure in few
+nanocrystals.
+To
+further
+conﬁrm
+the
+valence
+state
+of
+the
+macro-
+supercapacitor reductive product, Figure S14f (Supporting
+Information) is the core-loss spectrum of the product in three
+electrolytes. It can be seen the pre-peak intensity of the O
+element, represented by the black curve, exhibits a signiﬁcant
+decrease in the EMIMOTF electrolyte. This represents the
+decrease of the valence state of Mn, which is also accompanied
+by the shift of the Mn-L2,3 peak position to low energy. The
+reduction product of PYR14TFSI (represented by blue) can be
+conclusively identiﬁed as consisting of Mn4+ ions within the
+scope of space permission. Although among the reduction
+products of EIMHSO4, we found that the peak position and
+peak shape match well with Mn4+, which is diﬀerent from the
+above in situ EELS results. We suggest that 𝛼-MnO2 undergoes
+dissolution in the electrolyte, resulting in the formation of amor-
+phous Mn3+ species after the charging process. Meanwhile, the
+remaining NWs continue to maintain their 𝛼-MnO2 composition
+within a macroscopic supercapacitor in EIMHSO4. This is the
+result that there is no Mn3+ when we collect the valence state
+of the NWs. The dissolution is proven by in situ TEM shown
+in Figure S16 (Supporting Information). As time goes on, EMI-
+MOTF will follow the nanowire upward until a big bulge appears
+(Figure S16c, Supporting Information). Then the diameter of
+the nanowire became ﬁne until it broke which is marked by a
+red row.[33,34] We believe that 𝛼-MnO2 undergoes dissolution
+in the protic ionic liquids. Moreover, we also further verify the
+above results through some macroscopic testing methods such
+as X-ray diﬀraction (XRD) and X-ray photoelectron spectroscopy
+(XPS).
+To conﬁrm the reduction product again, XRD spectrums from
+the reductive product in diﬀerent electrolytes are shown in
+Figure 4a. The Mn3O4 forms (PDF 24–0734) during the charge
+in EMIMOTF electrolyte which is with consistent the above TEM
+and HAADF results. In addition, the 𝛼-MnO2 electrode indeed
+has no phase transformation during electrochemical cycling in
+the PYR14TFSI electrolyte. It is worth noting that the poor crys-
+tallinity of Mn3O4 in EIMHSO4 electrolyte like with the above ex-
+perimental results indicates the violent dissolution due to the H2.
+We also performed the XPS analysis to determine the elements
+present and their corresponding valence states. Figure 4b–g
+shows the XPS results for the product charged in three diﬀer-
+ent electrolytes. According to the Mn 2p spectra from the pris-
+tine 𝛼-MnO2 NWs (Figure 4h,i), the peaks located at ≈642.1 and
+653.95 eV with the separation of 11.85 eV could be attributed to
+Mn 2p3/2 and Mn 2p1/2.[35] These values align closely with the
+reported for the 𝛼-MnO2 and indicate an oxidation state of man-
+ganese is Mn4+. The O 1s spectra (Figure 4i) are composed of the
+Mn-O bond (located at 531.1 eV).
+Besides, Figure 4b,c illustrate the formation of poor crystal
+products in the EIMHSO4 electrolyte. The Mn 2p spectra can
+be accurately ﬁtted with two doublets. The doublet observed
+at 641.65 eV corresponds well to previously reported values
+for Mn3+, while the doublets at 653.25 eV align with 𝛼-MnO2.
+In comparison to the initial 𝛼-MnO2 NWs doublet located at
+642.1 eV, the doublet at 641.65 eV in the product indicates a mixed
+valence state consisting of Mn4+ and lower valence Mn species.
+Figure 4d,e speciﬁcally demonstrate that the reductive product
+in EMIMOTF is composed of Mn3+ species, consistent with the
+above experimental result, and accompanied by the formation of
+H2O. Figure 4f,g respectively display Mn 2p and O 1s spectra
+that ﬁt well to the pristine 𝛼-MnO2 NWs, further conﬁrming the
+non-faradaic mechanism in the PYR14TFSI. Figure 4j shows the
+atomic percentage of cycled products in three electrolytes.
+2.4. Reaction Mechanism of Diﬀerent Ionic Liquids with 𝜶-MnO2
+Combining in situ TEM observations and electrochemical per-
+formance, Figure 5 schematizes the storage mechanism un-
+derlying the 𝛼-MnO2 NWs charged in three electrolytes. Over-
+all, the primary energy storage mechanism involves the forma-
+tion of pseudo-capacitance in both EMIMOTF and EIMHSO4,
+resulting from the phase transformation of 𝛼-MnO2. How-
+ever, the EIMHSO4 performs a more active reaction with man-
+ganese oxide, resulting in the product Mn3O4 tending to dis-
+solve in the electrolytes as amorphous Mn3+ and Mn4+ species
+(Figure 5a,c).[33,35] Figure 5d highlights the diﬀerence is the crys-
+tallinity of Mn3O4 in EIMHSO4 and EMIMOTF electrolytes.
+However, in the case of PYR14TFSI depicted in Figure 5e, there
+are no reactions occurring with 𝛼-MnO2.
+As a result, due to incomplete proton transfer, there are lots
+of neutral species and ion pair aggregates of varying degrees
+in ILs.[36] The proton chemical shift has a linear relationship
+with the proton transfer: the stronger the proton, the faster the
+speed of charge transfer.[37] From Figure S4 (Supporting Infor-
+mation), The distinct chemical shift of the proton indicates that
+charge transfer is faster and more eﬃcient in EIMHSO4. More-
+over, the rate of charge transfer is inﬂuenced by stronger hydro-
+gen bonds, which enhances the proton conduction kinetics, as
+demonstrated by Wang et al.[38] in diﬀerent Oxygen Reduction
+Reaction (ORR) activities. Additionally, Susan et al.[39] were the
+ﬁrst to use PILs as proton transfer media in fuel cells, high-
+lighting the role of proton conduction through the Grotthuss
+mechanism.[28] In order to ﬁgure out the diﬀerent chemical shift
+protons in pseudo-supercapacitors, the Fourier Transform in-
+frared spectroscopy (FTIR) spectrum of the electrodes cycled in
+three diﬀerent electrolytes along with the pure electrolytes is pre-
+sented in Figure S17 (Supporting Information).[40–42]
+In the region of 3000–4000 cm−1, it can be seen that the peaks
+of the cycled electrode and the pure electrolyte are signiﬁcantly
+diﬀerent, which can exclude the inﬂuence of the residual elec-
+trolyte on the electrode on the results. Figure S17b (Support-
+ing Information) shows an enlarged section of the FTIR spec-
+tra for the three electrodes. The brown region represents the
+peaks of the initial 𝛼-MnO2 NWs. Compared to the electrode cy-
+cled in P14YRTFSI, both display two small peaks in the 2800–
+2900 cm−1 range due to a small amount of adsorbed water in
+Adv. Mater. 2024, 2408476
+© 2024 Wiley-VCH GmbH
+2408476 (6 of 10)
+ 15214095, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202408476 by Yunnan Normal University, Wiley Online Library on [23/09/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 7 ===
+www.advancedsciencenews.com
+www.advmat.de
+Figure 4. The macroscopic characterization of product in three electrolytes. a) XRD spectrum. b–g) XPS spectrums of product cycled in EIMHSO4,
+EMIMOTF, and PYR14TFSI. h,i) XPS spectrum of pristine 𝛼-MnO2 NWs. j) Atomic percentage of cycled products in three electrolytes.
+Adv. Mater. 2024, 2408476
+© 2024 Wiley-VCH GmbH
+2408476 (7 of 10)
+ 15214095, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202408476 by Yunnan Normal University, Wiley Online Library on [23/09/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 8 ===
+www.advancedsciencenews.com
+www.advmat.de
+Figure 5. The ion distribution for diﬀerent cations a) protic ionic liquid, b) aprotic ionic liquids. Schematic diagram of charge storage mechanisms
+underlying the 𝛼-MnO2 NWs surface charged in c) EIMHSO4, d) EMIMOTF, e) and PYR14TFSI.
+𝛼-MnO2, as proven through Thermogravimetry and Derivative
+Thermogravimetry (TG-DTG, Figure S18, Supporting Informa-
+tion) curve. The most notable observation is that ≈3000 cm−1,
+we ﬁnd the presence of hydrogen bonds in both EMIMOTF
+and EIMHSO4. A comparison shows a signiﬁcant number of
+hydrogen bonding signals in the 𝛼-MnO2 electrode cycled in
+EIMHSO4, consistent with the above results.
+In Figure S18 (Supporting Information), the black line repre-
+sents the TG curve of the initial 𝛼-MnO2 NWs. As the tempera-
+ture rises to 300 °C, 𝛼-MnO2 exhibits a 4.1% weight loss. The red
+line is the DTG curve. In the temperature range of 25–50 °C, the
+adsorbed water evaporated rapidly. As the temperature increases,
+the rate of the weight change becomes gradual. This indicates
+a trace amount of adsorbed water in the initial MnO2, correlat-
+ing with the weak peak in the hydrogen bond region in the FTIR
+spectrum.
+Therefore, the cation of PILs is more prone to create hydro-
+gen bonds and donate protons when reacting with 𝛼-MnO2 in
+pseudo-supercapacitors.[15] The proton is prone to form hydro-
+gen bonds with O atoms of 𝛼-MnO2, allowing charges to be
+eﬃciently transferred to Mn4+ for reduction through an ten-
+sive hydrogen-bond network of secondary interactions instead of
+undergoing actual long-distance spatial movements.[28] Besides,
+lowering the Mn oxidation states decreases the Mn─O covalency
+and weakens Mn─O bonds which causes the faster dissolution
+kinetics upon exposure to active proton.[33,43] And the more de-
+tails are shown in Figure 6.
+Figure 6 shows the reaction of EIM+ and EMIM+ ions
+with 𝛼-MnO2 NWs respectively. In the case of the EIM+ ions
+(Figure 6a–e), the schematic diagram of charge transport involves
+the formation of H─O bonds (Figure 6c), which leads to the cre-
+ation of a hydrogen-bond network (Figure 6d). This network facil-
+itates the reduction of 𝛼-MnO2, allowing it to acquire additional
+electrons. Figure 6e shows the diameter of the ions is expanding
+by the formation of the 3D hydrogen bond network. The subse-
+quent formation of Mn3O4 promotes the ﬂow of charge through
+the network, leading to the generation of amorphous states that
+predominantly contribute to the pseudo-capacitance eﬀect. For
+the EMIM+ ions (Figure 6f–g), the charge transport similarly by
+hydrogen work, facilitating the further formation of Mn3O4 not
+an amorphous state. This demonstrates the diﬀerent faradic pro-
+cesses at the 𝛼-MnO2 electrode with diﬀerent active protons from
+ILs.
+3. Conclusion
+The interaction between 𝛼-MnO2 and three diﬀerent ILs, namely
+EIMHSO4, EMIMOTF, and PYR14TFSI, exhibits varying proton
+activity. Our ﬁndings indicate that the faradaic process is inﬂu-
+enced by the presence of protons at the imidazole ring. Through
+in situ ETEM, we observed that the 𝛼-MnO2 electrode displays
+signiﬁcant instability when exposed to EIMHSO4, whereas no
+phase transformation occurs when exposed to PYR14TFSI. This
+observation explains the low cyclic stability and low speciﬁc ca-
+pacitance of the supercapacitor in the former case. Notably, in
+situ ETEM results also revealed that 𝛼-MnO2 undergoes reduc-
+tion to Mn3O4 in the aprotic ionic liquid (EMIMOTF). Further-
+more, a considerable number of well-crystallized Mn3O4 par-
+ticles were observed in the electrode after extended cycling of
+the macroscopic supercapacitor. In summary, EMIMOTF proves
+to be a suitable electrolyte for 𝛼-MnO2 based supercapacitors,
+which encompass both pseudo-capacitive and double-layer capac-
+itive characteristics. These results contribute to a fundamental
+understanding of the faradaic mechanism between protons and
+Adv. Mater. 2024, 2408476
+© 2024 Wiley-VCH GmbH
+2408476 (8 of 10)
+ 15214095, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202408476 by Yunnan Normal University, Wiley Online Library on [23/09/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 9 ===
+www.advancedsciencenews.com
+www.advmat.de
+Figure 6. Schematic diagram of the microscopic reaction mechanism. a–e) EIM+, f–g) EMIM+ cation ions react with 𝛼-MnO2 NWs.
+𝛼-MnO2, thereby oﬀering valuable insights for the development
+of advanced aprotic ionic liquid-based supercapacitors for energy
+storage applications.
+4. Experimental Section
+Methods and any associated references are available in the Supporting
+Information.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+This work was ﬁnancially supported by the S&T Program of Hebei
+(B2023203037, B2024203054), the Science Research Project of Hebei Ed-
+ucation Department (JZX2024022), the National Natural Science Founda-
+tion of China (Nos. 52471018, 52401298, 52122211, 52072323), the Fron-
+tier Exploration Projects of Longmen Laboratory (No. LMQYTSKT008).
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the
+corresponding author upon reasonable request.
+Keywords
+EMIMOTF, in situ transmission electron microscope, microscopic
+mechanism, pseudo-capacitance mechanism, 𝛼-MnO2 nanowires
+Received: June 14, 2024
+Revised: August 19, 2024
+Published online:
+[1] L. Miao, Z. Song, D. Zhu, L. Li, L. Gan, M. Liu, Energy Fuels 2021, 35,
+8443.
+[2] J. Feng, Y. Wang, Y. Xu, Y. Sun, Y. Tang, X. Yan, Energy Environ. Sci.
+2021, 14, 2859.
+[3] L. Seetha, V. Balaraman, Batteries 2023, 9, 4.
+[4] H. Helmholtz, Ann. Phys. 1853, 165, 211.
+[5] C. Xu, H. Du, B. Li, F. Kang, Y. Zeng, J. Electrochem. Soc. 2009, 156,
+A73.
+[6] H. Liu, P. He, Z. Li, Y. Liu, J. Li, Electrochim. Acta. 2006, 51, 1925.
+[7] D. Rochefort, A. Pont, Electrochem. Commun. 2006, 8, 1539.
+[8] B. Bharate, P. Hande, A. Samui, P. Kulkarni, Renew. Energy 2018, 126,
+437.
+[9] M. Deng, J. Chang, C. Wang, K. Chen, C. Lin, M. Tang, J. Chen, K. Lu,
+Energy Environ. Sci. 2011, 4, 3942.
+[10] Y. Li, I. Sun, J. Chang, C. Su, M. Lee, J. Mater. Chem. 2012, 22, 6274.
+[11] Q. Zhang, D. Zhang, Z. Miao, X. Zhang, S. Chou, Small 2018, 14,
+1702883.
+[12] M. Toupin, T. Brousse, D. Bélanger, Chem. Mater. 2004, 16, 3184.
+[13] S. Bokhari, Y. Hao, A. Siddique, Y. Ma, M. Imtiaz, R. Butt, P. Hui, Y.
+Li, S. Zhu, Results Mater. 2019, 1, 100007.
+[14] A. Eftekhari, Energy Stor. Mater. 2017, 9, 47.
+[15] S. Lindberg, S. Jeschke, P. Jankowski, M. Abdelhamid, T. Brousse, J. L.
+e. Bideau, P. Johansson, A. Matic, J. Power Sources. 2020, 460, 228111.
+[16] X. Ye, D. Han, G. Jiang, C. Cui, Y. Guo, Y. Wang, Z. Zhang, Z. Weng,
+Q. Yang, Energy Environ. Sci. 2023, 16, 1016.
+[17] S. Pang, M. Anderson, T. Chapman, J. Electrochem. Soc. 2000, 147,
+444.
+[18] J. Shin, J. Seo, R. Yaylian, A. Huang, Y. Meng, Int. Mater. Rev. 2020,
+65, 356.
+[19] S. Kuo, N. Wu, J. Electrochem. Soc. 2006, 153, A1317.
+[20] H. Kwon, S. Jang, Y. Kang, K. Roh, Sci. Rep. 2019, 9, 1180.
+[21] M. Shi, S. Kou, X. Yan, ChemSusChem 2014, 7, 3053.
+[22] J. Chang, M. Lee, C. Cheng, W. Tsai, M. Deng, Y. Hsieh, I. Sun, J. Mater.
+Chem. 2009, 19, 3732.
+[23] Y. Yuan, K. He, B. Byles, C. Liu, K. Amine, J. Lu, E. Pomerantseva, R.
+ShahbazianYassar, Chem 2019, 5, 1793.
+[24] O. Viviane, L. Ralf, Annu. Rep. NMR Spectro. 2018, 95, 147.
+[25] S. Gehrke, B. Kirchner, J. Chem. Eng. Data. 2020, 65, 1146.
+[26] S. Cha, M. Ao, W. Sung, B. Moon, B. Ahlström, P. Johansson, Y. Ouchi,
+D. Kim, Phys. Chem. Chem. Phys. 2014, 16, 9591.
+[27] M. Armand, F. Endres, D. MacFarlane, H. Ohno, B. Scrosati, Nat.
+Mater. 2009, 8, 621.
+Adv. Mater. 2024, 2408476
+© 2024 Wiley-VCH GmbH
+2408476 (9 of 10)
+ 15214095, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202408476 by Yunnan Normal University, Wiley Online Library on [23/09/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 10 ===
+www.advancedsciencenews.com
+www.advmat.de
+[28] H. Watanabe, N. Arai, Y. Kameda, R. Buchner, Y. Umebayashi, J. Phys.
+Chem. B. 2020, 124, 11157.
+[29] H. Kurata, C. Colliex, Phys. Rev. B. 1993, 48, 2102.
+[30] D. Pease, A. Fasihuddin, M. Daniel, J. Budnick, Ultramicroscopy 2001,
+88, 1.
+[31] Q. Zhang, D. Zhang, Z. Miao, X. Zhang, S. Chou, Small 2018, 14,
+1702883.
+[32] W. Wei, X. Cui, W. Chen, D. Ivey, Chem. Soc. Rev. 2011, 40, 1697.
+[33] F. Speck, P. Santori, F. Jaouen, S. Cherevko, J. Phys. Chem. C. 2019,
+123, 25267.
+[34] J. Peng, L. Giordano, T. Davenport, Y. ShaoHorn, Chem. Mater. 2022,
+34, 7774.
+[35] E. Ilton, J. Post, P. Heaney, F. Ling, S. Kerisit, Appl. Surf. Sci. 2016, 366,
+475.
+[36] D. Dolan, D. Sherman, R. Atkin, G. Warr, ChemPhysChem 2016, 17,
+3096.
+[37] S. Davidowski, F. Thompson, W. Huang, M. Hasani, S. Amin, C.
+Angell, J. Yarger, J. Phys. Chem. B. 2016, 120, 4279.
+[38] T. Wang, Y. Zhang, B. Huang, B. Cai, R. Rao, L. Giordano, S. Sun, Y.
+ShaoHorn, Nat. Catal. 2021, 4, 753.
+[39] H. Matsuoka, H. Nakamoto, M. Susan, M. Watanabe, Electrochim.
+Acta 2005, 50, 4015.
+[40] J. Kiefer, J. Fries, A. Leipertz, Appl. Spectrosc. 2007, 61, 1306.
+[41] T. Yamada, M. Mizuno, ACS Omega 2021, 6, 1709.
+[42] L. Malepe, P. Ndungu, T. Ndinteh, M. Mamo, Results Phys 2023, 52,
+106864.
+[43] Z. Yan, X. Li, Y. Li, C. Jia, N. Xin, P. Li, L. Meng, M. Zhang, L. Chen, J.
+Yang, R. Wang, X. Guo, Sci. Adv. 2022, 8, 3541.
+Adv. Mater. 2024, 2408476
+© 2024 Wiley-VCH GmbH
+2408476 (10 of 10)
+ 15214095, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adma.202408476 by Yunnan Normal University, Wiley Online Library on [23/09/2024]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+

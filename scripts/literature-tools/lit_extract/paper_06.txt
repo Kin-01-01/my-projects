@@ -1,0 +1,1174 @@
+=== PAGE 1 ===
+Received: 4 May 2023 |
+Revised: 23 May 2023 |
+Accepted: 2 June 2023
+DOI: 10.1002/cey2.424
+R E S E A R C H A R T I C L E
+In situ observation of the electrochemical behavior of
+Li–CO2/O2 batteries in an environmental transmission
+electron microscope
+Peng Jia1,2
+|
+Yunna Guo2
+|
+Dongliang Chen3
+|
+Jingming Yao2
+|
+Xuedong Zhang4
+|
+Jianguo Lu3
+|
+Yuqing Qiao1,2
+|
+Liqiang Zhang2
+1Hebei Key Laboratory of Applied Chemistry, College of Environmental and Chemical Engineering, Yanshan University, Qinhuangdao, China
+2State Key Laboratory of Metastable Materials Science and Technology, Clean Nano Energy Center, Yanshan University, Qinhuangdao, China
+3State Key Laboratory of Silicon and Advanced Semiconductor Materials, School of Materials Science and Engineering, Zhejiang University,
+Hangzhou, China
+4Key Laboratory of Low Dimensional Materials and Application Technology of Ministry of Education, School of Materials Science and Engineering,
+Xiangtan University, Xiangtan, China
+Correspondence
+Yuqing Qiao and Liqiang Zhang, State Key
+Laboratory of Metastable Materials
+Science and Technology, Clean Nano
+Energy Center, Yanshan University,
+066004 Qinhuangdao, China.
+Email: [邮箱已脱敏] and
+[邮箱已脱敏]
+Funding information
+Natural Science Foundation of Hebei
+Province, Grant/Award Number:
+F2021203097; China Postdoctoral Science
+Foundation, Grant/Award Numbers:
+2021M702756, 2023T160551; National
+Natural Science Foundation of China,
+Grant/Award Numbers: 51971245,
+52022088
+Abstract
+Li–CO2/O2 batteries, a promising energy storage technology, not only provide
+ultrahigh discharge capacity but also capture CO2 and turn it into renewable
+energy. Their electrochemical reaction pathways' ambiguity, however, creates
+a hurdle for their practical application. This study used copper selenide (CuSe)
+nanosheets as the air cathode medium in an environmental transmission
+electron microscope to in situ study Li–CO2/O2 (mix CO2 as well as O2 at a
+volume ratio of 1:1) and Li–O2 batteries as well as Li–CO2 batteries. Primary
+discharge reactions take place successively in the Li–CO2/O2–CuSe nanobat-
+tery: (I) 4Li+ + O2 + 4e−→2Li2O; (II) Li2O + CO2 →Li2CO3. The charge
+reaction proceeded via (III) 2Li2CO3 →4Li+ + 2CO2 + O2 + 4e−. However,
+Li–O2 and Li–CO2 nanobatteries showed poor cycling stability, suggesting the
+difficulty in the direct decomposition of the discharge product. The
+fluctuations of the Li–CO2/O2 battery's electrochemistry were also shown to
+depend heavily on O2. The CuSe‐based Li–CO2/O2 battery showed exceptional
+electrochemical performance. The Li–CO2/O2 battery offered a discharge
+capacity apex of 15,492 mAh g−1 and stable cycling 60 times at 100 mA g−1.
+Our research offers crucial insight into the electrochemical behavior of
+Li–CO2/O2, Li–O2, and Li–CO2 nanobatteries, which may help the creation of
+high‐performance Li–CO2/O2 batteries for energy storage applications.
+K E Y W O R D S
+CuSe nanosheets, electrochemical reaction, in situ environmental transmission electron
+microscopy, Li–CO2 battery, Li–CO2/O2 battery, Li–O2 battery
+Carbon Energy. 2023;e424.
+wileyonlinelibrary.com/journal/cey2
+|
+1 of 12
+https://doi.org/10.1002/cey2.424
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided
+the original work is properly cited.
+© 2023 The Authors. Carbon Energy published by Wenzhou University and John Wiley & Sons Australia, Ltd.
+
+=== PAGE 2 ===
+1
+|
+INTRODUCTION
+Owing to their impressive theoretical energy density that
+is adequate for possible applications, Li–air batteries have
+attracted interest on a global scale.1–3 Theoretically,
+lithium–oxygen (Li–O2) batteries have an energy density
+of 3500 Wh kg−1, while the energy density of lithium
+carbon dioxide (Li–CO2) batteries stands at 1876 Wh
+kg−1,4–10 a value noticeably surpassing that of analogous
+lithium‐ion batteries.11,12 Extensive research into the
+functioning processes of Li–CO2 batteries with the
+addition of O2 and the improvement of these batteries
+are required to engineer Li‐air batteries that can operate
+effectively in CO2 and O2 coexisting settings.13–20
+The substitution of CO2 for O2 in the cathode appears to
+be a potential green energy storage strategy. In addition to
+providing an energy storage solution, it also works well as a
+method of CO2 sequestration, reducing emissions of green-
+house gases and reducing the effects of climate change.21–25
+However, the irreversibility of Li2CO3 poses a substantial
+impediment to the progression of Li–CO2 batteries.26–28
+Notably, Li2CO3 is an insulator and is insoluble in the
+electrolyte, which unavoidably results in continual Li2CO3
+accumulation and irreversible coating of active sites after the
+discharge process.29,30 To properly decompose Li2CO3 with
+low charge overpotential, sophisticated cathode catalysts
+and advanced technology must be rationally designed.
+Using a simple method, Li et al.31 introduced a covalent
+organic framework (COF) serving successfully as an air
+cathode in Li–CO2 batteries. The COF‐integrated Li–CO2
+battery exhibits a threshold capacity of 1000 mAh g−1, a low
+cut‐off overpotential of 1.24 V, and a remarkable capacity of
+27,348 mAh g−1 at a current density of 200 mA g−1. The
+COF‐based battery can sustain discharging/charging at a
+high current density of 1000 mA g−1, maintaining operation
+over 200 cycles. In their investigation of Li–CO2 batteries in
+various temperature regimes, Xu et al.32 discovered that
+high temperatures could hasten the battery discharge
+process. The Au@TiO2/LAGP layer promoted the enhance-
+ment in the sluggish kinetics of carbon dioxide reduction
+reaction (CO2RR) and carbon dioxide evolution reaction
+(CO2ER). By leveraging photoelectric and photothermal
+effects, Guan et al.33 recorded promising results. With
+illumination, the photoassisted Li–CO2 battery demonstrates
+an exceptionally low polarization of 0.25 V and a high
+round‐trip efficiency of 92.4%.
+Many scientists are currently studying Li–air batteries
+that include both CO2 and O2 because it has been shown
+that adding O2 to Li–CO2 systems has a significant
+impact
+on
+electrochemical
+reactions
+and
+increases
+energy
+storage
+capacity.34–38
+According
+to
+Takechi
+et al.,39 an initial low capacity of 66 mAh g−1 was
+exhibited, yet the addition of 10% O2 to CO2 could
+elevate the capacity to approximately 4000 mAh g−1.
+They claimed that CO2 could not be directly decreased
+electrochemically during the discharge process. On the
+contrary, to produce a high discharge capacity, O2 was
+initially reduced to the superoxide anion radical (O2
+•−),
+subsequently consumed rapidly by CO2. As demonstrated
+by Zhang et al.,40 compared to the Li–CO2 battery
+(0.44 V, 110 cycles), the Li–CO2/O2 battery displays a
+negligible overpotential of 0.31 V and cycle stability of
+127 cycles. Wang et al.41 proved the O2–assisted Li–CO2
+battery to offer a low charge voltage of 4.02 V, a high
+Coulombic efficiency of 89.2%, and an acceptable cycle
+stability (67 cycles at a limited capacity of 500 mAh g−1).
+Despite tremendous progress, the Li–CO2/O2 battery's
+workings continue to be a mystery.
+We report in situ observations of the Li–CO2/O2
+nanobattery under an environmental transmission elec-
+tron microscope (ETEM) in this study aiming to decipher
+the role of O2 in Li–CO2 batteries and demystify the
+operational mechanism of the Li–CO2/O2 nanobattery.
+Real‐time revelations of the discharge/charge processes,
+discharge/charge products, and electrochemical reaction
+mechanisms were made.
+2
+|
+EXPERIMENTAL
+2.1
+|
+Materials synthesis
+Using a solvothermal process, CuSe samples were
+produced. In a mixture of 15 mL of deionized water
+and 10 mL of ethylene glycol (C2H6O2), 1 mmol of
+Na2SeO3, 2 mmol of Cu(CH3COO)2·H2O, and 2 mmol of
+NaOH were combined. A 30 min agitation was followed
+by the transference of the mixture into a 50 mL autoclave
+(equipped with a Teflon seal) for a 12 h hydrothermal
+treatment at 150°C in an electric oven (see Figure 1A).
+The resulting black precipitate was gathered post-
+treatment via centrifugation, washed three times using
+water and ethanol, and subsequently dried in a furnace.
+2.2
+|
+Materials characterization
+A spherical aberration (Cs)‐corrected ETEM (FEI; Titan
+G2, 300 kV) was utilized for morphological investigation.
+High‐angle annular dark field‐scanning transmission
+electron microscope (HAADF‐STEM) images were cap-
+tured on a probe‐corrected FEI Themis Z electron
+microscope, set to 300 kV. The CuSe nanosheet's content
+and
+structure
+were
+analyzed
+through
+an
+energy‐
+dispersive X‐ray spectrometer (EDS) and a transmission
+electron
+microscope
+(TEM;
+Talos
+200 kV,
+FEI),
+2 of 12
+|
+JIA ET AL.
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 3 ===
+respectively. CuSe nanosheets' crystal structures were
+scrutinized using a Rigaku D/max 2500 pc X‐ray diffrac-
+tometer (XRD) with a Cu‐Kα radiation source (λ = 1.5 Å),
+operating at 40 kV and 30 mA with a step scan of 0.02°
+(20°–60°, 5° min−1). CR2032‐type coin cells derived from
+Li–CO2/O2 macrobatteries were evaluated via a LAND
+CT3002A multichannel battery test system. A 12.4 μm
+thick stainless‐steel mesh functioned as the coin cell
+battery's cathode. A slurry comprising Ketjen Black
+(50 wt.%), CuSe (40 wt.%), and polytetrafluoroethylene
+(10 wt.%) was prepared and spread onto the mesh. With
+pure lithium metal foil serving as the anode, a glass fiber
+as separator, and a 1 M lithium bis (trifluoromethane
+sulfonimide)‐tetraethylene
+glycol
+dimethyl
+ether
+as
+electrolyte, all cells were assembled within a glove box
+under an Ar atmosphere. Battery assessments were
+conducted at 25°C under a 1 atm CO2/O2 environment.
+The gravimetric capacity and current densities were
+calculated relative to the CuSe mass. About 0.4 mg cm−2
+of active materials were mass loaded onto the current
+collector.
+2.3
+|
+In situ nanobattery setup
+As depicted in Figure 2A, the Li–CO2/O2 nanobattery
+includes two probes (Al tip and W tip). The CO2/O2
+electrode's catalyst was CuSe nanosheets affixed to the
+Al tip. Bulk Li, coated on the W tip, served as the counter
+electrode, whereas the naturally formed Li2O layer on
+the Li surface functioned as the solid electrolyte.
+These electrodes were assembled into a Pico Femto
+FE‐F2 transmission electron microscope scanning tun-
+neling microscope (TEM‐STM) holder within a glove box,
+FIGURE 1
+(A) Schematic illustration of the fabrication of hexagonal crystal system CuSe nanosheets. (B) Low magnification
+HAADF‐STEM image of the CuSe nanosheets. (C, D) The HAADF‐STEM shows the monocrystalline structure of CuSe. (E) HAADF‐STEM
+image, and (F, G) EDS elemental mappings of CuSe.
+JIA ET AL.
+|
+3 of 12
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 4 ===
+and subsequently transported to an ETEM. With CuSe
+nanosheet as the active electrode, a Li–CO2/O2 nanobat-
+tery was constructed in the ETEM after making contact
+with the Li2O solid electrolyte. This Li–CO2/O2 nanobat-
+tery was given an acceptable operational potential,
+allowing for real‐time observation of the lithiation
+process. A CO2/O2 gas (purity greater than 99.99%) was
+delivered to the ETEM chamber under 1 mbar pressure
+for the discharge/charge experiments.
+In this configuration, the CuSe electrode is the only
+conductor for the Li+ and electrons produced during
+electrochemical discharge/charge reactions. For instance, in
+Figure 2A, the black arrow shows the direction of Li+
+migration upon application of a negative potential (−0.5 V)
+to the CuSe electrode in respect to lithium, whereas the red
+arrow shows the direction of electron migration. As a result,
+at the CuSe electrode, throughout the discharge reaction, Li+
+and electrons interact, and CO2 and O2 interact. Real‐time
+visualizing the lithiation process in this Li–CO2/O2 nanobat-
+tery makes it feasible to track changes in structure and
+morphology brought on by lithiation.
+3
+|
+RESULTS AND DISCUSSION
+A simple solvothermal method is used to create CuSe
+nanosheets. The creation of CuSe nanosheets is graphi-
+cally demonstrated in Figure 1A, with Figure 1B–G
+delineating their unique morphological and structural
+features. The structural composition of this material was
+subjected to an in‐depth analysis using XRD (see
+Figure S1). All diffraction peaks could be attributed to
+the hexagonal CuSe phase (space group: P63/mmc),
+corroborating the standard spectrum (PDF#034‐0171).
+The diffraction peaks at 26.6°, 28.1°, 31.1°, 46.0°, 50.0°,
+and 56.6°, respectively, corresponded to (101), (102),
+FIGURE 2
+Morphology evolution of the CuSe cathode after discharge and charge processes of a Li–CO2/O2 nanobattery. (A) Schematic
+of the experimental setup. A tungsten tip scratched Li, the passivation Li2O layer, and the CuSe were used as the anode, the electrolyte, and
+the medium for the CO2/O2 cathode, respectively. (B–I) Time‐lapse structure evolution of the air cathode in a Li–O2 battery. (B, C) During
+the first discharge reaction, a large number of nanoparticles emerged at the nanosheet substrate, which then grew under a constant negative
+bias. (D, E) Upon a reversing bias, the charging reaction took place, and a large number of nanopores appeared on the nanosheet; and the
+discharge and charge reactions were repeatable, with the first two cycles shown in (B–E) and (F–I), respectively.
+4 of 12
+|
+JIA ET AL.
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 5 ===
+(006), (110), (108), and (116) planes, confirming the
+structural integrity of the material. Furthermore, the
+pure
+CuSe
+samples
+generated
+show
+no
+additional
+diffraction
+peaks
+that
+could
+be
+attributed
+to
+any
+contaminant phases. As depicted in Figure 1B, the
+HAADF‐STEM image supports the XRD results by
+demonstrating the characteristic hexagonal morphology
+of the nanosheets, each of which exhibits semitranspar-
+ency and a uniform thickness. The CuSe nanosheets,
+which are around 500 nm, have a typical hexagonal
+structure, as seen in the low magnification HAADF‐
+STEM image (see Figure 1B). In addition, the HAADF‐
+STEM images show that the CuSe nanosheets are
+monocrystalline features (see Figure 1C,D). Fast Fourier
+transformation (FFT) pattern that corresponds to the
+HRTEM image (Figure 1C) is shown in Figure S2, and
+the hexagonal CuSe sample's monocrystalline feature is
+confirmed. In addition, Cu and Se have a homogeneous
+elemental distribution in CuSe nanosheets, as shown by
+HAADF‐STEM and the related EDS mapping (see
+Figure 1E–G).
+Figure 2A provides a conceptual blueprint of an in
+situ
+Li–CO2/O2
+nanobattery
+assembly,
+designed
+to
+monitor the microscopic behavioral dynamics of the
+battery.
+To
+attenuate
+e‐beam
+irradiation
+effects,
+we conducted time‐dependent experiments in the annu-
+lar dark field (ADF) mode to track the morphological
+development
+of
+the
+Li–CO2/O2
+nanobatteries
+(see Movie S1). Compared to the bright field image
+mode, which continuously exposes the samples to the
+e‐beam, ADF mode significantly reduces this effect.
+The morphological progression captured in the ADF
+images (see Figure 2B–I) mirrors the evolution presented
+in the bright field images (see Figure S3), demonstrating
+that the e‐beam has no effect on the experimental results
+(see Movie S2).
+Implementing
+a
+negative
+potential
+to
+the
+CuSe
+electrode with respect to the Li counter electrode during
+the first discharge reaction led to the formation of
+numerous nanoparticles on the nanosheet, but after 317 s,
+there was little change in the area of the nanosheet (see
+Figure 2B,C). A potential reversal was followed by the
+progressive emergence of nanopores, which were fully
+produced after 370 s of charging (see Figure 2D,E).
+Additional nanoparticles emerged when the CuSe was
+subjected to a subsequent negative potential application
+(see Figure 2F,G), and nanopores reappeared when the
+potential was reversed (see Figure 2H,I). To ensure that
+these observations could be replicated, this phenomenon
+was
+repeated,
+and
+the
+results
+were
+consistent
+(see
+Figures 3A,B and S3). Accordingly, the results of the
+experiment indicate that the Li–CO2/O2 battery's discharge
+and charging dynamics are unaffected by the e‐beam.
+In this paper, we used a precision‐controlled potentiostat
+(PiciFemto V3ST; provided by Anhui Zeyou Technology Co.,
+Ltd.) to control the applied voltage, which was the
+controller's output and was the programmed voltage with
+an error margin of 4.5 mV. First, either constant voltage or
+constant current can be applied in electrochemical reactions.
+Second, the contact resistance for probe‐type contacts is
+relatively high. As the reaction changes, the contact
+resistance may become unstable, and constant current is
+prone to intensely heat the sample. In constant current
+mode, when the contact resistance is unstable, the voltage
+will fluctuate greatly, and virtual connection may directly
+cause the equipment to reach the limit voltage range,
+seriously compromising the safety of equipment operation.
+Finally, in the study, choosing to control the constant voltage
+and then limit the current can enable the reaction to proceed
+normally and also avoid some drawbacks of the constant
+current mode.
+To evaluate the morphological and structural altera-
+tions in the CuSe cathode over the discharge and charge
+cycles, we used ADF imaging, electron diffraction
+patterns (EDPs), and electron energy loss spectroscopy
+(EELS) (see Figure 3). Figure 3A,B shows the ADF
+images of the discharge and charge products, where the
+discharge phase involves the transport of lithium ions
+from the lithium anode to the CuSe cathode, and the
+converse happens during the charging process. In the
+course of discharge, the products generated numerous
+white particles on the CuSe nanosheet, which appeared
+as lighter contrast areas. On the other hand, the
+nanosheet had many nanopores during the charging
+phase. According to results from conventional lithium‐
+ion batteries, the CuSe first underwent the following
+conversion reaction, which led to a partial transforma-
+tion into Cu: CuSe + 2Li →Cu + Li2Se, aligning with
+observations from traditional lithium‐ion batteries.42–44
+The final stage of the discharge process predominantly
+featured Li2CO3 as the discharge product. Upon the
+inversion of bias, the EDP associated with the charging
+products surfaced, primarily indexed as Cu and Li2Se,
+with a minor presence of CuSe (see Figure 3C,D).
+According
+to
+the
+diffraction
+integral
+diagram
+(see
+Figure 3E), the main products of discharge were Li2CO3,
+Cu, Li2Se, and trace amounts of CuSe, whereas the
+majority of the Li2CO3 had disintegrated after charging.
+Cu and Li2Se, which are crucial metal and ionic
+conductors, make it easier for lithium ions to move
+between the positive and negative electrodes of the
+battery. This has a substantial impact on understanding
+how the cycling of the Li–CO2/O2 battery can enhance
+the discharge efficiency and cycle longevity. As a result,
+Li–CO2/O2 batteries' inclusion of Cu and Li2Se is
+essential for maintaining consistent battery performance.
+JIA ET AL.
+|
+5 of 12
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 6 ===
+EELS was then used to undertake a product analysis
+of
+the
+discharge/charge
+stages
+(see
+Figure
+3F,G).
+Discharge and charge states exhibit two main plasmon
+peaks in the EELS spectra (see Figure 3F), accompanied
+by two multiple plasmon peaks (14.5 and 18.7 eV)
+positioned and two additional low‐intensity plasmon
+peaks situated at 60.2 and 64.5 eV. The placements, as
+well as characteristics, are consistent, which points to
+Li2CO3 as the source. These conclusions match the EDP
+results and are consistent with the commercial Li2CO3
+EELS
+results
+(see
+Figure
+S4).45–47
+Moreover,
+the
+appearance of the O–K edge in the core‐loss spectrum
+substantiates the generation of Li2CO3 throughout the
+discharge process (see Figure S5). Pure CuSe has a
+primary low‐loss peak at 19.6 eV and a plasmon peak at
+56.6 eV, which distinguishes its low‐loss spectrum from
+that of the deeply discharged state. On the other hand,
+constant presences of Cu and O were observed in the
+core‐loss spectra derived from the discharge and charge
+zones (see Figure 3G).
+FIGURE 3
+Morphology and the corresponding structure evolutions of the CuSe after discharge and charge processes in a CO2/O2
+ambient. (A, B) The ADF images of the CuSe before and after discharge and charge processes, respectively. (C) Phase identification of the
+first discharge products by EDP. The EDP can be consistently indexed as Li2CO3, Cu, Li2Se, and CuSe. (D) When a positive potential was
+applied to the CuSe against the Li electrode, the EDP of the nanosheet changed from Li2CO3, Cu, Li2Se, Li2O, and CuSe. (E) Diffraction
+integral diagram showing the phase structure evolution of the discharge and charge products in a CO2/O2 environment. The discharge
+products can be indexed as Li2CO3, Cu, Li2Se, and a trace amount of CuSe, while after charging, these Li2CO3 signals nearly disappear.
+(F) Low‐loss spectra from the pristine CuSe nanosheet (red line), discharge product on the nanosheet (green line, green point), and the
+charge product (blue line, blue point), respectively. (G) Core‐loss spectra. The spectra from pristine nanosheet (red line) show the presence
+of Cu and from the charge products (blue line, blue point) show the presence of Cu and O.
+6 of 12
+|
+JIA ET AL.
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 7 ===
+Considering the EDP and EELS results, we propose the
+following sequence for the CO2RR: initial conversion
+reaction leads to the transformation of CuSe into Li2Se and
+Cu (see Figure 4). The newly created ultrafine‐grained Cu
+then act as a catalyst in the creation of O2−from O2
+molecules. Fresh O2−reacts with Li+ to create Li2O, which
+then combines with CO2 to create Li2CO3. The CO2RR
+becomes stronger as the amount of ultrafine−grained Cu
+increases, demonstrating their catalytic involvement. The
+battery's discharge operation is shown in Figure 4 with the
+following detailed steps: (I) Li →Li+ + e−; (II) CuSe + 2Li+ +
+2e−→Cu + Li2Se; (III) the freshly produced Cu catalyzed
+reaction
+4Li+ + O2 + 4e−→2Li2O;
+(IV)
+Li2O + CO2 →
+Li2CO3. In addition, the ultrafine−grained Cu speed up
+Li2CO3's partial decomposition during the CO2ER. Li2CO3
+decomposes electrochemically as the CuSe develops a
+positive bias against the Li counter electrode. The electro-
+chemical decomposition of the Li2CO3 occurs: (V) 2Li2CO3 →
+4Li+ + 2CO2 + O2 + 4e−; (VI) Li+ + e−→Li (see Figure 4).
+The high resolution transmission electron microscope
+(HRTEM) images support the role of the ultrafine‐grain Cu
+(average size: 5.8 nm) in the transformation reaction of CuSe
+and the catalytic response of Cu (see Figures S6 and S7).
+Comparative contrast tests were conducted to gain a
+deeper knowledge of the electrochemical reaction path-
+ways within the Li–CO2/O2–CuSe battery. The method-
+ology replicating the experimental conditions of the
+Li–CO2/O2–CuSe
+battery
+was
+implemented
+for
+the
+Li–O2–CuSe
+and Li–CO2–CuSe batteries.
+Figure
+S8
+shows the structural evolution of
+the Li–O2–CuSe
+nanobattery's discharge as well as charge products over
+time (see Movie S3). When CuSe nanosheets are exposed
+to a negative potential, the creation of nanoparticles on
+their surface is shown in Figure S8A–D, showing
+temporal evolution. Even at high applied voltages, the
+nanosheet found it difficult to return to its initial state
+after bias reversal. EDP and EELS techniques were used
+to investigate the structure and makeup of the products.
+Figure S8E–G shows the discharge products, which
+included Li2O, Cu, Li2Se, and CuSe. Following the
+FIGURE 4
+Schematic of the reaction mechanism during the discharge (CO2RR) and charge (CO2ER) processes in a Li–CO2/O2 battery.
+During the conversion reaction, CuSe was converted to Cu and Li2Se. The freshly formed ultrafine‐grained Cu catalyzed the following
+CO2RR to generate Li2CO3. During the CO2ER reaction, ultrafine‐grained Cu catalyzed the decomposition of Li2CO3.
+JIA ET AL.
+|
+7 of 12
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 8 ===
+charge, significant EDP changes suggested Li2O decom-
+position. Figure S8H,I shows the EELS spectra of the
+discharge
+and
+charge
+products.
+As
+depicted
+in
+Figure S8H, the major plasmon peaks in low‐loss
+locations showed a negative shift from 21.7 eV of the
+pure CuSe to 18.2 eV after the discharge process. Notably,
+the pristine CuSe's core‐loss spectrum and all discharge
+process products showed Cu presence. Contrary to the
+blunter CuSe edge, the Cu–L edge from Cu was sharper.
+The primary plasmon loss peaks for the charged products
+were located at 13.7, 18.2, 59.1, and 66.8 eV. The core‐loss
+spectrum of the charge reaction products indicates the
+existence of Cu and O (see Figure S8I).
+Additionally, the Li–CO2–CuSe nanobattery's dis-
+charge/charge mechanisms were investigated to make
+contrasts
+with
+the
+Li–CO2/O2–CuSe
+battery.
+When
+the CuSe was given a negative potential, nanoparticle
+production with temporal evolution was seen on the
+nanosheet surface (see Movie S4). No discernible changes
+were observed in the TEM upon bias reversal, indicating
+that Li2CO3 decomposition is difficult without O2 (see
+Figure
+S9).
+According
+to
+the
+EDP
+results
+(see
+Figure S10), the discharge products could be classified
+as Li2CO3, Cu, Li2Se, and CuSe. The postcharging
+products were still listed as Li2CO3, Cu, Li2Se, and CuSe
+(see Figure S10). Additionally, Figure S11 displays the
+EELS spectra of the discharge and charge products. The
+profiles of the Li–CO2–CuSe nanobattery's core‐loss and
+low‐loss products were similar to those of the Li–CO2/
+O2–CuSe
+nanobattery
+(see
+Figure
+3F,G).
+The
+Li–CO2−CuSe nanobattery's discharged products con-
+sisted of Li2CO3, Cu, and Li2Se, according to the results
+of EDP and EELS. The Li2CO3 was not totally broken
+down after charging. In conclusion, although inferior to
+the Li–CO2/O2–CuSe battery, the reversibility of the
+Li–CO2–CuSe battery is comparable to that of the
+Li–O2–CuSe battery.
+The morphological changes were examined in an
+effort to decipher the electrochemical reaction mecha-
+nism of the CuSe cathode under varying conditions,
+including CO2/O2, O2, CO2, and a vacuum environment.
+In the CO2/O2 ambient, a large number of nanoparticles
+appeared when negative bias was applied to CuSe
+nanosheet, and the nanopores appeared under reverse
+bias (see Figure S3B,D). In an O2 environment, a large
+number of nanoparticles also appeared when negative
+bias voltage was applied to the CuSe nanosheet (see
+Figure S8B,D). However, in CO2 and vacuum environ-
+ment, nanoparticles also appeared when negative bias
+was applied to CuSe, and the nanoparticles remained
+unchanged
+when
+reverse
+bias
+was
+applied
+(see
+Figures S9B,D and S12A,B). In CO2/O2, CO2, and O2
+conditions, the thickness of the surface transition layer
+on lithium was measured to be 35, 19, and 15 nm,
+respectively (see Figure S13). We focus great attention to
+the states of metal lithium anodes in various atmospheres
+in addition to the structural changes of CuSe cathodes in
+various atmospheres (see Figure S13).
+The results of macrobattery electrochemical assess-
+ments for Li–CO2/O2 batteries using CuSe as the air
+cathode were also conducted to draw comparisons
+between in situ ETEM and macroexperimental results
+(see Figures 5 and S14). The Li–CO2/O2 battery exhibited
+a remarkable discharge capacity of 15,492 mAh g−1 at a
+current density of 100 mA g−1, as demonstrated by the
+discharge
+performance
+measurement
+(Figure
+5A).
+Impressively, the battery maintained a discharge capacity
+exceeding 5000 mAh g−1 even at an elevated current
+density of 500 mA g−1. The galvanostatic discharge and
+charge performance of Li–CO2/O2 batteries at various
+current densities were evaluated using a LAND CT3002A
+battery tester system, capable of achieving a maximum
+capacity of 500 mAh g−1 at various current densities
+between
+2.0
+and
+4.5 V.
+Capacity
+limitations
+were
+implemented to avoid deep discharge and promote
+improved reversibility. The CuSe catalyst‐aided battery's
+steady cycling performance over 60 cycles is shown in
+Figure 5B. Tests were also conducted in settings that
+contained only O2 or only CO2 for comparison study (see
+Figure 5C–F). CuSe‐catalyzed Li–O2 battery discharge
+processes were thoroughly examined, and the results
+showed that the battery had a capacity of 10,686 mAh g−1
+at 100 mA g−1. By amplifying the current density to 200
+and 500 mA g−1, Li–O2 battery capacities of 6992 and
+1922 mAh g−1
+were
+achieved,
+respectively
+(see
+Figure 5C). The Li–O2 battery sustained approximately
+20 cycles at a consistent capacity of 500 mAh g−1 at
+100 mA g−1 (see Figure 5D). At current densities of 100,
+200, and 500 mA g−1, respectively, the Li–CO2 battery's
+discharge capacities were 790, 512, and 367 mAh g−1 (see
+Figure 5E). About 20 cycles were completed by the
+Li–CO2 battery (see Figure 5F). The Li–CO2/O2 battery
+outperformed the Li–CO2 battery in terms of cycling
+stability
+and
+discharge
+plateau,
+demonstrating
+the
+battery's potential for improved performance when O2
+is added.
+CuSe,
+boasting
+a
+high
+conductivity,
+diminished
+electronegativity, and an expansive ionic radius of Se,
+presents notable prospects for Li–CO2/O2 battery appli-
+cations. The unique nanostructure of CuSe expands the
+electrode surface area, thereby increasing the active sites
+for electrochemical reactions and subsequently, boosting
+the discharge‐specific
+capacity.
+With
+its
+impressive
+cycling stability, the CuSe‐based electrode effectively
+maintains the battery's capacity throughout several
+discharge/charge processes. In summary, owing to its
+8 of 12
+|
+JIA ET AL.
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 9 ===
+catalytic activity, expansive surface area, and superior
+stability, CuSe emerges as a superior candidate for high‐
+performance Li–CO2/O2 batteries operating at high
+current densities.
+In addition to the aforementioned, XRD characteri-
+zation of the Li–CO2/O2 macrobattery's discharge/charge
+product was conducted (see Figure S15). Predominantly
+composed of Li2CO3, the discharge product of the
+Li–CO2/O2 battery employing CuSe demonstrated that
+nearly all Li2CO3 could be decomposed during the charge
+process, corroborating the in situ ETEM results, as is
+evident from the vanishing of Li2CO3‐related features in
+the XRD spectra of postcharge process (see Figure S15).
+Our in situ ETEM investigations substantiate the
+claim that CuSe is a superior cathode material for
+Li–CO2/O2 batteries, and that the addition of O2 to CO2
+significantly
+augments
+the
+performance
+of
+Li–CO2
+batteries. The discharge/charge reaction mechanism in
+Li–CO2/O2 nanobatteries considerably differs from those
+observed in Li–O2 or Li–CO2 nanobatteries. The presence
+FIGURE 5
+Electrochemical behavior. (A) Discharge voltage curves of Li–CO2/O2 battery at different current densities with a cutoff
+voltage of 2.0 V. (B) Discharge/charge profiles of Li–CO2/O2 battery with a cutoff capacity of 500 mAh g−1 at 100 mA g−1. (C) Discharge
+voltage curves of Li–O2 battery at different current densities with a cutoff voltage of 2.0 V. (D) Discharge/charge profiles of Li–O2 battery
+with a cutoff capacity of 500 mAh g−1 at 100 mA g−1. (E) Discharge voltage curves of Li–CO2 battery at different current densities with a
+cutoff voltage of 2.0 V. (F) Discharge/charge profiles of Li–CO2 battery with a cutoff capacity of 500 mAh g−1 at 100 mA g−1.
+JIA ET AL.
+|
+9 of 12
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 10 ===
+of O2 catalyzed the CO2RR and CO2ER processes through
+nanosized Cu, which resulted from the conversion
+reaction,
+thereby
+advancing
+the
+cyclability
+of
+the
+Li–CO2/O2–CuSe battery. This comparison underscores
+the pivotal role of O2 in promoting electrochemical
+reactions in Li–CO2/O2 batteries.
+For Li–CO2/O2 nanobatteries, enhanced electroche-
+mical properties have immense technological and practi-
+cal significance. Hence, discerning the impact of CuSe
+nanosheets on nanoscale mechanisms in Li–CO2/O2
+batteries becomes imperative. Within this project, we
+aim to employ an ETEM with CuSe serving as the
+operative electrode, thereby visualizing that the process
+of Li+ incorporation during the electrochemical reactions
+in this nanobattery is significant. We intend to establish a
+novel technique to facilitate real‐time observations and
+analyses of electrode phase transformations and interface
+evolutions during the discharge/charge process. Our
+focus will be on understanding the nanoscale mecha-
+nisms for Li+ transport and electrode phase transforma-
+tion within the Li–CO2/O2 battery. The influence of the
+CuSe catalyst on the performance of the Li–CO2/O2
+battery can be discerned and harnessed to formulate
+strategies aiming at augmenting the electrochemical
+characteristics of Li–CO2/O2 batteries. The crucial role
+of in situ TEM observations is reflected in the simulta-
+neous research of microstructural evolution and phase
+transformation behavior in the areas of energy storage,
+conversion, and other material science disciplines.48–51
+4
+|
+CONCLUSION
+In summary, the Li–CO2/O2–CuSe battery was success-
+fully put through in situ discharge/charge cycles in the
+ETEM, revealing in real‐time the fundamental electro-
+chemical reaction processes within these nanobatteries.
+During the discharge phase, Li2O was created when Li+
+combined with O2 and electron to form Li2O, which then
+underwent a chemical reaction with CO2 to create
+Li2CO3. During the charging step, Li2CO3 was broken
+down into Li, O2, and CO2 with the help of ultrafine‐
+grained Cu. Additionally, it has been shown that O2 is a
+critical function in the electrochemical process of the
+Li–CO2/O2 battery. With a current density of 500 mA g−1,
+the Li–CO2/O2 battery's maximum discharge capacity
+was 5168 mAh g−1. The Li–CO2/O2 batteries demon-
+strated a noteworthy performance over 60 cycles, with
+steady discharge/charge voltage plateaus at a current
+density of 100 mA g−1. These discoveries provide a
+thorough understanding to the functioning mechanism
+of the Li–CO2/O2 and Li–CO2 batteries, potentially
+informing future designs for energy storage purposes.
+ACKNOWLEDGMENTS
+The National Natural Science Foundation of China
+(Grant Nos. 52022088 and 51971245), the Natural Science
+Foundation of Hebei Province (Grant No. F2021203097),
+and the China Postdoctoral Science Foundation (Grant
+Nos.
+2021M702756
+and
+2023T160551)
+all
+provided
+financial support for this work.
+CONFLICT OF INTEREST STATEMENT
+The authors declare that there are no conflict of interests.
+ORCID
+Jianguo Lu
+http://orcid.org/0000-0001-6183-6336
+Liqiang Zhang
+http://orcid.org/0000-0001-7482-0739
+REFERENCES
+1.
+Ma Z, Yuan X, Li L, et al. A review of cathode materials and
+structures
+for
+rechargeable
+lithium–air
+batteries.
+Energy
+Environ Sci. 2015;8(8):2144‐2198.
+2.
+Wang L, Pan J, Zhang Y, Cheng X, Liu L, Peng H. A Li–air
+battery with ultralong cycle life in ambient air. Adv Mater.
+2018;30(3):1704378.
+3.
+Chi X, Li M, Di J, et al. A highly stable and flexible zeolite
+electrolyte solid‐state Li–air battery. Nature. 2021;592(7855):
+551‐557.
+4.
+Wang M, Yao Y, Yang F, et al. Double spatial confinement on
+ruthenium nanoparticles inside carbon frameworks as durable
+catalysts for a quasi‐solid‐state Li–O2 battery. Carbon Energy.
+In press. doi:10.1002/cey2.334
+5.
+Gong H, Wang T, Chang K, et al. Revealing the illumination
+effect on the discharge products in high‐performance Li–O2
+batteries with heterostructured photocatalysts. Carbon Energy.
+2022;4(6):1169‐1181.
+6.
+Sun Q, Dai L, Luo T, Wang L, Liang F, Liu S. Recent advances in
+solid‐state metal–air batteries. Carbon Energy. 2023;5(2):e276.
+7.
+Li C, Guo Z, Yang B, Liu Y, Wang Y, Xia Y. A rechargeable
+Li–CO2 battery with a gel polymer electrolyte. Angew Chem
+Int Ed. 2017;56(31):9126‐9130.
+8.
+Zhai Y, Tong H, Deng J, et al. Super‐assembled atomic IR
+catalysts on te substrates with synergistic catalytic capability
+for Li–CO2 batteries. Energy Storage Mater. 2021;43:391‐401.
+9.
+Wang H, Xie K, You Y, et al. Realizing interfacial electronic
+interaction within ZnS quantum dots/N‐rGO heterostructures
+for efficient Li–CO2 batteries. Adv Energy Mater. 2019;9(34):
+1901806.
+10.
+Jin Y, Liu Y, Song L, et al. Interfacial engineering in hollow
+NiS2/FeS2‐NSGA
+heterostructures
+with
+efficient
+catalytic
+activity for advanced Li–CO2 battery. Chem Eng J. 2022;430:
+133029.
+11.
+Ji YR, Weng ST, Li XY, Zhang QH, Gu L. Atomic‐scale
+structural evolution of electrode materials in Li‐ion batteries:
+a review. Rare Met. 2020;39(3):205‐217.
+12.
+Huang Z, Deng Z, Zhong Y, et al. Progress and challenges of
+prelithiation
+technology
+for
+lithium‐ion
+battery.
+Carbon
+Energy. 2022;4(6):1107‐1132.
+13.
+Zhang PF, Lu YQ, Wu YJ, et al. High‐performance recharge-
+able Li–CO2/O2 battery with Ru/N‐doped CNT catalyst. Chem
+Eng J. 2019;363:224‐233.
+10 of 12
+|
+JIA ET AL.
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 11 ===
+14.
+Peng L, Yin H, Zou L, Yu F. The influence of current density
+dependent Li2CO3 properties on the discharge and charge
+reactions of Li–CO2/O2 battery. Colloids Surf A. 2023;657:
+130480.
+15.
+Ezeigwe ER, Dong L, Manjunatha R, et al. A review of
+lithium–O2/CO2 and lithium–CO2 batteries: advanced electro-
+des/materials/electrolytes and functional mechanisms. Nano
+Energy. 2022;95:106964.
+16.
+Zhang PF, Zhang JY, Sheng T, et al. Synergetic effect of ru and
+NiO in the electrocatalytic decomposition of Li2CO3 to
+enhance the performance of a Li–CO2/O2 battery. ACS
+Catal. 2020;10(2):1640‐1651.
+17.
+Zou L, Jiang Y, Cheng J, et al. High‐capacity and long‐cycle
+lifetime Li–CO2/O2 battery based on dandelion‐like Ni-
+Co2O4 hollow microspheres. ChemCatChem. 2019;11(13):
+3117‐3124.
+18.
+Liu Y, Wang R, Lyu Y, Li H, Chen L. Rechargeable Li/CO2–O2
+(2:1) battery and Li/CO2 battery. Energy Environ Sci. 2014;7(2):
+677‐681.
+19.
+Zhang PF, Zhuo HY, Dong YY, et al. Pt nanoparticles confined
+in a 3D porous FeNC matrix as efficient catalysts for
+rechargeable
+Li–CO2/O2
+batteries.
+ACS
+Appl
+Mater
+Interfaces. 2023;15(2):2940‐2950.
+20.
+Wang R, Zhang X, Cai Y, Nian Q, Tao Z, Chen J. Safety‐
+reinforced rechargeable Li–CO2 battery based on a composite
+solid state electrolyte. Nano Res. 2019;12(10):2543‐2548.
+21.
+Wang C, Lu Y, Lu S, et al. Boosting Li–CO2 battery
+performances
+by
+engineering
+oxygen
+vacancy
+on
+NiO
+nanosheets array. J Power Sources. 2021;495:229782.
+22.
+Zhang BW, Jiao Y, Chao DL, et al. Targeted synergy between
+adjacent co atoms on graphene oxide as an efficient new
+electrocatalyst
+for
+Li–CO2
+batteries.
+Adv
+Funct
+Mater.
+2019;29(49):1904206.
+23.
+Lu S, Shang Y, Ma S, Lu Y, Liu QC, Li ZJ. Porous NiO
+nanofibers as an efficient electrocatalyst towards long cycling
+life rechargeable Li–CO2 batteries. Electrochim Acta. 2019;319:
+958‐965.
+24.
+Li S, Liu Y, Zhou J, et al. Monodispersed MnO nanoparticles
+in graphene an interconnected n‐doped 3D carbon framework
+as a highly efficient gas cathode in Li–CO2 batteries. Energy
+Environ Sci. 2019;12(3):1046‐1054.
+25.
+Deng Q, Yang Y, Qu S, et al. Electron structure and reaction
+pathway regulation on porous cobalt‐doped CeO2/graphene
+aerogel: a free‐standing cathode for flexible and advanced
+Li–CO2 batteries. Energy Storage Mater. 2021;42:484‐492.
+26.
+Wang C, Zhang Q, Zhang X, Wang XG, Xie Z, Zhou Z.
+Fabricating
+Ir/C
+nanofiber
+networks
+as
+free‐standing
+air
+cathodes for rechargeable Li–CO2 batteries. Small. 2018;14(28):
+1800641.
+27.
+Guo Z, Li J, Qi H, et al. A highly reversible long‐life Li–CO2
+battery with a RuP2‐based catalytic cathode. Small. 2018;
+15(29):1803246.
+28.
+Zhang K, Li J, Zhai W, et al. Boosting cycling stability and rate
+capability of Li–CO2 batteries via synergistic photoelectric
+effect and plasmonic interaction. Angew Chem Int Ed. 2022;
+61(17):e202201718.
+29.
+Hou Y, Wang J, Liu L, et al. Mo2C/CNT: an efficient catalyst
+for rechargeable Li–CO2 batteries. Adv Funct Mater. 2017;
+27(27):1700564.
+30.
+Hu Z, Xie Y, Yu D, et al. Hierarchical Ti3C2Tx MXene/carbon
+nanotubes for low overpotential and long‐life Li–CO2 batte-
+ries. ACS Nano. 2021;15(5):8407‐8417.
+31.
+Li X, Wang H, Chen Z, et al. Covalent‐organic‐framework‐
+based Li–CO2 batteries. Adv Mater. 2019;31(48):1905879.
+32.
+Xu S, Das SK, Archer LA. The Li–CO2 battery: a novel method
+for
+CO2
+capture
+and
+utilization.
+RSC
+Adv.
+2013;3(18):
+6656‐6660.
+33.
+Guan DH, Wang XX, Li F, et al. All‐solid‐state photo‐assisted
+Li–CO2 battery working at an ultra‐wide operation tempera-
+ture. ACS Nano. 2022;16(8):12364‐12376.
+34.
+Zhao Z, Su Y, Peng Z. Probing lithium carbonate formation in
+trace‐O2‐assisted
+aprotic
+Li–CO2
+batteries
+using
+in
+situ
+surface‐enhanced Raman spectroscopy. J Phys Chem Lett.
+2019;10(3):322‐328.
+35.
+Kunanusont N, Shimoyama Y. Porous carbon cathode assisted
+with
+ionogel
+binder
+fabricated
+from
+supercritical
+fluid
+technique toward Li–O2/CO2 battery application. ACS Appl
+Energy Mater. 2020;3(5):4421‐4431.
+36.
+Wang Y, Hao L, Bai M. A modeling study of the cycling
+behavior of non‐aqueous Li–O2/CO2 batteries. J Electrochem
+Soc. 2021;168(2):020524.
+37.
+Zou L, Kong W, Peng L, Wang F. First application of nitrogen‐
+doped carbon nanosheets derived from lotus leaves as the
+electrode catalyst for Li–CO2/O2 battery. Catalysts. 2023;13(3):577.
+38.
+Chen K, Du JY, Wang J, et al. Realizing stable carbonate
+electrolytes in Li–O2/CO2 batteries. Chin J Chem. 2023;41(3):
+314‐321.
+39.
+Takechi K, Shiga T, Asaoka T. A Li–O2/CO2 battery. Chem
+Commun. 2011;47(12):3463‐3465.
+40.
+Zhang PF, Sheng T, Zhou Y, et al. Li–CO2/O2 battery
+operating at ultra‐low overpotential and low O2 content on
+Pt/CNT catalyst. Chem Eng J. 2022;448:137541.
+41.
+Wang L, Dai W, Ma L, et al. Monodispersed Ru nanoparticles
+functionalized graphene nanosheets as efficient cathode
+catalysts for O2‐assisted Li–CO2 battery. ACS Omega. 2017;
+2(12):9280‐9286.
+42.
+Chen Y, Pei Q, Liu X, et al. Template preparation of copper‐
+based chalcogenides and their electrochemical performance
+for Li‐ion batteries. ChemistrySelect. 2020;5(42):12873‐12877.
+43.
+Hong JH, Park GD, Jung DS, Kang YC. Lithium ion storage
+mechanism exploration of copper selenite as anode materials
+for lithium‐ion batteries. J Alloys Compd. 2020;827:154309.
+44.
+Yan C, Chen G, Zhang Y, Chen D, Pei J, Qiu Z. CuSe1−xSx
+nanosheets with an ordered superstructure as anode materials
+for lithium‐ion batteries. New J Chem. 2016;40(8):6588‐6592.
+45.
+Jia P, Yu M, Zhang X, et al. In situ imaging the electrochemical
+reactions of Li–CO2 nanobatteries at high temperatures in an
+aberration corrected environmental transmission electron micro-
+scope. Nano Res. 2022;15(1):542‐550.
+46.
+Ye H, Gui S, Wang Z, et al. In situ measurements of the
+mechanical properties of electrochemically deposited Li2CO3
+and Li2O nanorods. ACS Appl Mater Interfaces. 2021;13(37):
+44479‐44487.
+47.
+Yang T, Li H, Chen J, et al. In situ imaging electrocatalytic
+CO2 reduction and evolution reactions in all‐solid‐state
+Li–CO2 nanobatteries. Nanoscale. 2020;12(47):23967‐23974.
+48.
+Sun Z, Li M, Zheng Z, et al. Cycle‐stable Si‐based composite
+anode for lithium‐ion batteries enabled by the synergetic
+JIA ET AL.
+|
+11 of 12
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 12 ===
+combination of mixed lithium phosphates and void‐preserving
+f‐doped carbon. Mater Today Nano. 2023;22:100322.
+49.
+Xiao B, Zhang H, Sun Z, et al. Achieving high‐capacity and
+long‐life
+K+
+storage
+enabled
+by
+constructing
+yolk‐shell
+Sb2S3@N, s‐doped carbon nanorod anodes. J Energy Chem.
+2023;76:547‐556.
+50.
+Cai M, Zhang H, Zhang Y, et al. Boosting the potassium‐ion
+storage performance enabled by engineering of hierarchical
+MoSSe nanosheets modified with carbon on porous carbon
+sphere. Sci Bull. 2022;67(9):933‐945.
+51.
+Sun Z, Li M, Xiao B, et al. In situ transmission electron
+microscopy for understanding materials and interfaces chal-
+lenges in all‐solid‐state lithium batteries. eTransportation.
+2022;14:100203.
+SUPPORTING INFORMATION
+Additional supporting information can be found online
+in the Supporting Information section at the end of this
+article.
+How to cite this article: Jia P, Guo Y, Chen D,
+et al. In situ observation of the electrochemical
+behavior of Li–CO2/O2 batteries in an
+environmental transmission electron microscope.
+Carbon Energy. 2023;e424. doi:10.1002/cey2.424
+12 of 12
+|
+JIA ET AL.
+ 26379368, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/cey2.424 by Hefei University Of Technology, Wiley Online Library on [15/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+

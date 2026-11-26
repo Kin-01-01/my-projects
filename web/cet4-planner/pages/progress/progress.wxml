@@ -1,0 +1,62 @@
+<view class="page {{_enter}}">
+  <!-- 核心数字 -->
+  <view class="row-wrap">
+    <view class="card stat">
+      <view class="stat-num title ink-green">{{streak}}</view>
+      <view class="muted xsmall">连续打卡天数</view>
+    </view>
+    <view class="card stat">
+      <view class="stat-num title ink-green">{{totalDone}}</view>
+      <view class="muted xsmall">累计完成任务</view>
+    </view>
+    <view class="card stat">
+      <view class="stat-num title ink-green">{{totalMinutes}}</view>
+      <view class="muted xsmall">累计学习分钟</view>
+    </view>
+  </view>
+
+  <!-- 阶段进度（卡片堆叠：轻触顶层切换查看） -->
+  <view class="section-title title">阶段进度</view>
+  <view class="stack-hint muted xsmall">轻触顶层卡片，切换查看下一阶段 ↻</view>
+  <view class="ix-stack">
+    <view
+      wx:for="{{stacked}}"
+      wx:key="key"
+      class="card scard {{item.depth === 1 ? 'behind' : ''}} {{item.depth === 2 ? 'behind2' : ''}}"
+      bindtap="{{item.depth === 0 ? 'onPopStack' : ''}}">
+      <view class="row">
+        <view class="title">{{item.name}}</view>
+        <view class="gap"></view>
+        <view class="muted xsmall">{{item.done}}/{{item.total}} · {{item.pct}}%</view>
+      </view>
+      <view class="bar-track" style="margin-top: 14rpx;">
+        <view class="bar-fill" style="width: {{item.pct}}%;"></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 近14日走势 -->
+  <view class="section-title title">近 14 日学习走势（分钟）</view>
+  <view class="card">
+    <view class="chart">
+      <view class="chart-col" wx:for="{{last14}}" wx:key="date">
+        <view class="chart-bar" style="height: {{item.h}}rpx;"></view>
+        <view class="chart-label muted xsmall">{{item.label}}</view>
+      </view>
+    </view>
+    <view class="muted xsmall" style="margin-top: 16rpx;">警戒线：连续断卡 3 天要复盘是不是排太满；周完成率 &lt; 60% 建议下周减量。</view>
+  </view>
+
+  <!-- 周报 / 月报导出 -->
+  <view class="section-title title">导出复盘卡片</view>
+  <view class="card">
+    <view class="muted xsmall">把这段时间的进度画成图片存到相册，方便自己留存或发朋友圈（图片只含统计，不含任何题目/词库）。</view>
+    <view class="row" style="margin-top: 20rpx; gap: 20rpx;">
+      <button class="btn-ghost flex1" loading="{{exporting}}" disabled="{{exporting}}" bindtap="onExportReport" data-range="week">导出周报</button>
+      <button class="btn-ghost flex1" loading="{{exporting}}" disabled="{{exporting}}" bindtap="onExportReport" data-range="month">导出月报</button>
+    </view>
+  </view>
+
+  <!-- 离屏画布：周报/月报渲染用，不显示 -->
+  <canvas canvas-id="reportCanvas" class="offcanvas"></canvas>
+</view>

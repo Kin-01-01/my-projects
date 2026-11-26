@@ -1,0 +1,59 @@
+<view class="page {{themeClass}}">
+  <view class="wrap">
+    <block wx:if="{{error}}">
+      <view class="card err-card">
+        <view class="err-title">无法读取</view>
+        <view class="err-text">{{error}}</view>
+        <button class="btn btn-ghost btn-sm err-btn" hover-class="btn-hover" bindtap="load">重试</button>
+      </view>
+    </block>
+
+    <block wx:else>
+      <!-- 汇总 -->
+      <view class="stat-grid">
+        <view class="stat-card">
+          <view class="stat-num">{{totalUsers}}</view>
+          <view class="stat-label">总用户</view>
+        </view>
+        <view class="stat-card">
+          <view class="stat-num">{{todayActive}}</view>
+          <view class="stat-label">今日活跃</view>
+        </view>
+        <view class="stat-card">
+          <view class="stat-num">{{totalAnswered}}</view>
+          <view class="stat-label">累计答题</view>
+        </view>
+        <view class="stat-card">
+          <view class="stat-num">{{rateText}}</view>
+          <view class="stat-label">总正确率</view>
+        </view>
+      </view>
+
+      <view class="updated">更新于 {{updatedText}}</view>
+
+      <!-- 用户列表 -->
+      <view class="block-title">用户明细</view>
+
+      <view class="card empty-card" wx:if="{{!loading && users.length === 0}}">
+        <view class="muted">还没有用户数据。有人用过小程序后这里会自动出现。</view>
+      </view>
+
+      <view class="user-card" wx:for="{{users}}" wx:key="index">
+        <view class="user-top">
+          <text class="user-name">{{item.nickname}}</text>
+          <text class="user-rate">{{item.rate}}%</text>
+        </view>
+        <view class="user-meta">
+          <text class="user-meta-item">{{item.banks}} 个题库</text>
+          <text class="user-meta-item">答 {{item.answered}}</text>
+          <text class="user-meta-item">对 {{item.correct}}</text>
+        </view>
+        <view class="user-time">最近活跃 {{item.activeText}}</view>
+      </view>
+
+      <view class="muted tip">只统计答题数量，看不到任何人具体答了哪道题。</view>
+    </block>
+
+    <view class="bottom-space"></view>
+  </view>
+</view>

@@ -1,0 +1,774 @@
+=== PAGE 1 ===
+FULL PAPER
+www.afm-journal.de
+© 2019 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+1905228  (1 of 9)
+A High-Energy Aqueous Aluminum-Manganese Battery
+Shiman He, Jie Wang, Xu Zhang, Jingzhao Chen, Zichun Wang, Tingting Yang, Zhiwei Liu,  
+Yuan Liang, Boya Wang, Shiqi Liu, Liqiang Zhang, Jianyu Huang, Jun Huang,  
+Luke A. O’Dell, and Haijun Yu*
+Rechargeable aluminum-ion batteries have drawn considerable attention 
+as a new energy storage system, but their applications are still significantly 
+impeded by critical issues such as low energy density and the lack of excellent 
+electrolytes. Herein, a high-energy aluminum-manganese battery is fabricated 
+by using a Birnessite MnO2 cathode, which can be greatly optimized by 
+a divalence manganese ions (Mn2+) electrolyte pre-addition strategy. The 
+battery exhibits a remarkable energy density of 620 Wh kg−1 (based on the 
+Birnessite MnO2 material) and a capacity retention above 320 mAh g−1 
+for over 65 cycles, much superior to that with no Mn2+ pre-addition. The 
+electrochemical reactions of the battery are scrutinized by a series of 
+analysis techniques, indicating that the Birnessite MnO2 pristine cathode 
+is first reduced as Mn2+ to dissolve in the electrolyte upon discharge, and 
+AlxMn(1−x)O2 is then generated upon charge, serving as a reversible cathode 
+active material in following cycles. This work provides new opportunities for 
+the development of high-performance and low-cost aqueous aluminum-ion 
+batteries for prospective applications.
+DOI: 10.1002/adfm.201905228
+significantly impede their large-scale appli-
+cation.[4–7] Against this background, high-
+energy and low-cost rechargeable batteries 
+still call for extensive exploration.[8–11] 
+Among them, aluminum-ion batteries 
+(AIBs) exhibit noticeable superiority, owing 
+to the high theoretical capacity of Al anode 
+(8040 mAh cm−3, or 2980 mAh g−1), the 
+rich abundance of Al element in Earth’s 
+crust (8.1 wt%), and the high safety of Al 
+metal under atmospheric conditions.[7,12]
+Recently, nonaqueous AIBs have been 
+widely studied due to the highly revers-
+ible stripping/plating of Al anodes in ionic 
+liquid (IL) electrolytes.[11,13] However, the 
+high cost, severe corrosivity, H2O/O2 sen-
+sitivity, and environmental concerns of 
+ILs significantly restrict the large-scale 
+energy storage application of ILs-based 
+nonaqueous AIBs.[14] On the contrary, 
+aqueous electrolytes offer AIBs with many 
+advantages including the higher safety, 
+lower cost, and H2O/O2 insensitivity.[15] Although many three-
+electrode aqueous AIBs have been reported,[16–18] their practical 
+applications are hindered by the complex configuration, poor 
+reversibility, and possible gas formation. Therefore, the explora-
+tion of novel electrochemical redox reactions for rechargeable 
+aqueous AIBs with high energy density, low cost, and easy fab-
+rication is highly desirable. Among various H2O-favored redox 
+reactions, those based on the electrochemistry of manganese 
+have attracted remarkable attention owing to its various valence 
+Aluminum Manganese Batteries
+1. Introduction
+The increasing depletion of fossil fuels and the accompanied 
+dreadful effects on the environment have driven the develop-
+ment of ecofriendly and sustainable renewable energy resources 
+and energy storage systems for versatile applications.[1–3] 
+Although lithium-ion batteries are one of the most successful 
+energy storage systems, the low safety associated with flam-
+mable organic electrolytes and the limited lithium sources 
+The ORCID identification number(s) for the author(s) of this article 
+can be found under https://doi.org/10.1002/adfm.201905228.
+Dr. S. He, J. Wang, Prof. X. Zhang, Dr. Z. Liu, Dr. Y. Liang,  
+B. Wang, S. Liu, Prof. H. Yu
+College of Materials Sciences and Engineering
+Key Laboratory of Advanced Functional Materials
+Education Ministry of China
+Beijing University of Technology
+Beijing 100124, P. R. China
+E-mail: [邮箱已脱敏]
+J. Chen, T. Yang, Prof. L. Zhang, Prof. J. Y. Huang
+Clean Nano Energy Center
+State Key Laboratory of Metastable Materials Science and Technology
+Yanshan University
+Qinhuangdao 066004, P. R. China
+Dr. Z. Wang
+Department of Engineering
+Macquarie University
+Sydney, New South Wales 2109, Australia
+Prof. J. Huang
+Laboratory for Catalysis Engineering
+School of Chemical and Biomolecular Engineering  
+and Sydney Nano Institute
+The University of Sydney
+NSW 2006, Australia
+Dr. L. A. O’Dell
+Institute for Frontier Materials
+Deakin University
+Geelong, VIC 3220, Australia
+Adv. Funct. Mater. 2019, 1905228
+
+=== PAGE 2 ===
+www.afm-journal.de
+www.advancedsciencenews.com
+1905228  (2 of 9)
+© 2019 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+stages, high reversibility, good compatibility with aqueous Al 
+chemistry, appropriate redox potentials, and diverse manga-
+nese compounds.[9,14] Very recently, the reversible deposition/
+dissolution of Mn2+/MnO2 during charge/discharge processes 
+has been employed for battery design,[19] implying the prom-
+ising practicability of designing novel batteries by controlling 
+the manganese redox. A few manganese-based aqueous AIBs 
+have also been attempted recently, by either the optimization of 
+Al anode or the employment of Al3+ insertion chemistry.[14,20] 
+However, further explorations of high-energy cathodes and effi-
+cient strategies for the enhancement of AIBs’ performance and 
+stability are greatly required.
+Herein, a high-energy aqueous aluminum-manganese 
+battery is designed by controlling the redox of a Birnessite 
+MnO2 (Bir-MnO2) cathode, and the pre-addition of Mn2+ is 
+employed as an efficient strategy to enhance the performance 
+and stability of the battery. As a consequence, the battery can 
+deliver a remarkable energy density of 620 Wh kg−1 (based on 
+the Birnessite MnO2 material), and maintain a capacity above 
+320 mAh g−1 for 65 cycles. To understand the electrochem-
+istry of this battery, a series of analysis techniques have been 
+employed to investigate the components and structures of 
+cathode materials at diverse discharge/charge states. It dem-
+onstrates a conversion from Birnessite type MnO2 cathode to 
+soluble Mn2+ in the electrolyte in the first discharge process, 
+and the subsequent formation of AlxMn(1−x)O2 in the charge 
+process, which serves as the reversible cathode active material 
+of the battery in following cycles. Based on the reaction mech-
+anism, the enhancement of AIBs by the Mn2+ pre-addition 
+strategy can be well interpreted.
+2. Results and Discussion
+The Bir-MnO2 cathode was synthesized by our previously 
+reported hydrothermal method.[21] It has a sheet-like mor-
+phology as revealed by field emission scanning electron micro-
+scope (SEM) (Figure  1a). The X-ray diffraction (XRD) pattern 
+of the as-prepared material demonstrates a Birnessite crystal 
+structure (PDF No. 43-1456, space group C2/m),[10] with a 
+characteristic diffraction peak at 12.4° corresponding to the 
+(001) plane (interplanar spacing: 0.715 nm). The Na/Mn molar 
+ratio of the Bir-MnO2 is ≈0.18 as analyzed by inductively cou-
+pled plasma atomic emission spectrometer (ICP-AES), while 
+the crystal H2O/MnO2 molar ratio is 0.525 as calculated from 
+the weight loss (9.37%) of Bir-MnO2 between 110 and 250 °C 
+by thermogravimetric analysis (TGA) (Figure 1c).[10] Therefore, 
+the chemical formula of the Bir-MnO2 is determined to be 
+Na0.18MnO2·0.525H2O.
+The morphology and crystal structure of the Bir-MnO2 
+were further investigated by transmission electron microscopy 
+(TEM). Figure  1d clearly shows the 2D morphology of a typ-
+ical Bir-MnO2 sheet, with lateral sizes at sub-micrometer level 
+and a thickness of around 10  nm. The selected area electron 
+Adv. Funct. Mater. 2019, 1905228
+Figure 1.  a) SEM image, b) XRD pattern, and c) TGA curve of the Bir-MnO2 material. d) Large-scale TEM image of Bir-MnO2. Inset is the SAED 
+pattern projected along the [001] zone axis. e,f) High-resolution STEM images projected along [100] and [001] zone axes. Insets are the corresponding 
+FFT results.
+
+=== PAGE 3 ===
+www.afm-journal.de
+www.advancedsciencenews.com
+1905228  (3 of 9)
+© 2019 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+diffraction (SAED) pattern (the inset of Figure  1d) indicates 
+a highly crystalline structure of the material, with the char-
+acteristic (200) and (110) Birnessite planes definitely indexed. 
+Figure 1e,f presents the scanning TEM (STEM) images acquired 
+projecting along the [100] and [001] zone axes, respectively. The 
+cross-section image in Figure 1e and the fast Fourier transform 
+image (FFT) (inset of Figure 1e) of the nanosheet give an inter-
+layer spacing of (001) plane to be 0.715 nm, in accordance with 
+the above XRD result.[10] The atomic structure of the Bir-MnO2 
+can be clarified from the high-resolution STEM image showing 
+the alignment of MnO6 layers parallel to the (a, b) plane 
+(Figure 1f), with the (110) and (200) crystalline planes indexed 
+from the interplanar spacings of 0.248 and 0.251 nm, respec-
+tively. Furthermore, the energy-dispersive X-ray spectroscopy 
+(EDS) elemental maps of Bir-MnO2 (Figure S1, Supporting 
+Information) reveal the uniform distribution of Na, Mn, and O 
+in the material.
+The electrochemical performance of the Bir-MnO2 cathode 
+was evaluated in aqueous AIBs, with 2 m aqueous aluminum 
+trifluoromethanesulfonate (Al(OTF)3) solution as the electrolyte 
+and Al foils as the anode in a coin cell configuration. Two kinds 
+of Al foil anodes were compared, including the pristine Al foil 
+(Al) and the Al foil after immersed in the aluminum chloride/1-
+ethyl-3-methylimidazolium chloride (AlCl3/[EMIm]Cl) IL (T-Al). 
+The first discharge profile of the AIBs is quite different from 
+the following discharge profiles, suggesting the first discharge/
+charge operation generates a new reversible cathode active mate-
+rial, which will be discussed next. In the second cycle, although 
+the Al and T-Al anodes can yield a close discharge capacity, the 
+Al/Bir-MnO2 and T-Al/Bir-MnO2 batteries exhibit different 
+discharge voltage plateaus of around 1.1 and 1.4  V versus 
+Al3+/Al at 100 mA g−1, respectively (Figure 2a and Figure S2, 
+Supporting Information). Figure S3 (Supporting Information) 
+shows the potential gap between plating and stripping of Al in 
+the battery with T-Al electrode is much lower than that of the 
+battery with original Al electrode, in accordance with the galva-
+nostatic discharge/charge curves. It demonstrates that the over-
+potential of aqueous AIBs can be suppressed by treating the Al 
+anode with IL, which can be attributed to the removal of the 
+passive oxide film and the formation of artificial solid electro-
+lyte interphases (ASEI) on the surface of Al anode.[20] It is prob-
+able that such ASEI layers facilitated the plating and stripping 
+of Al in this electrolyte. Therefore, the T-Al foil was adopted as 
+the superior anode in the following studies. The corresponding 
+AIB can exhibit a high reversible capacity of ≈350 mAh g−1  
+as shown in Figure 2a, a relatively high value among reported 
+AIBs. Unfortunately, this battery suffers from a fast capacity 
+decay from 350 to 175 mAh g−1 within only ten cycles 
+(Figure S4, Supporting Information). The X-ray photoelectron 
+spectroscopy (XPS) investigation on the separator after battery 
+operation shows noticeable Mn 2p3/2 signals (Figure S5, Sup-
+porting Information), suggesting Mn species of the cathode 
+can dissolve into the electrolyte, leading to the severe capacity 
+fading. Moreover, the Mn 2p3/2 peak of this separator is con-
+sistent with that of raw MnSO4, revealing that the Bir-MnO2 
+was dissolved as Mn2+ into the electrolyte during cycling 
+(more details have been discussed in Figure S5, Supporting 
+Information).
+To improve the electrochemical performance of our AIBs, a 
+Mn pre-addition strategy was proposed to adjust the aqueous 
+Adv. Funct. Mater. 2019, 1905228
+Figure 2.  a) The second-cycle galvanostatic discharge/charge curves of the Al/Bir-MnO2, T-Al/Bir-MnO2, and T-Al/0.5Mn/Bir-MnO2 batteries recorded at 
+a current density of 100 mA g−1. b) The discharge/charge curves of the second, third, and tenth cycles of the T-Al/0.5Mn/Bir-MnO2 battery at 100 mA g−1. 
+c) Rate performance and d) cycling performance of the T-Al/Bir-MnO2 and T-Al/0.5Mn/Bir-MnO2 batteries. e) Specific capacities and discharge voltages 
+of state-of-the-art AIBs in various electrolytes. The energy density is calculated based on the mass of active material in the cathode.
+
+=== PAGE 4 ===
+www.afm-journal.de
+www.advancedsciencenews.com
+1905228  (4 of 9)
+© 2019 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+electrolyte and related electrochemistry. As seen in Figure 2a, 
+the pre-addition of 0.5 m MnSO4 into the electrolyte led to a sig-
+nificantly increased second discharge capacity of 554 mAh g−1 
+at a current density of 100 mA g−1, corresponding to an energy 
+density of ≈620  Wh kg−1 (based on the Bir-MnO2 material). 
+The cyclic voltammetry (CV) curve in Figure S6 (Supporting 
+Information) shows that there is no significant side reaction 
+occurred within the operating voltage range. The effect of 
+MnSO4 concentration (CMn) on the second discharge capacity 
+of AIBs was further examined, showing that the capacity was 
+enhanced by the increase of CMn from 0.3 to 0.5 m and then 
+slightly decreased at 0.6 m (Figure S7, Supporting Information). 
+It is speculated that the CMn of 0.5 m is close to its saturation 
+concentration in the electrolyte, resulting in the maximum 
+capacity of the battery. In contrast, the addition of 0.6 m MnSO4 
+produced a suspension instead of solution as shown in Figure S6 
+(Supporting Information), which could increase the charge 
+transfer resistance to hinder efficient electrochemical reactions 
+(Figure S9, Supporting Information). Besides, the battery based 
+on the electrolyte with 0.5 m MnSO4 additive (T-Al/0.5Mn/Bir-
+MnO2) shows a good capacity retention of 512 mAh g−1 in the 
+tenth cycle (Figure 2b), suggesting that it can be stabilized by 
+MnSO4. The enhanced reversibility was further verified by the 
+CV curves of T-Al/0.5Mn/Bir-MnO2 battery (Figure S10, Sup-
+porting Information), which shows almost overlapped profiles 
+from the second to the fifth cycle.
+The T-Al/0.5Mn/Bir-MnO2 battery could deliver revers-
+ible specific capacities of 530, 315, 221, and 125 mAh g−1 at 
+different current density of 100, 150, 200, and 300  mA g−1 
+(Figure  2c), respectively, displaying a better rate performance 
+than that of the batteries with 0, 0.3, 0.4, and 0.6 m MnSO4 
+additive (Figure S11, Supporting Information). The reset 
+of current density at 100  mA g−1 led to the recovery of the 
+capacity to a level of ≈356 mAh g−1. As to the cycle stability 
+in Figure  2d, the T-Al/0.5Mn/Bir-MnO2 battery displays a 
+promising cycle performance of ≈320 mAh g−1 for 65 cycles, 
+while the T-Al/Bir-MnO2 battery shows a rapid capacity decay 
+to only 42 mAh g−1 in 30 cycles. The T-Al/0.3Mn/Bir-MnO2 
+and T-Al/0.4Mn/Bir-MnO2 batteries can deliver 141 and 
+269 mAh g−1 after 65 cycles, respectively (Figure S12, Sup-
+porting Information). However, the T-Al/0.6Mn/Bir-MnO2 bat-
+tery delivers only ≈50 mAh g−1 after 50 cycles due to the excess 
+MnSO4. In all, the Mn pre-addition strategy can efficiently 
+enhance the capacity, rate performance, and long-cycle stability 
+of our aqueous AIBs.
+The electrochemical performance of our aqueous AIBs 
+is compared with that of reported AIBs. Figure  2e shows 
+the plots of output voltages (the highest voltage plateau of 
+the discharge curve) versus the specific capacities (based on the 
+active material) of representative cathode materials in both 
+nonaqueous and aqueous AIBs. Compared with the reported 
+aqueous Al/MnO2 batteries,[14,20] and nonaqueous AIBs using 
+vanadium compounds[5,22–25] or transition metal sulfides 
+(TMS) as cathodes,[7,13,26–33] our T-Al/0.5Mn/Bir-MnO2 bat-
+tery is superior in the capacity, working voltage and thus 
+energy density. Although Al/carbon batteries using ILs or 
+molten salt electrolytes have higher working voltages than 
+the T-Al/0.5Mn/Bir-MnO2 battery, their specific capacities are 
+significantly lower, resulting in lower energy densities.[6,11,34–37] 
+Moreover, nonaqueous rechargeable Al-S batteries have shown 
+higher energy densities because of the high capacity of S, but 
+still suffer from sluggish kinetics and severe capacity decay, not 
+to mention the high-cost electrolyte or the sensitivity to ambient 
+atmosphere.[12,38–41] Therefore, the T-Al/0.5Mn/Bir-MnO2 bat-
+tery is a promising battery system in the AIBs family.
+To 
+fully 
+understand 
+the 
+electrochemistry 
+of 
+our 
+T-Al/0.5Mn/Bir-MnO2 battery, a series of mechanism studies 
+using ex situ XRD, ex situ Raman, XPS, and SEM have been 
+performed in this work. The cathode materials at various dis-
+charged/charged states (as marked by states A–I in Figure 3a) 
+were collected for these measurements. The ex situ XRD 
+results in Figure 3b show that the characteristic Birnessite (001) 
+peak at 12.4° faded during the first discharge processes (A–C), 
+and totally disappeared in the fully discharged state (D) and 
+the following states (E–I). It suggests that the Birnessite struc-
+ture of Bir-MnO2 undergoes disintegration upon discharge/
+charge processes, which is very different from other Mn-based 
+cathodes.[9,42] Such a conversion is irreversible as no diffraction 
+peaks of Bir-MnO2 can appear in the 15th cycle (Figure S13, 
+Supporting Information). To avoid the influence of electrode’s 
+washing process on the XRD characterization, unwashed elec-
+trodes after discharge/charge processes were also examined, 
+and no peaks except for those from the electrolyte could be 
+observed (Figure S14, Supporting Information), further demon-
+strating the irreversible conversion of Bir-MnO2 into noncrys-
+talline materials.
+Ex situ Raman spectra of washed cathodes at various states 
+were also employed to further study the reaction mechanism. 
+As seen in Figure 3c, the Raman spectrum of pristine Bir-MnO2 
+shows a main peak located at 579 cm−1, as well as several weak 
+peaks at 513, 480, and 405 cm−1. The main peak can be attrib-
+uted to the ν3(MnO) stretching vibration in the MnO6 unit.[43] 
+Upon discharging, the ν3 vibration was gradually weakened 
+and finally disappeared (point D), and the other peaks can no 
+longer be seen. The Raman spectrum of the unwashed cathode 
+gives the same conclusion, although some signals from the 
+electrolyte can be observed (Figure S15, Supporting Informa-
+tion). It demonstrates that the Bir-MnO2 undergoes a structural 
+conversion, to new materials in the cathode with no MnO 
+stretching vibration signals when fully discharged. However, 
+the peaks (located at 505 and 575 cm−1) emerge again with a 
+slight redshift from the charge state E to the discharged state 
+H in the second cycle, while other peaks of Bir-MnO2 cannot 
+be observed. It indicates that the charged product probably 
+contains MnO bonds but is no longer Bir-MnO2. In addition, 
+the spectra of fully discharged and charged states in the 15th 
+cycle are the same as those of fully discharged state D and fully 
+charged state F in the first cycle (Figure S16, Supporting Infor-
+mation). The reversible emerging and vanishing of this peak, 
+after the fully discharge process of first cycle, unambiguously 
+verify the reversible reaction of the T-Al/0.5Mn/Bir-MnO2 bat-
+tery once the Bir-MnO2 was discharged.
+XPS was further carried out to investigate the evolution of 
+Mn valence in the cathode at various states. Figure 3d shows 
+the Mn 2p1/2 and Mn 2p3/2 peaks of pristine cathode located 
+at 654.2 and 642.7 eV, respectively,[44] which disappeared in the 
+fully discharged states (D and I). The vanishment of Mn sig-
+nals confirms the dissolution of Mn species into the electrolyte 
+Adv. Funct. Mater. 2019, 1905228
+
+=== PAGE 5 ===
+www.afm-journal.de
+www.advancedsciencenews.com
+1905228  (5 of 9)
+© 2019 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+again, in agreement with the disappearance of MnO stretching 
+revealed by Raman spectra at the same states. On charging, 
+the Mn 2p3/2 peak appears again, and slightly shifts to a lower 
+binding energy at the state F, which indicates the average oxida-
+tion state of Mn in the newly formed cathode was lower than 
+the pristine Bir-MnO2. In addition, the energy separations (ΔE) 
+of Mn 3s peaks of Bir-MnO2 and its fully charged product (state 
+F) (Figure S17, Supporting Information) were measured to be 
+4.94 and 5.03 eV, respectively. According to the linear relation-
+ship between the chemical valence of Mn and the ΔE value,[45] 
+the average oxidation states of Mn in the pristine Bir-MnO2 and 
+the fully charged cathode were calculated to be 3.77 and 3.62, 
+respectively, suggesting the recovery of Mn valence from Mn2+ 
+after charging. In addition, the discharge and charge processes 
+were found to influence the surface morphology of the cathode. 
+SEM images in Figure S18 (Supporting Information) show the 
+discharge process led to a bumpy morphology owing to the 
+nonuniform dissolution of Bir-MnO2, while the charge process 
+of battery smoothed the cathode, suggesting the deposition of 
+charged products.
+Based on the above analysis, it is clear that Bir-MnO2 under-
+goes dissolution into the electrolyte during the first discharge 
+process, while a new Mn compound is formed during the first 
+charge process and serves as the reversible cathode active mate-
+rial in following cycles. Therefore, our battery can be defined 
+as an aluminum-manganese battery because both Al3+ and 
+Mn2+ serve as charge carriers in the electrochemical reactions. 
+The newly formed product was further examined by a series 
+of characterizations. As seen from the STEM image and SAED 
+pattern (Figure 4a), the broad and diffused halo rings indicate 
+the amorphous nature of this material, in agreement with XRD 
+results in Figure 3b. Elemental maps (Figure 4b–d) show that 
+Al, Mn, and O elements exist and distribute uniformly in the 
+material, implying that it consists of the three elements. The 
+weak signal of Na in this product suggests the nonexistence 
+of Na element in the charged product (Figure S19, Supporting 
+Information). The ex situ XPS spectra (Figure  4e) show the 
+Al 2p peak of the charged product shifted to a lower binding 
+energy (74.9 eV) compared with the electrolyte (75.8 eV), indi-
+cating that the Al signal in the EDS map and XPS are mainly 
+from the charged product rather than the electrolyte adsor-
+bents. It is noted that the Al 2p peak of AlxMnO2·nH2O has 
+been reported to exhibit a close binding energy of 75.0 eV.[14] 
+Besides, the Al 2p peak acquired at the fully discharged state 
+may be attributed to the adsorption of residual Al3+ from the 
+electrolyte when considering its close binding energy to the 
+electrolyte.
+Solid-state nuclear magnetic resonance (SSNMR) was fur-
+ther carried out to identify the bonding structure of Al in the 
+charged product. The electrolyte shows a 27Al peak with a 
+chemical shift of 1 ppm, which can be assigned to Al(OTF)3,[46] 
+in which the Al atoms are hexa-coordinated (AlVI, Figure 4f).[47] 
+AlVI species are dominant in both the discharged and charged 
+samples in both the discharged and charged samples, presum-
+ably due to the adsorption of electrolyte, which is in accordance 
+with the XPS Al 2p result. Different from discharged sample 
+Adv. Funct. Mater. 2019, 1905228
+Figure 3.  a) Typical charge/discharge curves of the T-Al/0.5Mn/Bir-MnO2 battery recorded at 100 mA g−1. The points A–I marked the states of cathode 
+materials for ex situ XRD and Raman analysis. b) Ex situ XRD patterns and c) Raman spectra of the T-Al/0.5Mn/Bir-MnO2 battery at selected states 
+during the first and second cycles. d) Mn 2p core level spectra of the cathode in its pristine, fully discharged, and charged states.
+
+=== PAGE 6 ===
+www.afm-journal.de
+www.advancedsciencenews.com
+1905228  (6 of 9)
+© 2019 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+containing only AlVI species, a new peak at δ  = 54  ppm was 
+detected in the charged product, which can be assigned to the 
+tetrahedrally coordinated (AlIV) species.[48] Since only AlVI spe-
+cies (δ = 1 ppm) is found for the electrolyte, the formation of 
+AlIV species (δ = 54 ppm) is attributed to a component in the 
+charged product. As elucidated by Raman spectra in the above 
+discussion (Figure 3c), the MnO stretching due to the exist-
+ence MnO6 can be observed in this material. Therefore, we ten-
+tatively propose that this material is composed of Mn (in MnO6 
+configuration), Al (in AlO4 configuration), and O. Because the 
+charged product has variable chemical formula depending on 
+the charge efficiency, it is denoted as AlxMn(1−x)O2. It has been 
+provided that a similar compound of AlMn2O4 has a bonding 
+structure that the Mn atom is bonded with six O atoms to 
+form a MnO6 octahedra and shares its corners with AlO4 tet-
+rahedra.[49] However, because of the noncrystalline nature, the 
+detailed bonding structure of the charged product could hardly 
+be confirmed currently.
+On the basis of the above results, the electrochemical reac-
+tions of the rechargeable aqueous T-Al/0.5Mn/Bir-MnO2 
+battery can be proposed as follows:
+Discharge process in the first cycle: 
+Anode : Al
+3e
+Al3+
+−
+→
+−
+
+(1)
+Cathode :
+-MnO +2e
+Mn
+2
+2+
+Bir
+→
+−
+
+(2)
+Charge process in the first cycle: 
+Anode : Al
+3e
+Al
+3+ +
+→
+−
+
+(3)
+Cathode : Mn
+2 1
+e
+Al Mn
+O
+2+
+1
+2
+x
+x
+x
+(
+)
+−
+−
+→
+(
+)
+−
+−
+
+(4)
+Following cycles: 
+Overall : Al Mn
+O + Al
+Mn
++ Al
+(1
+)
+2
+2+
+3+
+x
+x
+⇋
+−
+
+(5)
+As shown in Figure  5, the electrochemical reaction of the 
+T-Al/0.5Mn/Bir-MnO2 cell involves three steps. In the first dis-
+charge process (Figure 5a), the Bir-MnO2 cathode is reduced as 
+soluble Mn2+ into the electrolyte, which has been confirmed by 
+the XRD, XPS, and Raman spectra (Equation (1)). Simultane-
+ously, the Al anode is oxidized as Al3+ ion to balance the charge 
+(Equation  (2)). In the subsequent first charge process, Mn2+ 
+ions in the electrolyte are oxidized to a higher valence state by 
+combining with the Al3+ in the electrolyte to form the amor-
+phous AlxMn(1−x)O2 on the cathode, accompanying with the 
+plating of Al on the anode (Equations (3) and (4), Figure 5b). 
+The reversible dissolution/deposition of Mn2+/AlxMn(1−x)O2 
+redox reaction and the stripping/plating of Al take place 
+in the following discharge/charge processes (Equation  (5), 
+Figure  5c,d). To confirm the reaction mechanism of the 
+T-Al/Bir-MnO2 battery (without MnSO4 additive), XRD, XPS, 
+and Raman spectra of the ex situ samples have been carried out 
+(Figure S20, Supporting Information). The results show that 
+the variations of these spectra are in consistence with that of 
+the T-Al/0.5Mn/Bir-MnO2 battery, illustrating the same reaction 
+mechanism of the batteries with or without pre-adding MnSO4. 
+Hence, the improved performance of aqueous AIBs by the Mn 
+pre-addition strategy could be attributed to the increased Mn2+ 
+for driving the formation of AlxMn(1−x)O2 during the charge pro-
+cess. The electrochemical impedance spectroscopy (EIS) of the 
+batteries at charged state in the 15th cycle with/without MnSO4 
+Adv. Funct. Mater. 2019, 1905228
+Figure 4.  a) Large-scale STEM image and b–d) the corresponding EDS element maps of the charge product. The inset in (a) is the corresponding SAED 
+pattern. e) XPS Al 2p spectra and f) NMR spectra of the electrolyte and the cathode in its pristine, fully discharged, and charged states.
+
+=== PAGE 7 ===
+www.afm-journal.de
+www.advancedsciencenews.com
+1905228  (7 of 9)
+© 2019 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+Adv. Funct. Mater. 2019, 1905228
+in Figure S21 (Supporting Information) shows the addition of 
+MnSO4 leads to a lower resistance, which can be ascribed to the 
+promoted formation of AlxMn(1−x)O2 at the cathode after adding 
+MnSO4.
+3. Conclusion
+In summary, a high-energy rechargeable aqueous aluminum-
+manganese battery has been constructed by using a Birnes-
+site manganese oxide as the pristine cathode, which can be 
+significantly optimized by the pre-addition of Mn2+ to tune 
+the electrochemistry in this system. With the pre-addition of 
+0.5 m MnSO4, the aluminum-manganese battery can deliver a 
+remarkably high capacity of 554 mAh g−1, an upper discharge 
+voltage plateau of 1.35  V, and thus a high energy density of 
+≈620 Wh kg−1 at a current density of 100 mA g−1 (based on 
+the Bir-MnO2 material). The rate performance and cycle sta-
+bility of the battery can also be greatly improved, including 
+a capacity of 320 mAh g−1 maintaining for 65 cycles. By a 
+series of characterizations on materials at different discharge/
+charge states by techniques including ex situ XRD, ex situ 
+Raman, XPS, TEM, and SSNMR, it was found that the pris-
+tine Birnessite MnO2 cathode can be reduced to soluble Mn2+ 
+ions during the first discharge. The subsequent charge of the 
+battery leads to the formation of AlxMn(1−x)O2, which plays 
+a role as the reversible cathode active material in following 
+cycles. The pre-addition of Mn2+ such as MnSO4 can increase 
+the concentration of Mn2+, and thus more efficiently shifts the 
+reaction balance toward the formation of AlxMn(1−x)O2 during 
+the charge processes, resulting in the observed enhancement 
+of performance and stability of the battery. This study pro-
+vides innovative insights into the development of high-energy, 
+low-cost, and long-cycle aqueous AIBs toward prospective 
+applications.
+4. Experimental Section
+Materials Synthesis: Bir-MnO2 was synthesized following previously 
+reported hydrothermal procedures.[21] In a typical synthesis, 8  mL 
+0.6 m NaOH (AR, Beijing Chemical Work) and 2 m H2O2 (30%, Beijing 
+Chemical Work) were added into 2  mL 0.3 m Mn(NO3)2 (50  wt% in 
+water, Aladdin Co., Ltd.) solution and strongly stirred for 20  min at 
+room temperature, generating a precipitate. The precipitate was then 
+Figure 5.  The schematic diagram of aluminum-manganese electrochemistry in a) the first discharge process, b) the first charge process, and c,d) the 
+discharge process and charge process in following cycles.
+
+=== PAGE 8 ===
+www.afm-journal.de
+www.advancedsciencenews.com
+1905228  (8 of 9)
+© 2019 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+Adv. Funct. Mater. 2019, 1905228
+dissolved into 15  mL of 2 m NaOH solution, transferred to a 30  mL 
+Teflon-lined stainless steel autoclave, and then heated at 150 °C for 16 h. 
+After cooling to room temperature, the product was thoroughly vacuum 
+filtered, washed with deionized water and dried at 80 °C in air for 24 h.
+The IL for the treatment of Al foils was synthesized inside a Mikrouna 
+argon Glovebox by slowly adding AlCl3 (99%, Macklin Inc.) into [EMIm]
+Cl (98%, Aladdin Co., Ltd.) in a molar ratio of 1.3:1. The Al foil (0.3 mm 
+thick, 99.9%, Beijing Trillion Metals Co., Ltd.) was soaked in the IL for 
+24 h. Then, the wet surface of the foil was cleaned before assembling 
+the batteries.
+The aqueous electrolyte (2 m) was prepared by dissolving 0.948  g 
+Al(OTF)3 (99%, Acros Organics) into 1  mL deionized water. The pre-
+addition of Mn2+ was performed by adding different amount of MnSO4 
+(50.7, 67.6, 84.5, and 101.4 mg for concentrations of 0.3, 0.4, 0.5, and 
+0.6 m, respectively) into the 1 mL Al(OTF)3 aqueous solution.
+Characterizations: XRD measurements were performed using a 
+Bruker D8 Advance Diffractometer with Cu Kα radiation (λ = 1.5406 Å). 
+SEM was carried out by a Hitachi S-4800 instrument. TGA was 
+carried out with a heating rate of 5 °C min−1 in N2 using a Labsys 
+evo (France) analyzer. XPS was conducted using Thermo Scientific 
+ESCALAB 250Xi spectrometer, equipped with monochomatized Al Kα 
+X-rays (1486.7 eV). Raman spectra were obtained using a Renishaw 
+analyzer (λ laser  = 532  nm). Transmission electron microscopy was 
+obtained by using the FEI Themis Z. 27Al magic-angle spinning 
+nuclear magnetic resonance (MAS NMR) experiments were carried 
+out on a Bruker Avance III 500 MHz (11.7 T) spectrometer using a 
+2.5 mm HX MAS NMR probe at resonance frequencies of 130.3 MHz 
+and spun at a MAS rate of 25 kHz. Prior to the measurements, the 
+samples were finely ground and packed into zirconia rotors. Then 27Al 
+spectra were recorded after single-pulse π/6 excitation with repetition 
+times of 1 s.
+Electrochemical Measurements: The Bir-MnO2 cathodes were 
+prepared by mixing Bir-MnO2 powder, Super P carbon (99%, Alfa 
+Aesar Co., Ltd.), and polyvinylidene fluoride (99%, Alfa Aesar Co., 
+Ltd.) in a weight ratio of 7:2:1 in N-methyl pyrrolidone (NMP, 99.9%, 
+Aladdin Co., Ltd.) to produce a slurry, which was then coated on 
+stainless steel foils. The cathode was further dried in a vacuum oven at 
+80 °C overnight. The batteries were assembled using the as-prepared 
+cathodes, Whatman Glass fiber as the separator, and aluminum foil 
+as the anode in CR2032 coin cell. 2 m Al(OTF)3 in water with/without 
+MnSO4 additive was used as electrolyte. The batteries were tested 
+using Land Instrument (Wuhan LAND Electronics Co., Ltd.) at 25 °C. 
+CV was carried out on Solartron electrochemical workstation. EIS 
+test was performed on a CHI electrochemical workstation with an AC 
+voltage of 5 mV amplitude in the frequency ranging from 100 kHz to 
+0.1 Hz.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or 
+from the author.
+Acknowledgements
+This work was financially supported by the National Natural Science 
+Foundation of China (Grant Nos. 51622202, 21603009, and 21875007), 
+the National Key R&D Program of China (Grant No. 2018YFB0104302), 
+and Beijing Natural Science Foundation (B) (KZ201910005002).
+Conflict of Interest
+The authors declare no conflict of interest.
+Keywords
+aluminum-ion batteries, aqueous aluminum-manganese batteries, 
+birnessite MnO2 cathodes, divalence manganese ions, reaction 
+mechanism
+Received: June 29, 2019
+Revised: July 25, 2019
+Published online: 
+[1]	 M. Armand, J. M. Tarascon, Nature 2008, 451, 652.
+[2]	 H. Yu, H. Zhou, J. Phys. Chem. Lett. 2013, 4, 1268.
+[3]	 T. Koketsu, J. Ma, B. J. Morgan, M. Body, C. Legein, W. Dachraoui, 
+M.  Giannini, A.  Demortiere, M.  Salanne, F.  Dardoize, H.  Groult, 
+O. J.  Borkiewicz, K. W.  Chapman, P.  Strasser, D.  Dambournet, 
+Nat. Mater. 2017, 16, 1142.
+[4]	 Y.  Zhang, S.  Liu, Y.  Ji, J.  Ma, H.  Yu, Adv. Mater. 2018, 30, 
+1706310.
+[5]	 S. Gu, H. Wang, C. Wu, Y. Bai, H. Li, F. Wu, Energy Storage Mater. 
+2017, 6, 9.
+[6]	 K. V. Kravchyk, S. Wang, L. Piveteau, M. V. Kovalenko, Chem. Mater. 
+2017, 29, 4484.
+[7]	 S. Wang, S. Jiao, J. Wang, H. S. Chen, D. Tian, H. Lei, D. N. Fang, 
+ACS Nano 2017, 11, 469.
+[8]	 Z. Liu, P. Li, G. Suo, S. Gong, W. Wang, C.-Y. Lao, Y. Xie, H. Guo, 
+Q.  Yu, W.  Zhao, K.  Han, Q.  Wang, M.  Qin, K.  Xi, X.  Qu, Energy 
+Environ. Sci. 2018, 11, 3033.
+[9]	 H.  Pan, Y.  Shao, P.  Yan, Y.  Cheng, K. S.  Han, Z.  Nie, C.  Wang, 
+J. Yang, X. Li, P. Bhattacharya, K. T. Mueller, J. Liu, Nat. Energy 2016, 
+1, 16039.
+[10]	 H. Xia, X. Zhu, J. Liu, Q. Liu, S. Lan, Q. Zhang, X. Liu, J. K. Seo, 
+T. Chen, L. Gu, Y. S. Meng, Nat. Commun. 2018, 9, 5100.
+[11]	 M. C. Lin, M. Gong, B. Lu, Y. Wu, D. Y. Wang, M. Guan, M. Angell, 
+C. Chen, J. Yang, B. J. Hwang, H. Dai, Nature 2015, 520, 324.
+[12]	 H.  Yang, L.  Yin, J.  Liang, Z.  Sun, Y.  Wang, H.  Li, K.  He, L.  Ma, 
+Z. Peng, S. Qiu, C. Sun, H.-M. Cheng, F. Li, Angew. Chem., Int. Ed. 
+2018, 57, 1898.
+[13]	 Y.  Hu, D.  Ye, B.  Luo, H.  Hu, X.  Zhu, S.  Wang, L.  Li, S.  Peng, 
+L. Wang, Adv. Mater. 2018, 30, 1703824.
+[14]	 C.  Wu, S.  Gu, Q.  Zhang, Y.  Bai, M.  Li, Y.  Yuan, H.  Wang, X.  Liu, 
+Y. Yuan, N. Zhu, F. Wu, H. Li, L. Gu, J. Lu, Nat. Commun. 2019, 10, 
+73.
+[15]	 Y. Liang, Y. Jing, S. Gheytani, K. Y. Lee, P. Liu, A. Facchetti, Y. Yao, 
+Nat. Mater. 2017, 16, 841.
+[16]	 S.  Liu, J. J.  Hu, N. F.  Yan, G. L.  Pan, G. R.  Li, X. P.  Gao, Energy 
+Environ. Sci. 2012, 5, 9743.
+[17]	 S. Liu, G. L. Pan, G. R. Li, X. P. Gao, J. Mater. Chem. A 2015, 3, 959.
+[18]	 H. Lahan, S. K. Das, J. Power Sources 2019, 413, 134.
+[19]	 W.  Chen, G.  Li, A.  Pei, Y.  Li, L.  Liao, H.  Wang, J.  Wan, Z.  Liang, 
+G. Chen, H. Zhang, J. Wang, Y. Cui, Nat. Energy 2018, 3, 428.
+[20]	 Q. Zhao, M. J. Zachman, W. I. Al Sadat, J. Zheng, L. F. Kourkoutis, 
+L. Archer, Sci. Adv. 2018, 4, eaau8131.
+[21]	 S. Guo, H. Yu, Z. Jian, P. Liu, Y. Zhu, X. Guo, M. Chen, M. Ishida, 
+H. Zhou, ChemSusChem 2014, 7, 2115.
+[22]	 N. Jayaprakash, S. K. Das, L. A. Archer, Chem. Commun. 2011, 47, 
+12610.
+[23]	 W. Wang, B. Jiang, W. Xiong, H. Sun, Z. Lin, L. Hu, J. Tu, J. Hou, 
+H. Zhu, S. Jiao, Sci. Rep. 2013, 3, 3383.
+[24]	 M.  Chiku, H.  Takeda, S.  Matsumura, E.  Higuchi, H.  Inoue, 
+ACS Appl. Mater. Interfaces 2015, 7, 24385.
+[25]	 H. Wang, Y. Bai, S. Chen, X. Luo, C. Wu, F. Wu, J. Lu, K. Amine, 
+ACS Appl. Mater. Interfaces 2015, 7, 80.
+[26]	 L. Geng, G. Lv, X. Xing, J. Guo, Chem. Mater. 2015, 27, 4926.
+
+=== PAGE 9 ===
+www.afm-journal.de
+www.advancedsciencenews.com
+1905228  (9 of 9)
+© 2019 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim
+Adv. Funct. Mater. 2019, 1905228
+[27]	 B. Lee, H. R. Lee, T. Yim, J. H. Kim, J. G. Lee, K. Y. Chung, B. W. Cho, 
+S. H. Oh, J. Electrochem. Soc. 2016, 163, A1070.
+[28]	 S. Wang, Z. Yu, J. Tu, J. Wang, D. Tian, Y. Liu, S. Jiao, Adv. Energy 
+Mater. 2016, 6, 1600137.
+[29]	 Z. Yu, Z. Kang, Z. Hu, J. Lu, Z. Zhou, S. Jiao, Chem. Commun. 2016, 
+52, 10427.
+[30]	 Y. Hu, B. Luo, D. Ye, X. Zhu, M. Lyu, L. Wang, Adv. Mater. 2017, 29, 
+1606132.
+[31]	 Z. Li, B. Niu, J. Liu, J. Li, F. Kang, ACS Appl. Mater. Interfaces 2018, 
+10, 9451.
+[32]	 H.  Li, H.  Yang, Z.  Sun, Y.  Shi, H.-M.  Cheng, F.  Li, Nano Energy 
+2019, 56, 100.
+[33]	 L. Wu, R. Sun, F. Xiong, C. Pei, K. Han, C. Peng, Y. Fan, W. Yang, 
+Q. An, L. Mai, Phys. Chem. Chem. Phys. 2018, 20, 22563.
+[34]	 S.  Jiao, H.  Lei, J.  Tu, J.  Zhu, J.  Wang, X.  Mao, Carbon 2016, 109, 
+276.
+[35]	 H.  Chen, F.  Guo, Y.  Liu, T.  Huang, B.  Zheng, N.  Ananth, Z.  Xu, 
+W. Gao, C. Gao, Adv. Mater. 2017, 29, 1605958.
+[36]	 X.  Yu, B.  Wang, D.  Gong, Z.  Xu, B.  Lu, Adv. Mater. 2017, 29, 
+1604118.
+[37]	 D. Y. Wang, C. Y. Wei, M. C. Lin, C. J. Pan, H. L. Chou, H. A. Chen, 
+M. Gong, Y. Wu, C. Yuan, M. Angell, Y. J. Hsieh, Y. H. Chen, C. Y. Wen, 
+C. W. Chen, B. J. Hwang, C. C. Chen, H. Dai, Nat. Commun. 2017, 8, 
+14283.
+[38]	 T. Gao, X. Li, X. Wang, J. Hu, F. Han, X. Fan, L. Suo, A. J. Pearse, 
+S. B.  Lee, G. W.  Rubloff, K. J.  Gaskell, M.  Noked, C.  Wang, 
+Angew. Chem. 2016, 128, 10052.
+[39]	 X. Yu, A. Manthiram, Adv. Energy Mater. 2017, 7, 1700561.
+[40]	 X. Yu, M. J. Boyer, G. S. Hwang, A. Manthiram, Chem 2018, 4, 586.
+[41]	 W. Chu, X. Zhang, J. Wang, S. Zhao, S. Liu, H. Yu, Energy Storage 
+Mater. 2019, https://doi.org/10.1016/j.ensm.2019.01.025.
+[42]	 N. Zhang, F. Cheng, J. Liu, L. Wang, X. Long, X. Liu, F. Li, J. Chen, 
+Nat. Commun. 2017, 8, 405.
+[43]	 C.  Julien, M.  Massot, R.  Baddour-Hadjean, S.  Franger, S.  Bach, 
+J. P. Pereira-Ramos, Solid State Ionics 2003, 159, 345.
+[44]	 Y. Jin, L. Zou, L. Liu, M. H. Engelhard, R. L. Patel, Z. Nie, K. S. Han, 
+Y.  Shao, C.  Wang, J.  Zhu, H.  Pan, J.  Liu, Adv. Mater. 2019, 31, 
+1900567.
+[45]	 B. Lin, X. Zhu, L. Fang, X. Liu, S. Li, T. Zhai, L. Xue, Q. Guo, J. Xu, 
+H. Xia, Adv. Mater. 2019, 31, 1900060.
+[46]	 J.  Huang, N.  van Vegten, Y.  Jiang, M.  Hunger, A.  Baiker, 
+Angew. Chem., Int. Ed. 2010, 49, 7776.
+[47]	 P. Latos, A. Culkin, N. Barteczko, S. Boncel, S. Jurczyk, L. C. Brown, 
+P.  Nockemann, A.  Chrobok, M.  Swadzba-Kwasny, Front. Chem. 
+2018, 6, 535.
+[48]	 Z.  Wang, S.  Pokhrel, M.  Chen, M.  Hunger, L.  Mädler, J.  Huang, 
+J. Catal. 2013, 302, 10.
+[49]	 Materials Project, ID: mvc-11435.
+

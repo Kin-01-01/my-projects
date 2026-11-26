@@ -1,0 +1,35 @@
+<view class="page {{themeClass}}">
+  <view class="wrap">
+    <view class="hero">
+      <view class="hero-emoji">✏️</view>
+      <view class="hero-title">{{firstTime ? '给自己起个名字' : '修改昵称'}}</view>
+      <view class="hero-desc">
+        这个名字只用来在练习记录里认出你自己，别人看不到你的题库内容。
+      </view>
+    </view>
+
+    <view class="card">
+      <input
+        class="nick-input"
+        type="nickname"
+        value="{{nickname}}"
+        maxlength="12"
+        placeholder="点这里，可一键使用微信昵称"
+        placeholder-class="ph"
+        bindinput="onInput"
+      />
+      <view class="nick-tip {{error ? 'nick-tip-error' : ''}}">
+        {{error ? error : '1～12 个字，支持中文、字母、数字'}}
+      </view>
+    </view>
+
+    <button
+      class="btn btn-primary btn-block nick-btn"
+      hover-class="btn-hover"
+      loading="{{saving}}"
+      bindtap="onSave"
+    >保存</button>
+
+    <view class="nick-skip" bindtap="onSkip">以后再说</view>
+  </view>
+</view>

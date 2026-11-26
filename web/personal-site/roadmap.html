@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>零度栈 · 学习路线图</title>
+<meta name="description" content="一条主线六阶段 + 三条支线的个人 AI 学习路线图：从 Python 入门到机器学习、深度学习、NLP、CV、面试专题，并用项目实战、备考交叉与资源供给三线并进。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body class="roadmap-page">
+
+<!-- 背景光圈：粉色虚化光晕跟随鼠标，与背景颜色互换（内容层之下，不遮正文） -->
+<div class="mouse-orb" id="mouseOrb" aria-hidden="true">
+  <span class="c c0 on"></span><span class="c c1"></span><span class="c c2"></span>
+</div>
+
+<!-- ============ 导航 ============ -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" style="text-decoration:none;color:inherit">
+      <span class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+      </span>
+      零度栈
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="content.html">内容</a>
+      <a href="roadmap.html">路线</a>
+      <a href="leaderboard.html">榜单</a>
+      <a href="index.html#knowledge-tree">知识树</a>
+      <a href="index.html#sitemap">结构</a>
+      <a href="contact.html">联系</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="切换主题">
+        <svg id="iconMoon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        <svg id="iconSun" viewBox="0 0 24 24" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="btn btn-primary" href="contact.html">联系我</a>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="菜单">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ 页面头 ============ -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">LEARNING ROADMAP</div>
+    <h1>我的学习路线图，<span class="grad-text">四线并进</span></h1>
+    <p>一条主线串起六个阶段，三条支线在关键节点接入：用项目把知识落成作品，用备考把复习对接考试，用资源在卡住时随时补给。移动鼠标，看光圈走过的区域如何与背景互换。</p>
+    <div class="rm-line">
+      <span class="lg l0"><i></i>主线 L0 · 六阶段</span>
+      <span class="lg l1"><i></i>项目实战线 L1</span>
+      <span class="lg l2"><i></i>备考交叉线 L2</span>
+      <span class="lg l3"><i></i>资源供给线 L3</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 主线六阶段 ============ -->
+<section id="stages">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">MAIN LINE L0</div>
+      <h2>主线六阶段，<span class="grad-text">从第一行代码到面试</span></h2>
+      <p>阶段按顺序推进，每个阶段都有一个可交付的验收节点。阶段之间靠前置知识衔接，不跳步、不空转。</p>
+    </div>
+    <div class="rm-stages">
+
+      <article class="stage reveal">
+        <div class="no">STAGE 01</div>
+        <h3>人工智能开发入门</h3>
+        <div class="pills"><span class="pill">Python</span><span class="pill">Numpy</span><span class="pill">Pandas</span><span class="pill">Matplotlib</span><span class="pill">Scipy</span></div>
+        <div class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>验收：写一组脚本，清洗并可视化一份真实实验数据（实验室数据即可）。</span></div>
+      </article>
+
+      <article class="stage reveal">
+        <div class="no">STAGE 02</div>
+        <h3>机器学习核心技术</h3>
+        <div class="pills"><span class="pill">Sklearn</span><span class="pill">分类</span><span class="pill">回归</span><span class="pill">聚类</span><span class="pill">降维</span><span class="pill">模型选择</span></div>
+        <div class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>验收：复现一个 Tabular 小赛，跑通训练-评估-调参全流程。</span></div>
+      </article>
+
+      <article class="stage reveal">
+        <div class="no">STAGE 03</div>
+        <h3>深度学习核心技术</h3>
+        <div class="pills"><span class="pill">神经网络</span><span class="pill">BP</span><span class="pill">CNN</span><span class="pill">RNN</span><span class="pill">阶段项目</span></div>
+        <div class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>验收：从零手写一个网络并出笔记；完成一个图像分类 demo。</span></div>
+      </article>
+
+      <article class="stage reveal">
+        <div class="no">STAGE 04</div>
+        <h3>NLP 自然语言处理</h3>
+        <div class="pills"><span class="pill">PyTorch</span><span class="pill">Transformer</span><span class="pill">文本预处理</span><span class="pill">序列模型</span><span class="pill">迁移学习</span></div>
+        <div class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>验收：用一个预训练模型做文本分类 demo，说清 attention 的流向。</span></div>
+      </article>
+
+      <article class="stage reveal">
+        <div class="no">STAGE 05</div>
+        <h3>CV 计算机视觉</h3>
+        <div class="pills"><span class="pill">OpenCV</span><span class="pill">目标检测</span><span class="pill">YOLO</span><span class="pill">分割</span><span class="pill">阶段项目</span></div>
+        <div class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>验收：用 YOLO 出一个检测 demo（实验室器材或校园场景都行）。</span></div>
+      </article>
+
+      <article class="stage reveal">
+        <div class="no">STAGE 06</div>
+        <h3>大厂面试专题</h3>
+        <div class="pills"><span class="pill">数据结构</span><span class="pill">常见算法</span><span class="pill">ML/DL 真题</span><span class="pill">NLP&amp;CV 专题</span></div>
+        <div class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>验收：持续刷题记录 + 模拟面试，沉淀成可展示的作品集。</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 三条支线 ============ -->
+<section id="branches">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">SIDE LINES</div>
+      <h2>三条支线，<span class="grad-text">在关键节点接入主线</span></h2>
+      <p>支线不占用主线节奏，只在对应阶段触发：把知识落成作品、把复习对接考试、在卡住时补一针资源。</p>
+    </div>
+    <div class="rm-branches">
+
+      <article class="branch b1 reveal">
+        <div class="bt">项目实战线 <span class="lt">L1</span></div>
+        <div class="sub">挂在 S3 / S5 的「阶段项目实战」</div>
+        <p>把主线学到的东西立刻做成能跑、能展示的作品，而不是停留在笔记里。每个项目单独成卡，附链接与技术栈。</p>
+        <p>当前可挂：熵减小程序（已在进行）、实验室电极材料数据复现、YOLO 检测项目。</p>
+        <div class="hook">关键节点：产出直接汇入 <b>S6 作品集</b>，面试时直接拿出来讲。</div>
+      </article>
+
+      <article class="branch b2 reveal">
+        <div class="bt">备考交叉线 <span class="lt">L2</span></div>
+        <div class="sub">对接 S6 数据结构专题</div>
+        <p>计算机三级（数据库）和考研 408 的数据结构，与 S6 的数据结构专题高度重合。一份复习，两场考试用。</p>
+        <p>9 月三级考试临近，这条线当前优先级最高，先保考试、再冲项目。</p>
+        <div class="hook">关键节点：<b>9 月三级考试</b> → 408 数据结构，与主线共用一套刷题记录。</div>
+      </article>
+
+      <article class="branch b3 reveal">
+        <div class="bt">资源供给线 <span class="lt">L3</span></div>
+        <div class="sub">按需供给，不占主线节奏</div>
+        <p>对应路线图右侧的课程视频与学长经验：深度学习课程、北大硕博面试专题、学长求职分享。</p>
+        <p>只在某个节点卡住或想换口味时点开，平时不打扰主线推进。</p>
+        <div class="hook">关键节点：某阶段卡住 → 调取对应课程/经验，<b>通了就回到主线</b>。</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 路线总览树（可交互 + 勾选进度） ============ -->
+<section id="tree" class="roadmap-tree-sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">ROADMAP TREE</div>
+      <h2>一张树，<span class="grad-text">看清从易到难的全程</span></h2>
+      <p>根节点是总目标，往下分五个难度梯度层：L1 入门 → L2 核心 → L3 专项 → L4 产出 → L5 终点。点节点展开学习要点；勾选左边方框标记已掌握，顶部进度会实时统计，状态记在浏览器里，刷新不丢。</p>
+    </div>
+
+    <div class="rtree-prog reveal">
+      <div class="rtree-prog-bar"><span id="rtreeFill"></span></div>
+      <div class="rtree-prog-txt">已掌握 <b id="rtreeDone">0</b> / <b id="rtreeTotal">15</b> 个模块 · <b id="rtreePct">0%</b></div>
+      <button class="rtree-reset" id="rtreeReset" type="button">重置进度</button>
+    </div>
+
+    <div class="rtree reveal">
+      <details class="rroot" open>
+        <summary>总体目标 · 可就业的 AI / CS 能力</summary>
+        <div class="rlayers">
+
+          <details class="rlayer l1" open>
+            <summary><span class="rl-tag">L1 · 入门地基</span></summary>
+            <div class="rnodes">
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l1-python" data-id="l1-python">
+                  <label class="rnode-main" for="l1-python"><span class="rnode-title">Python 编程</span><span class="rnode-sub">已二级 · 打牢底子</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>二级已拿，重点练文件读写、函数与类、异常处理。</li><li>刷《Python Crash Course》习题，养成手写代码习惯。</li><li>熟悉虚拟环境与 pip，能独立跑起一个小项目。</li></ul></details>
+              </div>
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l1-math" data-id="l1-math">
+                  <label class="rnode-main" for="l1-math"><span class="rnode-title">数学三件套</span><span class="rnode-sub">线代 · 概率 · 微积分</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>线代：矩阵、特征值、向量空间，ML 的底层语言。</li><li>概率：分布、贝叶斯、期望方差，理解模型不确定性。</li><li>微积分：梯度与链式法则，反向传播的基础。</li><li>配合 3Blue1Brown 直观视频，先懂再算。</li></ul></details>
+              </div>
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l1-db" data-id="l1-db">
+                  <label class="rnode-main" for="l1-db"><span class="rnode-title">三级 · 数据库</span><span class="rnode-sub">9 月考试 · 备考</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>关系模型、SQL 增删改查、ER 图与范式。</li><li>配合 ima 知识库里的三级笔记，边学边存。</li><li>当前优先级最高：先保 9 月考试。</li></ul></details>
+              </div>
+            </div>
+          </details>
+
+          <details class="rlayer l2" open>
+            <summary><span class="rl-tag">L2 · 核心能力</span></summary>
+            <div class="rnodes">
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l2-dsa" data-id="l2-dsa">
+                  <label class="rnode-main" for="l2-dsa"><span class="rnode-title">数据结构与算法</span><span class="rnode-sub">LeetCode 每周</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>数组 / 链表 / 栈 / 队列 / 树 / 图 / 哈希。</li><li>排序、二分、DFS/BFS、动态规划入门。</li><li>每周 3 题，错一题就当天弄懂。</li></ul></details>
+              </div>
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l2-ml" data-id="l2-ml">
+                  <label class="rnode-main" for="l2-ml"><span class="rnode-title">机器学习基础</span><span class="rnode-sub">Andrew Ng 课程</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>监督 / 无监督学习、训练-验证-测试流程。</li><li>评估指标：准确率、召回、F1、ROC。</li><li>用 Sklearn 跑通第一个分类器。</li></ul></details>
+              </div>
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l2-linux" data-id="l2-linux">
+                  <label class="rnode-main" for="l2-linux"><span class="rnode-title">Linux · Git</span><span class="rnode-sub">命令行协作</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>常用命令、权限、管道、ssh 远程连服务器。</li><li>git 工作流：commit / branch / rebase / PR。</li><li>用 conda 或 venv 管理 Python 环境。</li></ul></details>
+              </div>
+            </div>
+          </details>
+
+          <details class="rlayer l3" open>
+            <summary><span class="rl-tag">L3 · 专项深入</span></summary>
+            <div class="rnodes">
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l3-dl" data-id="l3-dl">
+                  <label class="rnode-main" for="l3-dl"><span class="rnode-title">深度学习 PyTorch</span><span class="rnode-sub">主线框架</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>张量、autograd、nn.Module 搭建网络。</li><li>CNN 做图像，Transformer 做序列。</li><li>从零手写一个网络，理解每一行在算什么。</li></ul></details>
+              </div>
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l3-data" data-id="l3-data">
+                  <label class="rnode-main" for="l3-data"><span class="rnode-title">数据处理实战</span><span class="rnode-sub">SQL + 清洗</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>用 SQL + Python 清洗一份真实实验数据。</li><li>pandas 管道：缺失值、归一化、特征构造。</li><li>产出可视化图表，直接复用进实验室汇报。</li></ul></details>
+              </div>
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l3-eng" data-id="l3-eng">
+                  <label class="rnode-main" for="l3-eng"><span class="rnode-title">项目工程化</span><span class="rnode-sub">CloudBase · 小程序</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>前端 + 云函数，把熵减做成可演示的小程序。</li><li>接口设计、数据库读写、上线部署。</li><li>学会把零散脚本包装成产品。</li></ul></details>
+              </div>
+            </div>
+          </details>
+
+          <details class="rlayer l4" open>
+            <summary><span class="rl-tag">L4 · 方向产出</span></summary>
+            <div class="rnodes">
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l4-cv" data-id="l4-cv">
+                  <label class="rnode-main" for="l4-cv"><span class="rnode-title">CV · YOLO</span><span class="rnode-sub">电极缺陷检测</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>OpenCV 预处理，YOLO 做目标检测。</li><li>用实验室器材或校园场景训一个 demo。</li><li>把检测框接进熵减小程序做展示。</li></ul></details>
+              </div>
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l4-research" data-id="l4-research">
+                  <label class="rnode-main" for="l4-research"><span class="rnode-title">科研 · 竞赛</span><span class="rnode-sub">熵减项目</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>熵减参赛，把减碳平台做成完整作品。</li><li>复现实验室电极材料数据，冲论文 / 奖项。</li><li>竞赛逼出交付质量，比自学快。</li></ul></details>
+              </div>
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l4-portfolio" data-id="l4-portfolio">
+                  <label class="rnode-main" for="l4-portfolio"><span class="rnode-title">全栈作品集</span><span class="rnode-sub">上线可演示</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>每个项目写 README、录 demo、放链接。</li><li>用这个网站当作品集中枢。</li><li>面试时直接打开讲，不靠口头描述。</li></ul></details>
+              </div>
+            </div>
+          </details>
+
+          <details class="rlayer l5" open>
+            <summary><span class="rl-tag">L5 · 终点</span></summary>
+            <div class="rnodes">
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l5-exam" data-id="l5-exam">
+                  <label class="rnode-main" for="l5-exam"><span class="rnode-title">考研准备</span><span class="rnode-sub">凝聚态 vs 光学</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>以就业前景为第一优先级做抉择。</li><li>凝聚态偏基础科研，光学工程偏产业应用。</li><li>408 数据结构与主线刷题记录共用。</li></ul></details>
+              </div>
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l5-intern" data-id="l5-intern">
+                  <label class="rnode-main" for="l5-intern"><span class="rnode-title">实习投递</span><span class="rnode-sub">简历 + 作品</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>简历突出项目与数据，不堆课程名。</li><li>盯暑期实习与校招提前批。</li><li>作品集链接放显眼位置。</li></ul></details>
+              </div>
+              <div class="rnode">
+                <div class="rnode-top">
+                  <input class="rchk" type="checkbox" id="l5-interview" data-id="l5-interview">
+                  <label class="rnode-main" for="l5-interview"><span class="rnode-title">技术面试</span><span class="rnode-sub">八股 + 手撕</span></label>
+                </div>
+                <details class="rnode-detail"><summary>学习要点</summary><ul><li>基础八股 + 现场手撕代码。</li><li>用模拟面试沉淀回答模板。</li><li>把 L6 刷题记录转为面试弹药。</li></ul></details>
+              </div>
+            </div>
+          </details>
+
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 收尾 CTA ============ -->
+<section class="subscribe">
+  <div class="wrap">
+    <div class="sub-card reveal">
+      <h2>路线是死的，<span class="grad-text">节奏是自己的</span></h2>
+      <p>六阶段给出顺序，三线给出弹性。先保住 9 月三级，再让 YOLO 项目落进作品集。想看我实际做了什么，去内容页；想一起搭伙，去联系我。</p>
+      <div class="page-cta">
+        <a class="btn btn-primary" href="content.html">看我的项目</a>
+        <a class="btn btn-ghost" href="contact.html">联系我</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html" style="text-decoration:none;color:inherit">
+          <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span>
+          零度栈
+        </a>
+        <p class="foot-about">一个物理师范生的技术自学指挥部。把实验室之外的时间，用来点亮另一条路。</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>导航</h4>
+          <a href="index.html">首页</a>
+          <a href="about.html">关于</a>
+          <a href="content.html">内容</a>
+          <a href="roadmap.html">路线</a>
+          <a href="contact.html">联系</a>
+        </div>
+        <div class="foot-col">
+          <h4>方向</h4>
+          <a href="roadmap.html">机器学习</a>
+          <a href="roadmap.html">神经网络</a>
+          <a href="roadmap.html">YOLO 视觉</a>
+          <a href="about.html">新能源材料</a>
+        </div>
+      </div>
+      <div class="foot-social">
+        <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.26.72-.27 1.48-.27 2.25v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+        <a href="#" aria-label="邮箱"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 零度栈 · 用代码记录成长</span>
+      <span class="mono">built with native HTML / CSS / JS</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

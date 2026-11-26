@@ -1,0 +1,102 @@
+@import "styles/interactions.wxss";
+
+/* 全局样式 · 浅色清爽系（清爽明亮 + 清晰层次）+ 12 项高级交互
+   主基调浅蓝灰；强调蓝青渐变；渐变只用于数字/进度/选中/类型色条 */
+page {
+  background: #EDF1F7;
+  color: #16203A;
+  font-size: 28rpx;
+  line-height: 1.6;
+  font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+}
+
+.title { font-family: -apple-system, "PingFang SC", sans-serif; }
+.h1 { font-size: 40rpx; font-weight: 600; }
+.h2 { font-size: 34rpx; font-weight: 600; }
+.small { font-size: 24rpx; }
+.xsmall { font-size: 22rpx; }
+.muted { color: #9AA4B8; }
+.t2 { color: #6E7891; }
+
+/* 卡片：白底 + 柔和阴影，浅色系层次靠阴影与留白 */
+.card {
+  background: #FFFFFF;
+  border: 1rpx solid rgba(22, 32, 58, 0.05);
+  border-radius: 28rpx;
+  padding: 28rpx;
+  margin: 18rpx 24rpx;
+  box-shadow: 0 4rpx 16rpx rgba(28, 46, 90, 0.05), 0 1rpx 2rpx rgba(28, 46, 90, 0.04);
+}
+
+.section-title { margin: 30rpx 32rpx 4rpx; font-size: 30rpx; font-weight: 600; color: #2C3858; }
+
+/* 渐变文字（倒计时等"值得看的地方"专用） */
+.grad-num {
+  background: linear-gradient(135deg, #5B8DEF, #36CFC9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 按钮基线 */
+.btn-primary {
+  background: linear-gradient(135deg, #5B8DEF, #36CFC9);
+  color: #FFFFFF; border-radius: 24rpx; font-size: 28rpx; font-weight: 500;
+  margin-top: 24rpx; line-height: 2.6;
+}
+.btn-primary::after { border: none; }
+.btn-ghost {
+  background: #F2F6FC; color: #3B6EF6; border: 1rpx solid rgba(59, 110, 246, 0.35);
+  border-radius: 24rpx; font-size: 26rpx; margin-top: 20rpx; line-height: 2.6;
+}
+.btn-ghost::after { border: none; }
+.btn-danger {
+  background: #FDF2F0; color: #E5746B; border: 1rpx solid rgba(229, 116, 107, 0.4);
+  border-radius: 24rpx; font-size: 26rpx; margin-top: 20rpx; line-height: 2.6;
+}
+.btn-danger::after { border: none; }
+
+.row { display: flex; align-items: center; }
+.gap { flex: 1; }
+.empty { text-align: center; padding: 40rpx 28rpx; }
+
+/* 进度条 */
+.bar-track { height: 10rpx; background: #E8EDF5; border-radius: 999rpx; overflow: hidden; }
+.bar-fill {
+  height: 100%; background: linear-gradient(90deg, #5B8DEF, #36CFC9);
+  border-radius: 999rpx; transition: width .4s cubic-bezier(.4, 0, .2, 1);
+}
+
+.strike { text-decoration: line-through; color: #B7C0D0; }
+
+/* 类型色条（任务卡左侧 3px 区分模块） */
+.type-vocab { border-left: 6rpx solid #3B6EF6; }
+.type-listen { border-left: 6rpx solid #1FBF9C; }
+.type-reading { border-left: 6rpx solid #F0A23B; }
+.type-writing { border-left: 6rpx solid #9B6CF2; }
+.type-translate { border-left: 6rpx solid #E5746B; }
+.type-mock { border-left: 6rpx solid #5B8DEF; }
+.type-review { border-left: 6rpx solid #6E7891; }
+.type-other { border-left: 6rpx solid #9AA4B8; }
+
+/* ============================================================
+   页面切换过渡：进入时淡入上移（tab 切换 onShow 重放）
+   ============================================================ */
+.fx-in { animation: ix-page-in .4s cubic-bezier(.22, 1, .36, 1) both; }
+@keyframes ix-page-in {
+  from { opacity: 0; transform: translateY(16rpx); }
+  to { opacity: 1; transform: none; }
+}
+
+/* 完成进度提示横幅（任务打勾后浮现） */
+.ix-banner {
+  position: fixed; left: 24rpx; right: 24rpx; bottom: 48rpx;
+  background: linear-gradient(135deg, #5B8DEF, #36CFC9);
+  color: #FFFFFF; font-size: 26rpx; font-weight: 500;
+  padding: 22rpx 30rpx; border-radius: 20rpx;
+  box-shadow: 0 10rpx 30rpx rgba(28, 46, 90, .22);
+  z-index: 200; text-align: center;
+  opacity: 0; transform: translateY(30rpx); pointer-events: none;
+  transition: opacity .3s ease, transform .3s cubic-bezier(.22, 1, .36, 1);
+}
+.ix-banner.show { opacity: 1; transform: translateY(0); }

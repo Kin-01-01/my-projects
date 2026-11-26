@@ -1,0 +1,314 @@
+/* pages/result/result.wxss —— 结果页 */
+
+.wrap {
+  padding-top: 24rpx;
+}
+
+/* ---------- 成绩卡 ---------- */
+.score-card {
+  position: relative;
+  background: var(--card);
+  border-radius: 40rpx;
+  padding: 34rpx 32rpx 30rpx 32rpx;
+  box-shadow: var(--shadow), var(--inner);
+  overflow: hidden;
+}
+
+.score-glow {
+  position: absolute;
+  width: 320rpx;
+  height: 320rpx;
+  border-radius: 50%;
+  right: -140rpx;
+  top: -170rpx;
+  background: var(--lime);
+  opacity: 0.35;
+}
+
+.score-label {
+  position: relative;
+  display: block;
+  font-size: 23rpx;
+  color: var(--text-3);
+  text-align: center;
+  letter-spacing: 0.4rpx;
+}
+
+/* 环形进度：--p 由 WXML 内联注入（0-100）。
+   不支持 conic-gradient 的旧内核会自动退回纯 --bg-soft 圆底，不会显示破图。 */
+.ring {
+  position: relative;
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  margin: 26rpx auto 0 auto;
+  background: var(--bg-soft);
+  background-image: conic-gradient(var(--lime) calc(var(--p, 0) * 1%), var(--bg-soft) 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring-hole {
+  width: 236rpx;
+  height: 236rpx;
+  border-radius: 50%;
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--inner);
+}
+
+.ring-num {
+  display: flex;
+  align-items: baseline;
+}
+
+.score-num {
+  font-size: 76rpx;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -3rpx;
+  line-height: 1.1;
+}
+
+.score-pct {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--text-3);
+  margin-left: 2rpx;
+}
+
+.score-desc {
+  font-size: 21rpx;
+  color: var(--text-3);
+  letter-spacing: 2rpx;
+  margin-top: 2rpx;
+}
+
+/* ---------- 三项统计 ---------- */
+.mini-stats {
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+  padding: 22rpx 0;
+  background: var(--bg-soft);
+  border-radius: 28rpx;
+}
+
+.mini-stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mini-num {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.4rpx;
+}
+
+.mini-num-ok {
+  color: var(--ok);
+}
+
+.mini-num-bad {
+  color: var(--bad);
+}
+
+.mini-label {
+  font-size: 21rpx;
+  color: var(--text-3);
+  margin-top: 6rpx;
+}
+
+.mini-line {
+  width: 1rpx;
+  height: 40rpx;
+  background: var(--border-strong);
+}
+
+.exam-extra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+
+.exam-extra-item {
+  font-size: 22rpx;
+  color: var(--text-3);
+  margin: 0 14rpx;
+}
+
+/* ---------- 错题回顾 ---------- */
+.section {
+  margin-top: 34rpx;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 8rpx 18rpx 8rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.4rpx;
+}
+
+.section-count {
+  font-size: 22rpx;
+  color: var(--text-3);
+}
+
+.wrong-item {
+  background: var(--card);
+  border-radius: 30rpx;
+  margin-bottom: 18rpx;
+  box-shadow: var(--shadow), var(--inner);
+  overflow: hidden;
+}
+
+.wrong-head {
+  display: flex;
+  align-items: flex-start;
+  padding: 26rpx 26rpx 24rpx 26rpx;
+}
+
+.wrong-no {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23rpx;
+  font-weight: 700;
+  color: var(--bad);
+  background: var(--bad-soft);
+  margin-right: 18rpx;
+  flex-shrink: 0;
+}
+
+.wrong-head-body {
+  flex: 1;
+}
+
+.wrong-stem {
+  display: block;
+  font-size: 28rpx;
+  line-height: 1.62;
+  color: var(--text);
+}
+
+.wrong-ans-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12rpx;
+}
+
+.wrong-your {
+  font-size: 22rpx;
+  color: var(--bad);
+  margin-right: 20rpx;
+}
+
+.wrong-right {
+  font-size: 22rpx;
+  color: var(--ok);
+}
+
+.wrong-arrow {
+  font-size: 20rpx;
+  color: var(--text-3);
+  margin-left: 12rpx;
+  padding-top: 8rpx;
+}
+
+.wrong-body {
+  padding: 0 26rpx 26rpx 26rpx;
+}
+
+.wrong-analysis {
+  padding: 24rpx;
+  border-radius: 24rpx;
+  background: var(--bg-soft);
+}
+
+.wrong-analysis-title {
+  display: block;
+  font-size: 22rpx;
+  font-weight: 700;
+  color: var(--text-2);
+  letter-spacing: 2rpx;
+  margin-bottom: 12rpx;
+}
+
+.wrong-analysis-text {
+  font-size: 25rpx;
+  line-height: 1.86;
+  color: var(--text-2);
+}
+
+.wrong-no-analysis {
+  font-size: 24rpx;
+  color: var(--text-3);
+}
+
+/* ---------- 全对 ---------- */
+.allright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70rpx 40rpx;
+  background: var(--card);
+  border-radius: 34rpx;
+  margin-top: 34rpx;
+  box-shadow: var(--shadow), var(--inner);
+}
+
+.allright-emoji {
+  font-size: 76rpx;
+  line-height: 1;
+  margin-bottom: 22rpx;
+}
+
+.allright-title {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.allright-text {
+  font-size: 25rpx;
+  color: var(--text-2);
+  margin-top: 10rpx;
+}
+
+/* ---------- 底部操作 ---------- */
+.result-actions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.result-btn {
+  flex: 1;
+  margin-left: 16rpx;
+}
+
+.result-btn:first-child {
+  margin-left: 0;
+}
+
+.result-btn-sm {
+  flex: 0 0 200rpx;
+}

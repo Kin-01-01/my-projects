@@ -1,0 +1,25 @@
+web/cs-portal	49	CS 自学门户与作品集 · 枯木逢春知识树
+web/personal-site	55	知识型个人站：知识树 / 路线图 / 排行榜
+web/mylife-sites	36	Mylife 系列网站原型（Blog / Lifelog / MyBlog / MySpace / TravelNotes）
+web/mylife-simple	4	Mylife 简版静态站
+web/snake-game	1	单文件贪吃蛇小游戏
+web/apple-slides	3	Apple 发布会风格 HTML 演示样片
+web/data-storytelling	7	数据叙事与春树可视化
+web/ml-atlas	36	ML 代码库索引（单页 HTML）与自检脚本
+web/solid-state-viewer	4	双语双栏文献阅读器：正文 / PDF 逐页 + 同步指针
+web/ssb-dual-reader	1	固态电池综述双栏阅读器
+web/christmas-tree	1	交互式 3D 圣诞树
+web/cet4-planner	58	四级备考微信小程序
+web/entropy-carbon-campus	8	熵减 · 数智校园减碳平台（申报书与附件材料）
+web/marxquiz-mp	88	MarxQuiz 刷题小程序（912 题内置题库 + 云同步）
+scripts/ml-cheatsheet-builder	5	吴恩达 ML 课程速查表生成器
+scripts/literature-tools	67	文献 PDF 抽取 / 综合矩阵 / docx 解析编译脚本
+scripts/pdf-to-docx	12	PDF 转 DOCX 工具脚本
+scripts/svm-replication	6	Fujimura SVM 分类结果复现与数据集清洗
+scripts/blender-models	12	Blender Python 程序化建模脚本
+scripts/physics-lesson-tools	16	物理试讲课件生成脚本与素材说明
+scripts/shuoke-ppt-tools	1	说课 PPT 生成与设计稿脚本
+docs/teaching-scripts	6	初高中物理试讲逐页稿与台词
+docs/literature-notes	30	亚稳相固态电解质综述大纲与文献获取清单
+docs/cet4-plans	7	75 天四级备考计划与细化表
+docs/opc-doc	4	OPC 文档资料

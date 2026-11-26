@@ -1,0 +1,78 @@
+<view class="page {{themeClass}}">
+  <!-- 分段切换 -->
+  <view class="seg-wrap">
+    <view class="seg">
+      <view class="seg-item {{tab === 'wrong' ? 'seg-item-on' : ''}}" data-tab="wrong" bindtap="onTabChange">
+        错题<text class="seg-num">{{totalWrong}}</text>
+      </view>
+      <view class="seg-item {{tab === 'fav' ? 'seg-item-on' : ''}}" data-tab="fav" bindtap="onTabChange">
+        收藏<text class="seg-num">{{totalFav}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="wrap">
+    <block wx:if="{{groups.length > 0}}">
+      <view class="group" wx:for="{{groups}}" wx:for-item="group" wx:for-index="gi" wx:key="bankId">
+        <view class="group-head">
+          <view class="group-head-left">
+            <text class="group-name">{{group.bankName}}</text>
+            <text class="group-count">{{group.count}} 题</text>
+          </view>
+          <view
+            wx:if="{{tab === 'wrong'}}"
+            class="group-btn"
+            data-id="{{group.bankId}}"
+            bindtap="onPractice"
+            hover-class="group-btn-hover"
+          >练这些错题</view>
+        </view>
+
+        <view class="item" wx:for="{{group.items}}" wx:for-item="it" wx:for-index="ii" wx:key="id">
+          <view class="item-head" data-gi="{{gi}}" data-ii="{{ii}}" bindtap="onToggleItem">
+            <view class="item-main">
+              <view class="item-top">
+                <text class="item-type">{{it.typeLabel}}</text>
+                <text wx:if="{{it.wrongCount > 1}}" class="item-badge">错 {{it.wrongCount}} 次</text>
+              </view>
+              <text class="item-stem">{{it.stem}}</text>
+            </view>
+            <text class="item-arrow">{{it.expanded ? '▲' : '▼'}}</text>
+          </view>
+
+          <view wx:if="{{it.expanded}}" class="item-body">
+            <view class="item-ans">
+              <text class="item-ans-label">正确答案</text>
+              <text class="item-ans-value">{{it.answerText}}</text>
+            </view>
+            <view wx:if="{{it.analysis}}" class="item-analysis">
+              <text class="item-analysis-title">解析</text>
+              <text class="item-analysis-text">{{it.analysis}}</text>
+            </view>
+            <text wx:else class="item-no-analysis">这道题没有解析</text>
+          </view>
+
+          <view class="item-foot">
+            <view
+              class="item-remove"
+              data-bid="{{it.bankId}}"
+              data-qid="{{it.id}}"
+              bindtap="onRemove"
+              hover-class="item-remove-hover"
+            >{{tab === 'wrong' ? '移出错题本' : '取消收藏'}}</view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <view wx:elif="{{ready}}" class="empty">
+      <text class="empty-emoji">{{tab === 'wrong' ? '🎯' : '⭐'}}</text>
+      <text class="empty-title">{{tab === 'wrong' ? '还没有错题' : '还没有收藏'}}</text>
+      <text class="empty-text">{{tab === 'wrong' ? '刷题时答错的题会自动进这里，方便你集中攻克。' : '刷题时点题目右上角的星标，就能把题目收藏到这里。'}}</text>
+      <view class="btn btn-primary empty-btn" bindtap="onBackHome" hover-class="btn-hover">去刷题</view>
+      <view class="btn btn-ghost empty-btn empty-btn-2" bindtap="onTapImport" hover-class="btn-hover">导入题库</view>
+    </view>
+
+    <view class="tab-space"></view>
+  </view>
+</view>

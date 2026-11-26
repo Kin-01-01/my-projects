@@ -1,0 +1,12 @@
+{
+  "name": "zero-stack-github-leaderboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "每周收集 GitHub 某 Topic 下 star 前 10 项目，生成可视化榜单并保留历史快照",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

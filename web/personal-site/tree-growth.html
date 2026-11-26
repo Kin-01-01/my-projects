@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>自生长大树 · 写实有机生长动画</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg0:#070b18; --bg1:#0d1733; --ink:#e8ecf6; --muted:#9aa3bf;
+    --violet:#8b5cf6; --cyan:#22d3ee; --glass:rgba(20,24,34,.55); --hair:rgba(255,255,255,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:Inter,system-ui,sans-serif;background:#0c0f14;color:var(--ink);overflow:hidden}
+  #stage{position:fixed;inset:0;display:block}
+  .hud{position:fixed;left:50%;top:26px;transform:translateX(-50%);text-align:center;z-index:3;pointer-events:none;text-shadow:0 2px 14px rgba(0,0,0,.55)}
+  .hud h1{font-size:22px;font-weight:800;letter-spacing:-.4px}
+  .hud h1 b{background:linear-gradient(90deg,#cfd8c4,#a9b58f);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hud p{color:#cdd3df;font-size:13px;margin-top:4px;opacity:.85}
+  .panel{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:3;display:flex;gap:14px;align-items:center;
+    background:var(--glass);border:1px solid var(--hair);backdrop-filter:blur(14px);border-radius:999px;padding:10px 18px;flex-wrap:wrap;justify-content:center;max-width:92vw}
+  .panel button{font-family:inherit;font-size:14px;font-weight:600;color:#11150f;background:linear-gradient(90deg,#b7c39a,#8fa06f);
+    border:none;border-radius:999px;padding:9px 18px;cursor:pointer;transition:transform .15s}
+  .panel button:active{transform:scale(.94)}
+  .panel .ctl{display:flex;align-items:center;gap:8px;color:#cdd3df;font-size:12px}
+  .panel input[type=range]{width:104px;accent-color:#9fb27e}
+  @media (max-width:560px){.hud p{display:none}.panel{padding:8px 12px;gap:10px}.panel input[type=range]{width:78px}}
+  @media (prefers-reduced-motion:reduce){.hud p::after{content:" · 已为减弱动效模式跳过动画"}}
+</style>
+</head>
+<body>
+<canvas id="stage"></canvas>
+
+<div class="hud">
+  <h1>自生长<b>大树</b></h1>
+  <p>从种子出发，逐级分叉、舒展枝叶，鼠标可拂动风，点按钮换一棵</p>
+</div>
+
+<div class="panel">
+  <button id="regrow">重新生长</button>
+  <div class="ctl">速度<input id="speed" type="range" min="0.4" max="2.2" step="0.1" value="1"></div>
+  <div class="ctl">风<input id="wind" type="range" min="0" max="2" step="0.1" value="1"></div>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  const canvas = document.getElementById('stage');
+  const ctx = canvas.getContext('2d');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  let W = 0, H = 0, DPR = 1;
+  function resize() {
+    DPR = Math.min(window.devicePixelRatio || 1, 2);
+    W = window.innerWidth; H = window.innerHeight;
+    canvas.width = W * DPR; canvas.height = H * DPR;
+    canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  // ---- 工具 ----
+  const rand = (a, b) => a + Math.random() * (b - a);
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const clamp = (v, a, b) => v < a ? a : v > b ? b : v;
+  const easeInOutSine = t => -(Math.cos(Math.PI * t) - 1) / 2;
+  const easeOutBack = t => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2); };
+
+  function lerpColor(c1, c2, t) {
+    return [
+      Math.round(lerp(c1[0], c2[0], t)),
+      Math.round(lerp(c1[1], c2[1], t)),
+      Math.round(lerp(c1[2], c2[2], t)),
+    ];
+  }
+
+  // 光照方向（左上方），用于枝干圆柱体积光与叶片受光面
+  const LIGHT = { x: -0.5, y: -0.86 };
+
+  // 低饱和自然木色：主干深褐 -> 中段木色 -> 枝梢灰绿褐
+  const TRUNK = [60, 47, 35], MID = [88, 70, 50], TIP = [102, 94, 60];
+  function branchColorRGB(depth, maxDepth) {
+    const t = clamp(depth / maxDepth, 0, 1);
+    return t < 0.5 ? lerpColor(TRUNK, MID, t / 0.5) : lerpColor(MID, TIP, (t - 0.5) / 0.5);
+  }
+
+  // 叶片：低饱和的橄榄/秋色调，避免高饱和色块
+  const LEAF_RGB = [
+    [110, 138, 74], [95, 122, 57], [128, 154, 85], [150, 166, 90],
+    [170, 168, 95], [156, 138, 62], [176, 134, 60], [120, 140, 78],
+  ];
+  // 树冠叶团的多种灰绿（叠出层次，非平涂）
+  const FOLIAGE_RGB = [
+    [96, 120, 66], [78, 100, 54], [120, 134, 80], [88, 110, 60], [132, 142, 86],
+  ];
+
+  // ---- 生成树结构（保留有机生长逻辑） ----
+  const MAX_DEPTH = 10;
+  let root = null, totalNodes = 0;
+
+  function makeNode(depth, lengthFrac, angle, widthFrac) {
+    totalNodes++;
+    const node = {
+      depth, lengthFrac, angle, widthFrac,
+      curve: rand(-0.32, 0.32),                 // 自然弯曲，古树更盘错
+      children: [], leaves: [],
+      t0: 0, dur: 1,
+      phase: rand(0, Math.PI * 2),
+      isTip: false, cracks: [], grain: [], moss: [], foliage: [],
+    };
+    // 树皮龟裂 / 木纹 / 苔痕：生成时确定性预存，避免逐帧抖动
+    if (lengthFrac > 0.06) {
+      const nC = 2 + ((lengthFrac * 9) | 0);
+      for (let i = 0; i < nC; i++) {
+        node.cracks.push({ u: rand(0.06, 0.96), side: Math.random() < 0.5 ? 1 : -1, len: rand(0.16, 0.4), jit: rand(-0.16, 0.16) });
+      }
+    }
+    if (lengthFrac > 0.12) {
+      const nG = 2 + ((lengthFrac * 6) | 0);
+      for (let i = 0; i < nG; i++) {
+        node.grain.push({ u: rand(0.05, 0.95), off: rand(-0.55, 0.55) });
+      }
+    }
+    if (lengthFrac > 0.28 && Math.random() < 0.7) {
+      const nM = 1 + ((Math.random() * 2) | 0);
+      for (let i = 0; i < nM; i++) {
+        node.moss.push({ u: rand(0.1, 0.85), side: Math.random() < 0.5 ? 1 : -1, r: rand(0.12, 0.28) });
+      }
+    }
+    const tip = depth >= MAX_DEPTH || lengthFrac < 0.02;
+    if (tip) {
+      const n = 4 + ((Math.random() * 3) | 0);
+      for (let i = 0; i < n; i++) node.leaves.push(makeLeaf(true));
+      // 树冠叶团：确定性聚簇，多色叠加模拟密叶
+      const nF = 5 + ((Math.random() * 4) | 0);
+      for (let i = 0; i < nF; i++) {
+        node.foliage.push({
+          a: rand(0, Math.PI * 2), rr: rand(0.05, 0.7), r: rand(0.55, 0.95),
+          g: FOLIAGE_RGB[(Math.random() * FOLIAGE_RGB.length) | 0],
+        });
+      }
+      node.isTip = true;
+      return node;
+    }
+    let nChild;
+    if (depth < 1) nChild = 1 + (Math.random() < 0.6 ? 1 : 0);
+    else nChild = Math.random() < 0.16 ? 3 : 2;
+    for (let i = 0; i < nChild; i++) {
+      const spread = nChild === 1 ? rand(-0.22, 0.22)
+                                 : (i / (nChild - 1) - 0.5) * rand(0.95, 1.5) + rand(-0.12, 0.12);
+      const child = makeNode(
+        depth + 1,
+        lengthFrac * rand(0.72, 0.83),
+        spread + (depth < 2 ? 0 : rand(-0.06, 0.06)),
+        widthFrac * 0.8
+      );
+      node.children.push(child);
+    }
+    if (depth > 2 && Math.random() < 0.5) {
+      const k = 1 + ((Math.random() * 2) | 0);
+      for (let i = 0; i < k; i++) node.leaves.push(makeLeaf(false));
+    }
+    return node;
+  }
+  function makeLeaf(big) {
+    const rgb = LEAF_RGB[(Math.random() * LEAF_RGB.length) | 0];
+    return {
+      off: rand(0.5, 1),
+      ang: rand(-1.0, 1.0),
+      size: big ? rand(10, 18) : rand(7, 12),
+      rgb,
+      dark: lerpColor(rgb, [22, 32, 14], 0.45),   // 基部背光
+      lit: lerpColor(rgb, [198, 206, 150], 0.32),  // 尖端受光
+    };
+  }
+
+  function assignTiming(node, t0, dur) {
+    node.t0 = t0; node.dur = dur;
+    const childStart = t0 + dur * 0.72;
+    const childDur = Math.max(0.28, dur * rand(0.55, 0.8));
+    for (const c of node.children) assignTiming(c, childStart + Math.random() * dur * 0.12, childDur);
+  }
+
+  function buildTree() {
+    totalNodes = 0;
+    root = makeNode(0, 1, 0, 1);
+    assignTiming(root, 0, 1.7);
+  }
+
+  function progress(node, now) {
+    const p = (now - node.t0) / node.dur;
+    if (p <= 0) return 0;
+    if (p >= 1) return 1;
+    return easeInOutSine(p);
+  }
+
+  // ---- 几何工具 ----
+  let trunkLen = 0, trunkWidth = 0;
+  let windBias = 0;
+  let windAmp = 1;
+
+  function windOffset(node, time) {
+    if (reduceMotion) return 0;
+    const depthFactor = node.depth / MAX_DEPTH;
+    return Math.sin(time * 0.7 + node.phase) * 0.05 * depthFactor * windAmp + windBias * depthFactor;
+  }
+
+  function subCurve(P0, C, P1, p) {
+    const Ax = lerp(P0.x, C.x, p), Ay = lerp(P0.y, C.y, p);
+    const Bx = lerp(C.x, P1.x, p), By = lerp(C.y, P1.y, p);
+    return { C: { x: Ax, y: Ay }, M: { x: lerp(Ax, Bx, p), y: lerp(Ay, By, p) } };
+  }
+  function quadAt(P0, C, P1, u) {
+    const iu = 1 - u;
+    return {
+      x: iu * iu * P0.x + 2 * iu * u * C.x + u * u * P1.x,
+      y: iu * iu * P0.y + 2 * iu * u * C.y + u * u * P1.y,
+    };
+  }
+  // 沿枝干参数 u 处、按垂直方向偏移 off 的点（用于裂纹/木纹/苔痕）
+  function edgePt(P0, Cc, P1, u, off) {
+    const q = quadAt(P0, Cc, P1, u);
+    const ta = Math.atan2(P1.y - P0.y, P1.x - P0.x) + Math.PI / 2;
+    return { x: q.x + Math.cos(ta) * off, y: q.y + Math.sin(ta) * off };
+  }
+
+  // ---- 枝干绘制：实心渐变多边形 + 圆柱体积光 + 木纹/龟裂/苔痕 ----
+  function drawBranch(P0, Cc, P1, w0, w1, baseRGB, litRGB, darkRGB) {
+    const N = Math.max(5, Math.min(16, Math.floor(Math.hypot(P1.x - P0.x, P1.y - P0.y) / 7)));
+    const L = [], R = [];
+    for (let i = 0; i <= N; i++) {
+      const u = i / N;
+      const q = quadAt(P0, Cc, P1, u);
+      const dx = 2 * (1 - u) * (Cc.x - P0.x) + 2 * u * (P1.x - Cc.x);
+      const dy = 2 * (1 - u) * (Cc.y - P0.y) + 2 * u * (P1.y - Cc.y);
+      const ta = Math.atan2(dy, dx) + Math.PI / 2;
+      const w = lerp(w0, w1, u) / 2;
+      L.push({ x: q.x + Math.cos(ta) * w, y: q.y + Math.sin(ta) * w });
+      R.push({ x: q.x - Math.cos(ta) * w, y: q.y - Math.sin(ta) * w });
+    }
+    const M = quadAt(P0, Cc, P1, 0.5);
+    const ga = Math.atan2(P1.y - P0.y, P1.x - P0.x) + Math.PI / 2;
+    const gpx = Math.cos(ga), gpy = Math.sin(ga);
+    const wm = (w0 + w1) / 2;
+    const litLeft = (gpx * LIGHT.x + gpy * LIGHT.y) > 0;
+    if (wm > 1.5) {
+      const gx0 = M.x + gpx * wm / 2, gy0 = M.y + gpy * wm / 2;
+      const gx1 = M.x - gpx * wm / 2, gy1 = M.y - gpy * wm / 2;
+      const litC = `rgb(${litRGB[0]},${litRGB[1]},${litRGB[2]})`;
+      const drkC = `rgb(${darkRGB[0]},${darkRGB[1]},${darkRGB[2]})`;
+      const grad = ctx.createLinearGradient(gx0, gy0, gx1, gy1);
+      if (litLeft) { grad.addColorStop(0, litC); grad.addColorStop(1, drkC); }
+      else { grad.addColorStop(0, drkC); grad.addColorStop(1, litC); }
+      ctx.fillStyle = grad;
+    } else {
+      ctx.fillStyle = `rgb(${baseRGB[0]},${baseRGB[1]},${baseRGB[2]})`;
+    }
+    ctx.beginPath();
+    ctx.moveTo(L[0].x, L[0].y);
+    for (let i = 1; i <= N; i++) ctx.lineTo(L[i].x, L[i].y);
+    for (let i = N; i >= 0; i--) ctx.lineTo(R[i].x, R[i].y);
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  function drawNode(node, x, y, parentAngle, now, time) {
+    const p = progress(node, now);
+    if (p <= 0) return null;
+
+    const absAngle = parentAngle + node.angle + windOffset(node, time);
+    const L = trunkLen * node.lengthFrac;
+    const tipX = x + Math.cos(absAngle) * L;
+    const tipY = y + Math.sin(absAngle) * L;
+    const mx = (x + tipX) / 2, my = (y + tipY) / 2;
+    const px = Math.cos(absAngle + Math.PI / 2), py = Math.sin(absAngle + Math.PI / 2);
+    const off = L * node.curve;
+    const C = { x: mx + px * off, y: my + py * off };
+    const P0 = { x, y }, P1 = { x: tipX, y: tipY };
+    const sc = subCurve(P0, C, P1, p);
+    const cur = sc.M;
+
+    const w0 = Math.max(1.5, trunkWidth * Math.pow(node.lengthFrac, 0.62));
+    const w1 = w0 * 0.82;
+    const baseRGB = branchColorRGB(node.depth, MAX_DEPTH);
+    const litRGB = lerpColor(baseRGB, [150, 128, 96], 0.5);
+    const darkRGB = lerpColor(baseRGB, [20, 14, 9], 0.55);
+
+    // 1) 枝干本体（圆柱体积光）
+    drawBranch(P0, sc.C, cur, w0, w1, baseRGB, litRGB, darkRGB);
+
+    // 2) 木纹：沿枝身走向的深色细丝，低透明，制造材质
+    if (w0 > 6 && node.grain.length) {
+      ctx.strokeStyle = 'rgba(28,18,11,0.14)';
+      ctx.lineWidth = Math.max(0.6, w0 * 0.05);
+      for (const g of node.grain) {
+        const a = edgePt(P0, sc.C, cur, 0.05, g.off * w0 * 0.4);
+        const b = edgePt(P0, sc.C, cur, 0.94, g.off * w1 * 0.4);
+        ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+      }
+    }
+
+    // 3) 龟裂树皮：深色裂口 + 受光侧浅高光，伪造深度
+    if (w0 > 4.5 && node.cracks.length) {
+      for (const cr of node.cracks) {
+        const q = quadAt(P0, sc.C, cur, cr.u);
+        const ga = Math.atan2(cur.y - P0.y, cur.x - P0.x) + Math.PI / 2;
+        const cpx = Math.cos(ga), cpy = Math.sin(ga);
+        const depth = w0 * cr.len;
+        const sx = q.x + cpx * w0 * 0.28 * cr.side, sy = q.y + cpy * w0 * 0.28 * cr.side;
+        const ex = sx + Math.cos(absAngle) * depth * 0.3 + cr.jit * depth;
+        const ey = sy + Math.sin(absAngle) * depth * 0.3;
+        ctx.strokeStyle = 'rgba(18,11,7,0.5)';
+        ctx.lineWidth = Math.max(0.6, w0 * 0.06);
+        ctx.beginPath(); ctx.moveTo(sx, sy); ctx.lineTo(ex, ey); ctx.stroke();
+        // 高光（朝光侧偏移）
+        ctx.strokeStyle = 'rgba(150,128,96,0.18)';
+        ctx.lineWidth = Math.max(0.5, w0 * 0.04);
+        ctx.beginPath(); ctx.moveTo(sx - cpx * 1.2, sy - cpy * 1.2); ctx.lineTo(ex - cpx * 1.2, ey - cpy * 1.2); ctx.stroke();
+      }
+    }
+
+    // 4) 苔痕：低处粗枝上的灰绿软斑，强调岁月感
+    if (w0 > 16 && node.moss.length) {
+      for (const m of node.moss) {
+        const q = quadAt(P0, sc.C, cur, m.u);
+        const ga = Math.atan2(cur.y - P0.y, cur.x - P0.x) + Math.PI / 2;
+        const r = w0 * m.r;
+        const mx2 = q.x + Math.cos(ga) * w0 * 0.3 * m.side;
+        const my2 = q.y + Math.sin(ga) * w0 * 0.3 * m.side;
+        const rg = ctx.createRadialGradient(mx2, my2, 1, mx2, my2, r);
+        rg.addColorStop(0, 'rgba(96,108,72,0.32)');
+        rg.addColorStop(0.7, 'rgba(78,90,58,0.18)');
+        rg.addColorStop(1, 'rgba(78,90,58,0)');
+        ctx.fillStyle = rg;
+        ctx.beginPath(); ctx.arc(mx2, my2, r, 0, Math.PI * 2); ctx.fill();
+      }
+    }
+
+    // 5) 树冠叶团：多色软叠，模拟密叶而非平涂圆斑
+    if (node.isTip && p > 0.55) {
+      const rBase = lerp(16, 44, clamp((p - 0.55) / 0.45, 0, 1));
+      for (const f of node.foliage) {
+        const cx = cur.x + Math.cos(f.a) * rBase * f.rr;
+        const cy = cur.y + Math.sin(f.a) * rBase * f.rr;
+        const rr = rBase * f.r;
+        const rg = ctx.createRadialGradient(cx, cy, 1, cx, cy, rr);
+        rg.addColorStop(0, `rgba(${f.g[0]},${f.g[1]},${f.g[2]},${0.55 * p})`);
+        rg.addColorStop(1, `rgba(${f.g[0]},${f.g[1]},${f.g[2]},0)`);
+        ctx.fillStyle = rg;
+        ctx.beginPath(); ctx.arc(cx, cy, rr, 0, Math.PI * 2); ctx.fill();
+      }
+    }
+
+    // 6) 叶片：双色渐变 + 叶脉 + 不规则廓形
+    if (node.leaves.length && p > 0.7) {
+      const lp = easeOutBack(clamp((p - 0.7) / 0.3, 0, 1));
+      for (const lf of node.leaves) {
+        const ang = absAngle - Math.PI / 2 + lf.ang + Math.sin(time * 0.8 + node.phase) * 0.04 * windAmp;
+        drawLeaf(cur.x, cur.y, ang, lf.size, lf, lp);
+      }
+    }
+
+    // 7) 节疤环境光遮蔽：接点处轻微压暗，增强体积
+    if (w0 > 8) {
+      const rg = ctx.createRadialGradient(P0.x, P0.y, 1, P0.x, P0.y, w0 * 0.9);
+      rg.addColorStop(0, 'rgba(15,9,5,0.28)');
+      rg.addColorStop(1, 'rgba(15,9,5,0)');
+      ctx.fillStyle = rg;
+      ctx.beginPath(); ctx.arc(P0.x, P0.y, w0 * 0.9, 0, Math.PI * 2); ctx.fill();
+    }
+
+    // 递归子枝
+    for (const c of node.children) drawNode(c, cur.x, cur.y, absAngle, now, time);
+    return cur;
+  }
+
+  // ---- 叶片：写实廓形 + 受光渐变 + 主叶脉 ----
+  function drawLeaf(x, y, angle, size, lf, scale) {
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.rotate(angle);
+    ctx.scale(scale, scale);
+    const s = size;
+    // 不规则叶片廓形（尖端略偏，带微小起伏）
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.quadraticCurveTo(s * 0.52, -s * 0.34, s * 0.12, -s * 1.05);
+    ctx.quadraticCurveTo(s * 0.04, -s * 1.12, 0, -s * 1.12);
+    ctx.quadraticCurveTo(-s * 0.06, -s * 1.12, -s * 0.12, -s * 1.05);
+    ctx.quadraticCurveTo(-s * 0.52, -s * 0.34, 0, 0);
+    ctx.closePath();
+    const grad = ctx.createLinearGradient(0, 0, 0, -s * 1.1);
+    grad.addColorStop(0, `rgb(${lf.dark[0]},${lf.dark[1]},${lf.dark[2]})`);
+    grad.addColorStop(0.5, `rgb(${lf.rgb[0]},${lf.rgb[1]},${lf.rgb[2]})`);
+    grad.addColorStop(1, `rgb(${lf.lit[0]},${lf.lit[1]},${lf.lit[2]})`);
+    ctx.fillStyle = grad;
+    ctx.fill();
+    // 主叶脉（深一档，细）
+    ctx.strokeStyle = `rgba(${lf.dark[0]},${lf.dark[1]},${lf.dark[2]},0.5)`;
+    ctx.lineWidth = Math.max(0.5, s * 0.05);
+    ctx.beginPath();
+    ctx.moveTo(0, -s * 0.04);
+    ctx.lineTo(0, -s * 1.02);
+    ctx.stroke();
+    // 侧脉
+    ctx.lineWidth = Math.max(0.4, s * 0.03);
+    ctx.strokeStyle = `rgba(${lf.dark[0]},${lf.dark[1]},${lf.dark[2]},0.28)`;
+    for (let v = 1; v <= 2; v++) {
+      const ty = -s * (0.3 + v * 0.28);
+      ctx.beginPath(); ctx.moveTo(0, ty); ctx.lineTo(s * 0.22, ty - s * 0.1); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(0, ty); ctx.lineTo(-s * 0.22, ty - s * 0.1); ctx.stroke();
+    }
+    ctx.restore();
+  }
+
+  // ---- 飘落叶片（生命力） ----
+  const petals = [];
+  function spawnPetal() {
+    if (reduceMotion || petals.length > 26) return;
+    const lf = makeLeaf(false);
+    petals.push({
+      x: rand(W * 0.2, W * 0.8), y: rand(H * 0.25, H * 0.55),
+      vx: rand(-0.3, 0.3), vy: rand(0.2, 0.6),
+      rot: rand(0, Math.PI * 2), vr: rand(-0.03, 0.03),
+      size: rand(6, 10), lf, life: rand(6, 12),
+    });
+  }
+  function updatePetals(dt, time) {
+    for (let i = petals.length - 1; i >= 0; i--) {
+      const p = petals[i];
+      p.x += p.vx + Math.sin(time + p.rot) * 0.4 + windBias * 1.2;
+      p.y += p.vy;
+      p.rot += p.vr;
+      p.life -= dt;
+      if (p.life <= 0 || p.y > H + 20) petals.splice(i, 1);
+    }
+    if (Math.random() < 0.04) spawnPetal();
+    for (const p of petals) {
+      ctx.save();
+      ctx.globalAlpha = clamp(p.life / 3, 0, 1) * 0.9;
+      drawLeaf(p.x, p.y, p.rot, p.size, p.lf, 1);
+      ctx.restore();
+    }
+  }
+
+  // ---- 电影颗粒（离屏噪点，逐帧轻叠，破除矢量干净感） ----
+  const noiseCv = document.createElement('canvas');
+  noiseCv.width = noiseCv.height = 160;
+  (function buildNoise() {
+    const nctx = noiseCv.getContext('2d');
+    const img = nctx.createImageData(160, 160);
+    for (let i = 0; i < img.data.length; i += 4) {
+      const v = 110 + ((Math.random() * 90) | 0);
+      img.data[i] = img.data[i + 1] = img.data[i + 2] = v;
+      img.data[i + 3] = 255;
+    }
+    nctx.putImageData(img, 0, 0);
+  })();
+  let noisePat = null;
+
+  // ---- 背景：自然天光、远树焦外虚化、地面接触阴影、暗角 ----
+  const BOKEH = [
+    { x: 0.14, y: 0.6, r: 0.24, c: [38, 50, 40] },
+    { x: 0.82, y: 0.54, r: 0.3, c: [42, 54, 44] },
+    { x: 0.5, y: 0.72, r: 0.32, c: [34, 46, 38] },
+    { x: 0.3, y: 0.46, r: 0.18, c: [48, 60, 46] },
+    { x: 0.72, y: 0.66, r: 0.2, c: [40, 52, 42] },
+  ];
+  function drawBackground() {
+    // 天光：低饱和、冷灰绿到暖灰的竖向过渡
+    const g = ctx.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, '#1c2422');
+    g.addColorStop(0.45, '#28302b');
+    g.addColorStop(0.72, '#343a31');
+    g.addColorStop(1, '#2b2c24');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, W, H);
+
+    // 左上方暖光晕（柔和体积光感）
+    const sun = ctx.createRadialGradient(W * 0.28, H * 0.18, 10, W * 0.28, H * 0.18, H * 0.7);
+    sun.addColorStop(0, 'rgba(180,170,130,0.16)');
+    sun.addColorStop(1, 'rgba(180,170,130,0)');
+    ctx.fillStyle = sun;
+    ctx.fillRect(0, 0, W, H);
+
+    // 远树焦外虚化（景深）
+    const m = Math.min(W, H);
+    for (const b of BOKEH) {
+      const cx = b.x * W, cy = b.y * H, r = b.r * m;
+      const rg = ctx.createRadialGradient(cx, cy, 1, cx, cy, r);
+      rg.addColorStop(0, `rgba(${b.c[0]},${b.c[1]},${b.c[2]},0.55)`);
+      rg.addColorStop(1, `rgba(${b.c[0]},${b.c[1]},${b.c[2]},0)`);
+      ctx.fillStyle = rg;
+      ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fill();
+    }
+
+    // 地面：底部土壤/草地表层
+    const gy = H * 0.86;
+    const gg = ctx.createLinearGradient(0, gy, 0, H);
+    gg.addColorStop(0, 'rgba(60,56,42,0)');
+    gg.addColorStop(0.25, 'rgba(54,50,38,0.7)');
+    gg.addColorStop(1, 'rgba(30,27,20,0.95)');
+    ctx.fillStyle = gg;
+    ctx.fillRect(0, gy, W, H - gy);
+  }
+
+  function drawGroundShadow(baseX, baseY) {
+    const r = trunkWidth * 3.4;
+    const rg = ctx.createRadialGradient(baseX, baseY, 1, baseX, baseY, r);
+    rg.addColorStop(0, 'rgba(0,0,0,0.5)');
+    rg.addColorStop(0.6, 'rgba(0,0,0,0.28)');
+    rg.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.save();
+    ctx.translate(baseX, baseY);
+    ctx.scale(1, 0.32);
+    ctx.fillStyle = rg;
+    ctx.beginPath(); ctx.arc(0, 0, r, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+  }
+
+  function drawVignette() {
+    const rg = ctx.createRadialGradient(W / 2, H * 0.46, Math.min(W, H) * 0.32, W / 2, H * 0.5, Math.max(W, H) * 0.75);
+    rg.addColorStop(0, 'rgba(0,0,0,0)');
+    rg.addColorStop(1, 'rgba(0,0,0,0.5)');
+    ctx.fillStyle = rg;
+    ctx.fillRect(0, 0, W, H);
+  }
+
+  // ---- 主循环 ----
+  let startTime = performance.now();
+  let lastT = startTime;
+  let speed = 1;
+  function frame(t) {
+    const dt = (t - lastT) / 1000; lastT = t;
+    const now = reduceMotion ? 1e9 : (t - startTime) / 1000 * speed;
+    const time = t / 1000;
+
+    trunkLen = Math.min(H * 0.2, 200);
+    trunkWidth = clamp(W / 20, 26, 74);
+
+    drawBackground();
+
+    const baseX = W / 2 + windBias * 30;
+    const baseY = H * 0.9;
+    drawGroundShadow(baseX, baseY);
+
+    // 古树根盘：粗壮稳重的根兜，用软暗渐变堆出体积
+    const rootR = trunkWidth * 1.9;
+    const rg = ctx.createRadialGradient(baseX - rootR * 0.2, baseY - rootR * 0.2, 2, baseX, baseY, rootR);
+    rg.addColorStop(0, 'rgba(70,54,38,0.98)');
+    rg.addColorStop(0.7, 'rgba(48,36,26,0.96)');
+    rg.addColorStop(1, 'rgba(30,22,15,0.9)');
+    ctx.fillStyle = rg;
+    ctx.beginPath();
+    ctx.ellipse(baseX, baseY, rootR, rootR * 0.42, 0, 0, Math.PI * 2);
+    ctx.fill();
+    // 根兜上的受光高光（朝光侧）
+    const hg = ctx.createRadialGradient(baseX - rootR * 0.35, baseY - rootR * 0.3, 1, baseX - rootR * 0.35, baseY - rootR * 0.3, rootR * 0.5);
+    hg.addColorStop(0, 'rgba(150,128,96,0.22)');
+    hg.addColorStop(1, 'rgba(150,128,96,0)');
+    ctx.fillStyle = hg;
+    ctx.beginPath();
+    ctx.ellipse(baseX, baseY, rootR, rootR * 0.42, 0, 0, Math.PI * 2);
+    ctx.fill();
+
+    drawNode(root, baseX, baseY - trunkWidth * 0.4, -Math.PI / 2, now, time);
+    updatePetals(dt, time);
+
+    // 暗角 + 电影颗粒
+    drawVignette();
+    if (!noisePat) noisePat = ctx.createPattern(noiseCv, 'repeat');
+    ctx.save();
+    ctx.globalAlpha = 0.05;
+    ctx.globalCompositeOperation = 'soft-light';
+    ctx.fillStyle = noisePat;
+    ctx.fillRect(0, 0, W, H);
+    ctx.restore();
+
+    requestAnimationFrame(frame);
+  }
+
+  // ---- 交互 ----
+  document.getElementById('regrow').addEventListener('click', () => {
+    buildTree();
+    startTime = performance.now();
+    petals.length = 0;
+  });
+  document.getElementById('speed').addEventListener('input', e => speed = parseFloat(e.target.value));
+  document.getElementById('wind').addEventListener('input', e => windAmp = parseFloat(e.target.value));
+  window.addEventListener('pointermove', e => {
+    windBias = (e.clientX / W - 0.5) * 0.5;
+  });
+  window.addEventListener('pointerleave', () => windBias = 0);
+
+  buildTree();
+  requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>

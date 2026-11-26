@@ -1,0 +1,80 @@
+===== FILE: 6.题库：第五章.docx =====
+[paragraph count: 88] [table count: 0]
+[P|Normal] 第五章  资本主义的发展及其趋势
+[P|Normal] 一、单选题
+[P|Normal] 1.“参与制”是金融寡头（）。
+[P|List Paragraph] A.在经济上实现其统治的主要手段和方式
+[P|List Paragraph] B.在政治上实现其统治的主要手段和方式
+[P|List Paragraph] C.在文化上实现其统治的主要手段和方式
+[P|List Paragraph] D.在军事上实现其统治的主要手段和方式
+[P|List Paragraph] 答案： A
+[P|Normal] 2.金融寡头在经济上的统治主要是通过（）实现的。
+[P|List Paragraph] A.参与制
+[P|List Paragraph] B个人联合
+[P|List Paragraph] C.建立政策研究咨询机构对政府施加影响
+[P|List Paragraph] D.掌握舆论工具控制新闻媒介
+[P|List Paragraph] 答案： A
+[P|Normal] 3.国家垄断资本主义是（）。
+[P|List Paragraph] A.国家政权与垄断资本相结合的垄断资本主义
+[P|List Paragraph] B.国家政权与垄断资本相分离的垄断资本主义
+[P|List Paragraph] C.消除了生产无政府状态的垄断资本主义
+[P|List Paragraph] D.解决了资本主义基本矛盾的垄断资本主义
+[P|List Paragraph] 答案： A
+[P|Normal] 4.经济全球化的实质决定了它的主要受益者是（）。
+[P|List Paragraph] A.所有国家
+[P|List Paragraph] B.发达资本主义国家
+[P|List Paragraph] C.发展中国家
+[P|List Paragraph] D.社会主义国家
+[P|List Paragraph] 答案： B
+[P|Normal] 5.金融资本概念是指（）。
+[P|List Paragraph] A.垄断的工业资本
+[P|List Paragraph] B.垄断的银行资本
+[P|List Paragraph] C.垄断的工业资本和银行资本融合生长构成的资本形式
+[P|List Paragraph] D.私人垄断资本和国家垄断资本结合的资本形式
+[P|List Paragraph] 答案： C
+[P|Normal] 6.当代资本主义所发生的许多新变化属于（）。
+[P|List Paragraph] A.资本主义生产方式的根本改变
+[P|List Paragraph] B.资本主义生产关系性质的根本改变
+[P|List Paragraph] C.资本主义总量变过程中的爆发式质变
+[P|List Paragraph] D.资本主义总量变过程中的阶段性部分质变
+[P|List Paragraph] 答案： D
+[P|Normal] 7.社会主义必然代替资本主义的主要依据是（）。
+[P|List Paragraph] A.无产阶级和资产阶级斗争的尖锐化
+[P|List Paragraph] B.个别企业有组织的生产与整个社会生产无政府状态之间的矛盾
+[P|List Paragraph] C.现代无产阶级的日益壮大
+[P|List Paragraph] D.生产的社会化与资本主义私人占有制之间的矛盾
+[P|List Paragraph] 答案： D
+[P|Normal] 二、多选题
+[P|Normal] 1.经济全球化的表现（）。
+[P|List Paragraph] A.生产全球化
+[P|List Paragraph] B.贸易全球化
+[P|List Paragraph] C.金融全球化
+[P|List Paragraph] D.国际分工全球化
+[P|List Paragraph] 答案：ABC
+[P|Normal] 2.当代资本主义新变化的表现和特点（）。
+[P|List Paragraph] A.生产资料所有制、劳资关系和分配关系的变化
+[P|List Paragraph] B.社会阶层和阶极结构的变化
+[P|List Paragraph] C.经济调节机制和经济危机形态的变化
+[P|List Paragraph] D.政治制度的变化
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 3.世界大变局下资本主义的矛盾与冲突（）。
+[P|List Paragraph] A经济发展与失调
+[P|List Paragraph] B.政治体制失灵
+[P|List Paragraph] C.社会融合机制失效
+[P|List Paragraph] D.金融危机频发
+[P|List Paragraph] 答案：ABC
+[P|List Paragraph] 三、判断题
+[P|Normal] 1.垄断不能消除竞争。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 2.经济文化相对落后的国家社会主义建设具有艰巨性和长期性。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 3.经济全球化只会产生积极效益。( )
+[P|List Paragraph] 答案：错误
+[P|List Paragraph] 4.生产方式的发展变革是世界历史形成和发展的基础。()
+[P|List Paragraph] 答案：正确
+[P|List Paragraph] 5.普遍交往是世界历史的基本特征。（）
+[P|Normal] 答案：正确
+[P|Normal] 6.金融寡头是指操纵国民经济命脉，并在实际上控制国家政权的少数垄断资本家或垄断资本家集团。（）
+[P|Normal] 答案：正确
+[P|Normal] 7.当代资本主义发生的变化意味着资本主义生产关系的根本性质发生了变化。( )
+[P|List Paragraph] 答案：错误

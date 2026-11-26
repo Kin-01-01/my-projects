@@ -1,0 +1,199 @@
+科研通「发布求助」填写内容 —— 24 篇订阅/非开放获取论文
+说明：以下每篇按表单字段整理。DOI/标题/文献链接可直接复制；文献类型统一=期刊论文；其它信息供选填。
+悬赏积分：最低 10；你当前 50 积分，建议普通文献给 10，着急的给 20-30。
+==================================================================
+
+【第 1 篇 / 原编号 [1]】
+DOI: 10.1016/j.mtchem.2026.103844
+标题: Operando multiscale microscopy visualizes the ionic liquid guided structural evolution of α-MnO2 cathodes for stable zinc batteries
+文献链接: https://doi.org/10.1016/j.mtchem.2026.103844
+文献类型: 期刊论文
+其它信息: 作者: Lei Deng; Zhangran Ye; Hantao Cui; Yunna Guo; Xueqing Zhang; Chongchong Ma; Kun Zhang; Junlin Zhu; Peng Jia; Xinyu Zhang; Liqiang Zhang；期刊: Materials Today Chemistry 55 p.103844 2026
+------------------------------------------------------------------
+【第 2 篇 / 原编号 [3]】
+DOI: 10.1002/adma.202415026
+标题: The sp Hybridization of Tin Single Atoms for Dendrite‐Free Sodium Metal Batteries
+文献链接: https://doi.org/10.1002/adma.202415026
+文献类型: 期刊论文
+其它信息: 作者: Yaguang Li; Yuejiao Li; Jianmin Lu; Pengchao Wen; Liqiang Zhang; Qike Jiang; Haodong Shi; Caixia Meng; Junwei Sun; Yunna Guo; Yi Wang; Yu Yao; Shangshu Qian; Yan Yu; Jun Lu; Xinhe Bao; Zhong‐Shuai Wu；期刊: Advanced Materials 37(8) 2025
+------------------------------------------------------------------
+【第 3 篇 / 原编号 [4]】
+DOI: 10.1002/adma.202404640
+标题: Intercalation‐Induced Localized Conversion Reaction in h ‐CuSe for Ultrafast‐Rechargeable and Long‐Cycling Sodium Metal Battery
+文献链接: https://doi.org/10.1002/adma.202404640
+文献类型: 期刊论文
+其它信息: 作者: Dongliang Chen; Yunkai Xu; Jianguo Lu; Yang Tian; Tongtong Li; Peng Jia; Xu Wang; Liqiang Zhang; Yang Hou; Liguang Wang; Qinghua Zhang; Zhizhen Ye; Jun Lu；期刊: Advanced Materials 36(32) 2024
+------------------------------------------------------------------
+【第 4 篇 / 原编号 [5]】
+DOI: 10.1002/adma.202408476
+标题: Mechanistic Understanding of the Underlying Energy Storage Mechanism of α‐MnO 2 ‐based Pseudo‐Supercapacitors
+文献链接: https://doi.org/10.1002/adma.202408476
+文献类型: 期刊论文
+其它信息: 作者: Lei Deng; Zaifa Wang; Hantao Cui; Yunna Guo; Zhangran Ye; Hui Li; Xinyu Zhang; Peng Jia; Qiaobao Zhang; Liqiang Zhang；期刊: Advanced Materials 36(46) 2024
+------------------------------------------------------------------
+【第 5 篇 / 原编号 [7]】
+DOI: 10.1002/adfm.202307794
+标题: Intercalation Pseudocapacitance in 2D VS 2 /Ti 3 C 2 T x MXene Hybrids for All‐Climate and Long‐Cycle Sodium‐Ion Batteries
+文献链接: https://doi.org/10.1002/adfm.202307794
+文献类型: 期刊论文
+其它信息: 作者: Zhenyun Zhao; Yang Wu; Rui Hu; Jianguo Lu; Dongliang Chen; Tongtong Li; Yunna Guo; Liqiang Zhang; Hongwen Chen; Zhizhen Ye; Chuanfang (John) Zhang；期刊: Advanced Functional Materials 33(50) 2023
+------------------------------------------------------------------
+【第 6 篇 / 原编号 [8]】
+DOI: 10.1016/j.ensm.2023.102779
+标题: Cryo-TEM studies of binder free high performance FeF2 cathode based full cells enabled by surface engineering
+文献链接: https://doi.org/10.1016/j.ensm.2023.102779
+文献类型: 期刊论文
+其它信息: 作者: Yong Su; Shuangxu Liu; Dingding Zhu; Yang Luo; Xuedong Zhang; Jitong Yan; Jingzhao Chen; Lin Geng; Baiyu Guo; Hui Li; Qiushi Dai; Hongjun Ye; Jingming Yao; Yunna Guo; Gang Wang; Yongfu Tang; Liqiang Zhang; Congcong Du; Jianyu Huang; Qiao Huang；期刊: Energy Storage Materials 59 p.102779 2023
+------------------------------------------------------------------
+【第 7 篇 / 原编号 [9]】
+DOI: 10.1007/s12274-022-5359-z
+标题: In situ TEM visualization of Ag catalysis in Li-O2 nanobatteries
+文献链接: https://doi.org/10.1007/s12274-022-5359-z
+文献类型: 期刊论文
+其它信息: 作者: Yixuan Wen; Shuaijun Ding; Chongchong Ma; Peng Jia; Wei Tu; Yunna Guo; Shuang Guo; Wei Zhou; Xiaoqian Zhang; Jianyu Huang; Liqiang Zhang; Tongde Shen; Yuqing Qiao；期刊: Nano Research 16(5) p.6833-6839 2023
+------------------------------------------------------------------
+【第 8 篇 / 原编号 [10]】
+DOI: 10.1039/d2ta02513b
+标题: In situ imaging the dynamics of sodium metal deposition and stripping
+文献链接: https://doi.org/10.1039/d2ta02513b
+文献类型: 期刊论文
+其它信息: 作者: Lin Geng; Chao Zhao; Jitong Yan; Chengrui Fu; Xuedong Zhang; Jingming Yao; Haiming Sun; Yong Su; Qiunan Liu; Liqiang Zhang; Yongfu Tang; Feng Ding; Jianyu Huang；期刊: Journal of Materials Chemistry A 10(28) p.14875-14883 2022
+------------------------------------------------------------------
+【第 9 篇 / 原编号 [12]】
+DOI: 10.1016/j.mtnano.2022.100189
+标题: In situ visualization of hierarchical agglomeration growth during electrochemical deposition of Cu nanocrystals in an open ionic liquid cell
+文献链接: https://doi.org/10.1016/j.mtnano.2022.100189
+文献类型: 期刊论文
+其它信息: 作者: L. Geng; Q. Liu; J. Zhao; H. Ye; H. Sun; X. Zhang; P. Zhang; T. Yang; Y. Su; H. Li; D. Zhu; J. Yao; J. Chen; P. Jia; J. Yan; L. Zhang; Y. Tang; J. Huang；期刊: Materials Today Nano 18 p.100189 2022
+------------------------------------------------------------------
+【第 10 篇 / 原编号 [13]】
+DOI: 10.1007/s12274-021-3861-6
+标题: In situ observation of electrochemical Ostwald ripening during sodium deposition
+文献链接: https://doi.org/10.1007/s12274-021-3861-6
+文献类型: 期刊论文
+其它信息: 作者: Lin Geng; Qiunan Liu; Jingzhao Chen; Peng Jia; Hongjun Ye; Jitong Yan; Liqiang Zhang; Yongfu Tang; Jianyu Huang；期刊: Nano Research 15(3) p.2650-2654 2021
+------------------------------------------------------------------
+【第 11 篇 / 原编号 [14]】
+DOI: 10.1039/d1ta08080f
+标题: In situ TEM visualization of single atom catalysis in solid-state Na–O 2 nanobatteries
+文献链接: https://doi.org/10.1039/d1ta08080f
+文献类型: 期刊论文
+其它信息: 作者: Haiming Sun; Qiunan Liu; Zhiying Gao; Lin Geng; Yanshuai Li; Fengyu Zhang; Jitong Yan; Yufei Gao; Kazu Suenaga; Liqiang Zhang; Yongfu Tang; Jianyu Huang；期刊: Journal of Materials Chemistry A 10(11) p.6096-6106 2022
+------------------------------------------------------------------
+【第 12 篇 / 原编号 [15]】
+DOI: 10.1007/s12274-021-3514-9
+标题: In-situ imaging the electrochemical reactions of Li-CO2 nanobatteries at high temperatures in an aberration corrected environmental transmission electron microscope
+文献链接: https://doi.org/10.1007/s12274-021-3514-9
+文献类型: 期刊论文
+其它信息: 作者: Peng Jia; Meiqi Yu; Xuedong Zhang; Tingting Yang; Dingding Zhu; Tongde Shen; Liqiang Zhang; Yongfu Tang; Jianyu Huang；期刊: Nano Research 15(1) p.542-550 2021
+------------------------------------------------------------------
+【第 13 篇 / 原编号 [16]】
+DOI: 10.1002/celc.202200441
+标题: Revealing the Electrochemistry in a Voltaic Cell by In Situ Electron Microscopy
+文献链接: https://doi.org/10.1002/celc.202200441
+文献类型: 期刊论文
+其它信息: 作者: Hui Li†; Guang Yang†; Jingzhao Chen; Mingyu Li; Yong Su; Qiushi Dai; Hongjun Ye; Baiyu Guo; Lin Geng; Tingting Yang; Jing Wang; Liqiang Zhang; Yongfu Tang; Jianyu Huang；期刊: ChemElectroChem 9(15) 2022
+------------------------------------------------------------------
+【第 14 篇 / 原编号 [17]】
+DOI: 10.1016/j.cej.2021.130054
+标题: An ultra-stable anode material for high/low-temperature workable super-fast charging sodium-ion batteries
+文献链接: https://doi.org/10.1016/j.cej.2021.130054
+文献类型: 期刊论文
+其它信息: 作者: Yang Tian; Jianguo Lu; Haichao Tang; Xin Wang; Liqiang Zhang; Ping Hu; Liang Zhou; Yang Wang; Yichuan Guo; Rabia Khatoon; Qinghua Zhang; Qinggang He; Yi He; Ming Qiu; Yang Hou; Zhizhen Ye；期刊: Chemical Engineering Journal 422 p.130054 2021
+------------------------------------------------------------------
+【第 15 篇 / 原编号 [19]】
+DOI: 10.1021/acsami.1c13732
+标题: In Situ Measurements of the Mechanical Properties of Electrochemically Deposited Li 2 CO 3 and Li 2 O Nanorods
+文献链接: https://doi.org/10.1021/acsami.1c13732
+文献类型: 期刊论文
+其它信息: 作者: Hongjun Ye; Siwei Gui; Zaifa Wang; Jingzhao Chen; Qiunan Liu; Xuedong Zhang; Peng Jia; Yushu Tang; Tingting Yang; Congcong Du; Lin Geng; Hui Li; Qiushi Dai; Yongfu Tang; Liqiang Zhang; Hui Yang; Jianyu Huang；期刊: ACS Applied Materials &amp; Interfaces 13(37) p.44479-44487 2021
+------------------------------------------------------------------
+【第 16 篇 / 原编号 [20]】
+DOI: 10.1038/s41565-019-0604-x
+标题: Lithium whisker growth and stress generation in an in situ atomic force microscope–environmental transmission electron microscope set-up
+文献链接: https://doi.org/10.1038/s41565-019-0604-x
+文献类型: 期刊论文
+其它信息: 作者: Liqiang Zhang; Tingting Yang; Congcong Du; Qiunan Liu; Yushu Tang; Jun Zhao; Baolin Wang; Tianwu Chen; Yong Sun; Peng Jia; Hui Li; Lin Geng; Jingzhao Chen; Hongjun Ye; Zaifa Wang; Yanshuai Li; Haiming Sun; Xiaomei Li; Qiushi Dai; Yongfu Tang; Qiuming Peng; Tongde Shen; Sulin Zhang; Ting Zhu; Jianyu  等；期刊: Nature Nanotechnology 15(2) p.94-98 2020
+------------------------------------------------------------------
+【第 17 篇 / 原编号 [21]】
+DOI: 10.1021/acsami.0c17058
+标题: In Situ Imaging Polysulfides Electrochemistry of Li-S Batteries in a Hollow Carbon Nanotubule Wet Electrochemical Cell
+文献链接: https://doi.org/10.1021/acsami.0c17058
+文献类型: 期刊论文
+其它信息: 作者: Zaifa Wang; Yongfu Tang; Xingjie Fu; Jiawei Wang; Zhangquan Peng; Liqiang Zhang; Jianyu Huang；期刊: ACS Applied Materials &amp; Interfaces 12(50) p.55971-55981 2020
+------------------------------------------------------------------
+【第 18 篇 / 原编号 [22]】
+DOI: 10.1021/acsnano.0c04938
+标题: In Situ Electrochemical Study of Na–O2/CO2 Batteries in an Environmental Transmission Electron Microscope
+文献链接: https://doi.org/10.1021/acsnano.0c04938
+文献类型: 期刊论文
+其它信息: 作者: Qiunan Liu; Yongfu Tang; Haiming Sun; Tingting Yang; Yong Sun; Congcong Du; Peng Jia; Hongjun Ye; Jingzhao Chen; Qiuming Peng; Tongde Shen; Liqiang Zhang; Jianyu Huang；期刊: ACS Nano 14(10) p.13232-13245 2020
+------------------------------------------------------------------
+【第 19 篇 / 原编号 [23]】
+DOI: 10.1021/acsenergylett.0c01214
+标题: In Situ Observation of Sodium Dendrite Growth and Concurrent Mechanical Property Measurements Using an Environmental Transmission Electron Microscopy–Atomic Force Microscopy (ETEM-AFM) Platform
+文献链接: https://doi.org/10.1021/acsenergylett.0c01214
+文献类型: 期刊论文
+其它信息: 作者: Qiunan Liu; Liqiang Zhang; Haiming Sun; Lin Geng; Yanshuai Li; Yushu Tang; Peng Jia; Zaifa Wang; Qiushi Dai; Tongde Shen; Yongfu Tang; Ting Zhu; Jianyu Huang；期刊: ACS Energy Letters 5(8) p.2546-2559 2020
+------------------------------------------------------------------
+【第 20 篇 / 原编号 [24]】
+DOI: 10.1039/c9cc05226g
+标题: In situ imaging of electrocatalysis in a K–O 2 battery with a hollandite α-MnO 2 nanowire air cathode
+文献链接: https://doi.org/10.1039/c9cc05226g
+文献类型: 期刊论文
+其它信息: 作者: Yushu Tang; Liqiang Zhang; Yongfu Tang; Xin Wang; Teng Zhang; Rui Yang; Chi Ma; Na Li; Yuening Liu; Xinxin Zhao; Xionghu Zhang; Zaifa Wang; Baiyu Guo; Yongfeng Li; Jianyu Huang；期刊: Chemical Communications 55(73) p.10880-10883 2019
+------------------------------------------------------------------
+【第 21 篇 / 原编号 [25]】
+DOI: 10.1016/j.nanoen.2019.104159
+标题: An advanced high energy-efficiency rechargeable aluminum-selenium battery
+文献链接: https://doi.org/10.1016/j.nanoen.2019.104159
+文献类型: 期刊论文
+其它信息: 作者: Shiqi Liu; Xu Zhang; Shiman He; Yushu Tang; Jie Wang; Boya Wang; Shu Zhao; Heng Su; Yang Ren; Liqiang Zhang; Jianyu Huang; Haijun Yu; Khalil Amine；期刊: Nano Energy 66 p.104159 2019
+------------------------------------------------------------------
+【第 22 篇 / 原编号 [26]】
+DOI: 10.1016/j.ensm.2018.08.026
+标题: In-situ imaging electrocatalysis in a Na-O2 battery with Au-coated MnO2 nanowires air cathode
+文献链接: https://doi.org/10.1016/j.ensm.2018.08.026
+文献类型: 期刊论文
+其它信息: 作者: Qiunan Liu; Lin Geng; Tingting Yang; Yongfu Tang; Peng Jia; Yanshuai Li; Hui Li; Tongde Shen; Liqiang Zhang; Jianyu Huang；期刊: Energy Storage Materials 19 p.48-55 2019
+------------------------------------------------------------------
+【第 23 篇 / 原编号 [28]】
+DOI: 10.1002/anie.201807355
+标题: Air‐Stable Lithium Spheres Produced by Electrochemical Plating
+文献链接: https://doi.org/10.1002/anie.201807355
+文献类型: 期刊论文
+其它信息: 作者: Tingting Yang; Peng Jia; Qiunan Liu; Liqiang Zhang; Congcong Du; Jingzhao Chen; Hongjun Ye; Xiaomei Li; Yanshuai Li; Tongde Shen; Yongfu Tang; Jianyu Huang；期刊: Angewandte Chemie International Edition 57(39) p.12750-12753 2018
+------------------------------------------------------------------
+【第 24 篇 / 原编号 [29]】
+DOI: 10.1016/j.nanoen.2018.09.011
+标题: Probing the charging and discharging behavior of K-CO2 nanobatteries in an aberration corrected environmental transmission electron microscope
+文献链接: https://doi.org/10.1016/j.nanoen.2018.09.011
+文献类型: 期刊论文
+其它信息: 作者: Liqiang Zhang; Yushu Tang; Qiunan Liu; Tingting Yang; Congcong Du; Peng Jia; Zaifa Wang; Yongfu Tang; Yongfeng Li; Tongde Shen; Jianyu Huang；期刊: Nano Energy 53 p.544-549 2018
+------------------------------------------------------------------
+
+【纯 DOI 速贴列表（若表单支持粘贴 DOI 自动识别，整段复制）】
+10.1016/j.mtchem.2026.103844
+10.1002/adma.202415026
+10.1002/adma.202404640
+10.1002/adma.202408476
+10.1002/adfm.202307794
+10.1016/j.ensm.2023.102779
+10.1007/s12274-022-5359-z
+10.1039/d2ta02513b
+10.1016/j.mtnano.2022.100189
+10.1007/s12274-021-3861-6
+10.1039/d1ta08080f
+10.1007/s12274-021-3514-9
+10.1002/celc.202200441
+10.1016/j.cej.2021.130054
+10.1021/acsami.1c13732
+10.1038/s41565-019-0604-x
+10.1021/acsami.0c17058
+10.1021/acsnano.0c04938
+10.1021/acsenergylett.0c01214
+10.1039/c9cc05226g
+10.1016/j.nanoen.2019.104159
+10.1016/j.ensm.2018.08.026
+10.1002/anie.201807355
+10.1016/j.nanoen.2018.09.011

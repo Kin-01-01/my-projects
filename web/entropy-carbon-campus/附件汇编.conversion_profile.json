@@ -1,0 +1,28 @@
+{
+  "schema": "ppt-master.source_to_md.profile.v1",
+  "converter": "doc_to_md.py",
+  "conversion_type": "docx",
+  "source": {
+    "path": "附件汇编.docx",
+    "name": "附件汇编.docx",
+    "suffix": ".docx",
+    "kind": "file",
+    "exists": true,
+    "size_bytes": 6465312
+  },
+  "outputs": {
+    "markdown": "附件汇编.md",
+    "asset_dir": "附件汇编_files",
+    "image_manifest": "附件汇编_files/image_manifest.json",
+    "image_count": 20
+  },
+  "markdown": {
+    "line_count": 378,
+    "char_count": 10011,
+    "heading_count": 21,
+    "table_count": 13,
+    "image_ref_count": 20,
+    "link_count": 0
+  },
+  "warnings": []
+}

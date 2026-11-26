@@ -1,0 +1,1379 @@
+===== FILE: 2.题库：第一章.docx =====
+[paragraph count: 1387] [table count: 0]
+[P|List Paragraph] 第一章  世界的物质性及发展规律
+[P|Normal] 一、单选题
+[P|Normal] 1.在马克思主义普遍原理指导下，从中国的基本国情出发，走建设有中国特色社会主义道路。这体现了（）。
+[P|List Paragraph] A.矛盾的同一性和斗争性的统一
+[P|List Paragraph] B.矛盾的普遍性和特殊性的统一
+[P|List Paragraph] C.事物发展的量变和质变的统一
+[P|List Paragraph] D.事物发展的前进性和曲折性的统一
+[P|List Paragraph] 答案：B
+[P|Normal] 2.马克思主义的精髓是（）。
+[P|List Paragraph] A.实事求是
+[P|List Paragraph] B.阶级斗争理论
+[P|List Paragraph] C.社会发展理论
+[P|List Paragraph] D.人民群众历史作用理论
+[P|List Paragraph] 答案：A
+[P|Normal] 3.人与动物最根本的区别在于（）。
+[P|List Paragraph] A.是否具有思想意识
+[P|List Paragraph] B.是否具有自然属性
+[P|List Paragraph] C.是否能制造和使用工具
+[P|List Paragraph] D.是否具有宗教信仰
+[P|List Paragraph] 答案：C
+[P|Normal] 4.马克思主义认为，哲学是（）。
+[P|List Paragraph] A.无产阶级的世界观和方法论
+[P|List Paragraph] B.人们对整个世界的根本观点和总的看法
+[P|List Paragraph] C.理论化系统化的世界观
+[P|List Paragraph] D.科学的世界观和方法论
+[P|List Paragraph] 答案：C
+[P|Normal] 5.下列观点中属于客观唯心主义的是（）。
+[P|List Paragraph] A.吾心便是宇宙
+[P|List Paragraph] B.存在就是被感知
+[P|List Paragraph] C.心外无物
+[P|List Paragraph] D.现实世界是理念世界的影子
+[P|List Paragraph] 答案： D
+[P|Normal] 6.下列选项中正确说明运动和物质关系的是（）。
+[P|List Paragraph] A.物质是运动的原因
+[P|List Paragraph] B.物质是运动的本质
+[P|List Paragraph] C.运动是物质的内在根据
+[P|List Paragraph] D.运动是物质的根本属性
+[P|List Paragraph] 答案：D
+[P|Normal] 7.“机不可失，时不再来”指的是（）。
+[P|List Paragraph] A.时间的顺序性
+[P|List Paragraph] B.时间的不可逆性
+[P|List Paragraph] C.时间的相对性
+[P|List Paragraph] D.时间的间断性
+[P|List Paragraph] 答案：B
+[P|Normal] 8.“意识是客观世界的主观映象”，这是（）。
+[P|List Paragraph] A.辩证唯物主义的观点
+[P|List Paragraph] B.机械唯物主义的观点
+[P|List Paragraph] C.朴素唯物主义的观点
+[P|List Paragraph] D.庸俗唯物主义的观点
+[P|List Paragraph] 答案：A
+[P|Normal] 9.唯物辩证法有两个基本特征，其中一个是永恒发展的观点，另一个是（）。
+[P|List Paragraph] A.对立统一的观点
+[P|List Paragraph] B.辩证否定的观点
+[P|List Paragraph] C.普遍联系的观点
+[P|List Paragraph] D.质量互变的观点
+[P|List Paragraph] 答案：C
+[P|Normal] 10.“在对立中把握同一，在同一中把握对立”。这是一种（）。
+[P|List Paragraph] A.辩证法的观点
+[P|List Paragraph] B.形而上学的观点
+[P|List Paragraph] C.相对主义诡辩论的观点
+[P|List Paragraph] D.主观唯心主义的观点
+[P|List Paragraph] 答案：A
+[P|Normal] 11.我国古代有人提出“白马非马”、“杀盗非杀人”，这些说法的错误在于割裂了（）。
+[P|List Paragraph] A.矛盾的同一性和斗争性的联系
+[P|List Paragraph] B.矛盾的特殊性和普遍性的联系
+[P|List Paragraph] C.矛盾的主要方面和次要方面的联系
+[P|List Paragraph] D.主要矛盾和次要矛盾的联系
+[P|List Paragraph] 答案：B
+[P|Normal] 12.下列命题中，体现量变引起质变观点的是（）。
+[P|List Paragraph] A.兼听则明，偏信则暗
+[P|List Paragraph] B.社稷无常奉，群臣无常位
+[P|List Paragraph] C.城门失火，殃及池鱼
+[P|List Paragraph] D.长堤溃蚁穴，君子慎其微
+[P|List Paragraph] 答案：D
+[P|Normal] 13.哲学为具体科学的研究提供（）。
+[P|List Paragraph] A.一般方法
+[P|List Paragraph] B.经验材料
+[P|List Paragraph] C.理论结论
+[P|List Paragraph] D.具体方法
+[P|List Paragraph] 答案： A
+[P|Normal] 14.“人不能两次踏进同一条河流”，这句话说明运动和静止的关系是（）。
+[P|List Paragraph] A.运动是绝对的，静止是相对的
+[P|List Paragraph] B.运动是相对的，静止是绝对的
+[P|List Paragraph] C.静止是绝对的，运动也是绝对的
+[P|List Paragraph] D.静止是相对的，运动也是相对的
+[P|List Paragraph] 答案： A
+[P|Normal] 15.列宁对辩证唯物主义物质范畴的定义是通过（）。
+[P|List Paragraph] A.物质与意识的关系界定的
+[P|List Paragraph] B.个别与一般的关系界定的
+[P|List Paragraph] C.哲学与具体科学的关系界定的
+[P|List Paragraph] D.认识与实践的关系界定的
+[P|List Paragraph] 答案： A
+[P|Normal] 16.唯物辩证法与形而上学的对立的焦点表现为（）。
+[P|List Paragraph] A.联系观点和孤立观点的对立
+[P|List Paragraph] B.全面观点和片面观点的对立
+[P|List Paragraph] C.发展观点和静止观点的对立
+[P|List Paragraph] D.是否承认矛盾是事物发展的内在根据
+[P|List Paragraph] 答案： D
+[P|Normal] 17.划分唯物主义与唯心主义的唯一标准是（）。
+[P|List Paragraph] A.世界是否可知
+[P|List Paragraph] B.思维和存在何者为第一性
+[P|List Paragraph] C.世界是否运动变化
+[P|List Paragraph] D.是否承认世界统一性
+[P|List Paragraph] 答案： B
+[P|Normal] 18.度是指（）。
+[P|List Paragraph] A.事物保持自己质的数量界限，是质和量的统一
+[P|List Paragraph] B.事物内容的表现形式
+[P|List Paragraph] C.事物成为自身并与其他事物区别开来的内在规定性
+[P|List Paragraph] D.事物的规模、程度和速度等可以用数量表示的规定性
+[P|List Paragraph] 答案： A
+[P|Normal] 19.唯物辩证法认为，新旧事物区别的根本标志在于（）。
+[P|List Paragraph] A.它们出现的时间先后
+[P|List Paragraph] B.它们力量是否强大
+[P|List Paragraph] C.人们对它们是否认可
+[P|List Paragraph] D.它们是否同历史发展的必然趋势相符合
+[P|List Paragraph] 答案： D
+[P|Normal] 20.运用主要矛盾和矛盾主要方面的原理，在方法论上应坚持（）。
+[P|List Paragraph] A.均衡论
+[P|List Paragraph] B.一点论
+[P|List Paragraph] C.重点论
+[P|List Paragraph] D.二元论
+[P|List Paragraph] 答案： C
+[P|Normal] 21.对哲学基本问题第一方面的不同回答是（）。
+[P|List Paragraph] A.划分唯物主义和唯心主义的标准
+[P|List Paragraph] B.划分辩证法和形而上学的标准
+[P|List Paragraph] C.划分一元论和二元论的标准
+[P|List Paragraph] D.划分可知论和不可知论的标准
+[P|List Paragraph] 答案： A
+[P|Normal] 22.马克思主义哲学的研究对象是（）。
+[P|List Paragraph] A.物质世界的一切现象
+[P|List Paragraph] B.各个国家和民族发展的具体过程
+[P|List Paragraph] C.人们的具体心理过程
+[P|List Paragraph] D.自然、社会和思维发展的一般规律
+[P|List Paragraph] 答案： D
+[P|Normal] 23.下列选项中，正确说明物质和运动关系的是（）。
+[P|List Paragraph] A.物质是运动的主体，运动是物质的根本属性
+[P|List Paragraph] B.物质是运动的形式，运动是物质的内容
+[P|List Paragraph] C.物质是运动的原因，运动是物质的结果
+[P|List Paragraph] D.物质是运动的本质，运动是物质的现象
+[P|List Paragraph] 答案： A
+[P|Normal] 24.运动和静止的关系属于（）。
+[P|List Paragraph] A.原因和结果的关系
+[P|List Paragraph] B.抽象和具体的关系
+[P|List Paragraph] C.本质和现象的关系
+[P|List Paragraph] D.绝对和相对的关系
+[P|List Paragraph] 答案： D
+[P|Normal] 25.正确发挥意识能动作用的前提是（）。
+[P|List Paragraph] A.充分调动人的积极性
+[P|List Paragraph] B.充分发挥集体的智慧
+[P|List Paragraph] C.正确反映客观规律
+[P|List Paragraph] D.彻底克服保守思想
+[P|List Paragraph] 答案： C
+[P|Normal] 26.唯物辩证法认为，发展的实质是（）。
+[P|List Paragraph] A.事物数量的增加
+[P|List Paragraph] B.事物的根本质变
+[P|List Paragraph] C.事物的一切运动变化
+[P|List Paragraph] D.新事物的产生和旧事物的灭亡
+[P|List Paragraph] 答案： D
+[P|Normal] 27.唯物辩证法所说的矛盾，是指事物内部两方面之间（）。
+[P|List Paragraph] A.相互排斥和相互斗争的关系
+[P|List Paragraph] B.相互对立和相互统一的关系
+[P|List Paragraph] C.相互联系和相互依存的关系
+[P|List Paragraph] D.相互依存和相互转化的关系
+[P|List Paragraph] 答案： B
+[P|Normal] 28.区分量变和质变的标志是看（）。
+[P|List Paragraph] A.事物的变化是否显著
+[P|List Paragraph] B.事物的变化是否迅速
+[P|List Paragraph] C.事物的某些属性是否发生了变化
+[P|List Paragraph] D.事物的变化是否超出度的范围
+[P|List Paragraph] 答案： D
+[P|Normal] 29.下列选项中属于客观唯心主义观点的是（）。
+[P|List Paragraph] A.存在就是被感知
+[P|List Paragraph] B.理在事先
+[P|List Paragraph] C.心外无物
+[P|List Paragraph] D.物是感觉的复合
+[P|List Paragraph] 答案： B
+[P|Normal] 30.物质的唯一特性是（）。
+[P|List Paragraph] A.客观实在性
+[P|List Paragraph] B.客观规律性
+[P|List Paragraph] C.普遍联系
+[P|List Paragraph] D.永恒发展
+[P|List Paragraph] 答案： A
+[P|Normal] 31.下列选项中正确表述意识本质的是（）。
+[P|List Paragraph] A.意识是自然界长期发展的产物
+[P|List Paragraph] B.意识是人脑对客观事物的反映
+[P|List Paragraph] C.意识是社会劳动的产物
+[P|List Paragraph] D.意识是人脑自生的一种形式
+[P|List Paragraph] 答案： B
+[P|Normal] 32.“不积跬步，无以至千里；不积小流，无以成江海。”这里强调的是（）。
+[P|List Paragraph] A.量变是质变的前提
+[P|List Paragraph] B.质变和量变相互渗透
+[P|List Paragraph] C.质变体现量变的成果
+[P|List Paragraph] D.质变为新的量变开拓道路
+[P|List Paragraph] 答案： A
+[P|Normal] 33.否定之否定规律揭示的是（）。
+[P|List Paragraph] A.事物发展的动力和源泉
+[P|List Paragraph] B.事物发展的状态和形式
+[P|List Paragraph] C.事物发展的方向和道路
+[P|List Paragraph] D.事物发展的过程和结果
+[P|List Paragraph] 答案： C
+[P|Normal] 34.哲学基本问题是（）。
+[P|List Paragraph] A.物质和运动的关系问题
+[P|List Paragraph] B.思维和存在的关系问题
+[P|List Paragraph] C.社会和自然的关系问题
+[P|List Paragraph] D.主体和客体的关系问题
+[P|List Paragraph] 答案： B
+[P|Normal] 35. 马克思主义哲学大厦的基石是（）。
+[P|List Paragraph] A.世界是联系和发展的原理
+[P|List Paragraph] B.世界统一于存在的原理
+[P|List Paragraph] C.世界统一于物质的原理
+[P|List Paragraph] D.世界统一于精神的原理
+[P|List Paragraph] 答案：C
+[P|Normal] 36. 实际工作中“一刀切”的习惯做法，忽视了事物的（）。
+[P|List Paragraph] A.质的稳定性
+[P|List Paragraph] B.量的规定性
+[P|List Paragraph] C.矛盾的特殊性
+[P|List Paragraph] D.矛盾的普遍性
+[P|List Paragraph] 答案： C
+[P|Normal] 37.“只见树木，不见森林”；“一叶障目，不见泰山”。这是一种（）。
+[P|List Paragraph] A.不可知论的观点
+[P|List Paragraph] B.相对主义的观点
+[P|List Paragraph] C.庸俗唯物主义的观点
+[P|List Paragraph] D.形而上学的观点
+[P|List Paragraph] 答案： D
+[P|Normal] 38.对立统一规律提示了（）。
+[P|List Paragraph] A.事物发展变化的程度和趋势
+[P|List Paragraph] B.事物发展变化的动力和源泉
+[P|List Paragraph] C.事物发展变化的状态和形成
+[P|List Paragraph] D.事物发展变化的方向和道路
+[P|List Paragraph] 答案： B
+[P|Normal] 39.人们常说：“前途是光明的，道路是曲折的”。这句话体现的最主要的辩证法原理是（）。
+[P|List Paragraph] A.世界永恒发展的原理
+[P|List Paragraph] B.事物普遍联系的原理
+[P|List Paragraph] C.否定之否定规律
+[P|List Paragraph] D.质量互变规律
+[P|List Paragraph] 答案： C
+[P|Normal] 40.古代朴素唯物主义把世界的本原归结为（）。
+[P|List Paragraph] A.客观存在的各种物体
+[P|List Paragraph] B.宇宙中存在的一切现象
+[P|List Paragraph] C.物质的具体形态和结构
+[P|List Paragraph] D.某种具体的“原初物质”
+[P|List Paragraph] 答案： D
+[P|Normal] 41.“两点论”和“重点论”统一的原理，要求我们在社会主义建设中（）。
+[P|List Paragraph] A.既要坚持以经济建设为中心，又要做好其他各项工作
+[P|List Paragraph] B.既要坚持四项基本原则，又要实行改革开放
+[P|List Paragraph] C.既要量力而行，又要积极进取
+[P|List Paragraph] D.既要坚定信心，又要有克服困难的准备
+[P|List Paragraph] 答案： A
+[P|Normal] 42.在实际工作中，要注意掌握分寸，防止“过”或“不及”，这在哲学上属于（）。
+[P|List Paragraph] A.抓事物的主要矛盾
+[P|List Paragraph] B.确定事物的质
+[P|List Paragraph] C.认识事物的量
+[P|List Paragraph] D.把握事物的度
+[P|List Paragraph] 答案： D
+[P|Normal] 43.世界观是（）。
+[P|List Paragraph] A.对社会发展的根本看法
+[P|List Paragraph] B.辩证思维的基本观点
+[P|List Paragraph] C.观察和分析问题的根本方法
+[P|List Paragraph] D.人们对整个世界的总的看法和根本观点
+[P|List Paragraph] 答案： D
+[P|Normal] 44.恩格斯认为，全部哲学、特别是近代哲学的重大的基本问题是（）。
+[P|List Paragraph] A.哲学与人类生存活动之间的内在联系问题
+[P|List Paragraph] B.人与周围世界的基本联系问题
+[P|List Paragraph] C.思维和存在的关系问题
+[P|List Paragraph] D.关于人的本质问题
+[P|List Paragraph] 答案： C
+[P|Normal] 45.“旧唯物主义是半截子的唯物主义”，这是指（）。
+[P|List Paragraph] A.旧唯物主义是形而上学的唯物主义
+[P|List Paragraph] B.旧唯物主义在社会历史观上是唯心主义
+[P|List Paragraph] C.旧唯物主义是机械唯物主义
+[P|List Paragraph] D.旧唯物主义是割裂了运动与静止的辩证法
+[P|List Paragraph] 答案： B
+[P|Normal] 46.各尽所能，按需分配是（）。
+[P|List Paragraph] A.原始社会的分配方式
+[P|List Paragraph] B.阶级社会的分配方式
+[P|List Paragraph] C.社会主义社会的分配方式
+[P|List Paragraph] D.共产主义社会的分配方式
+[P|List Paragraph] 答案： D
+[P|Normal] 47.标志科学社会主义理论正式面世的著作是指（）。
+[P|List Paragraph] A.《共产主义原理》
+[P|List Paragraph] B.《共产党宣言》
+[P|List Paragraph] C.《哥达纲领批判》
+[P|List Paragraph] D.《国家与革命》
+[P|List Paragraph] 答案： B
+[P|Normal] 48.“沉舟侧畔千帆过，病树前头万木春。…‘芳林新叶催陈叶，流水前波让后波。”这两句诗包含的哲学道理是（）。
+[P|List Paragraph] A.矛盾是事物发展的动力
+[P|List Paragraph] B.事物是本质和现象的统一
+[P|List Paragraph] C.事物的发展是量变和质变的统一
+[P|List Paragraph] D.新事物代替旧事物是事物发展的总趋势
+[P|List Paragraph] 答案： D
+[P|Normal] 49.辩证法的否定即“扬弃”，它的含义是指（）。
+[P|List Paragraph] A.抛弃
+[P|List Paragraph] B.事物中好的方面和坏的方面的组合
+[P|List Paragraph] C.纯粹的否定
+[P|List Paragraph] D.既克服又保留
+[P|List Paragraph] 答案： D
+[P|Normal] 50.马克思主义认为，世界的真正统一性在于它的（）。
+[P|List Paragraph] A.广延性
+[P|List Paragraph] B.存在性
+[P|List Paragraph] C.物质性
+[P|List Paragraph] D.可知性
+[P|List Paragraph] 答案： C
+[P|Normal] 51.马克思主义认为，社会生活在本质上是（）。
+[P|List Paragraph] A.联系的
+[P|List Paragraph] B.精神的
+[P|List Paragraph] C.发展的
+[P|List Paragraph] D.实践的
+[P|List Paragraph] 答案： D
+[P|Normal] 52.揭示事物发展方向和道路的规律是（）。
+[P|List Paragraph] A.否定之否定规律
+[P|List Paragraph] B.质量互变规律
+[P|List Paragraph] C.对立统一规律
+[P|List Paragraph] D.内容和形式相互作用规律
+[P|List Paragraph] 答案： A
+[P|Normal] 53.划分唯物主义和唯心主义的标准在于是否承认（）。
+[P|List Paragraph] A.世界是普遍联系的
+[P|List Paragraph] B.世界是运动、变化、发展的
+[P|List Paragraph] C.世界是物质的
+[P|List Paragraph] D.世界是统一的
+[P|List Paragraph] 答案： C
+[P|Normal] 54.唯物辩证法的实质与核心是（）。
+[P|List Paragraph] A.内容决定形式的规律
+[P|List Paragraph] B.否定之否定规律
+[P|List Paragraph] C.质量互变规律
+[P|List Paragraph] D.对立统一规律
+[P|List Paragraph] 答案： D
+[P|Normal] 55.矛盾的基本属性有两个，一个是斗争性，另一个是（）。
+[P|List Paragraph] A.同一性
+[P|List Paragraph] B.客观性
+[P|List Paragraph] C.普遍性
+[P|List Paragraph] D.特殊性
+[P|List Paragraph] 答案： A
+[P|Normal] 56.马克思主义哲学关于物质范畴的正确理解是（）。
+[P|List Paragraph] A.物质是各种实物的总和
+[P|List Paragraph] B.物质范畴是从各种物的总和中抽象出来的
+[P|List Paragraph] C.物质的唯一特性是它可以被感知
+[P|List Paragraph] D.物质是自然界中具体的物质形态
+[P|List Paragraph] 答案： B
+[P|Normal] 57.意识产生的决定性作用是（）。
+[P|List Paragraph] A.人脑的进化
+[P|List Paragraph] B.动物心理的形成
+[P|List Paragraph] C.语言的产生
+[P|List Paragraph] D.劳动
+[P|List Paragraph] 答案： D
+[P|Normal] 58.事物的否定方面是指（）。
+[P|List Paragraph] A.事物的积极方面
+[P|List Paragraph] B.事物的消极方面
+[P|List Paragraph] C.事物中维持其存在的方面
+[P|List Paragraph] D.事物中促使其消灭的方面
+[P|List Paragraph] 答案： D
+[P|Normal] 59.作为辩证的否定的“扬弃”是（）。
+[P|List Paragraph] A.既保留又发扬
+[P|List Paragraph] B.彻底抛弃
+[P|List Paragraph] C.既克服又保留
+[P|List Paragraph] D.矛盾的调和
+[P|List Paragraph] 答案： C
+[P|Normal] 60.对待传统文化的正确态度是（）。
+[P|List Paragraph] A.视为精华全部继承
+[P|List Paragraph] B.视为糟粕全部抛弃
+[P|List Paragraph] C.应保留一半,抛弃一半
+[P|List Paragraph] D.批判继承,推陈出新
+[P|List Paragraph] 答案： D
+[P|Normal] 61.事物发展的周期性体现了（）。
+[P|List Paragraph] A.事物发展的直线性与曲折性的统一
+[P|List Paragraph] B.事物发展是一个不断地回到出发点的运动
+[P|List Paragraph] C.事物发展的周而复始的循环性
+[P|List Paragraph] D.事物发展的前进性和曲折性的统一
+[P|List Paragraph] 答案： D
+[P|Normal] 62.《坛经》“时有风吹幡动，----僧曰风动，---僧曰幡动，议论不已。惠能进曰:不是风动，不是幡动，仁者心动”。惠能关于运动的观点是（）。
+[P|List Paragraph] A.运动是物质之根本属性
+[P|List Paragraph] B.运动与物质不可分
+[P|List Paragraph] C.精神运动是物质运动的一种形式
+[P|List Paragraph] D.精神是运动的主体
+[P|List Paragraph] 答案： D
+[P|Normal] 63.辩证的否定的实质是（）。
+[P|List Paragraph] A.否定是事物的自我否定
+[P|List Paragraph] B.否定是对旧事物的抛弃
+[P|List Paragraph] C.否定是事物联系和发展的环节
+[P|List Paragraph] D.否定是对旧事物的“扬弃”
+[P|List Paragraph] 答案： D
+[P|Normal] 64.哲学上划分唯物主义和唯心主义两个基本派别的依据是（）。
+[P|List Paragraph] A.主张一元论还是二元论
+[P|List Paragraph] B.主张辩证法还是形而上学
+[P|List Paragraph] C.对哲学基本问题第一个方面的不同回答
+[P|List Paragraph] D.对哲学基本问题第二个方面的不同回答
+[P|List Paragraph] 答案： C
+[P|Normal] 65.辩证的否定观与形而上学否定观的对立表现在是否承认（）。
+[P|List Paragraph] A.否定是外力对事物的否定
+[P|List Paragraph] B.否定与肯定的区别
+[P|List Paragraph] C.否定是对旧事物的抛弃
+[P|List Paragraph] D.否定是对旧事物的“扬弃”
+[P|List Paragraph] 答案： D
+[P|Normal] 66.对哲学基本问题第二个方面的不同回答是划分哪两种观点的标准（）。
+[P|List Paragraph] A.唯物主义和唯心主义
+[P|List Paragraph] B.反映论和先验论
+[P|List Paragraph] C.可知论和不可知论
+[P|List Paragraph] D.唯物史观和唯心史观
+[P|List Paragraph] 答案： C
+[P|Normal] 67.实践是指（）。
+[P|List Paragraph] A.个人的生活活动
+[P|List Paragraph] B.一切有利于自己的活动
+[P|List Paragraph] C.人有目的的、达到真理性的认识活动
+[P|List Paragraph] D.人们能动地改造和探索现实世界的社会性的客观物质活动
+[P|List Paragraph] 答案： D
+[P|Normal] 68.荀子说“不积跬步无以至千里，不积细流无以成江河”这说明（）。
+[P|List Paragraph] A.量变是质变的准备
+[P|List Paragraph] B.质变是量变的必然结果
+[P|List Paragraph] C.量变和质变相互包含
+[P|List Paragraph] D.量变和质变相互渗透
+[P|List Paragraph] 答案： A
+[P|Normal] 69.形而上学的否定观的根本错误在于（）。
+[P|List Paragraph] A.否认肯定和否定的区别
+[P|List Paragraph] B.坚持否定是事物的自我否定
+[P|List Paragraph] C.否认否定是事物的自我否定
+[P|List Paragraph] D.否认否定是外力作用的结果
+[P|List Paragraph] 答案： C
+[P|Normal] 70.科学家洛仑兹提出“蝴蝶效应”理论，他说：“可预言：一只蝴蝶在巴西振动翅膀会在得克萨斯州引起龙卷风”，这个说法（）。
+[P|List Paragraph] A.说明一种事物和现象可以通过一系列中介环节和另一事物、现象发生联系
+[P|List Paragraph] B.片面夸大了联系的普遍性
+[P|List Paragraph] C.把联系理解为主观随意的，否认联系的客观性
+[P|List Paragraph] D.否认了联系的多样性
+[P|List Paragraph] 答案： A
+[P|Normal] 71.对物质和意识哪个是第一性问题的不同回答，形成了哲学上的两大基本派别。这两大基本派别是（）。
+[P|List Paragraph] A.唯物主义和唯心主义
+[P|List Paragraph] B.辩证法和形而上学
+[P|List Paragraph] C.一元论和二元论
+[P|List Paragraph] D.可知论和不可知论
+[P|List Paragraph] 答案： A
+[P|Normal] 72.人们正确发挥主观能动作用的根本途径是（）。
+[P|List Paragraph] A.认识客观规律
+[P|List Paragraph] B.制定周密计划
+[P|List Paragraph] C.依靠广大群众
+[P|List Paragraph] D.参加社会实践
+[P|List Paragraph] 答案： D
+[P|Normal] 73.时间是物质运动的（）。
+[P|List Paragraph] A.持续性和顺序性
+[P|List Paragraph] B.广延性和伸张性
+[P|List Paragraph] C.绝对性和无限性
+[P|List Paragraph] D.普遍性和特殊性
+[P|List Paragraph] 答案： A
+[P|Normal] 74.哲学上的一元论就是承认（）。
+[P|List Paragraph] A.世界是客观存在的
+[P|List Paragraph] B.世界是统一的
+[P|List Paragraph] C.世界是可以认识的
+[P|List Paragraph] D.世界是不断发展的
+[P|List Paragraph] 答案： B
+[P|Normal] 75.一切唯心主义都主张（）。
+[P|List Paragraph] A.精神是世界的本原
+[P|List Paragraph] B.存在就是被感知
+[P|List Paragraph] C.世界是绝对精神的产物
+[P|List Paragraph] D.理是天地万物之根
+[P|List Paragraph] 答案： A
+[P|Normal] 76.在唯物辩证法看来，发展的实质是（）。
+[P|List Paragraph] A.事物数量的增加
+[P|List Paragraph] B.事物的一切运动变化
+[P|List Paragraph] C.事物根本性质的变化
+[P|List Paragraph] D.新事物的产生和旧事物的灭亡
+[P|List Paragraph] 答案： D
+[P|Normal] 77.下列各项比喻新事物必然战胜旧事物的是（）。
+[P|List Paragraph] A.山重水复疑无路，柳暗花明又一村
+[P|List Paragraph] B.沉舟侧畔千帆过，病树前头万木春
+[P|List Paragraph] C.黄河之水天上来，奔流到海不复回
+[P|List Paragraph] D.高堂明镜悲白发，朝如青丝暮成雪
+[P|List Paragraph] 答案： B
+[P|Normal] 78.我国坚持独立自主、自力更生和对外开放方针的理论基础是（）。
+[P|List Paragraph] A.量变和质变辩证关系的原理
+[P|List Paragraph] B.内容和形式辩证关系的原理
+[P|List Paragraph] C.肯定和否定辩证关系的原理
+[P|List Paragraph] D.内因和外因辩证关系的原理
+[P|List Paragraph] 答案： D
+[P|Normal] 79.实现意识对物质反作用的根本途径是（）。
+[P|List Paragraph] A.学习书本知识
+[P|List Paragraph] B.进行社会调查
+[P|List Paragraph] C.参加社会实践
+[P|List Paragraph] D.研究实际情况
+[P|List Paragraph] 答案： C
+[P|Normal] 80.承认世界的统一性的哲学都属于（）。
+[P|List Paragraph] A.一元论
+[P|List Paragraph] B.二元论
+[P|List Paragraph] C.唯物论
+[P|List Paragraph] D.唯心论
+[P|List Paragraph] 答案： A
+[P|Normal] 81.下列各项包含矛盾双方相互依存相互转化的辩证法思想的是（）。
+[P|List Paragraph] A.千里之行，始于足下
+[P|List Paragraph] B.千里之堤，溃于蚁穴
+[P|List Paragraph] C.月晕而风，础润而雨
+[P|List Paragraph] D.物极必反，相反相成
+[P|List Paragraph] 答案： D
+[P|Normal] 82.揭示事物发展动力和源泉的规律的是（）。
+[P|List Paragraph] A.对立统一规律
+[P|List Paragraph] B.质量互变规律
+[P|List Paragraph] C.内容和形式相互作用规律
+[P|List Paragraph] D.否定之否定规律
+[P|List Paragraph] 答案： A
+[P|Normal] 83.“人有多大胆，地有多大产；不怕办不到，就怕想不到；只要想得到，啥也能办到。”这是一种（）。
+[P|List Paragraph] A.辩证唯物主义思想的表现
+[P|List Paragraph] B.机械唯物主义思想的表现
+[P|List Paragraph] C.主观唯心主义思想的表现
+[P|List Paragraph] D.客观唯心主义思想的表现
+[P|List Paragraph] 答案： C
+[P|Normal] 84.作为质变和量变的统一的度是指（）。
+[P|List Paragraph] A.肯定和否定的对立统一
+[P|List Paragraph] B.把内容诸要素统一起来的结构
+[P|List Paragraph] C.事物的构成成分在空间上排列组合
+[P|List Paragraph] D.事物保持其质的量的限度
+[P|List Paragraph] 答案： D
+[P|Normal] 85.“存在就是被感知”这种观点属于（）。
+[P|List Paragraph] A.朴素唯物主义
+[P|List Paragraph] B.形而上学唯物主义
+[P|List Paragraph] C.主观唯心主义
+[P|List Paragraph] D.客观唯心主义
+[P|List Paragraph] 答案： C
+[P|Normal] 86.“盛年不重来，一日难再晨”这个谚语表明时间具有（）。
+[P|List Paragraph] A.持续性
+[P|List Paragraph] B.绝对性
+[P|List Paragraph] C.一维性
+[P|List Paragraph] D.伸张性
+[P|List Paragraph] 答案： C
+[P|Normal] 87.分析矛盾的特殊性就是（）。
+[P|List Paragraph] A.坚持实践的观点
+[P|List Paragraph] B.坚持理论联系实际
+[P|List Paragraph] C.坚持辩证的否定
+[P|List Paragraph] D.坚持具体问题具体分析
+[P|List Paragraph] 答案： D
+[P|Normal] 88.事物发展的动力和源泉是（）。
+[P|List Paragraph] A.事物的内部矛盾
+[P|List Paragraph] B.事物的外部矛盾
+[P|List Paragraph] C.事物的主要矛盾
+[P|List Paragraph] D.矛盾的主要方面
+[P|List Paragraph] 答案： A
+[P|Normal] 89.“揠苗助长”这个寓言说明（）。
+[P|List Paragraph] A.意识活动具有目的性和计划性
+[P|List Paragraph] B.意识活动具有主动创造性
+[P|List Paragraph] C.意识能通过指导实践改造客观物质世界
+[P|List Paragraph] D.如果违背规律，越是发挥主观能动性，遭受的挫折和失败就越严重
+[P|List Paragraph] 答案： D
+[P|Normal] 90.主张意识第一性、物质第二性的是（）。
+[P|List Paragraph] A.辩证法观点
+[P|List Paragraph] B.形而上学观点
+[P|List Paragraph] C.唯物主义观点
+[P|List Paragraph] D.唯心主义观点
+[P|List Paragraph] 答案： D
+[P|Normal] 91.“一把钥匙开一把锁”。这句话强调的是（）。
+[P|List Paragraph] A.要承认事物运动的客观性
+[P|List Paragraph] B.要承认事物运动的规律性
+[P|List Paragraph] C.要注重分析矛盾的普遍性
+[P|List Paragraph] D.要注重分析矛盾的特殊性
+[P|List Paragraph] 答案： D
+[P|Normal] 92.意识的能动性最突出的表现是（）。
+[P|List Paragraph] A.意识活动具有目的性和计划性
+[P|List Paragraph] B.意识活动具有主动创造性
+[P|List Paragraph] C.意识对人的生理活动有影响
+[P|List Paragraph] D.意识能通过指导实践改造客观世界
+[P|List Paragraph] 答案： D
+[P|Normal] 93.划分可知论和不可知论的标准是（）。
+[P|List Paragraph] A.是否承认世界的统一性
+[P|List Paragraph] B.是否承认运动的绝对性
+[P|List Paragraph] C.是否承认世界的物质性
+[P|List Paragraph] D.是否承认思维和存在具有同一性
+[P|List Paragraph] 答案： D
+[P|Normal] 94.矛盾的斗争性是指（）。
+[P|List Paragraph] A.矛盾双方相互依存
+[P|List Paragraph] B.矛盾双方相互渗透
+[P|List Paragraph] C.矛盾双方相互排斥
+[P|List Paragraph] D.矛盾双方在一定条件下相互转化
+[P|List Paragraph] 答案： C
+[P|Normal] 95.揭示事物的发展状态和形式的规律是（）。
+[P|List Paragraph] A.对立统一规律
+[P|List Paragraph] B.质量互变规律
+[P|List Paragraph] C.否定之否定规律
+[P|List Paragraph] D.本质决定现象规律
+[P|List Paragraph] 答案： B
+[P|Normal] 96.新事物之所以必然战胜旧事物，从根本上说是由于（）。
+[P|List Paragraph] A.新事物是在旧事物之后产生的
+[P|List Paragraph] B.新事物具有旧事物所没有的新形式
+[P|List Paragraph] C.新事物具有旧事物所没有的新内容
+[P|List Paragraph] D.新事物较旧事物更符合事物发展的必然趋势
+[P|List Paragraph] 答案： D
+[P|Normal] 97.在客观规律面前，人的主观能动性的表现是（）。
+[P|List Paragraph] A.人可以创造规律
+[P|List Paragraph] B.人可以消灭规律
+[P|List Paragraph] C.人可以改变规律
+[P|List Paragraph] D.人可以认识和利用规律
+[P|List Paragraph] 答案： D
+[P|Normal] 98.“绝对运动中包含着相对静止，相对静止中包含着绝对运动”，这是一种（）。
+[P|List Paragraph] A.相对主义诡辩论的观点
+[P|List Paragraph] B.唯物辩证法的观点
+[P|List Paragraph] C.形而上学的观点
+[P|List Paragraph] D.客观唯心主义的观点
+[P|List Paragraph] 答案： B
+[P|Normal] 99.实现意识能动作用的根本途径是（）。
+[P|List Paragraph] A.学习科学理论
+[P|List Paragraph] B.投身社会实践
+[P|List Paragraph] C.了解实际情况
+[P|List Paragraph] D.制定周密计划
+[P|List Paragraph] 答案： B
+[P|Normal] 100.矛盾的两种基本属性是（）。
+[P|List Paragraph] A.同一性和斗争性
+[P|List Paragraph] B.统一性和多样性
+[P|List Paragraph] C.普遍性和性特殊性
+[P|List Paragraph] D.一般性和个别性
+[P|List Paragraph] 答案： A
+[P|Normal] 101.哲学上的二元论否认（）。
+[P|List Paragraph] A.世界的统一性
+[P|List Paragraph] B.世界的物质性
+[P|List Paragraph] C.世界的可知性
+[P|List Paragraph] D.世界的多样性
+[P|List Paragraph] 答案： A
+[P|Normal] 102.下列观点中表述唯物辩证法总特征的是（）。
+[P|List Paragraph] A.量变和质变的观点
+[P|List Paragraph] B.对立统一的观点
+[P|List Paragraph] C.联系和发展的观点
+[P|List Paragraph] D.辩证否定的观点
+[P|List Paragraph] 答案： C
+[P|Normal] 103.列宁的物质定义表明，客观实在性是（）。
+[P|List Paragraph] A.生命物质的共性
+[P|List Paragraph] B.自然物质的共性
+[P|List Paragraph] C.有形物质的共性
+[P|List Paragraph] D.一切物质的共性
+[P|List Paragraph] 答案： D
+[P|Normal] 104.唯物辩证法提供的最根本的认识方法是（）。
+[P|List Paragraph] A.逻辑分析法
+[P|List Paragraph] B.阶级分析法
+[P|List Paragraph] C.矛盾分析法
+[P|List Paragraph] D.精神分析法
+[P|List Paragraph] 答案： C
+[P|Normal] 105.事物的量是（）。
+[P|List Paragraph] A.事物运动变化发展的形式
+[P|List Paragraph] B.事物本身所具有的内在要素的总和
+[P|List Paragraph] C.一事物与它事物互相区别的界限
+[P|List Paragraph] D.事物的规模程度速度等方面的规定性
+[P|List Paragraph] 答案： D
+[P|Normal] 106.量变是指（）。
+[P|List Paragraph] A.事物对原有度的突破
+[P|List Paragraph] B.新事物对旧事物的否定
+[P|List Paragraph] C.统一体的分解
+[P|List Paragraph] D.事物数量的增减和场所的更替
+[P|List Paragraph] 答案： D
+[P|Normal] 107.哲学是（）。
+[P|List Paragraph] A.理论化、系统化的世界观
+[P|List Paragraph] B.整个世界的总的根本的看法
+[P|List Paragraph] C.科学的世界观和方法论
+[P|List Paragraph] D.唯物论与唯心论的不同观点
+[P|List Paragraph] 答案： A
+[P|Normal] 108.唯物主义一元论同唯心主义的一元论对立的根本点在于（）。
+[P|List Paragraph] A.世界发展动力问题
+[P|List Paragraph] B.意识本质问题
+[P|List Paragraph] C.世界本原问题
+[P|List Paragraph] D.实践本质问题
+[P|List Paragraph] 答案： C
+[P|Normal] 109.质变是指（）。
+[P|List Paragraph] A.事物数量的增减、场所的更替
+[P|List Paragraph] B.事物的运动和变化
+[P|List Paragraph] C.事物由一种质态向另一种质态的飞跃
+[P|List Paragraph] D.事物在度的范围内的变化
+[P|List Paragraph] 答案： C
+[P|Normal] 110.唯物主义的三个历史发展阶段是（）。
+[P|List Paragraph] A.朴素唯物主义、形而上学唯物主义、辩证唯物主义和历史唯物主义
+[P|List Paragraph] B.中国哲学、印度哲学、古希腊罗马哲学
+[P|List Paragraph] C.17世纪英国唯物主义、18世纪法国唯物主义、19世纪德国费尔巴哈唯物主义
+[P|List Paragraph] D.马克思主义阶段、列宁主义阶段、毛泽东思想阶段
+[P|List Paragraph] 答案： A
+[P|Normal] 111.火是万物本原的观点是属于（）。
+[P|List Paragraph] A.唯心主义的观点
+[P|List Paragraph] B.机械唯物主义的观点
+[P|List Paragraph] C.古代朴素唯物主义的观点
+[P|List Paragraph] D.主观唯心主义的观点
+[P|List Paragraph] 答案： C
+[P|Normal] 112.唯心主义的两种基本形式是（）。
+[P|List Paragraph] A.古典唯心主义和现代唯心主义
+[P|List Paragraph] B.形而上学唯心主义和辩证法的唯心主义
+[P|List Paragraph] C.教条主义和经验主义
+[P|List Paragraph] D.主观唯心主义和客观唯心主义
+[P|List Paragraph] 答案： D
+[P|Normal] 113.划分唯物主义和唯心主义的唯一标准，是如何回答（）。
+[P|List Paragraph] A.世界的运动和发展问题
+[P|List Paragraph] B.世界的统一性问题
+[P|List Paragraph] C.思维和存在何者为第一性的问题
+[P|List Paragraph] D.世界的可知性问题
+[P|List Paragraph] 答案： C
+[P|Normal] 114.“理在事先”这种认识论的观点是（）。
+[P|List Paragraph] A.不可知论
+[P|List Paragraph] B.可知论
+[P|List Paragraph] C.客观唯心主义
+[P|List Paragraph] D.主观唯心主义
+[P|List Paragraph] 答案： C
+[P|Normal] 115.辩证唯物主义哲学的基石是（）。
+[P|List Paragraph] A.物质范畴
+[P|List Paragraph] B.存在范畴
+[P|List Paragraph] C.意识范畴
+[P|List Paragraph] D.实践范畴
+[P|List Paragraph] 答案： A
+[P|Normal] 116.从动物心理发展为人类意识，起决定作用的是（）。
+[P|List Paragraph] A.语言的产生
+[P|List Paragraph] B.人脑的形成
+[P|List Paragraph] C.文明的发展
+[P|List Paragraph] D.生产劳动
+[P|List Paragraph] 答案： D
+[P|Normal] 117.辩证唯物主义认为运动是（）。
+[P|List Paragraph] A.标志宇宙间一切事物存在的哲学范畴
+[P|List Paragraph] B.标志宇宙间一切事物、现象变化及其过程的哲学范畴
+[P|List Paragraph] C.标志宇宙间一切事物、现象的飞跃和质变的哲学范畴
+[P|List Paragraph] D.标志宇宙间一切机械运动和位置移动的哲学范畴
+[P|List Paragraph] 答案： B
+[P|Normal] 118.动中有静，静中有动，说明（）。
+[P|List Paragraph] A.物质是运动的物质
+[P|List Paragraph] B.运动是物质的运动
+[P|List Paragraph] C.运动与静止是辨证统一的
+[P|List Paragraph] D.唯物主义和辩证法的统一
+[P|List Paragraph] 答案： C
+[P|Normal] 119.“人不能两次踏进同一条河流”和“人不能一次踏进同一条河流”两种观点（）。
+[P|List Paragraph] A.是相同的，只是强调的方面不同
+[P|List Paragraph] B.前者是辩证法；后者是诡辩论
+[P|List Paragraph] C.前者是形而上学，后者是辩证法
+[P|List Paragraph] D.两者都是辩证法，后者是对前者的发展
+[P|List Paragraph] 答案： B
+[P|Normal] 120.时间和空间是（）。
+[P|List Paragraph] A.物质的两种属性
+[P|List Paragraph] B.运动着的物质的存在形式
+[P|List Paragraph] C.整理认识材料的工具
+[P|List Paragraph] D.独立存在的精神实体
+[P|List Paragraph] 答案： B
+[P|Normal] 121.事物的质变是指（）。
+[P|List Paragraph] A.事物在数量上的增减
+[P|List Paragraph] B.事物在场所方面的变更
+[P|List Paragraph] C.事物处于相对静止状态
+[P|List Paragraph] D.事物根本性质的变化
+[P|List Paragraph] 答案： D
+[P|Normal] 122.物质与意识的辨证关系是（）。
+[P|List Paragraph] A.物质决定意识，意识创造物质
+[P|List Paragraph] B.意识决定物质，物质对意识有反作用
+[P|List Paragraph] C.物质决定意识，意识对物质有反作用
+[P|List Paragraph] D.物质决定意识，意识决定人脑
+[P|List Paragraph] 答案： C
+[P|Normal] 123.辩证唯物主义认为意识的本质是指（）。
+[P|List Paragraph] A.意识是自然界长期发展的产物
+[P|List Paragraph] B.意识是社会的产物
+[P|List Paragraph] C.意识是人脑对客观世界的反映
+[P|List Paragraph] D.意识是人脑分泌的特殊物质
+[P|List Paragraph] 答案： C
+[P|Normal] 124.人类意识的能动性是指意识能够（）。
+[P|List Paragraph] A.能动的反映和改造世界
+[P|List Paragraph] B.能动的创造规律
+[P|List Paragraph] C.能动的改造规律
+[P|List Paragraph] D.能动的创造物质
+[P|List Paragraph] 答案： A
+[P|Normal] 125.唯物辩证法和形而上学分歧的焦点是（）。
+[P|List Paragraph] A.是否承认事物的内部结构性
+[P|List Paragraph] B.是否承认事物的量变
+[P|List Paragraph] C.是否承认事物发展的根本原因在于事物内在的矛盾性
+[P|List Paragraph] D.是否承认事物的相对静止
+[P|List Paragraph] 答案： C
+[P|Normal] 126.唯物辩证法所理解的联系是指（）。
+[P|List Paragraph] A.各种事物和现象之间没有确定的界限，一切都是“亦此亦彼”
+[P|List Paragraph] B.每一事物和现象都同其他事物和现象相区别
+[P|List Paragraph] C.相互区别的事物和现象彼此都是孤立的
+[P|List Paragraph] D.一切事物和现象都处于相互影响、相互作用和相互制约之中
+[P|List Paragraph] 答案： D
+[P|Normal] 127.矛盾问题的精髓是（）。
+[P|List Paragraph] A.矛盾的同一性和斗争性的关系
+[P|List Paragraph] B.主要矛盾和次要矛盾的关系
+[P|List Paragraph] C.矛盾的普遍性和特殊性的关系
+[P|List Paragraph] D.内因和外因的关系
+[P|List Paragraph] 答案： C
+[P|Normal] 128.在矛盾双方力量的对比中起主导作用的是（）。
+[P|List Paragraph] A.事物的内部矛盾
+[P|List Paragraph] B.事物的特殊矛盾
+[P|List Paragraph] C.事物的主要矛盾
+[P|List Paragraph] D.矛盾的主要方面
+[P|List Paragraph] 答案： D
+[P|Normal] 129.下列选项中，包含矛盾双方在一定条件下相互转化思想的是（）。
+[P|List Paragraph] A.祸兮福所倚，福兮祸所伏
+[P|List Paragraph] B.知彼知己，百战不殆
+[P|List Paragraph] C.城门失火，殃及池鱼
+[P|List Paragraph] D.月晕而风，础润而雨
+[P|List Paragraph] 答案： A
+[P|Normal] 130.黑格尔哲学中的 “合理内核”是（）。
+[P|List Paragraph] A.唯物主义
+[P|List Paragraph] B.辩证唯物主义
+[P|List Paragraph] C.唯物主义辩证法
+[P|List Paragraph] D.辩证法
+[P|List Paragraph] 答案： D
+[P|Normal] 131.在矛盾体系中,处于支配地位并对事物发展起决定性作用的矛盾是（）。
+[P|List Paragraph] A.普遍矛盾
+[P|List Paragraph] B.内部矛盾
+[P|List Paragraph] C.主要矛盾
+[P|List Paragraph] D.次要矛盾
+[P|List Paragraph] 答案： C
+[P|Normal] 132.“居安思危”这一成语所包含的哲学道理是（）。
+[P|List Paragraph] A.矛盾双方是相互排斥的
+[P|List Paragraph] B.矛盾双方是相互依存、相互转化的
+[P|List Paragraph] C.矛盾双方是相互等同的
+[P|List Paragraph] D.矛盾双方既相互排斥又相互等同
+[P|List Paragraph] 答案： B
+[P|Normal] 133.“防微杜渐”的哲学依据是（）。
+[P|List Paragraph] A.质量互变规律
+[P|List Paragraph] B.否定之否定规律
+[P|List Paragraph] C.对立统一规律
+[P|List Paragraph] D.矛盾普遍性和特殊性辩证关系原理
+[P|List Paragraph] 答案： A
+[P|Normal] 134.物质是第一性的,意识是第二性的.要得出这一结论（）。
+[P|List Paragraph] A.必须通过人的意识
+[P|List Paragraph] B.根本不要通过人的意识
+[P|List Paragraph] C.完全依赖于人的意识
+[P|List Paragraph] D.纯粹依赖于自然物的存在
+[P|List Paragraph] 答案： A
+[P|Normal] 135.“观念的东西不外是移入人的头脑并在人的头脑中改造过的物质的东西”，这一说法（）。
+[P|List Paragraph] A.是指意识是对客观存在的反映
+[P|List Paragraph] B.是唯心主义的
+[P|List Paragraph] C.是庸俗唯物主义的
+[P|List Paragraph] D.是形而上学唯物主义的
+[P|List Paragraph] 答案： A
+[P|Normal] 136.心情愉快，则感到“光阴似箭”；心情抑郁，则感到“度日如年”。这表明（）。
+[P|List Paragraph] A.时间是人的主观感觉
+[P|List Paragraph] B.时间随着人的感觉的变化而变化
+[P|List Paragraph] C.时间的具体特性是可变的
+[P|List Paragraph] D.人的时间观念具有相对性
+[P|List Paragraph] 答案： D
+[P|Normal] 137.矛盾的转化是（）。
+[P|List Paragraph] A.向任何一个方向转化
+[P|List Paragraph] B.向自己的对立面转化
+[P|List Paragraph] C.向没有矛盾的方向转化
+[P|List Paragraph] D.向矛盾激化的方向转化
+[P|List Paragraph] 答案： B
+[P|Normal] 138.对哲学的物质范畴作了明确规定和深刻阐述的是（）。
+[P|List Paragraph] A.马克思
+[P|List Paragraph] B.恩格斯
+[P|List Paragraph] C.列宁
+[P|List Paragraph] D.斯大林
+[P|List Paragraph] 答案： C
+[P|Normal] 139.意识是客观世界的主观映象，这句话是指（）。
+[P|List Paragraph] A.意识的内容和形式都是客观的
+[P|List Paragraph] B.意识是沟通主观和客观的桥梁
+[P|List Paragraph] C.意识的形式是客观的
+[P|List Paragraph] D.意识的形式是主观的，内容是客观的
+[P|List Paragraph] 答案： D
+[P|Normal] 140.认为物质是原子的观点是（）。
+[P|List Paragraph] A.主观唯心主义
+[P|List Paragraph] B.形而上学唯物主义
+[P|List Paragraph] C.客观唯心主义
+[P|List Paragraph] D.辩证唯物主义
+[P|List Paragraph] 答案： B
+[P|Normal] 141.一元论认为世界统一于（）。
+[P|List Paragraph] A.物质或精神
+[P|List Paragraph] B.物质和精神
+[P|List Paragraph] C.存在
+[P|List Paragraph] D.具体的物质形态
+[P|List Paragraph] 答案： A
+[P|Normal] 142.意识的本质是（）。
+[P|List Paragraph] A.人脑分泌的一种物质
+[P|List Paragraph] B.客观事物
+[P|List Paragraph] C.一种特殊的物质
+[P|List Paragraph] D.人脑的机能，人脑对物质的反映
+[P|List Paragraph] 答案： D
+[P|Normal] 143.把物质说成是一种或几种可直接感知的实物是（）。
+[P|List Paragraph] A.近代形而上学唯物主义物质观
+[P|List Paragraph] B.辩证唯物主义物质观
+[P|List Paragraph] C.庸俗唯物主义物质观
+[P|List Paragraph] D.古代朴素唯物主义的物质观
+[P|List Paragraph] 答案： D
+[P|Normal] 144.主观唯心主义者主张（）。
+[P|List Paragraph] A.认识来源于绝对观念
+[P|List Paragraph] B.人在神的启示下认识世界
+[P|List Paragraph] C.世界是可以认识的
+[P|List Paragraph] D.世界万物是“感觉的复合”
+[P|List Paragraph] 答案： D
+[P|Normal] 145.唯物辩证法说的联系是有条件的，这种条件是（）。
+[P|List Paragraph] A.不可改变的
+[P|List Paragraph] B.可以改变的
+[P|List Paragraph] C.可以任人创造的
+[P|List Paragraph] D.完全与人无关的
+[P|List Paragraph] 答案： B
+[P|Normal] 146.“城门失火，殃及池鱼”说明（）。
+[P|List Paragraph] A.任何事物和现象都是彼此联系的
+[P|List Paragraph] B.任何事物和现象都是彼此孤立的
+[P|List Paragraph] C.任何事物和现象之间的联系是主观随意的
+[P|List Paragraph] D.事物之间是互不影响的
+[P|List Paragraph] 答案： A
+[P|Normal] 147.“割下来的手就不再是人手”这句话体现了（）。
+[P|List Paragraph] A.形而上学片面的、孤立的观点
+[P|List Paragraph] B.辩证法普遍联系的观点
+[P|List Paragraph] C.唯心主义的观点
+[P|List Paragraph] D.诡辩论的观点
+[P|List Paragraph] 答案： B
+[P|Normal] 148.“只见树木,不见森林;只见局部,不见整体”这是（）。
+[P|List Paragraph] A.唯物辩证法观点
+[P|List Paragraph] B.唯心主义观点
+[P|List Paragraph] C.唯心辩证法观点
+[P|List Paragraph] D.形而上学观点
+[P|List Paragraph] 答案： D
+[P|Normal] 149.事物的联系和运动的关系是（）。
+[P|List Paragraph] A.先有联系、后有运动
+[P|List Paragraph] B.先有运动、后有联系
+[P|List Paragraph] C.运动构成联系
+[P|List Paragraph] D.联系构成运动
+[P|List Paragraph] 答案： D
+[P|Normal] 150.矛盾的斗争性是指矛盾着的对立面之间（）。
+[P|List Paragraph] A.相互离异、相互排斥的性质和趋势
+[P|List Paragraph] B.绝对的对立
+[P|List Paragraph] C.相互渗透和相互转化的性质和趋势
+[P|List Paragraph] D.相互依存
+[P|List Paragraph] 答案： A
+[P|Normal] 151.发展的实质是（）。
+[P|List Paragraph] A.事物的一般变化
+[P|List Paragraph] B.运动
+[P|List Paragraph] C.新事物的产生和旧事物的灭亡
+[P|List Paragraph] D.量变
+[P|List Paragraph] 答案： C
+[P|Normal] 152.矛盾是反映（）。
+[P|List Paragraph] A.事物之间互相对立，互相排斥、互相否定关系的范畴
+[P|List Paragraph] B.对立面之间互相联系、互相转化关系的范畴
+[P|List Paragraph] C.事物内部或事物之间的对立和同一及其关系的基本哲学范畴
+[P|List Paragraph] D.主体和客体之间互相对立的范畴
+[P|List Paragraph] 答案： C
+[P|Normal] 153.矛盾的同一性是指矛盾双方（）。
+[P|List Paragraph] A.绝对的一致
+[P|List Paragraph] B.完全的平衡
+[P|List Paragraph] C.无差别的统一
+[P|List Paragraph] D.相互联系、相互吸引的性质和趋势
+[P|List Paragraph] 答案： D
+[P|Normal] 154.矛盾的同一性和斗争性相互联系是指两者关系是（）。
+[P|List Paragraph] A.个别与一般
+[P|List Paragraph] B.现象与本质
+[P|List Paragraph] C.互为依存互为存在条件
+[P|List Paragraph] D.外部表现和内部表现
+[P|List Paragraph] 答案： C
+[P|Normal] 155.习近平总书记关于社会主义五百年的论述，关于改革开放前后两个三十年关系的精辟阐释，体现了深邃的（）能力
+[P|List Paragraph] A.辩证思维
+[P|List Paragraph] B.历史思维
+[P|List Paragraph] C.底线思维
+[P|List Paragraph] D.战略思维
+[P|List Paragraph] 答案： B
+[P|Normal] 156.地球上最美丽的花朵是（）
+[P|List Paragraph] A.意识
+[P|List Paragraph] B.劳动
+[P|List Paragraph] C.物质
+[P|List Paragraph] D.实践
+[P|List Paragraph] 答案： A
+[P|Normal] 157.当前我国社会的主要矛盾是（）
+[P|List Paragraph] A.人民日益增长的物质文化需要同落后的社会生产之间的矛盾
+[P|List Paragraph] B.人民日益增长的美好生活需要同不平衡不充分的发展之间的矛盾
+[P|List Paragraph] C.人民对于建立先进工业国的需要同落后的农业国之间的矛盾
+[P|List Paragraph] D.经济基础同上层建筑之间的矛盾
+[P|List Paragraph] 答案： B
+[P|Normal] 158.马克思主义的活的灵魂是（）
+[P|List Paragraph] A.具体问题具体分析
+[P|List Paragraph] B.批判地继承
+[P|List Paragraph] C.勇于调查研究
+[P|List Paragraph] D.实践出真知
+[P|List Paragraph] 答案： A
+[P|Normal] 159.“存在就是被感知”，这是典型的（）。
+[P|List Paragraph] A.主观唯心主义观点
+[P|List Paragraph] B.反映论观点
+[P|List Paragraph] C.客观唯心主义观点
+[P|List Paragraph] D.机械反映论观点
+[P|List Paragraph] 答案： A
+[P|Normal] 二、多选题
+[P|Normal] 1.矛盾的同一性和斗争性的关系包括下列哪些选项（）。
+[P|List Paragraph] A.斗争性是同一性的基础
+[P|List Paragraph] B.斗争性寓于同一性之中
+[P|List Paragraph] C.没有斗争性就没有同一性
+[P|List Paragraph] D.没有同一性也没有斗争性
+[P|List Paragraph] 答案：BCD
+[P|Normal] 2.习近平总书记指出，培养和提高思维能力，首先就是要具备辩证思维能力。以下内容是辩证思维能力的有（）。
+[P|List Paragraph] A.具体问题具体分析
+[P|List Paragraph] B.从对立统一中把握事物及其发展过程
+[P|List Paragraph] C.要坚持“两点论”，一分为二看问题
+[P|List Paragraph] D.善于抓住事物主要矛盾和矛盾的主要方面
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 3.下列选项中，属于哲学基本问题内容的有（）。
+[P|List Paragraph] A.思维和存在何者为第一性的问题
+[P|List Paragraph] B.世界的本原是一个还是多个的问题
+[P|List Paragraph] C.物质世界是否普遍联系的问题
+[P|List Paragraph] D.物质世界能否为人们认识的问题
+[P|List Paragraph] 答案：AD
+[P|Normal] 4.下列选项中，体现量变引起质变的哲学道理的有（）。
+[P|List Paragraph] A.九层之台，起于垒土
+[P|List Paragraph] B.千里之行，始于足下
+[P|List Paragraph] C.千里之提，溃于蚁穴
+[P|List Paragraph] D.物极必反，相反相成
+[P|List Paragraph] 答案：ABC
+[P|Normal] 5.下列选项中，属于唯物辩证法基本规律的有（）。
+[P|List Paragraph] A.质量互变规律
+[P|List Paragraph] B.对立统一规律
+[P|List Paragraph] C.联系发展规律
+[P|List Paragraph] D.否定之否定规律
+[P|List Paragraph] 答案：ABD
+[P|Normal] 6.学习和掌握唯物辩证法的科学方法，要求我们在实际工作中不断增强哪些能力（）。
+[P|List Paragraph] A.战略思维能力
+[P|List Paragraph] B.历史思维能力
+[P|List Paragraph] C.辩证思维能力
+[P|List Paragraph] D.创新思维能力
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 7.下列选项中，体现重视矛盾特殊性的有（）。
+[P|List Paragraph] A.对症下药，量体裁衣
+[P|List Paragraph] B.因地制宜，因时制宜
+[P|List Paragraph] C.声东击西，欲擒故纵
+[P|List Paragraph] D.一把钥匙开一把锁
+[P|List Paragraph] 答案：ABD
+[P|Normal] 8.事物的联系和发展是通过一系列基本环节得以实现。联系与发展的基本环节包括（）。
+[P|List Paragraph] A.原因与结果
+[P|List Paragraph] B.现象与本质
+[P|List Paragraph] C.内容与形式
+[P|List Paragraph] D.必然性与偶然性
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 9.下列说法中，正确体现意识能动性的有（）。
+[P|List Paragraph] A.胸有成竹，料事如神
+[P|List Paragraph] B.纸上谈兵，画饼充饥
+[P|List Paragraph] C.心静自然凉
+[P|List Paragraph] D.不怕做不到，就怕想不到
+[P|List Paragraph] 答案：AC
+[P|Normal] 10.“拔苗助长”的事例是（）。
+[P|List Paragraph] A.正确发挥主观能动性的表现
+[P|List Paragraph] B.违反客观规律的表现
+[P|List Paragraph] C.急躁冒进的表现
+[P|List Paragraph] D.重视可能性的表现
+[P|List Paragraph] 答案：BC
+[P|Normal] 11.下列选项中，正确说明意识依赖于物质的有（）。
+[P|List Paragraph] A.意识是自然界长期发展的产物
+[P|List Paragraph] B.意识是社会劳动的产物
+[P|List Paragraph] C.意识是人脑的机能
+[P|List Paragraph] D.意识是人脑对客观世界的反映
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 12.下列选项中，包含矛盾双方相互依存、相互转化思想的有（）。
+[P|List Paragraph] A.有无相生，难易相成
+[P|List Paragraph] B.长短相形，高下相倾
+[P|List Paragraph] C.利害相生，祸福相因
+[P|List Paragraph] D.物极必反，相反相成
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 13.二元论的错误在于（）。
+[P|List Paragraph] A.否认物质和运动是不可分的
+[P|List Paragraph] B.否认运动和静止是相互包含的
+[P|List Paragraph] C.否认世界的统一性
+[P|List Paragraph] D.否认物质和意识的同一性
+[P|List Paragraph] 答案：CD
+[P|Normal] 14.唯物主义在发展过程中经历了三种基本形态。下列选项中属于这三种基本形态的有（）。
+[P|List Paragraph] A.朴素唯物主义
+[P|List Paragraph] B.庸俗唯物主义
+[P|List Paragraph] C.自然科学的唯物主义
+[P|List Paragraph] D.辩证唯物主义
+[P|List Paragraph] 答案：AD
+[P|Normal] 15.矛盾同一性在事物发展中的作用表现为（）。
+[P|List Paragraph] A.矛盾双方在相互依存中得到发展
+[P|List Paragraph] B.矛盾双方相互吸取有利于自身发展的因素
+[P|List Paragraph] C.调和矛盾双方的对立
+[P|List Paragraph] D.规定事物发展的基本趋势
+[P|List Paragraph] 答案：ABD
+[P|Normal] 16.下列选项中，属于唯物辩证法的基本规律的有（）。
+[P|List Paragraph] A.上层建筑必须适合经济基础发展要求的规律
+[P|List Paragraph] B.对立统一规律
+[P|List Paragraph] C.质量互变规律
+[P|List Paragraph] D.否定之否定规律
+[P|Normal] 答案：BCD
+[P|Normal] 17.下列工作方法体现了矛盾的普遍性和特殊性的辩证关系原理的是（）。
+[P|List Paragraph] A.“抓典型”
+[P|List Paragraph] B.“一般号召和个别指导相结合”
+[P|List Paragraph] C.“先试点,再推广”
+[P|List Paragraph] D.“欲擒故纵”
+[P|List Paragraph] 答案：ABC
+[P|Normal] 18.辩证的否定是（）。
+[P|List Paragraph] A.事物的自我否定
+[P|List Paragraph] B.事物发展的环节
+[P|List Paragraph] C.事物联系的环节
+[P|List Paragraph] D.扬弃
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 19.党的二十大从六个方面概括了习近平新时代中国特色社会主义思想的世界观和方法论的主要内容，即必须坚持人民至上、坚持自信自立（）。
+[P|List Paragraph] A.坚持守正创新
+[P|List Paragraph] B.坚持问题导向
+[P|List Paragraph] C.坚持系统观念
+[P|List Paragraph] D.坚持胸怀天下
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 20.“脱离了整体的手是名义上的手”说明了（）。
+[P|List Paragraph] A.整体依赖于部分
+[P|List Paragraph] B.部分依赖于整体
+[P|List Paragraph] C.整体是部分之和
+[P|List Paragraph] D.脱离了整体的部分就丧失了原有的性质和功能
+[P|List Paragraph] 答案：BD
+[P|Normal] 21.下列选项中，包含矛盾双方相互依存，相互转化的辩证法思想的有（）。
+[P|List Paragraph] A.祸兮福所倚，福兮祸所伏
+[P|List Paragraph] B.千里之堤，溃于蚁穴
+[P|List Paragraph] C.乐极生悲，苦尽甘来
+[P|List Paragraph] D.物极必反，相反相成
+[P|List Paragraph] 答案：ACD
+[P|Normal] 22.下列表述中，体现坚持适度原则的有（）。
+[P|List Paragraph] A.注意分寸
+[P|List Paragraph] B.掌握火候
+[P|List Paragraph] C.因地制宜
+[P|List Paragraph] D.适可而止
+[P|List Paragraph] 答案：ABD
+[P|Normal] 23.“观念的东西不外是移人人脑并在人脑中改造过的物质的东西而已。”这一观点表明（）。
+[P|List Paragraph] A.观念的东西和物质的东西是对立统一的
+[P|List Paragraph] B.意识是客观存在的主观映象
+[P|List Paragraph] C.观念的东西是对物质的能动的反映
+[P|List Paragraph] D.没有被反映者就没有反映
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 24.公孙龙提出的“白马非马”命题，其错误在于割裂了事物的（）。
+[P|List Paragraph] A.共性和个性的关系
+[P|List Paragraph] B.普遍性和特殊性的关系
+[P|List Paragraph] C.整体和部分的关系
+[P|List Paragraph] D.一般和个别的关系
+[P|List Paragraph] 答案：ABD
+[P|Normal] 25.下列例子中表现了否定之否定规律的是（）。
+[P|List Paragraph] A.冰 ― 水 ― 汽
+[P|List Paragraph] B.光的微粒说 ― 光的波动说 ― 光的波粒二像说
+[P|List Paragraph] C.团结 ― 批评 ― 团结
+[P|List Paragraph] D.古代朴素唯物主义与辩证法自发的结合 ― 近代唯物论辩证法的分裂 ― 现代辩证法与唯物主义的自觉结合
+[P|List Paragraph] 答案：BCD
+[P|Normal] 26.下列选项中，体现量变的积累引起质变这一哲学道理的有（）。
+[P|List Paragraph] A.长堤溃蚁穴，君子慎其微
+[P|List Paragraph] B.天下无难事，只怕有心人
+[P|List Paragraph] C.绳锯木断，水滴石穿
+[P|List Paragraph] D.不积小流，无以成江海
+[P|List Paragraph] 答案：ACD
+[P|Normal] 27.“机不可失”、“时不再来”这两个成语说明时间的（）。
+[P|List Paragraph] A.主要特点
+[P|List Paragraph] B.相对性
+[P|List Paragraph] C.一维性
+[P|List Paragraph] D.不可逆性
+[P|List Paragraph] 答案：CD
+[P|Normal] 28.下列选项中，正确表述世界观和方法论关系的有（）。
+[P|List Paragraph] A.有什么样的世界观就有什么样的方法论
+[P|List Paragraph] B.世界观和方法论是一致的
+[P|List Paragraph] C.一定的方法论体现着一定的世界观
+[P|List Paragraph] D.世界观和方法论没有直接联系
+[P|List Paragraph] 答案：ABC
+[P|Normal] 29.下列各项属于客观唯心主义观点的有（）。
+[P|List Paragraph] A.物是感觉的复合
+[P|List Paragraph] B.理在事先
+[P|List Paragraph] C.存在就是被感知
+[P|List Paragraph] D.世界是绝对精神的产物
+[P|List Paragraph] 答案：BD
+[P|Normal] 30.“勿以恶小而为之，勿以善小而不为”体现的哲学道理有（）。
+[P|List Paragraph] A.事物的变化是从量变开始的
+[P|List Paragraph] B.量变积累到一定程度会引起质变
+[P|List Paragraph] C.内因是事物变化的根据
+[P|List Paragraph] D.矛盾的普遍性存在于特殊性之中
+[P|List Paragraph] 答案：AB
+[P|Normal] 31.下列范畴属于唯物辩证法理论体系的有（）。
+[P|List Paragraph] A.内容和形式
+[P|List Paragraph] B.必然性和偶然性
+[P|List Paragraph] C.本质和现象
+[P|List Paragraph] D.可能性和现实性
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 32.列宁对物质概念进行的规定是（）。
+[P|List Paragraph] A.物质的唯一特性是客观实在性
+[P|List Paragraph] B.物质的客观实在性是人通过感觉感知的
+[P|List Paragraph] C.物质不依赖于我们的感觉而存在
+[P|List Paragraph] D.人的感觉复写、摄影、反映物质
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 33.马克思主义的物质范畴具有丰富而深刻的理论意义（）。
+[P|List Paragraph] A.坚持了唯物主义一元论
+[P|List Paragraph] B.坚持了能动的反映论和可知论
+[P|List Paragraph] C.体现了唯物论与辩证法的统一
+[P|List Paragraph] D.体现了唯物主义自然观与唯物主义历史观的统一
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 34.社会生活的基本领域有哪些（）。
+[P|List Paragraph] A.物质生活
+[P|List Paragraph] B.精神生活
+[P|List Paragraph] C.政治生活
+[P|List Paragraph] D.文化生活
+[P|List Paragraph] 答案：ABC
+[P|Normal] 35.意识的形成经历了哪几个阶段（）。
+[P|List Paragraph] A.无生命物质的反应特性
+[P|List Paragraph] B.人所特有的反映特性
+[P|List Paragraph] C.高等动物的感觉和心理
+[P|List Paragraph] D.低等生物的刺激感应性
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 36.人类社会的物质性主要体现在以下几个方面（）。
+[P|List Paragraph] A.人类社会是整个物质世界的一部分
+[P|List Paragraph] B.人们谋取物质资料的实践活动是物质性的活动
+[P|List Paragraph] C.物质资料的生产方式是人类社会存在和发展的基础
+[P|List Paragraph] D.人类社会是自然界发展到一定阶段的产物
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 37.学习和掌握唯物辩证法的科学思维方式，要求我们在实践中不断增强怎样的思维能力（)。
+[P|List Paragraph] A.辩证思维能力
+[P|List Paragraph] B.历史思维能力
+[P|List Paragraph] C.系统思维能力
+[P|List Paragraph] D.战略思维能力
+[P|List Paragraph] E.底线思维能力和创新思维能力
+[P|List Paragraph] 答案：ABCDE
+[P|Normal] 三、判断题
+[P|Normal] 1.脱离物质的运动和脱离运动的物质都是不可想象的，因此，运动就是物质，物质就等同于运动。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 2.唯物主义都承认物质决定意识。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 3.“全部社会生活在本质上是实践的”。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 4.矛盾规律是唯物辩证法的实质和核心。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 5.同一性和斗争性是矛盾的两种基本属性，它们都是无条件存在的，绝对的。
+[P|Normal] 答案：	错误
+[P|Normal] 6.掌握适度原则就是任何时候都不要超过事物的度。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 7.否定就是新旧事物之间“一刀两断”。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 8.人工智能的出现可以替代人类的思维。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 9.思维和存在的同一性问题是划分唯物主义和唯心主义的唯一标准。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 10.哲学就是世界观。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 11.物质的根本属性是客观实在性。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 12.世界物质统一性原理是辩证唯物主义的基石。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 13.辩证的否定即是全盘否定。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 14.和谐并不意味着矛盾的绝对同一。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 15.哲学基本问题是运动和静止的关系问题。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 16.真正的哲学是时代精神的精华。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 17.意识在内容是主观的，在形式上是客观的。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 18.唯物辩证法的总特征是联系和发展。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 19.矛盾同一性和斗争性的原理是关于事物矛盾问题的精髓，是正确理解矛盾学说的关键。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 20.在马克思主义的科学世界观和方法论中，唯物辩证法是其核心内容。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 21.全部哲学，特别是近代哲学的重大的基本问题，是物质与意识的关系问题。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 22.物质的唯一特性是客观实在性。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 23.唯物主义和唯心主义的对立在于是否承认世界的统一性。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 24.人不能两次踏进同一条河流。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 25.矛盾问题的精髓是矛盾的普遍性与特殊性的辩证关系。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 26.一切唯心主义的共同特点是都认为主观精神是世界的本原。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 27.形而上学物质观的错误是否认物质的客观性。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 28.矛盾的基本属性是斗争性与同一性。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 29.在对立中把握同一，在同一中把握对立是一种辩证法的观点。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 30.“白马非马”的说法是割裂了矛盾的主要方面和次要方面的联系。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 31.“长堤溃蚁穴，君子慎其微”体现的是量变引起质变的观点。( )
+[P|Normal] 答案：正确
+[P|Normal] 32.兼听则明，偏听则暗体现的是否定之否定规律的观点。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 33.唯物辩证法认为，新旧事物区别的根本标志是它们出现的时间先后。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 34.运用矛盾主要方面和次要方面原理，在方法论上应坚持两点论。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 35.物质是运动的形式，运动是物质的根本属性。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 36.运动和静止的关系属于原因同结果的关系。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 37.发展的实质是事物的根本质变。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 38.区分量变和质变的根本标志是看事物的变化是否显著。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 39.唯心主义的主要错误是主张物质和意识都是世界的本原。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 40.近朱者赤，近墨者黑强度的是外因在事物发展中的作用。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 41.理在事先属于客观唯心主义错误。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 42.不积跬步，无以至千里；不积小流，无以成江海。这是强调量变是质变的必要前提。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 43.否定之否定规律揭示的是事物发展的方式和状态。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 44.唯心主义运动观的根本错误在于否认物质是运动的。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 45.“只见树林，不见森林”是一种形而上学的观点。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 46.对立统一规律揭示的是事物发展的程度和趋势。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 47.前途是光明的，道路是曲折的。这句话体现的是世界永恒发展的原理。	( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 48.“天行有常，不为尧存，不为桀亡”体现的哲学道理是物质运动规律具有客观性。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 49.“两点论”和“重点论”相结合的原理要求我们在工作中既要坚持以经济建设为中心，又要做好其他各项工作。	( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 50.辩证的否定即“扬弃”，它的含义是抛弃。	( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 51.静止就是不运动。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 52.正确的意识是人脑对现实的反映，错误的意识是人脑自生的。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 53.矛盾的特殊性存在于矛盾的普遍性之中。	( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 54.度是事物质变的关节点。	( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 55.度就是关节点。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 56.白菜、韭菜、芹菜、菠菜与蔬菜之间的关系属于部分与总体的关系。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 57.意识产生的决定性作用是语言的产生。	( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 58.人们正确发挥主观能动性的根本途径是认识客观规律。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 59.时间是物质运动的绝对性和无限性。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 60.设想没有物质的运动的观点是唯心主义。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 61.“狼孩”没有意识。这一事实说明意识是对客观事物的反映。	( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 62.“揠苗助长”这个寓言故事说明如果违背客观规律，越是发挥主观能动性，遭受的挫折和失败就越严重。	( )
+[P|Normal] 答案：正确
+[P|Normal] 63.“一把钥匙开一把锁”这句话强调的是要承认事物运动的规律性。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 64.意识是地球上“最美丽的花朵”。	( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 65.坚持底线思维，增强底线思维能力，就是要做到居安思危，增强忧患意识。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 66.世界观决定性地影响着人们的人生观和价值观。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 67.世界统一于存在。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 68.运动和发展是唯物辩证法的总特征。( )
+[P|List Paragraph] 答案：	错误
+[P|Normal] 69.拔苗助长的故事是正确发挥主观能动性的表现。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 70.错误的思想是客观存在的反映。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 71.鬼神观念和错误的认识也是客观世界的反映。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 72.物质就是具体事物。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 73.人一次也不能踏入同一条河流。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 74.矛盾的斗争性是绝对的，因而是事物发展的主要原因；矛盾的同一性是相对的，因而是事物发展的次要原因。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 75.辩证唯物主义认为，只有认识事物的度才能准确地认识事物的质，才有条件做好工作。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 76.因果观念就是因果联系。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 77.物质的唯一特性是运动。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 78.人与动物最根本的区别是是否具有思想意识。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 79.“机不可失，时不再来”指的是时间的不可逆性。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 80.凡存在的都是物质。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 81.列宁对辩证唯物主义物质范畴的定义是通过物质精神的关系来界定的。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 82.“万物皆备于我”的观点是客观唯心主义的观点。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 83.“水”是万物本原的观点是唯心主义的观点。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 84.实际工作中“一刀切”的做法忽视了矛盾的普遍性。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 85.没有大就无所谓小，没有高就无所谓低，没有长就无所谓短。这说明矛盾双方是相互依存的。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 86.人的意识不能直接创造外界物质。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 87.一切运动变化都是事物的本质。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 88.辩证的否定就是既克服又保留。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 89.事物发展的周期性就是周而复始的循环运动。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 90.我国坚持走自己的路，建设中国特色社会主义伟大实践的理论基础是矛盾的普遍性与特殊性辩证关系的原理。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 91.我国坚持独立自主、自力更生和对外开放方针的理论基础是内因和外因辩证关系的原理。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 92.揭示事物发展的源泉和动力的规律是否定之否定规律。	( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 93.敢于斗争、善于斗争是马克思主义的鲜明特色，是中国共产党人的鲜明品格( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 94.我国主要矛盾已经发生了转变，我国处于社会主义初级阶段的基本国情也发生了变化。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 95.矛盾的普遍性和特殊性辩证关系原理是马克思主义普遍真理同各国具体实践相结合的哲学基础。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 96.中国特色社会主义进入了新时代，说明我国已经跨越社会主义初级阶段。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 97.唯物辩证法按其本质来说，具有批判的、革命的精神。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 98.辩证思维能力是指分析矛盾、抓住关键、找准重点、洞察事物发展规律的能力。( )
+[P|List Paragraph] 答案：正确

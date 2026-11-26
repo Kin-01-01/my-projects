@@ -1,0 +1,780 @@
+===== FILE: 3.题库：第二章.docx =====
+[paragraph count: 782] [table count: 0]
+[P|Normal] 第二章  实践与认识及其发展规律
+[P|Normal] 一、单选题
+[P|Normal] 1.唯物主义和唯心主义在认识论上的根本对立表现在（）。
+[P|List Paragraph] A.是否承认感觉经验是认识的起点
+[P|List Paragraph] B.是否承认人类认识世界的能力
+[P|List Paragraph] C.是否承认世界的可知性
+[P|List Paragraph] D.是否承认认识是人脑对客观世界的反映
+[P|List Paragraph] 答案： D
+[P|Normal] 2.辩证唯物主义认识论的首要的、基本的观点是（）。
+[P|List Paragraph] A.矛盾的观点
+[P|List Paragraph] B.物质的观点
+[P|List Paragraph] C.实践的观点
+[P|List Paragraph] D.发展的观点
+[P|List Paragraph] 答案： C
+[P|Normal] 3.人类最基本的实践活动是（）。
+[P|List Paragraph] A.生产实践
+[P|List Paragraph] B.科学实验
+[P|List Paragraph] C.处理社会关系的实践
+[P|List Paragraph] D.以上都不是
+[P|List Paragraph] 答案： A
+[P|Normal] 4.“实践是认识的来源”，这种观点是说（）。
+[P|List Paragraph] A.只要参加实践活动就能获得正确认识
+[P|List Paragraph] B.一切认识都要直接参加实践活动才能获得
+[P|List Paragraph] C.一切认识归根到底都是从实践中得来的
+[P|List Paragraph] D.只有直接经验来自实践
+[P|List Paragraph] 答案： C
+[P|Normal] 5.辩证唯物主义认为，认识的本质在于（）。
+[P|List Paragraph] A.人脑的主观创造
+[P|List Paragraph] B.人脑的直观反映
+[P|List Paragraph] C.人脑的分泌物
+[P|List Paragraph] D.人脑对客观事物的能动反映
+[P|List Paragraph] 答案： D
+[P|Normal] 6.“认识是主体对客体的反映”，这是（）。
+[P|List Paragraph] A.唯物主义观点
+[P|List Paragraph] B.形而上学观点
+[P|List Paragraph] C.唯心主义观点
+[P|List Paragraph] D.相对主义观点
+[P|List Paragraph] 答案： A
+[P|Normal] 7.所谓认识的主体是指（）。
+[P|List Paragraph] A.主观认识
+[P|List Paragraph] B.客观对象
+[P|List Paragraph] C.人的大脑
+[P|List Paragraph] D.是从事改造客观世界活动的实践着的人
+[P|List Paragraph] 答案： D
+[P|Normal] 8.认识的客体是指（）。
+[P|List Paragraph] A.客观事物
+[P|List Paragraph] B.进入认识范围内的客观事物
+[P|List Paragraph] C.自然界和社会
+[P|List Paragraph] D.绝对精神
+[P|List Paragraph] 答案： B
+[P|Normal] 9.认识的客体具有的属性是（）。
+[P|List Paragraph] A.主观性
+[P|List Paragraph] B.对象性
+[P|List Paragraph] C.社会性
+[P|List Paragraph] D.选择性
+[P|List Paragraph] 答案： B
+[P|Normal] 10.主体要和客体发生关系是通过（）。
+[P|List Paragraph] A.认识
+[P|List Paragraph] B.反映
+[P|List Paragraph] C.实践
+[P|List Paragraph] D.领悟
+[P|List Paragraph] 答案： C
+[P|Normal] 11.主体与客体的关系首先是（）。
+[P|List Paragraph] A.审美与审美对象的关系
+[P|List Paragraph] B.认识与被认识的关系
+[P|List Paragraph] C.评价与被评价的关系
+[P|List Paragraph] D.改造与被改造的关系
+[P|List Paragraph] 答案： D
+[P|Normal] 12.认识的本质是（）。
+[P|List Paragraph] A.主体对客体的加工
+[P|List Paragraph] B.主体对客体的改造
+[P|List Paragraph] C.在实践基础上主体对客体的能动反映
+[P|List Paragraph] D.主体对客体的作用
+[P|List Paragraph] 答案： C
+[P|Normal] 13.一切真知都来源于（）。
+[P|List Paragraph] A.间接经验
+[P|List Paragraph] B.社会实践
+[P|List Paragraph] C.人的意识
+[P|List Paragraph] D.客观事物
+[P|List Paragraph] 答案： B
+[P|Normal] 14.真理是（）。
+[P|List Paragraph] A.客观事物及其规律
+[P|List Paragraph] B.为大多数人普遍接受的思想
+[P|List Paragraph] C.人们对客观事物及其规律的正确反映
+[P|List Paragraph] D.对人们有用的认识
+[P|List Paragraph] 答案： C
+[P|Normal] 15.人类创造历史的两种基本活动是（）。
+[P|List Paragraph] A.认识世界和改造世界
+[P|List Paragraph] B.反映世界和适应世界
+[P|List Paragraph] C.实践和创造
+[P|List Paragraph] D.继承和发展
+[P|List Paragraph] 答案： A
+[P|Normal] 16.由感性认识上升到理性认识的过程是（）。
+[P|List Paragraph] A.完全自发的过程
+[P|List Paragraph] B.积极能动的过程
+[P|List Paragraph] C.消极被动的过程
+[P|List Paragraph] D.主观随意的过程
+[P|List Paragraph] 答案： B
+[P|Normal] 17.理性认识的特点是（）。
+[P|List Paragraph] A.对感性认识的综合
+[P|List Paragraph] B.与客观事物无关的人的自由创造物
+[P|List Paragraph] C.通过感觉器官对客观事物的直接把握
+[P|List Paragraph] D.借助于抽象思维达到对事物本质的把握
+[P|List Paragraph] 答案： D
+[P|Normal] 18.在认识过程中意义更为重要的飞跃是指（）。
+[P|List Paragraph] A.从外在形象到内在本质的飞跃
+[P|List Paragraph] B.从个性认识到共性认识的飞跃
+[P|List Paragraph] C.从肯定阶段到否定阶段的飞跃
+[P|List Paragraph] D.从理性认识到实践的飞跃
+[P|List Paragraph] 答案： D
+[P|Normal] 19.一个正确的认识往往需要经过（）。
+[P|List Paragraph] A.由实践到认识和由认识到实践的过程
+[P|List Paragraph] B.由感性认识到理性认识，由理性认识到实践的过程
+[P|List Paragraph] C.由实践到认识和由认识到实践的多次反复才能完成
+[P|List Paragraph] D.由物质到精神和由精神到物质的过程
+[P|List Paragraph] 答案： C
+[P|Normal] 20.教条主义在认识论上犯了（）。
+[P|List Paragraph] A.类似唯理论的错误
+[P|List Paragraph] B.类似经验论的错误
+[P|List Paragraph] C.类似唯心主义先验论的错误
+[P|List Paragraph] D.类似直观被动反映论的错误
+[P|List Paragraph] 答案： A
+[P|Normal] 21.坚持真理的客观性，就是（）。
+[P|List Paragraph] A.在真理观上坚持了唯心主义
+[P|List Paragraph] B.在真理观上坚持了唯物主义
+[P|List Paragraph] C.在真理观上坚持了辩证法
+[P|List Paragraph] D.在真理观上坚持了形而上学
+[P|List Paragraph] 答案： B
+[P|Normal] 22.真理与谬误的本质区别在于（）。
+[P|List Paragraph] A.真理是有用的，谬误是有害的
+[P|List Paragraph] B.真理是对外部世界的反映，谬误是自己头脑里存在的
+[P|List Paragraph] C.真理是相对的，谬误是绝对的
+[P|List Paragraph] D.是否正确反映了事物的本质及其规律
+[P|List Paragraph] 答案： D
+[P|Normal] 23.真理既是绝对的，又是相对的。这是真理问题上的（）。
+[P|List Paragraph] A.唯物论
+[P|List Paragraph] B.辩证法
+[P|List Paragraph] C.二元论
+[P|List Paragraph] D.诡辩论
+[P|List Paragraph] 答案： B
+[P|Normal] 24.真理的发展是一个（）。
+[P|List Paragraph] A.真理和谬误相调和的过程
+[P|List Paragraph] B.真理和谬误相补充的过程
+[P|List Paragraph] C.客观真理与主观真理相互转化的过程
+[P|List Paragraph] D.相对真理逐渐向绝对真理的转化
+[P|List Paragraph] 答案： D
+[P|Normal] 25.“从物到感觉和思想”与“从思想和感觉到物”是（）。
+[P|List Paragraph] A.辩证唯物论与旧唯物论两条认识路线的对立
+[P|List Paragraph] B.辩证法和形而上学的对立
+[P|List Paragraph] C.唯物论和唯心论两条认识路线的对立
+[P|List Paragraph] D.可知论与不可知论的对立
+[P|List Paragraph] 答案： C
+[P|Normal] 26.实践是认识的来源表明（）。
+[P|List Paragraph] A.每个人必须事事实践才能有认识
+[P|List Paragraph] B.只要参加实践就一定能获得正确认识
+[P|List Paragraph] C.直接知识来自实践，间接知识不来自实践
+[P|List Paragraph] D.一切认识归根到底来自实践
+[P|List Paragraph] 答案： D
+[P|Normal] 27.“真理是人造的供人使用的工具”的看法是（）。
+[P|List Paragraph] A.主观唯心主义
+[P|List Paragraph] B.客观唯心主义
+[P|List Paragraph] C.机械唯物主义
+[P|List Paragraph] D.辩证唯物主义
+[P|List Paragraph] 答案： A
+[P|Normal] 28.马克思主义认识论的首要的基本的观点是（）。
+[P|List Paragraph] A.反映的观点
+[P|List Paragraph] B.客观存在性的观点
+[P|List Paragraph] C.主体能动性的观点
+[P|List Paragraph] D.实践的观点
+[P|List Paragraph] 答案： D
+[P|Normal] 29.辩证唯物主义认识论首要的基本观点是（）。
+[P|List Paragraph] A.实践的观点
+[P|List Paragraph] B.辩证法的观点
+[P|List Paragraph] C.可知论的观点
+[P|List Paragraph] D.唯物论的观点
+[P|List Paragraph] 答案： A
+[P|Normal] 30.感性认识和理性认识的区别是（）。
+[P|List Paragraph] A.感性认识是可靠的，理性认识是不可靠的
+[P|List Paragraph] B.感性认识来源于实践，理性认识来源于书本
+[P|List Paragraph] C.感性认识是对现象的认识，理性认识是对本质的认识
+[P|List Paragraph] D.感性认识来源于直接经验，理性认识来源于间接经验
+[P|List Paragraph] 答案： C
+[P|Normal] 31.一对孪生兄弟到公园游春，回来后向母亲报告各自的观感。哥哥说:“那可真是一个好地方，荆棘上面也有鲜花。"弟弟说:"那可真是一个鬼地方，鲜花下面也有荆棘。”这说明（）。
+[P|List Paragraph] A.人是万物的尺度，事物的性质决定于人对它的主观感受程度
+[P|List Paragraph] B.主体认识客体具有能动作用，对同一事物有着不同的主观感受，正是主体能动作用的表现
+[P|List Paragraph] C.此亦彼也，彼亦此也，相对主义是一种正确的观点
+[P|List Paragraph] D.人的看法不同，决定着事物向相反的方面转化
+[P|List Paragraph] 答案： B
+[P|Normal] 32.作家萧伯纳说：人生有两大悲剧，一是没有得到你心爱的东西，另一是得到你心爱的东西。学者周国平则说：人生有两大快乐，一是没有得到你心爱的东西，于是你可以去寻求与创造，另一是得到你心爱的东西，于是你可以去品味和体验。这体现了（）。
+[P|List Paragraph] A.认识具有反复性和无限性
+[P|List Paragraph] B.对同一事物的认识具有主观性，往往因人而异
+[P|List Paragraph] C.意识是客观存在的主观映像
+[P|List Paragraph] D.寻找真理性认识就是寻找人生的真谛
+[P|List Paragraph] 答案： B
+[P|Normal] 33.“哲学家们只是用不同的方式解释世界，问题在于改变世界”的提出者是（）。
+[P|List Paragraph] A.黑格尔
+[P|List Paragraph] B.费尔巴哈
+[P|List Paragraph] C.马克思
+[P|List Paragraph] D.圣西门
+[P|List Paragraph] 答案： C
+[P|Normal] 34.“认识是主体对客体的能动反映”。这是一种（）。
+[P|List Paragraph] A.辩证唯物主义认识论观点
+[P|List Paragraph] B.形而上学唯物主义认识论观点
+[P|List Paragraph] C.主观唯心主义认识论观点
+[P|List Paragraph] D.客观唯心主义认识论观点
+[P|List Paragraph] 答案： A
+[P|Normal] 35.辩证法与形而上学在真理观上的对立在于是否承认（）。
+[P|List Paragraph] A.真理具有相对性
+[P|List Paragraph] B.真理具有客观性
+[P|List Paragraph] C.真理具有主观性
+[P|List Paragraph] D.真理具有绝对性
+[P|List Paragraph] 答案： A
+[P|Normal] 36.在真理观上坚持辩证法，就必须承认（）。
+[P|List Paragraph] A.真理的内容是客观的，形式是主观的
+[P|List Paragraph] B.真理既具有绝对性，又具有相对性
+[P|List Paragraph] C.真理既是一元的，又是多元的
+[P|List Paragraph] D.真理既具有普遍性，又具有多样性
+[P|List Paragraph] 答案： B
+[P|Normal] 37.“认识是主体对客体的直观反映”。这是一种（）。
+[P|List Paragraph] A.主观唯心主义认识论观点
+[P|List Paragraph] B.客观唯心主义认识论观点
+[P|List Paragraph] C.旧唯物主义认识论观点
+[P|List Paragraph] D.辩证唯物主义认识论观点
+[P|List Paragraph] 答案： C
+[P|Normal] 38.与理性认识相比较，感性认识有两个特点，一个是形象性，另一个是（）。
+[P|List Paragraph] A.能动性
+[P|List Paragraph] B.间接性
+[P|List Paragraph] C.客观性
+[P|List Paragraph] D.直接性
+[P|List Paragraph] 答案： D
+[P|Normal] 39.“人有多大胆，地有多大产”；这是一种（）。
+[P|List Paragraph] A.辩证唯物主义思想的表现
+[P|List Paragraph] B.机械唯物主义思想的表现
+[P|List Paragraph] C.主观唯心主义思想的表现
+[P|List Paragraph] D.客观唯心主义思想的表现
+[P|List Paragraph] 答案： C
+[P|Normal] 40.“从群众中来，到群众中去”的过程，从认识论上看，就是（）。
+[P|List Paragraph] A.感性认识——理性认识——感性认识的过程
+[P|List Paragraph] B.认识——实践——认识的过程
+[P|List Paragraph] C.实践——认识——实践的过程
+[P|List Paragraph] D.理性认识——感性认识——理性认识的过程
+[P|List Paragraph] 答案： C
+[P|Normal] 41.认识的主体和客体之间最基本的关系是（）。
+[P|List Paragraph] A.反映与被反映的认识关系
+[P|List Paragraph] B.改造与被改造的实践关系
+[P|List Paragraph] C.需要与满足需要的价值关系
+[P|List Paragraph] D.创造与被创造的主从关系
+[P|List Paragraph] 答案： B
+[P|Normal] 42.一个完整的认识过程包括两次飞跃，其中第二次飞跃是（）。
+[P|List Paragraph] A.从概念到判断的过程
+[P|List Paragraph] B.从认识到实践的过程
+[P|List Paragraph] C.从判断到推理的过程
+[P|List Paragraph] D.从感觉到概念的过程
+[P|List Paragraph] 答案： B
+[P|Normal] 43.一个正确的认识需要多次反复才能完成，并且认识是永无止境的发展过程。这说明人类的认识是（）。
+[P|List Paragraph] A.感性和理性的统一
+[P|List Paragraph] B.理性和非理性的统一
+[P|List Paragraph] C.正确和错误的统一
+[P|List Paragraph] D.有限和无限的统一
+[P|List Paragraph] 答案： D
+[P|Normal] 44.中国共产党的思想路线的核心是（）。
+[P|List Paragraph] A.一切从实际出发
+[P|List Paragraph] B.理论联系实际
+[P|List Paragraph] C.实事求是
+[P|List Paragraph] D.在实践中检验真理和发展真理
+[P|List Paragraph] 答案： C
+[P|Normal] 45.下列各项中，正确说明意识能动性的是（）。
+[P|List Paragraph] A.人有多大胆，地有多大产
+[P|List Paragraph] B.不怕做不到，就怕想不到
+[P|List Paragraph] C.纸上谈兵，画饼充饥
+[P|List Paragraph] D.量力而行，尽力而为
+[P|List Paragraph] 答案： D
+[P|Normal] 46.理性认识由低级到高级的发展过程是（）。
+[P|List Paragraph] A.实践——认识——实践
+[P|List Paragraph] B.认识——实践——认识
+[P|List Paragraph] C.感觉——知觉——表象
+[P|List Paragraph] D.概念——判断——推理
+[P|List Paragraph] 答案： D
+[P|Normal] 47.实践作为检验真理的标准，之所以具有相对性、不确定性，主要是因为一定历史条件下的具体实践都具有（）。
+[P|List Paragraph] A.自觉能动性
+[P|List Paragraph] B.客观物质性
+[P|List Paragraph] C.直接现实性
+[P|List Paragraph] D.历史局限性
+[P|List Paragraph] 答案： D
+[P|Normal] 48.意识能动作用实现的根本途径是（）。
+[P|List Paragraph] A.学习科学理论
+[P|List Paragraph] B.投身社会实践
+[P|List Paragraph] C.了解实际情况
+[P|List Paragraph] D.制定周密计划
+[P|List Paragraph] 答案： B
+[P|Normal] 49.与辩证唯物主义认识论相比较，旧唯物主义认识论有两个缺陷，一个是缺乏辩证法的观点，另一个是（）。
+[P|List Paragraph] A.缺乏实践的观点
+[P|List Paragraph] B.缺乏反映论的观点
+[P|List Paragraph] C.缺乏一元论的观点
+[P|List Paragraph] D.缺乏可知论的观点
+[P|List Paragraph] 答案： A
+[P|Normal] 50.真理具有客观性，被称为客观真理，是因为（）。
+[P|List Paragraph] A.真理是事物发展的客观规律
+[P|List Paragraph] B.真理是对事物及其规律的正确反映
+[P|List Paragraph] C.真理是不依赖于意识的客观实在
+[P|List Paragraph] D.真理是大多数人承认的客观事实
+[P|List Paragraph] 答案： B
+[P|Normal] 51.实践作为检验真理的标准，既具有确定性，又具有（）。
+[P|List Paragraph] A.普遍性
+[P|List Paragraph] B.特殊性
+[P|List Paragraph] C.不确定性
+[P|List Paragraph] D.绝对性
+[P|List Paragraph] 答案： C
+[P|Normal] 52.辩证唯物主义认为，认识的本质是（）。
+[P|List Paragraph] A.主体对客体的直观反映
+[P|List Paragraph] B.绝对观念的显现
+[P|List Paragraph] C.主体对客体的能动反映
+[P|List Paragraph] D.神秘天意的启示
+[P|List Paragraph] 答案： C
+[P|Normal] 53.认识主体与认识客体之间最基本的关系是（）。
+[P|List Paragraph] A.改造与被改造的关系
+[P|List Paragraph] B.相互依存的关系
+[P|List Paragraph] C.反映与被反映的关系
+[P|List Paragraph] D.相互作用的关系
+[P|List Paragraph] 答案： A
+[P|Normal] 54.实践是检验真理的唯一标准，是因为唯有实践才是（）。
+[P|List Paragraph] A.主观见之于客观的东西
+[P|List Paragraph] B.客观的活动
+[P|List Paragraph] C.能动的活动
+[P|List Paragraph] D.是物质性的活动
+[P|List Paragraph] 答案： A
+[P|Normal] 55.马克思说：“搬运夫和哲学家之间的原始差别要比家犬和猎犬之间的差别小得多。他们之间的鸿沟是分工掘成的。”这表明人的才能（）。
+[P|List Paragraph] A.与人的先天生理素质没有关联
+[P|List Paragraph] B.主要来源于后天的实践
+[P|List Paragraph] C.取决于人的主观努力的程度
+[P|List Paragraph] D.是由人的社会政治地位决定的
+[P|List Paragraph] 答案： B
+[P|Normal] 56.实践作为检验真理的唯一标准，是由（）。
+[P|List Paragraph] A.真理的本性决定的
+[P|List Paragraph] B.由实践的特点决定的
+[P|List Paragraph] C.由真理的本性和实践的特点共同决定的
+[P|List Paragraph] D.由认识的能动性决定的
+[P|List Paragraph] 答案： C
+[P|Normal] 57.实践的主体是（）。
+[P|List Paragraph] A.绝对精神
+[P|List Paragraph] B.具有思维能力、从事社会实践和认识活动的人
+[P|List Paragraph] C.人
+[P|List Paragraph] D.人的意识
+[P|List Paragraph] 答案： B
+[P|Normal] 58.实践的客体是（）。
+[P|List Paragraph] A.绝对精神的对象化
+[P|List Paragraph] B.客观物质世界
+[P|List Paragraph] C.人的意识的创造物
+[P|List Paragraph] D.进人主体的认识和实践范围的客观事物
+[P|List Paragraph] 答案： D
+[P|Normal] 59.实践的中介是（）。
+[P|List Paragraph] A.主体作用于客体的各种形式的工具、手段及其运用的程序和方法
+[P|List Paragraph] B.对一事物存在和发展有联系的各种要素的总和
+[P|List Paragraph] C.构成事物一切要素的总和
+[P|List Paragraph] D.受命于主观，见之于客观的活动
+[P|List Paragraph] 答案： A
+[P|Normal] 60.“社会上一旦有技术上的需要，则这种需要会比十所大学更能把科学推向前进。”这说明（）。
+[P|List Paragraph] A.实践是认识的来源
+[P|List Paragraph] B.技术推动了科学的发展
+[P|List Paragraph] C.实践是认识发展的动力
+[P|List Paragraph] D.科学进步是实践的目的
+[P|List Paragraph] 答案： C
+[P|Normal] 61.实践之所以是检验认识真理性的唯一标准，从实践的特点看是因为它是（）。
+[P|List Paragraph] A.人们的自觉能动的活动
+[P|List Paragraph] B.对人类有用的活动
+[P|List Paragraph] C.主观见之于客观的直接现实性的活动
+[P|List Paragraph] D.社会历史性的活动
+[P|List Paragraph] 答案： C
+[P|Normal] 62.实践基础上的理论创新，是（）。
+[P|List Paragraph] A.决定了社会发展趋势
+[P|List Paragraph] B.决定着社会变革力度
+[P|List Paragraph] C.社会发展和变革的先导
+[P|List Paragraph] D.一个国家兴旺发达的最终源泉
+[P|List Paragraph] 答案： C
+[P|Normal] 63.相对真理是指（）。
+[P|List Paragraph] A.不含有绝对性质的真理
+[P|List Paragraph] B.包含有错误因素的真理
+[P|List Paragraph] C.人们在一定条件下对客观事物及其规律的正确认识总是有限的
+[P|List Paragraph] D.暂时正确的真理
+[P|List Paragraph] 答案： C
+[P|Normal] 64.感性认识和理性认识的根本区别在于（）。
+[P|List Paragraph] A.感性认识来源于社会实践，理性认识则来源于抽象思维
+[P|List Paragraph] B.感性认识产生于日常生活，理性认识则产生于科学实验
+[P|List Paragraph] C.感性认识反映事物的现象，理性认识则反映事物的本质
+[P|List Paragraph] D.感性认识包含错误，理性认识则完全正确
+[P|List Paragraph] 答案： C
+[P|Normal] 65.感性认识能够上升到理性认识，这表明人的意识是（）。
+[P|List Paragraph] A.消极被动的
+[P|List Paragraph] B.积极能动的
+[P|List Paragraph] C.能够脱离客观世界的
+[P|List Paragraph] D.主观随意的
+[P|List Paragraph] 答案： B
+[P|Normal] 66.下列活动中，属于最基本的实践活动的是（）。
+[P|List Paragraph] A.演员在舞台上表演
+[P|List Paragraph] B.警察在街上巡逻
+[P|List Paragraph] C.农民在田里插秧
+[P|List Paragraph] D.科学家在实验室做实验
+[P|List Paragraph] 答案： C
+[P|Normal] 67.世界上的事物是多种多样的，哪些事物成为人们的认识对象，归根到底取决于（）。
+[P|List Paragraph] A.事物的客观属性
+[P|List Paragraph] B.事物的内在本质
+[P|List Paragraph] C.人们的兴趣和爱好
+[P|List Paragraph] D.人们社会实践的需要和水平
+[P|List Paragraph] 答案： D
+[P|Normal] 68.党的“从群众中来，到群众中去”的群众路线的工作方法的哲学理论基础是（）。
+[P|List Paragraph] A.物质决定意识的原理
+[P|List Paragraph] B.矛盾推动事物发展的原理
+[P|List Paragraph] C.认识能动作用的原理
+[P|List Paragraph] D.认识辩证运动过程的原理
+[P|List Paragraph] 答案： D
+[P|Normal] 69.“你要有知识，你就得参加变革现实的实践。你要知道梨子的滋味，你就得变革梨子，亲口吃一吃。你要知道原子的组织同性质，你就得实行物理学和化学的实验，变革原子的情况。”这段话强调的是（）。
+[P|List Paragraph] A.实践是认识的目的
+[P|List Paragraph] B.实践是检验认识的标准
+[P|List Paragraph] C.实践是认识的来源
+[P|List Paragraph] D.实践是认识发展的动力
+[P|List Paragraph] 答案： C
+[P|Normal] 70.“社会一旦有技术上的需要，则这种需要会比十所大学更能把科学推向前进”。这表明（）。
+[P|List Paragraph] A.实践是沟通主客体关系的桥梁
+[P|List Paragraph] B.实践是检验认识真理性的标准
+[P|List Paragraph] C.实践为认识提供物质手段
+[P|List Paragraph] D.实践的需要是推动认识发展的动力
+[P|List Paragraph] 答案： D
+[P|Normal] 71.下列选项中属于党的思想路线内容的是（）。
+[P|List Paragraph] A.为人民服务
+[P|List Paragraph] B.实事求是
+[P|List Paragraph] C.立党为公
+[P|List Paragraph] D.勤政廉洁
+[P|List Paragraph] 答案： B
+[P|Normal] 72.人类认识发展的根本动力在于（）。
+[P|List Paragraph] A.人类需要和欲望的不断增长
+[P|List Paragraph] B.人类社会实践的不断发展
+[P|List Paragraph] C.人类认识器官的逐渐发达
+[P|List Paragraph] D.人类道德水平的不断提高
+[P|List Paragraph] 答案： B
+[P|Normal] 73.辩证唯物主义认识论与形而上学唯物主义认识论的区别是（）。
+[P|List Paragraph] A.可知论与不可知论
+[P|List Paragraph] B.唯物辩证法与形而上学
+[P|List Paragraph] C.唯物主义反映论与唯心主义先验论
+[P|List Paragraph] D.能动革命的反映论与直观被动的反映论
+[P|List Paragraph] 答案： D
+[P|Normal] 74.意识对物质反作用的基本途径是（）。
+[P|List Paragraph] A.个人的主观努力
+[P|List Paragraph] B.社会实践
+[P|List Paragraph] C.社会的客观物质条件
+[P|List Paragraph] D.主观条件和客观条件的统一
+[P|List Paragraph] 答案： B
+[P|Normal] 75.意志、情感、灵感、直觉在认识中属于（）。
+[P|List Paragraph] A.理性因素
+[P|List Paragraph] B.非理性因素
+[P|List Paragraph] C.主体素质
+[P|List Paragraph] D.客体素质
+[P|List Paragraph] 答案： B
+[P|Normal] 二、多选题
+[P|Normal] 1.实践在认识中的决定作用表现在（）。
+[P|List Paragraph] A.实践是认识的目的
+[P|List Paragraph] B.实践是认识发展的动力
+[P|List Paragraph] C.实践是认识的唯一来源
+[P|List Paragraph] D.实践是检验认识真理性的唯一标准
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 2.下列属于主观唯心主义真理观的有（）。
+[P|List Paragraph] A.真理是“观念与主体感觉相符合”
+[P|List Paragraph] B.“真理存在于观念中”
+[P|List Paragraph] C.“真理是思维与它的先验形式相一致”
+[P|List Paragraph] D.真理是“绝对理念”的自我显现
+[P|List Paragraph] 答案：ABC
+[P|Normal] 3.“批判的武器当然不能代替武器的批判，物质的力量只能用物质的力量来摧毁，理论一经群众掌握，也会变成物质力量。”这一论断的哲学思想是（）。
+[P|List Paragraph] A.理论对实践具有指导作用
+[P|List Paragraph] B.理论不能代替实践
+[P|List Paragraph] C.理论本身就是物质的力量
+[P|List Paragraph] D.理论的作用必须通过实践表现出来
+[P|List Paragraph] 答案：ABD
+[P|Normal] 4.下列观点中包含实践对认识的决定作用原理的是（）。
+[P|List Paragraph] A.没有调查就没有发言权
+[P|List Paragraph] B.百闻不如一见，百见不如一干
+[P|List Paragraph] C.不登高山，不知天之高也；不临深溪，不知地之厚也
+[P|List Paragraph] D.机遇偏爱有准备的头脑
+[P|List Paragraph] 答案：ABC
+[P|Normal] 5.理性认识向实践飞跃的意义在于（）。
+[P|List Paragraph] A.理论接受实践的检验
+[P|List Paragraph] B.理论可以改变事物发展的总趋势
+[P|List Paragraph] C.理论可以指导实践
+[P|List Paragraph] D.理论在实践的发展中得到发展
+[P|List Paragraph] 答案：ACD
+[P|Normal] 6.“按图索骥”的错误在于（）。
+[P|List Paragraph] A.唯心主义
+[P|List Paragraph] B.经验论
+[P|List Paragraph] C.教条主义
+[P|List Paragraph] D.唯理论
+[P|List Paragraph] 答案：CD
+[P|Normal] 7.马克思主义认为，认识的辩证过程是（）。
+[P|List Paragraph] A.从间接经验到直接经验的转化
+[P|List Paragraph] B.从感性到理性的过程
+[P|List Paragraph] C.实践一认识一实践的无限循环往复
+[P|List Paragraph] D.从相对真理到绝对真理的发展
+[P|List Paragraph] 答案：CD
+[P|Normal] 8.实践是检验真理的唯一标准，在于（）。
+[P|List Paragraph] A.实践具有直接现实性的品格
+[P|List Paragraph] B.实践具有特殊性的特点
+[P|List Paragraph] C.实践是联系主观和客观的桥梁
+[P|List Paragraph] D.实践是主观见之于客观的活动
+[P|List Paragraph] 答案：ACD
+[P|Normal] 9.荀子说“不闻不若闻之，闻之不若见之，见之不若知之，知之不若行之。学至于行而止矣。行之，明也。”这段话的哲学寓意是（）。
+[P|List Paragraph] A.间接经验是十分必要的
+[P|List Paragraph] B.事事亲身实践是获得知识的唯一途径
+[P|List Paragraph] C.实践是认识的来源
+[P|List Paragraph] D.实践出真知
+[P|List Paragraph] 答案：ACD
+[P|Normal] 10.人类在客观世界面前所处的两种不同的社会活动状态是（）。
+[P|List Paragraph] A.必然
+[P|List Paragraph] B.必然王国
+[P|List Paragraph] C.自由
+[P|List Paragraph] D.自由王国
+[P|List Paragraph] 答案：BD
+[P|Normal] 11.真理的客观性是指（）。
+[P|List Paragraph] A.真理是不依赖于意识的客观实在
+[P|List Paragraph] B.真理是不以人的意志为转移的客观规律
+[P|List Paragraph] C.真理中包含着不依赖于人类的客观内容
+[P|List Paragraph] D.真理的检验标准是客观的社会实践
+[P|List Paragraph] 答案：CD
+[P|Normal] 12.实践是认识发展的动力，主要表现在（）。
+[P|List Paragraph] A.实践不断提出新的认识课题
+[P|List Paragraph] B. 实践不断为认识发展提供经验材料
+[P|List Paragraph] C.实践不断为人们提供新的认识工具
+[P|List Paragraph] D.实践不断提高人们的认识能力
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 13.下列各项属于党的思想路线内容的有（）。
+[P|List Paragraph] A.一切从实际出发
+[P|List Paragraph] B.理论联系实际
+[P|List Paragraph] C.实事求是
+[P|List Paragraph] D.在实践中检验和发展真理
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 14.对于同一棵大树，在木匠的眼中是木材，画家看到的是色彩和色调，植物学家看到的是它的形态特征，这是由于（）。
+[P|List Paragraph] A.人的感觉受理性指导
+[P|List Paragraph] B.人的认识具有能动性
+[P|List Paragraph] C.理性认识是感性认识的基础
+[P|List Paragraph] D.已有的认识影响感觉活动
+[P|List Paragraph] 答案：ABD
+[P|Normal] 15.理性认识的基本形式有（）。
+[P|List Paragraph] A.感觉
+[P|List Paragraph] B.概念
+[P|List Paragraph] C.判断
+[P|List Paragraph] D.推理
+[P|List Paragraph] 答案：BCD
+[P|Normal] 16.感性认识的基本形式有（）。
+[P|List Paragraph] A.感觉
+[P|List Paragraph] B.知觉
+[P|List Paragraph] C.概念
+[P|List Paragraph] D.表象
+[P|List Paragraph] 答案：ABD
+[P|Normal] 17.下列各项属于实践的基本特点的有（）。
+[P|List Paragraph] A.直接现实性
+[P|List Paragraph] B.自觉能动性
+[P|List Paragraph] C.多样性
+[P|List Paragraph] D.社会历史性
+[P|List Paragraph] 答案：ABD
+[P|Normal] 18.今天的实践不能完全检验今天人们提出的全部认识，这说明（）。
+[P|List Paragraph] A.实践标准具有绝对性
+[P|List Paragraph] B.实践标准具有确定性
+[P|List Paragraph] C.实践标准具有相对性
+[P|List Paragraph] D.实践标准具有不确定性
+[P|List Paragraph] 答案：CD
+[P|Normal] 19.下列表达中，符合马克思主义实践观的有（）。
+[P|List Paragraph] A.实践是人的纯精神性活动
+[P|List Paragraph] B.实践是人的感性物质活动
+[P|List Paragraph] C.实践是人的社会历史性活动
+[P|List Paragraph] D.实践是人的自觉的能动性活动
+[P|List Paragraph] 答案：BCD
+[P|Normal] 20.19世纪英国作家惠兹里特说：“一个除了书本以外一无所知的纯粹学者，必然对书本也是无知的。”与这句话在内涵上相一致的名言还有（）。
+[P|List Paragraph] A.纸上得来终觉浅，绝知此事要躬行
+[P|List Paragraph] B.尽信书，则不如无书
+[P|List Paragraph] C.感觉到了的东西我们不能立刻理解它，只有理解了的东西才能更深刻地感觉它
+[P|List Paragraph] D.饱经风霜的老人与缺乏阅历的少年对同一句格言的理解是不同的
+[P|List Paragraph] 答案：ABD
+[P|Normal] 21.“观念的东西不外是移入人的头脑并在人的头脑中改造过的物质的东西”，这一说法（）。
+[P|List Paragraph] A.是指意识是对客观存在的反映
+[P|List Paragraph] B.是唯心主义的
+[P|List Paragraph] C.是对意识来源的一种正确解释
+[P|List Paragraph] D.是辩证唯物主义的
+[P|List Paragraph] 答案：ACD
+[P|Normal] 22.认识运动所以要经过实践——认识——再实践——再认识的多次反复，是因为（）。
+[P|List Paragraph] A.事物矛盾的暴露有个过程
+[P|List Paragraph] B.事物本身的复杂性
+[P|List Paragraph] C.认识本身的复杂性
+[P|List Paragraph] D.人们认识能力的有限性
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 23.以下论断正确反映非理性因素在认识中作用的有（）。
+[P|List Paragraph] A.幻想是极可贵的品质
+[P|List Paragraph] B.意志决定一切
+[P|List Paragraph] C.顿然醒悟，一下子抓住了问题的症结
+[P|List Paragraph] D.在科学的道路上，只有不畏劳苦坚持攀登的人，才有希望达到光辉的顶点
+[P|List Paragraph] 答案：ACD
+[P|Normal] 24.实现由认识向实践飞跃的中间环节包括（）。
+[P|List Paragraph] A.确定实践目的
+[P|List Paragraph] B.形成实践理念
+[P|List Paragraph] C.制定实践方案
+[P|List Paragraph] D.进行中间试验
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 25.主观和客观、理论和实践具体的、历史的统一是指（）。
+[P|List Paragraph] A.由于实践是不断变化的，因而任何真理都具有相对性
+[P|List Paragraph] B.真理都是具体的，没有抽象的真理
+[P|List Paragraph] C.超越历史时代永恒的真理是不存在的
+[P|List Paragraph] D.对真理必须采取相对主义的态度
+[P|List Paragraph] 答案：ABC
+[P|Normal] 26.辩证唯物主义认识论与旧唯物主义认识论的区别表现在是否承认（）。
+[P|List Paragraph] A.认识是主体对客体的反映
+[P|List Paragraph] B.实践是认识的基础
+[P|List Paragraph] C.认识是一个辩证发展过程
+[P|List Paragraph] D.世界是可以认识的
+[P|List Paragraph] 答案：BC
+[P|Normal] 27.要正确实现从理性认识到实践的飞跃，必须做到（）。
+[P|List Paragraph] A.通过调查，获得十分丰富的感性材料
+[P|List Paragraph] B.运用科学的思维方法对感性材料进行加工和制作
+[P|List Paragraph] C.要把关于事物的认识与主体的需要结合起来，确定行动的目的和计划
+[P|List Paragraph] D.要使理论为群众所掌握，化为群众的自觉行动
+[P|List Paragraph] 答案：CD
+[P|Normal] 28.辩证唯物主义认识论与旧唯物主义认识论的区别表现在（）。
+[P|List Paragraph] A.是否承认认识是主体对客体的反映
+[P|List Paragraph] B.是否承认实践对认识的决定作用
+[P|List Paragraph] C.是否承认世界是可以认识的
+[P|List Paragraph] D.是否承认认识是摹写与创造的统一
+[P|List Paragraph] 答案：BD
+[P|Normal] 29.有人说：“既然实践是检验真理的唯一标准，党提出新的方针政策还没有经过实践检验，怎么能说它是正确的呢？”产生这一疑惑的实质在于其不了解的党的新方针政策（）。
+[P|List Paragraph] A.是建立在过去实践基础之上的
+[P|List Paragraph] B.是经过试点得到初步验证后确定并推出的
+[P|List Paragraph] C.是在马克思主义指导下对现状经过调查研究后制定的
+[P|List Paragraph] D.只有在执行的实践过程中才能不断得到完善
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 30.实践活动的基本结构是（）。
+[P|List Paragraph] A.实践的主体
+[P|List Paragraph] B.实践的客体
+[P|List Paragraph] C.实践的中介
+[P|List Paragraph] D.实践的结果
+[P|List Paragraph] 答案：ABC
+[P|Normal] 31.实践主体包括（）。
+[P|List Paragraph] A.个体主体
+[P|List Paragraph] B.群体主体
+[P|List Paragraph] C.人类主体
+[P|List Paragraph] D.利益主体
+[P|List Paragraph] 答案：ABC
+[P|Normal] 32.实践客体的类型包括（）。
+[P|List Paragraph] A.天然客体和人工客体
+[P|List Paragraph] B.自然客体和社会客体
+[P|List Paragraph] C.物质性客体和精神性客体
+[P|List Paragraph] D.现实的客体和想象的客体
+[P|List Paragraph] 答案：ABC
+[P|Normal] 33.实践的基本特征是指（）。
+[P|List Paragraph] A.直接现实性
+[P|List Paragraph] B.自觉能动性
+[P|List Paragraph] C.社会历史性
+[P|List Paragraph] D.可预知性
+[P|List Paragraph] 答案：ABC
+[P|Normal] 34.实践活动的自觉能动性是指（）。
+[P|List Paragraph] A.人的活动总是有意识有目的
+[P|List Paragraph] B.人的实践活动如同于蜜蜂建造蜂房
+[P|List Paragraph] C.人的实践活动结束时得到的结果在这个过程开始时就作为目的存在于实践者头脑中
+[P|List Paragraph] D.实践者的目的决定着实践者的行为
+[P|List Paragraph] 答案：ACD
+[P|Normal] 35.实践活动的形式包括（）。
+[P|List Paragraph] A.物质生产实践
+[P|List Paragraph] B.社会政治实践
+[P|List Paragraph] C.科学文化实践
+[P|List Paragraph] D.虚拟实践
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 36.价值具有的基本特征（）。
+[P|List Paragraph] A.主体性
+[P|List Paragraph] B.客观性
+[P|List Paragraph] C.多维性
+[P|List Paragraph] D.社会历史性
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 37.虚拟实践的特点（）。
+[P|List Paragraph] A.交互性
+[P|List Paragraph] B.开放性
+[P|List Paragraph] C.间接性
+[P|List Paragraph] D.直接性
+[P|List Paragraph] 答案：ABC
+[P|Normal] 38.“人所不学而能者，其良能也；所不虑而知者，其良知也”属于（）。
+[P|List Paragraph] A.唯物主义认识论
+[P|List Paragraph] B.唯心主义认识论
+[P|List Paragraph] C.主观唯心主义认识
+[P|List Paragraph] D.客观唯心主义认识论
+[P|List Paragraph] 答案：BC
+[P|Normal] 39.从感性认识向理性认识过渡，必须具备两个基本条件（）。
+[P|List Paragraph] A.勇于实践掌握丰富的、合乎实际的感性材料
+[P|List Paragraph] B.经过理性思考的作用
+[P|List Paragraph] C.注意对理性认识的检验
+[P|List Paragraph] D.注意理论联系实际
+[P|List Paragraph] 答案：AB
+[P|Normal] 40.价值的基本特性（）。
+[P|List Paragraph] A.主体性
+[P|List Paragraph] B.客观性
+[P|List Paragraph] C.多维性
+[P|List Paragraph] D.社会历史性
+[P|List Paragraph] 答案：ABCD
+[P|Normal] 三、判断题
+[P|Normal] 1.有用的就是真理。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 2.绝对性真理和相对性真理是同一真理的两种不同属性。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 3.观念的东西不外是移入人脑，并在人的头脑中改造过的物质的东西而已。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 4.感性认识和理性认识是辨证统一的，统一的基础是实践。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 5.理论是行动的指南，没有革命的理论就没有革命的运动，没有正确的理论就没有正确的行动。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 6.马克思主义认识论是能动的革命的反映论。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 7.真理的内容是主观的，形式是客观的。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 8.坚持真理的客观性，就是坚持真理问题上的唯物论。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 9.实践作为检验认识真理性的标准的确定性即绝对性，是指实践作为检验认识真理性的标准的唯一性。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 10.一切从实际出发是马克思主义认识论的根本要求和具体体现。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 11.实践的观点是辩证唯物论的认识论之第一的和基本的观点。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 12.全部社会生活在本质上是实践的。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 13.物质生产实践制约着社会政治实践和科学文化实践。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 14.认识是主体在实践的基础对客体的能动反映。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 15.人对客观世界及其事物的能动反映是以实践为基础的摹写性和创造性的统一。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 16.“有用就是真理”否认了真理的客观性。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 17.真理是客观的，这是在真理问题上的唯物论。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 18.真理既是绝对的又是相对的，这是真理问题上的辩证法。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 19.绝对真理和相对真理是同一个真理的两个基本属性。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 20.实践检验真理是一个永无止境的过程。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 21.实践标准既是确定的又是不确定的。( )
+[P|Normal] 答案：正确
+[P|Normal] 22.主体和客体就是主观和客观。	( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 23.凡是亲眼所见亲耳所听都是直接经验，是对客观事物本质的真实反映。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 24.“人的思维是至上的，又是非至上的”。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 25.错误的认识也是对客观世界的反映。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 26.主观唯心主义认为人的认识是上帝的启示或绝对精神的产物。
+[P|List Paragraph] 答案：错误
+[P|Normal] 27.认识是主体对客观的直观反映。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 28.只有辨证唯物主义坚持反映论，认为认识是主体对客体的反映。旧唯物主义则相反。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 29.凡是真理都具有客观性，因此真理的形式也是客观的。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 30.对待马克思主义，我们必须做到坚持与创新的统一。	( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 31.一切唯物主义都是能动的反映论。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 32.实践出真知，所以每个人的知识都来自亲身实践。( )
+[P|List Paragraph] 答案：错误
+[P|Normal] 33.认识是一个不断反复和无限发展的过程。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 34.主观唯心主义认为人的认识是心灵的自由创造物。	( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 35.旧唯物主义认识论把人的认识看成是主体消极地、被动地反映和接受外界对象。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 36.认识的辨证运动过程首先是从实践到认识的过程。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 37.理性认识是指人们借助抽象思维，在概括整理大量感性材料的基础上，达到关于事物的本质、全体、内部联系和事物自身规律性的认识。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 38.割裂真理的绝对性和相对性的辩证关系会导致绝对主义和相对主义的真理观。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 39.我们既要坚持真理又要发展真理是因为真理既是绝对的又是相对性的。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 40.真理总是同谬误相比较而存在、相斗争而发展的。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 41.人类社会活动提出的问题，归根结底只能依靠和通过实践来解决。( )
+[P|List Paragraph] 答案：正确
+[P|Normal] 42.“有用就是真理”是主观唯心主义真理观。( )
+[P|List Paragraph] 答案：正确

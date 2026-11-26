@@ -1,0 +1,21 @@
+.row-wrap { display: flex; }
+.stat { flex: 1; margin: 20rpx 12rpx 20rpx 24rpx; text-align: center; padding: 24rpx 12rpx; }
+.row-wrap .stat + .stat { margin: 20rpx 24rpx 20rpx 12rpx; }
+.stat-num { font-size: 56rpx; line-height: 1.2; }
+
+.chart { display: flex; align-items: flex-end; height: 200rpx; }
+.chart-col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
+.chart-bar {
+  width: 60%; max-width: 32rpx;
+  background: linear-gradient(180deg, #5B8DEF, #36CFC9); border-radius: 6rpx 6rpx 0 0;
+  min-height: 4rpx;
+}
+.chart-label { transform: scale(0.85); margin-top: 6rpx; }
+
+.stack-hint { margin: 0 32rpx 8rpx; }
+.ix-stack .scard { cursor: pointer; }
+.ix-stack .scard.behind, .ix-stack .scard.behind2 { pointer-events: none; }
+
+.flex1 { flex: 1; }
+/* 离屏画布：仅供 canvasToTempFilePath 读取，移出可视区但不销毁 */
+.offcanvas { position: fixed; left: -9999px; top: 0; width: 620px; height: 1240px; }

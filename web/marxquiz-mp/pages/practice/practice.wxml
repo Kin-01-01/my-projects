@@ -1,0 +1,150 @@
+<view class="page {{themeClass}}">
+  <!-- 空态 -->
+  <view wx:if="{{emptyTip}}" class="empty">
+    <text class="empty-emoji">🗂️</text>
+    <text class="empty-title">没有可以练习的题目</text>
+    <text class="empty-text">{{emptyTip}}</text>
+  </view>
+
+  <block wx:elif="{{ready && q}}">
+    <!-- 顶部：题号 + 进度 + 工具 -->
+    <view class="head">
+      <view class="head-row">
+        <view class="head-left">
+          <view class="head-num">
+            <text class="head-cur">{{index + 1}}</text>
+            <text class="head-total">/ {{total}}</text>
+          </view>
+          <text class="head-answered">已答 {{answeredCount}}</text>
+        </view>
+        <view class="head-right">
+          <view wx:if="{{isExam}}" class="timer {{timeLow ? 'timer-low' : ''}}">{{timeText}}</view>
+          <view wx:if="{{isExam}}" class="pill-btn pill-btn-ink" bindtap="onTapExamSubmit" hover-class="pill-btn-hover">交卷</view>
+          <view class="pill-btn" bindtap="onOpenCard" hover-class="pill-btn-hover">答题卡</view>
+        </view>
+      </view>
+
+      <view class="bar">
+        <view class="bar-inner" style="width:{{progressPercent}}%"></view>
+      </view>
+    </view>
+
+    <view class="wrap">
+      <!-- 题目卡片 -->
+      <view class="q-card">
+        <view class="q-head">
+          <text class="q-type">{{typeLabel}}</text>
+          <view class="q-fav {{isFav ? 'q-fav-on' : ''}}" bindtap="onToggleFav" hover-class="q-fav-hover">{{isFav ? '★' : '☆'}}</view>
+        </view>
+
+        <text class="q-stem">{{q.stem}}</text>
+
+        <!-- 选择题 -->
+        <view wx:if="{{q.type !== 'fill'}}" class="opt-list">
+          <view
+            class="opt {{item.cls}}"
+            wx:for="{{optionStates}}"
+            wx:key="key"
+            data-key="{{item.key}}"
+            bindtap="onOptionTap"
+            hover-class="opt-hover"
+          >
+            <view class="opt-key">{{item.key}}</view>
+            <text class="opt-text">{{item.text}}</text>
+          </view>
+        </view>
+
+        <!-- 填空题 -->
+        <view wx:else class="fill-wrap">
+          <input
+            class="fill-input"
+            value="{{fillInput}}"
+            placeholder="在这里输入答案"
+            placeholder-class="ph"
+            disabled="{{submitted}}"
+            bindinput="onFillInput"
+          />
+        </view>
+
+        <!-- 判定结果 -->
+        <view wx:if="{{submitted}}" class="feedback {{isCorrect ? 'fb-ok' : 'fb-bad'}}">
+          <text class="fb-icon">{{isCorrect ? '✓' : '✕'}}</text>
+          <text class="fb-text">{{isCorrect ? '回答正确' : '回答错误'}}</text>
+          <text class="fb-ans">正确答案 {{correctAnswerText}}</text>
+        </view>
+
+        <view wx:if="{{submitted && q.analysis}}" class="analysis">
+          <view class="analysis-title">解析</view>
+          <text class="analysis-text">{{q.analysis}}</text>
+        </view>
+
+        <view wx:if="{{tipText}}" class="tip-bar">{{tipText}}</view>
+
+        <!-- 操作按钮 -->
+        <view class="actions">
+          <view wx:if="{{!submitted}}" class="btn btn-primary btn-block" bindtap="onSubmit" hover-class="btn-hover">提交答案</view>
+          <block wx:else>
+            <view wx:if="{{!isLast}}" class="btn btn-primary btn-block" bindtap="onNext" hover-class="btn-hover">下一题</view>
+            <view wx:else class="btn btn-dark btn-block" bindtap="finish" hover-class="btn-hover">交卷看结果</view>
+          </block>
+        </view>
+      </view>
+
+      <view class="bottom-space"></view>
+    </view>
+
+    <!-- 底部：上一题 / 下一题 -->
+    <view class="bottom-bar">
+      <view class="bottom-bar-item">
+        <view class="btn btn-ghost {{index === 0 ? 'btn-disabled' : ''}}" bindtap="onPrev" hover-class="btn-hover">上一题</view>
+      </view>
+      <view class="bottom-bar-item">
+        <view class="btn btn-dark" bindtap="onNext" hover-class="btn-hover">{{isLast ? '交卷' : '下一题'}}</view>
+      </view>
+    </view>
+  </block>
+
+  <!-- 答题卡 -->
+  <view wx:if="{{cardVisible}}" class="mask" bindtap="onCloseCard">
+    <view class="sheet" catchtap="onSheetTap">
+      <view class="sheet-grip"></view>
+      <view class="sheet-head">
+        <text class="sheet-title">答题卡</text>
+        <text class="sheet-close" bindtap="onCloseCard">✕</text>
+      </view>
+
+      <view class="legend">
+        <view class="lg-item">
+          <view class="dot dot-un"></view>
+          <text class="lg-text">未答</text>
+        </view>
+        <view class="lg-item">
+          <view class="dot dot-an"></view>
+          <text class="lg-text">已答</text>
+        </view>
+        <view wx:if="{{!isExam}}" class="lg-item">
+          <view class="dot dot-ok"></view>
+          <text class="lg-text">答对</text>
+        </view>
+        <view wx:if="{{!isExam}}" class="lg-item">
+          <view class="dot dot-bad"></view>
+          <text class="lg-text">答错</text>
+        </view>
+      </view>
+
+      <scroll-view class="grid-scroll" scroll-y>
+        <view class="grid">
+          <view
+            class="cell cell-{{item.status}}"
+            wx:for="{{cardCells}}"
+            wx:key="no"
+            data-index="{{item.no - 1}}"
+            bindtap="onCellTap"
+          >{{item.no}}</view>
+        </view>
+      </scroll-view>
+
+      <view class="btn btn-dark btn-block sheet-btn" bindtap="onCloseCard" hover-class="btn-hover">继续答题</view>
+    </view>
+  </view>
+</view>

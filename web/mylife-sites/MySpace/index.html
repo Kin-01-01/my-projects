@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>拾光 · 个人记录空间</title>
+  <meta name="description" content="拾光——把日子、轨迹与情绪收进同一处。单页个人记录空间：人生轨迹、生活流、文章、足迹地图、作品集与情绪垃圾桶，本地保存，纯前端。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0e14'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%236ea8fe'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="scroll-progress"><div class="scroll-progress__bar" id="scrollBar"></div></div>
+
+  <!-- 导航 -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#hero">拾光<span class="nav__brand-dot">·</span></a>
+      <nav class="nav__links">
+        <a href="#timeline">轨迹</a>
+        <a href="#feed">记录</a>
+        <a href="#posts">文章</a>
+        <a href="#map">足迹</a>
+        <a href="#works">作品</a>
+        <a href="#trash">情绪</a>
+        <a href="#about">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 首屏：左文 / 右巨型数字（不对称） -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" id="heroBg" hidden></div>
+      <canvas class="hero-particles" id="heroParticles"></canvas>
+      <div class="hero-veil"></div>
+      <div class="hero__grid">
+        <div class="hero__main reveal">
+          <p class="hero__tag">私人显影室 · SINCE 2007</p>
+          <h1 class="hero__title" id="heroName">拾光</h1>
+          <p class="hero__lead" id="heroSlogan">把日子、轨迹与情绪，收进同一处。</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#feed">开始记录 →</a>
+            <button class="btn btn--ghost" id="btnTrashHero">🗑 倒掉情绪</button>
+          </div>
+        </div>
+        <aside class="hero__aside reveal">
+          <div class="hero__counter">
+            <span class="hero__count-num" id="statDays" data-count>0</span>
+            <span class="hero__count-label">天 · 已陪伴</span>
+          </div>
+          <div class="hero__mini-stats">
+            <div class="hero__mini"><span class="hero__mini-num" id="statFeed">0</span><span class="hero__mini-label">生活记录</span></div>
+            <div class="hero__mini"><span class="hero__mini-num" id="statPosts">0</span><span class="hero__mini-label">文章</span></div>
+            <div class="hero__mini"><span class="hero__mini-num" id="statMood">0</span><span class="hero__mini-label">情绪倾倒</span></div>
+          </div>
+        </aside>
+      </div>
+      <a class="hero__scroll" href="#timeline" aria-label="向下滑动">↓</a>
+    </section>
+
+    <!-- 开场宣言（GSAP 逐行 stagger） -->
+    <section class="manifesto" id="manifesto" aria-hidden="true">
+      <div class="manifesto__inner">
+        <p class="manifesto__line">有些日子像底片，</p>
+        <p class="manifesto__line">要在<span class="hl">暗房</span>里慢慢显影。</p>
+        <p class="manifesto__line manifesto__line--muted">这里收着我的轨迹、记录、文字与情绪——</p>
+        <p class="manifesto__line">把走过的光，<span class="hl">留成拾光</span>。</p>
+      </div>
+    </section>
+
+    <!-- 人生轨迹时间线 -->
+    <section class="section" id="timeline">
+      <div class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2 class="section__title">人生轨迹</h2>
+        <p class="section__sub">重要的节点，串成一条线。</p>
+        <button class="btn btn--soft" data-add="timeline">+ 添加节点</button>
+      </div>
+      <div class="timeline" id="timelineList"></div>
+    </section>
+
+    <!-- 生活记录流 -->
+    <section class="section section--alt" id="feed">
+      <div class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2 class="section__title">生活记录流</h2>
+        <p class="section__sub">随手记下的日常，向下滑动慢慢翻。</p>
+        <button class="btn btn--soft" data-add="feed">+ 记一笔生活</button>
+      </div>
+      <div class="feed" id="feedList"></div>
+    </section>
+
+    <!-- 文章 -->
+    <section class="section" id="posts">
+      <div class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2 class="section__title">文章</h2>
+        <p class="section__sub">认真写下来的长文，按分类归档。</p>
+        <button class="btn btn--soft" data-add="post">+ 写一篇文章</button>
+      </div>
+      <div class="posts" id="postsList"></div>
+    </section>
+
+    <!-- 足迹地图 -->
+    <section class="section section--alt" id="map">
+      <div class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2 class="section__title">足迹 · 中国</h2>
+        <p class="section__sub">走过的城市，在地图上亮起来。上传带 GPS 的照片会自动标点。</p>
+        <button class="btn btn--soft" data-add="photo">+ 添加足迹</button>
+      </div>
+      <div class="map-wrap" id="mapWrap">
+        <div class="map-canvas" id="mapChart"></div>
+        <aside class="map-side">
+          <div class="map-side__head" id="mapCount">还没有足迹</div>
+          <div class="map-photo-card glass" id="mapPhotoCard"></div>
+          <div class="map-list" id="mapList"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section class="section" id="works">
+      <div class="section__head reveal">
+        <span class="section__index">05</span>
+        <h2 class="section__title">作品集</h2>
+        <p class="section__sub">值得拿出来的东西，单独成栏。</p>
+        <button class="btn btn--soft" data-add="work">+ 添加作品</button>
+      </div>
+      <div class="works" id="worksList"></div>
+    </section>
+
+    <!-- 情绪垃圾桶 -->
+    <section class="section section--alt" id="trash">
+      <div class="section__head reveal">
+        <span class="section__index">06</span>
+        <h2 class="section__title">情绪垃圾桶</h2>
+        <p class="section__sub">不吐不快，或只是想给此刻打个标签。写下的都会被收好，也可以随时清空。</p>
+        <button class="btn btn--soft" id="btnTrashSection">🗑 倒一点情绪</button>
+      </div>
+      <div class="trash" id="trashList"></div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__index">07</span>
+        <h2 class="section__title">关于</h2>
+        <p class="section__sub">一句话介绍你自己。</p>
+        <button class="btn btn--soft" id="btnEditAbout">编辑关于</button>
+      </div>
+      <div class="about-card reveal" id="aboutCard"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__brand">拾光 · 数据只保存在本机浏览器</span>
+      <div class="footer__actions">
+        <button class="btn btn--ghost btn--sm" id="btnExport">导出备份</button>
+        <button class="btn btn--ghost btn--sm" id="btnImport">导入备份</button>
+        <input type="file" id="fileImport" accept="application/json" hidden />
+      </div>
+    </div>
+  </footer>
+
+  <!-- 常驻：情绪垃圾桶 -->
+  <button class="fab" id="fabTrash" title="随时倒情绪" aria-label="情绪垃圾桶">🗑</button>
+
+  <!-- 弹窗：人生轨迹 -->
+  <div class="modal" id="modalTimeline" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <div class="modal__head"><h3 class="modal__title">添加轨迹节点</h3><button class="modal__close" data-close>✕</button></div>
+      <form class="form" data-form="timeline">
+        <label class="field"><span>日期</span><input type="date" name="date" required /></label>
+        <label class="field"><span>节点标题</span><input type="text" name="title" placeholder="例如：第一次进实验室" maxlength="40" required /></label>
+        <label class="field"><span>一句话描述</span><textarea name="desc" rows="3" placeholder="发生了什么，为什么重要" maxlength="200"></textarea></label>
+        <div class="form__foot"><button type="button" class="btn btn--ghost" data-close>取消</button><button type="submit" class="btn btn--primary">保存</button></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 弹窗：生活记录 -->
+  <div class="modal" id="modalFeed" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <div class="modal__head"><h3 class="modal__title">记一笔生活</h3><button class="modal__close" data-close>✕</button></div>
+      <form class="form" data-form="feed">
+        <label class="field"><span>日期</span><input type="date" name="date" required /></label>
+        <div class="field"><span>此刻心情（可选）</span><div class="mood-grid" data-mood="feed"></div></div>
+        <label class="field"><span>写点什么</span><textarea name="text" rows="4" placeholder="今天发生了什么，或只是想说说话" maxlength="1000" required></textarea></label>
+        <label class="field"><span>配图（可选）</span><input type="file" name="photo" accept="image/*" /></label>
+        <div class="form__foot"><button type="button" class="btn btn--ghost" data-close>取消</button><button type="submit" class="btn btn--primary">保存</button></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 弹窗：文章 -->
+  <div class="modal" id="modalPost" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <div class="modal__head"><h3 class="modal__title">写一篇文章</h3><button class="modal__close" data-close>✕</button></div>
+      <form class="form" data-form="post">
+        <label class="field"><span>日期</span><input type="date" name="date" required /></label>
+        <label class="field"><span>分类</span>
+          <select name="cat">
+            <option value="tech">技术</option>
+            <option value="life">生活</option>
+            <option value="travel">旅行</option>
+          </select>
+        </label>
+        <label class="field"><span>标题</span><input type="text" name="title" placeholder="文章标题" maxlength="60" required /></label>
+        <label class="field"><span>封面图链接（可选）</span><input type="url" name="cover" placeholder="https://..." /></label>
+        <label class="field"><span>正文</span><textarea name="body" rows="6" placeholder="正文内容。单独一行的 ![图片链接] 会被渲染成图片，空行分段。" maxlength="5000" required></textarea></label>
+        <div class="form__foot"><button type="button" class="btn btn--ghost" data-close>取消</button><button type="submit" class="btn btn--primary">保存</button></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 弹窗：作品 -->
+  <div class="modal" id="modalWork" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <div class="modal__head"><h3 class="modal__title">添加作品</h3><button class="modal__close" data-close>✕</button></div>
+      <form class="form" data-form="work">
+        <label class="field"><span>名称</span><input type="text" name="name" placeholder="作品名称" maxlength="40" required /></label>
+        <label class="field"><span>角色 / 定位</span><input type="text" name="role" placeholder="例如：独立开发 / 主创" maxlength="40" /></label>
+        <label class="field"><span>简介</span><textarea name="desc" rows="3" placeholder="一句话说清这个作品" maxlength="200"></textarea></label>
+        <label class="field"><span>技术栈</span><input type="text" name="stack" placeholder="例如：HTML / CSS / JS" maxlength="80" /></label>
+        <label class="field"><span>封面图链接（可选）</span><input type="url" name="cover" placeholder="https://..." /></label>
+        <label class="field"><span>链接（可选）</span><input type="url" name="link" placeholder="https://..." /></label>
+        <div class="form__foot"><button type="button" class="btn btn--ghost" data-close>取消</button><button type="submit" class="btn btn--primary">保存</button></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 弹窗：足迹 -->
+  <div class="modal" id="modalPhoto" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <div class="modal__head"><h3 class="modal__title">添加足迹</h3><button class="modal__close" data-close>✕</button></div>
+      <form class="form" data-form="photo">
+        <label class="field"><span>地点名</span><input type="text" name="place" placeholder="例如：北京" maxlength="30" required /></label>
+        <label class="field"><span>日期</span><input type="date" name="date" required /></label>
+        <label class="field"><span>标题 / 备注</span><input type="text" name="title" placeholder="在那儿发生了什么" maxlength="60" /></label>
+        <label class="field"><span>经度</span><input type="number" step="any" name="lng" placeholder="如 116.40" /></label>
+        <label class="field"><span>纬度</span><input type="number" step="any" name="lat" placeholder="如 39.90" /></label>
+        <label class="field"><span>照片（可选，带 GPS 会自动填经纬度）</span><input type="file" name="url" accept="image/*" /></label>
+        <p class="field-hint">不知道经纬度？选一张手机拍的、带定位的照片，点保存即可自动标点。</p>
+        <div class="form__foot"><button type="button" class="btn btn--ghost" data-close>取消</button><button type="submit" class="btn btn--primary">保存</button></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 弹窗：情绪垃圾桶 -->
+  <div class="modal" id="modalTrash" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <div class="modal__head"><h3 class="modal__title">🗑 情绪垃圾桶</h3><button class="modal__close" data-close>✕</button></div>
+      <form class="form" data-form="trash">
+        <div class="field"><span>此刻是哪种心情？</span><div class="mood-grid" data-mood="trash"></div></div>
+        <label class="field"><span>把情绪倒出来（可选）</span><textarea name="text" rows="5" placeholder="不用修饰，想说什么说什么。" maxlength="1000"></textarea></label>
+        <div class="form__foot"><button type="button" class="btn btn--ghost" data-close>先不写了</button><button type="submit" class="btn btn--primary">倒进垃圾桶</button></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 弹窗：关于 -->
+  <div class="modal" id="modalAbout" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <div class="modal__head"><h3 class="modal__title">编辑关于</h3><button class="modal__close" data-close>✕</button></div>
+      <form class="form" data-form="about">
+        <label class="field"><span>名字 / 昵称</span><input type="text" name="name" maxlength="20" /></label>
+        <label class="field"><span>一句话标语</span><input type="text" name="slogan" maxlength="60" /></label>
+        <label class="field"><span>头像链接（可选）</span><input type="url" name="avatar" placeholder="https://..." /></label>
+        <label class="field"><span>首屏主视觉图链接（可选，一张横图更有电影感）</span><input type="url" name="hero" placeholder="https://..." /></label>
+        <label class="field"><span>关于我</span><textarea name="about" rows="5" placeholder="介绍一下你自己" maxlength="800"></textarea></label>
+        <div class="form__foot"><button type="button" class="btn btn--ghost" data-close>取消</button><button type="submit" class="btn btn--primary">保存</button></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 弹窗：文章详情 -->
+  <div class="modal" id="modalPostView" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel modal__panel--wide">
+      <div class="modal__head"><h3 class="modal__title" id="postViewTitle"></h3><button class="modal__close" data-close>✕</button></div>
+      <div class="post-view" id="postViewBody"></div>
+    </div>
+  </div>
+
+  <script src="vendor/echarts.min.js"></script>
+  <script src="js/china-geo.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

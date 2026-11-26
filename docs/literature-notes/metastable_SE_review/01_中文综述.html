@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>01_中文综述</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+    @page { size: A4; margin: 15mm 14mm; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: "Times New Roman", "SimSun", "Songti SC", "Noto Serif CJK SC", serif;
+      font-size: 10pt;
+      line-height: 1.45;
+      color: #111;
+      text-align: justify;
+    }
+    h1 {
+      text-align: center;
+      font-size: 16pt;
+      font-weight: 700;
+      margin: 0 0 4mm 0;
+    }
+    h2 {
+      font-size: 12.5pt;
+      font-weight: 700;
+      margin: 6mm 0 2mm 0;
+      border-bottom: 0.6pt solid #444;
+      padding-bottom: 1mm;
+    }
+    h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      margin: 3mm 0 1mm 0;
+    }
+    p { margin: 0 0 2mm 0; }
+    blockquote { color:#555; border-left:2pt solid #ccc; margin:0 0 2mm 2mm; padding-left:2mm; }
+    em { font-style: italic; }
+    strong { font-weight: 700; }
+    /* three-line table */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 3mm 0;
+      font-size: 9.5pt;
+      border-top: 1.4pt solid #000;
+      border-bottom: 1.4pt solid #000;
+    }
+    thead th { border-bottom: 0.8pt solid #000; font-weight: 700; text-align: left; padding: 1.5mm 2mm; }
+    td { border: none; padding: 1.2mm 2mm; vertical-align: top; }
+    tr { page-break-inside: avoid; }
+    /* references */
+    .ref {
+      text-indent: -2em;
+      padding-left: 2em;
+      margin: 0 0 1mm 0;
+      font-size: 9.5pt;
+      line-height: 1.4;
+    }
+    .ref a, a { color: #0645ad; text-decoration: none; }
+    code { font-family: "Consolas", monospace; font-size: 9pt; }
+  </style>
+</head>
+<body>
+<h1
+id="亚稳相固态电解质的制备稳定机制与离子输运研究进展">亚稳相固态电解质的制备、稳定机制与离子输运研究进展</h1>
+<p><strong>王鹏展</strong></p>
+<p><strong>摘要</strong>：固态电解质是全固态锂电池实现高安全、高能量密度的核心部件。传统研究多聚焦热力学稳定相，而一类”常压室温下热力学非基态、但借动力学势垒得以稳定存在的晶相”——亚稳相固态电解质，因其往往伴随异常高的离子电导率而日益受到关注。然而，“高导”与”失稳”构成其内在矛盾：亚稳相一旦越过相变势垒便转为稳定相，电导率骤降甚至完全失效。本文首先界定亚稳相概念并严格区分非晶相，进而按硫化物(<sub>60%)、卤化物(</sub>25%)、氧化物(~15%)的权重梳理其四类制备路径（高温淬冷、高压捕获、机械化学诱导、界面限域），归纳”热力学稳定化”与”动力学锁相”两类稳定机制，并从晶格结构起源剖析高导成因与相变失效机理，最后就原位表征追踪相变、高通量计算预测亚稳相、规模化低能耗制备三方面提出展望。</p>
+<p><strong>关键词</strong>：亚稳相固态电解质；离子输运；相变；动力学稳定化；全固态锂电池</p>
+<h2 id="引言">1 引言</h2>
+<p>全固态锂电池以固态电解质替代易燃液态电解液，被视为突破锂枝晶与热失控瓶颈的根本路径，而离子在固态框架中的输运机制直接决定其性能上限[1]。在众多固态电解质体系中，研究者长期致力于寻找室温离子电导率尽可能接近甚至超越液态电解液（~10⁻²
+S·cm⁻¹）的材料。一个引人注目的现象是：若干室温离子电导率最高的硫化物、卤化物与氧化物，其传导相在常压室温下并非热力学基态，而是借动力学势垒”冻结”下来的<strong>亚稳相</strong>。</p>
+<p>本文采用如下界定：亚稳相指<strong>常压室温下热力学非基态、但可通过动力学势垒稳定存在的晶相</strong>[2]。需特别排除两类常被误归的情形：①仅尺寸缩小的纳米晶（结构本身仍为基态）与②缺陷富集的稳态相（属基态结构内的点缺陷/无序，不改变化学计量基态归属）。由此得到判定口诀——“结构有序≠基态”，本文只把”有序晶相且非基态”算作亚稳相。</p>
+<p>亚稳相的生成通常可归入四类成因：（i）<strong>高温淬冷保留</strong>——高温亚稳晶型在快冷中”冻结”，如
+α-Li₃PS₄
+经快热快淬获得并留存[2]；（ii）<strong>高压卸压捕获</strong>——高压相在卸压后动力学留存；（iii）<strong>机械化学诱导生成</strong>——球磨/机械合金化驱动非平衡相变，生成亚稳多晶型[3]；（iv）<strong>外延/界面限域稳定</strong>——薄膜或异质界面处的外延应变、限域效应锁住亚稳相，如射频溅射薄膜中稳定的微量
+Li₃OCl 反钙钛矿相[4]。</p>
+<p>必须与非晶相严格区分：非晶/玻璃态（如 Li₇P₃S₁₁ 玻璃、非晶
+LiPON）属无序网络，并不参与”晶相竞赛”，其失效方式是结晶化而非相变；而亚稳相是长程有序晶相，失效方式为相变至稳定相、电导骤降[5][6]。二者在本文中单列对照，不混淆。</p>
+<p>值得指出的是，部分超高导硫化物的”亚稳”属性存在学术争议。以
+Li₁₀GeP₂S₁₂（LGPS）及其类为例，有观点认为其为准稳态/高温相淬冷产物，亦有工作将其归为可热力学稳定相，本文对此<strong>不做绝对化定性</strong>，仅陈述各方证据并标注【争议】[7][8]。</p>
+<p>由此引出贯穿全文的核心矛盾：<strong>亚稳相的高离子电导率与其热力学不稳定性互为表里</strong>——开放/无序的骨架带来低迁移势垒，却也使其易于越过相变势垒而失稳。下文围绕这一矛盾展开。</p>
+<h2 id="分类与制备">2 分类与制备</h2>
+<h3 id="硫化物亚稳相主体60">2.1 硫化物亚稳相（主体，~60%）</h3>
+<p>硫化物体系是亚稳相固态电解质研究的主力。Deiseroth 等[9]开创的
+Li₆PS₅X（X=Cl, Br,
+I）argyrodite（银硫矿型）家族，以晶体锂超离子导体身份奠定了后续硫化物亚稳相研究的基础。其多晶型与亚稳性随后被系统展开。</p>
+<p>最典型的”高导—失稳”案例来自硫代磷酸锂 Li₃PS₄ 的多晶型研究。Miura
+等[2]通过原位同步辐射 XRD 与 DFT 计算构建温度–尺寸相图与
+TTT（时间–温度–相变）图，给出定量范式：常压室温平衡相为 γ-Li₃PS₄，而 α
+相仅在 &gt;480 °C 热力学稳定；α 相室温电导率 σα &gt; 10⁻³ S·cm⁻¹，而 γ
+相仅 σγ = 10⁻⁷ S·cm⁻¹，相差约四个数量级。该亚稳 α
+相可通过非晶玻璃前驱体以 400 °C/min 快热（243–374 °C，约 10
+s）后淬火”冻结”保留，慢热则得 β 相。其纳米稳定机制在于 α
+相平均表面能最低（α 0.43 / β 0.50 / γ 0.58
+J·m⁻²），在所有温度下成核势垒最低，短加热抑制晶粒长大使颗粒停留在纳米尺度而热力学稳定；块体相变温度
+γ→β 约 296 °C、β→α 约 385 °C，当粒径降至 8.5 nm 半径时分别被压低至 127
+°C 与 180 °C——这正是”动力学锁相”的定量范本。</p>
+<p>除高温淬冷外，机械化学是非平衡合成的另一主路径。高能球磨可诱导生成
+argyrodite 亚稳相[3]。低温 NMR 直接探测到 argyrodite 中极快的 Li⁺
+跳跃与长程动力学[10][11]，说明其局部迁移率可达 10⁻²–10⁻³ S·cm⁻¹
+量级（社群公认范围，精确数值【证据缺口】）。元素/卤素取代（如 Ge
+取代、卤素替代）可进一步将电导调控至 ~10⁻² S·cm⁻¹ 量级[12][13]。</p>
+<h3 id="卤化物亚稳相25">2.2 卤化物亚稳相（~25%）</h3>
+<p>卤化物固态电解质以 Li₃MCl₆（M=Y, In, Er,
+Sc…）为代表，近年因高电压兼容性与对正极良好匹配而兴起。Asano
+等[14]报道的 Li₃YCl₆/Li₃YBr₆ 冷压粉末室温电导率超 1 mS·cm⁻¹，且与 LiCoO₂
+组装的块体全固态电池库伦效率达 94%，无需正极包覆。</p>
+<p>本方向的重点在于<strong>多晶型相变差异</strong>。Li₃MX₆ 存在单斜
+C2/m、正交 Pnma、三方等多种多晶型，不同多晶型对应不同的 Li
+迁移路径与势垒；高温或快冷所得亚稳多晶型往往比稳定相具更开放的骨架、更低势垒与更高电导，但受热/应力易相变衰减[15]。Li
+亚晶格无序（阳离子空位/占据）被证实是卤化物高导的结构来源，与硫化物阴离子无序机制类比[16]。此外，一类明确以”metastable
+chloride”为题的亚稳氯化物电解质，凭借亚稳相提升了材料可塑性（formability），适用于无负极锂金属电池[17]——这是卤化物中”直接利用亚稳相改善加工性”的典型案例。各多晶型电导率、活化能与相变温度的系统对比因缺乏
+OA 全文而【证据缺口】，下文以定性描述加代表文献锚定。</p>
+<h3 id="氧化物亚稳相精简15">2.3 氧化物亚稳相（精简，~15%）</h3>
+<p>氧化物方向本文仅保留反钙钛矿（anti-perovskite）与亚稳石榴石两类。富锂反钙钛矿
+Li₃OCl 等具三维 Li⁺
+迁移通道，是潜在的超离子导体[18]，但其室温热力学不稳定、易潮解成为瓶颈[19]。Turrell
+等[4]以 RF 磁控溅射在薄膜中稳定出少量与立方 Li₃OCl
+晶格参数一致的亚稳反钙钛矿相，FT-IR 证实无 O–H 键、确为 Li₃OCl
+而非热力学稳定的羟基卤化物 Li₂OHCl；该相在中等温度退火时分解为 Li₂O +
+LiCl，直接印证其亚稳本质，薄膜中 Li⁺ 电导率仅约 10⁻⁸
+S·cm⁻¹（低相纯度所致）。这正面演示了”界面限域（薄膜）“可短期稳定亚稳相，却也暴露其稳定难、导电低的现实。应变/界面调控可提升
+Li₃OCl 的 Li 扩散[20]。</p>
+<p>石榴石型
+Li₇La₃Zr₂O₁₂（LLZO）的立方相是亚稳高导相，四方为低温稳定相，需掺杂（Al/Ta
+等）与快冷维持[21][22]；高熵（多组分）掺杂可进一步抬升稳定性与性能[23]。硫化物、卤化物、氧化物三类共同指向同一矛盾：亚稳结构带来高导，也埋下失稳隐患。</p>
+<h2 id="稳定机制">3 稳定机制</h2>
+<p>亚稳相的稳定可归为两类机制，二者常协同作用。</p>
+<h3 id="热力学稳定化改变自由能面">3.1 热力学稳定化（改变自由能面）</h3>
+<p>通过掺杂取代、高熵设计等手段改变相图自由能面，使亚稳相相对稳定性抬升或竞争相被抑制。Ong
+等[8]以第一性原理量化 LGPS 家族与竞争相的自由能关系，为”亚稳 vs
+基态”判定提供了计算框架。具体实践中，氧掺杂可提升 argyrodite
+的电化学稳定性[24]；卤化物中 Al³⁺ 等异价取代调控 Li₂ZrCl₆
+的电导与稳定性[25]；LLZO
+的掺杂与高熵石榴石设计亦属此列[22][23]。这类策略本质是”改自由能面”，从源头提高亚稳相的热力学容限。</p>
+<h3 id="动力学锁相提高相变势垒">3.2 动力学锁相（提高相变势垒）</h3>
+<p>在不（或难以）改变热力学的前提下，通过提高相变活化势垒将亚稳相”锁住”：①<strong>快淬/球磨</strong>——α-Li₃PS₄
+的快热快淬、LLZO 的快冷、机械化学 argyrodite
+均属此路[2][3][22]；②<strong>纳米限域</strong>——α-Li₃PS₄
+因表面能最低而在纳米尺度热力学稳定，8.5 nm
+时相变温度被显著压低[2]；③<strong>界面应变</strong>——应变可调控 Li₃OCl
+的离子扩散与电导[20]；④<strong>外延/薄膜限域</strong>——RF 溅射将微量
+Li₃OCl
+锁在薄膜亚稳相[4]；⑤<strong>包覆</strong>——抑制正极/电解质界面副反应。动力学锁相是当前维持高导亚稳相最主要的实用手段，但锁相本身受热/应力历史敏感，循环中长期稳定性仍是挑战。</p>
+<h2 id="离子输运特征与界面挑战">4 离子输运特征与界面挑战</h2>
+<h3 id="高电导的晶格结构起源">4.1 高电导的晶格结构起源</h3>
+<p>亚稳高导相的共性因果链为：<strong>亚稳结构 → 阴离子/阳离子亚晶格无序
++ 开放骨架 → 低 Li⁺ 迁移势垒 → 超高 σ</strong>。在 argyrodite
+中，阴离子（S/Cl）亚晶格的无序与旋转重排被 ³¹P NMR
+证实与超离子导电相关[26]，阴离子无序降低 Li⁺ 迁移势垒的机制亦有 AIMD
+研究支撑[27]；卤化物中 Li
+亚晶格无序同样促进输运[16]。更一般地，超离子导体中阳离子的有序→无序转变被原位高分辨电镜直接观测：Cu₂₋ₓSe
+在 ~140 °C
+发生空位有序相到超离子相的转变，阳离子亚晶格无序化使其获得多类间隙位访问权、从而实现超离子导电[28]。尽管
+Cu₂₋ₓSe
+非锂体系，其”无序→超离子”的因果链是通用原理，为亚稳结构高导提供了机制级佐证。需要强调的是，亚稳相的”开放/无序”恰是其高导与易失稳的共同根源。</p>
+<h3 id="相变失效">4.2 相变失效</h3>
+<p>亚稳相的致命弱点是相变失效。α-Li₃PS₄ 一旦受热越过势垒转回 γ
+相，电导从 &gt;10⁻³ 骤降至 10⁻⁷ S·cm⁻¹（约四个数量级）[2]；Li₃OCl
+薄膜相在退火时直接分解为 Li₂O +
+LiCl，彻底失去传导相[4]。卤化物多晶型在热/应力下亦可能由高导亚稳相向低导稳定相转变【证据缺口】。相变失效的边界（温度、晶粒尺寸、应力）正是动力学锁相要回答的问题。</p>
+<h3 id="界面难题">4.3 界面难题</h3>
+<p>即便本体亚稳相被成功锁定，界面仍构成瓶颈：硫化物对正极与锂负极易发生界面副反应；卤化物需解决与高电压正极的兼容性；氧化物薄膜相纯度低、电导受限[4][29]。界面处的局部化学/应力环境还会诱发亚稳相提前相变，使本体稳定策略在界面层失效。</p>
+<h2 id="现存问题与展望">5 现存问题与展望</h2>
+<p>尽管亚稳相固态电解质展现出诱人的高导潜力，以下问题亟待突破：</p>
+<p><strong>5.1 原位表征追踪相变。</strong>
+现有研究多依赖事后结构判定，缺乏亚稳相在合成—服役全程的相变实时追踪。结合
+TTT
+图[2]与原位电镜对有序—无序转变的观测[28]，发展时间分辨率更高的原位同步辐射、原位电镜与谱学联用，是厘清”锁相—失稳”临界条件的必由之路。</p>
+<p><strong>5.2 高通量计算预测亚稳相。</strong>
+亚稳相的搜索空间巨大，依赖试错成本高。以相图与自由能面计算为框架[8]，结合机器学习势与高通量筛选，有望在设计阶段预测哪些组分/多晶型具备”低势垒高导且可被锁相”的窗口，指导实验。</p>
+<p><strong>5.3 规模化低能耗制备路线。</strong>
+快淬、球磨等路径能耗与一致性仍是产业化障碍。水相/酸辅助合成纯相 Li₃InCl₆
+等卤化物的进展，展示了规模化、低成本、对空气/水更稳定的可能方向[30]；机械化学路径亦具备低能耗潜力[3]。如何在低能耗下保持亚稳相的动力学锁相，是走向实用的关键。</p>
+<h2 id="结语">结语</h2>
+<p>亚稳相固态电解质以”高导源于开放无序骨架、失稳亦源于此”的统一图景，为突破固态电解质电导瓶颈提供了独特路径。本文界定的概念边界、四类成因、两类稳定机制与”高导—失稳”核心矛盾，为理解该类材料提供了框架。唯有将热力学稳定化与动力学锁相机理解耦又协同，并借助原位表征与计算预测锁定可规模化维持的亚稳窗口，方能让这类”被冻结的高导相”真正走向全固态电池应用。</p>
+<hr />
+<p><strong>表 1
+典型亚稳相与对应稳定相的核心性能对比（三线表）</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr>
+<th>材料（体系）</th>
+<th>相属性</th>
+<th>室温离子电导率 σ</th>
+<th>活化能 Ea</th>
+<th>相变/分解温度</th>
+<th>主要稳定策略</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>α-Li₃PS₄（硫化物）</td>
+<td>亚稳（高温相淬冷）</td>
+<td>&gt;10⁻³ S·cm⁻¹[2]</td>
+<td>【证据缺口】</td>
+<td>块体 β→α ~385 °C；8.5 nm 压至 ~180 °C[2]</td>
+<td>快淬 + 纳米限域</td>
+</tr>
+<tr>
+<td>γ-Li₃PS₄（硫化物）</td>
+<td>稳定基态（对照）</td>
+<td>10⁻⁷ S·cm⁻¹[2]</td>
+<td>【证据缺口】</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Argyrodite Li₆PS₅X（硫化物）</td>
+<td>多晶型含亚稳相</td>
+<td>~10⁻³–10⁻² S·cm⁻¹（社群公认）</td>
+<td>【证据缺口】</td>
+<td>多晶型相变</td>
+<td>阴离子无序 + 掺杂取代</td>
+</tr>
+<tr>
+<td>LGPS Li₁₀GeP₂S₁₂（硫化物）</td>
+<td>【争议】准稳态/稳定相</td>
+<td>~1.2×10⁻² S·cm⁻¹（社群公认）</td>
+<td>【证据缺口】</td>
+<td>【争议】</td>
+<td>【争议】</td>
+</tr>
+<tr>
+<td>Li₃YCl₆ / Li₃YBr₆（卤化物）</td>
+<td>多晶型含亚稳相</td>
+<td>&gt;1 mS·cm⁻¹（冷压）[14]</td>
+<td>【证据缺口】</td>
+<td>多晶型差异【证据缺口】</td>
+<td>机械化学 + 组分调控</td>
+</tr>
+<tr>
+<td>Li₃OCl 反钙钛矿（氧化物）</td>
+<td>亚稳（薄膜限域）</td>
+<td>~10⁻⁸ S·cm⁻¹（薄膜）[4]</td>
+<td>【证据缺口】</td>
+<td>退火分解为 Li₂O+LiCl[4]</td>
+<td>薄膜外延/限域</td>
+</tr>
+<tr>
+<td>立方 LLZO（氧化物石榴石）</td>
+<td>亚稳高导相</td>
+<td>~10⁻⁴–10⁻³ S·cm⁻¹（背景）</td>
+<td>~0.3 eV（背景）</td>
+<td>四方→立方需掺杂/快冷维持</td>
+<td>掺杂 + 快冷</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：表中”社群公认/背景”数值来自非 OA
+顶刊或综述级报道，未做全文逐页核验，仅作量级参考；带【证据缺口】者表示缺乏
+OA 全文精确锚定，严禁等同于实测值。</p>
+</blockquote>
+<h2 id="参考文献">参考文献</h2>
+<div class="ref">[1] Bachman, Muy, Grimaud, 等. Inorganic Solid-State Electrolytes for
+Lithium Batteries: Mechanisms and Properties Governing Ion
+Conduction[J]. Chemical Reviews, 2015, 116(1): 140-162.
+DOI:10.1021/acs.chemrev.5b00563. [2] Miura, Baek, Fujii, 等.
+Time-Temperature-Transformation Diagrams to Navigate the Nucleation and
+Quenchability of Metastable α-Li₃PS4[J]. Nature Communications, 2026,
+17(1). DOI:10.1038/s41467-026-76661-7. [3] Boulineau, Courty, Tarascon,
+等. Mechanochemical synthesis of Li-argyrodite Li6PS5X (X=Cl, Br, I) as
+sulfur-based solid electrolytes for all solid state batteries
+application[J]. Solid State Ionics, 2012, 221: 1-5.
+DOI:10.1016/j.ssi.2012.06.008. [4] Turrell, Lee, Siniscalchi, 等.
+Fabrication of thin solid electrolytes containing a small volume of an
+Li₃OCl-type antiperovskite phase by RF magnetron sputtering[J].
+Materials Advances, 2022, 3(24): 8995-9008. DOI:10.1039/d2ma00971d. [5]
+Hayashi, Minami, Ujiie, 等. Preparation and ionic conductivity of
+Li7P3S11− glass-ceramic electrolytes[J]. Journal of Non-Crystalline
+Solids, 2010, 356(44-49): 2670-2673.
+DOI:10.1016/j.jnoncrysol.2010.04.048. [6] Senevirathne, Day, Gross, 等.
+A new crystalline LiPON electrolyte: Synthesis, properties, and
+electronic structure[J]. Solid State Ionics, 2013, 233: 95-101.
+DOI:10.1016/j.ssi.2012.12.013. [7] Kamaya, Homma, Yamakawa, 等. A
+lithium superionic conductor[J]. Nature Materials, 2011, 10(9): 682-686.
+DOI:10.1038/nmat3066. [8] Ong, Mo, Richards, 等. Phase stability,
+electrochemical stability and ionic conductivity of the Li₁₀±₁MP₂X₁₂ (M
+= Ge, Si, Sn, Al or P, and X = O, S or Se) family of superionic
+conductors[J]. Energy Environ. Sci., 2013, 6(1): 148-156.
+DOI:10.1039/c2ee23355j. [9] Deiseroth, Kong, Eckert, 等. Li₆PS₅X: A
+Class of Crystalline Li‐Rich Solids With an Unusually High Li+
+Mobility[J]. Angewandte Chemie International Edition, 2008, 47(4):
+755-758. DOI:10.1002/anie.200703900. [10] Epp, Gün, Deiseroth, 等.
+Highly Mobile Ions: Low-Temperature NMR Directly Probes Extremely Fast
+Li+ Hopping in Argyrodite-Type Li₆PS₅Br[J]. The Journal of Physical
+Chemistry Letters, 2013, 4(13): 2118-2123. DOI:10.1021/jz401003a. [11]
+Epp, Gün, Deiseroth, 等. Long-range Li+ dynamics in the lithium
+argyrodite Li7PSe6 as probed by rotating-frame spin–lattice relaxation
+NMR[J]. Physical Chemistry Chemical Physics, 2013, 15(19): 7123.
+DOI:10.1039/c3cp44379e. [12] Kraft, Ohno, Zinkevich, 等. Inducing High
+Ionic Conductivity in the Lithium Superionic Argyrodites Li 6+ x P 1– x
+Ge x S₅I for All-Solid-State Batteries[J]. Journal of the American
+Chemical Society, 2018, 140(47): 16330-16339. DOI:10.1021/jacs.8b10282.
+[13] Adeli, Bazak, Park, 等. Boosting Solid‐State Diffusivity and
+Conductivity in Lithium Superionic Argyrodites by Halide
+Substitution[J]. Angewandte Chemie International Edition, 2019, 58(26):
+8681-8686. DOI:10.1002/anie.201814222. [14] Asano, Sakai, Ouchi, 等.
+Solid Halide Electrolytes with High Lithium‐Ion Conductivity for
+Application in 4 V Class Bulk‐Type All‐Solid‐State Batteries[J].
+Advanced Materials, 2018, 30(44). DOI:10.1002/adma.201803075. [15] Hu,
+Zhu, Duan, 等. Revealing the Pnma crystal structure and ion-transport
+mechanism of the Li3YCl6 solid electrolyte[J]. Cell Reports Physical
+Science, 2023, 4(6): 101428. DOI:10.1016/j.xcrp.2023.101428. [16]
+Schlem, Banik, Ohno, 等. Insights into the Lithium Sub-structure of
+Superionic Conductors Li₃YCl₆and Li₃YBr₆[J]. Chemistry of Materials,
+2021, 33(1): 327-337. DOI:10.1021/acs.chemmater.0c04352. [17] Tanibata,
+Takimoto, Nakano, 等. Metastable Chloride Solid Electrolyte with High
+Formability for Rechargeable All-Solid-State Lithium Metal Batteries[J].
+ACS Materials Letters, 2020, 2(8): 880-886.
+DOI:10.1021/acsmaterialslett.0c00127. [18] Zhao, Daemen. Superionic
+Conductivity in Lithium-Rich Anti-Perovskites[J]. Journal of the
+American Chemical Society, 2012, 134(36): 15042-15047.
+DOI:10.1021/ja305709z. [19] Li, Zhu, Wang, 等. Reaction mechanism
+studies towards effective fabrication of lithium-rich anti-perovskites
+Li3OX (X= Cl, Br)[J]. Solid State Ionics, 2016, 284: 14-19.
+DOI:10.1016/j.ssi.2015.11.027. [20] Lin, Zhang, Dong. Insight into the
+effect of strain on Li-ion diffusivity and conductivity in Li3OCl
+anti-perovskite solid-state electrolyte: A perspective from AIMD
+simulations[J]. Journal of Electroanalytical Chemistry, 2024, 961:
+118231. DOI:10.1016/j.jelechem.2024.118231. [21] Murugan, Thangadurai,
+Weppner. Fast Lithium Ion Conduction in Garnet‐Type Li₇La₃Zr₂O₁₂[J].
+Angewandte Chemie International Edition, 2007, 46(41): 7778-7781.
+DOI:10.1002/anie.200701144. [22] Wang, Xia, Hu, 等. Phase transition and
+conductivity improvement of tetragonal fast lithium ionic electrolyte
+Li7La3Zr2O12[J]. Solid State Ionics, 2013, 253: 137-142.
+DOI:10.1016/j.ssi.2013.09.029. [23] Mei. Advances in high entropy doping
+of Li7La3Zr2O12 (LLZO) garnet solid electrolyte: Properties and
+feasibility analysis[J]. Applied and Computational Engineering, 2023,
+23(1): 102-108. DOI:10.54254/2755-2721/23/20230619. [24] Indrawan,
+Matsuda, Hikima, 等. Enhanced electrochemistry stability of oxygen doped
+Li6PS5Cl argyrodite solid electrolyte by liquid-phase synthesis[J].
+Solid State Ionics, 2023, 401: 116344. DOI:10.1016/j.ssi.2023.116344.
+[25] Gao, Bai, Sun, 等. Aliovalent substitution of Al3+ in Li2ZrCl6
+solid electrolyte towards large-scale application[J]. Energy Storage
+Materials, 2024, 70: 103444. DOI:10.1016/j.ensm.2024.103444. [26]
+Hanghofer, Gadermaier, Wilkening. Fast Rotational Dynamics in
+Argyrodite-Type Li6PS5X (X: Cl, Br, I) as Seen by 31P Nuclear Magnetic
+Relaxation─On Cation–Anion Coupled Transport in Thiophosphates[J].
+Chemistry of Materials, 2019, 31(12): 4591-4597.
+DOI:10.1021/acs.chemmater.9b01435. [27] Morgan. Mechanistic Origin of
+Superionic Lithium Diffusion in Anion-Disordered Li6PS5X Argyrodites[J].
+ChemRxiv, 2021. DOI:10.26434/chemrxiv.12349703. [28] Heo, Dumett Torres,
+Banerjee, 等. In-situ electron microscopy mapping of an order-disorder
+transition in a superionic conductor[J]. Nature Communications, 2019,
+10(1). DOI:10.1038/s41467-019-09502-5. [29] Yu, Ye, Zhu, 等. Optimized
+Interfaces in Anti-Perovskite Electrolyte-Based Solid-State Lithium
+Metal Batteries for Enhanced Performance[J]. Frontiers in Chemistry,
+2021, 9. DOI:10.3389/fchem.2021.786956. [30] Wen, Sheng, Zhang, 等. The
+effect of HCl on achieving pure Li3InCl6 by water-mediated synthesis
+process[J]. Journal of Alloys and Compounds, 2024, 984: 173973.
+DOI:10.1016/j.jallcom.2024.173973.</div>
+</body>
+</html>

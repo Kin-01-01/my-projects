@@ -1,0 +1,92 @@
+<view class="page {{themeClass}}">
+  <!-- 顶部：标题 + 概览统计 -->
+  <view class="hero">
+    <view class="hero-blob hero-blob-a"></view>
+    <view class="hero-blob hero-blob-b"></view>
+
+    <view class="hero-row">
+      <view class="hero-left">
+        <text class="hero-title">我的题库</text>
+        <text class="hero-sub">{{hasBanks ? '挑一个题库，继续刷' : '还没有题库，先载入一份吧'}}</text>
+      </view>
+      <view class="icon-btn" bindtap="onToggleTheme" hover-class="icon-btn-hover">{{themeIcon}}</view>
+    </view>
+
+    <view wx:if="{{hasBanks}}" class="stat-strip">
+      <view class="stat">
+        <text class="stat-num">{{totalBanks}}</text>
+        <text class="stat-label">题库</text>
+      </view>
+      <view class="stat-line"></view>
+      <view class="stat">
+        <text class="stat-num">{{totalQuestions}}</text>
+        <text class="stat-label">题目</text>
+      </view>
+      <view class="stat-line"></view>
+      <view class="stat">
+        <text class="stat-num">{{totalAnswered}}</text>
+        <text class="stat-label">已答</text>
+      </view>
+      <view class="stat-line"></view>
+      <view class="stat">
+        <text class="stat-num stat-num-accent">{{overallAccuracy}}%</text>
+        <text class="stat-label">正确率</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="wrap">
+    <!-- 题库列表 -->
+    <view wx:if="{{hasBanks}}" class="bank-list">
+      <view
+        class="bank-card"
+        wx:for="{{banks}}"
+        wx:key="id"
+        data-id="{{item.id}}"
+        bindtap="onTapBank"
+        hover-class="bank-card-hover"
+      >
+        <view class="bank-top">
+          <view class="bank-name">{{item.name}}</view>
+          <view class="bank-more" data-id="{{item.id}}" catchtap="onTapMore" hover-class="bank-more-hover">⋯</view>
+        </view>
+
+        <view class="bank-meta">
+          <text class="bank-count">{{item.count}}</text>
+          <text class="bank-unit">题</text>
+          <text class="bank-dot">·</text>
+          <text class="bank-meta-text">已答 {{item.answered}}</text>
+          <text class="bank-dot">·</text>
+          <text class="bank-meta-text">正确率 {{item.accuracy}}%</text>
+        </view>
+
+        <view class="bank-progress">
+          <view class="bank-progress-in" style="width:{{item.progress}}%"></view>
+        </view>
+
+        <view class="bank-foot">
+          <text class="bank-time">{{item.lastPracticedText}}</text>
+          <text wx:if="{{item.wrongCount > 0}}" class="bank-wrong">错题 {{item.wrongCount}}</text>
+        </view>
+      </view>
+
+      <view class="tips">
+        <text class="tips-text">点卡片选刷题模式 · 点「⋯」重命名 / 导出 / 删除</text>
+      </view>
+    </view>
+
+    <!-- 空态 -->
+    <view wx:elif="{{ready}}" class="empty">
+      <text class="empty-emoji">📚</text>
+      <text class="empty-title">还没有题库</text>
+      <text class="empty-text">载入内置题库直接拿到马原 912 题，也可以导入自己的题库。</text>
+      <view class="btn btn-primary empty-btn" bindtap="onTapLoadBuiltin" hover-class="btn-hover">载入内置题库 · 912 题</view>
+      <view class="btn btn-ghost empty-btn empty-btn-2" bindtap="onTapLoadSample" hover-class="btn-hover">先看看 20 题示例</view>
+    </view>
+
+    <view class="tab-space"></view>
+  </view>
+
+  <!-- 悬浮导入按钮 -->
+  <view class="fab" bindtap="onTapImport" hover-class="fab-hover">＋</view>
+</view>

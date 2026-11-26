@@ -1,0 +1,835 @@
+=== PAGE 1 ===
+In Situ Measurements of the Mechanical Properties of
+Electrochemically Deposited Li2CO3 and Li2O Nanorods
+Hongjun Ye, Siwei Gui, Zaifa Wang, Jingzhao Chen, Qiunan Liu, Xuedong Zhang, Peng Jia, Yushu Tang,
+Tingting Yang, Congcong Du, Lin Geng, Hui Li, Qiushi Dai, Yongfu Tang,* Liqiang Zhang,* Hui Yang,*
+and Jianyu Huang*
+Cite This: ACS Appl. Mater. Interfaces 2021, 13, 44479−44487
+Read Online
+ACCESS
+Metrics & More
+Article Recommendations
+*
+sı
+Supporting Information
+ABSTRACT: Solid-electrolyte interface (SEI) is “the most
+important but least understood (component) in rechargeable Li-
+ion batteries”. The ideal SEI requires high elastic strength and can
+resist the penetration of a Li dendrite mechanically, which is vital
+for inhibiting the dendrite growth in lithium batteries. Even though
+Li2CO3 and Li2O are identiﬁed as the major components of SEI,
+their mechanical properties are not well understood. Herein, SEI-
+related materials such as Li2CO3 and Li2O were electrochemically
+deposited using an environmental transmission electron micros-
+copy (ETEM), and their mechanical properties were assessed by in
+situ atomic force microscopy (AFM) and inverse ﬁnite element
+simulations. Both Li2CO3 and Li2O exhibit nanocrystalline
+structures and good plasticity. The ultimate strength of Li2CO3
+ranges from 192 to 330 MPa, while that of Li2O is less than 100 MPa. These results provide a new understanding of the SEI and its
+related dendritic problems in lithium batteries.
+KEYWORDS: Li2CO3 and Li2O, mechanical properties, in situ environmental transmission electron microscopy (ETEM),
+atomic force microscopy (AFM), ﬁnite element simulations
+■INTRODUCTION
+Lithium-ion batteries (LIBs) have been extensively used in
+portable electronics and electrical vehicles. When the anode
+such as graphite or lithium (Li) contacts the electrolyte in
+LIBs, it reacts with the electrolyte instantly to form a surface
+layer referred to as solid electrolyte interface (SEI),1−11 which
+is considered to be “the most important but least understood
+(component) in rechargeable Li-ion batteries”,4−6 as it is the
+Li-ion transport gateway and always keeps changing during
+battery cycling.11 An eﬀective SEI layer can not only protect
+the anode from further reacting with the electrolyte, thus
+improving the coulombic eﬃciency and preventing capacity
+decay, but also restrict dendrite formation and mitigate short
+circuits of batteries. It is suggested that the Li dendrite growth
+may initiate from the pinhole or facture of the SEI layer, which
+then pierces through the separator or the SEI to reach the
+cathode, causing a short circuit of LIBs.3,12,13 Additionally, the
+fracture of SEI exposes new anode surfaces to the electrolyte,
+causing a further reaction between the anode and the
+electrolyte, which leads to electrolyte consumption and
+capacity decay. Therefore, understanding the mechanical
+properties of the SEI is critical to improve battery performance
+and mitigate dendrite growth.14,15 Nevertheless, there are no in
+situ transmission electron microscopy (TEM) studies on the
+mechanical properties of SEI due to the lack of appropriate
+experimental platforms currently.
+It is generally accepted that the SEI is composed of two
+distinct layers: a thin, dense layer of inorganic species close to
+the electrode side, and a thick, soft layer of organic and
+polymeric compounds close to the electrolyte side.1−10 It is the
+mechanical strength of the inorganic layer mainly composed of
+Li2O, Li2CO3, and LiF that plays a critical role in preventing
+the fracture of the SEI upon cycling and restraining the
+penetration of Li dendrite, thus mitigating capacity decay and
+failure of the batteries. However, little is known so far about
+the mechanical properties of Li2O, Li2CO3, and LiF. Using an
+aberration-corrected environmental transmission electron
+microscopy (ETEM), we successfully synthesized a series of
+Li2CO3 and Li2O nanorods and then conducted in situ
+Received:
+July 20, 2021
+Published: September 13, 2021
+Research Article
+www.acsami.org
+© 2021 American Chemical Society
+44479
+https://doi.org/10.1021/acsami.1c13732
+ACS Appl. Mater. Interfaces 2021, 13, 44479−44487
+Downloaded via WUHAN INST OF TECHNOLOGY on December 6, 2023 at 07:51:30 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+=== PAGE 2 ===
+measurements to advance our understanding of the mechanical
+properties of the SEI-related materials.
+We constructed an electrochemical mechanical device
+(EMD) comprising a carbon nanotube (CNT) cathode
+adhered to a conducting atomic force microscopy (AFM)
+tip, a Li anode, and a naturally formed Li2O or Li2CO3 solid
+electrolyte.16,17 It is very diﬃcult to decompose the Li2CO3
+electrolyte covered on the bulk Li anode under normal
+electrochemical conditions, which is actully a major issure in
+the metal−air battery, as with poor electronic (4.4 × 10−9 S·
+cm−1) and ionic (10−7 S·cm−1) conductivity,18 once the
+Li2CO3 is formed on the surface of the air cathode, it blocks
+further electron and ion transport of the air cathode, thus
+shutting oﬀthe electrochemical reaction.19,20 The attachment
+of the CNT was performed inside the TEM: ﬁrst, a CNT was
+aligned with the AFM tip, then the CNT was anchored to the
+AFM tip by electron-beam-induced carbon deposition,21 and
+ﬁnally, the CNT was cut oﬀby the electron beam at the other
+end opposite to the AFM tip. The growth of Li2O or Li2CO3
+nanorods was conducted under an Ar or CO2 atmosphere,
+respectively, using the CNT in the EMD as a template. In the
+O2 atmosphere, Li2O2 was deposited on the surface of the
+CNT via the reaction 2Li+ +2e−+O2 →Li2O2.22 In
+comparison, when Ar was injected into the ETEM column,
+only a small amount of residual oxygen in the ETEM chamber
+participated in the reaction, and Li2O was formed via the
+reaction 4Li+ +4e−+O2 →2Li2O.23 When CO2 was injected
+into the ETEM column, the Li2CO3 formation was attributed
+to an electrochemical reaction via 4Li+ +4e−+3CO2 →
+2Li2CO3 + C.20 The CNT acted as a mixed ionic and
+electronic conductor (MIEC) as reported previously.24 If we
+replace CNT with a MnO2 nanowire, Li2CO3 was also
+deposited on the surface of the MnO2 nanowire relatively
+quickly.20 However, the Li2CO3 layer was relatively thin and it
+was diﬃcult to deposit a thicker Li2CO3 layer. The obtained
+Li2O or Li2CO3 nanorods were then compressed by the piezo
+manipulator in the EMD for determining their mechanical
+properties.
+■EXPERIMENTAL SECTION
+Synthesis of Arc-Discharged CNTs. The CNTs used in this
+study were prepared by an electrical arc method. The anode was an
+asphalt-derived carbon rod, and the cathode was a high-purity
+graphite electrode. To facilitate the collection of CNTs and improve
+the purity, a wire net was placed on the top of the two electrodes in
+the chamber and the distance between the wire net and the electrodes
+was about 5 cm. The buﬀer gas pressure was set in the range of 0.04−
+0.05 MPa during the arc discharge experiment; meanwhile, the DC
+voltage and current for arcing were controlled at 18−20 V and 60−80
+A, respectively. By manually advancing the anode that was consumed
+during the experiment, the distance between the two electrodes was
+kept at about 1−3 mm.21
+In Situ Growth of Li2O and Li2CO3 Nanorods. The in situ
+growth of Li2O and Li2CO3 nanorods were conducted in an
+aberration-corrected ETEM (FEI, Titan G2, 300 kV), which permits
+gas ﬂows into the sample chamber up to 20.0 mbar. In the
+experiment, a solid-state nanobattery consisting of a Li anode, a Li2O
+or Li2CO3 electrolyte, and a single nanotube or nanowire as the
+cathode was set up using a TEM-scanning tunneling microscopy
+(TEM-STM) holder (Pico Femto FE-F20). A high-purity Ar or CO2
+(99.99%) was introduced into the ETEM chamber with a pressure of
+1.0 mbar. The generation of Li2O and Li2CO3 was achieved via the
+electrochemical reactions 4Li+ + 4e−+ O2 →2Li2O and 4Li+ + 4e−+
+3CO2 →2Li2CO3 + C, respectively.20,23 The charge and discharge
+voltages were precisely controlled by a potentiostat (PiciFemto V3ST,
+produced by Anhui Zeyou Technology Co., Ltd.).
+In Situ Characterization of the Deformation Behaviors of
+Li2O and Li2CO3 Nanorods. To measure the mechanical strength of
+Li2O and Li2CO3 nanorods, we created a homemade AFM-ETEM
+device, in which a Si AFM cantilever was installed onto one end of the
+AFM-ETEM sample holder. We ﬁrst welded a short CNT onto the
+AFM tip by electron-beam-induced carbon deposition. After that, a
+piece of Li metal scratched onto an aluminum (Al) tip was mounted
+onto the other end of the TEM holder (Pico Femto FE-F20) inside a
+glove box ﬁlled with dry Ar. Then, the holder was sealed in an airtight
+bag ﬁlled with dry Ar and transferred into the ETEM. The total time
+of air exposure was less than 2 s, which limited the oxidation of metal
+Li. Prior to the experiment, high-purity CO2 (99.99%) or Ar (99.99%)
+was introduced into the specimen chamber with a pressure of 1.0
+mbar. Controlled by the piezoelectric tube of the holder, the Li-metal-
+attached Al tip can be driven to move toward the AFM tip. When the
+CNT on the AFM tip and Li metal were connected, an external
+negative bias was supplied to the AFM tip to facilitate the growth of
+Li2CO3 or Li2O nanorods. Once the Li2CO3 or Li2O nanorods grew
+to a certain length, a compression test was carried out by the
+movement of the piezoelectric tube of the holder toward the AFM tip.
+The generated force induced not only the deformation in the Li2CO3
+or Li2O nanorods but also the deﬂection of the AFM cantilever, thus
+permitting real-time measurements of the stress caused in Li2CO3 or
+Li2O. During the experiment, a beam stopper was inserted into the
+ﬁeld of view as the reference for displacement measurements of the
+Li2CO3 or Li2O nanorods and AFM tip. As the AFM cantilever length
+(520 μm) is much larger than the deﬂection of the cantilever (<5
+μm), a linear relationship between the displacement of the AFM tip
+ΔX and the force applied on the nanorods F was assumed to be F = k
+× ΔX, where k (in the range of 0.1−40 N m−1) is the stiﬀness of the
+AFM cantilever that was purchased from the Bruker Company. With
+the measurements of the diameter and thus the cross-sectional area, A,
+of the Li2CO3 or Li2O nanorods through in situ TEM imaging, the
+axial compressive stress, σ, generated in the nanorods during
+compression and the corresponding compressive strength were
+determined by σ = F/A. To verify the accuracy of our measurement
+system, benchmark experiments were conducted by measuring the
+mechanical strength of individual single-crystal Ag pillars.16 The
+diﬀerence between the results obtained from our AFM-ETEM system
+and a commercial mechanical testing TEM sample holder (Hysitron
+PI 95) is about ±4.6%, demonstrating the high accuracy of our AFM-
+ETEM testing system. This information was provided in our previous
+paper.16
+Identiﬁcation of Mechanical Properties with Inverse Finite
+Element Simulations. During the compression test, the nonuniform
+geometry of the as-grown nanorods can lead to the variation of stress
+distribution in the nanorods. In addition, the compression force
+always caused localized deformation in the nanorods close to the
+point that they contact the AFM tip. This is mainly due to the stress
+concentration of the contact surface and the tapered geometry of the
+nanorods during compression experiments. To more accurately
+estimate the mechanical properties of the nanorods, inverse ﬁnite
+element simulations were conducted to simulate the compression
+behaviors of the nanorods. By systematically tuning the input material
+parameters to enable the simulation obtained force−compression
+curve to match the experimentally measured one, the mechanical
+properties, such as Young’s modulus, yield stress, and plastic
+hardening, can be derived. For simplicity, the elastic−plastic
+deformation behavior with multilinear isotropic hardening was
+assumed for all of the nanorods. The models for diﬀerent nanorods
+were built referring to their TEM images, and the compressive loading
+was applied according to the pertinent experimental conditions. To
+mimic the compression-induced bending as well as buckling behaviors
+of the nanorods, geometric imperfections were introduced into the
+models via a linear superposition method of the corresponding
+buckling eigenmodes.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.1c13732
+ACS Appl. Mater. Interfaces 2021, 13, 44479−44487
+44480
+
+=== PAGE 3 ===
+■RESULTS AND DISCUSSION
+Figure 1a shows the schematic of the AFM-ETEM setup for in
+situ studies of the mechanical properties of electrochemically
+deposited Li2CO3 nanorods in a CO2 ambiance. A CNT
+adhered to a conducting AFM tip by electron beam deposition
+of carbonaceous material was used as a cathode; a sharp Al
+needle attached with scratched Li was adopted as an anode;
+and the naturally formed Li2CO3 on the Li surface was used as
+an electrolyte. As shown in the bright-ﬁeld TEM image in
+Figure 1b, a CNT was attached to a ﬂattened AFM tip. The
+time-lapse TEM images in Figure 1c−g display a CNT
+templated growth of a Li2CO3 nanorod with a length of 676
+nm and a diameter of 61 nm (Figure S1, and Movies S1 and S2
+in the Supporting Information).
+The formation of Li2CO3 is from the following electro-
+chemical reaction: 4Li+ + 4e−+ 3CO2 →2Li2CO3 + C.20 The
+Li2CO3 layer grows intimately onto the CNT with a growth
+rate increasing linearly with time initially and then slowing
+down (Figures 1i and S1i). It is diﬃcult for the as-grown
+Li2CO3 layer to decompose at room temperature when a
+reverse bias is applied.19 The selected area electron diﬀraction
+(SAED, Figures 1h, S1e, and S2b) of the nanorod exhibits
+diﬀraction rings superimposed on diﬀuse amorphous back-
+ground, in which the former is indexed as monoclinic Li2CO3
+(JCPDS no. 83-1454), and the amorphous background
+indicates the presence of amorphous materials in the nanorod.
+The lattice fringes of the high-resolution transmission electron
+microscopy (HRTEM) images of the nanorods are identiﬁed
+as Li2CO3 and amorphous carbon (HRTEM, Figure S1f).
+Electron energy loss spectroscopy (EELS, Figures 1j,k and
+S1g,h) further conﬁrms that the nanorod is Li2CO3. It is worth
+noting that, according to SAED, the major product is suggested
+to be Li2CO3.
+The obtained Li2CO3 nanorods were then used for
+compression tests. Figure 2a shows the schematic of the
+AFM-ETEM setup for in situ compression of the Li2CO3
+nanorod. When the Li2CO3 nanorod is pushed upward by the
+piezoelectric tube of the holder, the AFM cantilever is bent
+accordingly with a tip displacement of ΔX, generating a force
+exerted on the Li2CO3 nanorod by the AFM tip to compress it
+from its initial length of L to L −ΔL, leading to the strain of
+ΔL/L in the nanorod. Figure 2b shows a tapered nanorod with
+the upper and lower diameters of about 338 and 254 nm,
+respectively. The SAED of the Li2CO3 nanorod (Figure S2a)
+Figure 1. In situ electrochemical growth and characterization of a Li2CO3 nanorod. (a) Schematic of the AFM-ETEM setup for in situ studies of
+the mechanical properties of electrochemically deposited Li2CO3 nanorods in a CO2 ambiance. A CNT was attached to the conductive AFM tip by
+electron beam deposition of carbonaceous material and used as the cathode; a sharp Al needle-scratched Li was used as the anode; and the naturally
+formed Li2CO3 on the Li surface was used as an electrolyte. (b) TEM image showing a CNT attached to a ﬂattened AFM tip. (c−g) Time-lapse
+TEM images of a Li2CO3 nanorod growth along a CNT by the electrochemical reaction in a CO2 atmosphere. (h) The selected area electron
+diﬀraction (SAED) shows diﬀraction rings superimposed on a diﬀused amorphous background, indicating that Li2CO3 is polycrystalline with poor
+crystallinity. (i) Growth rate−time plot of the Li2CO3 nanorod. Low-loss (j) and core-loss (k) electron energy loss spectroscopy (EELS) conﬁrm
+that the deposited materials are Li2CO3. The low-loss EELS (j) features a major plasmon peak at 21.3 eV with a shoulder peak at 13.5 eV, both of
+which are consistent with that of Li2CO3.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.1c13732
+ACS Appl. Mater. Interfaces 2021, 13, 44479−44487
+44481
+
+=== PAGE 4 ===
+exhibits diﬀraction rings superimposed on an amorphous
+background (Figure S2b), and the diﬀraction rings can be
+indexed as Li2CO3. The dark-ﬁeld image indicates that
+nanograins are dispersed in the amorphous matrix (Figure
+S2c). When the nanorod is pushed upward by the piezoelectric
+manipulator, the AFM cantilever is displaced upward (Figure
+2b and Movie S3), forcing the nanorod to be compressed and
+eventually fractured near the bottom (Figure 2c). As shown in
+Figure 2d, the inner CNT core is pulled out after fracturing of
+the nanorod and the surface of the CNT is very smooth,
+suggesting a sword-in-sheath failure mode. With the stiﬀness
+constant k = 40 N m−1 for the Si AFM cantilever, the force F
+exerted on the AFM tip can be calculated according to Hook’s
+law: F = k × ΔX.25 As the amount of compression of the
+Figure 2. In situ compression of a Li2CO3 nanorod and the corresponding simulated stress−strain distributions. (a) Schematic diagram of the
+AFM-ETEM device for in situ compression of the Li2CO3 nanorod. (b) In situ compression experiment of a Li2CO3 nanorod. (c) The nanorod
+fractured at the end of compression. (d) High magniﬁcation image of the fractured nanorod in (c). (e) Experimental (red) and simulated (blue)
+force−compression curves of the Li2CO3 nanorod shown in (b). Simulated time-series snapshots of the eﬀective stress (f) and eﬀective strain (g)
+contours of the Li2CO3 nanorod during compression (corresponding to 1−8 in (b)).
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.1c13732
+ACS Appl. Mater. Interfaces 2021, 13, 44479−44487
+44482
+
+=== PAGE 5 ===
+nanorod (ΔL) was directly measured from the TEM images, a
+force−compression curve, the red curve shown in Figure 2e,
+can be obtained with the corresponding experimentally
+measured data provided in Table S1 in the Supporting
+Information. Based on the geometry of the nanorod and the
+loading scheme, ﬁnite element simulation was conducted to
+derive the material properties inversely. By tuning the input
+material parameters, when the stress−strain data listed in
+Table S2 was adopted, the force−compression curve obtained
+from the simulation (the blue curve in Figure 2e) can match
+the experimental one well. The simulated evolutions of the
+eﬀective stress and eﬀective strain of the Li2CO3 nanorod
+during compression are shown in Figure 2f,g, respectively. It
+can be clearly seen that the localized stress and strain occurred
+near the location that the nanorod contacts the AFM tip. With
+the compression of the nanorod, high-level stress and strain
+appeared in the whole nanorod. Before the fracture of the
+nanorod, both the top and bottom regions of the nanorod
+underwent high-level stress of up to 192 MPa.
+Figure S3 and Movie S4 show the compression test of
+another short Li2CO3 nanorod with a diameter of ∼54 nm and
+a length of ∼191 nm. In this case, the inner CNT is already
+pulled out (Figure S4), leaving an empty core in the nanorod.
+During the compression test, the nanorod was ﬁrst compressed
+(Figure S3a−d) and then bent severely out of the vertical
+direction (Figure S3d−g). No strain contrast was observed
+during the compression experiment. After the release of the
+load, the nanorod retained the bent morphology and the top of
+the rod was signiﬁcantly ﬂattened, indicating that the nanorod
+underwent large plastic deformation during the test. In
+addition, the nanoscale pores contained in the pristine as-
+deposited nanorod (Figure S1 and Movie S2) disappeared
+after compression. According to the force−compression curve
+shown in Figure S3h (with the experimentally measured data
+listed in Table S3), the force increases almost linearly from
+Figure 3. In situ compression tests of Li2O nanorods and the corresponding simulated stress−strain states. (a) In situ compression test of a Li2O
+nanorod. (b) Experimental (red) and simulated (blue) force−compression curves of the Li2O nanorod shown in (a). Simulated time-series
+snapshots of the eﬀective stress (c) and eﬀective strain (d) in the Li2O nanorod during compression (corresponding to 1−8 in (a)). (e) In situ
+compression experiment of a Li2O nanotube. (f) Experimental (red) and simulated (blue) force−compression curves of the Li2O nanotube shown
+in (e). Simulated time-series snapshots of the eﬀective stress (g) and eﬀective strain (h) contours in the Li2O nanotube during compression
+(corresponding to 1−8 in (e)).
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.1c13732
+ACS Appl. Mater. Interfaces 2021, 13, 44479−44487
+44483
+
+=== PAGE 6 ===
+point a to point d, and then almost ﬂatten out from point d to
+point f due to the bending-induced large plastic deformation.
+Using the force at point d, the ultimate strength can be
+estimated as ∼330 MPa. It should be noted that for this
+particular nanorod, the CNT was already pulled out, and
+therefore, its mechanical strength was not aﬀected by the
+presence of the CNT. The in situ TEM tensile test was
+performed on the deposited Li2CO3 nanorod using the AFM-
+ETEM device. As shown in Figure S5, cracks appear at the
+bottom of the nanorod when the stretching limit is reached
+(Figure S5c). The nanorod broke from the crack with further
+stretching (Figure S5d). The tensile strength of Li2CO3 was
+found to be 188 MPa.
+To minimize the electron beam eﬀect, we also conducted
+compression experiments in the annual dark-ﬁeld (ADF)
+mode, and a typical example is shown in Figure S6. The
+nanorod was buckled during compression (Figure S6b) and
+then fractured into two pieces (Figure S6c), with its cross
+section clearly visible (Figure S6d,f). Such large buckling of the
+nanorod again indicates good plasticity of the as-deposited
+Li2CO3 nanorod. The SAED (Figure S6g) shows weak
+diﬀraction rings superimposed on a strong amorphous
+background, suggesting poor crystallinity of the nanorod.
+Adopting a similar approach to grow Li2CO3 nanorods, Li2O
+nanorods were also synthesized by electrochemical deposition
+in an Ar atmosphere (Figure S7a−e and Movie S5). The
+obtained Li2O was conﬁrmed by SAED (Figure S7f) and EELS
+(Figure S7g,h). The SAED (Figure S7f) can be indexed as
+cubic Li2O (JCPDS no. 77-2144). The low-loss EELS (Figure
+S7g) features three peaks at 10.5, 18.5, and 30.1 eV, which are
+consistent with those of Li2O.26 The presence of two
+characteristic peaks at 59.1 and 63.5 eV (Figure S7g) indicates
+the presence of Li2O.26−29 The core-loss EELS (Figure S7h)
+displays the C−K and O−K edges. The Li2O layer grows
+intimately on the CNT with a growth rate increasing almost
+linearly (Figure S7i). The growth of Li2O can be attributed to
+the following electrochemical reaction: 4Li+ + 4e−+ O2 →
+2Li2O, and the O2 is from the residue gas in the TEM
+column.23
+The as-synthesized Li2O nanorods were then subjected to
+compression. Figure 3a and Movie S6 show the compression
+behavior of one of the nanorods. The nanorod was compressed
+uniaxially ﬁrst and then bent slightly (Figure 3a-8) due to its
+geometric imperfections and the high aspect ratio (7.2). The
+experimentally measured force−deformation data and the
+corresponding force−compression curve are provided in Table
+S4 and Figure 3b, respectively. To derive the material
+properties of the nanorods, ﬁnite element simulations were
+conducted. By matching the simulation-obtained force−
+compression curve (blue) with experimentally measured one
+(red), as shown in Figure 3b, the stress−strain data for the
+Li2O nanorod with an inner CNT core were extracted, as listed
+in Table S5. Figure 3c,d shows the simulated time-series
+snapshots of the eﬀective stress and eﬀective strain,
+respectively. Again, the compression always led to localized
+stress and strain near the region that the external loading was
+applied. At a point when the nanorod started to bend (Figure
+3a-8), the maximum compression-induced stress was 111 MPa,
+which could represent a low bound of the maximum stress that
+the nanorod could sustain, as serious buckling of the nanorod
+could still be caused without any failure if the nanorod was
+continuously compressed, as shown in Figure S8c. If we pulled
+back the nanorod, it stuck to the AFM tip (Figure S8d−f) and
+eventually broke from the bottom with the inner CNT being
+pulled out, forming a Li2O nanotube with a wall thickness of
+about 28 nm (Figure S8f). The tensile strength of the Li2O
+nanorod was estimated to be 249 MPa. As the tensile strength
+of a CNT is much higher than that of the Li2O, the pulling-out
+process can be considered as a sword-in-sheath manner,30 i.e.,
+the Li2O was the sheath while the CNT was the sword. It is
+interesting to note that with the continued electron bombard-
+ment, a circumferential gap emerged in the Li2O wall (Figure
+S8d), which propagated downward the nanorod and eventually
+extended over the entire Li2O tube wall, forming a double-
+shelled tubular structure (Figure S8f−i). The formation of the
+gap in the Li2O may be ascribed to the stress generated by the
+pulling out of the CNT and electron bombardment but the
+exact reason warrants further investigation.
+After pulling out the inner CNT, a compression test was
+then conducted on the double-shelled Li2O nanotube (Figure
+3e and Movie S7). In sharp contrast to the compression of the
+Li2CO3 nanorod, the Li2O nanotube displayed good ﬂexibility
+and did not fracture even after severe buckling, suggesting
+excellent plasticity of the Li2O nanotube. The experimentally
+measured force−deformation data and the corresponding
+force−compression curve are provided in Table S6 and Figure
+3f, respectively. By matching the ﬁnite-element-simulated
+force−compression curve with the experimentally measured
+one (Figure 3f), the stress−strain data for the Li2O nanotube
+were derived, as listed in Table S7. The corresponding
+simulated time-series snapshots of the eﬀective stress and
+eﬀective strain are presented in Figure 3g,h, respectively.
+Considering that the compression process of the nanotube
+occurred before serious buckling (Figure 3e-8), the simulated
+largest eﬀective stress in the nanotube was 77 MPa.
+Li2O is one of the leading candidates for the breeding
+material in a fusion reactor blanket. Its mechanical properties
+strongly depend on the porosity. According to the previous
+publications,31 Young’s modulus of Li2O increases from ∼72
+to ∼114 GPa when its density increases from 81.4 to 91.5% of
+its theoretical density, and the compressive strength of Li2O
+with 81.4 and 91.5% of the theoretical density is about 132 and
+139 MPa, respectively.31 In addition, Young’s modulus and
+shear modulus of coarse-grained Li2O with a grain size of ∼40
+μm and a theoretical density of 90% are 108 and 45.6 GPa,
+respectively.32 Considering the fact that the electrochemically
+deposited Li2O possesses the porous composite structure with
+nanograins dispersed in the amorphous matrix, the derived
+mechanical properties of our electrochemically deposited Li2O
+nanorods are still reasonable.
+For Li2CO3, based on the molecular dynamics simulation,
+the shear modulus of amorphous Li2CO3 is about 8 GPa at
+room temperature.33 Shin et al. calculated the shear modulus
+of crystalline and amorphous Li2CO3 to be 22.2 and 13 GPa,
+the bulk modulus of crystalline and amorphous Li2CO3 to be
+50.5 and 43.1 GPa, respectively.34 Based on Pugh’s criterion
+(B/G ratio, bulk modulus/shear modulus) of a brittleness
+material,35 the Li2CO3, irrespective of crystalline or amor-
+phous, is a ductile material (>1.75).34 If we consider the shear
+modulus of amorphous Li2CO3 as 8 GPa, the theoretical
+strength can be estimated as one-tenth of the shear modulus,
+which is about 800 MPa. In this study, the derived mechanical
+strength of electrochemically deposited Li2CO3, which ranges
+from ∼192 to ∼330 MPa, agrees reasonably with the
+theoretically estimated value of 800 MPa, considering that
+the as-deposited Li2CO3 contains the porous composite
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.1c13732
+ACS Appl. Mater. Interfaces 2021, 13, 44479−44487
+44484
+
+=== PAGE 7 ===
+structure with nanograins dispersed in the amorphous matrix
+that might reduce its strength.
+Overall, the electrochemically deposited Li2O exhibits much
+lower strength (less than 100 MPa) than that of Li2CO3 (∼192
+to ∼330 MPa) but higher ductility.36 Based on the Newman
+and Monroe theory, if the shear modulus of the polymer
+electrolyte is twice that of Li, the growth of dendrite can be
+inhibited.37 This implies that if the strength of the SEI is twice
+higher than that of Li, the Li dendrite growth should be
+restrained. As the yield strength of Li is about 1 MPa from the
+pure mechanical perspective,8,16,36,38 the strength of both Li2O
+and Li2CO3 is suﬃcient to suppress the Li dendrite growth,
+which is obviously not the case.1−11 The discrepancy may be
+ascribed to the fact that the Newman and Monroe model
+assumes the polymer electrolyte to be perfect, while the
+practical polymer electrolyte is never perfect. Moreover, recent
+experiments show that the micron-sized Li rod39 and
+nanometer-scale Li whiskers16,40 exhibit much higher strength
+than that of bulk Li.8,16,36,38 Furthermore, there is a strong
+electrochemical and mechanical coupling eﬀect during Li
+deposition, suggesting that a 10 mV overpotential can generate
+75 MPa stress in the polymer or solid-state electrolyte or
+SEI.8,41 Therefore, a heuristic approach needs to be adopted to
+study the eﬀect of the actual composite structure of SEI on the
+dendritic problem.
+■CONCLUSIONS
+In summary, SEI-related materials, Li2CO3 and Li2O, were
+electrochemically in situ deposited in an ETEM, which were
+then subjected to mechanical compression. Through in situ
+measurements and inverse ﬁnite element simulations, it is
+revealed that, with the structural characteristics of nanograins
+dispersed in the amorphous matrix, both electrochemically
+deposited Li2CO3 and Li2O exhibit good plasticity. The
+ultimate strength of Li2CO3 ranges from 192 to 330 MPa,
+while the Li2O shows strength of less than 100 MPa, which is
+much weaker than that of Li2CO3. These results provide a new
+understanding of the mechanical behavior of SEI materials,
+which may provide important insights into the dendritic
+problems in LIBs.
+■ASSOCIATED CONTENT
+*
+sı Supporting Information
+The Supporting Information is available free of charge at
+https://pubs.acs.org/doi/10.1021/acsami.1c13732.
+TEM images of growth, compression, and tensile tests of
+the Li2CO3 and Li2O nanorods; the SAED and EELS of
+the Li2CO3 and Li2O nanorods; the growth rate−time
+plot of the Li2CO3 and Li2O nanorods; force−
+deformation data corresponding to the compression of
+the Li2CO3 and Li2O nanorods; inverse ﬁnite element
+simulation derived stress−strain data for the Li2CO3 and
+Li2O nanorods (PDF)
+In situ TEM movie showing the growth of a Li2CO3
+nanorod (corresponding to Figure 1). The Li2CO3 grew
+directly along the CNT. The movie was recorded at 5
+frames/s in TEM bright-ﬁeld images and played at 312×
+speed (AVI)
+In situ TEM movie showing the growth of a Li2CO3
+nanorod (corresponding to Figure S1). The Li2CO3
+grew directly along the CNT. The movie was recorded
+at 5 frames/s in TEM bright-ﬁeld images and played at
+84× speed (AVI)
+In situ TEM movie showing the compression of a
+Li2CO3 nanorod (corresponding to Figure 2). The
+movie was recorded at 5 frames/s in TEM bright-ﬁeld
+images and played at 12× speed (AVI)
+In situ TEM movie showing the compression experi-
+ment of a Li2CO3 nanorod (corresponding to Figure
+S3). The movie was recorded at 5 frames/s in TEM-
+bright ﬁeld images and played at 5× speed (AVI)
+In situ TEM movie showing the growth of a Li2O
+nanorod (corresponding to Figure S6). The Li2O grew
+directly along the CNT. The movie was recorded at 5
+frames/s in TEM bright-ﬁeld images and played at 34×
+speed (AVI)
+In situ TEM movie showing the compression of a Li2O
+nanorod (corresponding to Figure 3a). The movie was
+recorded at 5 frames/s in TEM bright-ﬁeld images and
+played at 22× speed (AVI)
+In situ TEM movie showing the compression of a Li2O
+nanotube (corresponding to Figure 3e). The movie was
+recorded at 5 frames/s in TEM bright-ﬁeld images and
+played at 30× speed (AVI)
+■AUTHOR INFORMATION
+Corresponding Authors
+Yongfu Tang −Clean Nano Energy Center, State Key
+Laboratory of Metastable Materials Science and Technology,
+Yanshan University, Qinhuangdao 066004, China; Hebei
+Key Laboratory of Applied Chemistry, College of
+Environmental and Chemical Engineering, Yanshan
+University, Qinhuangdao 066004, China;
+Email: [邮箱已脱敏]
+Liqiang Zhang −Clean Nano Energy Center, State Key
+Laboratory of Metastable Materials Science and Technology,
+Yanshan University, Qinhuangdao 066004, China;
+Email: [邮箱已脱敏]
+Hui Yang −Department of Mechanics, School of Aerospace
+Engineering, Huazhong University of Science and Technology,
+Wuhan, Hubei 430074, China;
+orcid.org/0000-0002-
+2628-4676; Email: [邮箱已脱敏]
+Jianyu Huang −Clean Nano Energy Center, State Key
+Laboratory of Metastable Materials Science and Technology,
+Yanshan University, Qinhuangdao 066004, China; Key
+Laboratory of Low Dimensional Materials and Application
+Technology of Ministry of Education, School of Materials
+Science and Engineering, Xiangtan University, Xiangtan,
+Hunan 411105, China;
+orcid.org/0000-0002-8424-
+5368; Email: [邮箱已脱敏]
+Authors
+Hongjun Ye −Clean Nano Energy Center, State Key
+Laboratory of Metastable Materials Science and Technology,
+Yanshan University, Qinhuangdao 066004, China
+Siwei Gui −Department of Mechanics, School of Aerospace
+Engineering, Huazhong University of Science and Technology,
+Wuhan, Hubei 430074, China
+Zaifa Wang −Clean Nano Energy Center, State Key
+Laboratory of Metastable Materials Science and Technology,
+Yanshan University, Qinhuangdao 066004, China
+Jingzhao Chen −Clean Nano Energy Center, State Key
+Laboratory of Metastable Materials Science and Technology,
+Yanshan University, Qinhuangdao 066004, China
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.1c13732
+ACS Appl. Mater. Interfaces 2021, 13, 44479−44487
+44485
+
+=== PAGE 8 ===
+Qiunan Liu −Clean Nano Energy Center, State Key
+Laboratory of Metastable Materials Science and Technology,
+Yanshan University, Qinhuangdao 066004, China
+Xuedong Zhang −Key Laboratory of Low Dimensional
+Materials and Application Technology of Ministry of
+Education, School of Materials Science and Engineering,
+Xiangtan University, Xiangtan, Hunan 411105, China
+Peng Jia −Clean Nano Energy Center, State Key Laboratory
+of Metastable Materials Science and Technology, Yanshan
+University, Qinhuangdao 066004, China
+Yushu Tang −Institute of Nanotechnology, Karlsruhe Institute
+of Technology, Eggenstein-Leopoldshafen 76344, Germany
+Tingting Yang −Clean Nano Energy Center, State Key
+Laboratory of Metastable Materials Science and Technology,
+Yanshan University, Qinhuangdao 066004, China
+Congcong Du −Clean Nano Energy Center, State Key
+Laboratory of Metastable Materials Science and Technology,
+Yanshan University, Qinhuangdao 066004, China
+Lin Geng −Clean Nano Energy Center, State Key Laboratory
+of Metastable Materials Science and Technology, Yanshan
+University, Qinhuangdao 066004, China
+Hui Li −Clean Nano Energy Center, State Key Laboratory of
+Metastable Materials Science and Technology, Yanshan
+University, Qinhuangdao 066004, China
+Qiushi Dai −Clean Nano Energy Center, State Key
+Laboratory of Metastable Materials Science and Technology,
+Yanshan University, Qinhuangdao 066004, China
+Complete contact information is available at:
+https://pubs.acs.org/10.1021/acsami.1c13732
+Author Contributions
+H.Y. and S.G. contributed equally to this work. Yo.T., L.Z., and
+J.H. conceived and designed the project. H.Y., Z.W., J.C., Q.L.,
+P.J., Yu.T., and T.Y. carried out the ETEM experiments. H.Y.
+and S.G. carried out the ﬁnite element simulation. X.Z., C.D.,
+L.G., H.L., and Q.D. fabricated the samples. Yo.T., L.Z., Hui
+Y., and J.H. supervised the experiments. Hui Y. and J.H. co-
+wrote the paper. All authors have given approval to the ﬁnal
+version of the manuscript.
+Notes
+The authors declare no competing ﬁnancial interest.
+■ACKNOWLEDGMENTS
+This work was ﬁnancially supported by the National Natural
+Science Foundation of China (Nos. 51971245, 52022088,
+51772262, 21406191, U20A20336, 21935009, 12172143),
+Beijing Natural Science Foundation (2202046), Fok Ying-
+Tong Education Foundation of China (No. 171064), Natural
+Science Foundation of Hebei Province (Nos. F2021203097,
+B2020203037, B2018203297), and the Hunan Innovation
+Team (2018RS3091).
+■REFERENCES
+(1) Peled, E. The Electrochemical Behavior of Alkali and Alkaline
+Earth Metals in Nonaqueous Battery Systems - The Solid Electrolyte
+Interphase Model. J. Electrochem. Soc. 1979, 126, 2047−2051.
+(2) Peled, E.; Menkin, S. Review - SEI: Past, Present and Future. J.
+Electrochem. Soc. 2017, 164, A1703−A1719.
+(3) Aurbach, D. Review of Selected Electrode-Solution Interactions
+Which Determine the Performance of Li and Li Ion Batteries. J. Power
+Sources. 2000, 89, 206−218.
+(4) Winter, M. The Solid Electrolyte Interphase - The Most
+Important and the Least Understood Solid Electrolyte in Recharge-
+able Li Batteries. Z. Phys. Chem. 2009, 223, 1395−1406.
+(5) Wang, A.; Kadam, S.; Li, H.; Shi, S.; Qi, Y. Review on Modeling
+of the Anode Solid Electrolyte Interphase (SEI) for Lithium-ion
+Batteries. npj Comput. Mater. 2018, 4, No. 15.
+(6) Verma, P.; Maire, P.; Novák, P. A Review of the Features and
+Analyses of the Solid Electrolyte Interphase in Li-ion Batteries.
+Electrochim. Acta 2010, 55, 6332−6341.
+(7) Xu, W.; Wang, J.; Ding, F.; Chen, X.; Nasybulin, E.; Zhang, Y.;
+Zhang, J.-G. Lithium Metal Anodes for Rechargeable Batteries. Energy
+Environ. Sci. 2014, 7, 513−537.
+(8) Tang, Y.; Zhang, L.; Chen, J.; Sun, H.; Yang, T.; Liu, Q.; Huang,
+Q.; Zhu, T.; Huang, J. Electro-Chemo-Mechanics of Lithium in Solid
+State Lithium Metal Batteries. Energy Environ. Sci. 2021, 14, 602−642.
+(9) Liu, W.; Liu, P.; Mitlin, D. Solid Electrolyte Interphases: Review
+of Emerging Concepts in SEI Analysis and Artificial SEI Membranes
+for Lithium, Sodium, and Potassium Metal Battery Anodes. Adv.
+Energy Mater. 2020, 10, No. 2002297.
+(10) Liu, W.; Liu, P.; Mitlin, D. Tutorial Review on Structure -
+Dendrite Growth Relations in Metal Battery Anode Supports. Chem.
+Soc. Rev. 2020, 49, 7284−7300.
+(11) Whittingham, M. S. Lithium Batteries: 50 Years of Advances to
+Address the Next 20 Years of Climate Issues. Nano Lett. 2020, 20,
+8435−8437.
+(12) Bhattacharya, S.; Riahi, A. R.; Alpas, A. T. Electrochemical
+Cycling Behaviour of Lithium Carbonate (Li2CO3) Pre-treated
+Graphite Anodes - SEI Formation and Graphite Damage Mechanisms.
+Carbon 2014, 77, 99−112.
+(13) Woodford, W. H.; Carter, W. C.; Chiang, Y.-M. Design Criteria
+for Electrochemical Shock Resistant Battery Electrodes. Energy
+Environ. Sci. 2012, 5, 8014−8024.
+(14) Li, N.-W.; Shi, Y.; Yin, Y.-X.; Zeng, X.-X.; Li, J.-Y.; Li, C.-J.;
+Wan, L.-J.; Wen, R.; Guo, Y.-G. A Flexible Solid Electrolyte
+Interphase Layer for Long-Life Lithium Metal Anodes. Angew.
+Chem., Int. Ed. 2018, 57, 1505−1509.
+(15) Wan, J.; Hao, Y.; Shi, Y.; Song, Y.-X.; Yan, H.-J.; Zheng, J.;
+Wen, R.; Wan, L.-J. Ultra-Thin Solid Electrolyte Interphase Evolution
+and Wrinkling Processes in Molybdenum Disulfide-Based Lithium-ion
+Batteries. Nat. Commun. 2019, 10, No. 3265.
+(16) Zhang, L.; Yang, T.; Du, C.; Liu, Q.; Tang, Y.; Zhao, J.; Wang,
+B.; Chen, T.; Sun, Y.; Jia, P.; Li, H.; Geng, L.; Chen, J.; Ye, H.; Wang,
+Z.; Li, Y.; Sun, H.; Li, X.; Dai, Q.; Tang, Y.; Peng, Q.; Shen, T.;
+Zhang, S.; Zhu, T.; Huang, J. Lithium Whisker Growth and Stress
+Generation in an In Situ Atomic Force Microscope-Environmental
+Transmission Electron Microscope Set-Up. Nat. Nanotechnol. 2020,
+15, 94−98.
+(17) Yang, T.; Jia, P.; Liu, Q.; Zhang, L.; Du, C.; Chen, J.; Ye, H.; Li,
+X.; Li, Y.; Shen, T.; Tang, Y.; Huang, J. Air-Stable Lithium Spheres
+Produced by Electrochemical Plating. Angew. Chem., Int. Ed. 2018, 57,
+12750−12753.
+(18) Duan, H.; Chen, W.-P.; Fan, M.; Wang, W.-P.; Yu, L.; Tan, S.-
+J.; Chen, X.; Zhang, Q.; Xin, S.; Wan, L.-J.; Guo, Y.-G. Building an Air
+Stable and Lithium Deposition Regulable Garnet Interface from
+Moderate-Temperature Conversion Chemistry. Angew. Chem., Int. Ed.
+2020, 59, 12069−12075.
+(19) Jia, P.; Yu, M.; Zhang, X.; Yang, T.; Zhu, D.; Shen, T.; Zhang,
+L.; Tang, Y.; Huang, J. In-situ Imaging the Electrochemical Reactions
+of Li-CO2 Nanobatteries at High Temperatures in an Aberration
+Corrected Environmental Transmission Electron Microscope Nano
+Res. 2021, DOI: 10.1007/s12274-021-3514-9.
+(20) Yang, T.; Li, H.; Chen, J.; Ye, H.; Yao, J.; Su, Y.; Guo, B.; Peng,
+Z.; Shen, T.; Tang, Y.; Zhang, L.; Huang, J. In Situ Imaging
+Electrocatalytic CO2 Reduction and Evolution Reactions in All-Solid-
+State Li-CO2 Nanobatteries. Nanoscale 2020, 12, 23967−23974.
+(21) Liu, Q.; Zhang, L.; Sun, H.; Geng, L.; Li, Y.; Tang, Y.; Jia, P.;
+Wang, Z.; Dai, Q.; Shen, T.; Tang, Y.; Zhu, T.; Huang, J. In Situ
+Observation of Sodium Dendrite Growth and Concurrent Mechanical
+Property Measurements Using an Environmental Transmission
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.1c13732
+ACS Appl. Mater. Interfaces 2021, 13, 44479−44487
+44486
+
+=== PAGE 9 ===
+Electron Microscopy-Atomic Force Microscopy (ETEM-AFM) Plat-
+form. ACS Energy Lett. 2020, 5, 2546−2559.
+(22) Xia, C.; Kwok, C. Y.; Nazar, L. F. A High-Energy-Density
+Lithium-Oxygen Battery Based on a Reversible Four-Electron
+Conversion to Lithium Oxide. Science 2018, 361, 777−781.
+(23) Luo, L.; Liu, B.; Song, S.; Xu, W.; Zhang, J.-G.; Wang, C.
+Revealing the Reaction Mechanisms of Li-O2 Batteries Using
+Environmental Transmission Electron Microscopy. Nat. Nanotechnol.
+2017, 12, 535−539.
+(24) Chen, Y.; Wang, Z.; Li, X.; Yao, X.; Wang, C.; Li, Y.; Xue, W.;
+Yu, D.; Kim, S. Y.; Yang, F.; Kushima, A.; Zhang, G.; Huang, H.; Wu,
+N.; Mai, Y.-W.; Goodenough, J. B.; Li, J. Li Metal Deposition and
+Stripping in a Solid-State Battery Via Coble Creep. Nature 2020, 578,
+251−255.
+(25) Bagley, E. B. Hooke’s Law in Shear and Polymer Melt Fracture.
+J. Appl. Phys. 1960, 31, 1126−1127.
+(26) Lru, D.-R.; Williams, D. B. The Electron-Energy-Loss Spectrum
+of Lithium Metal. Philos. Mag. B 1986, 53, L123−L128.
+(27) Wang, F.; Graetz, J.; Moreno, M. S.; Ma, C.; Wu, L.; Volkov,
+V.; Zhu, Y. Chemical Distribution and Bonding of Lithium in
+Intercalated Graphite: Identification with Optimized Electron Energy
+Loss Spectroscopy. ACS Nano 2011, 5, 1190−1197.
+(28) Zheng, H.; Liu, Y.; Mao, S. X.; Wang, J.; Huang, J. Y. Beam-
+Assisted Large Elongation of In Situ Formed Li2O Nanowires. Sci.
+Rep. 2012, 2, No. 542.
+(29) Liu, X. H.; Zheng, H.; Zhong, L.; Huang, S.; Karki, K.; Zhang,
+L. Q.; Liu, Y.; Kushima, A.; Liang, W. T.; Wang, J. W.; Cho, J.-H.;
+Epstein, E.; Dayeh, S. A.; Picraux, S. T.; Zhu, T.; Li, J.; Sullivan, J. P.;
+Cumings, J.; Wang, C.; Mao, S. X.; Ye, Z. Z.; Zhang, S.; Huang, J. Y.
+Anisotropic Swelling and Fracture of Silicon Nanowires during
+Lithiation. Nano Lett. 2011, 11, 3312−3318.
+(30) Yu, M.-F.; Lourie, O.; Dyer, M. J.; Moloni, K.; Kelly, T. F.;
+Ruoff, R. S. Strength and Breaking Mechanism of Multiwalled Carbon
+Nanotubes Under Tensile Load. Science 2000, 287, 637−640.
+(31) Johnson, C. E.; Kummerer, K. R.; Roth, E. Ceramic breeder
+materials. J. Nucl. Mater. 1988, 155−157, 188−201.
+(32) Billone, M. C.; Liu, Y. Y.; Poeppel, R. B.; Routbort, J. L.;
+Goretta, K. C.; Kupperman, D. S. Elastic and Creep Properties of
+Li2O. J. Nucl. Mater. 1986, 141−143, 282−288.
+(33) Ebrahiminia, M.; Hooper, J. B.; Bedrov, D. Structural,
+Mechanical, and Dynamical Properties of Amorphous Li2CO3 from
+Molecular Dynamics Simulations. Crystals 2018, 8, No. 473.
+(34) Shin, H.; Park, J.; Han, S.; Sastry, A. M.; Lu, W. Component-/
+Structure-Dependent Elasticity of Solid Electrolyte Interphase Layer
+in Li-ion Batteries: Experimental and Computational Studies. J. Power
+Sources 2015, 277, 169−179.
+(35) Pugh, S. F. XCII Relations Between the Elastic Moduli and the
+Plastic Properties of Polycrystalline Pure Metals. London, Edinburgh
+Dublin Philos. Mag. J. Sci. 1954, 45, 823−843.
+(36) Masias, A.; Felten, N.; Garcia-Mendez, R.; Wolfenstine, J.;
+Sakamoto, J. Elastic, Plastic, and Creep Mechanical Properties of
+Lithium Metal. J. Mater. Sci. 2019, 54, 2585−2600.
+(37) Monroe, C.; Newman, J. Dendrite Growth in Lithium/Polymer
+Systems. J. Electrochem. Soc. 2003, 150, No. A1377.
+(38) Fincher, C. D.; Ojeda, D.; Zhang, Y.; Pharr, G. M.; Pharr, M.
+Mechanical Properties of Metallic Lithium: from Nano to Bulk Scales.
+Acta Mater. 2020, 186, 215−222.
+(39) Xu, C.; Ahmad, Z.; Aryanfar, A.; Viswanathan, V.; Greer, J. R.
+Enhanced Strength and Temperature Dependence of Mechanical
+Properties of Li at Small Scales and Its Implications for Li Metal
+Anodes. Proc. Natl. Acad. Sci. U.S.A. 2017, 114, 57−61.
+(40) He, Y.; Ren, X.; Xu, Y.; Engelhard, M. H.; Li, X.; Xiao, J.; Liu,
+J.; Zhang, J.-G.; Xu, W.; Wang, C. Origin of Lithium Whisker
+Formation and Growth Under Stress. Nat. Nanotechnol. 2019, 14,
+1042−1047.
+(41) Porz, L.; Swamy, T.; Sheldon, B. W.; Rettenwander, D.;
+Frömling, T.; Thaman, H. L.; Berendts, S.; Uecker, R.; Carter, W. C.;
+Chiang, Y.-M. Mechanism of Lithium Metal Penetration through
+Inorganic Solid Electrolytes. Adv. Energy Mater. 2017, 7, No. 1701003.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.1c13732
+ACS Appl. Mater. Interfaces 2021, 13, 44479−44487
+44487
+

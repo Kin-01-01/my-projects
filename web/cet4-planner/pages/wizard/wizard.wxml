@@ -1,0 +1,50 @@
+<view class="page {{_enter}}">
+  <view class="card">
+    <view class="title h1">{{isRegen ? '重新生成规划' : '开始规划'}}</view>
+    <view class="muted small" style="margin-top: 12rpx;">
+      回答几个问题，我按你的「考试日期」生成"基础 → 专项 → 模考"三段日程骨架。其余选项（周时长/目标分/水平）仅记录你的起点，不影响排布。
+      只排任务结构和时长，不含任何题目/词库——每条任务你绑定自己的材料即可。
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="form-row">
+      <view class="form-label">考试日期</view>
+      <picker mode="date" value="{{examDate}}" start="2026-09-28" end="2030-12-31" bindchange="onDateChange">
+        <view class="form-picker">{{examDate}}（CET4 官方考期 12-12）</view>
+      </picker>
+    </view>
+    <view class="form-row">
+      <view class="form-label">每周时长</view>
+      <picker range="{{hourOptions}}" value="{{hoursIndex}}" bindchange="onHoursChange">
+        <view class="form-picker">{{hourOptions[hoursIndex]}} 小时/周</view>
+      </picker>
+    </view>
+    <view class="form-row">
+      <view class="form-label">目标分数</view>
+      <picker range="{{targetOptions}}" value="{{targetIndex}}" bindchange="onTargetChange">
+        <view class="form-picker">{{targetOptions[targetIndex]}} 分</view>
+      </picker>
+    </view>
+    <view class="form-row">
+      <view class="form-label">当前水平</view>
+      <picker range="{{levelOptions}}" value="{{levelIndex}}" bindchange="onLevelChange">
+        <view class="form-picker">{{levelOptions[levelIndex]}}</view>
+      </picker>
+    </view>
+    <button class="btn-primary" disabled="{{submitting}}" bindtap="onSubmit">
+      {{isRegen ? '重新生成' : '生成我的规划'}}
+    </button>
+  </view>
+
+  <view class="card">
+    <view class="title" style="margin-bottom: 8rpx;">生成规则（透明可见）</view>
+    <view class="muted xsmall">
+      · 三阶段锚定末段：模考=考前12天，专项=再往前18天，其余=基础夯实
+      · 每周时长渐进：前2周8h适应 → 逐步到12h → 模考期降量保温
+      · 每周日=周小测与复盘；模考期3天一轮（模考/复盘/回炉）+考前保温
+      · 词汇任务完成后，自动生成 +2 天艾宾浩斯复习
+      · 随时可在"规划"页重新生成；某天没做完可一键顺延
+    </view>
+  </view>
+</view>

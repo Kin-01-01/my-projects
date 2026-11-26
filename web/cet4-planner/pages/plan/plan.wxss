@@ -1,0 +1,14 @@
+.stage-name { font-size: 30rpx; color: #16203A; }
+.week-row {
+  display: flex; align-items: center;
+  padding: 14rpx 0; border-bottom: 1rpx solid #EDF1F7;
+}
+.week-row:last-child { border-bottom: none; }
+.week-cn { font-size: 27rpx; color: #2C3858; }
+.week-today .week-cn { color: #E5746B; font-weight: 600; }
+
+/* 阶段卡片类型点缀 */
+.stage-card.accent { border-top: 6rpx solid; }
+
+/* 离屏画布：仅供 canvasToTempFilePath 读取，移出可视区但不销毁 */
+.offcanvas-plan { position: fixed; left: -9999px; top: 0; width: 620px; height: 820px; }

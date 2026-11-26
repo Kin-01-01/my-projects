@@ -1,0 +1,24 @@
+拾光 · 站点自检  结果：全部通过
+1) JS 语法
+  [ok]   js/main.js
+  [ok]   js/ambient.js
+  [ok]   js/china-geo.js
+2) 外部字体请求
+  [ok]   index.html / styles.css / fonts.css 均无外部字体请求
+3) --display-fixed 使用面
+  定义在 :root，用到它的选择器（应只含固定文案）：nav__brand, section__title, hero__title, hero__num, foot__mark, tl__m
+  仍走 --display（用户内容）的衬线选择器：
+    .card__title
+    .map__detail-title
+    .map__legend .lg-name
+    .tl__ttl
+    .gcount
+4) 自托管字体文件
+  [ok]   fonts/oswald-latin.woff2                   27.8 KB
+  [ok]   fonts/shiguang-display-700.woff2            7.8 KB
+  [ok]   fonts/shiguang-display-900.woff2            7.4 KB
+  字体层合计 = 43.0 KB
+5) 动效 token 纪律
+  [ok]   没有裸写的秒数，时长全部走 token
+6) 展示子集字形覆盖
+  [ok]   37 个展示字符全部在子集内

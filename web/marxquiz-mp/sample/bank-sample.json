@@ -1,0 +1,510 @@
+{
+  "name": "示例题库 · 通用常识 20 题",
+  "questions": [
+    {
+      "id": "q_1_fd7u",
+      "type": "single",
+      "stem": "下列哪一项是中国的首都？",
+      "options": [
+        {
+          "key": "A",
+          "text": "上海"
+        },
+        {
+          "key": "B",
+          "text": "北京"
+        },
+        {
+          "key": "C",
+          "text": "广州"
+        },
+        {
+          "key": "D",
+          "text": "深圳"
+        }
+      ],
+      "answer": "B",
+      "analysis": "北京是中华人民共和国的首都，也是全国的政治、文化中心。",
+      "tags": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q_2_ziho",
+      "type": "single",
+      "stem": "一年有多少个季度？",
+      "options": [
+        {
+          "key": "A",
+          "text": "2 个"
+        },
+        {
+          "key": "B",
+          "text": "3 个"
+        },
+        {
+          "key": "C",
+          "text": "4 个"
+        },
+        {
+          "key": "D",
+          "text": "5 个"
+        }
+      ],
+      "answer": "C",
+      "analysis": "一年 12 个月，每 3 个月为一个季度，共 4 个季度。",
+      "tags": [
+        "常识"
+      ]
+    },
+    {
+      "id": "q_3_73dh",
+      "type": "single",
+      "stem": "计算机中 1 字节（Byte）等于多少位（bit）？",
+      "options": [
+        {
+          "key": "A",
+          "text": "4 位"
+        },
+        {
+          "key": "B",
+          "text": "8 位"
+        },
+        {
+          "key": "C",
+          "text": "16 位"
+        },
+        {
+          "key": "D",
+          "text": "32 位"
+        }
+      ],
+      "answer": "B",
+      "analysis": "1 Byte = 8 bit，这是计算机存储的基本换算关系。",
+      "tags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "q_4_qp6x",
+      "type": "single",
+      "stem": "下列哪一项不是编程语言？",
+      "options": [
+        {
+          "key": "A",
+          "text": "Python"
+        },
+        {
+          "key": "B",
+          "text": "Java"
+        },
+        {
+          "key": "C",
+          "text": "HTML"
+        },
+        {
+          "key": "D",
+          "text": "C++"
+        }
+      ],
+      "answer": "C",
+      "analysis": "HTML 是超文本标记语言，用于描述网页结构，不具备程序逻辑能力。",
+      "tags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "q_5_hs9p",
+      "type": "single",
+      "stem": "水的化学式是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "CO₂"
+        },
+        {
+          "key": "B",
+          "text": "H₂O"
+        },
+        {
+          "key": "C",
+          "text": "O₂"
+        },
+        {
+          "key": "D",
+          "text": "NaCl"
+        }
+      ],
+      "answer": "B",
+      "analysis": "一个水分子由两个氢原子和一个氧原子构成，写作 H₂O。",
+      "tags": [
+        "科学"
+      ]
+    },
+    {
+      "id": "q_6_sv7v",
+      "type": "single",
+      "stem": "光在真空中的传播速度约为多少？",
+      "options": [
+        {
+          "key": "A",
+          "text": "3 万公里/秒"
+        },
+        {
+          "key": "B",
+          "text": "30 万公里/秒"
+        },
+        {
+          "key": "C",
+          "text": "300 万公里/秒"
+        },
+        {
+          "key": "D",
+          "text": "3000 公里/秒"
+        }
+      ],
+      "answer": "B",
+      "analysis": "光速约为 3×10⁸ 米/秒，也就是约 30 万公里/秒。",
+      "tags": [
+        "科学"
+      ]
+    },
+    {
+      "id": "q_7_qvsm",
+      "type": "single",
+      "stem": "下列哪一项属于输出设备？",
+      "options": [
+        {
+          "key": "A",
+          "text": "键盘"
+        },
+        {
+          "key": "B",
+          "text": "鼠标"
+        },
+        {
+          "key": "C",
+          "text": "显示器"
+        },
+        {
+          "key": "D",
+          "text": "扫描仪"
+        }
+      ],
+      "answer": "C",
+      "analysis": "显示器把计算机处理结果呈现给用户，属于输出设备；其余三项都是输入设备。",
+      "tags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "q_8_akwz",
+      "type": "single",
+      "stem": "我国现行宪法是哪一年颁布的？",
+      "options": [
+        {
+          "key": "A",
+          "text": "1954 年"
+        },
+        {
+          "key": "B",
+          "text": "1978 年"
+        },
+        {
+          "key": "C",
+          "text": "1982 年"
+        },
+        {
+          "key": "D",
+          "text": "1999 年"
+        }
+      ],
+      "answer": "C",
+      "analysis": "现行宪法为 1982 年宪法，此后经过多次修正。",
+      "tags": [
+        "常识"
+      ]
+    },
+    {
+      "id": "q_9_q4zy",
+      "type": "multiple",
+      "stem": "下列属于操作系统的有？",
+      "options": [
+        {
+          "key": "A",
+          "text": "Windows"
+        },
+        {
+          "key": "B",
+          "text": "Linux"
+        },
+        {
+          "key": "C",
+          "text": "Photoshop"
+        },
+        {
+          "key": "D",
+          "text": "macOS"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "analysis": "Photoshop 是图像处理软件，不是操作系统。",
+      "tags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "q_10_c1ib",
+      "type": "multiple",
+      "stem": "下列属于输入设备的有？",
+      "options": [
+        {
+          "key": "A",
+          "text": "键盘"
+        },
+        {
+          "key": "B",
+          "text": "显示器"
+        },
+        {
+          "key": "C",
+          "text": "麦克风"
+        },
+        {
+          "key": "D",
+          "text": "摄像头"
+        }
+      ],
+      "answer": [
+        "A",
+        "C",
+        "D"
+      ],
+      "analysis": "显示器是输出设备，键盘、麦克风、摄像头都用于向计算机输入信息。",
+      "tags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "q_11_9luu",
+      "type": "multiple",
+      "stem": "下列关于水的说法正确的有？",
+      "options": [
+        {
+          "key": "A",
+          "text": "化学式为 H₂O"
+        },
+        {
+          "key": "B",
+          "text": "标准大气压下 100℃ 沸腾"
+        },
+        {
+          "key": "C",
+          "text": "属于混合物"
+        },
+        {
+          "key": "D",
+          "text": "0℃ 时结冰"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "analysis": "水是纯净物而不是混合物，因此 C 错误。",
+      "tags": [
+        "科学"
+      ]
+    },
+    {
+      "id": "q_12_dnrd",
+      "type": "multiple",
+      "stem": "下列属于前端技术的有？",
+      "options": [
+        {
+          "key": "A",
+          "text": "HTML"
+        },
+        {
+          "key": "B",
+          "text": "CSS"
+        },
+        {
+          "key": "C",
+          "text": "JavaScript"
+        },
+        {
+          "key": "D",
+          "text": "MySQL"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "analysis": "MySQL 是数据库，属于后端技术栈。",
+      "tags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "q_13_9vt9",
+      "type": "multiple",
+      "stem": "下列属于可再生能源的有？",
+      "options": [
+        {
+          "key": "A",
+          "text": "太阳能"
+        },
+        {
+          "key": "B",
+          "text": "风能"
+        },
+        {
+          "key": "C",
+          "text": "煤炭"
+        },
+        {
+          "key": "D",
+          "text": "水能"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "analysis": "煤炭属于化石能源，储量有限且不可再生。",
+      "tags": [
+        "常识"
+      ]
+    },
+    {
+      "id": "q_14_ns1o",
+      "type": "judge",
+      "stem": "地球是太阳系中距离太阳最近的行星。",
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": "B",
+      "analysis": "距离太阳最近的行星是水星，地球排第三。",
+      "tags": [
+        "科学"
+      ]
+    },
+    {
+      "id": "q_15_awat",
+      "type": "judge",
+      "stem": "1 KB 等于 1024 字节。",
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": "A",
+      "analysis": "在二进制计量体系中 1 KB = 1024 Byte。",
+      "tags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "q_16_63la",
+      "type": "judge",
+      "stem": "HTTP 协议默认使用 80 端口。",
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": "A",
+      "analysis": "HTTP 默认端口为 80，HTTPS 默认端口为 443。",
+      "tags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "q_17_scio",
+      "type": "judge",
+      "stem": "在 Excel 中，单元格 A1 表示第 1 行、第 A 列。",
+      "options": [
+        {
+          "key": "A",
+          "text": "正确"
+        },
+        {
+          "key": "B",
+          "text": "错误"
+        }
+      ],
+      "answer": "A",
+      "analysis": "Excel 的单元格地址由「列字母 + 行数字」组成，A1 即 A 列第 1 行。",
+      "tags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "q_18_53xq",
+      "type": "fill",
+      "stem": "中国的首都是____。",
+      "options": [],
+      "answer": [
+        "北京"
+      ],
+      "analysis": "中华人民共和国首都是北京。",
+      "tags": [
+        "地理"
+      ]
+    },
+    {
+      "id": "q_19_l5az",
+      "type": "fill",
+      "stem": "计算机中负责运算和控制的芯片称为____。",
+      "options": [],
+      "answer": [
+        "CPU",
+        "中央处理器"
+      ],
+      "analysis": "CPU（中央处理器）是计算机的核心部件，负责运算与控制。",
+      "tags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "q_20_7i4o",
+      "type": "fill",
+      "stem": "一天有____小时。",
+      "options": [],
+      "answer": [
+        "24",
+        "二十四"
+      ],
+      "analysis": "一天为 24 小时，1440 分钟。",
+      "tags": [
+        "常识"
+      ]
+    }
+  ]
+}

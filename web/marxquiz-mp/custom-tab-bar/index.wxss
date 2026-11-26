@@ -1,0 +1,65 @@
+/**
+ * custom-tab-bar 样式
+ * 组件在页面之外渲染，取不到 .page 上的 CSS 变量，所以这里自带一份主题变量。
+ */
+
+.tabbar {
+  --bg: #F3FAF6;
+  --card: #FFFFFF;
+  --text: #0F1115;
+  --text-2: #64756D;
+  --ink: #0F1115;
+  --on-ink: #FFFFFF;
+  --border: #E4F0EA;
+  --shadow-lg: 0 16rpx 44rpx rgba(18, 64, 47, 0.12);
+
+  padding: 0 32rpx calc(18rpx + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+}
+
+.tabbar.theme-dark {
+  --bg: #0D1210;
+  --card: #171F1B;
+  --text: #EAF2EE;
+  --text-2: #8FA199;
+  --ink: #C9F26E;
+  --on-ink: #0D1210;
+  --border: #232D28;
+  --shadow-lg: 0 16rpx 44rpx rgba(0, 0, 0, 0.55);
+}
+
+.tabbar-inner {
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  background: var(--card);
+  border-radius: 999rpx;
+  border: 1rpx solid var(--border);
+  box-shadow: var(--shadow-lg);
+  box-sizing: border-box;
+}
+
+.tab-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  border-radius: 999rpx;
+  transition: background 0.16s ease;
+}
+
+.tab-item-on {
+  background: var(--ink);
+}
+
+.tab-text {
+  font-size: 27rpx;
+  font-weight: 600;
+  color: var(--text-2);
+  letter-spacing: 0.4rpx;
+}
+
+.tab-item-on .tab-text {
+  color: var(--on-ink);
+}

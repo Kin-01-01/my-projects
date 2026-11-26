@@ -1,0 +1,520 @@
+{
+  "meta": {
+    "topic": "machine-learning",
+    "lang": "",
+    "count": 10,
+    "query": "topic:machine-learning",
+    "generatedAt": "2026-09-22T01:00:00.000Z",
+    "week": "2026-09-22",
+    "note": "示例种子数据，由 GitHub Actions 每周自动采集后覆盖为真实数据。"
+  },
+  "current": {
+    "week": "2026-09-22",
+    "fetchedAt": "2026-09-22T01:00:00.000Z",
+    "query": "topic:machine-learning",
+    "lang": "",
+    "topic": "machine-learning",
+    "items": [
+      {
+        "rank": 1,
+        "name": "transformers",
+        "fullName": "huggingface/transformers",
+        "owner": "huggingface",
+        "ownerUrl": "https://github.com/huggingface",
+        "stars": 135600,
+        "forks": 16272,
+        "language": "Python",
+        "description": "State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow.",
+        "url": "https://github.com/huggingface/transformers",
+        "delta": {
+          "type": "new",
+          "value": 135600
+        }
+      },
+      {
+        "rank": 2,
+        "name": "pytorch",
+        "fullName": "pytorch/pytorch",
+        "owner": "pytorch",
+        "ownerUrl": "https://github.com/pytorch",
+        "stars": 82400,
+        "forks": 9888,
+        "language": "Python",
+        "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration.",
+        "url": "https://github.com/pytorch/pytorch",
+        "delta": {
+          "type": "new",
+          "value": 82400
+        }
+      },
+      {
+        "rank": 3,
+        "name": "tensorflow",
+        "fullName": "tensorflow/tensorflow",
+        "owner": "tensorflow",
+        "ownerUrl": "https://github.com/tensorflow",
+        "stars": 187200,
+        "forks": 22464,
+        "language": "C++",
+        "description": "An Open Source Machine Learning Framework for Everyone.",
+        "url": "https://github.com/tensorflow/tensorflow",
+        "delta": {
+          "type": "new",
+          "value": 187200
+        }
+      },
+      {
+        "rank": 4,
+        "name": "keras",
+        "fullName": "keras-team/keras",
+        "owner": "keras-team",
+        "ownerUrl": "https://github.com/keras-team",
+        "stars": 63100,
+        "forks": 7572,
+        "language": "Python",
+        "description": "Deep Learning for humans.",
+        "url": "https://github.com/keras-team/keras",
+        "delta": {
+          "type": "new",
+          "value": 63100
+        }
+      },
+      {
+        "rank": 5,
+        "name": "scikit-learn",
+        "fullName": "scikit-learn/scikit-learn",
+        "owner": "scikit-learn",
+        "ownerUrl": "https://github.com/scikit-learn",
+        "stars": 60300,
+        "forks": 7236,
+        "language": "Python",
+        "description": "Machine Learning in Python.",
+        "url": "https://github.com/scikit-learn/scikit-learn",
+        "delta": {
+          "type": "new",
+          "value": 60300
+        }
+      },
+      {
+        "rank": 6,
+        "name": "langchain",
+        "fullName": "langchain-ai/langchain",
+        "owner": "langchain-ai",
+        "ownerUrl": "https://github.com/langchain-ai",
+        "stars": 95800,
+        "forks": 11496,
+        "language": "Python",
+        "description": "Build context-aware reasoning applications with LLMs.",
+        "url": "https://github.com/langchain-ai/langchain",
+        "delta": {
+          "type": "new",
+          "value": 95800
+        }
+      },
+      {
+        "rank": 7,
+        "name": "openai-python",
+        "fullName": "openai/openai-python",
+        "owner": "openai",
+        "ownerUrl": "https://github.com/openai",
+        "stars": 25700,
+        "forks": 3084,
+        "language": "Python",
+        "description": "The official Python library for the OpenAI API.",
+        "url": "https://github.com/openai/openai-python",
+        "delta": {
+          "type": "new",
+          "value": 25700
+        }
+      },
+      {
+        "rank": 8,
+        "name": "models",
+        "fullName": "tensorflow/models",
+        "owner": "tensorflow",
+        "ownerUrl": "https://github.com/tensorflow",
+        "stars": 77400,
+        "forks": 9288,
+        "language": "Python",
+        "description": "Models and examples built with TensorFlow.",
+        "url": "https://github.com/tensorflow/models",
+        "delta": {
+          "type": "new",
+          "value": 77400
+        }
+      },
+      {
+        "rank": 9,
+        "name": "ML-For-Beginners",
+        "fullName": "microsoft/ML-For-Beginners",
+        "owner": "microsoft",
+        "ownerUrl": "https://github.com/microsoft",
+        "stars": 70200,
+        "forks": 8424,
+        "language": "Jupyter Notebook",
+        "description": "12-week, 26-lesson course about Machine Learning for Beginners.",
+        "url": "https://github.com/microsoft/ML-For-Beginners",
+        "delta": {
+          "type": "new",
+          "value": 70200
+        }
+      },
+      {
+        "rank": 10,
+        "name": "coremltools",
+        "fullName": "apple/coremltools",
+        "owner": "apple",
+        "ownerUrl": "https://github.com/apple",
+        "stars": 18300,
+        "forks": 2196,
+        "language": "Python",
+        "description": "Core ML tools contain supporting tools for Core ML model conversion.",
+        "url": "https://github.com/apple/coremltools",
+        "delta": {
+          "type": "new",
+          "value": 18300
+        }
+      }
+    ]
+  },
+  "history": [
+    {
+      "week": "2026-09-15",
+      "fetchedAt": "2026-09-15T01:00:00.000Z",
+      "query": "topic:machine-learning",
+      "lang": "",
+      "topic": "machine-learning",
+      "items": [
+        {
+          "rank": 1,
+          "name": "transformers",
+          "fullName": "huggingface/transformers",
+          "owner": "huggingface",
+          "ownerUrl": "https://github.com/huggingface",
+          "stars": 135180,
+          "forks": 16222,
+          "language": "Python",
+          "description": "State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow.",
+          "url": "https://github.com/huggingface/transformers",
+          "delta": {
+            "type": "up",
+            "value": 420
+          }
+        },
+        {
+          "rank": 2,
+          "name": "pytorch",
+          "fullName": "pytorch/pytorch",
+          "owner": "pytorch",
+          "ownerUrl": "https://github.com/pytorch",
+          "stars": 82090,
+          "forks": 9851,
+          "language": "Python",
+          "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration.",
+          "url": "https://github.com/pytorch/pytorch",
+          "delta": {
+            "type": "up",
+            "value": 310
+          }
+        },
+        {
+          "rank": 3,
+          "name": "tensorflow",
+          "fullName": "tensorflow/tensorflow",
+          "owner": "tensorflow",
+          "ownerUrl": "https://github.com/tensorflow",
+          "stars": 187020,
+          "forks": 22442,
+          "language": "C++",
+          "description": "An Open Source Machine Learning Framework for Everyone.",
+          "url": "https://github.com/tensorflow/tensorflow",
+          "delta": {
+            "type": "up",
+            "value": 180
+          }
+        },
+        {
+          "rank": 4,
+          "name": "keras",
+          "fullName": "keras-team/keras",
+          "owner": "keras-team",
+          "ownerUrl": "https://github.com/keras-team",
+          "stars": 63005,
+          "forks": 7561,
+          "language": "Python",
+          "description": "Deep Learning for humans.",
+          "url": "https://github.com/keras-team/keras",
+          "delta": {
+            "type": "up",
+            "value": 95
+          }
+        },
+        {
+          "rank": 5,
+          "name": "scikit-learn",
+          "fullName": "scikit-learn/scikit-learn",
+          "owner": "scikit-learn",
+          "ownerUrl": "https://github.com/scikit-learn",
+          "stars": 60160,
+          "forks": 7219,
+          "language": "Python",
+          "description": "Machine Learning in Python.",
+          "url": "https://github.com/scikit-learn/scikit-learn",
+          "delta": {
+            "type": "up",
+            "value": 140
+          }
+        },
+        {
+          "rank": 6,
+          "name": "langchain",
+          "fullName": "langchain-ai/langchain",
+          "owner": "langchain-ai",
+          "ownerUrl": "https://github.com/langchain-ai",
+          "stars": 95280,
+          "forks": 11434,
+          "language": "Python",
+          "description": "Build context-aware reasoning applications with LLMs.",
+          "url": "https://github.com/langchain-ai/langchain",
+          "delta": {
+            "type": "up",
+            "value": 520
+          }
+        },
+        {
+          "rank": 7,
+          "name": "openai-python",
+          "fullName": "openai/openai-python",
+          "owner": "openai",
+          "ownerUrl": "https://github.com/openai",
+          "stars": 25090,
+          "forks": 3011,
+          "language": "Python",
+          "description": "The official Python library for the OpenAI API.",
+          "url": "https://github.com/openai/openai-python",
+          "delta": {
+            "type": "up",
+            "value": 610
+          }
+        },
+        {
+          "rank": 8,
+          "name": "models",
+          "fullName": "tensorflow/models",
+          "owner": "tensorflow",
+          "ownerUrl": "https://github.com/tensorflow",
+          "stars": 77280,
+          "forks": 9274,
+          "language": "Python",
+          "description": "Models and examples built with TensorFlow.",
+          "url": "https://github.com/tensorflow/models",
+          "delta": {
+            "type": "up",
+            "value": 120
+          }
+        },
+        {
+          "rank": 9,
+          "name": "ML-For-Beginners",
+          "fullName": "microsoft/ML-For-Beginners",
+          "owner": "microsoft",
+          "ownerUrl": "https://github.com/microsoft",
+          "stars": 70140,
+          "forks": 8417,
+          "language": "Jupyter Notebook",
+          "description": "12-week, 26-lesson course about Machine Learning for Beginners.",
+          "url": "https://github.com/microsoft/ML-For-Beginners",
+          "delta": {
+            "type": "up",
+            "value": 60
+          }
+        },
+        {
+          "rank": 10,
+          "name": "coremltools",
+          "fullName": "apple/coremltools",
+          "owner": "apple",
+          "ownerUrl": "https://github.com/apple",
+          "stars": 18255,
+          "forks": 2191,
+          "language": "Python",
+          "description": "Core ML tools contain supporting tools for Core ML model conversion.",
+          "url": "https://github.com/apple/coremltools",
+          "delta": {
+            "type": "up",
+            "value": 45
+          }
+        }
+      ]
+    },
+    {
+      "week": "2026-09-22",
+      "fetchedAt": "2026-09-22T01:00:00.000Z",
+      "query": "topic:machine-learning",
+      "lang": "",
+      "topic": "machine-learning",
+      "items": [
+        {
+          "rank": 1,
+          "name": "transformers",
+          "fullName": "huggingface/transformers",
+          "owner": "huggingface",
+          "ownerUrl": "https://github.com/huggingface",
+          "stars": 135600,
+          "forks": 16272,
+          "language": "Python",
+          "description": "State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow.",
+          "url": "https://github.com/huggingface/transformers",
+          "delta": {
+            "type": "new",
+            "value": 135600
+          }
+        },
+        {
+          "rank": 2,
+          "name": "pytorch",
+          "fullName": "pytorch/pytorch",
+          "owner": "pytorch",
+          "ownerUrl": "https://github.com/pytorch",
+          "stars": 82400,
+          "forks": 9888,
+          "language": "Python",
+          "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration.",
+          "url": "https://github.com/pytorch/pytorch",
+          "delta": {
+            "type": "new",
+            "value": 82400
+          }
+        },
+        {
+          "rank": 3,
+          "name": "tensorflow",
+          "fullName": "tensorflow/tensorflow",
+          "owner": "tensorflow",
+          "ownerUrl": "https://github.com/tensorflow",
+          "stars": 187200,
+          "forks": 22464,
+          "language": "C++",
+          "description": "An Open Source Machine Learning Framework for Everyone.",
+          "url": "https://github.com/tensorflow/tensorflow",
+          "delta": {
+            "type": "new",
+            "value": 187200
+          }
+        },
+        {
+          "rank": 4,
+          "name": "keras",
+          "fullName": "keras-team/keras",
+          "owner": "keras-team",
+          "ownerUrl": "https://github.com/keras-team",
+          "stars": 63100,
+          "forks": 7572,
+          "language": "Python",
+          "description": "Deep Learning for humans.",
+          "url": "https://github.com/keras-team/keras",
+          "delta": {
+            "type": "new",
+            "value": 63100
+          }
+        },
+        {
+          "rank": 5,
+          "name": "scikit-learn",
+          "fullName": "scikit-learn/scikit-learn",
+          "owner": "scikit-learn",
+          "ownerUrl": "https://github.com/scikit-learn",
+          "stars": 60300,
+          "forks": 7236,
+          "language": "Python",
+          "description": "Machine Learning in Python.",
+          "url": "https://github.com/scikit-learn/scikit-learn",
+          "delta": {
+            "type": "new",
+            "value": 60300
+          }
+        },
+        {
+          "rank": 6,
+          "name": "langchain",
+          "fullName": "langchain-ai/langchain",
+          "owner": "langchain-ai",
+          "ownerUrl": "https://github.com/langchain-ai",
+          "stars": 95800,
+          "forks": 11496,
+          "language": "Python",
+          "description": "Build context-aware reasoning applications with LLMs.",
+          "url": "https://github.com/langchain-ai/langchain",
+          "delta": {
+            "type": "new",
+            "value": 95800
+          }
+        },
+        {
+          "rank": 7,
+          "name": "openai-python",
+          "fullName": "openai/openai-python",
+          "owner": "openai",
+          "ownerUrl": "https://github.com/openai",
+          "stars": 25700,
+          "forks": 3084,
+          "language": "Python",
+          "description": "The official Python library for the OpenAI API.",
+          "url": "https://github.com/openai/openai-python",
+          "delta": {
+            "type": "new",
+            "value": 25700
+          }
+        },
+        {
+          "rank": 8,
+          "name": "models",
+          "fullName": "tensorflow/models",
+          "owner": "tensorflow",
+          "ownerUrl": "https://github.com/tensorflow",
+          "stars": 77400,
+          "forks": 9288,
+          "language": "Python",
+          "description": "Models and examples built with TensorFlow.",
+          "url": "https://github.com/tensorflow/models",
+          "delta": {
+            "type": "new",
+            "value": 77400
+          }
+        },
+        {
+          "rank": 9,
+          "name": "ML-For-Beginners",
+          "fullName": "microsoft/ML-For-Beginners",
+          "owner": "microsoft",
+          "ownerUrl": "https://github.com/microsoft",
+          "stars": 70200,
+          "forks": 8424,
+          "language": "Jupyter Notebook",
+          "description": "12-week, 26-lesson course about Machine Learning for Beginners.",
+          "url": "https://github.com/microsoft/ML-For-Beginners",
+          "delta": {
+            "type": "new",
+            "value": 70200
+          }
+        },
+        {
+          "rank": 10,
+          "name": "coremltools",
+          "fullName": "apple/coremltools",
+          "owner": "apple",
+          "ownerUrl": "https://github.com/apple",
+          "stars": 18300,
+          "forks": 2196,
+          "language": "Python",
+          "description": "Core ML tools contain supporting tools for Core ML model conversion.",
+          "url": "https://github.com/apple/coremltools",
+          "delta": {
+            "type": "new",
+            "value": 18300
+          }
+        }
+      ]
+    }
+  ]
+}

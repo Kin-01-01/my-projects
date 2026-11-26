@@ -1,0 +1,86 @@
+.hero { padding: 36rpx 32rpx; }
+.hero-top { display: flex; justify-content: space-between; align-items: center; }
+.hero-left { flex: 1; }
+.count { font-size: 92rpx; line-height: 1.15; margin: 8rpx 0; }
+
+/* 进度环：SVG 描边，完成度平滑过渡（stroke-dashoffset） */
+.ring {
+  position: relative; width: 168rpx; height: 168rpx; border-radius: 50%;
+  flex-shrink: 0; margin-left: 20rpx;
+}
+.ring.bump { animation: ix-ring-bump .42s cubic-bezier(.34, 1.56, .64, 1); }
+@keyframes ix-ring-bump { 0% { transform: scale(1); } 42% { transform: scale(1.06); } 100% { transform: scale(1); } }
+.ring-svg { position: absolute; left: 0; top: 0; width: 168rpx; height: 168rpx; }
+.ring-bg { fill: none; stroke: #E8EDF5; stroke-width: 10; }
+.ring-fg {
+  fill: none; stroke-width: 10; stroke-linecap: round;
+  transform: rotate(-90deg); transform-origin: 60px 60px;
+  transition: stroke-dashoffset .6s cubic-bezier(.4, 0, .2, 1);
+}
+.ring-hole {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 124rpx; height: 124rpx; border-radius: 50%; background: #FFFFFF;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  box-shadow: 0 6rpx 18rpx rgba(28, 46, 90, .08);
+}
+.pct { font-size: 30rpx; }
+
+.stage-row { display: flex; align-items: center; margin-top: 26rpx; flex-wrap: wrap; }
+.stage-tag {
+  background: linear-gradient(135deg, #5B8DEF, #36CFC9); color: #FFFFFF;
+  font-size: 22rpx; padding: 6rpx 20rpx; border-radius: 999rpx;
+}
+.milestone { margin-left: 16rpx; }
+
+.gap-text { margin: 16rpx 0 8rpx; }
+.add-link { color: #3B6EF6; font-size: 24rpx; padding: 4rpx 8rpx; position: relative; }
+
+.task-row { display: flex; align-items: flex-start; }
+.task-main { flex: 1; min-width: 0; }
+.task-title { font-size: 29rpx; display: flex; align-items: center; flex-wrap: wrap; }
+.badge {
+  margin-left: 12rpx; font-size: 20rpx; font-weight: 600; color: #3B6EF6;
+  background: #EEF3FE; padding: 3rpx 12rpx; border-radius: 999rpx;
+}
+.task-meta { display: flex; flex-wrap: wrap; align-items: center; margin-top: 10rpx; }
+.chip {
+  font-size: 20rpx; color: #6E7891; background: #F2F6FC;
+  padding: 3rpx 12rpx; border-radius: 999rpx; margin: 6rpx 8rpx 0 0;
+}
+.chip-type { color: #FFFFFF; background: linear-gradient(135deg, #5B8DEF, #36CFC9); }
+.chip-split { color: #1FBF9C; background: #E6F8F3; }
+.chip-slot { color: #E5746B; background: #FDF2F0; }
+.chip-min { color: #6E7891; }
+.task-src { font-size: 21rpx; color: #9AA4B8; margin-top: 10rpx; line-height: 1.5; word-break: break-all; }
+.task-act { color: #E5746B; font-size: 24rpx; padding: 6rpx 0 6rpx 16rpx; flex-shrink: 0; }
+.task-done { opacity: 0.55; }
+
+/* 今日卡片（翻面） */
+.tip-tag {
+  display: inline-block; font-size: 20rpx; color: #3B6EF6;
+  background: #EEF3FE; padding: 4rpx 14rpx; border-radius: 999rpx; margin-bottom: 14rpx;
+}
+.tip-title { font-size: 30rpx; line-height: 1.5; color: #16203A; }
+.tip-body { font-size: 26rpx; line-height: 1.7; color: #2C3858; margin-top: 12rpx; }
+.ix-flip .face, .ix-flip .back { padding: 28rpx; background: #FFFFFF; }
+.ix-flip .back { background: #F2F6FC; }
+
+/* 按钮包裹（波纹宿主 + 弹簧） */
+.btn-wrap { position: relative; }
+.btn-wrap .btn-primary, .btn-wrap .btn-ghost, .btn-wrap .btn-danger { margin-top: 20rpx; }
+
+/* 抽屉把手 */
+.drawer-handle {
+  width: 64rpx; height: 8rpx; border-radius: 999rpx;
+  background: #D8DFEC; margin: 0 auto 24rpx;
+}
+
+/* 弹层表单 */
+.form-row { display: flex; align-items: center; margin-top: 24rpx; }
+.form-label { width: 150rpx; color: #6E7891; font-size: 26rpx; flex-shrink: 0; }
+.form-input {
+  flex: 1; border-bottom: 1rpx solid #E2E8F2; padding: 8rpx 4rpx; font-size: 28rpx; color: #16203A;
+}
+.form-picker {
+  flex: 1; border-bottom: 1rpx solid #E2E8F2; padding: 8rpx 4rpx; font-size: 28rpx; color: #16203A;
+}

@@ -1,0 +1,58 @@
+<view class="page {{_enter}}">
+  <!-- 月历 -->
+  <view class="card">
+    <view class="cal-head">
+      <view class="nav" bindtap="onPrevMonth">‹</view>
+      <view class="title h2">{{year}} 年 {{month}} 月</view>
+      <view class="nav" bindtap="onNextMonth">›</view>
+    </view>
+
+    <view class="cal-week muted xsmall">
+      <text>日</text><text>一</text><text>二</text><text>三</text><text>四</text><text>五</text><text>六</text>
+    </view>
+
+    <view class="cal-grid">
+      <view class="cal-row" wx:for="{{weekRows}}" wx:for-item="row" wx:key="index">
+        <view
+          wx:for="{{row}}"
+          wx:for-item="cell"
+          wx:key="index"
+          class="cell {{cell.blank ? 'blank' : cell.cls}} {{cell.date === selected ? 'cell-sel' : ''}}"
+          bindtap="onTapDay"
+          data-date="{{cell.date}}">
+          <view class="dd {{cell.date === todayStr ? 'dd-today' : ''}}">{{cell.dd}}</view>
+          <view class="dot {{cell.done > 0 && cell.done >= cell.cnt ? 'dot-done' : ''}}" wx:if="{{cell.cnt > 0}}"></view>
+        </view>
+      </view>
+    </view>
+
+    <view class="legend xsmall">
+      <text class="lg lg-basic">基础</text>
+      <text class="lg lg-special">专项</text>
+      <text class="lg lg-mock">模考</text>
+      <text class="muted">有任务的日期显示圆点</text>
+    </view>
+  </view>
+
+  <!-- 全程时间轴 -->
+  <view class="card" wx:if="{{stageBar.length > 0}}">
+    <view class="muted xsmall">全程时间轴 · 今天在全程的 {{todayPct}}% 处</view>
+    <view class="bar">
+      <view
+        wx:for="{{stageBar}}"
+        wx:key="key"
+        class="seg {{item.cls}}"
+        style="flex: {{item.days}};">{{item.name}} {{item.days}}天</view>
+    </view>
+  </view>
+
+  <!-- 选中日的任务 -->
+  <view class="section-title title">{{selected}} 的任务</view>
+  <view wx:if="{{dayTasks.length === 0}}" class="card empty">
+    <view class="muted">这一天没有任务</view>
+  </view>
+  <view class="card" wx:for="{{dayTasks}}" wx:key="id">
+    <view class="{{item.status === 1 ? 'strike' : ''}}">{{item.title}}</view>
+    <view class="muted xsmall">{{item.typeName}} · 约{{item.estMinutes}} 分钟 · {{item.status === 1 ? '已完成' : '未完成'}}</view>
+  </view>
+</view>

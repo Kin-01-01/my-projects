@@ -1,0 +1,902 @@
+=== PAGE 1 ===
+RESEARCH ARTICLE
+www.afm-journal.de
+Intercalation Pseudocapacitance in 2D VS2/Ti3C2Tx MXene
+Hybrids for All-Climate and Long-Cycle Sodium-Ion Batteries
+Zhenyun Zhao, Yang Wu, Rui Hu, Jianguo Lu,* Dongliang Chen, Tongtong Li,*
+Yunna Guo, Liqiang Zhang,* Hongwen Chen, Zhizhen Ye, and Chuanfang (John) Zhang*
+Layered transition metal dichalcogenides have great potential as anodes of
+sodium-ion batteries (SIBs) due to their high theoretical speciﬁc capacity.
+However, the restacking severely limits their accessible sites, leading to
+undesirable speciﬁc capacity, cycle stability, and working temperature range.
+Herein, a hierarchical 2D VS2/Ti3C2Tx MXene hybrid is designed via a simple
+liquid-mixing method, where VS2 is conﬁned in the conductive Ti3C2Tx matrix
+with chemical connections built between them. The in situ transmission
+electron microscopy analyses reveal that the hybrid depends on a very fast
+and reversible intercalation/de-intercalation process between VS2 and NaxVS2
+(where x = 1) to store sodium. Theoretical calculations disclose that the
+Ti3C2Tx matrix remarkably enhances the charge transfer and alleviates the
+volume expansion of VS2 especially after Na+ is inserted. Consequently, such
+a rational design exhibits an intercalation pseudocapacitance-dominant
+mechanism, with excellent speciﬁc capacity (522 mAh g−1 at 0.2 A g−1), rate
+capability (342 mAh g−1 at 10 A g−1), cycle life (116% after 3000 cycles), and
+also all-climate workability (with high speciﬁc capacity and long-term cycle
+stability even at 70 and −40 °C). This study may open up a new vision to
+design fast-charging, long-cycle, and all-climate SIBs anodes based on the
+intercalation pseudocapacitance.
+1. Introduction
+Nowadays, lithium-ion batteries (LIBs) are the most widely used
+energy storage device in versatile ﬁelds such as mobile phones,
+laptops, cameras, and electric cars.[1] However, the shortage of
+lithium resources limits its wider application. In this regard,
+Z. Zhao, Y. Wu, R. Hu, J. Lu, D. Chen, Z. Ye
+State Key Laboratory of Silicon and Advanced Semiconductor Materials
+School of Materials Science and Engineering
+Zhejiang University
+Hangzhou 310027, China
+E-mail: [邮箱已脱敏]
+T.Li
+School of Materials ScienceandEngineering
+Zhejiang Sci-Tech University
+Hangzhou 310018,China
+E-mail: [邮箱已脱敏]
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adfm.202307794
+DOI: 10.1002/adfm.202307794
+sodium-ion batteries (SIBs) are consid-
+ered a good alternative due to suﬃcient
+reservation, low cost, and similar chemical
+features.[2] Since the radius of Na+ (1.06
+Å) is larger than Li+ (0.76 Å), many an-
+odes used for LIBs are not applicable to
+SIBs. For example, graphite is the most
+commercialized anode of LIBs, but it ex-
+hibits poor electrochemical performance in
+SIBs.[3] Therefore, it is necessary to ex-
+plore anode materials suitable for SIBs.
+2D materials, with open insertion chan-
+nels for Na+ and large reactive surface
+area, are considered as promising anodes
+for advanced SIBs. Nowadays, transition
+metal chalcogenides have received inten-
+sive attention due to their high capacity
+and long cycle life in theory.[4] Vanadium
+disulﬁde (VS2), with the S–V–S sandwich
+structure connected by covalent bonds in-
+side the layers and van der Waals forces
+between the layers,[5] can ensure the in-
+sertion and de-insertion of Na+. Also, VS2
+has great superiorities of metallic con-
+ductivity, high theoretical capacity (932
+mAh g−1), and large interlayer spacing
+of 5.67 Å.[6] However, its densely stacked microstructures cause
+sluggish ionic kinetics and can hardly buﬀer volume expansion
+during cycles.[7] Some works have reported the strategies of de-
+signing 3D self-assembly VS2 nanostructures,[8] developing vari-
+ous crystalline structures [9] and introducing vacancies.[10] How-
+ever, their speciﬁc capacity, cycle stability, and rate capability
+Y. Guo, L. Zhang
+Clean Nano Energy Center
+State Key Laboratory of Metastable Materials Science and Technology
+Yanshan University
+Qinhuangdao 066004, China
+E-mail: [邮箱已脱敏]
+H.Chen
+Catalysis Research Center
+Department of Chemistry
+Technical University of Munich
+Lichtenbergstrasse4, D85748 Garching, Germany
+C.(J.)Zhang
+Collegeof Materials ScienceandEngineering
+Sichuan University
+Chengdu 610065, China
+E-mail: [邮箱已脱敏]
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (1 of 11)
+
+=== PAGE 2 ===
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 1. Preparation and design of VS2/Ti3C2Tx hybrid. a) XRD of VS2·NH3 precursor and VS2. b) Diagram of the sodium storage of pure VS2.
+c) Diagram of the preparation and sodium storage of the VS2/Ti3C2Tx hybrid.
+cannot simultaneously meet expectation, and they cannot oper-
+ate at extreme temperatures for long time.[7]
+Creating the van der Waals heterogeneous 2D structure is
+an eﬀective method to enhance electrochemical properties of
+VS2 nanomaterials.[11] MXene is a group of 2D layered transi-
+tion metal carbide, nitride, or carbonitrides, with the formula of
+Mn+1XnTx (M: transition metal element, X: carbon or nitrogen,
+Tx: surface termination).[12] They are characterized by large inter-
+layer spacing, high electrical conductivity, and excellent mechan-
+ical ﬂexibility.[13] Several works have veriﬁed the decreased ad-
+sorption energy and potential high capacity of the hybrids of VS2
+with Ti2CO2, Ti2CS2, or V2CO2 MXenes as SIBs anodes through
+theoretical calculations.[11,14] As a typical MXene, Ti3C2Tx has a
+high theoretical capacity of 352 mAh g−1 for SIBs.[15] However,
+there have been no works investigating the VS2/Ti3C2Tx MXene
+hybrid as SIBs anodes so far, neither in theoretical nor practical
+facets.
+In this work, we design a hierarchical 2D VS2/Ti3C2Tx MX-
+ene hybrid, where the VS2 nanopetals are nicely conﬁned in the
+conductive Ti3C2Tx microplates matrix with chemical bonds built
+between them. We will demonstrate that it is possible to obtain
+an ideal SIB anode with wide temperature range, high capac-
+ity, long cycle, and high rate behaviors concurrently. The in situ
+transmission electron microscopy (TEM), electrochemical kinet-
+ics analyses, and ﬁrst-principles calculations reveal the interca-
+lation pseudocapacitive mechanism between VS2 and NaxVS2,
+notably where x = 1, which is an adsorption-controlled process
+featured by very fast and reversible ionic insertion/de-insertion.
+Besides, we ﬁnd the main limitations of VS2 are the slow Na+
+insertion speed (not the de-insertion), remarkably decayed elec-
+trical conductivity after Na+ insertion, and signiﬁcant volume ex-
+pansion with Na+ inserted. However, combing with the conduc-
+tive Ti3C2Tx matrix can well remedy the shortage of VS2. Con-
+sequently, the design of 2D VS2/Ti3C2Tx MXene hybrid shows
+high speciﬁc capacity, fast-charging capability, long cycle, and all-
+climate workability concurrently for advanced SIBs anodes.
+2. Results and Discussion
+2.1. Preparation and Design of VS2/Ti3C2Tx Hybrid
+The VS2·NH3 precursor was synthesized via the solvothermal
+reaction of NH4VO3 and thioacetamide (TAA) in ethylene gly-
+col, which was annealed to obtain pure VS2. Figure 1a shows
+X-ray diﬀraction (XRD) patterns of the VS2·NH3 precursor
+and VS2. The diﬀraction peaks of the precursor correspond to
+VS2·NH3 (JCPDF 41–0642), indicating that the NH3 produced by
+TAA decomposition is inserted into VS2 to expand interplanar
+spacing.[16] After annealing at 400 °C in an Ar atmosphere, the
+peaks at 15.38°, 32.06°, 35.74°, 45.24°, 57.15°, 58.33°, and 59.56°
+occur, assigned to the (001), (100), (011), (012), (110), (103), and
+(111) planes of VS2 (JCPDF 89–1640), respectively. No VS2·NH3
+peaks are observed after annealing, indicating NH3 is removed
+from VS2 layers. In general, pure VS2 suﬀers from severe restack-
+ing, as shown in Figure 1b, causing sluggish ionic transport,
+limited accessible sites, and signiﬁcant volume expansion. Thus,
+pure VS2-based SIBs anodes are diﬃcult to simultaneously ob-
+tain high speciﬁc capacity, fast-charging capability, long cycle,
+and all-climate workability.
+Accordingly, this work introduces the Ti3C2Tx MXene as the
+supporting framework of VS2 via a very simple liquid-phase mix-
+ing method. Figure 1c brieﬂy describes the preparation of the
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (2 of 11)
+ 16163028, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adfm.202307794 by Lanzhou University, Wiley Online Library on [11/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 3 ===
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 2. Morphological and structural characterization. SEM images of a) Ti3C2Tx b) VS2, and c,d) VS2/Ti3C2Tx. e–g) TEM, HRTEM, and SAED patterns
+of VS2/Ti3C2Tx. h) XRD patterns of Ti3C2Tx, VS2, and VS2/Ti3C2Tx. i) N2 adsorption/desorption isotherm curves and BJH pore size distribution of
+VS2/Ti3C2Tx. j) XPS survey scans of Ti3C2Tx, VS2, and VS2/Ti3C2Tx. k–m) High-resolution XPS spectra of VS2/Ti3C2Tx.
+VS2/Ti3C2Tx hybrid. The Ti3C2Tx dispersion was obtained by
+acid etching Ti3AlC2 in HCl/LiF solution, and it was mixed with
+the VS2·NH3/ethanol dispersion. After the vacuum ﬁltration and
+annealing processes, the hybrid was obtained. Combing with
+the Ti3C2Tx MXene matrix can well remedy the defects of VS2,
+leading to an intercalation pseudocapacitance-dominant behav-
+ior with fast ionic kinetics, fast charge transfer, and incredible re-
+versibility, which is conducive to develop advanced SIBs anodes
+especially with long-cycle and all-climate workability.
+2.2. Morphological and Structural Characterization
+From the scanning electron microscope (SEM) images of Ti3C2Tx
+(Figure 2a), VS2 (Figure 2b), and VS2/Ti3C2Tx (Figure 2c,d),
+Ti3C2Tx has a large 2D structure with microﬂakes stacked to-
+gether (one to several micrometers), and VS2 shows a curved
+petal shape with a much smaller average size of 100–200 nm.
+As for the VS2/Ti3C2Tx hybrid, VS2 nanopetals are distributed
+on the surface and among the layers of Ti3C2Tx microﬂakes. The
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (3 of 11)
+ 16163028, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adfm.202307794 by Lanzhou University, Wiley Online Library on [11/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 4 ===
+www.advancedsciencenews.com
+www.afm-journal.de
+Ti, O, S, and V elements are uniformly distributed in the hybrid
+(shown in the energy-dispersive X-ray diﬀraction (EDX) map-
+ping in Figure S1, Supporting Information). The TEM images
+can characterize their microstructures more clearly. As shown in
+Figure S2, Supporting Information, Ti3C2Tx shows a thin- and
+ﬂat-ﬂake shape with neat edges, and VS2 looks like small curved
+petals. For the VS2/Ti3C2Tx hybrid (shown in Figure 2e), VS2
+nanopetals (darker and curved areas) are uniformly distributed
+on the Ti3C2Tx microﬂakes (transparent and ﬂatter regions),
+which can be further conﬁrmed by the elemental distribution in
+the EDX-TEM mapping images (Figure S3, Supporting Informa-
+tion). The above results suggest that VS2 nanopetals are well con-
+ﬁned in the Ti3C2Tx matrix, forming a hierarchical 2D structure.
+From the high-resolution transmission electron microscope
+(HRTEM) image (Figure 2f), two interplanar spacings of 0.250
+and 1.345 nm are found, in agreement with the (011) plane of VS2
+and the (002) plane of Ti3C2Tx, respectively. In the selected area
+electron diﬀraction (SAED) patterns of the hybrid (Figure 2g), the
+spots of VS2 can be seen, corresponding with the (103), (012), and
+(011) planes of VS2 and verifying its polycrystalline structure. The
+Ti3C2Tx spots cannot be observed mainly because the 1/d value
+of the (002) plane is too small. Figure 2h displays XRD patterns
+of VS2, Ti3C2Tx, and VS2/Ti3C2Tx. The main peak of Ti3C2Tx at
+6.3° is generated by ﬂake stacking along the (002) direction. The
+interlayer spacing is calculated to be 1.401 nm. The (002) peak
+of Ti3C2Tx shifts to a lower 2𝜃position in VS2/Ti3C2Tx, illustrat-
+ing that the stacking of Ti3C2Tx microﬂakes is interrupted by VS2
+nanopetals. The XRD patterns of VS2/Ti3C2Tx and VS2 are very
+similar, but the hybrid shows lower peak intensities, indicating
+its lower crystallinities and looser structure. The reduced stacking
+degree and relatively open structure are conducive to Na+ trans-
+port.
+Figure 2i shows the Brunauere Emmette Teller (BET) and Bar-
+rette Joynere Halenda (BJH) curves of the VS2/Ti3C2Tx hybrid.
+The BET surface area is measured to be 36.8 m2 g−1 and the
+BJH desorption average pore size is about 17.5 nm. However,
+the surface area of pure VS2 (shown in Figure S4, Supporting
+Information) is just 3.3 m2 g−1 with a larger average pore size
+of 31.0 nm. Both of them have mesoporous size, advantageous
+to Na+ insertion/de-insertion. More importantly, Ti3C2Tx signiﬁ-
+cantly increases the surface area, indicating more active sites for
+charge storage and higher capacity.
+Figure 2j displays X-ray photoelectron spectroscopy (XPS) sur-
+vey scans of VS2, Ti3C2Tx, and VS2/Ti3C2Tx. Pure Ti3C2Tx con-
+tains F, O, Ti, and C, in which F comes from lithium ﬂuoride
+used to etch Ti3AlC2. Pure VS2 contains V, S, C, and O elements,
+where O comes from slight surface oxidation, and C comes from
+adsorbed air or carbonization of residual organic matter in its
+precursor. The VS2/Ti3C2Tx hybrid contains all the elements
+of Ti3C2Tx and VS2. Figure 2k–m displays high-resolution XPS
+spectra of the VS2/Ti3C2Tx hybrid. The spectrum of Ti 2p is com-
+posed of the Ti─C (455.9 and 461.9 eV), Ti─S (457.1 and 463.3
+eV), and Ti─O bonds (459.0 and 464.4 eV). The Ti─S structure in-
+dicates the S of VS2 forms chemical bonds with the Ti of Ti3C2Tx.
+The spectrum of S 2p shows the S2−(161.6 and 162.6 eV), C─S─C
+(164.0 and 165.2 eV), and C─SOx─C structures (169.1 eV). The
+C─S─C structure is generated from the chemical combination
+between Ti3C2Tx and VS2, and some of them are oxidized into
+C─SOx─C. The spectrum of V 2p demonstrates the existence of
+V─C (513.1 and 520.7 eV), V3+ (514.2 and 522.1 eV), and V4+
+(516.4 and 523.8 eV), among which a small amount of V3+ may
+be from the side reduction, and the V─C bonds are mainly from
+the chemical combination between Ti3C2Tx and VS2. The above
+results indicate that the VS2/Ti3C2Tx hybrid is not just a physical
+mixture, but chemical combination is built between them, which
+can stabilize the heterogeneous 2D structure.
+2.3. Electrochemical Performance
+The CV curve of pure Ti3C2Tx (shown in Figure S5, Supporting
+Information) exhibits no redox peaks, indicating a pseudocapac-
+itive feature. Compared with it, VS2 and VS2/Ti3C2Tx both show
+obvious redox peaks, as shown in their ﬁrst three CV cycles at
+a slow scan rate of 0.2 mV s−1 (Figure 3a,b). The diﬀerence be-
+tween the ﬁrst and the following cycles is mainly due to the for-
+mation of solid electrolyte interface (SEI) ﬁlms. Moreover, pure
+VS2 shows three reduction (or sodiation) peaks at 1.50, 0.75, and
+0.4 V in the cathodic scan. The reduction peak at 1.50 V can be
+ascribed to the insertion of Na+ into vacancies between diﬀerent
+V─S layers.[6b,17] The reduction peaks below 1.50 V are attributed
+to the phase transmission from VS2 to NaxVS2. In the anodic
+scan, two oxidation (or desodiation) peaks at 1.58 and 2.12 V are
+assigned to the de-insertion of Na+ and the reverse phase trans-
+mission from NaxVS2 to VS2. The VS2/Ti3C2Tx hybrid (Figure 3b)
+also contains these redox peaks, and it shows a new reduction
+peak at 1.94 V maybe caused by some side-products generated
+in the VS2–Ti3C2Tx mixing–annealing process. Comparing the
+CV curves of VS2 and VS2/Ti3C2Tx, we can ﬁnd the hybrid owns
+much larger response current but a less sharp shape, indicating
+higher capacity and the pseudocapacitive feature. Besides, the
+second and third cycles of the hybrid almost overlap, but those
+of VS2 do not, indicating better stability and reversibility of the
+hybrid.
+Figure 3c shows discharge–charge curves of the VS2/Ti3C2Tx
+hybrid at diﬀerent current densities, which have similar plateaus
+voltages to redox peaks of CV curves and balanced charged and
+discharged speciﬁc capacities. The discharge–charge curves of
+pure VS2 are shown in Figure S6, Supporting Information, in
+which the charged speciﬁc capacity is much larger than the dis-
+charged one, mainly because of the mismatched desodiation and
+sodiation kinetics, which will be discussed below. Figure 3d com-
+pares rate performance of VS2, Ti3C2Tx, and VS2/Ti3C2Tx. Pure
+Ti3C2Tx owns a very low capacity of just 12 mAh g−1 at 0.2 A g−1.
+In comparison, VS2 and VS2/Ti3C2Tx show much higher speciﬁc
+capacities of 382 and 522 mAh g−1 at 0.2 A g−1, respectively. De-
+tailed speciﬁc capacities can be found in Table S1, Supporting
+Information. The VS2/Ti3C2Tx hybrid exhibits excellent rate per-
+formance with 342 mAh g−1 at an increased current density of
+10 A g−1 and a higher capacity of 544 mAh g−1 than the original
+value when the current density returns to 0.2 A g−1. However,
+pure VS2 begins to decay at 10 A g−1 and shows a lower capacity
+of 378 mAh g−1 when the current density returns to 0.2 A g−1,
+indicating poorer rate performance than the hybrid.
+Nyquist plots of the VS2/Ti3C2Tx hybrid before and after
+100 cycles are given in Figure S7, Supporting Information, and
+the utilized equivalent circuit diagram is shown in Figure S8,
+Supporting Information. The plot before cycles comprises one
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (4 of 11)
+ 16163028, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adfm.202307794 by Lanzhou University, Wiley Online Library on [11/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 5 ===
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 3. Electrochemical performance. a,b) CV curves of VS2 and VS2/Ti3C2Tx at 0.2 mV s−1 for the initial three cycles. c) Discharge–charge curves of
+VS2/Ti3C2Tx at diﬀerent current densities. d) Rate performance of Ti3C2Tx, VS2, and VS2/Ti3C2Tx. e) Long-term cycle performance of VS2 and VS2/Ti3C2Tx
+at 2 A g−1. f) All-climate long-term cycle performance of VS2/Ti3C2Tx at 70 and −40 °C at 2 A g−1.
+semicircle at the high-frequency area, and a straight line at a slope
+of 45° followed by a steep tail at the low-frequency area. A new
+semicircle appears after rate cycles due to the formation of SEI
+ﬁlm. The straight line along with its tail is related to the semi-
+inﬁnite plane diﬀusion of Na+, suggesting the fast ionic diﬀusion
+before and after rate cycles. After ﬁtting, the equivalent series re-
+sistances (ESR) of VS2/Ti3C2Tx before and after rate cycles are
+almost the same, which are ≈19.0 Ω. The charge transfer resis-
+tance (RCT) before cycles is as small as 9.1 Ω, which slightly in-
+creases to 9.9 Ω after rate cycles. A small SEI resistance (RSEI) of
+18.2 Ω is obtained after rate cycles. The ultralow RCT and RSEI
+and fast ionic transport contribute to high capacity, rate capa-
+bility, cycle stability, and tolerance to extreme temperatures. Be-
+sides, Figure S9, Supporting Information, displays SEM images
+of the VS2/Ti3C2Tx hybrid electrode before and after rate cycles,
+between which the main diﬀerence is the generation of ﬂat SEI
+ﬁlms. The Nyquist plots of pure VS2 are shown in Figure S10,
+Supporting Information. In comparison, pure VS2 owns smaller
+ESR and RCT (17.0 and 3.1 Ω) than VS2/Ti3C2Tx before cycles,
+indicating VS2 is actually featured by high electrical conductivity
+and fast charge transfer ability. However, the ESR and RCT values
+obviously increase to 26.1 and 11.2 Ω after cycles, respectively,
+and a large RSEI of 36.8 Ω occurs, which get much larger than
+those of VS2/Ti3C2Tx. This is mainly because pure VS2 shows
+considerable volume expansion after the insertion of Na+, pos-
+sibly causing structural collapse and then reducing the electrical
+conductivity and charge transfer ability. Another factor is that the
+inserted Na+ can aﬀect the energy band structures of pure VS2
+and decrease its electrical conductivity, which will be character-
+ized and discussed in detail in the following theoretical calcu-
+lation part. We can also ﬁnd that combining VS2 with Ti3C2Tx
+MXene can generate a low-resistance SEI ﬁlm, which is critical
+to decrease the total charge transfer resistance and obtain high-
+performance anodes.
+Figure 3e shows the charge/discharge cycle performance of
+VS2 and VS2/Ti3C2Tx at a current density of 2 A g−1. Both of them
+have a high coulombic eﬃciency up to 100%, further indicat-
+ing that the above-mentioned insertion/de-insertion and phase
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (5 of 11)
+ 16163028, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adfm.202307794 by Lanzhou University, Wiley Online Library on [11/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 6 ===
+www.advancedsciencenews.com
+www.afm-journal.de
+transmission (between VS2 and NaxVS2) are highly reversible.
+The VS2/Ti3C2Tx hybrid delivers an initial discharge capacity of
+423 mAh g−1, and reversible capacities of 515 and 491 mAh g−1 af-
+ter 600 and 3000 cycles, respectively. In contrast, pure VS2 shows
+an initial discharge speciﬁc capacity of 257 mAh g−1, with a re-
+versible capacity of 383 mAh g−1 in the 600th cycle, and hits a
+breakdown after that. The VS2/Ti3C2Tx hybrid electrode has an
+evidently higher capacity and cycle stability. The main reason
+should be that the MXene provides a ﬂexible framework for VS2
+nanopetals, increasing the speciﬁc surface area and buﬀering
+their volume expansion during cycles. By the way, the activation
+current of rate capability and cycle life are 0.2 and 2 A g−1, respec-
+tively, thereby causing diﬀerent tendencies in the ﬁrst several cy-
+cles in Figure 3d,e. The elevation of speciﬁc capacity can be found
+during cycles mainly due to the better electrode–electrolyte inter-
+facial contact, also known as further electrode activation during
+cycles. It is also worth noting that SIBs have always suﬀered from
+low cycle stability, but this work makes a superlong cycle life of up
+to 3000 cycles, which is a signiﬁcant breakthrough in SIBs. Based
+on the comparison with previously reported VS2-based (Figure
+S11 and Table S2, Supporting Information) and Ti3C2Tx-based
+(Figure S12 and Table S3, Supporting Information) electrodes,
+this work has signiﬁcant superiorities in speciﬁc capacity, rate
+capability and cycle life simultaneously.
+To explore the tolerance to extreme temperatures, the long-
+term cycle performance was tested at 70 and −40 °C with a large
+current density of 2 A g−1. Pure VS2 showed poor capacities and
+quickly lost its energy-storage performance at extreme tempera-
+tures (−40 and 70 °C). To the best of our knowledge, almost no
+works investigate the long-term cycle stability of VS2 at extreme
+temperatures; this work selects much stricter temperatures than
+previous reports. As displayed in Figure 3f, the VS2/Ti3C2Tx hy-
+brid still shows a high speciﬁc capacity of 352.2 mAh g−1 af-
+ter 200 cycles at 70 °C, and 123.9 mAh g−1 after the follow-up
+200 cycles at −40 °C, and it slightly exceeds the initial capac-
+ity to 458 mAh g−1 after the follow-up 50 cycles at room tem-
+perature. The underlying reasons for such excellent cycle stabil-
+ities at extreme temperatures mainly include the stable hierar-
+chical 2D microstructure with chemical bonds built, fast inter-
+facial charge transfer, and the fast reversible ionic insertion/de-
+insertion which will be discussed below in detail. These results
+demonstrate that the VS2/Ti3C2Tx hybrid can be applied in all-
+climate conditions, and has applicational prospects in most hu-
+man settlements or in some special environments.
+2.4. Electrochemical Reaction Mechanism
+To ﬁgure out the sodium storage mechanism of the VS2/Ti3C2Tx
+hybrid, we carried out the in situ TEM characterization (with
+the test system diagramed in Figure S13, Supporting Informa-
+tion). Figure 4a–j shows the local morphological evolution of the
+VS2/Ti3C2Tx hybrid during the ﬁrst two cycles. After the ﬁrst dis-
+charge process (Figure 4a–c), the volume expands due to the in-
+sertion of Na+. After the ﬁrst charge process (Figure 4d,e), the
+volume shrinks due to the de-insertion of Na+. During the sec-
+ond discharge/charge cycle (Figure 4f–j), volume expansion and
+shrinking can also be observed, which indicate Na+ can reversibly
+insert to and de-insert from the hybrid (recorded in Video S1,
+Supporting Information).
+To study the phase transmission in discharge/charge cycles,
+the SAED patterns of the I, II, III, and IV areas (marked in
+Figure 4a,c,e,h) are shown in Figure 4k–n, which are correspon-
+sive to the initial, ﬁrst discharged, ﬁrst charged, and second dis-
+charged states, respectively. When the material is in the initial
+state without charging or discharging (Figure 4k), its diﬀrac-
+tion spots are assigned to the (011), (012), (103), and (202)
+planes of VS2 (JCPDF 89–1640). After the ﬁrst discharge process
+(Figure 4l), the diﬀraction spots are attributed to the (104), (018),
+and (024) planes of NaVS2 (JCPDF 03-065-3668). This proves that
+Na+ insert into VS2 to form NaVS2, as shown below.
+VS2 + Na+ + e−→NaVS2
+(1)
+After the ﬁrst charge process (Figure 4m), the diﬀraction spots
+correspond to VS2 again, indicating that Na+ smoothly de-insert
+from the hybrid, and the reverse reaction occurs, as shown below.
+NaVS2 →VS2 + Na+ + e−
+(2)
+After the hybrid is discharged for the second time (Figure 4n),
+the insertion of Na+ recurs, and the diﬀraction spots of NaVS2 are
+observed again. To the best of our knowledge, it is the ﬁrst time
+that in situ TEM is used to disclose the sodium storage process of
+VS2-based compounds. The intercalation reaction between VS2
+and NaVS2 is essentially caused by the highly reversible insertion
+and de-insertion of Na+ at vacancies among VS2 layers, as shown
+in Figure S14, Supporting Information.
+According to previous literatures, the VS2-based nanomateri-
+als mainly depend on the conversion and intercalation reactions
+to store charges. Chen et al.[6a] have reported that both reactions
+can be described by VS2 →NaxVS2, where S will be reduced when
+0 < x ≤1, and V and S will be reduced when 1 < x ≤2, but the
+conversion reaction to generate V and Na2S would occur when
+x = 3. Larger x values mean more inserted Na+ in a unit and
+larger volume expansion. Thus, the conversion reaction usually
+results in large speciﬁc capacity but short cycle life. To avoid
+the conversion reaction, most works ensure the voltage window
+above 0.3 V. Even so, the two reactions may still coexist, that is,
+the spherical VS2 nanosheets (329 mAh g−1 at 0.2 A g−1 with a
+retention of 82.95% after 800 cycles) [8] and the 3D rose-like VS2
+(571 mAh g−1 at 0.2 A g−1 with a retention of 98.95% after 350
+cycles).[18] We speculate this is because sluggish ionic kinetics
+make ions accumulate and then excessively insert to very local
+spaces.
+Among the works focusing on the intercalation mechanism,
+some did not characterize the x value in NaxVS2,[19] and some
+found x > 1 for their speciﬁc VS2 nanomaterials (i.e., the hier-
+archical ﬂower-like VS2 with x = 2, showing ≈600 mAh g−1 at
+0.1 A g−1 which retained 83% after 700 cycles in 0.3≈3 V[17]). Be-
+sides, there are two works with x = 1, that is, the layer-by-layer
+stacked VS2 nanosheets with 250 mAh g−1 at 0.2 A g−1 which re-
+tained ≈100% after 600 cycles in 0.4–2.2 V,[20] and the nano-grain
+dependent 3D hierarchical VS2 microrods with 310 mAh g−1 at
+0.2 A g−1 which retained ≈105% after 270 cycles in 0.5–3 V.[21]
+According to the reported intercalation-dominant electrodes, we
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (6 of 11)
+ 16163028, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adfm.202307794 by Lanzhou University, Wiley Online Library on [11/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 7 ===
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 4. In situ TEM to reveal electrochemical reaction mechanism. a–j) In situ TEM images showing morphological evolutions in the ﬁrst two
+discharge–charge cycles of VS2/Ti3C2Tx. SAED patterns k) at the initial state, l) after the ﬁrst discharge, m) after the ﬁrst charge and n) after the second
+discharge cycles.
+can see it is still challenging to achieve both high capacity and
+long cycle.
+Herein, the VS2/Ti3C2Tx hybrid relies on the reversible inter-
+calation between VS2 and NaxVS2 in 0.3–3 V, where x = 1. It
+presents signiﬁcant superiorities in capacity, cycle life, rate ca-
+pability, and all-climate workability concurrently. The key is that
+the Ti3C2Tx MXene matrix not only increases active sites but
+also provides a large quantity of smooth ionic channels. Besides,
+we infer that the x value of VS2→NaxVS2 may be in a relation-
+ship with ionic insertion kinetic, which was neglected previously.
+Smooth ionic channels can relieve the local excessive ionic in-
+sertion and make a small x value of 1 even at extreme tempera-
+tures, which intrinsically has small volume expansion and high
+reversibility. Thus, the fast and reversible intercalation reaction
+with x = 1 leads to the excellent cycle life, rate capability, and
+all-climate workability. Meanwhile, the Ti3C2Tx MXene increases
+surface area and active sites, thereby overcoming the disadvan-
+tage of low speciﬁc capacity of the x = 1 condition. Finally, the
+hybrid exhibits almost ideal sodium storage properties.
+2.5. Electrochemical Kinetics Analyses
+Figure 5a,b shows the CV curves of VS2 and VS2/Ti3C2Tx at scan
+rates from 0.2 to 1 mV s−1. All CV curves of the VS2/Ti3C2Tx
+hybrid have tiny peak shifts with the increase of scan rates, indi-
+cating high electrical conductivity of electrodes, fast ionic trans-
+port kinetics, and low polarization.[22] However, pure VS2 shows
+more signiﬁcant peak shifts than VS2/Ti3C2Tx and irregular vari-
+ation tendency with the increase of scan rates, especially the rel-
+ative intensities of Peaks 1 and 2 at 0.8 mV s−1, and the suddenly
+strengthened Peak 3 at 1 mV s−1. The irregular tendency of CV
+cycles is mainly caused by structural restacking and instability
+of pure VS2, as well as its large-resistance SEI ﬁlm. The charge-
+storage kinetics mechanisms mainly include the diﬀusion- or
+adsorption-controlled ones, which can be identiﬁed by the rela-
+tionship between peak current (i) and scan rate (v) according to
+the following equations
+i = avb
+(3)
+log (i) = b log (v) + log (a)
+(4)
+where b = 0.5 indicates the diﬀusion-controlled battery-type
+mechanism, while b = 1 represents the adsorption-controlled
+pseudocapacitive mechanism.[23] By the way, b values are as
+shown in Figure 5c,d, three remarkable redox peaks (Peaks 1, 2,
+and 3) of VS2/Ti3C2Tx and VS2 are selected to make the log(i)–
+log(v) plots. This way, b values of Peaks 1, 2, and 3 can be
+calculated from the slope, which are 0.89, 0.82, and 1 for the
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (7 of 11)
+ 16163028, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adfm.202307794 by Lanzhou University, Wiley Online Library on [11/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 8 ===
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 5. Electrochemical kinetics analyses. CV curves at diﬀerent scan rates from 0.2 to 1 mV s−1 of a) VS2/Ti3C2Tx and b) VS2. Log (i) versus log
+(v) plots of c) VS2/Ti3C2Tx and d) VS2. e) CV curve of VS2/Ti3C2Tx at 1 mV s−1 with the pseudocapacitance-contributed part marked. f) Calculated
+pseudocapacitance and diﬀusion contributions of VS2/Ti3C2Tx.
+VS2/Ti3C2Tx hybrid, and 1.09, 0.82, and 0.51 for pure VS2, respec-
+tively. The three b values of pure VS2 are very diﬀerent, suggest-
+ing the unbalanced sodiation and desodiation rates, which are
+corresponsive with its GCD results mentioned above. On the con-
+trary, all b values of the VS2/Ti3C2Tx hybrid are between 0.8 and 1,
+indicating the charge storage process of the hybrid is jointly con-
+trolled by diﬀusion and adsorption but mainly the latter. Further-
+more, pure VS2 has a lower b value of 0.51 for Peak 3 (sodiation),
+so the determining step for pure VS2 is mainly the Na+ insertion,
+which is also observed in most of previous VS2 nanomaterials as
+discussed above. However, it is greatly increased to 1 after com-
+bined with Ti3C2Tx. Besides, the two samples have the same b
+values of Peak 2 (desodiation), and the hybrid has a little lower b
+of Peak 1 (desodiation) than pure VS2. Thus, the hybrid mainly fa-
+cilitates the Na+ insertion and improves the ionic transport. This
+also relieves the local excessive Na+ insertion and enhances re-
+versibility. The fast and reversible insertion and de-insertion pos-
+sibly lead to an intercalation pseudocapacitive behavior.[24] It de-
+pends on the reversible intercalation reaction to store charges,
+and is essentially controlled by adsorption, thereby showing high
+reversibility and fast electrochemical kinetics, which is promis-
+ing for long-cycle all-climate LIBs or SIBs.
+To further explore the pseudocapacitive contribution, all cur-
+rent values at corresponding voltages measured at diﬀerent scan
+rates are put into the following equation
+i (v) = k1 v + k2v1∕2
+(5)
+so k1 and k2 can be calculated, and k1v is the pseudocapacitance
+contribution while k2v1/2 is the diﬀusion contribution. Figure 5e
+exhibits the CV curve of VS2/Ti3C2Tx at 1 mV s−1 with the
+pseudocapacitance-contributed parts marked, and those at lower
+scan rates are shown in Figure S15, Supporting Information,
+and the calculated contributions are summarized in Figure 5f.
+The corresponsive data of VS2 are shown in Figures S16 and
+S17, Supporting Information. When the scan rates gradually in-
+crease from 0.2 to 1 mV s−1, the pseudocapacitance contribu-
+tions of VS2/Ti3C2Tx are 83.8%, 88.6%, 89.4%, 90.8%, and 92.6%,
+much larger than those of pure VS2. Such high pseudocapac-
+itance contributions conﬁrm the intercalation pseudocapacitive
+mechanism of the hybrid, which is featured by fast ionic kinetics
+and incredible reversibility. This is a major reason for good rate
+capability, long cycle life, and all-climate workability.
+2.6. Theoretical Calculations
+The ﬁrst-principles calculations were performed to analyze why
+the VS2/Ti3C2Tx hybrid can improve electronic and ionic trans-
+ports, with the computational details given in Note S1, Support-
+ing Information. The adsorption energy (Eads) of Na atoms on
+layered VS2–VS2 and VS2–Ti3C2Tx are calculated as follows.
+Eads = (Etot −Eact −nENa
+) ∕n
+(6)
+where Etot, Eact, n, and ENa are the total energy of Na-adsorbed
+active materials, the energy of active materials (VS2
+or
+VS2/Ti3C2Tx), the number of adsorbed Na atoms, and the
+energy per Na atom in the bulk Na material. As shown in
+Figure 6a, the Eads of pure VS2 with Na+ adsorbed on the surface
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (8 of 11)
+ 16163028, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adfm.202307794 by Lanzhou University, Wiley Online Library on [11/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 9 ===
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 6. Theoretical calculations. a,b) Adsorption energy of one Na atom adsorbed on the surfaces and in the layers of VS2–VS2 and VS2–Ti3C2Tx.
+c,d) Interlayer distances of VS2–VS2 and VS2–Ti3C2Tx before and after Na insertion. e,h) CDD of VS2–VS2 and VS2–Ti3C2Tx with Na atoms inserted in
+the interlayers, where blue and yellow areas mean electronic depletion and accumulation. f,g) DOS of VS2 before and after Na insertion. i,j) DOS of
+VS2–Ti3C2Tx before and after Na insertion.
+or in the interlayer are −3.24 and −3.29 eV, respectively. They are
+both below zero and very close, indicating Na+ is easy to adsorb
+both on the surface and in the interlayer of VS2. As shown in
+Figure 6b, the Eads of layered VS2–Ti3C2Tx is also below zero.
+The Eads of Na+ adsorbed in the VS2–Ti3C2Tx interlayer (−3.74
+eV) is much smaller than that on the VS2 surface (−2.91 eV)
+and that on the Ti3C2Tx surface (−2.77 eV). Comparing VS2
+and VS2/Ti3C2Tx, we can ﬁnd that the Eads in the VS2–Ti3C2Tx
+interlayer is smaller than that in the VS2–VS2 interlayer. Thus,
+the hybrid can facilitate the Na+ adsorption and contribute
+to
+the
+adsorption-controlled
+intercalation
+pseudocapacitive
+behavior.
+The optimized stacking conﬁgurations of layered VS2–VS2
+and layered VS2–Ti3C2Tx structures with and without Na+
+inserted are detailed in Figures S18 and S19, Supporting
+Information. The interlayer distances before and after Na+
+insertion are given in Figure 6c,d, which are 2.995 and
+3.976 Å for pure VS2, and are 2.956 and 3.385 Å for the
+VS2/Ti3C2Tx hybrid. Therefore, the hybrid can signiﬁcantly
+buﬀer the volume expansion during insertion/de-insertion cy-
+cles, well explaining why the hybrid owns better rate and cycle
+stabilities.
+To insight the inﬂuences on electronic transport, the
+charge density diﬀerence (CDD) of Na atoms inserted in the
+interlayer of VS2–VS2 and VS2–Ti3C2Tx are simulated, as shown
+in Figure 6e,h (more detailed patterns shown in Figure S20,
+Supporting Information). Na atoms transfer electrons to nearby
+S atoms for pure VS2, and they transfer electrons to nearby S, O,
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (9 of 11)
+ 16163028, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adfm.202307794 by Lanzhou University, Wiley Online Library on [11/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 10 ===
+www.advancedsciencenews.com
+www.afm-journal.de
+F, and Ti atoms for the VS2/Ti3C2Tx hybrid. Noticeably, the elec-
+tron depletions around Na atoms are isolated in pure VS2, while
+they get much linked in the VS2/Ti3C2Tx hybrid, indicating the
+improved electronic transport. Furthermore, the density of states
+(DOS) of VS2 and VS2/Ti3C2Tx before and after Na insertion are
+displayed in Figures 6f,g,i,j, respectively. Pure VS2 has metallic
+conductivity since the Fermi level is in the conduction band.
+However, the insertion of Na results in some new band gaps,
+indicating electronic transport is negatively aﬀected during the
+sodium-storage process. Such a phenomenon is also reported by
+Song et al.[14] As for the VS2/Ti3C2Tx hybrid, no new band gaps
+occur after Na insertion, and the Fermi level is always in the
+conductive band. This suggests the hybrid has metallic conduc-
+tivity, and more importantly, its electronic transport is almost not
+aﬀected after the insertion of Na. This is also a signiﬁcant reason
+for the enhanced speciﬁc capacity, rate capability, cycle life, and
+tolerance to extreme temperatures of the VS2/Ti3C2Tx hybrid.
+The underlying reasons for such advanced performance of the
+VS2/Ti3C2Tx hybrid have been discussed above in detail, and
+the summary of them can also be found in Note S2, Supporting
+Information.
+3. Conclusion
+This work designs a hierarchical 2D VS2/Ti3C2Tx MXene hybrid,
+in which VS2 is conﬁned in the conductive Ti3C2Tx matrix with
+chemical connections built between them via a simple liquid-
+phase mixing method. Pure VS2 suﬀers from the restacking, re-
+sulting in limited accessible sites, sluggish Na+ transport chan-
+nels, and signiﬁcant volume expansion. The Ti3C2Tx MXene ma-
+trix not only improves active sites but also provides a large quan-
+tity of smooth ionic transport channels. The in situ TEM indicates
+the hybrid relies on the very fast and reversible intercalation/de-
+intercalation process between VS2 and NaxVS2, where x = 1, to
+store sodium, which is intrinsically featured by fast ionic trans-
+ports and small volume expansion. This leads to an intercala-
+tion pseudocapacitance-dominant mechanism, and the Ti3C2Tx
+matrix can further buﬀer the volume expansion, so the hybrid
+achieves excellent speciﬁc capacities, rate capabilities, and cy-
+cle stability even at extreme temperatures concurrently. Besides,
+we found the sodium storage of pure VS2 is mainly limited by
+the Na+ insertion step (not the de-insertion), and their electrical
+conductivity would remarkably decrease after the Na+ insertion.
+However, the Ti3C2Tx matrix can well remedy the disadvantages,
+which were veriﬁed by theoretical calculations. In summary, VS2
+and Ti3C2Tx are a perfect match, and the proposed simple liquid-
+phase mixing method can chemically combine them, contribut-
+ing to the intercalation pseudocapacitance-dominant behavior.
+This study is expected to open a new version for designing ad-
+vanced SIBs.
+4. Experimental Section
+Preparation of Ti3C2Tx Dispersion:
+Ti3C2Tx is a 2D multilayer material
+from etching the Al layers in raw Ti3AlC2. 2 g lithium ﬂuoride (LiF) was im-
+mersed into 40 mL 9 m hydrochloric acid (HCl). The mixture was stirred for
+1 h until LiF was completely dissolved. Then, 2 g Ti3AlC2 (Jilin 11 Technol-
+ogy Co., Ltd) was added and stirred at 36 °C for 24 h. The reaction product
+was centrifuged at 5000 rpm and washed several times until PH of the su-
+pernatant got neutral, during which the bottom Ti3C2Tx was observed to be
+gradually expanded. Then, the dark green Ti3C2Tx dispersion was obtained
+through ultrasound (30 min, 100 W) and centrifugation (8000 rpm, 5 min)
+treatment, and such a process was repeated for several times, ﬁnally ob-
+taining the Ti3C2Tx dispersion with a concentration of ≈2 mg mL−1.
+Preparation
+of
+VS2·NH3:
+2
+mmol
+ammonium
+metavanadate
+(NH4VO3) was added into 30 mL ethylene glycol and then stirred at
+60 °C for 1 h to obtain an orange solution. After cooling, the above
+solution turned yellow, and 10 mmol TAA and 5 mmol urea were added
+and stirred for 30 min. Then, the mixed solution was transferred into a 50
+mL Teﬂon-lined autoclave and kept at 180 °C for 20 h. After cooling, the
+as-prepared VS2·NH3 was collected, washed with ethyl alcohol for three
+times, and vacuum-dried at 60 °C for 12 h.
+Synthesis of 2D VS2/Ti3C2Tx Hybrid:
+A simple liquid-phase mixing
+method was used to synthesize the 2D VS2/Ti3C2Tx hybrid. The VS2·NH3
+precursor (240 mg) was ultrasonicated in 40 mL ethanol for 1 h before
+added to the Ti3C2Tx dispersion (solid mass: 60 mg) and stirred for 1 h.
+In this process, no precipitation was observed. The product was vacuum
+ﬁltered and dried at 60 °C for 12 h to obtain the VS2·NH3/Ti3C2Tx hybrid.
+Subsequently, the above hybrid was annealed at 400 °C under ﬂowing ar-
+gon for 1 h to remove NH3. The pure VS2 and pure Ti3C2Tx samples did
+not need the mixing step and were directly obtained by annealing.
+Characterizations:
+XRD (Rmpyrean, PANalytical B.V., Netherlands) us-
+ing Cu K𝛼radiation (𝜆= 1.540598 Å) was used to investigate crystal struc-
+tures. Morphologies were scanned by HRTEM (JEM-2100, JEOL, Japan),
+and SEM (S-4800, Hitachi, Japan). EDX in conjunction with SEM and TEM
+was used to analyze the elemental composition and distribution. XPS (ES-
+CALAB250 Xi, Thermo, America) was used to evaluate elemental valences.
+Besides, BET and BJH were utilized to study the speciﬁc surface area and
+pore size distributions (BET/BJH, ASAP2020, Micromeritics, America).
+Battery Assembly:
+Electrochemical measurements were carried out
+based on the assembled 2032-type coin cells. The sodium sheet was used
+as the counter and reference electrode. The working electrode was pre-
+pared by mixing the 70 wt% speciﬁc active materials (pure VS2, pure
+Ti3C2Tx and VS2/Ti3C2Tx hybrid), 20 wt% super-P and 10 wt% polyvinyli-
+dene ﬂuoride (PVDF) in N-methyl-2-pyrrolidone (NMP). The active mate-
+rials, super-P, PVDF, and NMP were used as electrode active materials,
+conductive agent, binder, and solvent, respectively. After grinding, the ho-
+mogeneous slurry was blade-coated on the copper foil and dried overnight
+at 60 °C. The average mass loading of the active materials was ≈1.3 mg
+cm−2. The glass microﬁber (Whatman GF/F) was used as the separator,
+and 1 m NaCF3SO3 dissolved in diglyme was used as the electrolyte (with
+the reasons detailed in Note S3, Supporting Information). All the cells were
+assembled in an argon-ﬁlled glovebox with lower oxygen and water than
+0.1 ppm.
+Electrochemical Measurement:
+The sodium half-cells were cycled in the
+range of 0.3–3.0 V at diﬀerent current densities through the CT2001A
+LAND battery test system to explore electrochemical properties. Cyclic
+voltammetry (CV) and electrochemical impedance spectroscopy (EIS)
+were tested on a CHI760E electrochemical workstation (CH Instru-
+ments, Inc.). CV was carried out in the potential range of 0.3–3.0 V at
+the scan rates of 0.2–1.0 mV s−1. The frequencies of EIS were from
+100 kHz to 0.01 Hz under the AC voltage amplitude of 5 mV. Besides,
+in situ TEM was carried out to study the reaction mechanism by Titan G2
+ETEM.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+This work was supported by the “Pioneer” and “Leading Goose” R&D Pro-
+gram of Zhejiang Province (2023C01235), the National Natural Science
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (10 of 11)
+ 16163028, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adfm.202307794 by Lanzhou University, Wiley Online Library on [11/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+=== PAGE 11 ===
+www.advancedsciencenews.com
+www.afm-journal.de
+Foundation of China (Nos. 52022088 and 51971245), and the Natural Sci-
+ence Foundation of Hebei Province (No. F2021203097).
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Author Contributions
+Z.Z., Y.W., and R.H. authors contributed equally to this work. Conceptual-
+ization, Data Curation, Formal Analysis, Investigation, Methodology, and
+Writing and contributed equally to this article—Original Draft; J.L., T.L.,
+L.Z., and C.Z.: Funding Acquisition, Software, Resources, Supervision, and
+Writing—Review and Editing; D.C., Y.G., and H.C.: Formal Analysis; Z.Y.:
+Resources.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the cor-
+responding author upon reasonable request.
+Keywords
+2D VS2/Ti3C2T x MXene hybrid, all-climate workability, fast rate capabil-
+ity, intercalation pseudocapacitance, long cycle life, sodium-ion battery an-
+odes
+Received: July 7, 2023
+Revised: August 20, 2023
+Published online:
+[1] a) J. B. Goodenough, Y. Kim, Chem. Mater. 2010, 22, 587; b) J. M.
+Tarascon, M. Armand, Nature 2001, 414, 359; c) Y. Guo, R. Khatoon,
+J. Lu, Q. He, X. Gao, X. Yang, X. Hu, Y. Wu, J. Lian, Z. Li, Z. Ye, Carbon
+Energy 2021, 3, 841; d) Z. Zhao, K. Xia, Y. Hou, Q. Zhang, Z. Ye, J.
+Lu, Chem. Soc. Rev. 2021, 50, 12702; e) L. Jiale, W. Yang, G. Yichuan,
+Z. Zhenyun, Z. Qinghua, H. Yang, C. Lingxiang, L. Bin, P. Xinhua, Y.
+Zhizhen, L. Jianguo, Chin. Chem. Lett. 2021, 33, 3931; f) K. Chen, S.
+Yin, D. Xue, Tungsten 2019, 1, 287.
+[2] a) V. Palomares, P. Serras, I. Villaluenga, K. B. Hueso, J. Carretero-
+Gonzalez, T. Rojo, Environ Sci 2012, 5, 5884; b) M. Wan, R. Zeng,
+J. Meng, Z. Cheng, W. Chen, J. Peng, W. Zhang, Y. Huang, Nano-
+Micro Lett. 2021, 14, 9; c) L. Xie, Z. Yang, J. Sun, H. Zhou, X.
+Chi, H. Chen, A. X. Li, Y. Yao, S. Chen, Nano-Micro Lett. 2018, 10,
+50; d) X. Wang, L. Ren, Y. Wang, M. Qiu, Z. Yang, J. Fang, W.
+Xu, D. Qiao, K. Zhang, Q. Zhang, Y. Hou, Z. Ye, J. Lu, J Power
+Sources 2023, 557, 232533; e) Y. Xiao, H.-R. Wang, H.-Y. Hu, Y.-
+F. Zhu, S. Li, J.-Y. Li, X.-W. Wu, S.-L. Chou, Adv. Mater. 2022, 34,
+2202695.
+[3] M. Ren, D. Cao, W. Jiang, K. Su, L. Pan, Y. Jiang, S. Yan, T.
+Qiu, M. Yang, J. Yang, C. Zhang, Electrochim. Acta 2021, 373,
+137835.
+[4] a) Z. Wu, J. Li, Y. Zhong, J. Liu, K. Wang, X. Guo, L. Huang, B. Zhong,
+S. Sun, J. Alloys Compd. 2016, 688, 790; b) W. Zhang, H. Zhou, Z.
+Huang, S. Li, C. Wang, H. Li, Z. Yan, T. Hou, Y. Kuang, J Energy
+Chem 2020, 49, 307; c) J. Li, H. Hu, J. Wang, Y. Xiao, Carbon Neu-
+tralization 2022, 1, 96; d) H. Wang, K. Lai, F. Guo, B. Long, X. Zeng,
+Z. Fu, X. Wu, Y. Xiao, S. Dou, J. Dai, Carbon Neutralization 2022, 1,
+59.
+[5] a) P. He, M. Yan, G. Zhang, R. Sun, L. Chen, Q. An, L. Mai, Adv. Energy
+Mater. 2017, 7, 1601920; b) Q. Ji, C. Li, J. Wang, J. Niu, Y. Gong, Z.
+Zhang, Q. Fang, Y. Zhang, J. Shi, L. Liao, X. Wu, L. Gu, Z. Liu, Y. Zhang,
+Nano Lett. 2017, 17, 4908.
+[6] a) D. Wang, Y. Zhao, R. Lian, D. Yang, D. Zhang, X. Meng, Y. Liu, Y.
+Wei, G. Chen, J Mater Chem 2018, 6, 15985; b) J. Wang, N. Luo, J. Wu,
+S. Huang, L. Yu, M. Wei, J. Mater. Chem. A 2019, 7, 3691; c) D. Xu, H.
+Wang, R. Qiu, Q. Wang, Z. Mao, Y. Jiang, R. Wang, B. He, Y. Gong, D.
+Li, X. Hu, Energy Storage Mater. 2020, 28, 91; d) R. Sun, Q. Wei, Q. Li,
+W. Luo, Q. An, J. Sheng, D. Wang, W. Chen, L. Mai, ACS Appl Mater
+Interfaces 2015, 7, 20902.
+[7] J. Liao, A. Manthiram, Nano Energy 2015, 18, 20.
+[8] J. Chen, Z. Tang, Z. Pan, W. Shi, Y. Wang, Z. Q. Tian, P. K. Shen, Mater.
+Des. 2020, 192, 108780.
+[9] W. Li, J. Huang, L. Feng, L. Cao, Y. Liu, L. Pan, Electrochim. Acta 2018,
+286, 131.
+[10] Y. Zhao, D. Yang, T. He, J. Li, L. Wei, D. Wang, Y. Wang, X. Wang, G.
+Chen, Y. Wei, Chem. Eng. J. 2021, 421, 129715.
+[11] N. Li, Y. Li, X. Zhu, C. Huang, J. Fan, Appl. Surf. Sci. 2020, 543, 148772.
+[12] X. Xie, K. Kretschmer, B. Anasori, B. Sun, G. Wang, Y. Gogotsi, ACS
+Appl. Nano Mater. 2018, 1, 505.
+[13] a) C. Zhang, Y. Ma, X. Zhang, S. Abdolhosseinzadeh, H. Sheng, W.
+Lan, A. Pakdel, J. Heier, F. Nüesch, Energy Environ. Mater. 2020, 3, 29;
+b) S. Abdolhosseinzadeh, X. Jiang, H. Zhang, J. Qiu, C. Zhang, Mater.
+Today 2021, 48, 214.
+[14] D.-X. Song, L. Xie, Y.-F. Zhang, Y. Lu, M. An, W.-G. Ma, X. Zhang, ACS
+Appl. Energy Mater. 2020, 3, 7699.
+[15] S. Kajiyama, L. Szabova, K. Sodeyama, H. Iinuma, R. Morita, K.
+Gotoh, Y. Tateyama, M. Okubo, A. Yamada, ACS Nano 2016, 10,
+3334.
+[16] J. Feng, X. Sun, C. Wu, L. Peng, C. Lin, S. Hu, J. Yang, Y. Xie, J. Am.
+Chem. Soc. 2011, 133, 17832.
+[17] D. Yu, Q. Pang, Y. Gao, Y. Wei, C. Wang, G. Chen, F. Du, Energy Storage
+Mater. 2018, 11, 1.
+[18] H. Zang, F. Yang, S. Cao, M. Yang, W. Liu, M. Ren, Y. Wang, J. Elec-
+trochem. Soc. 2022, 169, 110519.
+[19] F. Yu, Z. Yang, X. Zhang, P. Yang, L. Li, J. Ma, J Mater Chem 2022, 10,
+23531.
+[20] R. Sun, Q. Wei, J. Sheng, C. Shi, Q. An, S. Liu, L. Mai, Nano Energy
+2017, 35, 396.
+[21] W. Li, J. Huang, L. Feng, L. Cao, Y. Liu, L. Pan, J Power Sources 2018,
+398, 91.
+[22] a) X. Li, L. Yuan, R. Liu, H. He, J. Hao, Y. Lu, Y. Wang, G. Liang, G.
+Yuan, Z. Guo, Adv. Energy Mater. 2021, 11, 2003010; b) Z. Hu, X. Zhao,
+Z. Li, S. Li, P. Sun, G. Wang, Q. Zhang, J. Liu, L. Zhang, Adv. Mater.
+2021, 33, 2104039.
+[23] a) V. Augustyn, J. Come, M. A. Lowe, J. W. Kim, P. L. Taberna, S. H.
+Tolbert, H. D. Abruna, P. Simon, B. Dunn, Nat. Mater. 2013, 12, 518;
+b) Y. Tian, J. Lu, H. Tang, X. Wang, L. Zhang, P. Hu, L. Zhou, Y. Wang,
+Y. Guo, R. Khatoon, Q. Zhang, Q. He, Y. He, M. Qiu, Y. Hou, Z. Ye,
+Chem. Eng. J. 2021, 422, 130054; c) Z. Zhenyun, Y. Jie, L. Jingwen, W.
+Xu, C. Dongliang, J. Lei, Z. Qinghua, H. Yang, Y. Zhizhen, L. Jianguo,
+J Energy Storage 2023, 65, 107360.
+[24] C. Chen, Z. Wang, B. Zhang, L. Miao, J. Cai, L. Peng, Y. Huang,
+J. Jiang, Y. Huang, L. Zhang, J. Xie, Energy Storage Mater. 2017, 8,
+161.
+Adv. Funct. Mater. 2023, 2307794
+© 2023 Wiley-VCH GmbH
+2307794 (11 of 11)
+ 16163028, 0, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/adfm.202307794 by Lanzhou University, Wiley Online Library on [11/09/2023]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+

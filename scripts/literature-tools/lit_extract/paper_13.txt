@@ -1,0 +1,498 @@
+=== PAGE 1 ===
+Research Article
+In situ observation of electrochemical Ostwald ripening during
+sodium deposition
+Lin Geng1,§,
+ Qiunan Liu1,§,
+ Jingzhao Chen1,
+ Peng Jia1,
+ Hongjun Ye1,
+ Jitong Yan1,3,
+ Liqiang Zhang1 
+(✉),
+Yongfu Tang1,3 (✉), and Jianyu Huang1,2 (✉)
+1  Clean Nano Energy Center, State Key Laboratory of Metastable Materials Science and Technology, Yanshan University, Qinhuangdao 066004,
+China
+2  Key Laboratory of Low Dimensional Materials and Application Technology of Ministry of Education, School of Materials Science and Engineering,
+Xiangtan University, Xiangtan 411105, China
+3  Hebei Key Laboratory of Applied Chemistry, College of Environmental and Chemical Engineering, Yanshan University, Qinhuangdao 066004,
+China
+§ Lin Geng and Qiunan Liu contributed equally to this work.
+ 
+© Tsinghua University Press and Springer-Verlag GmbH Germany, part of Springer Nature 2021
+Received: 23 July 2021 / Revised: 20 August 2021 / Accepted: 2 September 2021
+ABSTRACT
+Sodium (Na) metal batteries (SMBs) using Na anode are potential “beyond lithium” electrochemical technology for future energy
+storage  applications.  However,  uncontrollable  Na  dendrite  growth  has  plagued  the  application  of  SMBs.  Understanding  Na
+deposition mechanisms, particularly the early stage of Na deposition kinetics, is critical to enable the SMBs. In this context, we
+conducted in situ observations of the early stage of electrochemical Na deposition. We revealed an important electrochemical
+Ostwald  ripening  (EOR)  phenomenon  which  dictated  the  early  stage  of  Na  deposition.  Namely,  small  Na  nanocrystals  were
+nucleated  randomly,  which  then  grew.  During  growth,  smaller  Na  nanocrystals  were  contained  by  bigger  ones  via  EOR.  We
+observed  two  types  of  EOR  with  one  involving  only  electrochemical  reaction  driven  by  electrochemical  potential  difference
+between  bigger  and  smaller  nanocrystals;  while  the  other  being  dominated  by  mass  transport  governed  by  surface  energy
+minimization. The results provide new understanding to the Na deposition mechanism, which may be useful for the development
+of SMB for energy storage applications.
+KEYWORDS
+in situ, Na deposition, electrochemical Ostwald ripening (EOR), Na nanocrystals
+ 
+ 
+1    Introduction
+Ostwald ripening is a crystal growth mechanism in which larger
+nanocrystals grow at the expense of smaller ones, which are
+progressively dissolved [1–9]. Electrochemical Ostwald ripening
+(EOR) involves electron and ion transport from a smaller
+nanocrystal to a larger one. Henglein and Plieth first explored the
+physicochemical and electrochemical properties of metal
+nanoparticles, respectively [10–12]. Plieth predicted a negative
+shift in the Ag standard electrode potential and a decrement in the
+work function of small (< 25 nm) metallic particles [11]. The
+standard electrode potential Ep of a small nanocrystal shifts
+negatively via the following equation [1, 2, 11]
+Ep = Ebulk −2γVm/zFr
+(1)
+where γ is the surface tension; Vm is the molar volume; z is the ion
+exchange numbers; F is Faraday’s constant; r is the radius.
+As the electrochemical potential of a smaller nanocrystal is
+more negative than a larger one, the smaller nanocrystal is easier
+to be oxidized than the larger one. For EOR to occur, there must
+be a fast electron transport path between the particles via either
+direct contact or an indirect current collector, and a fast metal ion
+transport channel between the metal particles through an
+electrolyte. The occurrence of EOR will cause uneven metal
+deposition, which critically affects the performance of sodium
+(Na) metal batteries (SMBs) or other metal ion batteries (MIBs)
+[13, 14]. Herein, we in situ image an EOR phenomenon which
+dictates the early stage of Na and lithium (Li) deposition. Namely,
+small Na or Li nanocrystals are nucleated randomly, which then
+grow. During growth, smaller Na or Li nanocrystals are contained
+by bigger ones via EOR.
+ 
+2    Experimental
+ 
+2.1    Materials synthesis
+ 
+2.1.1    Synthesis of arc discharged multiwall carbon nanotubes
+(MWCNTs)
+The MWCNTs applied in our experiment were prepared by an
+electrical arcing method. An asphalt-derived carbon rod and a
+high-purity graphite electrode were used as the anode and
+cathode, respectively. In order to facilitate the collection of
+MWCNTs and improve the purity of the MWCNTs samples, we
+ 
+ISSN 1998-0124   CN 11-5974/O4
+2022, 15(3): 2650−2654
+https://doi.org/10.1007/s12274-021-3861-6
+ 
+ 
+Address correspondence to Liqiang Zhang, [邮箱已脱敏]; Yongfu Tang, [邮箱已脱敏]; Jianyu Huang, [邮箱已脱敏]
+ 
+
+=== PAGE 2 ===
+placed a wire mesh on top of the two electrodes in the arc
+discharge chamber, which was about 5 cm far from the electrodes.
+During the arc discharge experiment, the buffer gas pressure was
+controlled in the 0.04–0.05 MPa range. The direct voltage and
+current used for arc discharge were controlled at 18–20 V and
+60–80 A, respectively. The distance between the two electrodes
+was kept at about 1–3 mm by manually pushing the anodes
+consumed during the experiment [15–17].
+ 
+2.1.2    Synthesis of hollow CNTs
+Hollow CNTs were fabricated through a typical chemical vapor
+deposition method. Anodic aluminum oxide (AAO) membranes
+with a pore size about 200 nm were first placed in a tube furnace.
+After that, they were heated in an argon (Ar) atmosphere up to
+700 °C to deposit a carbon layer (~ 24 nm) via C3H6
+decomposition at an atmospheric pressure. The carbon-coated
+AAO membranes were etched away with 10% hydrofluoric acid
+(HF) and then washed with deionized water several times. The
+final products were dried at 60 °C in vacuum. A bulk dry hollow
+CNT was ultrasonically dispersed in ethanol and then dropped
+onto a clean glass slide with a half-copper mesh and dried in a
+furnace [18, 19].
+ 
+2.2    In situ electrochemical deposition
+For in situ observations of EOR during Na and Li deposition, an
+electrochemical deposition platform was constructed in an
+environmental transmission electron microscope (ETEM) based
+on an all solid state cell setup [16, 20, 21]. The setup consists of an
+arc discharged MWCNT or hollow CNT attached to an
+aluminum (Al) rod as the cathode, and Na or Li metal scratched
+on a sharp Al tip as the counter electrode. Naturally formed
+Na2CO3 or Li2CO3 layer on the surface of Na or Li metal acted as
+the solid electrolyte, respectively (Fig. S1(a) in the Electronic
+Supplementary Material (ESM)). The electrochemical setup was
+mounted into a TEM–scanning tunneling microscopy (STM)
+holder (Pico Femto FE-F20) inside a glove box. Then the holder
+was sealed in a home-built air-tight bag filled with dry argon and
+transferred to the ETEM. The total time of air exposure was less
+than 2 s, which limited the thickness of the oxidization layer on
+the surface of the metal Na or Li. Upon applying a negative bias to
+the MWCNT against the Na or Li electrode, electrochemical
+deposition was initiated. During the experiments, CO2 gas (purity
+higher than 99.99%) with a pressure of 1 mbar was flowed into the
+ETEM chamber, which promoted the formation of a thin Na2CO3
+solid electrolyte interface (SEI) layer on the surface of the
+deposited sodium metal, mimicing the SEI layer formation in the
+anode of liquid electrolyte based batteries. The formation of
+Na2CO3 SEI layer stablized the deposited Na under electron beam
+illumination, thus facilitating the TEM observations.
+ 
+3    Results and discussion
+Upon applying a negative potential to the MWCNT electrode
+(Fig. 1(a)), two Na nanocrystals with sizes of 44 (marked by “1”)
+and 123 nm (marked by “2”) emerged at the MWCNT and
+Na2CO3 contact point, and three Na nanocrystals with sizes less
+than 37 nm (marked by “3” to “5”) appeared in the middle of the
+MWCNT (Fig. 1(b)). At 302 s, Na nanocrystals 1 and 2 were
+edged on with each other and separated by a thin shell which was
+Na2CO3 (Fig. S1(e) in the ESM), with continued Na deposition,
+nanocrystal 1 merged with nanocrystal 2, and the boundary
+between the nanocrystals disappeared (Figs. 1(c) and 1(d)). In the
+meantime,
+ nanocrystals
+ 3–5
+ shrank
+ continuously
+ until
+nanocrystals 4 and 5 almost disappeared (Figs. 1(b)–1(d), and
+Movie ESM1). Another similar experimental phenomenon was
+observed in Fig. S2 and Movie ESM2. We also observed Na
+electrodeposition in the annular dark-field (ADF) mode (Fig. S3 in
+the ESM). Once a negative bias was applied to the MWCNT,
+plating of Na was initiated, indicating that the plating process was
+not affected by the electron beam. This is because the total
+electron beam dose was much lower in the ADF mode as
+comparing to the TEM mode, in which the electron beam was
+turned on only intermittently for taking images in the former,
+while the electron beam was always turned on in the latter.
+Figures 2(a)–2(d) and Movie ESM3 show another example of
+EOR of Na nanocrystals. Two nanocrystals nucleated at the
+MWCNT/Na2CO3 contact point, with the left one smaller than
+the right one with sizes of 92 and 309 nm, respectively
+(Figs. 2(a) and 2(b)). And the two nanocrystals appeared to be
+separated by a Na2CO3 thin shell. During continued growth, the
+right one grew faster than the left one, and the right one broke its
+shell and connected with the left one (Figs. 2(b) and 2(c)). Upon
+further growth the two nanocrystals merged into one (Fig. 2(d)).
+More EOR of two Na nanocrystals growth is shown in Figs. S4–S5
+and Movies S4–S5 in the ESM, demonstrating the repeatability of
+the EOR phenomenon. When a reverse bias was applied on the
+MWCNT, the deposited Na can be stripped away, and the
+product after stripping was Na2CO3 (Fig. S6 in the ESM). EOR
+growth was also observed during electrochemical deposition of Li
+(Figs. 2(e)–2(h) and Movie S6 in the ESM). Similar to Na, upon
+applying a negative potential to the hollow CNT against the Li
+ 
+(a)
+(b)
+(c)
+(d)
+Figure 1    Time lapse TEM images of Na metal deposition at the MWCNT/Na2CO3/CO2 triple point via EOR. (a) and (b) Upon applying a negative potential to the
+CNT against the Na anode, two Na nanocrystals emerged at the MWCNT and Na2CO3 contact point (marked by “1” to “2”), and three Na nanocrystals (marked by
+“3” to “5”) appeared in the middle of the MWCNT. (c) and (d) Morphology evolution of nanocrystals “1” to “5” with continued Na deposition. The yellow dashed
+lines outline the grain contour of Na crystals.
+ 
+ 
+Nano Res. 2022, 15(3): 2650–2654
+2651
+ 
+ 
+www.theNanoResearch.com | www.Springer.com/journal/12274 | Nano Research
+
+=== PAGE 3 ===
+anode, two Li nanocrystals with the big one having a size of 1,224
+nm and the small one having a size of 783 nm emerged at the
+hollow CNT and Li2CO3 contact point, and the two nanocrystals
+overlapped each other slightly as depicted by the yellow dashed
+line in Fig. 2(f). With further Li deposition, the overlapping parts
+fused with each other and finally formed a large crystal (Figs. 2(g)
+and 2(h)). The observations of EOR in both Na and Li indicate the
+universality of EOR in alkali metal electrochemical deposition.
+EOR occurring in two Na nanocrystals through direct contact
+was observed in many cases (Fig. 1, Figs. 2(a)–2(d), Figs. S4–S5
+and Movies S1, S3–S5 in the ESM). Frequently, EOR occurred in
+three Na nanocrystals as well. Figure 3(a) shows three nanoballs
+with sizes of 60 nm (marked by “1”), 41 nm (marked by “2”) and
+33 nm (marked by “3”). After 6 s, nanoball 2 merged into
+nanoball 1 and formed a larger nanoball (Figs. 3(b) and 3(c)).
+Upon further Na deposition, nanoball 3 merged into the larger
+one as well, forming an even larger nanoball (Figs. 3(d) and 3(e),
+and Movie S7 in the ESM). Figures 3(f)–3(j) show another EOR
+process involving with three nanocrystals 4–6. The sizes of these
+three nanospheres (142, 126 and 318 nm for 4, 5 and 6,
+respectively) were several times larger than those shown in
+Figs. 3(a)–3(e). Following the similar path as shown in
+Figs. 3(a)–3(e) the three nanoballs finally merged into a big one
+over time (Figs. 3(f)–3(j), and Movie ESM8), but it took 18 times
+longer time than that in Figs. 3(a)–3(e). EOR not only occurred in
+a CO2 atmosphere, but also in a vacuum environment during Na
+deposition. In the latter case, the Na nanocrystals without stable
+Na2CO3 SEI shell were more likely to grow randomly and not
+stable under electron beam, but the smaller ones still merged into
+a larger one as well (Fig. S7 in the ESM).
+Overall, we observed two types of EOR, as shown schematically
+in Fig. 4, which were hereafter referred to as EOR1 and EOR2. In
+EOR1, the nanocrystals were far away from each other, and
+during the growth process, the smaller ones shrank continuously
+until they totally disappeared. While the bigger one grew rapidly at
+the consumption of the smaller ones (Figs. 4(a) and 4(b)). In
+EOR2, two or three neighboring nanocrystals emerged almost at
+the same time, yet they appeared to be separated by a thin surface
+layer (Fig. 4(c)). Upon further growth, the thin shell was broken
+and the two or three nanocrystals joined together to become one
+larger crystal (Figs. 4(d) and 4(e)). We believe that EOR1 is a pure
+electrochemical process, as the following electrochemical reaction
+must have occurred: Na → Na+ + e− in the smaller nanocrystals and
+the reverse reaction Na+ + e− → Na in the bigger nanocrystals.
+Apparently the MWCNT acted as both the electron and ion
+transport media. Previous experiments have established that
+ 
+Figure 2    Time lapse TEM images of Na ((a)–(d)) and Li ((e)–(h)) metal deposition at the MWCNT/Na2CO3 or Li2CO3/CO2 triple point, respectively, via EOR. (a)
+and (b) Upon applying a negative potential to the CNT against the Na anode, two Na nanocrystals emerged at the MWCNT and Na2CO3 contact point. (c) and (d)
+Morphology evolution of two nanocrystals with continued Na deposition. (e)–(h) Morphology evolution of two nanocrystals during Li deposition. The yellow dashed
+lines outline the grain contour of Na and Li crystals.
+ 
+Figure 3    Time lapse TEM images of three Na nanocrystals deposition via EOR. (a)–(e) Morphology evolution of three nanoballs with sizes of 60 nm (marked by
+“1”), 41 nm (marked by “2”) and 33 nm (marked by “3”). (f)–(j) Morphology evolution of three nanoballs with sizes of 142 nm (marked by “4”), 126 nm (marked by
+“5”) and 318 nm (marked by “6”). The yellow dashed lines outline the grain contour of Na crystals.
+ 
+ 
+2652
+Nano Res. 2022, 15(3): 2650–2654
+ 
+ 
+ | www.editorialmanager.com/nare/default.asp
+
+=== PAGE 4 ===
+MWCNT is indeed a mixed ionic and electronic conductor
+(MIEC) [22]. We did a similar experiment with an Ag nanowire
+instead of a MWCNT as the working electrode. Different from
+MWCNT, the Ag nanowire can only conduct electrons, so we
+only observed the deposition and EOR of Na at the Ag/Na2CO3
+contact point (Fig. S8 in the ESM) but not in the middle of the Ag
+nanowire. In contrast, because of the MIEC nature of the
+MWCNT, the Na dendrites can nucleate and grow at both the
+MWCNT/Na2CO3 contact point and the middle of the MWCNT
+(Fig. 1). This once again proves that the EOR1 process needs to
+have both ion and electron transport pathways. In EOR2, we
+believe that the initial stage involved electrochemical reactions
+similar to that in EOR1, however, once the shell separating the two
+nanocrystals was broken, the merging between the two
+nanocrystals was similar to the chemical Ostwald ripening,
+meaning that no electrochemical reaction may have taken place,
+and it was mostly a mass transfer from the smaller one to the
+bigger one due to surface energy minimization.
+Figure 4(f) shows a plot of the shift in the standard electrode
+potential of small Na nanocrystals as a function of radius
+according to Eq. (1). The surface energy γ = 0.21 J/m2 is used for
+Na [23]. Obviously, the deflection of the standard electrode
+potential is inversely related to the particle size. Once the radius of
+the nanocrystal reaches 103 nm, the negative shift of standard
+electrode potential will be less than 1 mV. With continued Na
+deposition, even though the particle radius increases several times,
+the standard electrode potential only changes slightly. Apparently,
+the driving force for the EOR is the electrochemical potential
+difference between the smaller nanocrystals and the bigger ones
+according to Eq. (1). Following Eq. (1), the potential difference
+between the nanocrystal Na and bulk Na can be appreciable,
+namely, for a nanocrystal with a size of 2 nm, its electrochemical
+potential is about 51 mV lower than that of bulk Na (Fig. 4(f)).
+Similarly, the electrochemical potential of a Li nanocrystal with a
+size of 2 nm is about 57 mV lower than that of bulk Li (The
+surface energy γ = 0.43 J/m2 is used for Li) [1, 2, 24]. It should be
+noted that once the nanocrystal grows to a larger size, nucleation
+of smaller Na nanocrystals is rare if not obsolete, suggesting that
+EOR is a phenomenon taking place only at the early stage of Na
+deposition. EOR may lead to anomalous grain growth and cause
+non-uniform Na deposition, which is detrimental for SMBs. Thus
+uniform surface structure or uniform electric field distribution
+must be implemented in the Na anode to avoid anomalous grain
+growth and non-uniform Na deposition.
+ 
+4    Conclusions
+In conclusion, we observed two types of EOR (EOR1 and EOR2)
+during the electrochemical deposition of Na and Li. In EOR1,
+large and small Na nanocrystals nucleated far away from each
+other, and later on the larger nanocrystal grew at the expense of
+the small nanocrystal via electrochemical Ostwald ripening. In
+EOR2, two or three Na and Li nanocrystals contacting one
+another yet were separated by a thin surface Na2CO3 or Li2CO3
+layer, respectively, and the large one grew at the expense of the
+small one via electrochemical Ostwald ripening similar to EOR1
+initially. Upon further growth of the large one, it broke the shell
+near the contact of the nanocrystals, and the growth then
+appeared to be chemical Ostwald ripening (i.e., mass transfer
+occurred directly from the small one to the large one due to
+surface energy minimization). EOR occurred only at the early
+stage of Na and Li deposition, which may lead to anomalous grain
+growth and was detrimental for Na and Li metal batteries.
+ 
+Acknowledgements
+This work was financially supported by the National Natural
+Science Foundation of China (Nos. 52022088, 51971245,
+51772262, 21406191, U20A20336, and 21935009), Beijing Natural
+Science Foundation (No. 2202046), Fok Ying-Tong Education
+Foundation of China (No. 171064), Natural Science Foundation of
+Hebei
+ Province
+ (Nos.
+ F2021203097,
+ B2020203037,
+ and
+B2018203297), and Hunan Innovation Team (No. 2018RS3091).
+Electronic Supplementary Material: Supplementary material
+(supplemental figures and supplemental movies) is available in the
+online version of this article at https://doi.org/10.1007/s12274-021-
+3861-6.
+References
+ Redmond, P. L.; Hallock, A. J.; Brus, L. E. Electrochemical Ostwald
+ripening  of  colloidal  Ag  particles  on  conductive  substrates.  Nano
+Lett 2005, 5, 131–135.
+[1]
+ Schröder,  A.;  Fleig,  J.;  Gryaznov,  D.;  Maier,  J.;  Sitte,  W.
+Quantitative  model  of  electrochemical  Ostwald  ripening  and  its
+application
+ to
+ the
+ time-dependent
+ electrode
+ potential
+ of
+nanocrystalline metals. J. Phys. Chem. B 2006, 110, 12274–12280.
+[2]
+ Wang, F. D.; Richards, V. N.; Shields, S. P.; Buhro, W. E. Kinetics
+and  mechanisms  of  aggregative  nanocrystal  growth.  Chem. Mater.
+2014, 26, 5–21.
+[3]
+ Zheng, H. M.; Smith, R. K.; Jun, Y. W.; Kisielowski, C.; Dahmen,
+U.;  Alivisatos,  A.  P.  Observation  of  single  colloidal  platinum
+nanocrystal growth trajectories. Science 2009, 324, 1309–1312.
+[4]
+ Liao,  H.  G.;  Cui,  L.  K.;  Whitelam,  S.;  Zheng,  H.  M.  Real-time
+imaging  of  Pt3Fe  nanorod  growth  in  solution.  Science  2012,  336,
+1011–1014.
+[5]
+ Parthasarathy, P.; Virkar, A. V. Electrochemical Ostwald ripening of
+Pt  and  Ag  catalysts  supported  on  carbon.  J. Power Sources  2013,
+234, 82–90.
+[6]
+ 
+(a)
+(b)
+(f)
+(c)
+(d)
+(e)
+Figure 4    Schematic illustrating two types of EOR. (a) and (b) Mechanism for EOR1. The nanocrystals are far away from each other, and electrons and ions are
+transported through the MWCNT. (c)–(e) Mechanism for EOR2. Two particles transport electrons and ions through direct contact. (f) Graph of the shift from bulk in
+standard electrode potential of small Na nanocrystals as described in Eq. (1), where γ = 0.21 J/m2 is used as the surface tension of Na.
+ 
+ 
+Nano Res. 2022, 15(3): 2650–2654
+2653
+ 
+ 
+www.theNanoResearch.com | www.Springer.com/journal/12274 | Nano Research
+
+=== PAGE 5 ===
+ Ustarroz,  J.;  Hammons,  J.  A.;  Altantzis,  T.;  Hubin,  A.;  Bals,  S.;
+Terryn,  H.  A  generalized  electrochemical  aggregative  growth
+mechanism. J. Am. Chem. Soc. 2013, 135, 11550–11561.
+[7]
+ Liu, X.; Stroppa, D. G.; Heggen, M.; Ermolenko, Y.; Offenhäusser,
+A.;  Mourzina,  Y.  Electrochemically  induced  Ostwald  ripening  in
+Au/TiO2 nanocomposite. J. Phys. Chem. C 2015, 119, 10336–10344.
+[8]
+ Sui, J. S.; Yan, J. Y.; Wang, K.; Luo, G. S. Efficient synthesis of
+lithium  rare-earth  tetrafluoride  nanocrystals  via  a  continuous  flow
+method. Nano Res. 2020, 13, 2837–2846.
+[9]
+ Henglein, A. Physicochemical properties of small metal particles in
+solution: "microelectrode" reactions, chemisorption, composite metal
+particles, and the atom-to-metal transition. J. Phys. Chem. 1993, 97,
+5457–5471.
+[10]
+ Plieth,  W.  J.  Electrochemical  properties  of  small  clusters  of  metal
+atoms  and  their  role  in  the  surface  enhanced  Raman  scattering.  J.
+Phys. Chem. 1982, 86, 3166–3170.
+[11]
+ Yang, F.; Abadia, M.; Chen, C. Q.; Wang, W. K.; Li, L.; Zhang, L.
+B.; Rogero, C.; Chuvilin, A.; Knez, M. Design of active and stable
+oxygen
+ reduction
+ reaction
+ catalysts
+ by
+ embedding
+ CoxOy
+nanoparticles  into  nitrogen-doped  carbon.  Nano Res.  2017,  10,
+97–107.
+[12]
+ Yu, Z. J.; Jiao, S. Q.; Li, S. J.; Chen, X. D.; Song, W. L.; Teng, T.;
+Tu,  J.  G.;  Chen,  H.  S.;  Zhang,  G.  H.;  Fang,  D.  N.  Flexible  stable
+solid-state Al-ion batteries. Adv. Funct. Mater. 2019, 29, 1806799.
+[13]
+ Wang, S.; Jiao, S. Q.; Tian, D. H.; Chen, H. S.; Jiao, H. D.; Tu, J. G.;
+Liu,  Y.  J.;  Fang,  D.  N.  A  novel  ultrafast  rechargeable  multi-ions
+battery. Adv. Mater. 2017, 29, 1606349.
+[14]
+ Vittori  Antisari,  M.;  Marazzi,  R.;  Krsmanovic,  R.  Synthesis  of
+multiwall  carbon  nanotubes  by  electric  arc  discharge  in  liquid
+environments. Carbon 2003, 41, 2393–2401.
+[15]
+ Liu, Q. N.; Zhang, L. Q.; Sun, H. M.; Geng, L.; Li, Y. S.; Tang, Y.
+S.;  Jia,  P.;  Wang,  Z.  F.;  Dai,  Q.  S.;  Shen,  T.  D.  et  al.  In situ
+[16]
+observation  of  sodium  dendrite  growth  and  concurrent  mechanical
+property  measurements  using  an  environmental  transmission
+electron
+ microscopy-atomic
+ force
+ microscopy
+ (ETEM-AFM)
+platform. ACS Energy Lett 2020, 5, 2546–2559.
+ Shi,  L.;  Sheng,  L.  M.;  Yu,  L.  M.;  An,  K.;  Ando,  Y.;  Zhao,  X.  L.
+Ultra-thin  double-walled  carbon  nanotubes:  A  novel  nanocontainer
+for preparing atomic wires. Nano Res. 2011, 4, 759–766.
+[17]
+ Wang, Z. F.; Tang, Y. F.; Zhang, L. Q.; Li, M.; Shan, Z. W.; Huang,
+J. Y. In situ TEM observations of discharging/charging of solid-state
+lithium-sulfur  batteries  at  high  temperatures.  Small  2020,  16,
+2001899.
+[18]
+ Chen, Y. M.; Wang, Z. Q.; Li, X. Y.; Yao, X. H.; Wang, C.; Li, Y.
+T.;  Xue,  W.  J.;  Yu,  D.  W.;  Kim,  S.  Y.;  Yang,  F.  et  al.  Li  metal
+deposition  and  stripping  in  a  solid-state  battery  via  Coble  creep.
+Nature 2020, 578, 251–255.
+[19]
+ Zhang, L. Q.; Yang, T. T.; Du, C. C.; Liu, Q. N.; Tang, Y. S.; Zhao,
+J.; Wang, B. L.; Chen, T. W.; Sun, Y.; Jia, P. et al. Lithium whisker
+growth and stress generation in an in situ atomic force microscope-
+environmental  transmission  electron  microscope  set-up.  Nat.
+Nanotechnol. 2020, 15, 94–98.
+[20]
+ Liu, Q. N.; Geng, L.; Yang, T. T.; Tang, Y. F.; Jia, P.; Li, Y. S.; Li,
+H.;  Shen,  T.  D.;  Zhang,  L.  Q.;  Huang,  J.  Y.  In-situ  imaging
+electrocatalysis in a Na-O2 battery with Au-coated MnO2 nanowires
+air cathode. Energy Storage Mater 2019, 19, 48–55.
+[21]
+ Tang, Y. F.; Zhang, L. Q.; Chen, J. Z.; Sun, H. M.; Yang, T. T.; Liu,
+Q. N.; Huang, Q.; Zhu, T.; Huang, J. Y. Electro-chemo-mechanics of
+lithium  in  solid  state  lithium  metal  batteries.  Energy Environ. Sci.
+2021, 14, 602–642.
+[22]
+ Poindexter, F. E.; Kernaghan, M. Surface tension of sodium. Phys.
+Rev. 1929, 33, 837–843.
+[23]
+ Bohdansky,  J.;  Schins,  H.  E.  J.  The  surface  tension  of  the  alkali
+metals. J. Inorg. Nucl. Chem. 1967, 29, 2173–2179.
+[24]
+ 
+ 
+2654
+Nano Res. 2022, 15(3): 2650–2654
+ 
+ 
+ | www.editorialmanager.com/nare/default.asp
+

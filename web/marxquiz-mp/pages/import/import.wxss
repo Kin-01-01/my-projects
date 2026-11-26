@@ -1,0 +1,262 @@
+/* pages/import/import.wxss —— 导入题库 */
+
+/* ---------- 分段控件 ---------- */
+.seg-wrap {
+  padding: 24rpx 40rpx 4rpx 40rpx;
+}
+
+.seg {
+  display: flex;
+  align-items: center;
+  padding: 8rpx;
+  border-radius: 999rpx;
+  background: var(--bg-soft);
+}
+
+.seg-item {
+  flex: 1;
+  height: 76rpx;
+  border-radius: 999rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.seg-item-on {
+  background: var(--card);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- 表单 ---------- */
+.field-label {
+  font-size: 22rpx;
+  font-weight: 700;
+  color: var(--text-3);
+  letter-spacing: 2rpx;
+  margin-bottom: 14rpx;
+}
+
+.paste-area {
+  width: 100%;
+  height: 360rpx;
+  padding: 24rpx;
+  border-radius: 26rpx;
+  background: var(--bg-soft);
+  font-size: 26rpx;
+  line-height: 1.7;
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+.paste-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.paste-btn {
+  margin-right: 16rpx;
+}
+
+.file-hint {
+  font-size: 22rpx;
+  color: var(--text-3);
+  margin-top: 16rpx;
+}
+
+/* ---------- 文件 / 示例 ---------- */
+.file-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.4rpx;
+}
+
+.file-desc {
+  font-size: 25rpx;
+  color: var(--text-2);
+  line-height: 1.72;
+  margin-top: 12rpx;
+}
+
+.file-btn {
+  margin-top: 28rpx;
+}
+
+.file-note {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-note-title {
+  font-size: 25rpx;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8rpx;
+}
+
+.file-note-text {
+  font-size: 23rpx;
+  color: var(--text-3);
+  line-height: 1.72;
+}
+
+/* ---------- 解析结果 ---------- */
+.result-card {
+  margin-top: 24rpx;
+}
+
+.result-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.4rpx;
+}
+
+.result-format {
+  height: 44rpx;
+  padding: 0 18rpx;
+  border-radius: 999rpx;
+  display: inline-flex;
+  align-items: center;
+  font-size: 21rpx;
+  font-weight: 600;
+  color: var(--text-2);
+  background: var(--bg-soft);
+}
+
+.result-summary {
+  margin-top: 22rpx;
+  padding: 26rpx;
+  border-radius: 26rpx;
+  background: var(--lime-soft);
+}
+
+.summary-main {
+  display: block;
+  font-size: 34rpx;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.4rpx;
+}
+
+.summary-sub {
+  display: block;
+  font-size: 22rpx;
+  color: var(--text-2);
+  margin-top: 8rpx;
+}
+
+/* ---------- 错误 ---------- */
+.err-box {
+  margin-top: 22rpx;
+  padding: 24rpx;
+  border-radius: 26rpx;
+  background: var(--bad-soft);
+}
+
+.err-title {
+  font-size: 24rpx;
+  font-weight: 700;
+  color: var(--bad);
+  margin-bottom: 10rpx;
+}
+
+.err-item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 6rpx;
+}
+
+.err-dot {
+  font-size: 22rpx;
+  color: var(--bad);
+  margin-right: 8rpx;
+}
+
+.err-text {
+  flex: 1;
+  font-size: 22rpx;
+  line-height: 1.6;
+  color: var(--bad);
+}
+
+/* ---------- 预览 ---------- */
+.preview {
+  margin-top: 26rpx;
+}
+
+.preview-title {
+  font-size: 22rpx;
+  font-weight: 700;
+  color: var(--text-3);
+  letter-spacing: 2rpx;
+  margin-bottom: 14rpx;
+}
+
+.preview-item {
+  padding: 22rpx 24rpx;
+  border-radius: 24rpx;
+  background: var(--bg-soft);
+  margin-bottom: 14rpx;
+}
+
+.preview-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.preview-no {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20rpx;
+  font-weight: 700;
+  color: var(--text);
+  background: var(--card);
+  margin-right: 12rpx;
+}
+
+.preview-type {
+  font-size: 21rpx;
+  color: var(--text-3);
+}
+
+.preview-stem {
+  display: block;
+  font-size: 26rpx;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.preview-answer {
+  display: block;
+  font-size: 22rpx;
+  color: var(--text-2);
+  margin-top: 8rpx;
+}
+
+/* ---------- 名称输入 ---------- */
+.name-input {
+  height: 96rpx;
+  padding: 0 26rpx;
+  border-radius: 24rpx;
+  background: var(--bg-soft);
+  font-size: 28rpx;
+  color: var(--text);
+  box-sizing: border-box;
+}

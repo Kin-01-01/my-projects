@@ -1,0 +1,499 @@
+/* pages/practice/practice.wxss —— 刷题页 */
+
+/* ---------- 顶部进度区 ---------- */
+.head {
+  padding: 20rpx 40rpx 0 40rpx;
+}
+
+.head-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.head-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-num {
+  display: flex;
+  align-items: baseline;
+}
+
+.head-cur {
+  font-size: 52rpx;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -1.6rpx;
+  line-height: 1.1;
+}
+
+.head-total {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: var(--text-3);
+  margin-left: 6rpx;
+}
+
+.head-answered {
+  font-size: 22rpx;
+  color: var(--text-3);
+  margin-top: 6rpx;
+}
+
+.head-right {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6rpx;
+}
+
+.timer {
+  height: 60rpx;
+  padding: 0 22rpx;
+  border-radius: 999rpx;
+  display: flex;
+  align-items: center;
+  font-size: 25rpx;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--warn-soft);
+  margin-right: 14rpx;
+}
+
+.timer-low {
+  color: var(--bad);
+  background: var(--bad-soft);
+}
+
+.pill-btn {
+  height: 60rpx;
+  padding: 0 26rpx;
+  border-radius: 999rpx;
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--card);
+  border: 1rpx solid var(--border-strong);
+  box-shadow: var(--inner);
+  margin-left: 14rpx;
+}
+
+.pill-btn-ink {
+  background: var(--ink);
+  color: var(--on-ink);
+  border-color: var(--ink);
+}
+
+.pill-btn-hover {
+  opacity: 0.75;
+}
+
+.bar {
+  height: 12rpx;
+  border-radius: 999rpx;
+  background: var(--bg-soft);
+  margin-top: 22rpx;
+  overflow: hidden;
+}
+
+.bar-inner {
+  height: 100%;
+  border-radius: 999rpx;
+  background: linear-gradient(90deg, var(--mint) 0%, var(--lime) 100%);
+  transition: width 0.3s ease;
+}
+
+/* ---------- 题目卡片 ---------- */
+.q-card {
+  background: var(--card);
+  border-radius: 38rpx;
+  padding: 34rpx 32rpx 32rpx 32rpx;
+  box-shadow: var(--shadow), var(--inner);
+  margin-top: 26rpx;
+  box-sizing: border-box;
+}
+
+.q-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22rpx;
+}
+
+.q-type {
+  height: 44rpx;
+  padding: 0 20rpx;
+  border-radius: 999rpx;
+  display: inline-flex;
+  align-items: center;
+  font-size: 22rpx;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--lime-soft);
+  letter-spacing: 0.4rpx;
+}
+
+.q-fav {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: var(--text-3);
+  background: var(--bg-soft);
+}
+
+.q-fav-on {
+  color: var(--text);
+  background: var(--lime-soft);
+}
+
+.q-fav-hover {
+  opacity: 0.65;
+}
+
+.q-stem {
+  display: block;
+  font-size: 34rpx;
+  font-weight: 500;
+  line-height: 1.74;
+  color: var(--text);
+  letter-spacing: -0.2rpx;
+}
+
+/* ---------- 选项 ---------- */
+.opt-list {
+  margin-top: 32rpx;
+}
+
+.opt {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 26rpx;
+  border-radius: 26rpx;
+  border: 2rpx solid var(--border);
+  background: var(--card);
+  margin-bottom: 18rpx;
+  box-sizing: border-box;
+  transition: border-color 0.16s ease, background 0.16s ease;
+}
+
+.opt:last-child {
+  margin-bottom: 0;
+}
+
+.opt-hover {
+  background: var(--bg-soft);
+}
+
+.opt-key {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25rpx;
+  font-weight: 700;
+  color: var(--text-2);
+  background: var(--bg-soft);
+  margin-right: 22rpx;
+  flex-shrink: 0;
+}
+
+.opt-text {
+  flex: 1;
+  font-size: 29rpx;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.opt-selected {
+  border-color: var(--ink);
+  background: var(--lime-soft);
+}
+
+.opt-selected .opt-key {
+  background: var(--ink);
+  color: var(--on-ink);
+}
+
+.opt-correct {
+  border-color: var(--ok);
+  background: var(--ok-soft);
+}
+
+.opt-correct .opt-key {
+  background: var(--ok);
+  color: var(--on-strong);
+}
+
+.opt-wrong {
+  border-color: var(--bad);
+  background: var(--bad-soft);
+}
+
+.opt-wrong .opt-key {
+  background: var(--bad);
+  color: var(--on-strong);
+}
+
+/* ---------- 填空 ---------- */
+.fill-wrap {
+  margin-top: 32rpx;
+}
+
+.fill-input {
+  height: 104rpx;
+  padding: 0 30rpx;
+  border-radius: 26rpx;
+  background: var(--bg-soft);
+  font-size: 30rpx;
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+/* ---------- 判定反馈 ---------- */
+.feedback {
+  display: flex;
+  align-items: center;
+  margin-top: 28rpx;
+  padding: 20rpx 26rpx;
+  border-radius: 26rpx;
+}
+
+.fb-ok {
+  background: var(--ok-soft);
+}
+
+.fb-bad {
+  background: var(--bad-soft);
+}
+
+.fb-icon {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  font-weight: 700;
+  color: var(--on-strong);
+  margin-right: 16rpx;
+  flex-shrink: 0;
+}
+
+.fb-ok .fb-icon {
+  background: var(--ok);
+}
+
+.fb-bad .fb-icon {
+  background: var(--bad);
+}
+
+.fb-text {
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.fb-ok .fb-text {
+  color: var(--ok);
+}
+
+.fb-bad .fb-text {
+  color: var(--bad);
+}
+
+.fb-ans {
+  margin-left: auto;
+  font-size: 23rpx;
+  color: var(--text-2);
+}
+
+/* ---------- 解析 ---------- */
+.analysis {
+  margin-top: 24rpx;
+  padding: 26rpx;
+  border-radius: 26rpx;
+  background: var(--bg-soft);
+}
+
+.analysis-title {
+  font-size: 23rpx;
+  font-weight: 700;
+  color: var(--text-2);
+  letter-spacing: 2rpx;
+  margin-bottom: 14rpx;
+}
+
+.analysis-text {
+  font-size: 26rpx;
+  line-height: 1.88;
+  color: var(--text-2);
+}
+
+/* ---------- 提示条 ---------- */
+.tip-bar {
+  margin-top: 22rpx;
+  padding: 14rpx 24rpx;
+  border-radius: 999rpx;
+  background: var(--lime-soft);
+  color: var(--text-2);
+  font-size: 23rpx;
+  text-align: center;
+}
+
+/* ---------- 操作按钮 ---------- */
+.actions {
+  margin-top: 34rpx;
+}
+
+/* ---------- 答题卡 ---------- */
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--mask);
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+}
+
+.sheet {
+  width: 100%;
+  max-height: 82vh;
+  background: var(--card);
+  border-radius: 44rpx 44rpx 0 0;
+  padding: 18rpx 36rpx calc(32rpx + env(safe-area-inset-bottom)) 36rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.sheet-grip {
+  width: 72rpx;
+  height: 8rpx;
+  border-radius: 999rpx;
+  background: var(--border-strong);
+  margin: 6rpx auto 20rpx auto;
+}
+
+.sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sheet-title {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.4rpx;
+}
+
+.sheet-close {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  color: var(--text-2);
+  background: var(--bg-soft);
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  margin: 22rpx 0 20rpx 0;
+}
+
+.lg-item {
+  display: flex;
+  align-items: center;
+  margin-right: 30rpx;
+}
+
+.dot {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+
+.dot-un {
+  background: var(--border-strong);
+}
+
+.dot-an {
+  background: var(--text-3);
+}
+
+.dot-ok {
+  background: var(--ok);
+}
+
+.dot-bad {
+  background: var(--bad);
+}
+
+.lg-text {
+  font-size: 22rpx;
+  color: var(--text-3);
+}
+
+.grid-scroll {
+  max-height: 46vh;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 8rpx;
+}
+
+.cell {
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: var(--text-2);
+  background: var(--bg-soft);
+  margin: 0 16rpx 16rpx 0;
+  border: 2rpx solid transparent;
+  box-sizing: border-box;
+}
+
+.cell-an {
+  background: var(--ink);
+  color: var(--on-ink);
+}
+
+.cell-ok {
+  background: var(--ok-soft);
+  color: var(--ok);
+  border-color: var(--ok);
+}
+
+.cell-bad {
+  background: var(--bad-soft);
+  color: var(--bad);
+  border-color: var(--bad);
+}
+
+.sheet-btn {
+  margin-top: 22rpx;
+}
