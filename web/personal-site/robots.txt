@@ -1,5 +1,0 @@
-# 部署后请将下方域名替换为你自己的实际域名
-User-agent: *
-Allow: /
-
-Sitemap: https://zerostack.example.com/sitemap.xml
